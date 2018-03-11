@@ -69,15 +69,21 @@ run_rofi_conf_reset () {
 
 ### Head: fcitx ################################################################
 #
-run_fcitx_conf_reset_each () {
-	run_conf_reset_each "$THE_FCITX_CONF_RESET_DIR_PATH" "$THE_FCITX_CONF_MAIN_DIR_PATH" "$@"
+run_fcitx_conf_set_im_config () {
+	im-config -n fcitx
+	## cat ~/.xinputrc
 }
 
-run_fcitx_conf_reset () {
+run_fcitx_conf_set_each () {
+	run_conf_set_each "$THE_FCITX_CONF_SET_DIR_PATH" "$THE_FCITX_CONF_MAIN_DIR_PATH" "$@"
+}
+
+run_fcitx_conf_set () {
 	local file_list="profile"
 
-	run_fcitx_conf_reset_each "$file_list"
+	run_fcitx_conf_set_each "$file_list"
 
+	run_fcitx_conf_set_im_config
 }
 #
 ### Tail: fcitx ################################################################
