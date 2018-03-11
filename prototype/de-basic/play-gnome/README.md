@@ -49,4 +49,4 @@ $ make config-install
 Please refer to
 
 * [config-install.sh](config-install.sh#L68)
-* $ [gnome-control-center](http://manpages.ubuntu.com/manpages/bionic/en/man1/gnome-control-center.1.html) keyboard
+* $ [gnome-control-center keyboard](http://manpages.ubuntu.com/manpages/bionic/en/man1/gnome-control-center.1.html)
