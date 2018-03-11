@@ -102,8 +102,12 @@ run_rofi_conf_set () {
 ### Head: fcitx ################################################################
 #
 run_fcitx_conf_set_im_config () {
+	echo
 	im-config -n fcitx
-	## cat ~/.xinputrc
+	echo "im-config -n fcitx"
+	echo "cat ~/.xinputrc"
+	cat ~/.xinputrc
+	echo
 }
 
 run_fcitx_conf_set_each () {
