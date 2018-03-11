@@ -2,6 +2,11 @@
 # Plan Play xfce
 
 
+## Prototype
+
+* [prototype/de-basic/play-xfce](../../../prototype/de-basic/play-xfce)
+
+
 ## How to make deb-src package
 
 

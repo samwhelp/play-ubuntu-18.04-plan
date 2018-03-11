@@ -2,6 +2,11 @@
 # Plan Play lxqt
 
 
+## Prototype
+
+* [prototype/de-basic/play-lxqt](../../../prototype/de-basic/play-lxqt)
+
+
 ## How to make deb-src package
 
 

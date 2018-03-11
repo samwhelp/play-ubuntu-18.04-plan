@@ -2,6 +2,11 @@
 # Plan Play i3
 
 
+## Prototype
+
+* [prototype/de-basic/play-i3](../../../prototype/de-basic/play-i3)
+
+
 ## How to make deb-src package
 
 

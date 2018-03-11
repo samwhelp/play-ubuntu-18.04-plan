@@ -2,6 +2,11 @@
 # Plan Play gnome
 
 
+## Prototype
+
+* [prototype/de-basic/play-gnome](../../../prototype/de-basic/play-gnome)
+
+
 ## How to make deb-src package
 
 
