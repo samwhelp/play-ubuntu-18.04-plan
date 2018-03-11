@@ -1,5 +1,5 @@
 
-# Prototype play-i3
+# Prototype play-lxqt
 
 
 ## install
