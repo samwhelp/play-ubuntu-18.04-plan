@@ -2,7 +2,10 @@
 # Prototype play-gnome
 
 
-## install
+## Usage
+
+
+### install
 
 ``` sh
 $ ./install.sh
@@ -15,7 +18,7 @@ $ make install
 ```
 
 
-## package-install
+### package-install
 
 ``` sh
 $ ./package-install.sh
@@ -27,7 +30,8 @@ or
 $ make package-install
 ```
 
-## config-install
+
+### config-install
 
 ``` sh
 $ ./config-install.sh
@@ -38,3 +42,11 @@ or
 ``` sh
 $ make config-install
 ```
+
+
+## Keyboard shortcuts
+
+Please refer to
+
+* [config-install.sh](config-install.sh#L68)
+* $ [gnome-control-center](http://manpages.ubuntu.com/manpages/bionic/en/man1/gnome-control-center.1.html) keyboard
