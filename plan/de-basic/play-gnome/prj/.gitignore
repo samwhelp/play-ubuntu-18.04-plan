@@ -1,0 +1,12 @@
+play-gnome/debian/play-gnome
+play-gnome/debian/.debhelper
+play-gnome/debian/*.debhelper.log
+play-gnome/debian/*.substvars
+play-gnome/debian/files
+
+*.deb
+*.build
+*.buildinfo
+*.changes
+*.dsc
+*.tar.gz

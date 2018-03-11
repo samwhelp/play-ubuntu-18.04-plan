@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+## man debhelper
+## man dh
+
+
+%:
+	dh $@

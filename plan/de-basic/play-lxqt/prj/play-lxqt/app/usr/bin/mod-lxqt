@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+## init
+THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+source "$THE_BASE_DIR_PATH/../share/play-lxqt/lib/_init.sh"
+
+
+##THE_BIN_DIR_PATH=/usr/share/play-lxqt/bin
+#echo $THE_BIN_DIR_PATH
+#PATH="$THE_BIN_DIR_PATH:$PATH"
+
+usage () {
+	#echo "mod-lxqt help"
+	cd "$THE_BIN_DIR_PATH"
+	./help.sh
+}
+
+check_args_size () {
+	if [ $1 -le 0 ]; then
+		usage
+		exit 1
+	fi
+}
+
+check_cmd_exist () {
+	if is_cmd_not_exist $1; then
+		echo 'Command:' "$1"
+		echo 'File not exits:' "$AGENT"
+		exit 1
+	fi
+
+}
+
+is_cmd_not_exist () {
+	local cmd=$1
+	AGENT="$THE_BIN_DIR_PATH/$cmd"".sh"
+	! test -x "$AGENT"
+}
+
+
+check_args_size $#
+
+CMD=$1
+
+check_cmd_exist $CMD
+
+shift
+
+#echo $@
+
+
+$AGENT $@

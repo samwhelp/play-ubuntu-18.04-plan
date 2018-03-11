@@ -1,0 +1,5 @@
+numix-gtk-theme
+numix-blue-gtk-theme
+numix-icon-theme
+breeze-cursor-theme
+ubuntu-wallpapers

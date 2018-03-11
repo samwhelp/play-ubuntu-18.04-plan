@@ -1,0 +1,12 @@
+play-xfce/debian/play-xfce
+play-xfce/debian/.debhelper
+play-xfce/debian/*.debhelper.log
+play-xfce/debian/*.substvars
+play-xfce/debian/files
+
+*.deb
+*.build
+*.buildinfo
+*.changes
+*.dsc
+*.tar.gz

@@ -1,0 +1,2 @@
+qterminal
+tilix

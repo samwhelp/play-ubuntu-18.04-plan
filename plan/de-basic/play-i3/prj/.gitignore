@@ -1,0 +1,12 @@
+play-i3/debian/play-i3
+play-i3/debian/.debhelper
+play-i3/debian/*.debhelper.log
+play-i3/debian/*.substvars
+play-i3/debian/files
+
+*.deb
+*.build
+*.buildinfo
+*.changes
+*.dsc
+*.tar.gz

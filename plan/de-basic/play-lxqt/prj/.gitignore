@@ -1,0 +1,12 @@
+play-lxqt/debian/play-lxqt
+play-lxqt/debian/.debhelper
+play-lxqt/debian/*.debhelper.log
+play-lxqt/debian/*.substvars
+play-lxqt/debian/files
+
+*.deb
+*.build
+*.buildinfo
+*.changes
+*.dsc
+*.tar.gz

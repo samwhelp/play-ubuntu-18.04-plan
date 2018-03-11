@@ -1,0 +1,7 @@
+i3
+suckless-tools
+i3lock
+i3status
+rofi
+compton
+feh

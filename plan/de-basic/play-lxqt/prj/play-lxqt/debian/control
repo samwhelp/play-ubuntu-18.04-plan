@@ -1,0 +1,17 @@
+Source: play-lxqt
+Section: utils
+Priority: optional
+Maintainer: samwhelp <samwhelp@users.noreply.github.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 4.1.1
+Homepage: https://samwhelp.github.io/note-ubuntu-18.10/
+Vcs-Git: https://github.com/samwhelp/play-ubuntu-18.04-plan.git
+Vcs-Browser: https://github.com/samwhelp/play-ubuntu-18.04-plan
+
+
+Package: play-lxqt
+Section: utils
+Architecture: all
+Depends: ${misc:Depends}
+Description: This is a util package for lxqt.
+ This is a util package for lxqt basic setting.
