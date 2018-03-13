@@ -56,3 +56,9 @@ $ make deb-remove
 ``` sh
 $ make deb-clean
 ```
+
+## Debug Mode
+
+``` sh
+$ export DEBUG_PLAY_I3=true
+```
