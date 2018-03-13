@@ -47,18 +47,21 @@ pkg_install_list_find () {
 
 pkg_install_list_file_find () {
 	local line
+	local trim_line
 	main_env_get "install-list" | while IFS='' read -r line; do
+		trim_line=$(echo $line) # trim
+
 		## ignore leading #
-		if [ "${line:1:1}" == '#' ]; then
+		if [ "${trim_line:0:1}" == '#' ]; then
 			continue;
 		fi
 
 		## ignore empty line
-		if [[ -z "$line" ]]; then
+		if [[ -z "$trim_line" ]]; then
 			continue;
 		fi
 
-		echo $line
+		echo "$line"
 	done
 
 }
@@ -78,18 +81,21 @@ pkg_remove_list_find () {
 
 pkg_remove_list_file_find () {
 	local line
+	local trim_line
 	main_env_get "remove-list" | while IFS='' read -r line; do
+		trim_line=$(echo $line) # trim
+
 		## ignore leading #
-		if [ "${line:1:1}" == '#' ]; then
+		if [ "${trim_line:0:1}" == '#' ]; then
 			continue;
 		fi
 
 		## ignore empty line
-		if [[ -z "$line" ]]; then
+		if [[ -z "$trim_line" ]]; then
 			continue;
 		fi
 
-		echo $line
+		echo "$line"
 	done
 
 }
