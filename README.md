@@ -23,3 +23,10 @@
 * [paly-lxqt](plan/de-basic/play-lxqt)
 * [paly-xfce](plan/de-basic/play-xfce)
 * [paly-gnome](plan/de-basic/play-gnome)
+
+
+## Project
+
+### de-basic
+
+* [paly-i3](plan/de-basic/play-i3/prj/play-i3/app/usr/share/play-i3)
