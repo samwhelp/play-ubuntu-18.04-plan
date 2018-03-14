@@ -16,6 +16,23 @@ i3_config_install () {
 ### Tail: i3 ###################################################################
 
 
+### Head: compton ###################################################################
+#
+compton_config_install () {
+
+	## $ dpkg -L compton | grep conf
+	## /usr/share/doc/compton/examples/compton.sample.conf
+
+	## cp $(dpkg -L compton | grep conf) ~/.config/compton.conf
+
+	echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/compton.conf"
+	cp "/usr/share/doc/compton/examples/compton.sample.conf" $HOME/.config/compton.conf
+
+}
+#
+### Tail: compton ###################################################################
+
+
 ### Head: rofi #################################################################
 #
 rofi_config_install () {
@@ -82,7 +99,10 @@ gtk2_config_install () {
 ### Head: main #################################################################
 #
 main_config_install () {
+
 	i3_config_install
+
+	compton_config_install
 
 	rofi_config_install
 
@@ -91,6 +111,7 @@ main_config_install () {
 	gtk3_config_install
 
 	gtk2_config_install
+
 }
 #
 main_config_install
