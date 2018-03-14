@@ -11,42 +11,42 @@ util_debug_echo () {
 ### Head: util_debug ###########################################################
 
 
-### Head: util_main ############################################################
+### Head: main_func ############################################################
 #
-main_install () {
-	main_pkg_install
-	main_conf_set
+func_install () {
+	func_pkg_install
+	func_conf_set
 
 }
 
-main_remove () {
-	main_pkg_remove
-	main_conf_reset
+func_remove () {
+	func_pkg_remove
+	func_conf_reset
 
 }
 
-main_pkg_install () {
+func_pkg_install () {
 	sudo apt-get install $(util_pkg_install_load_all_sub_package_list)
 }
 
-main_pkg_remove () {
+func_pkg_remove () {
 	sudo apt-get purge $(util_pkg_remove_load_all_sub_package_list)
 }
 
-main_conf_set () {
+func_conf_set () {
 
 	util_conf_set_run_all_sub
 
 }
 
-main_conf_reset () {
+func_conf_reset () {
 
 	util_conf_reset_run_all_sub
 
 }
 
 
-main_help () {
+func_help () {
 	cat <<EOF
 
 Usage:
@@ -75,7 +75,7 @@ EOF
 }
 
 
-main_help_make () {
+func_help_make () {
 	cat <<EOF
 
 Usage:
@@ -100,9 +100,7 @@ EOF
 }
 
 #
-### Tail: util_main ############################################################
-
-
+### Tail: main_func ############################################################
 
 
 ### Head: util_sub_script ######################################################

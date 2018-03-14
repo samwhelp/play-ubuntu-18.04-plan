@@ -11,6 +11,10 @@ source "$THE_BASE_DIR_PATH/_init.sh"
 
 ### Head: main #################################################################
 #
+main_help_make () {
+	func_help_make
+}
+
 main_help_make
 #
 ### Tail: main #################################################################

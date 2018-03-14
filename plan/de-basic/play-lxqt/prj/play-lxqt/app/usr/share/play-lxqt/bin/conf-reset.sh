@@ -11,6 +11,10 @@ source "$THE_BASE_DIR_PATH/_init.sh"
 
 ### Head: main #################################################################
 #
+main_conf_reset () {
+	func_conf_reset
+}
+
 main_conf_reset
 #
 ### Tail: main #################################################################

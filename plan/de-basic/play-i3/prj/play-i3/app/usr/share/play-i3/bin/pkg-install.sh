@@ -11,6 +11,10 @@ source "$THE_BASE_DIR_PATH/_init.sh"
 
 ### Head: main #################################################################
 #
+main_pkg_install () {
+	func_pkg_install
+}
+
 main_pkg_install
 #
 ### Tail: main #################################################################

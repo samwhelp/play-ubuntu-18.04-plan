@@ -11,6 +11,10 @@ source "$THE_BASE_DIR_PATH/_init.sh"
 
 ### Head: main #################################################################
 #
+main_pkg_remove () {
+	func_pkg_remove
+}
+
 main_pkg_remove
 #
 ### Tail: main #################################################################
