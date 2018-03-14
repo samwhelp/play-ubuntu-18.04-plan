@@ -2,12 +2,12 @@
 
 ## init
 THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
-source "$THE_BASE_DIR_PATH/../share/play-lxqt/lib/_init.sh"
+source "$THE_BASE_DIR_PATH/../share/play-lxqt/ext/_init.sh"
 
 
 ##THE_BIN_DIR_PATH=/usr/share/play-lxqt/bin
-#echo $THE_BIN_DIR_PATH
-#PATH="$THE_BIN_DIR_PATH:$PATH"
+##echo $THE_BIN_DIR_PATH
+##PATH="$THE_BIN_DIR_PATH:$PATH"
 
 usage () {
 	#echo "mod-lxqt help"
