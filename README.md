@@ -30,3 +30,4 @@
 ### de-basic
 
 * [paly-i3](plan/de-basic/play-i3/prj/play-i3/app/usr/share/play-i3)
+* [paly-lxqt](plan/de-basic/play-lxqt/prj/play-lxqt/app/usr/share/play-lxqt)
