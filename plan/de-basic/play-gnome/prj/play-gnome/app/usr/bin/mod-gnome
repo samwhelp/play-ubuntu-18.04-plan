@@ -24,8 +24,8 @@ check_args_size () {
 
 check_cmd_exist () {
 	if is_cmd_not_exist $1; then
-		echo 'Command:' "$1"
-		echo 'File not exits:' "$AGENT"
+		echo "Command: $1"
+		echo "File_not_exits: $AGENT"
 		exit 1
 	fi
 
@@ -33,7 +33,7 @@ check_cmd_exist () {
 
 is_cmd_not_exist () {
 	local cmd=$1
-	AGENT="$THE_BIN_DIR_PATH/$cmd"".sh"
+	AGENT="$THE_BIN_DIR_PATH/${cmd}.sh"
 	! test -x "$AGENT"
 }
 
