@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 
 
-## init
+### Head: init #################################################################
+#
 THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 source "$THE_BASE_DIR_PATH/_init.sh"
+#
+### Tail: init #################################################################
 
 
-## main
+### Head: main #################################################################
+#
 main_deb_install () {
 	## prepare dir
 	base_dir_prepare
@@ -35,3 +39,5 @@ main_deb_install () {
 }
 
 main_deb_install "$@"
+#
+### Tail: main #################################################################

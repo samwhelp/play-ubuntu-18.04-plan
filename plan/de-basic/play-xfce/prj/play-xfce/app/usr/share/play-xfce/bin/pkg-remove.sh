@@ -1,14 +1,20 @@
 #!/usr/bin/env bash
 
 
-## init
+### Head: init #################################################################
+#
 THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 source "$THE_BASE_DIR_PATH/_init.sh"
+#
+### Tail: init #################################################################
 
 
-## main
+### Head: main #################################################################
+#
 main_pkg_remove () {
-	sudo apt-get purge $(pkg_remove_list_find)
+	func_pkg_remove
 }
 
-main_pkg_remove "$@"
+main_pkg_remove
+#
+### Tail: main #################################################################
