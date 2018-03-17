@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
+#if ! command -v phpx > /dev/null; then
+#	sudo apt-get install php-cli
+#fi
 
-## https://getcomposer.org/download/
+if ! type -p php > /dev/null; then
+	sudo apt-get install php-cli
+fi
+
 
 echo "mkdir -p $HOME/bin"
 mkdir -p $HOME/bin
@@ -17,10 +23,12 @@ if [ -e $HOME/bin/composer ]; then
 	exit 1
 fi
 
+
 #echo "wget -c "https://getcomposer.org/download/1.6.3/composer.phar" -O $HOME/bin/composer"
 #wget -c "https://getcomposer.org/download/1.6.3/composer.phar" -O $HOME/bin/composer
 #chmod u+x $HOME/bin/composer
 
+## https://getcomposer.org/download/
 echo "wget -c "https://getcomposer.org/composer.phar" -O $HOME/bin/composer"
 wget -c "https://getcomposer.org/composer.phar" -O $HOME/bin/composer
 chmod u+x $HOME/bin/composer
@@ -32,3 +40,6 @@ $HOME/bin/composer self-update
 
 echo "composer --version"
 composer --version
+
+
+## ~/.config/composer/
