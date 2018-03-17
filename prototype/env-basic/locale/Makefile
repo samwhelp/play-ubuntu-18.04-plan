@@ -9,18 +9,18 @@ help:
 	@echo '	$$ make'
 	@echo '	$$ make help'
 	@echo
-	@echo '	$$ make us'
+	@echo '	$$ make en_us'
 	@echo
-	@echo '	$$ make tw'
+	@echo '	$$ make zh_tw'
 	@echo
 .PHONY: help
 
 
-us:
-	@./us-install.sh
-.PHONY: us
+en_us:
+	@./en_us-install.sh
+.PHONY: en_us
 
 
-tw:
-	@./tw-install.sh
-.PHONY: tw
+zh_tw:
+	@./zh_tw-install.sh
+.PHONY: zh_tw
