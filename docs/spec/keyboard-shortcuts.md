@@ -11,3 +11,14 @@
 * **[Alt]+[Shift]+g**: Launch File Manager (nautilus)
 * **[Alt]+[Shift]+b**: Launch Web Browser (firefox)
 * **[Alt]+[Shift]+e**: Launch Text Editor (gedit)
+
+
+## Workspace:
+
+* **[Alt]+[0-9]**: switch to another workspace
+* **[Alt]+[Shift]+[0-9]**: move a window to another workspace
+
+
+## Reference
+
+* [i3 Reference Card](https://i3wm.org/docs/refcard.html)
