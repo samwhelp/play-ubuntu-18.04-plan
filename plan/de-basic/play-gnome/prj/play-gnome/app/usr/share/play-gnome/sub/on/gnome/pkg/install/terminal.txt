@@ -1,0 +1,3 @@
+qterminal
+tilix
+gnome-terminal
