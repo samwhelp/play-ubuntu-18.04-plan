@@ -33,3 +33,8 @@
 * [play-lxqt](plan/de-basic/play-lxqt/prj/play-lxqt/app/usr/share/play-lxqt)
 * [play-xfce](plan/de-basic/play-xfce/prj/play-xfce/app/usr/share/play-xfce)
 * [play-gnome](plan/de-basic/play-gnome/prj/play-gnome/app/usr/share/play-gnome)
+
+
+## Docs
+
+* [Keyboard Shortcuts](docs/spec/keyboard-shortcuts)
