@@ -1,0 +1,4 @@
+firefox
+chromium-browser
+lynx
+w3m

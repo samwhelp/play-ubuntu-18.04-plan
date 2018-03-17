@@ -1,0 +1,6 @@
+tree
+ranger
+uchardet
+python3-chardet
+convmv
+opencc

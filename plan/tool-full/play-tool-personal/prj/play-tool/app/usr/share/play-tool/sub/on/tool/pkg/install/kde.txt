@@ -1,0 +1,3 @@
+kate
+k3b
+okular
