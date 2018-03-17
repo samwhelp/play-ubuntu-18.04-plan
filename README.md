@@ -37,4 +37,4 @@
 
 ## Docs
 
-* [Keyboard Shortcuts](docs/spec/keyboard-shortcuts)
+* [Keyboard Shortcuts](docs/spec/keyboard-shortcuts.md)
