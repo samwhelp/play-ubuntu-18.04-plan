@@ -38,3 +38,11 @@
 ## Docs
 
 * [Keyboard Shortcuts](docs/spec/keyboard-shortcuts.md)
+
+
+## Input Method (IM)
+
+* [gcin](prototype/im-basic/gcin)
+* [hime](prototype/im-basic/hime)
+* [fcitx-chwing](prototype/im-basic/fcitx-chwing)
+* [ibus-chewing](prototype/im-basic/ibus-chewing)
