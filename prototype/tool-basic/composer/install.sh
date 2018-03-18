@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#if ! command -v phpx > /dev/null; then
+#if ! command -v php > /dev/null; then
 #	sudo apt-get install php-cli
 #fi
 
