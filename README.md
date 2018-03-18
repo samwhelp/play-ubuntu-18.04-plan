@@ -44,5 +44,5 @@
 
 * [gcin](prototype/im-basic/gcin)
 * [hime](prototype/im-basic/hime)
-* [fcitx-chwing](prototype/im-basic/fcitx-chwing)
+* [fcitx-chewing](prototype/im-basic/fcitx-chewing)
 * [ibus-chewing](prototype/im-basic/ibus-chewing)
