@@ -5,9 +5,9 @@
 
 echo
 echo "mkdir -p $HOME/bin"
-mkdir -p $HOME/bin
+mkdir -p "$HOME/bin"
 
-if [ -e $HOME/bin/youtube-dl ]; then
+if [ -e "$HOME/bin/youtube-dl" ]; then
 	echo
 	echo "File_exist: $HOME/bin/youtube-dl"
 	echo "Please remove it frist:"
@@ -27,9 +27,10 @@ chmod u+x "$HOME/bin/youtube-dl"
 
 echo
 echo "$HOME/bin/youtube-dl --update"
-$HOME/bin/youtube-dl --update
+"$HOME/bin/youtube-dl" --update
 
 
 echo
 echo "$HOME/bin/youtube-dl --version"
-$HOME/bin/youtube-dl --version
+"$HOME/bin/youtube-dl" --version
+#youtube-dl --version

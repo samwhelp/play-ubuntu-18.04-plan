@@ -5,12 +5,14 @@
 #fi
 
 if ! type -p php > /dev/null; then
+	echo "sudo apt-get install php-cli"
 	sudo apt-get install php-cli
 fi
 
 
+echo
 echo "mkdir -p $HOME/bin"
-mkdir -p $HOME/bin
+mkdir -p "$HOME/bin"
 
 if [ -e $HOME/bin/composer ]; then
 	echo
@@ -29,17 +31,21 @@ fi
 #chmod u+x $HOME/bin/composer
 
 ## https://getcomposer.org/download/
+echo
 echo "wget -c "https://getcomposer.org/composer.phar" -O $HOME/bin/composer"
 wget -c "https://getcomposer.org/composer.phar" -O $HOME/bin/composer
-chmod u+x $HOME/bin/composer
+chmod u+x "$HOME/bin/composer"
 
 
+echo
 echo "$HOME/bin/composer self-update"
-$HOME/bin/composer self-update
+"$HOME/bin/composer" self-update
 
 
+echo
 echo "composer --version"
-composer --version
+"$HOME/bin/composer" --version
+#composer --version
 
 
 ## ~/.config/composer/
