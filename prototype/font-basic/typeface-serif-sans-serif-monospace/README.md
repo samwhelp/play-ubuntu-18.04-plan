@@ -8,6 +8,7 @@
 
 ## Article
 
+* http://samwhelp.github.io/book-ubuntu-qna/read/howto/configure-font/fontconfig/
 * https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=333554#forumpost333554
 * https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=358532#forumpost358532
 * https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=357226#forumpost357226
