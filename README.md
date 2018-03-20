@@ -46,3 +46,8 @@
 * [hime](prototype/im-basic/hime)
 * [fcitx-chewing](prototype/im-basic/fcitx-chewing)
 * [ibus-chewing](prototype/im-basic/ibus-chewing)
+
+
+## Note
+
+* https://samwhelp.github.io/note-ubuntu-18.04/read/howto/install/
