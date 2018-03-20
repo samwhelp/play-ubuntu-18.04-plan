@@ -39,7 +39,6 @@ debichem-molecular-abinitio
 debichem-molecular-dynamics
 debichem-periodic-abinitio
 edubuntu-desktop
-edubuntu-server-container
 fonts-indic
 forensics-all
 forensics-extra
@@ -99,6 +98,7 @@ junior-games-adventure
 junior-games-arcade
 junior-games-puzzle
 junior-video
+jupyter
 kdeaccessibility
 kdeadmin
 kdeedu
@@ -107,6 +107,7 @@ kdegames
 kdegraphics
 kdemultimedia
 kdenetwork
+kdepim
 kde-plasma-desktop
 kdesdk
 kde-standard
@@ -120,6 +121,10 @@ kubuntu-restricted-extras
 libavfilter-extra
 libgdal-grass
 libpbseq
+linux-headers-kvm
+linux-image-kvm
+linux-kvm
+linux-tools-kvm
 live-manual
 lubuntu-core
 lubuntu-desktop
@@ -129,7 +134,6 @@ lubuntu-qt-core
 lubuntu-qt-desktop
 lubuntu-restricted-addons
 lubuntu-restricted-extras
-lxc2
 lxqt
 lxqt-core
 med-all
@@ -178,15 +182,18 @@ ros-viz
 ros-viz-dev
 ros-viz-python-dev
 sc3-plugins
+science-all
 science-dataacquisition-dev
 science-economics
 science-financial
 science-geometry
+science-imageanalysis-dev
 science-logic
 science-presentation
 science-robotics-dev
 science-social
 science-viewing-dev
+science-workflow
 sucrose
 ubuntu-benchmark-tools
 ubuntu-budgie-desktop
@@ -224,6 +231,7 @@ ubuntustudio-graphics
 ubuntustudio-photography
 ubuntustudio-publishing
 ubuntustudio-video
+ubuntu-unity-desktop
 ubuntu-wallpapers
 unison-all
 unison-all-gtk
