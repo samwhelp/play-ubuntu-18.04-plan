@@ -1,0 +1,12 @@
+play-tool/debian/play-tool
+play-tool/debian/.debhelper
+play-tool/debian/*.debhelper.log
+play-tool/debian/*.substvars
+play-tool/debian/files
+
+*.deb
+*.build
+*.buildinfo
+*.changes
+*.dsc
+*.tar.gz

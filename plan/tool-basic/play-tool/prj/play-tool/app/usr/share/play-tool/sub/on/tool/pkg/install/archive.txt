@@ -1,0 +1,6 @@
+zip
+unzip
+rar
+unrar
+p7zip-full
+p7zip-rar

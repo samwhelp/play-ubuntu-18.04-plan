@@ -1,0 +1,6 @@
+apt-file
+dpkg-dev
+gdebi-core
+gdebi
+aptitude
+apt-transport-https
