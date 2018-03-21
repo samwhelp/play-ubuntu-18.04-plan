@@ -15,13 +15,13 @@
 ### [ubuntu-wallpapers](ubuntu-wallpapers.md)
 
 ``` sh
-$ apt-cache showsrc ubuntu-wallpapers | grep '^Binary:' | awk -F ': ' '{print $2}' | sed 's/, /\n/g' | sort
+$ apt-cache showsrc ubuntu-wallpapers | grep '^Binary:' | awk -F ': ' '{print $2}' | sed 's/, /\n/g' | sort -u
 ```
 
 ``` sh
-$ apt-cache showsrc ubuntu-wallpapers | grep '^Binary:' | awk -F ': ' '{print $2}' | sed 's/, /\n/g' | sort | awk '{printf "* [%s](https://packages.ubuntu.com/bionic/%s)\n", $1, $1}'
+$ apt-cache showsrc ubuntu-wallpapers | grep '^Binary:' | awk -F ': ' '{print $2}' | sed 's/, /\n/g' | sort -u | awk '{printf "* [%s](https://packages.ubuntu.com/bionic/%s)\n", $1, $1}'
 ```
 
 ``` sh
-$ apt-cache showsrc ubuntu-wallpapers | grep '^Binary:' | awk -F ': ' '{print $2}' | sed 's/, /\n/g' | sort | awk '{printf "* [%s](https://packages.ubuntu.com/bionic/%s)\n", $1, $1}' > ubuntu-wallpapers.md
+$ apt-cache showsrc ubuntu-wallpapers | grep '^Binary:' | awk -F ': ' '{print $2}' | sed 's/, /\n/g' | sort -u | awk '{printf "* [%s](https://packages.ubuntu.com/bionic/%s)\n", $1, $1}' > ubuntu-wallpapers.md
 ```
