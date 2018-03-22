@@ -4,13 +4,13 @@
 #
 gnome_terminal_conf_set () {
 	echo
-	echo "### Head: gnome_terminal_conf_set ########################################################"
+	echo "### Head: gnome_terminal_conf_set ##############################################"
 	echo "#"
 
 	gnome_terminal_conf_set_config
 
 	echo "#"
-	echo "### Tail: gnome_terminal_conf_set ########################################################"
+	echo "### Tail: gnome_terminal_conf_set ##############################################"
 	echo
 }
 #

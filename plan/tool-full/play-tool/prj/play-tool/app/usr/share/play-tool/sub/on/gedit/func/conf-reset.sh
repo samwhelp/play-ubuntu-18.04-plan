@@ -4,13 +4,13 @@
 #
 gedit_conf_reset () {
 	echo
-	echo "### Head: gedit_conf_reset ######################################################"
+	echo "### Head: gedit_conf_reset #####################################################"
 	echo "#"
 
 	gedit_conf_reset_config
 
 	echo "#"
-	echo "### Tail: gedit_conf_reset ######################################################"
+	echo "### Tail: gedit_conf_reset #####################################################"
 	echo
 }
 #

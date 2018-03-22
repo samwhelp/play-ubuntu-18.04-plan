@@ -4,13 +4,13 @@
 #
 gnome_terminal_conf_reset () {
 	echo
-	echo "### Head: gnome_terminal_conf_reset ######################################################"
+	echo "### Head: gnome_terminal_conf_reset ############################################"
 	echo "#"
 
 	gnome_terminal_conf_reset_config
 
 	echo "#"
-	echo "### Tail: gnome_terminal_conf_reset ######################################################"
+	echo "### Tail: gnome_terminal_conf_reset ############################################"
 	echo
 }
 #

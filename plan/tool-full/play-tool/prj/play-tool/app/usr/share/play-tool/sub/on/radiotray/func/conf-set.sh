@@ -4,14 +4,14 @@
 #
 radiotray_conf_set () {
 	echo
-	echo "### Head: radiotray_conf_set ########################################################"
+	echo "### Head: radiotray_conf_set ###################################################"
 	echo "#"
 
 	radiotray_conf_set_dir_create
 	radiotray_conf_set_config
 
 	echo "#"
-	echo "### Tail: radiotray_conf_set ########################################################"
+	echo "### Tail: radiotray_conf_set ###################################################"
 	echo
 }
 #

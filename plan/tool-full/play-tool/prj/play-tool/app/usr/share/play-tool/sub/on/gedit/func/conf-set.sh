@@ -4,13 +4,13 @@
 #
 gedit_conf_set () {
 	echo
-	echo "### Head: gedit_conf_set ########################################################"
+	echo "### Head: gedit_conf_set #######################################################"
 	echo "#"
 
 	gedit_conf_set_config
 
 	echo "#"
-	echo "### Tail: gedit_conf_set ########################################################"
+	echo "### Tail: gedit_conf_set #######################################################"
 	echo
 }
 #
