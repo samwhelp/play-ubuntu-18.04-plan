@@ -1,6 +1,6 @@
 # play-ubuntu-18.04-plan
 
-[play-ubuntu-18.04-plan](https://github.com/samwhelp/play-ubuntu-18.04-plan)
+* [Ubuntu 18.04 (Bionic Beaver) Install Script](https://github.com/samwhelp/play-ubuntu-18.04-plan)
 
 
 ## Prototype
