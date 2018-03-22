@@ -48,6 +48,11 @@
 * [ibus-chewing](prototype/im-basic/ibus-chewing)
 
 
+## Tool
+
+* [prototype/tool-basic](prototype/tool-basic)
+
+
 ## Note
 
 * https://samwhelp.github.io/note-ubuntu-18.04/read/howto/install/
