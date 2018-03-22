@@ -1,1 +1,2 @@
 fcitx-chewing
+chewing-editor
