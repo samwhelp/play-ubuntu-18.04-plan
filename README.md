@@ -51,6 +51,8 @@
 ## Tool
 
 * [prototype/tool-basic](prototype/tool-basic)
+* [plan/tool-basic/play-tool](plan/tool-basic/play-tool)
+* [plan/tool-full/play-tool](plan/tool-full/play-tool)
 
 
 ## Note
