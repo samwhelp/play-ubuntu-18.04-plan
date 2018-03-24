@@ -11,7 +11,7 @@ find_dir_path () {
 ##THIS_BASE_DIR_PATH=$(find_dir_path $0)
 
 is_debug () {
-	if [ "$DEBUG_PLAY_XFCE" = "true" ]; then
+	if [ "$DEBUG_PLAY_TOOL" = "true" ]; then
 		return 0
 	fi
 
@@ -31,6 +31,9 @@ base_var_init () {
 	THE_BIN_DIR_NAME="bin"
 	THE_BIN_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_BIN_DIR_NAME"
 
+	THE_EXT_DIR_NAME="ext"
+	THE_EXT_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_EXT_DIR_NAME"
+
 	THE_PRJ_DIR_NAME="prj"
 	THE_PRJ_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_PRJ_DIR_NAME"
 
@@ -38,7 +41,7 @@ base_var_init () {
 	THE_WWW_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_WWW_DIR_NAME"
 
 
-	THE_MAIN_DIR_NAME="play-xfce"
+	THE_MAIN_DIR_NAME="play-tool"
 	THE_MAIN_DIR_PATH="$THE_PRJ_DIR_PATH/$THE_MAIN_DIR_NAME"
 
 	THE_VAR_DIR_NAME="var"
@@ -47,7 +50,7 @@ base_var_init () {
 	THE_DEB_DIR_NAME="deb"
 	THE_DEB_DIR_PATH="$THE_VAR_DIR_PATH/$THE_DEB_DIR_NAME"
 
-	THE_DEB_PKG_NAME="play-xfce"
+	THE_DEB_PKG_NAME="play-tool"
 	THE_DEB_EXT_NAME="deb"
 	THE_DEB_FILE_NAME="$THE_DEB_PKG_NAME.$THE_DEB_EXT_NAME"
 	THE_DEB_FILE_PATH="$THE_DEB_DIR_PATH/$THE_DEB_FILE_NAME"
@@ -69,6 +72,9 @@ base_var_dump () {
 
 	echo "THE_BIN_DIR_NAME=$THE_BIN_DIR_NAME"
 	echo "THE_BIN_DIR_PATH=$THE_BIN_DIR_PATH"
+
+	echo "THE_EXT_DIR_NAME=$THE_EXT_DIR_NAME"
+	echo "THE_EXT_DIR_PATH=$THE_EXT_DIR_PATH"
 
 	echo "THE_PRJ_DIR_NAME=$THE_PRJ_DIR_NAME"
 	echo "THE_PRJ_DIR_PATH=$THE_PRJ_DIR_PATH"
