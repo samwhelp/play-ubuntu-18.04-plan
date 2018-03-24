@@ -4,7 +4,7 @@
 
 ## Prototype
 
-* [prototype/de-basic/play-software](../../../prototype/de-basic/play-software)
+* [prototype/tool-basic](../../../prototype/tool-basic)
 
 
 ## How to make deb-src package
