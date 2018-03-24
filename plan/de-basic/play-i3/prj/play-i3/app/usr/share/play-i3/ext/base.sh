@@ -29,22 +29,24 @@ base_var_init () {
 	THE_MAIN_CMD_NAME="mod-i3"
 
 
-	THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/../.") ## /usr/share/play-lxqt
+	THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/../.") ## /usr/share/play-i3
 
 
 	THE_BIN_DIR_NAME="bin"
-	THE_BIN_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_BIN_DIR_NAME" ## /usr/share/play-lxqt/bin
+	THE_BIN_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_BIN_DIR_NAME" ## /usr/share/play-i3/bin
+
+	THE_EXT_DIR_NAME="ext"
+	THE_EXT_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_EXT_DIR_NAME" ## /usr/share/play-i3/ext
 
 
 	THE_SUB_DIR_NAME="sub"
-	THE_SUB_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_SUB_DIR_NAME" ## /usr/share/play-lxqt/sub
+	THE_SUB_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_SUB_DIR_NAME" ## /usr/share/play-i3/sub
 
 	THE_SUB_ON_DIR_NAME="on"
-	THE_SUB_ON_DIR_PATH="$THE_SUB_DIR_PATH/$THE_SUB_ON_DIR_NAME" ## /usr/share/play-lxqt/sub/on
+	THE_SUB_ON_DIR_PATH="$THE_SUB_DIR_PATH/$THE_SUB_ON_DIR_NAME" ## /usr/share/play-i3/sub/on
 
 	THE_SUB_ALL_DIR_NAME="all"
-	THE_SUB_ALL_DIR_PATH="$THE_SUB_DIR_PATH/$THE_SUB_ALL_DIR_NAME" ## /usr/share/play-lxqt/sub/all
-
+	THE_SUB_ALL_DIR_PATH="$THE_SUB_DIR_PATH/$THE_SUB_ALL_DIR_NAME" ## /usr/share/play-i3/sub/all
 
 
 	THE_XDG_CONFIG_DIR_NAME=".config"
@@ -68,10 +70,15 @@ base_var_dump () {
 	echo "THE_PRJ_NAME=$THE_PRJ_NAME"
 	echo "THE_MAIN_CMD_NAME=$THE_MAIN_CMD_NAME"
 
+
 	echo "THE_PLAN_DIR_PATH=$THE_PLAN_DIR_PATH"
+
 
 	echo "THE_BIN_DIR_NAME=$THE_BIN_DIR_NAME"
 	echo "THE_BIN_DIR_PATH=$THE_BIN_DIR_PATH"
+
+	echo "THE_EXT_DIR_NAME=$THE_EXT_DIR_NAME"
+	echo "THE_EXT_DIR_PATH=$THE_EXT_DIR_PATH"
 
 	echo "THE_SUB_DIR_NAME=$THE_SUB_DIR_NAME"
 	echo "THE_SUB_DIR_PATH=$THE_SUB_DIR_PATH"

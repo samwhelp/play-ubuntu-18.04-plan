@@ -8,4 +8,4 @@ base_var_init
 
 base_var_dump
 
-source "$THE_BASE_DIR_PATH/func.sh"
+source "$THE_EXT_DIR_PATH/func.sh"
