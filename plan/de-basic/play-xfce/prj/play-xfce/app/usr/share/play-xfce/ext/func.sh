@@ -14,23 +14,56 @@ util_debug_echo () {
 ### Head: main_func ############################################################
 #
 func_install () {
+
 	func_pkg_install
 	func_conf_set
 
 }
 
 func_remove () {
+
 	func_pkg_remove
 	func_conf_reset
 
 }
 
+
 func_pkg_install () {
-	sudo apt-get install $(util_pkg_install_load_all_sub_package_list)
+
+	func_app_install
+	func_apt_install
+
 }
 
 func_pkg_remove () {
+
+	func_app_remove
+	func_apt_remove
+
+}
+
+func_app_install () {
+
+	util_app_install_run_all_sub
+
+}
+
+func_app_remove () {
+
+	util_app_remove_run_all_sub
+
+}
+
+func_apt_install () {
+
+	sudo apt-get install $(util_pkg_install_load_all_sub_package_list)
+
+}
+
+func_apt_remove () {
+
 	sudo apt-get purge $(util_pkg_remove_load_all_sub_package_list)
+
 }
 
 func_conf_set () {
@@ -158,6 +191,98 @@ util_run_sub_module_function () {
 ### Tail: util_sub_script ######################################################
 
 
+
+
+### Head: util_app_install ########################################################
+#
+## Ex: util_app_install_run_each_sub 'xfce' 'rofi' 'fcitx' 'gtk3' 'gtk2'
+util_app_install_run_each_sub () {
+	local sub_name
+	local module_name
+	local function_name
+
+	for sub_name in "$@"; do
+		#echo "$sub_name"
+		module_name='app_install'
+		function_name="${sub_name}_app_install"
+
+		## util_run_sub_module_function "$sub_name" "$module_name" "$function_name"
+		## use [!] for [set -e]
+		! util_run_sub_module_function "$sub_name" "$module_name" "$function_name"
+	done
+}
+
+util_app_install_run_all_sub () {
+	local sub_name
+	local module_name
+	local function_name
+
+	## pwd
+	cd $THE_SUB_ON_DIR_PATH
+
+	for sub_name in *; do
+		#echo "$sub_name"
+
+		module_name='app_install'
+		function_name="${sub_name}_app_install"
+
+		! util_run_sub_module_function "$sub_name" "$module_name" "$function_name"
+
+	done
+
+	## pwd
+	cd "$OLDPWD"
+	## pwd
+
+	## $ man cd
+	##  know
+	## $ cd -
+	## 	equal
+	## $ cd "$OLDPWD" && pwd
+
+}
+#
+### Tail: util_app_install ########################################################
+
+
+### Head: util_app_remove ######################################################
+#
+## Ex: util_app_remove_run_each_sub 'xfce' 'rofi' 'fcitx' 'gtk3' 'gtk2'
+util_app_remove_run_each_sub () {
+	local sub_name
+	local module_name
+	local function_name
+
+	for sub_name in "$@"; do
+		module_name='app_remove'
+		function_name="${sub_name}_app_remove"
+
+		! util_run_sub_module_function "$sub_name" "$module_name" "$function_name"
+	done
+}
+
+util_app_remove_run_all_sub () {
+	local sub_name
+	local module_name
+	local function_name
+
+	cd $THE_SUB_ON_DIR_PATH
+
+	for sub_name in *; do
+		module_name='app_remove'
+		function_name="${sub_name}_app_remove"
+
+		! util_run_sub_module_function "$sub_name" "$module_name" "$function_name"
+	done
+
+	cd "$OLDPWD"
+}
+#
+### Tail: util_app_remove ######################################################
+
+
+
+
 ### Head: util_conf_set ########################################################
 #
 ## Ex: util_conf_set_run_each_sub 'xfce' 'rofi' 'fcitx' 'gtk3' 'gtk2'
@@ -168,7 +293,7 @@ util_conf_set_run_each_sub () {
 
 	for sub_name in "$@"; do
 		#echo "$sub_name"
-		module_name='conf-set'
+		module_name='conf_set'
 		function_name="${sub_name}_conf_set"
 
 		## util_run_sub_module_function "$sub_name" "$module_name" "$function_name"
@@ -188,7 +313,7 @@ util_conf_set_run_all_sub () {
 	for sub_name in *; do
 		#echo "$sub_name"
 
-		module_name='conf-set'
+		module_name='conf_set'
 		function_name="${sub_name}_conf_set"
 
 		! util_run_sub_module_function "$sub_name" "$module_name" "$function_name"
@@ -219,7 +344,7 @@ util_conf_reset_run_each_sub () {
 	local function_name
 
 	for sub_name in "$@"; do
-		module_name='conf-reset'
+		module_name='conf_reset'
 		function_name="${sub_name}_conf_reset"
 
 		! util_run_sub_module_function "$sub_name" "$module_name" "$function_name"
@@ -234,7 +359,7 @@ util_conf_reset_run_all_sub () {
 	cd $THE_SUB_ON_DIR_PATH
 
 	for sub_name in *; do
-		module_name='conf-reset'
+		module_name='conf_reset'
 		function_name="${sub_name}_conf_reset"
 
 		! util_run_sub_module_function "$sub_name" "$module_name" "$function_name"
