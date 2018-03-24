@@ -7,7 +7,7 @@ chrome_app_remove () {
 	echo "### Head: chrome_app_remove ######################################################"
 	echo "#"
 
-	## chrome_app_remove_apt_remove
+	chrome_app_remove_apt_remove
 
 	echo "#"
 	echo "### Tail: chrome_app_remove ######################################################"
@@ -20,8 +20,8 @@ chrome_app_remove () {
 ### Head: chrome #################################################################
 #
 chrome_app_remove_apt_remove () {
-	echo "sudo apt-get remove google-chrome-stable"
-	sudo apt-get remove google-chrome-stable
+	echo "sudo apt-get purge google-chrome-stable"
+	sudo apt-get purge google-chrome-stable
 }
 #
 ### Tail: main #################################################################
