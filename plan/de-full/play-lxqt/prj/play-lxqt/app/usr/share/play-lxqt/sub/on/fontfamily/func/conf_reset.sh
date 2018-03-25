@@ -4,7 +4,7 @@
 #
 fontfamily_conf_reset () {
 	echo
-	echo "### Head: fontfamily_conf_reset ######################################################"
+	echo "### Head: fontfamily_conf_reset ################################################"
 	echo "#"
 
 	fontfamily_conf_reset_dir_create
@@ -12,14 +12,14 @@ fontfamily_conf_reset () {
 	fontfamily_conf_reset_info
 
 	echo "#"
-	echo "### Tail: fontfamily_conf_reset ######################################################"
+	echo "### Tail: fontfamily_conf_reset ################################################"
 	echo
 }
 #
 ### Tail: main #################################################################
 
 
-### Head: fontfamily ################################################################
+### Head: fontfamily ###########################################################
 #
 fontfamily_conf_reset_dir_create () {
 	echo "mkdir -p $HOME/.config/fontconfig"
@@ -65,4 +65,4 @@ fontfamily_conf_reset_info () {
 
 }
 #
-### Tail: fontfamily ################################################################
+### Tail: fontfamily ###########################################################

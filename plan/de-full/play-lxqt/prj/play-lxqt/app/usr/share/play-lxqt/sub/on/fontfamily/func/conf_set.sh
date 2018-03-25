@@ -4,7 +4,7 @@
 #
 fontfamily_conf_set () {
 	echo
-	echo "### Head: fontfamily_conf_set ########################################################"
+	echo "### Head: fontfamily_conf_set ##################################################"
 	echo "#"
 
 	fontfamily_conf_set_dir_create
@@ -12,14 +12,14 @@ fontfamily_conf_set () {
 	fontfamily_conf_set_info
 
 	echo "#"
-	echo "### Tail: fontfamily_conf_set ########################################################"
+	echo "### Tail: fontfamily_conf_set ##################################################"
 	echo
 }
 #
 ### Tail: main #################################################################
 
 
-### Head: fontfamily ################################################################
+### Head: fontfamily ###########################################################
 #
 fontfamily_conf_set_dir_create () {
 	echo "mkdir -p $HOME/.config/fontconfig"
@@ -64,4 +64,4 @@ fontfamily_conf_set_info () {
 	echo "fc-match -a serif | less"
 }
 #
-### Tail: fontfamily ################################################################
+### Tail: fontfamily ###########################################################

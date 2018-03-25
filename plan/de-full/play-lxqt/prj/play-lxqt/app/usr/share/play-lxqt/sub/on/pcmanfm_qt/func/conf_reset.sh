@@ -4,14 +4,14 @@
 #
 pcmanfm_qt_conf_reset () {
 	echo
-	echo "### Head: pcmanfm_qt_conf_reset #################################################"
+	echo "### Head: pcmanfm_qt_conf_reset ################################################"
 	echo "#"
 
 	pcmanfm_qt_conf_reset_dir_create
 	pcmanfm_qt_conf_reset_config
 
 	echo "#"
-	echo "### Tail: pcmanfm_qt_conf_reset #################################################"
+	echo "### Tail: pcmanfm_qt_conf_reset ################################################"
 	echo
 }
 #
