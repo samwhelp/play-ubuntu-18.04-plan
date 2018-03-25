@@ -104,6 +104,24 @@ Manpage:
 
 $ man $THE_MAIN_CMD_NAME
 
+Debug:
+
+$ export DEBUG_PLAY_SOFTWARE=true
+
+Sub:
+
+$ $THE_MAIN_CMD_NAME sub:atom/install
+$ $THE_MAIN_CMD_NAME sub:atom/remove
+
+$ $THE_MAIN_CMD_NAME sub:chrome/install
+$ $THE_MAIN_CMD_NAME sub:chrome/remove
+
+$ $THE_MAIN_CMD_NAME sub:composer/install
+$ $THE_MAIN_CMD_NAME sub:composer/remove
+
+$ $THE_MAIN_CMD_NAME sub:youtube_dl/install
+$ $THE_MAIN_CMD_NAME sub:youtube_dl/remove
+
 EOF
 }
 
