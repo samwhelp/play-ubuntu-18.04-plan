@@ -1,0 +1,4 @@
+hime
+hime-qt5-immodule
+hime-anthy
+hime-chewing

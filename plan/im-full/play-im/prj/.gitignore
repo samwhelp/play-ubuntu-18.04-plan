@@ -1,0 +1,12 @@
+play-im/debian/play-im
+play-im/debian/.debhelper
+play-im/debian/*.debhelper.log
+play-im/debian/*.substvars
+play-im/debian/files
+
+*.deb
+*.build
+*.buildinfo
+*.changes
+*.dsc
+*.tar.gz

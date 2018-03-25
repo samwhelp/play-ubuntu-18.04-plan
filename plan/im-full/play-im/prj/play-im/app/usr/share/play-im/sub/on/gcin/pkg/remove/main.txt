@@ -1,0 +1,4 @@
+gcin
+gcin-qt5-immodule
+gcin-anthy
+gcin-voice
