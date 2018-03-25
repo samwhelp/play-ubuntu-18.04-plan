@@ -104,6 +104,21 @@ Manpage:
 
 $ man $THE_MAIN_CMD_NAME
 
+Debug:
+
+$ export DEBUG_PLAY_FONT=true
+
+Sub:
+
+$ $THE_MAIN_CMD_NAME sub:fontfamily/conf-set
+$ $THE_MAIN_CMD_NAME sub:fontfamily/conf-reset
+
+$ $THE_MAIN_CMD_NAME sub:noto/install
+$ $THE_MAIN_CMD_NAME sub:noto/remove
+
+$ $THE_MAIN_CMD_NAME sub:cns11643/install
+$ $THE_MAIN_CMD_NAME sub:cns11643/remove
+
 EOF
 }
 
