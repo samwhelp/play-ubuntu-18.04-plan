@@ -1,0 +1,12 @@
+play-font/debian/play-font
+play-font/debian/.debhelper
+play-font/debian/*.debhelper.log
+play-font/debian/*.substvars
+play-font/debian/files
+
+*.deb
+*.build
+*.buildinfo
+*.changes
+*.dsc
+*.tar.gz
