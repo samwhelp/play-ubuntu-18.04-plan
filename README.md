@@ -40,12 +40,21 @@
 * [Keyboard Shortcuts](docs/spec/keyboard-shortcuts.md)
 
 
+## Font
+
+* [prototype/font-basic](prototype/font-basic)
+* [prototype/font-apt](prototype/font-apt)
+* [prototype/font-wget](prototype/font-wget)
+* [plan/font-full/play-font](plan/font-full/play-font)
+
+
 ## Input Method (IM)
 
 * [gcin](prototype/im-basic/gcin)
 * [hime](prototype/im-basic/hime)
 * [fcitx-chewing](prototype/im-basic/fcitx-chewing)
 * [ibus-chewing](prototype/im-basic/ibus-chewing)
+* [plan/im-full/play-im](plan/im-full/play-im)
 
 
 ## Tool
