@@ -56,7 +56,7 @@ func_app_remove () {
 
 func_apt_install () {
 
-	sudo apt-get install $(util_pkg_install_load_all_sub_package_list)
+	sudo apt-get install $(util_pkg_install_load_all_sub_package_list) -y
 
 }
 
