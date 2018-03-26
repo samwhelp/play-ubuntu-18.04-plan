@@ -4,7 +4,7 @@
 
 ## Prototype
 
-* [prototype/de-basic/play-locale](../../../prototype/de-basic/play-locale)
+* [prototype/env-basic/locale](../../../prototype/env-basic/locale)
 
 
 ## How to make deb-src package

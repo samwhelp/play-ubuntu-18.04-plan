@@ -4,7 +4,7 @@
 
 ## Prototype
 
-* [prototype/de-basic/play-apt](../../../prototype/de-basic/play-apt)
+* [prototype/env-basic/apt-sources-list](../../../prototype/env-basic/apt-sources-list)
 
 
 ## How to make deb-src package

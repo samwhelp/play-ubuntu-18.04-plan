@@ -53,6 +53,8 @@
 
 ## Env
 
+* [prototype/env-basic/locale](prototype/env-basic/locale)
+* [prototype/env-basic/apt-sources-list](prototype/env-basic/apt-sources-list)
 * [plan/env-full/play-locale](plan/env-full/play-locale)
 * [plan/env-full/play-apt](plan/env-full/play-apt)
 
