@@ -3,6 +3,11 @@
 * [Ubuntu 18.04 (Bionic Beaver) Install Script](https://github.com/samwhelp/play-ubuntu-18.04-plan)
 
 
+## Docs
+
+* [Keyboard Shortcuts](docs/spec/keyboard-shortcuts.md)
+
+
 ## Prototype
 
 
@@ -46,9 +51,10 @@
 * [play-lxqt](plan/de-full/play-lxqt/prj/play-lxqt/app/usr/share/play-lxqt)
 
 
-## Docs
+## Env
 
-* [Keyboard Shortcuts](docs/spec/keyboard-shortcuts.md)
+* [plan/env-full/play-locale](plan/env-full/play-locale)
+* [plan/env-full/play-apt](plan/env-full/play-apt)
 
 
 ## Font
