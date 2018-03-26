@@ -5,6 +5,7 @@
 
 ## Docs
 
+* [Quick Start](docs/howto/start.md)
 * [Keyboard Shortcuts](docs/spec/keyboard-shortcuts.md)
 
 
