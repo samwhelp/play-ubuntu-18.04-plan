@@ -88,3 +88,8 @@
 ## Note
 
 * https://samwhelp.github.io/note-ubuntu-18.04/read/howto/install/
+
+
+## PPA
+
+* [play-ubuntu-18.04-ppa](https://samwhelp.github.io/play-ubuntu-18.04-ppa/) ([GitHub](https://github.com/samwhelp/play-ubuntu-18.04-ppa))
