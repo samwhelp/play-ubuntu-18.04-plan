@@ -1,0 +1,12 @@
+play-locale/debian/play-locale
+play-locale/debian/.debhelper
+play-locale/debian/*.debhelper.log
+play-locale/debian/*.substvars
+play-locale/debian/files
+
+*.deb
+*.build
+*.buildinfo
+*.changes
+*.dsc
+*.tar.gz

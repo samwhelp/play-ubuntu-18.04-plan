@@ -1,0 +1,199 @@
+#!/usr/bin/env bash
+
+
+### Head: init #################################################################
+#
+THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+THE_BASE_DIR_PATH="$THE_BASE_DIR_PATH/../share/play-locale/ext"
+source "$THE_BASE_DIR_PATH/init.sh"
+#
+### Tail: init #################################################################
+
+
+
+
+### Head: util_cmd #############################################################
+#
+is_cmd_file_exist () {
+	test -x "$1"
+}
+
+is_cmd_file_not_exist () {
+	! test -x "$1"
+}
+
+is_sub_cmd () {
+	local cmd=$(echo $1)
+	local prefix=${cmd:0:4}
+	## echo "$prefix"
+	test "$prefix" == "sub:"
+}
+
+#
+### Tail: util_cmd #############################################################
+
+
+
+
+### Head: sub_cmd ##############################################################
+#
+## Ex: sub_cmd_run "sub:demo/install"
+sub_cmd_run () {
+
+	local cmd="$1"
+	shift
+	local args="$@"
+
+
+	local sub_cmd=$(sub_cmd_find_name "$cmd")
+	local sub_cmd_file_path=$(sub_cmd_find_file_path "$sub_cmd")
+
+	if is_cmd_file_not_exist "$sub_cmd_file_path"; then
+		echo "sub_cmd_file_not_exist: ${sub_cmd_file_path}"
+		exit 1
+	fi
+
+	$sub_cmd_file_path "$args"
+
+	exit 0
+
+}
+
+## Ex: sub_cmd_find_name "sub:demo/install"
+sub_cmd_find_name () {
+	local cmd=$(echo $1)
+	local postfix=${cmd:4}
+	echo $postfix
+}
+
+## Ex: sub_cmd_find_file_path "demo/install"
+sub_cmd_find_file_path () {
+## Todo: 找出 sub/on/demo/bin/install.sh
+	local cmd=$(echo $1)
+	local sub_prj=$(sub_cmd_find_sub_prj_name "$cmd")
+	local sub_cmd=$(sub_cmd_find_sub_cmd_name "$cmd")
+
+	echo "$THE_SUB_ON_DIR_PATH/$sub_prj/$THE_BIN_DIR_NAME/${sub_cmd}.sh"
+
+}
+
+## Ex: sub_cmd_find_sub_prj_name "demo/install"
+sub_cmd_find_sub_prj_name () {
+	local cmd=$(echo $1)
+	echo $cmd | cut -d '/' -f 1
+}
+
+## Ex: sub_cmd_find_sub_cmd_name "demo/install"
+sub_cmd_find_sub_cmd_name () {
+	local cmd=$(echo $1)
+	local sub_cmd=$(echo $cmd | cut -d '/' -f 2)
+	echo $sub_cmd
+}
+
+#
+### Tail: sub_cmd ##############################################################
+
+
+
+
+### Head: top_cmd ##############################################################
+#
+## Ex: top_cmd_run "install"
+top_cmd_run () {
+
+	local cmd="$1"
+	shift
+	local args="$@"
+
+
+	local top_cmd=$(top_cmd_find_name "$cmd")
+	local top_cmd_file_path=$(top_cmd_find_file_path "$top_cmd")
+
+	if is_cmd_file_not_exist "$top_cmd_file_path"; then
+		echo "top_cmd_file_not_exist: ${top_cmd_file_path}"
+		exit 1
+	fi
+
+	$top_cmd_file_path "$args"
+
+	exit 0
+}
+
+## Ex: top_cmd_find_name "install"
+top_cmd_find_name () {
+	echo $1
+}
+
+## Ex: top_cmd_find_file_path "install"
+top_cmd_find_file_path () {
+	local cmd=$1
+	echo "$THE_BIN_DIR_PATH/${cmd}.sh"
+}
+#
+### Tail: top_cmd ##############################################################
+
+
+
+
+### Head: main #################################################################
+#
+
+main_usage () {
+	cd "$THE_BIN_DIR_PATH"
+	./help.sh
+}
+
+main_check_args_size () {
+	if [ $1 -le 0 ]; then
+		main_usage
+		exit 1
+	fi
+}
+
+main_run_cmd () {
+	if is_sub_cmd "$1"; then
+		sub_cmd_run "$@"
+	else
+		top_cmd_run "$@"
+	fi
+}
+
+
+
+## start
+
+main_check_args_size $#
+
+main_run_cmd "$@"
+
+#
+### Tail: main #################################################################
+
+
+### Head: demo #################################################################
+#
+
+#echo $*
+#echo $@
+#echo "$*"
+#echo "$@"
+
+demo_cmd_run () {
+	#echo $@
+	#echo "$@"
+
+	local cmd="$1"
+	shift
+	local args="$@"
+
+	#echo $args
+	#echo "$args"
+
+	#echo $cmd
+	#echo "$cmd"
+}
+
+#demo_cmd_run "$@"
+
+#
+### Tail: demo #################################################################
