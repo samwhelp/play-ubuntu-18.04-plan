@@ -108,6 +108,11 @@ Debug:
 
 $ export DEBUG_PLAY_LXQT=true
 
+Sub:
+
+$ $THE_MAIN_CMD_NAME sub:apt/src-tw
+$ $THE_MAIN_CMD_NAME sub:apt/src-us
+
 EOF
 }
 
