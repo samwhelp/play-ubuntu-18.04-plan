@@ -87,6 +87,7 @@
 
 ## Note
 
+* https://samwhelp.github.io/note-ubuntu-18.04/read/project/play-ubuntu-18.04-plan/
 * https://samwhelp.github.io/note-ubuntu-18.04/read/howto/install/
 
 

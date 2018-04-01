@@ -57,8 +57,14 @@ $ make deb-remove
 $ make deb-clean
 ```
 
+
 ## Debug Mode
 
 ``` sh
 $ export DEBUG_PLAY_IM=true
 ```
+
+
+## Note
+
+* https://samwhelp.github.io/note-ubuntu-18.04/read/project/play-ubuntu-18.04-plan/play-im/
