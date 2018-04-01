@@ -63,8 +63,3 @@ $ make deb-clean
 ``` sh
 $ export DEBUG_PLAY_LXQT=true
 ```
-
-
-## Note
-
-* https://samwhelp.github.io/note-ubuntu-18.04/read/project/play-ubuntu-18.04-plan/play-lxqt/

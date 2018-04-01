@@ -62,3 +62,8 @@ $ make deb-clean
 ``` sh
 $ export DEBUG_PLAY_I3=true
 ```
+
+
+## Note
+
+* https://samwhelp.github.io/note-ubuntu-18.04/read/project/play-ubuntu-18.04-plan/play-i3/

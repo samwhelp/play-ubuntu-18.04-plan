@@ -104,6 +104,10 @@ Manpage:
 
 $ man $THE_MAIN_CMD_NAME
 
+Debug:
+
+$ export DEBUG_PLAY_GNOME=true
+
 EOF
 }
 
