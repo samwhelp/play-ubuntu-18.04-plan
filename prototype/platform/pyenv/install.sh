@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 pyenv_apt_install () {
-	sudo apt-get install git build-essential
+	sudo apt-get install git build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm
 }
 
 pyenv_clone_repo () {
