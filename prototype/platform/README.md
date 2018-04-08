@@ -2,10 +2,10 @@
 
 ## env
 
-* (rbenv)(rbenv)
-* (pyenv)(pyenv)
-* (nodenv)(nodenv)
-* (goenv)(goenv)
+* [rbenv](rbenv)
+* [pyenv](pyenv)
+* [nodenv](nodenv)
+* [goenv](goenv)
 
 
 ## conda (python)
