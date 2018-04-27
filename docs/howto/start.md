@@ -25,7 +25,7 @@ $ cd play-ubuntu-18.04-plan
 ## cd play-lxqt dir
 
 ``` sh
-$ cd plan/de-full/play-lxqt
+$ cd plan/de-basic/play-lxqt
 ```
 
 
