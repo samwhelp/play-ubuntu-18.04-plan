@@ -7,8 +7,8 @@ set -e
 #
 gnome_config_install () {
 	## Wallpaper
-	gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/London_Eye_by_Paul_Daniell.jpg'
-	gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Planking_is_going_against_the_grain_by_mendhak.jpg'
+	gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg'
+	gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Raindrops_On_The_Table_by_Alex_Fazit.jpg'
 
 
 	## Theme
