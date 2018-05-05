@@ -7,6 +7,7 @@ rofi
 numix-gtk-theme
 numix-blue-gtk-theme
 numix-icon-theme
+gnome-icon-theme
 breeze-cursor-theme
 xfwm4-theme-breeze
 ubuntu-wallpapers
