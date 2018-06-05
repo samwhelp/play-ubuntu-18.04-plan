@@ -23,8 +23,7 @@ lxqt_theme_adapta_check () {
 
 
 lxqt_theme_adapta_install () {
-	sudo cp ./Adapta-LXQt "$HOME/.local/share/lxqt/themes/adapta" -a
-	sudo chown root.root "$HOME/.local/share/lxqt/themes/adapta" -R
+	cp ./Adapta-LXQt "$HOME/.local/share/lxqt/themes/adapta" -a
 }
 
 
