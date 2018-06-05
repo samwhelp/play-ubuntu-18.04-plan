@@ -2,6 +2,7 @@
 
 ## link
 
+* https://github.com/lxqt/lxqt/wiki/Themes
 * https://github.com/topics/lxqt
 * https://github.com/search?q=lxqt+theme
 * https://github.com/stefonarch/lxqt-themes
