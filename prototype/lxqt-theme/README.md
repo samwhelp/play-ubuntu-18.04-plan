@@ -9,7 +9,7 @@
 
 ## config tool
 
-* [lxqt-config-appearance](http://manpages.ubuntu.com/manpages/bionic/en/man1/lxqt-config-appearance.1.html)
+* [lxqt-config-appearance](http://manpages.ubuntu.com/manpages/bionic/en/man1/lxqt-config-appearance.1.html) ([howto](https://github.com/lxqt/lxqt-config#lxqt-appearance-configuration))
 
 
 ## config file
