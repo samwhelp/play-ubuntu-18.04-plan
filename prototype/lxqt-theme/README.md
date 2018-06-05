@@ -4,6 +4,7 @@
 
 * https://github.com/topics/lxqt
 * https://github.com/search?q=lxqt+theme
+* https://github.com/stefonarch/lxqt-themes
 
 
 ## config tool
@@ -26,3 +27,4 @@ theme=ambiance
 * [adapta](adapta)
 * [less](less)
 * [arc-dark](arc-dark)
+* [archlinux-dark](archlinux-dark)
