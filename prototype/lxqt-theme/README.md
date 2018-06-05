@@ -32,3 +32,4 @@ theme=ambiance
 * [valendas](valendas)
 * [black-red](black-red)
 * [black-green](black-green)
+* [ice](ice)
