@@ -29,3 +29,4 @@ theme=ambiance
 * [arc-dark](arc-dark)
 * [archlinux-dark](archlinux-dark)
 * [silver](silver)
+* [valendas](valendas)
