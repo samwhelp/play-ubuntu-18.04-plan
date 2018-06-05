@@ -33,3 +33,4 @@ theme=ambiance
 * [black-red](black-red)
 * [black-green](black-green)
 * [ice](ice)
+* [simple](simple)
