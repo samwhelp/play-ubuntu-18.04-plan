@@ -40,3 +40,4 @@ theme=ambiance
 * [black-green](black-green)
 * [ice](ice)
 * [simple](simple)
+* [lush](lush)
