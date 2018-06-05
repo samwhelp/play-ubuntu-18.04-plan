@@ -28,3 +28,4 @@ theme=ambiance
 * [less](less)
 * [arc-dark](arc-dark)
 * [archlinux-dark](archlinux-dark)
+* [silver](silver)
