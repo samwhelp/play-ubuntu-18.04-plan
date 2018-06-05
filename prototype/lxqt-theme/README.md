@@ -19,3 +19,10 @@
 [General]
 theme=ambiance
 ```
+
+
+## themes
+
+* [adapta](adapta)
+* [less](less)
+* [arc-dark](arc-dark)
