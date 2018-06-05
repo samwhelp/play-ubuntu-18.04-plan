@@ -22,6 +22,12 @@ theme=ambiance
 ```
 
 
+## theme install dir path
+
+* /usr/share/lxqt/themes  (System)
+* ~/.local/share/lxqt/themes  (Personal)
+
+
 ## themes
 
 * [adapta](adapta)
