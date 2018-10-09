@@ -11,6 +11,7 @@
 ## config tool
 
 * [lxqt-config-appearance](http://manpages.ubuntu.com/manpages/bionic/en/man1/lxqt-config-appearance.1.html) ([howto](https://github.com/lxqt/lxqt-config#lxqt-appearance-configuration))
+* [lxqt-control-theme](https://github.com/samwhelp/tool-lxqt-control/tree/master/app/lxqt-control-theme)
 
 
 ## config file
