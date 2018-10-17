@@ -4,7 +4,7 @@
 import gi
 
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, Gio
+from gi.repository import Gio
 
 gi.require_version('Fcitx', '1.0')
 from gi.repository import Fcitx
@@ -42,7 +42,6 @@ class ImList:
 		for item in list:
 			print("{name} : {status}".format(name=item.unique_name, status=item.enable))
 
-		self.im.set_imlist(list)
 
 	def isValidIm (self, name):
 		list = self.im.get_imlist()
