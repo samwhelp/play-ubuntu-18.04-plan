@@ -20,15 +20,6 @@
 * https://github.com/fcitx/fcitx/blob/4.2.9.6/src/lib/fcitx-gclient/fcitxinputmethod.c#L208
 
 
-## Prepare
-
-install [fcitx-module-dbus](https://packages.ubuntu.com/bionic/fcitx-module-dbus)
-
-``` sh
-$ sudo apt-get install fcitx-module-dbus
-```
-
-
 ## Usage
 
 
