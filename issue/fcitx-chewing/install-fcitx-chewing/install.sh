@@ -38,11 +38,13 @@ main_set_profile () {
 
 main_config_profile () {
 	if is_fcitx_running; then
+		echo
 		echo 'fcitx is running'
 		main_stop_fcitx
 		main_set_profile
 		main_start_fcitx
 	else
+		echo
 		echo 'fcitx not running'
 		main_set_profile
 		main_start_fcitx
