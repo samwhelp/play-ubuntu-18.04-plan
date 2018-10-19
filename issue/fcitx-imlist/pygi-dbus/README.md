@@ -11,6 +11,14 @@
 * https://lazka.github.io/pgi-docs/index.html#Gio-2.0/classes/DBusConnection.html#Gio.DBusConnection.call_sync
 
 
+## GVariant Format Strings
+
+* https://people.gnome.org/~ryanl/glib-docs/gvariant-format-strings.html
+* https://developer.gnome.org/glib/2.28/gvariant-format-strings.html
+* https://lazka.github.io/pgi-docs/#GLib-2.0/structs/VariantType.html#GLib.VariantType
+* https://lazka.github.io/pgi-docs/#GLib-2.0/structs/Variant.html#GLib.Variant
+
+
 ## Code
 
 * https://github.com/fcitx/fcitx/blob/4.2.9.6/src/frontend/ipc/ipc.c#L112
