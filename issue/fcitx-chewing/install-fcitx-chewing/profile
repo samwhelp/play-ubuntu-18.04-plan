@@ -15,6 +15,7 @@ WidePunc=False
 IMName=chewing
 # Current Enabled Input Method List
 EnabledIMList=fcitx-keyboard-us:True,chewing:True
+#EnabledIMList=fcitx-keyboard-us:True
 # Show Preedit String in Client Window
 # Available Value:
 # True False
