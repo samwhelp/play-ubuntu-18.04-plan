@@ -30,6 +30,21 @@ fcitx_chewing_conf_set_dir_create () {
 }
 
 fcitx_chewing_conf_set_config () {
+	if fcitx_chewing_conf_set_is_fcitx_running; then
+		echo
+		echo 'fcitx is running'
+		fcitx_chewing_conf_set_stop_fcitx
+		fcitx_chewing_conf_set_config_profile
+		fcitx_chewing_conf_set_start_fcitx
+	else
+		echo
+		echo 'fcitx not running'
+		fcitx_chewing_conf_set_config_profile
+		fcitx_chewing_conf_set_start_fcitx
+	fi
+}
+
+fcitx_chewing_conf_set_config_profile () {
 
 	echo
 	echo "cp $THE_SUB_ON_DIR_PATH/fcitx_chewing/conf/set/profile $HOME/.config/fcitx/profile"
@@ -49,6 +64,31 @@ fcitx_chewing_conf_set_im_config () {
 
 	echo
 
+}
+
+fcitx_chewing_conf_set_stop_fcitx () {
+	echo
+	echo "Stop fcitx"
+
+	#qdbus org.fcitx.Fcitx /inputmethod org.fcitx.Fcitx.InputMethod.Exit
+
+	killall -9 fcitx
+
+}
+
+fcitx_chewing_conf_set_start_fcitx () {
+	echo
+	echo "Start fcitx"
+	fcitx -r
+}
+
+fcitx_chewing_conf_set_is_fcitx_running () {
+	fcitx-remote &> /dev/null
+	if [ "$?" = "0" ]; then
+		return 0;
+	else
+		return 1;
+	fi
 }
 #
 ### Tail: fcitx_chewing ################################################################
