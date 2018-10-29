@@ -27,6 +27,12 @@ fcitx_chewing_conf_reset_dir_create () {
 	echo "mkdir -p $HOME/.config/fcitx"
 	mkdir -p $HOME/.config/fcitx
 
+	echo "mkdir -p $HOME/.config/fcitx/addon"
+	mkdir -p $HOME/.config/fcitx/addon
+
+	echo "mkdir -p $HOME/.config/fcitx/conf"
+	mkdir -p $HOME/.config/fcitx/conf
+
 }
 
 fcitx_chewing_conf_reset_config () {
@@ -49,6 +55,14 @@ fcitx_chewing_conf_reset_config_profile () {
 	echo
 	echo "cp $THE_SUB_ON_DIR_PATH/fcitx_chewing/conf/reset/profile $HOME/.config/fcitx/profile"
 	cp "$THE_SUB_ON_DIR_PATH/fcitx_chewing/conf/reset/profile" "$HOME/.config/fcitx/profile"
+
+	echo
+	echo "cp $THE_SUB_ON_DIR_PATH/fcitx_chewing/conf/reset/addon/fcitx-kimpanel-ui.conf $HOME/.config/fcitx/addon/fcitx-kimpanel-ui.conf"
+	cp "$THE_SUB_ON_DIR_PATH/fcitx_chewing/conf/reset/addon/fcitx-kimpanel-ui.conf" "$HOME/.config/fcitx/addon/fcitx-kimpanel-ui.conf"
+
+	echo
+	echo "cp $THE_SUB_ON_DIR_PATH/fcitx_chewing/conf/reset/conf/fcitx-classic-ui.config $HOME/.config/fcitx/conf/fcitx-classic-ui.config"
+	cp "$THE_SUB_ON_DIR_PATH/fcitx_chewing/conf/reset/conf/fcitx-classic-ui.config" "$HOME/.config/fcitx/conf/fcitx-classic-ui.config"
 
 }
 
