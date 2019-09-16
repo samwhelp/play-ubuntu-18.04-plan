@@ -10,15 +10,21 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 
-### Head: Common ###############################################################
-#
+################################################################################
+### Head: Wallpaper
+##
 
 ## Wallpaper Path
 set $bg_file_path /usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg
 
-#
-### Tail: Common ###############################################################
+##
+### Tail: Wallpaper
+################################################################################
 
+
+################################################################################
+### Head: ModKey
+##
 
 ## Alt
 set $mod Mod1
@@ -26,9 +32,45 @@ set $mod Mod1
 ## Super
 #set $mod Mod4
 
+##
+### Tail: ModKey
+################################################################################
+
+
+################################################################################
+### Head: Direction
+##
+
+## lkj;
+#set $left j
+#set $down k
+#set $up l
+#set $right semicolon
+###
+###     l
+###   j k ;
+###
+
+
+## ikjl
+set $left j
+set $down k
+set $up i
+set $right l
+###
+###     i
+###   j k i
+###
+
+##
+### Tail: Direction
+################################################################################
+
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+#font pango:monospace 8
+font pango:monospace 14
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -45,7 +87,8 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -64,20 +107,17 @@ bindsym $mod+d exec dmenu_run
 #bindsym $mod+semicolon focus right
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+i focus up
-bindsym $mod+l focus right
-#
-#     i
-#   j k i
-#
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+
 
 # move focused window
 #bindsym $mod+Shift+j move left
@@ -86,20 +126,17 @@ bindsym $mod+Right focus right
 #bindsym $mod+Shift+semicolon move right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+i move up
-bindsym $mod+Shift+l move right
-#
-#     i
-#   j k i
-#
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -126,6 +163,7 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
+bindsym $mod+q focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -177,14 +215,10 @@ mode "resize" {
         #bindsym l resize shrink height 10 px or 10 ppt
         #bindsym semicolon resize grow width 10 px or 10 ppt
 
-		bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym i resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
-		#
-		#     i
-		#   j k i
-		#
+		bindsym $left resize shrink width 10 px or 10 ppt
+        bindsym $down resize grow height 10 px or 10 ppt
+        bindsym $up resize shrink height 10 px or 10 ppt
+        bindsym $rigth resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -206,8 +240,9 @@ bar {
 }
 
 
-### Head: Add ##################################################################
-#
+################################################################################
+### Head: My
+##
 
 ## Terminal
 bindsym $mod+Shift+t exec tilix --quake
@@ -237,7 +272,12 @@ exec_always --no-startup-id feh --bg-scale $bg_file_path
 
 
 ## Compton
-exec_always compton -f
+## default_compton_path: ~/.config/compton.conf
+#exec_always compton -f
+## use_new_config_path: ~/.config/compton/compton.conf
+exec_always compton --config ~/.config/compton/compton.conf
 
-#
-### Tail: Add ##################################################################
+
+##
+### Tail: My
+################################################################################
