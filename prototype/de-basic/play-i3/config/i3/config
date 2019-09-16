@@ -41,7 +41,7 @@ set $mod Mod1
 ### Head: Direction
 ##
 
-## lkj;
+## [lkj;]
 #set $left j
 #set $down k
 #set $up l
@@ -52,15 +52,28 @@ set $mod Mod1
 ###
 
 
-## ikjl
-set $left j
-set $down k
-set $up i
-set $right l
+## [ikjl]
+#set $left j
+#set $down k
+#set $up i
+#set $right l
 ###
 ###     i
-###   j k i
+###   j k l
+
+
+## [jkhl]
+set $left h
+set $down k
+set $up j
+set $right l
 ###
+###     j
+###   h k l
+###
+### Notice: let [$mod+h] to [$mod+g].
+
+##
 
 ##
 ### Tail: Direction
@@ -139,7 +152,8 @@ bindsym $mod+Shift+Right move right
 
 
 # split in horizontal orientation
-bindsym $mod+h split h
+#bindsym $mod+h split h
+bindsym $mod+g split h 
 
 # split in vertical orientation
 bindsym $mod+v split v
