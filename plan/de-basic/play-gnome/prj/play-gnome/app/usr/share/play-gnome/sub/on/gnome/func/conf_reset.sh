@@ -95,6 +95,9 @@ gnome_conf_reset_config () {
 	## Rofi Show Window
 	dconf reset -f /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-window/
 
+	## Rofi Show Window
+	dconf reset -f /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-drun/
+
 	## Editor
 	dconf reset -f /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/editor/
 
