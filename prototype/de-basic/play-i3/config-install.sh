@@ -38,6 +38,23 @@ compton_config_install () {
 
 
 ################################################################################
+### Head: pcmanfm-qt
+##
+pcmanfm_qt_config_install () {
+
+	mkdir -p "$HOME/.config/pcmanfm-qt/default"
+	echo "mkdir -p $HOME/.config/pcmanfm-qt/default"
+
+	cp ./config/pcmanfm-qt/default/settings.conf "$HOME/.config/pcmanfm-qt/default/settings.conf"
+	echo "cp ./config/pcmanfm-qt/default/settings.conf $HOME/.config/pcmanfm-qt/default/settings.conf"
+
+}
+##
+### Tail: pcmanfm-qt
+################################################################################
+
+
+################################################################################
 ### Head: rofi
 ##
 rofi_config_install () {
@@ -131,6 +148,8 @@ main_config_install () {
 	i3_config_install
 
 	compton_config_install
+
+	pcmanfm_qt_config_install
 
 	rofi_config_install
 

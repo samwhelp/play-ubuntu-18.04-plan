@@ -58,10 +58,10 @@ pcmanfm_qt_config_install () {
 
 	return
 
-	mkdir -p $HOME/.config/pcmanfm-qt/default
+	mkdir -p "$HOME/.config/pcmanfm-qt/default"
 	echo "mkdir -p $HOME/.config/pcmanfm-qt/default"
 
-	cp ./config/pcmanfm-qt/default/settings.conf $HOME/.config/pcmanfm-qt/default/settings.conf
+	cp ./config/pcmanfm-qt/default/settings.conf "$HOME/.config/pcmanfm-qt/default/settings.conf"
 	echo "cp ./config/pcmanfm-qt/default/settings.conf $HOME/.config/pcmanfm-qt/default/settings.conf"
 
 }
