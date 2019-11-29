@@ -2,9 +2,9 @@
 
 set -e
 
-
-### Head: xfce4 ################################################################
-#
+################################################################################
+### Head: xfce4
+##
 xfce4_config_install () {
 	mkdir -p $HOME/.config/xfce4/xfconf/xfce-perchannel-xml
 	echo "mkdir -p $HOME/.config/xfce4/xfconf/xfce-perchannel-xml"
@@ -35,12 +35,31 @@ xfce4_config_install () {
 	echo "cp ./config/xfce4/panel/whiskermenu-1.rc $HOME/.config/xfce4/panel/whiskermenu-1.rc"
 
 }
-#
-### Tail: xfce4 ################################################################
+##
+### Tail: xfce4
+################################################################################
 
 
-### Head: rofi #################################################################
-#
+################################################################################
+### Head: pcmanfm-qt
+##
+pcmanfm_qt_config_install () {
+
+	mkdir -p "$HOME/.config/pcmanfm-qt/default"
+	echo "mkdir -p $HOME/.config/pcmanfm-qt/default"
+
+	cp ./config/pcmanfm-qt/default/settings.conf "$HOME/.config/pcmanfm-qt/default/settings.conf"
+	echo "cp ./config/pcmanfm-qt/default/settings.conf $HOME/.config/pcmanfm-qt/default/settings.conf"
+
+}
+##
+### Tail: pcmanfm-qt
+################################################################################
+
+
+################################################################################
+### Head: rofi
+##
 rofi_config_install () {
 	mkdir -p $HOME/.config/rofi
 	echo "mkdir -p $HOME/.config/rofi"
@@ -48,12 +67,29 @@ rofi_config_install () {
 	cp ./config/rofi/config $HOME/.config/rofi/config
 	echo "cp ./config/rofi/config $HOME/.config/rofi/config"
 }
-#
-### Tail: rofi #################################################################
+##
+### Tail: rofi
+################################################################################
 
 
-### Head: fcitx ################################################################
-#
+################################################################################
+### Head: sakura
+##
+sakura_config_install () {
+	mkdir -p $HOME/.config/sakura
+	echo "mkdir -p $HOME/.config/sakura"
+
+	cp ./config/sakura/sakura.conf $HOME/.config/sakura/sakura.conf
+	echo "cp ./config/sakura/sakura.conf $HOME/.config/sakura/sakura.conf"
+}
+##
+### Tail: sakura
+################################################################################
+
+
+################################################################################
+### Head: fcitx
+##
 fcitx_config_install () {
 	mkdir -p $HOME/.config/fcitx
 	echo "mkdir -p $HOME/.config/fcitx"
@@ -73,12 +109,14 @@ fcitx_config_install_im_config () {
 	cat ~/.xinputrc
 	echo
 }
-#
-### Tail: fcitx ################################################################
+##
+### Tail: fcitx
+################################################################################
 
 
-### Head: gtk3 #################################################################
-#
+################################################################################
+### Head: gtk3
+##
 gtk3_config_install () {
 	mkdir -p $HOME/.config/gtk-3.0
 	echo "mkdir -p $HOME/.config/gtk-3.0"
@@ -86,28 +124,36 @@ gtk3_config_install () {
 	cp ./config/gtk3/settings.ini $HOME/.config/gtk-3.0/settings.ini
 	echo "cp ./config/gtk3/settings.ini $HOME/.config/gtk-3.0/settings.ini"
 }
-#
-### Tail: gtk3 #################################################################
+##
+### Tail: gtk3
+################################################################################
 
 
-### Head: gtk2 #################################################################
-#
+################################################################################
+### Head: gtk2
+##
 gtk2_config_install () {
 
 	cp ./config/gtk2/.gtkrc-2.0 $HOME/.gtkrc-2.0
 	echo "cp ./config/gtk2/.gtkrc-2.0 $HOME/.gtkrc-2.0"
 
 }
-#
-### Tail: gtk2 #################################################################
+##
+### Tail: gtk2
+################################################################################
 
 
-### Head: main #################################################################
-#
+################################################################################
+### Head: main
+##
 main_config_install () {
 	xfce4_config_install
 
+	pcmanfm_qt_config_install
+
 	rofi_config_install
+
+	sakura_config_install
 
 	fcitx_config_install
 
@@ -115,7 +161,9 @@ main_config_install () {
 
 	gtk2_config_install
 }
-#
+## start
 main_config_install
 
-### Tail: main #################################################################
+##
+### Tail: main
+################################################################################

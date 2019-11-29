@@ -35,8 +35,8 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;r" type="string" value="rofi -show run"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;w" type="string" value="rofi -show window -show-icons"/>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;d" type="string" value="rofi -show drun -show-icons"/> 
-      <property name="&lt;Alt&gt;Return" type="string" value="gnome-terminal"/>
+      <property name="&lt;Shift&gt;&lt;Alt&gt;d" type="string" value="rofi -show drun -show-icons"/>
+      <property name="&lt;Alt&gt;Return" type="string" value="sakura"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;f" type="string" value="pcmanfm-qt"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;g" type="string" value="nautilus"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;e" type="string" value="gedit"/>
