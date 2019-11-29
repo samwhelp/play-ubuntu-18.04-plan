@@ -3,8 +3,9 @@
 set -e
 
 
-### Head: i3 ###################################################################
-#
+################################################################################
+### Head: i3
+##
 i3_config_install () {
 	mkdir -p $HOME/.config/i3
 	echo "mkdir -p $HOME/.config/i3"
@@ -12,12 +13,14 @@ i3_config_install () {
 	cp ./config/i3/config $HOME/.config/i3/config
 	echo "cp ./config/i3/config $HOME/.config/i3/config"
 }
-#
-### Tail: i3 ###################################################################
+##
+### Tail: i3
+################################################################################
 
 
-### Head: compton ###################################################################
-#
+################################################################################
+### Head: compton
+##
 compton_config_install () {
 
 	## $ dpkg -L compton | grep conf
@@ -29,12 +32,14 @@ compton_config_install () {
 	cp "/usr/share/doc/compton/examples/compton.sample.conf" $HOME/.config/compton.conf
 
 }
-#
-### Tail: compton ###################################################################
+##
+### Tail: compton
+################################################################################
 
 
-### Head: rofi #################################################################
-#
+################################################################################
+### Head: rofi
+##
 rofi_config_install () {
 	mkdir -p $HOME/.config/rofi
 	echo "mkdir -p $HOME/.config/rofi"
@@ -42,12 +47,29 @@ rofi_config_install () {
 	cp ./config/rofi/config $HOME/.config/rofi/config
 	echo "cp ./config/rofi/config $HOME/.config/rofi/config"
 }
-#
-### Tail: rofi #################################################################
+##
+### Tail: rofi
+################################################################################
 
 
-### Head: fcitx ################################################################
-#
+################################################################################
+### Head: sakura
+##
+sakura_config_install () {
+	mkdir -p $HOME/.config/sakura
+	echo "mkdir -p $HOME/.config/sakura"
+
+	cp ./config/sakura/sakura.conf $HOME/.config/sakura/sakura.conf
+	echo "cp ./config/sakura/sakura.conf $HOME/.config/sakura/sakura.conf"
+}
+##
+### Tail: sakura
+################################################################################
+
+
+################################################################################
+### Head: fcitx
+##
 fcitx_config_install () {
 	mkdir -p $HOME/.config/fcitx
 	echo "mkdir -p $HOME/.config/fcitx"
@@ -67,12 +89,14 @@ fcitx_config_install_im_config () {
 	cat ~/.xinputrc
 	echo
 }
-#
-### Tail: fcitx ################################################################
+##
+### Tail: fcitx
+################################################################################
 
 
-### Head: gtk3 #################################################################
-#
+################################################################################
+### Head: gtk3
+##
 gtk3_config_install () {
 	mkdir -p $HOME/.config/gtk-3.0
 	echo "mkdir -p $HOME/.config/gtk-3.0"
@@ -80,24 +104,28 @@ gtk3_config_install () {
 	cp ./config/gtk3/settings.ini $HOME/.config/gtk-3.0/settings.ini
 	echo "cp ./config/gtk3/settings.ini $HOME/.config/gtk-3.0/settings.ini"
 }
-#
-### Tail: gtk3 #################################################################
+##
+### Tail: gtk3
+################################################################################
 
 
-### Head: gtk2 #################################################################
-#
+################################################################################
+### Head: gtk2
+##
 gtk2_config_install () {
 
 	cp ./config/gtk2/.gtkrc-2.0 $HOME/.gtkrc-2.0
 	echo "cp ./config/gtk2/.gtkrc-2.0 $HOME/.gtkrc-2.0"
 
 }
-#
-### Tail: gtk2 #################################################################
+##
+### Tail: gtk2
+################################################################################
 
 
-### Head: main #################################################################
-#
+################################################################################
+### Head: main
+##
 main_config_install () {
 
 	i3_config_install
@@ -106,6 +134,8 @@ main_config_install () {
 
 	rofi_config_install
 
+	sakura_config_install
+
 	fcitx_config_install
 
 	gtk3_config_install
@@ -113,7 +143,9 @@ main_config_install () {
 	gtk2_config_install
 
 }
-#
+## start
 main_config_install
 
-### Tail: main #################################################################
+##
+### Tail: main
+################################################################################

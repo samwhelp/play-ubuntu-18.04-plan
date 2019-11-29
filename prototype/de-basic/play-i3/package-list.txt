@@ -24,6 +24,7 @@ pcmanfm-qt
 
 qterminal
 tilix
+sakura
 
 
 firefox
