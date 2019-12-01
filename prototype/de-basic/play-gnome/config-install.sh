@@ -3,8 +3,9 @@
 set -e
 
 
-### Head: gnome ################################################################
-#
+################################################################################
+### Head: gnome
+##
 gnome_config_install () {
 	## Wallpaper
 	gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg'
@@ -75,7 +76,7 @@ gnome_config_install () {
 
 	## Gnome Terminal
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/gnome-terminal/name "'Gnome-Terminal'"
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/gnome-terminal/command "'gnome-terminal --geometry=200x100+0+0'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/gnome-terminal/command "'sakura -m'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/gnome-terminal/binding "'<Alt>Return'"
 
 	## Rofi Show Run
@@ -114,12 +115,31 @@ gnome_config_install () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files-1/binding "'<Shift><Alt>g'"
 
 }
-#
-### Tail: gnome ################################################################
+##
+### Tail: gnome
+################################################################################
 
 
-### Head: rofi #################################################################
-#
+################################################################################
+### Head: pcmanfm-qt
+##
+pcmanfm_qt_config_install () {
+
+	mkdir -p "$HOME/.config/pcmanfm-qt/default"
+	echo "mkdir -p $HOME/.config/pcmanfm-qt/default"
+
+	cp ./config/pcmanfm-qt/default/settings.conf "$HOME/.config/pcmanfm-qt/default/settings.conf"
+	echo "cp ./config/pcmanfm-qt/default/settings.conf $HOME/.config/pcmanfm-qt/default/settings.conf"
+
+}
+##
+### Tail: pcmanfm-qt
+################################################################################
+
+
+################################################################################
+### Head: rofi
+##
 rofi_config_install () {
 	mkdir -p $HOME/.config/rofi
 	echo "mkdir -p $HOME/.config/rofi"
@@ -127,12 +147,29 @@ rofi_config_install () {
 	cp ./config/rofi/config $HOME/.config/rofi/config
 	echo "cp ./config/rofi/config $HOME/.config/rofi/config"
 }
-#
-### Tail: rofi #################################################################
+##
+### Tail: rofi
+################################################################################
 
 
-### Head: fcitx ################################################################
-#
+################################################################################
+### Head: sakura
+##
+sakura_config_install () {
+	mkdir -p $HOME/.config/sakura
+	echo "mkdir -p $HOME/.config/sakura"
+
+	cp ./config/sakura/sakura.conf $HOME/.config/sakura/sakura.conf
+	echo "cp ./config/sakura/sakura.conf $HOME/.config/sakura/sakura.conf"
+}
+##
+### Tail: sakura
+################################################################################
+
+
+################################################################################
+### Head: fcitx
+##
 fcitx_config_install () {
 	mkdir -p $HOME/.config/fcitx
 	echo "mkdir -p $HOME/.config/fcitx"
@@ -152,12 +189,14 @@ fcitx_config_install_im_config () {
 	cat ~/.xinputrc
 	echo
 }
-#
-### Tail: fcitx ################################################################
+##
+### Tail: fcitx
+################################################################################
 
 
-### Head: gtk3 #################################################################
-#
+################################################################################
+### Head: gtk3
+##
 gtk3_config_install () {
 	mkdir -p $HOME/.config/gtk-3.0
 	echo "mkdir -p $HOME/.config/gtk-3.0"
@@ -165,27 +204,35 @@ gtk3_config_install () {
 	cp ./config/gtk3/settings.ini $HOME/.config/gtk-3.0/settings.ini
 	echo "cp ./config/gtk3/settings.ini $HOME/.config/gtk-3.0/settings.ini"
 }
-#
-### Tail: gtk3 #################################################################
+##
+### Tail: gtk3
+################################################################################
 
 
-### Head: gtk2 #################################################################
-#
+################################################################################
+### Head: gtk2
+##
 gtk2_config_install () {
 
 	cp ./config/gtk2/.gtkrc-2.0 $HOME/.gtkrc-2.0
 	echo "cp ./config/gtk2/.gtkrc-2.0 $HOME/.gtkrc-2.0"
 
 }
-#
-### Tail: gtk2 #################################################################
+##
+### Tail: gtk2
+################################################################################
 
 
-### Head: main #################################################################
-#
+################################################################################
+### Head: main
+##
 main_config_install () {
 
+	pcmanfm_qt_config_install
+
 	rofi_config_install
+
+	sakura_config_install
 
 	fcitx_config_install
 
@@ -196,7 +243,9 @@ main_config_install () {
 	gnome_config_install
 
 }
-#
+## start
 main_config_install
 
-### Tail: main #################################################################
+##
+### Tail: main
+################################################################################
