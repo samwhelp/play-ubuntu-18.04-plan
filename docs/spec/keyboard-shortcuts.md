@@ -3,14 +3,15 @@
 
 ## Launch Tool
 
-* **[Alt]+[Enter]**: Launch Terminal
-* **[Alt]+[Shift]+t**: Toggle Drop Down Terminal (tilix --quake)
-* **[Alt]+[Shift]+r**: Launch [rofi -show run]
-* **[Alt]+[Shift]+w**: Launch [rofi -show window]
-* **[Alt]+[Shift]+f**: Launch File Manager (pcmanfm-qt)
-* **[Alt]+[Shift]+g**: Launch File Manager (nautilus)
-* **[Alt]+[Shift]+b**: Launch Web Browser (firefox)
-* **[Alt]+[Shift]+e**: Launch Text Editor (gedit)
+* **[Alt]+[Enter]**: Launch Terminal (sakura -m)
+* **[Alt]+[Shift]+[t]**: Toggle Drop Down Terminal (tilix --quake)
+* **[Alt]+[Shift]+[r]**: Launch Rofi (rofi -show run)
+* **[Alt]+[Shift]+[w]**: Launch Rofi (rofi -show window -show-icons)
+* **[Alt]+[Shift]+[d]**: Launch Rofi (rofi -show drun -show-icons)
+* **[Alt]+[Shift]+[f]**: Launch File Manager (pcmanfm-qt)
+* **[Alt]+[Shift]+[g]**: Launch File Manager (nautilus)
+* **[Alt]+[Shift]+[b]**: Launch Web Browser (firefox)
+* **[Alt]+[Shift]+[e]**: Launch Text Editor (gedit)
 
 
 ## Workspace:
@@ -22,3 +23,4 @@
 ## Reference
 
 * [i3 Reference Card](https://i3wm.org/docs/refcard.html)
+* [i3 User’s Guide](https://i3wm.org/docs/userguide.html)
