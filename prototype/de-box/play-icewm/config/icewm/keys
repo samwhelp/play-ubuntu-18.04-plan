@@ -1,0 +1,75 @@
+
+
+################################################################################
+### Head: Manual
+##
+
+# ~/.icewm/keys
+# $ man icewm-keys
+
+
+##
+### Tail: Manual
+################################################################################
+
+
+################################################################################
+### Head: Ex
+##
+
+## $ man icewm-keys
+## $ man icewm-keys | grep 'EXAMPLES' -A 33
+
+# This is an example for IceWM's hotkey definition file.
+#
+# Place your variants in @CFGDIR@ or in $HOME/.icewm
+# since modifications to this file will be discarded when
+# you (re)install icewm.
+#
+# A list of all valid keyboard symbols can be found in
+# /usr/include/X11/keysym.h, keysymdefs.h, XF86keysym.h,
+# ...  You'll have to omit XK_ prefixs and to replace
+# XF86XK_ prefixes by XF86. Valid modifiers are Alt,
+# Ctrl, Shift, Meta, Super and Hyper.
+#
+key "Alt+Ctrl+t" xterm -fa Monospace -fs 16 -maximized
+#key "Alt+Ctrl+b" xdg-open about:blank
+#key "Alt+Ctrl+s" xdg-open http://www.google.com
+
+key "Super+KP_Subtract" amixer sset PCM 5%-
+key "Super+KP_Add" amixer sset PCM 5%+
+
+# "Multimedia key" bindings for XFree86. Gather the
+# keycodes of your advanced function keys by watching the
+# output of the xev command whilest pressing those keys
+# and map those symbols by using xmodmap.
+
+key "XF86AudioLowerVolume" amixer sset PCM 5%-
+key "XF86AudioRaiseVolume" amixer sset PCM 5%+
+key "XF86AudioMute" amixer sset PCM 0%
+key "XF86HomePage" xdg-open about:blank
+key "XF86Search" xdg-open http://www.google.com
+key "XF86Eject" eject
+
+##
+### Tail: Ex
+################################################################################
+
+
+################################################################################
+### Head: App
+##
+
+key "Alt+Return" sakura -m
+key "Alt+Shift+f" pcmanfm-qt
+key "Alt+Shift+r" rofi -show run
+key "Alt+Shift+w" rofi -show window -show-icons
+key "Alt+Shift+d" rofi -show drun -show-icons
+key "Alt+Shift+t" tilix --quake
+key "Alt+Shift+b" firefox
+key "Alt+Shift+g" nautilus
+key "Alt+Shift+e" gedit
+
+##
+### Tail: App
+################################################################################

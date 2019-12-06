@@ -1,0 +1,42 @@
+
+
+################################################################################
+### Head: Manual
+##
+
+# ~/.icewm/toolbar
+# $ man icewm-toolbar
+
+##
+### Tail: Manual
+################################################################################
+
+
+################################################################################
+### Head: More
+##
+
+menu "More" programs {
+prog "Gedit" file gedit
+prog "Nautilus" folder nautilus
+prog "Terminal" xterm gnome-terminal
+}
+
+##
+### Tail: More
+################################################################################
+
+
+################################################################################
+### Head: App
+##
+
+prog "Sakura" xterm sakura -m
+prog "Pcmanfm-qt" folder pcmanfm-qt
+prog "Firefox" firefox firefox
+prog "MousePad" file mousepad
+prog "RofiDrun" run rofi -show drun -show-icons
+
+##
+### Tail: App
+################################################################################

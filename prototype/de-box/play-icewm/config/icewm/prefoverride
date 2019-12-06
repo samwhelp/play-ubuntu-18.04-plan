@@ -1,0 +1,69 @@
+
+
+################################################################################
+### Head: Manual
+##
+
+# ~/.icewm/prefoverride
+# $ man icewm-prefoverride
+# $ man icewm-preferences
+
+##
+### Tail: Manual
+################################################################################
+
+
+################################################################################
+### Head: Font
+##
+
+## Fonts
+TitleFontNameXft=						"Noto Sans CJK TC:size=11"
+StatusFontNameXft=						"Noto Sans CJK TC:size=11"
+MenuFontNameXft=						"Noto Sans CJK TC:size=11"
+NormalTaskBarFontNameXft=				"Noto Sans CJK TC:size=11"
+ActiveTaskBarFontNameXft=				"Noto Sans CJK TC:size=11"
+ListBoxFontNameXft=						"Noto Sans CJK TC:size=11"
+ToolTipFontNameXft=						"Noto Sans CJK TC:size=11"
+QuickSwitchFontNameXft=					"Noto Sans CJK TC:size=12"
+ClockFontNameXft=						"Noto Sans CJK TC:size=11"
+
+##
+### Tail: Font
+################################################################################
+
+
+################################################################################
+### Head: Wallpaper
+##
+
+## Empty
+#DesktopBackgroundImage=""
+#DesktopBackgroundColor=""
+
+## DesktopBackground
+
+DesktopBackgroundScaled=                   1
+DesktopBackgroundImage=                   "/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg"
+DesktopBackgroundColor=                    "rgb:64/64/64"
+DesktopTransparencyColor=                  "rgb:64/64/64"
+DesktopTransparencyImage=                  ""
+
+
+##
+### Tail: Wallpaper
+################################################################################
+
+
+################################################################################
+### Head: IconSize
+##
+
+MenuIconSize=					24
+SmallIconSize=					24
+#LargeIconSize=					32
+#HugeIconSize=					48
+
+##
+### Tail: IconSize
+################################################################################

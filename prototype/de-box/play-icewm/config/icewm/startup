@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+
+
+################################################################################
+### Head: Manual
+##
+
+# ~/.icewm/startup
+# $ man icewm-startup
+#https://wiki.archlinux.org/index.php/IceWM#Autostarting
+
+##
+### Tail: Manual
+################################################################################
+
+
+################################################################################
+### Head: Network
+##
+
+## network manager applet
+sleep 1 &&
+nm-applet &
+
+##
+### Tail: Network
+################################################################################
+
+
+################################################################################
+### Head: Mixer
+##
+
+## sound mixer
+volumeicon &
+
+##
+### Tail: Mixer
+################################################################################
+
+
+################################################################################
+### Head: Desktop
+##
+
+## Use [pcmanfm-qt] for desktop
+## /etc/xdg/autostart/lxqt-desktop.desktop
+## grep '^Exec=' /etc/xdg/autostart/lxqt-desktop.desktop
+#pcmanfm-qt --desktop --profile=lxqt &
+
+## Use [xfdesktop] for desktop
+#xfdesktop &
+
+## Just Wallpaper
+#feh --bg-scale "/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg" &
+
+##
+### Tail: Desktop
+################################################################################
+
+
+################################################################################
+### Head: Compton
+##
+
+## compton
+#compton --config ~/.config/compton/compton.conf &
+#compton &
+
+##
+### Tail: Compton
+################################################################################
+
+
+################################################################################
+### Head: Shortcut
+##
+
+## global key shortcut
+#lxqt-globalkeysd &
+#Or just use ~/.icewm/keys
+
+##
+### Tail: Shortcut
+################################################################################
