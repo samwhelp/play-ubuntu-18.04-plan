@@ -1,0 +1,120 @@
+
+
+################################################################################
+### Head: Manual
+##
+
+# https://wiki.archlinux.org/index.php/Openbox#Autostart
+# http://openbox.org/wiki/Help:Autostart
+# https://wiki.archlinux.org/index.php/Compton_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+# $ man openbox-session
+# $ man openbox
+
+##
+### Tail: Manual
+################################################################################
+
+
+################################################################################
+### Head: Network
+##
+
+## network manager applet
+#sleep 1 &&
+#nm-applet &
+
+##
+### Tail: Network
+################################################################################
+
+
+################################################################################
+### Head: Mixer
+##
+
+## sound mixer
+volumeicon &
+
+##
+### Tail: Mixer
+################################################################################
+
+
+################################################################################
+### Head: Desktop
+##
+
+## Use [pcmanfm-qt] for desktop
+## /etc/xdg/autostart/lxqt-desktop.desktop
+## grep '^Exec=' /etc/xdg/autostart/lxqt-desktop.desktop
+#pcmanfm-qt --desktop --profile=lxqt &
+
+## Use [xfdesktop] for desktop
+#xfdesktop &
+
+## Just Wallpaper
+#feh --bg-scale "/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg" &
+feh --bg-scale "/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg" &
+
+
+##
+### Tail: Desktop
+################################################################################
+
+
+################################################################################
+### Head: Panel
+##
+
+## stalonetray
+#stalonetray &
+
+## Panel
+
+## tint2
+tint2 &
+
+## xfce4-panel
+#xfce4-panel &
+
+## fbpanel
+#fbpanel &
+
+## lxpanel
+#lxpanel &
+
+## lxqt-panel
+#lxqt-panel &
+
+## cairo-dock
+#cairo-dock &
+
+##
+### Tail: Panel
+################################################################################
+
+
+################################################################################
+### Head: Compton
+##
+
+## compton
+#compton --config ~/.config/compton/compton.conf &
+#compton &
+
+##
+### Tail: Compton
+################################################################################
+
+
+################################################################################
+### Head: Shortcut
+##
+
+## global key shortcut
+#lxqt-globalkeysd &
+#Or just use ~/.icewm/keys
+
+##
+### Tail: Shortcut
+################################################################################
