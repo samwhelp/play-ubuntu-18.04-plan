@@ -1,0 +1,107 @@
+#!/bin/sh
+# PekWM start file
+# This file is a simple shell script; It gets run on pekwm startup, after
+# the theme and all config has loaded if it is set executable
+# (chmod +x start).
+#
+# This is different from ~/.xinitrc because a normal configuration of
+# .xinitrc you'll run all commands, then launch the window manager last.
+#
+# It also gets re-run every time pekwm is restarted.
+#
+# As for it's usefulness, well, it's up to you. I actually set my background
+# from my start file; since it runs after the theme gets loaded, this
+# effectively overrides whatever's in the theme.
+#
+# There's probably a few other good uses for it, too. I mainly pushed for it
+# because when I was doing fluxbox's docs, people used to complain that there
+# wasn't one, and I wanted to avoid that for pekwm. ;) --eyez
+
+
+
+
+################################################################################
+### Head: Network
+##
+
+## network manager applet
+sleep 1 &&
+nm-applet &
+
+##
+### Tail: Network
+################################################################################
+
+
+################################################################################
+### Head: Mixer
+##
+
+## sound mixer
+#volumeicon &
+
+##
+### Tail: Mixer
+################################################################################
+
+
+################################################################################
+### Head: Desktop
+##
+
+## Use [pcmanfm-qt] for desktop
+## /etc/xdg/autostart/lxqt-desktop.desktop
+## grep '^Exec=' /etc/xdg/autostart/lxqt-desktop.desktop
+#pcmanfm-qt --desktop --profile=lxqt &
+
+## Use [xfdesktop] for desktop
+#xfdesktop &
+
+## Just Wallpaper
+feh --bg-scale "/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg" &
+
+##
+### Tail: Desktop
+################################################################################
+
+
+
+################################################################################
+### Head: Panel
+##
+
+## fbpanel
+#fbpanel &
+
+## lxpanel
+#lxpanel &
+
+##
+### Tail: Panel
+################################################################################
+
+
+################################################################################
+### Head: Compton
+##
+
+## compton
+#compton --config ~/.config/compton/compton.conf &
+#compton &
+
+##
+### Tail: Compton
+################################################################################
+
+
+################################################################################
+### Head: Shortcut
+##
+
+## global key shortcut
+#lxqt-globalkeysd &
+#Or just use ~/.pekwm/keys
+
+##
+### Tail: Shortcut
+################################################################################
