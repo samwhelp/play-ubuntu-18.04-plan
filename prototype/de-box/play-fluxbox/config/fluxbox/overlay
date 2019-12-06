@@ -1,0 +1,53 @@
+! The following line will prevent styles from setting the background.
+! background: none
+
+
+################################################################################
+### Head: font
+##
+
+menu.frame.font:						Noto Sans CJK TC-14:bold
+menu.title.font:						Noto Sans CJK TC-14:bold
+toolbar.clock.font:						Noto Sans CJK TC-13:bold
+toolbar.workspace.font:					tahoma-10:bold
+toolbar.iconbar.focused.font:			Noto Sans CJK TC-12:bold
+toolbar.iconbar.unfocused.font:			Noto Sans CJK TC-12
+window.font:							Noto Sans CJK TC-10
+
+
+##
+### Tail: font
+################################################################################
+
+
+################################################################################
+### Head: toolbar
+##
+
+toolbar.height:							24
+
+##
+### Tail: toolbar
+################################################################################
+
+
+################################################################################
+### Head: menu
+##
+
+
+
+##
+### Tail: menu
+################################################################################
+
+
+################################################################################
+### Head: window
+##
+
+window.title.height:					24
+
+##
+### Tail: toolbar
+################################################################################
