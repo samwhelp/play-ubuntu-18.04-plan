@@ -28,6 +28,23 @@ fluxbox_config_install () {
 
 
 ################################################################################
+### Head: volumeicon
+##
+volumeicon_config_install () {
+
+	mkdir -p "$HOME/.config/volumeicon"
+	echo "mkdir -p $HOME/.config/volumeicon"
+
+	cp ./config/volumeicon/volumeicon "$HOME/.config/volumeicon/volumeicon"
+	echo "cp ./config/volumeicon/volumeicon $HOME/.config/volumeicon/volumeicon"
+
+}
+##
+### Tail: volumeicon
+################################################################################
+
+
+################################################################################
 ### Head: compton
 ##
 compton_config_install () {
@@ -155,6 +172,8 @@ gtk2_config_install () {
 main_config_install () {
 
 	fluxbox_config_install
+
+	volumeicon_config_install
 
 	compton_config_install
 
