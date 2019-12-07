@@ -15,7 +15,6 @@ openbox_config_install () {
 
 	cp "./config/openbox/rc.xml" "$HOME/.config/openbox/rc.xml"
 	echo "cp ./config/openbox/rc.xml $HOME/.config/openbox/rc.xml"
-
 }
 ##
 ### Tail: openbox
@@ -116,6 +115,20 @@ sakura_config_install () {
 
 	cp "./config/sakura/sakura.conf" "$HOME/.config/sakura/sakura.conf"
 	echo "cp ./config/sakura/sakura.conf $HOME/.config/sakura/sakura.conf"
+
+
+	sakura_put_my_desktop_entry
+}
+
+sakura_put_my_desktop_entry () {
+	mkdir -p "$HOME/.local/share/applications"
+	echo "mkdir -p $HOME/.local/share/applications"
+
+	cp "/usr/share/applications/sakura.desktop" "$HOME/.local/share/applications/sakura.desktop"
+	echo "cp /usr/share/applications/sakura.desktop $HOME/.local/share/applications/sakura.desktop"
+
+	sed -i 's/^Exec=sakura/Exec=sakura -m/g' "$HOME/.local/share/applications/sakura.desktop"
+	echo "sed -i 's/^Exec=sakura/Exec=sakura -m/g' $HOME/.local/share/applications/sakura.desktop"
 }
 ##
 ### Tail: sakura

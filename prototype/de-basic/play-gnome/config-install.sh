@@ -156,11 +156,25 @@ rofi_config_install () {
 ### Head: sakura
 ##
 sakura_config_install () {
-	mkdir -p $HOME/.config/sakura
+	mkdir -p "$HOME/.config/sakura"
 	echo "mkdir -p $HOME/.config/sakura"
 
-	cp ./config/sakura/sakura.conf $HOME/.config/sakura/sakura.conf
+	cp "./config/sakura/sakura.conf" "$HOME/.config/sakura/sakura.conf"
 	echo "cp ./config/sakura/sakura.conf $HOME/.config/sakura/sakura.conf"
+
+
+	sakura_put_my_desktop_entry
+}
+
+sakura_put_my_desktop_entry () {
+	mkdir -p "$HOME/.local/share/applications"
+	echo "mkdir -p $HOME/.local/share/applications"
+
+	cp "/usr/share/applications/sakura.desktop" "$HOME/.local/share/applications/sakura.desktop"
+	echo "cp /usr/share/applications/sakura.desktop $HOME/.local/share/applications/sakura.desktop"
+
+	sed -i 's/^Exec=sakura/Exec=sakura -m/g' "$HOME/.local/share/applications/sakura.desktop"
+	echo "sed -i 's/^Exec=sakura/Exec=sakura -m/g' $HOME/.local/share/applications/sakura.desktop"
 }
 ##
 ### Tail: sakura
