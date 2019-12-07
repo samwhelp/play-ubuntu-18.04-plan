@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=XSession
+Exec=/usr/bin/zero-session.sh
+TryExec=/usr/bin/zero-session.sh
+Name=ZeroSession
+Comment=Zero Xsession
+
+Name[zh_TW]=ZeroSession
+Comment[zh_TW]=Zero Xsession
