@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Exec=xdotool key ctrl+alt+a
+TryExec=xdotool
+Icon=open-menu
+Categories=System;Utility;
+Keywords=menu;toggle;
+
+Name=Openbox Show Root Menu
+GenericName=Openbox-Show-Root-Menu
+Comment=Openbox Show Root Menu
+
+Name[zh_TW]=顯示主選單
+GenericName[zh_TW]=Openbox-Show-Root-Menu
+Comment[zh_TW]=顯示主選單
