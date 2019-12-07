@@ -430,14 +430,23 @@
 
 <!-- ####################################################################### -->
 <!-- ### Head: Window -->
-    <keybind key="C-A-d">
-      <action name="ToggleShowDesktop"/>
-    </keybind>
 
     <keybind key="S-A-q">
       <action name="Close"/>
     </keybind>
+
 <!-- ### Tail: Window-->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Key ToggleShowDesktop -->
+
+    <keybind key="C-A-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+
+<!-- ### Tail: Key ToggleShowDesktop-->
 <!-- ####################################################################### -->
 
 
@@ -777,6 +786,17 @@
           <menu>root-menu</menu>
         </action>
       </mousebind>
+
+<!-- ####################################################################### -->
+<!-- ### Head: Mouse ToggleShowDesktop -->
+
+      <mousebind button="Left" action="Press">
+        <action name="ToggleShowDesktop"/>
+      </mousebind>
+
+<!-- ### Tail: Mouse ToggleShowDesktop-->
+<!-- ####################################################################### -->
+
     </context>
     <context name="MoveResize">
       <mousebind button="Up" action="Click">
