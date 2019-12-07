@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=XSession
+Exec=/usr/bin/xfwm4-session.sh
+TryExec=/usr/bin/xfwm4-session.sh
+Name=Xfwm4Session
+Comment=Xfwm4 Xsession
+
+Name[zh_TW]=Xfwm4Session
+Comment[zh_TW]=Xfwm4 Xsession
