@@ -15,6 +15,17 @@ openbox_config_install () {
 
 	cp "./config/openbox/rc.xml" "$HOME/.config/openbox/rc.xml"
 	echo "cp ./config/openbox/rc.xml $HOME/.config/openbox/rc.xml"
+
+	openbox_put_toggledesktop_desktop_entry
+}
+
+openbox_put_toggledesktop_desktop_entry () {
+	mkdir -p "$HOME/.local/share/applications"
+	echo "mkdir -p $HOME/.local/share/applications"
+
+	cp "./config/openbox/openbox-toggle-show-desktop.desktop" "$HOME/.local/share/applications/openbox-toggle-show-desktop.desktop"
+	echo "cp ./config/openbox/openbox-toggle-show-desktop.desktop $HOME/.local/share/applications/openbox-toggle-show-desktop.desktop"
+
 }
 ##
 ### Tail: openbox
