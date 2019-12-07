@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=XSession
+Exec=/usr/bin/demo-session.sh
+TryExec=/usr/bin/demo-session.sh
+Name=DemoSession
+Comment=Demo for Xsession Concept
+
+Name[zh_TW]=DemoSession
+Comment[zh_TW]=Demo for Xsession Concept
