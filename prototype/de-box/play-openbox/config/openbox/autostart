@@ -53,9 +53,11 @@ volumeicon &
 #xfdesktop &
 
 ## Just Wallpaper
-#feh --bg-scale "/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg" &
-feh --bg-scale "/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg" &
 
+#THE_WALLPAPER_FILE_PATH="/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg"
+THE_WALLPAPER_FILE_PATH="/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg"
+
+feh --bg-scale "$THE_WALLPAPER_FILE_PATH" &
 
 ##
 ### Tail: Desktop
