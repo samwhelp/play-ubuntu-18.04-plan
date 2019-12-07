@@ -337,6 +337,8 @@
         <command>scrot</command>
       </action>
     </keybind>
+<!-- ####################################################################### -->
+<!-- ### Head: Launch App -->
     <keybind key="A-S-t">
       <action name="Execute">
         <startupnotify>
@@ -409,12 +411,61 @@
         <command>rofi -show run</command>
       </action>
     </keybind>
+
+<!-- ### Tail: Launch App -->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Window Decorate Toggle -->
     <keybind key="W-A-z">
       <action name="Decorate"/>
     </keybind>
     <keybind key="W-A-x">
       <action name="Undecorate"/>
     </keybind>
+<!-- ### Tail: Window Decorate Toggle -->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Window -->
+    <keybind key="C-A-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+
+    <keybind key="S-A-q">
+      <action name="Close"/>
+    </keybind>
+<!-- ### Tail: Window-->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Workspace -->
+    <keybind key="A-1">
+      <action name="GoToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="A-2">
+      <action name="GoToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="A-3">
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="A-4">
+      <action name="GoToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+<!-- ### Tail: Workspace-->
+<!-- ####################################################################### -->
+
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
