@@ -73,7 +73,7 @@ feh --bg-scale "$THE_WALLPAPER_FILE_PATH" &
 ## tint2
 #tint2 &
 #tint2 -c "$HOME/.config/tint2/tint2rc" &
-tint2 -c "$HOME/.config/metacity-session/tint2/tint2rc" &
+#tint2 -c "$HOME/.config/metacity-session/tint2/tint2rc" &
 
 ## xfce4-panel
 #xfce4-panel &
@@ -90,7 +90,7 @@ tint2 -c "$HOME/.config/metacity-session/tint2/tint2rc" &
 ## cairo-dock
 #cairo-dock &
 #cairo-dock -o &
-#cairo-dock -c &
+cairo-dock -c &
 
 ##
 ### Tail: Panel
@@ -106,7 +106,7 @@ tint2 -c "$HOME/.config/metacity-session/tint2/tint2rc" &
 ## compton
 #compton &
 #compton --config ~/.config/compton/compton.conf &
-#compton --config ~/.config/metacity-session/compton/compton.conf &
+compton --config ~/.config/metacity-session/compton/compton.conf &
 
 ##
 ### Tail: Compton
@@ -168,8 +168,8 @@ lxqt-globalkeysd &
 
 ## metacity
 METACITY_OPT_REPLACE="--replace"
-METACITY_OPT_COMPOSITOR="--composite"
-#METACITY_OPT_COMPOSITOR="--no-composite"
+#METACITY_OPT_COMPOSITOR="--composite"
+METACITY_OPT_COMPOSITOR="--no-composite"
 
 exec metacity "$METACITY_OPT_REPLACE" "$METACITY_OPT_COMPOSITOR"
 

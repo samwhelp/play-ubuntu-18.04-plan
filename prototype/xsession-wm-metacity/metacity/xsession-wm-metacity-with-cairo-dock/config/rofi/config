@@ -1,0 +1,8 @@
+
+rofi.font: Ubuntu Mono 20
+rofi.fullscreen: true
+rofi.fake-background: background
+rofi.theme: /usr/share/rofi/themes/glue_pro_blue.rasi
+rofi.modi: window,run,drun
+rofi.combi-modi: window,drun
+

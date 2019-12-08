@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=XSession
+Exec=/usr/bin/metacity-session.sh
+TryExec=/usr/bin/metacity-session.sh
+Name=MetacitySession
+Comment=Metacity Xsession
+
+Name[zh_TW]=MetacitySession
+Comment[zh_TW]=Metacity Xsession
