@@ -162,10 +162,11 @@ lxqt-globalkeysd &
 
 
 ## xfwm4
-XFWM4_OPT_COMPOSITOR="--replace"
+XFWM4_OPT_REPLACE="--replace"
+#XFWM4_OPT_COMPOSITOR="--compositor=on"
 XFWM4_OPT_COMPOSITOR="--compositor=off"
 
-exec xfwm4 $XFWM4_OPT_COMPOSITOR $XFWM4_OPT_COMPOSITOR
+exec xfwm4 "$XFWM4_OPT_REPLACE" "$XFWM4_OPT_COMPOSITOR"
 
 ##
 ### Tail: Window Manager
