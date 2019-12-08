@@ -3,15 +3,17 @@ xfwm4
 
 tint2
 
+lxqt-globalkeys
+
 rofi
+
+feh
+
+compton
 
 xdotool
 
 volumeicon-alsa
-
-feh
-
-#compton
 
 
 numix-gtk-theme
@@ -27,6 +29,7 @@ fcitx-chewing
 
 
 pcmanfm-qt
+#xfdesktop4
 
 
 tilix
