@@ -1,5 +1,5 @@
 
-# Prototype play-xfce
+# Prototype xsession-wm-xfwm4-with-cairo-dock
 
 
 ## Usage
