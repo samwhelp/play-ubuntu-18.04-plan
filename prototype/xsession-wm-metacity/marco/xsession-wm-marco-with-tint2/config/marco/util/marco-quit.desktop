@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Exec=killall -9 marco
+TryExec=killall
+Icon=system-run
+Categories=System;Utility;
+Keywords=desktop;window;toggle;
+
+Name=Marco Quit
+GenericName=Marco-Quit
+Comment=Marco Quit
+
+Name[zh_TW]=登出桌面
+GenericName[zh_TW]=Marco-Quit
+Comment[zh_TW]=登出桌面
