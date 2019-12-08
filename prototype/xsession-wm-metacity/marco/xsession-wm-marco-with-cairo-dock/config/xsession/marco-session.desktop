@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=XSession
+Exec=/usr/bin/marco-session.sh
+TryExec=/usr/bin/marco-session.sh
+Name=MarcoSession
+Comment=Marco Xsession
+
+Name[zh_TW]=MarcoSession
+Comment[zh_TW]=Marco Xsession

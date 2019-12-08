@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Exec=xdotool key ctrl+alt+d
+TryExec=xdotool
+Icon=desktop
+Categories=System;Utility;
+Keywords=desktop;window;toggle;
+
+Name=Marco Toggle Show Desktop
+GenericName=Marco-Toggle-Show-Desktop
+Comment=Marco Toggle Show Desktop
+
+Name[zh_TW]=切換顯示桌面
+GenericName[zh_TW]=Marco-Toggle-Show-Desktop
+Comment[zh_TW]=切換顯示桌面
