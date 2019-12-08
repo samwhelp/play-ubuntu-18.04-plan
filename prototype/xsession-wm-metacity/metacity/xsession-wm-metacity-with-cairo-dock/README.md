@@ -1,5 +1,5 @@
 
-# Prototype xsession-wm-metacity-with-tint2
+# Prototype xsession-wm-metacity-with-cairo-dock
 
 
 ## Usage
