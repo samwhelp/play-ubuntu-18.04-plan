@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Exec=killall -9 xfwm4
+TryExec=killall
+Icon=system-run
+Categories=System;Utility;
+Keywords=desktop;window;toggle;
+
+Name=Xfwm4 Quit
+GenericName=Xfwm4-Quit
+Comment=Xfwm4 Quit
+
+Name[zh_TW]=登出桌面
+GenericName[zh_TW]=Xfwm4-Quit
+Comment[zh_TW]=登出桌面
