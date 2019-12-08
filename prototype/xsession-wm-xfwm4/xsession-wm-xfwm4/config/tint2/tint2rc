@@ -77,7 +77,7 @@ border_color_pressed = #000000 100
 
 #-------------------------------------
 # Panel
-panel_items = LTSC
+panel_items = LTSBC
 panel_size = 80% 30
 panel_margin = 0 0
 panel_padding = 2 0 2
@@ -141,7 +141,7 @@ task_urgent_background_id = 4
 task_iconified_background_id = 2
 mouse_left = toggle_iconify
 mouse_middle = close
-mouse_right = toggle
+mouse_right = maximize_restore
 mouse_scroll_up = prev_task
 mouse_scroll_down = next_task
 

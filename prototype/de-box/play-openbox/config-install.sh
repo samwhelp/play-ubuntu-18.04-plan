@@ -47,6 +47,16 @@ openbox_put_showrootmenu_desktop_entry () {
 ##
 tint2_config_install () {
 
+	mkdir -p "$HOME/.config/openbox/tint2"
+	echo "mkdir -p $HOME/.config/openbox/tint2"
+
+	cp "./config/tint2/tint2rc" "$HOME/.config/openbox/tint2/tint2rc"
+	echo "cp ./config/tint2/tint2rc $HOME/.config/openbox/tint2/tint2rc"
+
+}
+
+tint2_config_install_default () {
+
 	mkdir -p "$HOME/.config/tint2"
 	echo "mkdir -p $HOME/.config/tint2"
 
@@ -81,13 +91,16 @@ volumeicon_config_install () {
 ##
 compton_config_install () {
 
+	mkdir -p "$HOME/.config/openbox/compton"
+	echo "mkdir -p $HOME/.config/openbox/compton"
+
+
 	## $ dpkg -L compton | grep conf
 	## /usr/share/doc/compton/examples/compton.sample.conf
-
 	## cp $(dpkg -L compton | grep conf) ~/.config/compton.conf
 
-	echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/compton.conf"
-	cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.config/compton.conf"
+	cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.config/openbox/compton/compton.conf"
+	echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/openbox/compton/compton.conf"
 
 }
 ##

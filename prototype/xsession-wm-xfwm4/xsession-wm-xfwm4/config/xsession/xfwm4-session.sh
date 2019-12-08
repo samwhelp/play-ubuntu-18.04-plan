@@ -71,7 +71,9 @@ feh --bg-scale "$THE_WALLPAPER_FILE_PATH" &
 ## Panel
 
 ## tint2
-tint2 -c "$HOME/.config/xfwm4-session/tint2rc" &
+#tint2 &
+#tint2 -c "$HOME/.config/tint2/tint2rc" &
+tint2 -c "$HOME/.config/xfwm4-session/tint2/tint2rc" &
 
 ## xfce4-panel
 #xfce4-panel &
@@ -100,8 +102,9 @@ tint2 -c "$HOME/.config/xfwm4-session/tint2rc" &
 ## Please use [xfwm4 --compositor=off] if use compton.
 
 ## compton
-#compton --config ~/.config/compton/compton.conf &
 #compton &
+#compton --config ~/.config/compton/compton.conf &
+#compton --config ~/.config/xfwm4-session/compton/compton.conf &
 
 ##
 ### Tail: Compton

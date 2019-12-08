@@ -70,11 +70,21 @@ xfwm4_put_quit_desktop_entry () {
 ##
 tint2_config_install () {
 
-	mkdir -p "$HOME/.config/xfwm4-session"
-	echo "mkdir -p $HOME/.config/xfwm4-session"
+	mkdir -p "$HOME/.config/xfwm4-session/tint2"
+	echo "mkdir -p $HOME/.config/xfwm4-session/tint2"
 
-	cp "./config/tint2/tint2rc" "$HOME/.config/xfwm4-session/tint2rc"
-	echo "cp ./config/tint2/tint2rc $HOME/.config/xfwm4-session/tint2rc"
+	cp "./config/tint2/tint2rc" "$HOME/.config/xfwm4-session/tint2/tint2rc"
+	echo "cp ./config/tint2/tint2rc $HOME/.config/xfwm4-session/tint2/tint2rc"
+
+}
+
+tint2_config_install_default () {
+
+	mkdir -p "$HOME/.config/tint2"
+	echo "mkdir -p $HOME/.config/tint2"
+
+	cp "./config/tint2/tint2rc" "$HOME/.config/tint2/tint2rc"
+	echo "cp ./config/tint2/tint2rc $HOME/.config/tint2/tint2rc"
 
 }
 ##
