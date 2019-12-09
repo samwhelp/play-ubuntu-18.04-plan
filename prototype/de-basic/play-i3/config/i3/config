@@ -294,8 +294,8 @@ exec_always --no-startup-id feh --bg-scale $bg_file_path
 ## Compton
 ## default_compton_path: ~/.config/compton.conf
 #exec_always compton -f
-## use_new_config_path: ~/.config/compton/compton.conf
-exec_always compton --config ~/.config/compton/compton.conf
+## use_new_config_path: ~/.config/i3/compton/compton.conf
+exec_always compton --config ~/.config/i3/compton/compton.conf
 
 
 ##
