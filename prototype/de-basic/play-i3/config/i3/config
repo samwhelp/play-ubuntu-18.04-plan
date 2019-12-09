@@ -260,6 +260,10 @@ bar {
 ##
 
 ## Terminal
+bindsym $mod+Shift+a exec sakura -m
+
+
+## Terminal (Drop Down)
 bindsym $mod+Shift+t exec tilix --quake
 
 
@@ -269,16 +273,16 @@ bindsym $mod+Shift+w exec rofi -show window -show-icons
 bindsym $mod+Shift+d exec rofi -show drun -show-icons
 
 
-## Files
+## File Manager
 bindsym $mod+Shift+f exec pcmanfm-qt
 bindsym $mod+Shift+g exec nautilus
 
 
-## Editor
+## Text Editor
 bindsym $mod+Shift+e exec gedit
 
 
-## Browser
+## Web Browser
 bindsym $mod+Shift+b exec firefox
 #bindsym $mod+Shift+b exec xdg-open 'about:blank'
 
