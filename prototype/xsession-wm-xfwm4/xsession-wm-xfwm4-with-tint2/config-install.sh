@@ -28,13 +28,13 @@ xsession_config_install () {
 ### Head: xfwm4
 ##
 xfwm4_config_install () {
-	mkdir -p $HOME/.config/xfce4/xfconf/xfce-perchannel-xml
+	mkdir -p "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml"
 	echo "mkdir -p $HOME/.config/xfce4/xfconf/xfce-perchannel-xml"
 
-	cp ./config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+	cp "./config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml" "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
 	echo "cp ./config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
 
-	cp ./config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+	cp "./config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml" "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml"
 	echo "cp ./config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml"
 
 	xfwm4_put_toggledesktop_desktop_entry
@@ -97,13 +97,13 @@ tint2_config_install_default () {
 ##
 compton_config_install () {
 
-	mkdir -p "$HOME/.config/xfwm4-session/compton"
-	echo "mkdir -p $HOME/.config/xfwm4-session/compton"
-
-
 	## $ dpkg -L compton | grep conf
 	## /usr/share/doc/compton/examples/compton.sample.conf
 	## cp $(dpkg -L compton | grep conf) ~/.config/compton.conf
+
+
+	mkdir -p "$HOME/.config/xfwm4-session/compton"
+	echo "mkdir -p $HOME/.config/xfwm4-session/compton"
 
 	cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.config/xfwm4-session/compton/compton.conf"
 	echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/xfwm4-session/compton/compton.conf"
@@ -135,11 +135,12 @@ volumeicon_config_install () {
 ### Head: lxqt
 ##
 lxqt_config_install () {
-	mkdir -p $HOME/.config/lxqt
-	echo "mkdir -p $HOME/.config/lxqt"
 
-	cp ./config/lxqt/globalkeyshortcuts.conf $HOME/.config/lxqt/globalkeyshortcuts.conf
-	echo "cp ./config/lxqt/globalkeyshortcuts.conf $HOME/.config/lxqt/globalkeyshortcuts.conf"
+	mkdir -p "$HOME/.config/xfwm4-session/lxqt"
+	echo "mkdir -p $HOME/.config/xfwm4-session/lxqt"
+
+	cp "./config/lxqt/globalkeyshortcuts.conf" "$HOME/.config/xfwm4-session/lxqt/globalkeyshortcuts.conf"
+	echo "cp ./config/lxqt/globalkeyshortcuts.conf $HOME/.config/xfwm4-session/lxqt/globalkeyshortcuts.conf"
 
 }
 ##
@@ -155,7 +156,7 @@ pcmanfm_qt_config_install () {
 	mkdir -p "$HOME/.config/pcmanfm-qt/default"
 	echo "mkdir -p $HOME/.config/pcmanfm-qt/default"
 
-	cp ./config/pcmanfm-qt/default/settings.conf "$HOME/.config/pcmanfm-qt/default/settings.conf"
+	cp "./config/pcmanfm-qt/default/settings.conf" "$HOME/.config/pcmanfm-qt/default/settings.conf"
 	echo "cp ./config/pcmanfm-qt/default/settings.conf $HOME/.config/pcmanfm-qt/default/settings.conf"
 
 }
@@ -229,10 +230,10 @@ sakura_put_my_desktop_entry () {
 ### Head: fcitx
 ##
 fcitx_config_install () {
-	mkdir -p $HOME/.config/fcitx
+	mkdir -p "$HOME/.config/fcitx"
 	echo "mkdir -p $HOME/.config/fcitx"
 
-	cp ./config/fcitx/profile $HOME/.config/fcitx/profile
+	cp "./config/fcitx/profile" "$HOME/.config/fcitx/profile"
 	echo "cp ./config/fcitx/profile $HOME/.config/fcitx/profile"
 
 	fcitx_config_install_im_config
@@ -256,10 +257,10 @@ fcitx_config_install_im_config () {
 ### Head: gtk3
 ##
 gtk3_config_install () {
-	mkdir -p $HOME/.config/gtk-3.0
+	mkdir -p "$HOME/.config/gtk-3.0"
 	echo "mkdir -p $HOME/.config/gtk-3.0"
 
-	cp ./config/gtk3/settings.ini $HOME/.config/gtk-3.0/settings.ini
+	cp "./config/gtk3/settings.ini" "$HOME/.config/gtk-3.0/settings.ini"
 	echo "cp ./config/gtk3/settings.ini $HOME/.config/gtk-3.0/settings.ini"
 }
 ##
@@ -272,7 +273,7 @@ gtk3_config_install () {
 ##
 gtk2_config_install () {
 
-	cp ./config/gtk2/.gtkrc-2.0 $HOME/.gtkrc-2.0
+	cp "./config/gtk2/.gtkrc-2.0" "$HOME/.gtkrc-2.0"
 	echo "cp ./config/gtk2/.gtkrc-2.0 $HOME/.gtkrc-2.0"
 
 }
