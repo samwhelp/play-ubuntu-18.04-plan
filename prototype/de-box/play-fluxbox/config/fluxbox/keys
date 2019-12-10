@@ -20,15 +20,15 @@ OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
 OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing BottomRight}
 
 !mouse actions added by fluxbox-update_configs
-OnDesktop Mouse1 :HideMenus
-OnDesktop Mouse2 :WorkspaceMenu
-OnDesktop Mouse3 :RootMenu
-OnDesktop Mouse4 :NextWorkspace
-OnDesktop Mouse5 :PrevWorkspace
+#OnDesktop Mouse1 :HideMenus
+#OnDesktop Mouse2 :WorkspaceMenu
+#OnDesktop Mouse3 :RootMenu
+#OnDesktop Mouse4 :NextWorkspace
+#OnDesktop Mouse5 :PrevWorkspace
 
 # click on the desktop to get menus
 OnDesktop Mouse1 :HideMenus
-OnDesktop Mouse2 :WorkspaceMenu
+#OnDesktop Mouse2 :WorkspaceMenu
 OnDesktop Mouse3 :RootMenu
 
 # scroll on the desktop to change workspaces
@@ -182,7 +182,7 @@ Control Mod4 F12 :TakeToWorkspace 12
 
 Mod4 d :ToggleCmd {ShowDesktop}
 Control Mod1 d :ToggleCmd {ShowDesktop}
-
+OnDesktop Mouse2 :ToggleCmd {ShowDesktop}
 
 ##
 ### Tail: Desktop
@@ -194,6 +194,7 @@ Control Mod1 d :ToggleCmd {ShowDesktop}
 ##
 
 Mod1 Return :Exec sakura -m
+Mod1 Shift a :Exec sakura -m
 Mod1 Shift f :Exec pcmanfm-qt
 Mod1 Shift r :Exec rofi -show run
 Mod1 Shift w :Exec rofi -show window -show-icons
@@ -229,6 +230,10 @@ Mod1 Shift q :Close
 ################################################################################
 ### Head: Workspace
 ##
+
+## change to previous/next workspace
+Mod1 a :PrevWorkspace
+Mod1 s :NextWorkspace
 
 ## change to a specific workspace
 Mod1 1 :Workspace 1
