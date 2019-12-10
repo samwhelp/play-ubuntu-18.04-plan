@@ -14,6 +14,8 @@ toolbar.iconbar.focused.font:			Noto Sans CJK TC-12:bold
 toolbar.iconbar.unfocused.font:			Noto Sans CJK TC-12
 window.font:							Noto Sans CJK TC-10
 
+#*font:									Noto Sans CJK TC-12
+
 
 ##
 ### Tail: font
