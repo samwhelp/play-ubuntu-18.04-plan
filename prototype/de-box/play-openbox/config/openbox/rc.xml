@@ -339,6 +339,8 @@
     </keybind>
 <!-- ####################################################################### -->
 <!-- ### Head: Launch App -->
+
+
     <keybind key="A-S-t">
       <action name="Execute">
         <startupnotify>
@@ -348,6 +350,7 @@
         <command>tilix --quake</command>
       </action>
     </keybind>
+
     <keybind key="A-Return">
       <action name="Execute">
         <startupnotify>
@@ -357,6 +360,17 @@
         <command>sakura -m</command>
       </action>
     </keybind>
+
+    <keybind key="S-A-a">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Terminal</name>
+        </startupnotify>
+        <command>sakura -m</command>
+      </action>
+    </keybind>
+
     <keybind key="A-S-f">
       <action name="Execute">
         <startupnotify>
@@ -366,6 +380,7 @@
         <command>pcmanfm-qt</command>
       </action>
     </keybind>
+
     <keybind key="A-S-b">
       <action name="Execute">
         <startupnotify>
@@ -375,6 +390,7 @@
         <command>firefox</command>
       </action>
     </keybind>
+
     <keybind key="A-S-e">
       <action name="Execute">
         <startupnotify>
@@ -384,6 +400,7 @@
         <command>mousepad</command>
       </action>
     </keybind>
+
     <keybind key="A-S-d">
       <action name="Execute">
         <startupnotify>
@@ -453,12 +470,6 @@
 <!-- ####################################################################### -->
 <!-- ### Head: Key ShowRootMenu -->
 
-    <keybind key="S-A-a">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
-      </action>
-    </keybind>
-
     <keybind key="C-A-a">
       <action name="ShowMenu">
         <menu>root-menu</menu>
@@ -476,27 +487,58 @@
 
 
 <!-- ####################################################################### -->
+<!-- ### Head: Key ShowRootMenu -->
+
+    <keybind key="C-A-s">
+      <action name="ShowMenu">
+        <menu>client-list-combined-menu</menu>
+      </action>
+    </keybind>
+
+<!-- ### Tail: Key ShowRootMenu -->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
 <!-- ### Head: Workspace -->
+
+
+    <keybind key="A-a">
+      <action name="GoToDesktop">
+        <to>previous</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-s">
+      <action name="GoToDesktop">
+        <to>next</to>
+      </action>
+    </keybind>
+
     <keybind key="A-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
+
     <keybind key="A-2">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
+
     <keybind key="A-3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
+
     <keybind key="A-4">
       <action name="GoToDesktop">
         <to>4</to>
       </action>
     </keybind>
+
 <!-- ### Tail: Workspace-->
 <!-- ####################################################################### -->
 
