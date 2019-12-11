@@ -579,8 +579,10 @@
 
 
 <!-- ####################################################################### -->
-<!-- ### Head: Workspace -->
-
+<!-- ### Head: Go To Workspace (GoToDesktop) -->
+<!--
+* http://openbox.org/wiki/Help:Actions#GoToDesktop
+//-->
     <keybind key="A-a">
       <action name="GoToDesktop">
         <to>previous</to>
@@ -590,6 +592,12 @@
     <keybind key="A-s">
       <action name="GoToDesktop">
         <to>next</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-d">
+      <action name="GoToDesktop">
+        <to>last</to>
       </action>
     </keybind>
 
@@ -653,8 +661,90 @@
       </action>
     </keybind>
 
-<!-- ### Tail: Workspace-->
+<!-- ### Tail: Go To Workspace (GoToDesktop)-->
 <!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Go To Workspace (SendToDesktop) -->
+<!--
+* http://openbox.org/wiki/Help:Actions#SendToDesktop
+//-->
+    <keybind key="A-W-a">
+      <action name="SendToDesktop">
+        <to>previous</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-W-s">
+      <action name="SendToDesktop">
+        <to>next</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-S-1">
+      <action name="SendToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-S-2">
+      <action name="SendToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-S-3">
+      <action name="SendToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-S-4">
+      <action name="SendToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-S-5">
+      <action name="SendToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-S-6">
+      <action name="SendToDesktop">
+        <to>6</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-S-7">
+      <action name="SendToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-S-8">
+      <action name="SendToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-S-9">
+      <action name="SendToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-S-0">
+      <action name="SendToDesktop">
+        <to>10</to>
+      </action>
+    </keybind>
+
+<!-- ### Tail: Go To Workspace (SendToDesktop)-->
+<!-- ####################################################################### -->
+
 
   </keyboard>
   <mouse>
