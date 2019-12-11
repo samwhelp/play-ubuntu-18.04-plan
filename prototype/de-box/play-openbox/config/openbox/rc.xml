@@ -319,6 +319,8 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
+
+<!--
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
@@ -328,12 +330,56 @@
         <command>kfmclient openProfile filemanagement</command>
       </action>
     </keybind>
+//-->
+
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
         <command>scrot</command>
       </action>
     </keybind>
+
+<!-- ####################################################################### -->
+<!-- ### Head: Manual -->
+<!--
+* http://openbox.org/wiki/Help:Actions
+//-->
+<!-- ### Tail: Manual -->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: System -->
+<!--
+* /etc/xdg/openbox/menu.xml
+//-->
+
+    <keybind key="A-S-z">
+      <action name="Restart" />
+    </keybind>
+
+    <keybind key="A-S-x">
+      <action name="Exit" />
+    </keybind>
+
+    <keybind key="A-S-c">
+      <action name="Reconfigure" />
+    </keybind>
+
+    <keybind key="A-S-s">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Openbox Configuration Manager</name>
+        </startupnotify>
+        <command>obconf</command>
+      </action>
+    </keybind>
+
+<!-- ### Tail: System -->
+<!-- ####################################################################### -->
+
+
 <!-- ####################################################################### -->
 <!-- ### Head: Launch App -->
 
@@ -441,12 +487,23 @@
 
 <!-- ####################################################################### -->
 <!-- ### Head: Window Decorate Toggle -->
+<!-- http://openbox.org/wiki/Help:Actions#ToggleDecorations //-->
+<!--
     <keybind key="W-A-z">
       <action name="Decorate"/>
     </keybind>
     <keybind key="W-A-x">
       <action name="Undecorate"/>
     </keybind>
+//-->
+<keybind key="W-A-d">
+  <action name="ToggleDecorations"/>
+</keybind>
+<!--
+<keybind key="W-C-d">
+  <action name="ToggleDecorations"/>
+</keybind>
+//-->
 <!-- ### Tail: Window Decorate Toggle -->
 <!-- ####################################################################### -->
 
