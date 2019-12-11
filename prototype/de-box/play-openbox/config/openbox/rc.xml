@@ -486,40 +486,6 @@
 
 
 <!-- ####################################################################### -->
-<!-- ### Head: Window Decorate Toggle -->
-<!-- http://openbox.org/wiki/Help:Actions#ToggleDecorations //-->
-<!--
-    <keybind key="W-A-z">
-      <action name="Decorate"/>
-    </keybind>
-    <keybind key="W-A-x">
-      <action name="Undecorate"/>
-    </keybind>
-//-->
-<keybind key="W-A-d">
-  <action name="ToggleDecorations"/>
-</keybind>
-<!--
-<keybind key="W-C-d">
-  <action name="ToggleDecorations"/>
-</keybind>
-//-->
-<!-- ### Tail: Window Decorate Toggle -->
-<!-- ####################################################################### -->
-
-
-<!-- ####################################################################### -->
-<!-- ### Head: Window -->
-
-    <keybind key="S-A-q">
-      <action name="Close"/>
-    </keybind>
-
-<!-- ### Tail: Window-->
-<!-- ####################################################################### -->
-
-
-<!-- ####################################################################### -->
 <!-- ### Head: Key ShowRootMenu -->
 
     <keybind key="C-A-a">
@@ -743,6 +709,165 @@
     </keybind>
 
 <!-- ### Tail: Go To Workspace (SendToDesktop)-->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Window Decorate Toggle -->
+<!-- http://openbox.org/wiki/Help:Actions#ToggleDecorations //-->
+<!--
+    <keybind key="W-A-z">
+      <action name="Decorate"/>
+    </keybind>
+    <keybind key="W-A-x">
+      <action name="Undecorate"/>
+    </keybind>
+//-->
+    <keybind key="W-A-d">
+      <action name="ToggleDecorations"/>
+    </keybind>
+<!--
+<keybind key="W-C-d">
+  <action name="ToggleDecorations"/>
+</keybind>
+//-->
+<!-- ### Tail: Window Decorate Toggle -->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Window -->
+
+    <keybind key="S-A-q">
+      <action name="Close"/>
+    </keybind>
+
+<!-- ### Tail: Window-->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Window Tiling -->
+<!-- https://askubuntu.com/questions/516303/tiling-windows-horizontally-and-vertically-under-lubuntu-lxde-openbox //-->
+<!-- Vertical tiling -->
+    <keybind key="C-W-v">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+      </action>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+      </action>
+      <action name="NextWindow">
+        <interactive>no</interactive>
+        <dialog>none</dialog>
+        <finalactions>
+          <action name="UnmaximizeFull"/>
+          <action name="MoveResizeTo">
+            <width>50%</width>
+          </action>
+          <action name="MaximizeVert"/>
+          <action name="MoveResizeTo">
+            <x>-0</x>
+            <y>0</y>
+          </action>
+        </finalactions>
+      </action>
+    </keybind>
+
+    <!-- Horizontal tiling -->
+    <keybind key="C-W-h">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <height>50%</height>
+      </action>
+      <action name="MaximizeHorz"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+      </action>
+      <action name="NextWindow">
+        <interactive>no</interactive>
+        <dialog>none</dialog>
+        <finalactions>
+          <action name="UnmaximizeFull"/>
+          <action name="MoveResizeTo">
+            <height>50%</height>
+          </action>
+          <action name="MaximizeHorz"/>
+          <action name="MoveResizeTo">
+            <x>0</x>
+            <y>-0</y>
+          </action>
+        </finalactions>
+      </action>
+    </keybind>
+
+<!-- Restore window dimensions -->
+<keybind key="C-W-r">
+  <action name="UnmaximizeFull"/>
+  <action name="NextWindow">
+    <interactive>no</interactive>
+    <dialog>none</dialog>
+    <finalactions>
+      <action name="UnmaximizeFull"/>
+    </finalactions>
+  </action>
+</keybind>
+
+
+<!-- ### Tail: Window Tiling -->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Window Tiling Move -->
+<!-- https://thomashunter.name/posts/2019-01-27-treating-openbox-like-a-tiling-windowmanager //-->
+
+    <keybind key="W-Left">
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+
+    <keybind key="W-Right">
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+
+    <keybind key="W-Up">
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+
+    <keybind key="W-Down">
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+
+
+<!-- ### Tail: Window Tiling Move -->
 <!-- ####################################################################### -->
 
 
@@ -1214,5 +1339,16 @@
 
   # end of the example
 -->
+
+<!--
+* https://thomashunter.name/posts/2019-01-27-treating-openbox-like-a-tiling-windowmanager
+//-->
+<!--
+    <application type="normal">
+      <maximized>true</maximized>
+      <decor>no</decor>
+    </application>
+//-->
+
   </applications>
 </openbox_config>
