@@ -2,7 +2,7 @@
 Type=Application
 Exec=rofi -show window -show-icons
 TryExec=rofi
-Icon=open-menu
+Icon=view-list
 Categories=System;Utility;
 Keywords=rofi;window;switch;
 

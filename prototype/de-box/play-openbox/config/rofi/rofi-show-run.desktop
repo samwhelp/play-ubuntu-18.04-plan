@@ -2,7 +2,7 @@
 Type=Application
 Exec=rofi -show run
 TryExec=rofi
-Icon=open-menu
+Icon=system-run
 Categories=System;Utility;
 Keywords=rofi;launch;launcher;run;runer;
 
