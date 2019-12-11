@@ -964,7 +964,64 @@
 <!-- ####################################################################### -->
 
 
+<!-- ####################################################################### -->
+<!-- ### Head: Window Action -->
+
+    <keybind key="W-i">
+      <action name="Iconify"/>
+    </keybind>
+
+    <keybind key="W-k">
+      <action name="ToggleMaximize">
+        <direction>both</direction>
+      </action>
+    </keybind>
+
+    <keybind key="W-j">
+      <action name="ToggleMaximize">
+        <direction>horizontal</direction>
+      </action>
+    </keybind>
+
+
+    <keybind key="W-l">
+      <action name="ToggleMaximize">
+        <direction>vertical</direction>
+      </action>
+    </keybind>
+
+
+    <keybind key="W-f">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+
+    <keybind key="W-q">
+      <action name="Close"/>
+    </keybind>
+
+    <keybind key="W-w">
+      <action name="ToggleMaximize">
+        <direction>both</direction>
+      </action>
+    </keybind>
+
+    <keybind key="W-x">
+      <action name="Iconify"/>
+    </keybind>
+
+    <keybind key="W-e">
+      <action name="Move"/>
+    </keybind>
+
+    <keybind key="W-r">
+      <action name="Resize"/>
+    </keybind>
+
+<!-- ### Tail: Window Action -->
+<!-- ####################################################################### -->
+
   </keyboard>
+
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
