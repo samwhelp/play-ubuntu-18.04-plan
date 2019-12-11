@@ -124,3 +124,34 @@ tint2 -c "$HOME/.config/openbox/tint2/tint2rc" &
 ##
 ### Tail: Shortcut
 ################################################################################
+
+
+################################################################################
+### Head: Policykit Agent
+##
+
+## [policykit-1-gnome]
+## $ dpkg -L policykit-1-gnome | grep desktop
+## /etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop
+## $ grep '^Exec=' $(dpkg -L policykit-1-gnome | grep desktop)
+## Exec=/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+## $ grep '^Exec=' $(dpkg -L policykit-1-gnome | grep desktop) | cut -d '=' -f 2
+## /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+
+## [lxqt-policykit]
+## $ dpkg -L lxqt-policykit | grep desktop
+## /etc/xdg/autostart/lxqt-policykit-agent.desktop
+## $ grep '^Exec=' $(dpkg -L lxqt-policykit | grep desktop)
+## Exec=lxqt-policykit-agent
+## $ grep '^Exec=' $(dpkg -L lxqt-policykit | grep desktop) | cut -d '=' -f 2
+## lxqt-policykit-agent
+
+#lxqt-policykit-agent &
+
+
+##
+### Tail: Policykit Agent
+################################################################################

@@ -12,6 +12,10 @@ tint2
 volumeicon-alsa
 
 
+policykit-1-gnome
+#lxqt-policykit
+
+
 numix-gtk-theme
 numix-blue-gtk-theme
 numix-icon-theme
