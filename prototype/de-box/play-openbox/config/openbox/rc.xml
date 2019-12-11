@@ -58,7 +58,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>sans</name>
-      <size>8</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -67,7 +67,7 @@
     </font>
     <font place="InactiveWindow">
       <name>sans</name>
-      <size>8</size>
+      <size>9</size>
       <!-- font size in points -->
       <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -85,7 +85,7 @@
     </font>
     <font place="MenuItem">
       <name>sans</name>
-      <size>9</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -94,7 +94,7 @@
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>sans</name>
-      <size>9</size>
+      <size>14</size>
       <!-- font size in points -->
       <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -103,7 +103,7 @@
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>sans</name>
-      <size>9</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -247,9 +247,6 @@
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="W-d">
-      <action name="ToggleShowDesktop"/>
-    </keybind>
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
@@ -340,7 +337,6 @@
 <!-- ####################################################################### -->
 <!-- ### Head: Launch App -->
 
-
     <keybind key="A-S-t">
       <action name="Execute">
         <startupnotify>
@@ -368,6 +364,16 @@
           <name>Terminal</name>
         </startupnotify>
         <command>sakura -m</command>
+      </action>
+    </keybind>
+
+    <keybind key="C-A-t">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Terminal</name>
+        </startupnotify>
+        <command>x-terminal-emulator</command>
       </action>
     </keybind>
 
@@ -457,20 +463,15 @@
 
 
 <!-- ####################################################################### -->
-<!-- ### Head: Key ToggleShowDesktop -->
-
-    <keybind key="C-A-d">
-      <action name="ToggleShowDesktop"/>
-    </keybind>
-
-<!-- ### Tail: Key ToggleShowDesktop-->
-<!-- ####################################################################### -->
-
-
-<!-- ####################################################################### -->
 <!-- ### Head: Key ShowRootMenu -->
 
     <keybind key="C-A-a">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
+
+    <keybind key="W-a">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
@@ -487,7 +488,7 @@
 
 
 <!-- ####################################################################### -->
-<!-- ### Head: Key ShowRootMenu -->
+<!-- ### Head: Key ShowWorkspaceMenu -->
 
     <keybind key="C-A-s">
       <action name="ShowMenu">
@@ -495,13 +496,33 @@
       </action>
     </keybind>
 
-<!-- ### Tail: Key ShowRootMenu -->
+    <keybind key="W-s">
+      <action name="ShowMenu">
+        <menu>client-list-combined-menu</menu>
+      </action>
+    </keybind>
+
+<!-- ### Tail: Key ShowWorkspaceMenu -->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Key ToggleShowDesktop -->
+
+    <keybind key="C-A-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+
+    <keybind key="W-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+
+<!-- ### Tail: Key ToggleShowDesktop-->
 <!-- ####################################################################### -->
 
 
 <!-- ####################################################################### -->
 <!-- ### Head: Workspace -->
-
 
     <keybind key="A-a">
       <action name="GoToDesktop">
@@ -536,6 +557,42 @@
     <keybind key="A-4">
       <action name="GoToDesktop">
         <to>4</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-5">
+      <action name="GoToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-6">
+      <action name="GoToDesktop">
+        <to>6</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-7">
+      <action name="GoToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-8">
+      <action name="GoToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-9">
+      <action name="GoToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-0">
+      <action name="GoToDesktop">
+        <to>10</to>
       </action>
     </keybind>
 
