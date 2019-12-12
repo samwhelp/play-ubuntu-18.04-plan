@@ -352,6 +352,7 @@
 <!-- ### Head: System -->
 <!--
 * /etc/xdg/openbox/menu.xml
+* ~/.config/openbox/menu.xml
 //-->
 
     <keybind key="A-S-z">
@@ -723,7 +724,7 @@
       <action name="Undecorate"/>
     </keybind>
 //-->
-    <keybind key="W-A-d">
+    <keybind key="W-v">
       <action name="ToggleDecorations"/>
     </keybind>
 <!--
@@ -736,13 +737,70 @@
 
 
 <!-- ####################################################################### -->
-<!-- ### Head: Window -->
+<!-- ### Head: Window Close //-->
 
     <keybind key="S-A-q">
       <action name="Close"/>
     </keybind>
 
-<!-- ### Tail: Window-->
+    <keybind key="W-q">
+      <action name="Close"/>
+    </keybind>
+
+<!-- ### Tail: Window Close //-->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Window Action -->
+
+    <keybind key="W-i">
+      <action name="Iconify"/>
+    </keybind>
+
+    <keybind key="W-k">
+      <action name="ToggleMaximize">
+        <direction>both</direction>
+      </action>
+    </keybind>
+
+    <keybind key="W-j">
+      <action name="ToggleMaximize">
+        <direction>horizontal</direction>
+      </action>
+    </keybind>
+
+
+    <keybind key="W-l">
+      <action name="ToggleMaximize">
+        <direction>vertical</direction>
+      </action>
+    </keybind>
+
+
+    <keybind key="W-f">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+
+    <keybind key="W-w">
+      <action name="ToggleMaximize">
+        <direction>both</direction>
+      </action>
+    </keybind>
+
+    <keybind key="W-x">
+      <action name="Iconify"/>
+    </keybind>
+
+    <keybind key="W-e">
+      <action name="Move"/>
+    </keybind>
+
+    <keybind key="W-r">
+      <action name="Resize"/>
+    </keybind>
+
+<!-- ### Tail: Window Action -->
 <!-- ####################################################################### -->
 
 
@@ -963,64 +1021,8 @@
 <!-- ### Tail: Window Tiling Move -->
 <!-- ####################################################################### -->
 
-
-<!-- ####################################################################### -->
-<!-- ### Head: Window Action -->
-
-    <keybind key="W-i">
-      <action name="Iconify"/>
-    </keybind>
-
-    <keybind key="W-k">
-      <action name="ToggleMaximize">
-        <direction>both</direction>
-      </action>
-    </keybind>
-
-    <keybind key="W-j">
-      <action name="ToggleMaximize">
-        <direction>horizontal</direction>
-      </action>
-    </keybind>
-
-
-    <keybind key="W-l">
-      <action name="ToggleMaximize">
-        <direction>vertical</direction>
-      </action>
-    </keybind>
-
-
-    <keybind key="W-f">
-      <action name="ToggleFullscreen"/>
-    </keybind>
-
-    <keybind key="W-q">
-      <action name="Close"/>
-    </keybind>
-
-    <keybind key="W-w">
-      <action name="ToggleMaximize">
-        <direction>both</direction>
-      </action>
-    </keybind>
-
-    <keybind key="W-x">
-      <action name="Iconify"/>
-    </keybind>
-
-    <keybind key="W-e">
-      <action name="Move"/>
-    </keybind>
-
-    <keybind key="W-r">
-      <action name="Resize"/>
-    </keybind>
-
-<!-- ### Tail: Window Action -->
-<!-- ####################################################################### -->
-
   </keyboard>
+
 
   <mouse>
     <dragThreshold>1</dragThreshold>
