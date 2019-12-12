@@ -758,25 +758,9 @@
       <action name="Iconify"/>
     </keybind>
 
-    <keybind key="W-k">
-      <action name="ToggleMaximize">
-        <direction>both</direction>
-      </action>
+    <keybind key="W-x">
+      <action name="Iconify"/>
     </keybind>
-
-    <keybind key="W-j">
-      <action name="ToggleMaximize">
-        <direction>horizontal</direction>
-      </action>
-    </keybind>
-
-
-    <keybind key="W-l">
-      <action name="ToggleMaximize">
-        <direction>vertical</direction>
-      </action>
-    </keybind>
-
 
     <keybind key="W-f">
       <action name="ToggleFullscreen"/>
@@ -788,9 +772,26 @@
       </action>
     </keybind>
 
-    <keybind key="W-x">
-      <action name="Iconify"/>
+    <keybind key="W-u">
+      <action name="ToggleMaximize">
+        <direction>both</direction>
+      </action>
     </keybind>
+
+<!--
+    <keybind key="W-j">
+      <action name="ToggleMaximize">
+        <direction>horizontal</direction>
+      </action>
+    </keybind>
+
+    <keybind key="W-l">
+      <action name="ToggleMaximize">
+        <direction>vertical</direction>
+      </action>
+    </keybind>
+//-->
+
 
     <keybind key="W-e">
       <action name="Move"/>
