@@ -799,10 +799,12 @@
 
 
     <keybind key="W-e">
+      <action name="UnmaximizeFull"/>
       <action name="Move"/>
     </keybind>
 
     <keybind key="W-r">
+      <action name="UnmaximizeFull"/>
       <action name="Resize"/>
     </keybind>
 
@@ -813,8 +815,89 @@
 <!-- ####################################################################### -->
 <!-- ### Head: Window Tiling -->
 <!-- https://askubuntu.com/questions/516303/tiling-windows-horizontally-and-vertically-under-lubuntu-lxde-openbox //-->
-<!-- Vertical tiling -->
+
+
+    <!-- Vertical tiling -->
+<!--
     <keybind key="C-W-v">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+      </action>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+      </action>
+      <action name="NextWindow">
+        <interactive>no</interactive>
+        <dialog>none</dialog>
+        <finalactions>
+          <action name="UnmaximizeFull"/>
+          <action name="MoveResizeTo">
+            <width>50%</width>
+          </action>
+          <action name="MaximizeVert"/>
+          <action name="MoveResizeTo">
+            <x>-0</x>
+            <y>0</y>
+          </action>
+        </finalactions>
+      </action>
+    </keybind>
+//-->
+    <!-- Horizontal tiling -->
+<!--
+    <keybind key="C-W-h">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <height>50%</height>
+      </action>
+      <action name="MaximizeHorz"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+      </action>
+      <action name="NextWindow">
+        <interactive>no</interactive>
+        <dialog>none</dialog>
+        <finalactions>
+          <action name="UnmaximizeFull"/>
+          <action name="MoveResizeTo">
+            <height>50%</height>
+          </action>
+          <action name="MaximizeHorz"/>
+          <action name="MoveResizeTo">
+            <x>0</x>
+            <y>-0</y>
+          </action>
+        </finalactions>
+      </action>
+    </keybind>
+//-->
+<!-- Restore window dimensions -->
+<!--
+<keybind key="C-W-r">
+  <action name="UnmaximizeFull"/>
+  <action name="NextWindow">
+    <interactive>no</interactive>
+    <dialog>none</dialog>
+    <finalactions>
+      <action name="UnmaximizeFull"/>
+    </finalactions>
+  </action>
+</keybind>
+//-->
+
+<!-- ### Tail: Window Tiling -->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Window Tiling -->
+<!-- https://askubuntu.com/questions/516303/tiling-windows-horizontally-and-vertically-under-lubuntu-lxde-openbox //-->
+<!-- Vertical tiling -->
+    <keybind key="W-S-v">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <width>50%</width>
@@ -842,7 +925,7 @@
     </keybind>
 
     <!-- Horizontal tiling -->
-    <keybind key="C-W-h">
+    <keybind key="W-S-h">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <height>50%</height>
@@ -870,7 +953,7 @@
     </keybind>
 
 <!-- Restore window dimensions -->
-<keybind key="C-W-r">
+<keybind key="W-S-r">
   <action name="UnmaximizeFull"/>
   <action name="NextWindow">
     <interactive>no</interactive>
@@ -984,7 +1067,7 @@
 <!-- ####################################################################### -->
 <!-- ### Head: Window Tiling Move -->
 
-    <keybind key="W-S-k">
+    <keybind key="W-k">
       <action name="Unmaximize" />
       <action name="MoveResizeTo">
         <x>0</x>
@@ -994,7 +1077,7 @@
       </action>
     </keybind>
 
-    <keybind key="W-S-j">
+    <keybind key="W-j">
       <action name="Unmaximize" />
       <action name="MoveResizeTo">
         <x>0</x>
@@ -1004,7 +1087,7 @@
       </action>
     </keybind>
 
-    <keybind key="W-S-h">
+    <keybind key="W-h">
       <action name="Unmaximize" />
       <action name="MoveResizeTo">
         <x>0</x>
@@ -1014,13 +1097,59 @@
       </action>
     </keybind>
 
-    <keybind key="W-S-l">
+    <keybind key="W-l">
       <action name="Unmaximize" />
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
         <width>50%</width>
         <height>100%</height>
+      </action>
+    </keybind>
+
+<!-- ### Tail: Window Tiling Move -->
+<!-- ####################################################################### -->
+
+
+<!-- ####################################################################### -->
+<!-- ### Head: Window Tiling Move -->
+    <keybind key="W-C-k">
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+
+    <keybind key="W-C-j">
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+
+    <keybind key="W-C-h">
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+
+    <keybind key="W-C-l">
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>-0</y>
+        <width>50%</width>
+        <height>50%</height>
       </action>
     </keybind>
 
