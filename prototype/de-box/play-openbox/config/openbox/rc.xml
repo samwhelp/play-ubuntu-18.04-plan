@@ -439,6 +439,16 @@
       </action>
     </keybind>
 
+    <keybind key="A-S-g">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Files</name>
+        </startupnotify>
+        <command>nautilus</command>
+      </action>
+    </keybind>
+
     <keybind key="A-S-b">
       <action name="Execute">
         <startupnotify>
