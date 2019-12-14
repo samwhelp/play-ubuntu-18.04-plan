@@ -915,7 +915,7 @@
         <x>0</x>
         <y>0</y>
       </action>
-      <action name="PreviousWindow">
+      <action name="NextWindow">
         <interactive>no</interactive>
         <dialog>none</dialog>
         <finalactions>
@@ -943,7 +943,7 @@
         <x>0</x>
         <y>0</y>
       </action>
-      <action name="PreviousWindow">
+      <action name="NextWindow">
         <interactive>no</interactive>
         <dialog>none</dialog>
         <finalactions>
@@ -963,7 +963,7 @@
 <!-- Restore window dimensions -->
 <keybind key="W-S-r">
   <action name="UnmaximizeFull"/>
-  <action name="PreviousWindow">
+  <action name="NextWindow">
     <interactive>no</interactive>
     <dialog>none</dialog>
     <finalactions>
