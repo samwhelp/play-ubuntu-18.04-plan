@@ -359,7 +359,7 @@
       <action name="Restart" />
     </keybind>
 
-	<!-- Logout //-->
+    <!-- Logout //-->
     <keybind key="A-S-x">
       <action name="Exit" />
     </keybind>
@@ -906,6 +906,7 @@
 <!-- https://askubuntu.com/questions/516303/tiling-windows-horizontally-and-vertically-under-lubuntu-lxde-openbox //-->
 <!-- Vertical tiling -->
     <keybind key="W-S-v">
+      <action name="Undecorate"/>
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <width>50%</width>
@@ -919,6 +920,7 @@
         <interactive>no</interactive>
         <dialog>none</dialog>
         <finalactions>
+          <action name="Undecorate"/>
           <action name="UnmaximizeFull"/>
           <action name="MoveResizeTo">
             <width>50%</width>
@@ -934,6 +936,7 @@
 
     <!-- Horizontal tiling -->
     <keybind key="W-S-h">
+      <action name="Undecorate"/>
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <height>50%</height>
@@ -947,6 +950,7 @@
         <interactive>no</interactive>
         <dialog>none</dialog>
         <finalactions>
+          <action name="Undecorate"/>
           <action name="UnmaximizeFull"/>
           <action name="MoveResizeTo">
             <height>50%</height>
@@ -960,17 +964,19 @@
       </action>
     </keybind>
 
-<!-- Restore window dimensions -->
-<keybind key="W-S-r">
-  <action name="UnmaximizeFull"/>
-  <action name="NextWindow">
-    <interactive>no</interactive>
-    <dialog>none</dialog>
-    <finalactions>
+    <!-- Restore window dimensions -->
+    <keybind key="W-S-r">
       <action name="UnmaximizeFull"/>
-    </finalactions>
-  </action>
-</keybind>
+      <action name="Decorate"/>
+      <action name="NextWindow">
+        <interactive>no</interactive>
+        <dialog>none</dialog>
+        <finalactions>
+          <action name="UnmaximizeFull"/>
+          <action name="Decorate"/>
+        </finalactions>
+      </action>
+    </keybind>
 
 
 <!-- ### Tail: Window Tiling -->
