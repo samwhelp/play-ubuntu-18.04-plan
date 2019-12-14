@@ -359,7 +359,12 @@
       <action name="Restart" />
     </keybind>
 
+	<!-- Logout //-->
     <keybind key="A-S-x">
+      <action name="Exit" />
+    </keybind>
+
+    <keybind key="C-A-Delete">
       <action name="Exit" />
     </keybind>
 
