@@ -102,8 +102,14 @@ compton_config_install () {
 	## /usr/share/doc/compton/examples/compton.sample.conf
 	## cp $(dpkg -L compton | grep conf) ~/.config/compton.conf
 
-	cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.config/openbox/compton/compton.conf"
-	echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/openbox/compton/compton.conf"
+
+	##cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.config/openbox/compton/compton.conf"
+	##echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/openbox/compton/compton.conf"
+
+
+	cp "./config/compton/compton.conf" "$HOME/.config/openbox/compton/compton.conf"
+	echo "cp ./config/compton/compton.conf $HOME/.config/openbox/compton/compton.conf"
+
 
 }
 ##

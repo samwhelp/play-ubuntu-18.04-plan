@@ -105,7 +105,7 @@ tint2 -c "$HOME/.config/openbox/tint2/tint2rc" &
 #compton &
 #compton --config ~/.config/compton/compton.conf &
 
-#compton --config ~/.config/openbox/compton/compton.conf &
+compton --config ~/.config/openbox/compton/compton.conf &
 
 
 ##
