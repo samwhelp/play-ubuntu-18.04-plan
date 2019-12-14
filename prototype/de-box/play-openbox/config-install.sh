@@ -16,6 +16,9 @@ openbox_config_install () {
 	cp "./config/openbox/rc.xml" "$HOME/.config/openbox/rc.xml"
 	echo "cp ./config/openbox/rc.xml $HOME/.config/openbox/rc.xml"
 
+	cp "./config/openbox/menu.xml" "$HOME/.config/openbox/menu.xml"
+	echo "cp ./config/openbox/menu.xml $HOME/.config/openbox/menu.xml"
+
 	openbox_put_toggledesktop_desktop_entry
 	openbox_put_showrootmenu_desktop_entry
 }
