@@ -53,6 +53,9 @@
     <item label="gedit" icon="/usr/share/icons/gnome/24x24/apps/text-editor.png">
       <action name="Execute"><execute>gedit</execute></action>
     </item>
+    <item label="nautilus" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg">
+      <action name="Execute"><execute>nautilus</execute></action>
+    </item>
     <item label="google-chrome" icon="/usr/share/icons/hicolor/24x24/apps/google-chrome.png">
       <action name="Execute"><execute>google-chrome</execute></action>
     </item>
