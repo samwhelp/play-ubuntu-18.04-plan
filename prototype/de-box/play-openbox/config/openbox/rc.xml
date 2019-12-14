@@ -732,6 +732,10 @@
     <keybind key="W-v">
       <action name="ToggleDecorations"/>
     </keybind>
+
+    <keybind key="W-p">
+      <action name="ToggleDecorations"/>
+    </keybind>
 <!--
 <keybind key="W-C-d">
   <action name="ToggleDecorations"/>
@@ -768,6 +772,10 @@
     </keybind>
 
     <keybind key="W-f">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+
+    <keybind key="W-o">
       <action name="ToggleFullscreen"/>
     </keybind>
 
@@ -907,7 +915,7 @@
         <x>0</x>
         <y>0</y>
       </action>
-      <action name="NextWindow">
+      <action name="PreviousWindow">
         <interactive>no</interactive>
         <dialog>none</dialog>
         <finalactions>
@@ -935,7 +943,7 @@
         <x>0</x>
         <y>0</y>
       </action>
-      <action name="NextWindow">
+      <action name="PreviousWindow">
         <interactive>no</interactive>
         <dialog>none</dialog>
         <finalactions>
@@ -955,7 +963,7 @@
 <!-- Restore window dimensions -->
 <keybind key="W-S-r">
   <action name="UnmaximizeFull"/>
-  <action name="NextWindow">
+  <action name="PreviousWindow">
     <interactive>no</interactive>
     <dialog>none</dialog>
     <finalactions>
