@@ -65,27 +65,26 @@ fi
 THE_SOURCE_LXQT_DESKTOP_AUTOSTART_FILE_PATH="$HOME/.config/lxqt-with-i3/autostart-disable/lxqt-desktop.desktop"
 THE_TARGET_LXQT_DESKTOP_AUTOSTART_FILE_PATH="$HOME/.config/autostart/lxqt-desktop.desktop"
 if [ -f "$THE_TARGET_LXQT_DESKTOP_AUTOSTART_FILE_PATH" ]; then
-	## [.config/autostart/lxqt-desktop.desktop] exists.
+    ## [.config/autostart/lxqt-desktop.desktop] exists.
 
-	## check '^Hidden=true' exists?
-	grep -q '^Hidden=true' "$HOME/.config/autostart/lxqt-desktop.desktop";
-	if [ "$?" != "0" ]; then
+    ## check '^Hidden=true' exists?
+    if ! grep -q -s '^Hidden=true' "$HOME/.config/autostart/lxqt-desktop.desktop"; then
 
-		## not hidden, then put [lxqt-desktop.desktop] to switch hidden;
-		if [ -f "$THE_SOURCE_LXQT_DESKTOP_AUTOSTART_FILE_PATH" ]; then
-			install -m 644 "$THE_SOURCE_LXQT_DESKTOP_AUTOSTART_FILE_PATH" "$THE_TARGET_LXQT_DESKTOP_AUTOSTART_FILE_PATH"
-		fi
+        ## not hidden, then put [lxqt-desktop.desktop] to switch hidden;
+        if [ -f "$THE_SOURCE_LXQT_DESKTOP_AUTOSTART_FILE_PATH" ]; then
+            install -m 644 "$THE_SOURCE_LXQT_DESKTOP_AUTOSTART_FILE_PATH" "$THE_TARGET_LXQT_DESKTOP_AUTOSTART_FILE_PATH"
+        fi
 
-	fi
+    fi
 
 else
 
-	## [.config/autostart/lxqt-desktop.desktop] not exists.
+    ## [.config/autostart/lxqt-desktop.desktop] not exists.
 
-	## put [lxqt-desktop.desktop] to switch hidden;
-	if [ -f "$THE_SOURCE_LXQT_DESKTOP_AUTOSTART_FILE_PATH" ]; then
-		install -m 644 "$THE_SOURCE_LXQT_DESKTOP_AUTOSTART_FILE_PATH" "$THE_TARGET_LXQT_DESKTOP_AUTOSTART_FILE_PATH"
-	fi
+    ## put [lxqt-desktop.desktop] to switch hidden;
+    if [ -f "$THE_SOURCE_LXQT_DESKTOP_AUTOSTART_FILE_PATH" ]; then
+        install -m 644 "$THE_SOURCE_LXQT_DESKTOP_AUTOSTART_FILE_PATH" "$THE_TARGET_LXQT_DESKTOP_AUTOSTART_FILE_PATH"
+    fi
 
 fi
 
