@@ -20,6 +20,38 @@
 * [play-gnome](prototype/de-basic/play-gnome)
 
 
+### de-box
+
+* [play-openbox](prototype/de-box/play-openbox)
+* [play-icewm](prototype/de-box/play-icewm)
+* [play-fluxbox](prototype/de-box/play-fluxbox)
+* [play-pekwm](prototype/play-pekwm/play-pekwm)
+
+
+### de-lxqt-with-wm
+
+* [lxqt-with-openbox](prototype/de-lxqt-with-wm/lxqt-with-openbox)
+
+
+### xsession-wm-xfwm4
+
+* [xsession-wm-xfwm4](prototype/xsession-wm-xfwm4/xsession-wm-xfwm4)
+* [xsession-wm-xfwm4-with-tint2](prototype/xsession-wm-xfwm4/xsession-wm-xfwm4-with-tint2)
+* [xsession-wm-xfwm4-with-cairo-dock](prototype/xsession-wm-xfwm4/xsession-wm-xfwm4-with-cairo-dock)
+
+
+### xsession-wm-metacity
+
+* [xsession-wm-metacity-with-tint2](prototype/xsession-wm-metacity/metacity/xsession-wm-metacity-with-tint2)
+* [xsession-wm-metacity-with-cairo-dock](prototype/xsession-wm-metacity/metacity/xsession-wm-metacity-with-cairo-dock)
+
+
+### xsession-wm-marco
+
+* [xsession-wm-marco-with-tint2](prototype/xsession-wm-metacity/marco/xsession-wm-marco-with-tint2)
+* [xsession-wm-marco-with-cairo-dock](prototype/xsession-wm-metacity/marco/xsession-wm-marco-with-cairo-dock)
+
+
 ## Plan
 
 
