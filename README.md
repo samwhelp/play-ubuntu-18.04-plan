@@ -25,7 +25,7 @@
 * [play-openbox](prototype/de-box/play-openbox)
 * [play-icewm](prototype/de-box/play-icewm)
 * [play-fluxbox](prototype/de-box/play-fluxbox)
-* [play-pekwm](prototype/play-pekwm/play-pekwm)
+* [play-pekwm](prototype/de-box/play-pekwm)
 
 
 ### de-lxqt-with-wm
