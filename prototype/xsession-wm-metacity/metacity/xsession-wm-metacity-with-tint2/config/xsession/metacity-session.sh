@@ -118,8 +118,8 @@ tint2 -c "$HOME/.config/metacity-session/tint2/tint2rc" &
 ##
 
 ## global key shortcut
-lxqt-globalkeysd &
-
+#lxqt-globalkeysd &
+lxqt-globalkeysd --config-file="$HOME/.config/metacity-session/lxqt/globalkeyshortcuts.conf" &
 
 ##
 ### Tail: Shortcut

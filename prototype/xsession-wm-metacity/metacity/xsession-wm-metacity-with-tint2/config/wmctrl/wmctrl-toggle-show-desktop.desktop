@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Exec=wmctrl-toggle-show-desktop.sh
+TryExec=wmctrl
+Icon=desktop
+Categories=System;Utility;
+Keywords=desktop;window;toggle;
+
+Name=Wmctrl Toggle Show Desktop
+GenericName=Wmctrl-Toggle-Show-Desktop
+Comment=Wmctrl Toggle Show Desktop
+
+Name[zh_TW]=切換顯示桌面
+GenericName[zh_TW]=Wmctrl-Toggle-Show-Desktop
+Comment[zh_TW]=切換顯示桌面

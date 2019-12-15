@@ -58,6 +58,41 @@ metacity_put_quit_desktop_entry () {
 
 
 ################################################################################
+### Head: wmctrl
+##
+wmctrl_config_install () {
+
+	wmctrl_put_toggledesktop_shell_script
+	wmctrl_put_toggledesktop_desktop_entry
+
+
+}
+
+wmctrl_put_toggledesktop_shell_script () {
+
+	mkdir -p "$HOME/.local/bin"
+	echo "mkdir -p $HOME/.local/bin"
+
+	install -m 755 "./config/wmctrl/wmctrl-toggle-show-desktop.sh" "$HOME/.local/bin/wmctrl-toggle-show-desktop.sh"
+	echo "install -m 755 ./config/wmctrl/wmctrl-toggle-show-desktop.sh $HOME/.local/bin/wmctrl-toggle-show-desktop.sh"
+
+}
+
+wmctrl_put_toggledesktop_desktop_entry () {
+
+	mkdir -p "$HOME/.local/share/applications"
+	echo "mkdir -p $HOME/.local/share/applications"
+
+	install -m 644 "./config/wmctrl/wmctrl-toggle-show-desktop.desktop" "$HOME/.local/share/applications/wmctrl-toggle-show-desktop.desktop"
+	echo "install -m 644 ./config/wmctrl/wmctrl-toggle-show-desktop.desktop $HOME/.local/share/applications/wmctrl-toggle-show-desktop.desktop"
+
+}
+##
+### Tail: metacity
+################################################################################
+
+
+################################################################################
 ### Head: tint2
 ##
 tint2_config_install () {
@@ -127,11 +162,12 @@ volumeicon_config_install () {
 ### Head: lxqt
 ##
 lxqt_config_install () {
-	mkdir -p $HOME/.config/lxqt
-	echo "mkdir -p $HOME/.config/lxqt"
 
-	cp ./config/lxqt/globalkeyshortcuts.conf $HOME/.config/lxqt/globalkeyshortcuts.conf
-	echo "cp ./config/lxqt/globalkeyshortcuts.conf $HOME/.config/lxqt/globalkeyshortcuts.conf"
+	mkdir -p "$HOME/.config/metacity-session/lxqt"
+	echo "mkdir -p $HOME/.config/metacity-session/lxqt"
+
+	cp "./config/lxqt/globalkeyshortcuts.conf" "$HOME/.config/metacity-session/lxqt/globalkeyshortcuts.conf"
+	echo "cp ./config/lxqt/globalkeyshortcuts.conf $HOME/.config/metacity-session/lxqt/globalkeyshortcuts.conf"
 
 }
 ##
@@ -281,6 +317,8 @@ main_config_install () {
 	xsession_config_install
 
 	metacity_config_install
+
+	wmctrl_config_install
 
 	tint2_config_install
 
