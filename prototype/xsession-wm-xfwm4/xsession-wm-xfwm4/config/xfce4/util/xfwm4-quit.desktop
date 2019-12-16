@@ -2,7 +2,7 @@
 Type=Application
 Exec=killall -9 xfwm4
 TryExec=killall
-Icon=system-run
+Icon=gtk-quit
 Categories=System;Utility;
 Keywords=desktop;window;toggle;
 
