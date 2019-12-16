@@ -31,6 +31,8 @@ metacity_config_install () {
 
 	metacity_put_toggledesktop_desktop_entry
 	metacity_put_quit_desktop_entry
+
+	metacity_set_theme
 }
 
 metacity_put_toggledesktop_desktop_entry () {
@@ -52,6 +54,29 @@ metacity_put_quit_desktop_entry () {
 	echo "cp ./config/metacity/util/metacity-quit.desktop $HOME/.local/share/applications/metacity-quit.desktop"
 
 }
+
+
+metacity_set_theme () {
+
+	## Theme
+	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
+	gsettings set org.gnome.desktop.wm.preferences theme 'NumixBlue'
+	gsettings set org.gnome.desktop.interface gtk-theme 'NumixBlue'
+	gsettings set org.gnome.desktop.interface icon-theme 'Numix'
+	gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'
+
+
+	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
+	## $ gsettings list-recursively | grep 'org.gnome.desktop' | grep 'theme'
+	# org.gnome.desktop.wm.preferences theme 'NumixBlue'
+	# org.gnome.desktop.interface cursor-theme 'breeze_cursors'
+	# org.gnome.desktop.interface icon-theme 'Numix'
+	# org.gnome.desktop.interface gtk-theme 'NumixBlue'
+	# org.gnome.desktop.interface gtk-key-theme 'Default'
+	# org.gnome.desktop.sound theme-name 'ubuntu'
+	##
+}
+
 ##
 ### Tail: metacity
 ################################################################################
