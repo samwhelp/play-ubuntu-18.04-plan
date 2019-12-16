@@ -51,11 +51,17 @@ compton_config_install () {
 
 	## $ dpkg -L compton | grep conf
 	## /usr/share/doc/compton/examples/compton.sample.conf
-
 	## cp $(dpkg -L compton | grep conf) ~/.config/compton.conf
 
-	echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/compton.conf"
-	cp "/usr/share/doc/compton/examples/compton.sample.conf" $HOME/.config/compton.conf
+
+	mkdir -p "$HOME/.fluxbox/compton"
+	echo "mkdir -p $HOME/.fluxbox/compton"
+
+	##cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.fluxbox/compton/compton.conf"
+	##echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.fluxbox/compton/compton.conf"
+
+	cp "./config/compton/compton.conf" "$HOME/.fluxbox/compton/compton.conf"
+	echo "cp ./config/compton/compton.conf $HOME/.fluxbox/compton/compton.conf"
 
 }
 ##

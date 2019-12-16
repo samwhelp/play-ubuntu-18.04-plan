@@ -61,11 +61,17 @@ compton_config_install () {
 
 	## $ dpkg -L compton | grep conf
 	## /usr/share/doc/compton/examples/compton.sample.conf
-
 	## cp $(dpkg -L compton | grep conf) ~/.config/compton.conf
 
-	echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/compton.conf"
-	cp "/usr/share/doc/compton/examples/compton.sample.conf" $HOME/.config/compton.conf
+
+	mkdir -p "$HOME/.pekwm/compton"
+	echo "mkdir -p $HOME/.pekwm/compton"
+
+	##cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.pekwm/compton/compton.conf"
+	##echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.pekwm/compton/compton.conf"
+
+	cp "./config/compton/compton.conf" "$HOME/.pekwm/compton/compton.conf"
+	echo "cp ./config/compton/compton.conf $HOME/.pekwm/compton/compton.conf"
 
 }
 ##

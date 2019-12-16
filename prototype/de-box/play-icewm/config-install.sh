@@ -61,11 +61,17 @@ compton_config_install () {
 
 	## $ dpkg -L compton | grep conf
 	## /usr/share/doc/compton/examples/compton.sample.conf
-
 	## cp $(dpkg -L compton | grep conf) ~/.config/compton.conf
 
-	echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/compton.conf"
-	cp "/usr/share/doc/compton/examples/compton.sample.conf" $HOME/.config/compton.conf
+
+	mkdir -p "$HOME/.icewm/compton"
+	echo "mkdir -p $HOME/.icewm/compton"
+
+	##cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.icewm/compton/compton.conf"
+	##echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.icewm/compton/compton.conf"
+
+	cp "./config/compton/compton.conf" "$HOME/.icewm/compton/compton.conf"
+	echo "cp ./config/compton/compton.conf $HOME/.icewm/compton/compton.conf"
 
 }
 ##

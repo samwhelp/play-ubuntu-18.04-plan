@@ -76,21 +76,25 @@ cairo_dock_config_install () {
 ################################################################################
 
 
-################################################################################
+###############################################################################
 ### Head: compton
 ##
 compton_config_install () {
-
-	mkdir -p "$HOME/.config/marco-session/compton"
-	echo "mkdir -p $HOME/.config/marco-session/compton"
-
 
 	## $ dpkg -L compton | grep conf
 	## /usr/share/doc/compton/examples/compton.sample.conf
 	## cp $(dpkg -L compton | grep conf) ~/.config/compton.conf
 
-	cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.config/marco-session/compton/compton.conf"
-	echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/marco-session/compton/compton.conf"
+
+	mkdir -p "$HOME/.config/marco-session/compton"
+	echo "mkdir -p $HOME/.config/marco-session/compton"
+
+	#cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.config/marco-session/compton/compton.conf"
+	#echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/marco-session/compton/compton.conf"
+
+	cp "./config/compton/compton.conf" "$HOME/.config/marco-session/compton/compton.conf"
+	echo "cp ./config/compton/compton.conf $HOME/.config/marco-session/compton/compton.conf"
+
 
 }
 ##

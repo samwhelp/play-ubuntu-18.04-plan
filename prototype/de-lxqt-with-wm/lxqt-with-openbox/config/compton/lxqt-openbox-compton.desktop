@@ -1,5 +1,4 @@
 [Desktop Entry]
-Version=1.0
 Type=Application
 Categories=Utility;
 TryExec=compton
@@ -10,6 +9,6 @@ OnlyShowIn=LXQt;
 X-LXQt-Module=true
 
 
-Name=Compton
+Name=Compton(For Openbox)
 GenericName=X compositor
 Comment=A X compositor

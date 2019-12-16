@@ -30,6 +30,7 @@ volumeicon &
 
 ## Compton
 #compton --config ~/.config/compton/compton.conf
+#compton --config ~/.fluxbox/compton/compton.conf &
 
 ##
 ### Tail: autostart

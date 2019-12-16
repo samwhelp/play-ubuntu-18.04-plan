@@ -52,24 +52,36 @@ openbox_config_install () {
 ##
 compton_config_install () {
 
-	mkdir -p "$HOME/.config/lxqt/compton"
-	echo "mkdir -p $HOME/.config/lxqt/compton"
-
-
 	## $ dpkg -L compton | grep conf
 	## /usr/share/doc/compton/examples/compton.sample.conf
 	## cp $(dpkg -L compton | grep conf) ~/.config/compton.conf
 
 
+	mkdir -p "$HOME/.config/lxqt/compton"
+	echo "mkdir -p $HOME/.config/lxqt/compton"
+
 	##cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.config/openbox/compton/compton.conf"
 	##echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/openbox/compton/compton.conf"
-
 
 	cp "./config/compton/compton.conf" "$HOME/.config/lxqt/compton/compton.conf"
 	echo "cp ./config/compton/compton.conf $HOME/.config/lxqt/compton/compton.conf"
 
 
+	compton_put_lxqt_module_desktop_entry
+
 }
+
+compton_put_lxqt_module_desktop_entry () {
+
+	mkdir -p "$HOME/.config/autostart"
+	echo "mkdir -p $HOME/.config/autostart"
+
+	cp "./config/compton/lxqt-openbox-compton.desktop" "$HOME/.config/autostart/lxqt-openbox-compton.desktop"
+	echo "cp ./config/compton/lxqt-openbox-compton.desktop $HOME/.config/autostart/lxqt-openbox-compton.desktop"
+
+}
+
+
 ##
 ### Tail: compton
 ################################################################################
