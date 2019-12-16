@@ -13,12 +13,21 @@ gnome_config_install () {
 
 
 	## Theme
-	## gsettings list-recursively | grep theme
+	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
 	gsettings set org.gnome.desktop.wm.preferences theme 'NumixBlue'
 	gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'
 	gsettings set org.gnome.desktop.interface icon-theme 'Numix'
 	gsettings set org.gnome.desktop.interface gtk-theme 'NumixBlue'
-
+	
+	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
+	## $ gsettings list-recursively | grep 'org.gnome.desktop' | grep 'theme'
+	# org.gnome.desktop.wm.preferences theme 'NumixBlue'
+	# org.gnome.desktop.interface cursor-theme 'breeze_cursors'
+	# org.gnome.desktop.interface icon-theme 'Numix'
+	# org.gnome.desktop.interface gtk-theme 'NumixBlue'
+	# org.gnome.desktop.interface gtk-key-theme 'Default'
+	# org.gnome.desktop.sound theme-name 'ubuntu'
+	##
 
 
 	## Fullscreen
