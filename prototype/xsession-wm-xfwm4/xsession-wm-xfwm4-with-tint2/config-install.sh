@@ -132,9 +132,9 @@ volumeicon_config_install () {
 
 
 ################################################################################
-### Head: lxqt
+### Head: lxqt-globalkeys
 ##
-lxqt_config_install () {
+lxqt_globalkeys_config_install () {
 
 	mkdir -p "$HOME/.config/xfwm4-session/lxqt"
 	echo "mkdir -p $HOME/.config/xfwm4-session/lxqt"
@@ -144,7 +144,7 @@ lxqt_config_install () {
 
 }
 ##
-### Tail: lxqt
+### Tail: lxqt-globalkeys
 ################################################################################
 
 
@@ -297,7 +297,7 @@ main_config_install () {
 
 	volumeicon_config_install
 
-	lxqt_config_install
+	lxqt_globalkeys_config_install
 
 	pcmanfm_qt_config_install
 

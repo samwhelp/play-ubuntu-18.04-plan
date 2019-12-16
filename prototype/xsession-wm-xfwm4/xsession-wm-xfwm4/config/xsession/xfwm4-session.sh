@@ -116,8 +116,8 @@ tint2 -c "$HOME/.config/xfwm4-session/tint2/tint2rc" &
 ##
 
 ## global key shortcut
-lxqt-globalkeysd &
-
+#lxqt-globalkeysd &
+lxqt-globalkeysd --config-file="$HOME/.config/xfwm4-session/lxqt/globalkeyshortcuts.conf" &
 
 ##
 ### Tail: Shortcut

@@ -118,8 +118,8 @@ compton --config ~/.config/xfwm4-session/compton/compton.conf &
 ##
 
 ## global key shortcut
-lxqt-globalkeysd &
-
+#lxqt-globalkeysd &
+lxqt-globalkeysd --config-file="$HOME/.config/xfwm4-session/lxqt/globalkeyshortcuts.conf" &
 
 ##
 ### Tail: Shortcut

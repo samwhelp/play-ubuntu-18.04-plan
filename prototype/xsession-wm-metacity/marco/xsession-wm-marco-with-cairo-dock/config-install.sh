@@ -116,18 +116,19 @@ volumeicon_config_install () {
 
 
 ################################################################################
-### Head: lxqt
+### Head: lxqt-globalkeys
 ##
-lxqt_config_install () {
-	mkdir -p $HOME/.config/lxqt
-	echo "mkdir -p $HOME/.config/lxqt"
+lxqt_globalkeys_config_install () {
 
-	cp ./config/lxqt/globalkeyshortcuts.conf $HOME/.config/lxqt/globalkeyshortcuts.conf
-	echo "cp ./config/lxqt/globalkeyshortcuts.conf $HOME/.config/lxqt/globalkeyshortcuts.conf"
+	mkdir -p "$HOME/.config/marco-session/lxqt"
+	echo "mkdir -p $HOME/.config/marco-session/lxqt"
+
+	cp "./config/lxqt/globalkeyshortcuts.conf" "$HOME/.config/marco-session/lxqt/globalkeyshortcuts.conf"
+	echo "cp ./config/lxqt/globalkeyshortcuts.conf $HOME/.config/marco-session/lxqt/globalkeyshortcuts.conf"
 
 }
 ##
-### Tail: lxqt
+### Tail: lxqt-globalkeys
 ################################################################################
 
 
@@ -280,7 +281,7 @@ main_config_install () {
 
 	volumeicon_config_install
 
-	lxqt_config_install
+	lxqt_globalkeys_config_install
 
 	pcmanfm_qt_config_install
 

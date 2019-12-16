@@ -118,8 +118,8 @@ compton --config ~/.config/metacity-session/compton/compton.conf &
 ##
 
 ## global key shortcut
-lxqt-globalkeysd &
-
+#lxqt-globalkeysd &
+lxqt-globalkeysd --config-file="$HOME/.config/metacity-session/lxqt/globalkeyshortcuts.conf" &
 
 ##
 ### Tail: Shortcut
