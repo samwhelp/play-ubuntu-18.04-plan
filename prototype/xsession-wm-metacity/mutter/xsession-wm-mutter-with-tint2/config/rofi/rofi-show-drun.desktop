@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Exec=rofi -show drun -show-icons
+TryExec=rofi
+Icon=start-here
+Categories=System;Utility;
+Keywords=rofi;launch;launcher;run;runer;
+
+Name=Rofi Show Drun
+GenericName=Rofi-Show-Drun
+Comment=Rofi Show Drun
+
+Name[zh_TW]=應用程式啟動選單
+GenericName[zh_TW]=Rofi-Show-Drun
+Comment[zh_TW]=應用程式啟動選單

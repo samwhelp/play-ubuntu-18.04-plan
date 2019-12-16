@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Exec=killall -9 mutter
+TryExec=killall
+Icon=gtk-quit
+Categories=System;Utility;
+Keywords=desktop;window;toggle;
+
+Name=Mutter Quit
+GenericName=Mutter-Quit
+Comment=Mutter Quit
+
+Name[zh_TW]=登出桌面
+GenericName[zh_TW]=Mutter-Quit
+Comment[zh_TW]=登出桌面
