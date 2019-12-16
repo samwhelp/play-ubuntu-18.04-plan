@@ -58,6 +58,13 @@ metacity_put_quit_desktop_entry () {
 
 metacity_set_theme () {
 
+	## Theme Type
+	## $ gsettings list-recursively | grep 'org.gnome.metacity.theme'
+	# org.gnome.metacity.theme name ''
+	# org.gnome.metacity.theme type 'gtk'
+	##
+	gsettings set org.gnome.metacity.theme type 'gtk'
+
 	## Theme
 	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
 	gsettings set org.gnome.desktop.wm.preferences theme 'NumixBlue'
@@ -75,6 +82,7 @@ metacity_set_theme () {
 	# org.gnome.desktop.interface gtk-key-theme 'Default'
 	# org.gnome.desktop.sound theme-name 'ubuntu'
 	##
+
 }
 
 ##
