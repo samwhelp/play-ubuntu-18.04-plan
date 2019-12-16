@@ -52,6 +52,11 @@
 * [xsession-wm-marco-with-cairo-dock](prototype/xsession-wm-metacity/marco/xsession-wm-marco-with-cairo-dock)
 
 
+### xsession-wm-mutter
+
+* [xsession-wm-mutter-with-tint2](prototype/xsession-wm-metacity/mutter/xsession-wm-mutter-with-tint2)
+
+
 ## Plan
 
 
