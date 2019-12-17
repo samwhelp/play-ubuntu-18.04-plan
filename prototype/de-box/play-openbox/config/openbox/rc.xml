@@ -510,7 +510,7 @@
       </action>
     </keybind>
 
-    <keybind key="W-a">
+    <keybind key="C-W-a">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
@@ -535,7 +535,7 @@
       </action>
     </keybind>
 
-    <keybind key="W-s">
+    <keybind key="C-W-s">
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
       </action>
@@ -549,6 +549,10 @@
 <!-- ### Head: Key ToggleShowDesktop -->
 
     <keybind key="C-A-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+
+	<keybind key="C-W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
 
@@ -729,6 +733,31 @@
 
 
 <!-- ####################################################################### -->
+<!-- ### Head: Window Switching -->
+    <!-- Keybindings for window switching -->
+    <keybind key="W-s">
+      <action name="NextWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="W-a">
+      <action name="PreviousWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+<!-- ### Tail: Window Switching //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ####################################################################### -->
 <!-- ### Head: Window Decorate Toggle -->
 <!-- http://openbox.org/wiki/Help:Actions#ToggleDecorations //-->
 <!--
@@ -768,6 +797,11 @@
 
 <!-- ### Tail: Window Close //-->
 <!-- ####################################################################### -->
+
+
+
+
+
 
 
 <!-- ####################################################################### -->
