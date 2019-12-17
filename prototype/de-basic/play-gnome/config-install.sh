@@ -128,17 +128,23 @@ gnome_set_keybindings_start_here () {
 gnome_set_keybindings_custom () {
 
 	## Custom Keybindings
-	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/tilix/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/gnome-terminal/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-run/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-window/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-drun/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/editor/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/browser/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files-1/']"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/tilix/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-lefthand/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-run/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-window/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-drun/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/editor/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/browser/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files-1/']"
 
 	## Tilix
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/tilix/name "'Tilix'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/tilix/command "'tilix --quake'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/tilix/binding "'<Shift><Alt>t'"
 
-	## Gnome Terminal
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/gnome-terminal/name "'Gnome-Terminal'"
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/gnome-terminal/command "'sakura -m'"
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/gnome-terminal/binding "'<Alt>Return'"
+	## Terminal
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/name "'Terminal'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/command "'sakura -m'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/binding "'<Alt>Return'"
+
+	## Terminal (Left Hand)
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-lefthand/name "'Terminal-LeftHand'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-lefthand/command "'sakura -m'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-lefthand/binding "'<Shift><Alt>a'"
+
 
 	## Rofi Show Run
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-run/name "'Rofi-Show-Run'"
