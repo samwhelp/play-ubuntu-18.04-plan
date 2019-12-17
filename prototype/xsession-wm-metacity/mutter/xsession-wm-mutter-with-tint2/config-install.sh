@@ -36,7 +36,7 @@ mutter_config_install () {
 
 	mutter_set_keybindings_show_desktop
 
-	mutter_set_keybindings_show_fullscreen
+	mutter_set_keybindings_toggle_fullscreen
 
 	mutter_set_keybindings_about_workspace
 
@@ -76,10 +76,10 @@ mutter_set_keybindings_show_desktop () {
 
 }
 
-mutter_set_keybindings_show_fullscreen () {
+mutter_set_keybindings_toggle_fullscreen () {
 
 	## Fullscreen
-	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
+	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11', '<Super>f', '<Super>o']"
 
 }
 

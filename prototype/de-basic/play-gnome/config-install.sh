@@ -14,7 +14,7 @@ gnome_config_install () {
 
 	gnome_set_keybindings_show_desktop
 
-	gnome_set_keybindings_show_fullscreen
+	gnome_set_keybindings_toggle_fullscreen
 
 	gnome_set_keybindings_about_workspace
 
@@ -68,10 +68,10 @@ gnome_set_keybindings_show_desktop () {
 
 }
 
-gnome_set_keybindings_show_fullscreen () {
+gnome_set_keybindings_toggle_fullscreen () {
 
 	## Fullscreen
-	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
+	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11', '<Super>f', '<Super>o']"
 
 }
 

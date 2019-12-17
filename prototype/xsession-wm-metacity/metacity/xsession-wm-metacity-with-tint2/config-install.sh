@@ -36,7 +36,7 @@ metacity_config_install () {
 
 	metacity_set_keybindings_show_desktop
 
-	metacity_set_keybindings_show_fullscreen
+	metacity_set_keybindings_toggle_fullscreen
 
 	metacity_set_keybindings_about_workspace
 
@@ -100,10 +100,10 @@ metacity_set_keybindings_show_desktop () {
 
 }
 
-metacity_set_keybindings_show_fullscreen () {
+metacity_set_keybindings_toggle_fullscreen () {
 
 	## Fullscreen
-	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
+	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11', '<Super>f', '<Super>o']"
 
 }
 
