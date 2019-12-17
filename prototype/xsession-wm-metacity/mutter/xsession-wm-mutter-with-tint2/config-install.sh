@@ -34,9 +34,13 @@ mutter_config_install () {
 
 	mutter_set_theme
 
-	mutter_set_edge_tiling
+	mutter_set_keybindings_show_desktop
+
+	mutter_set_keybindings_show_fullscreen
 
 	mutter_set_keybindings_about_workspace
+
+	mutter_set_edge_tiling
 
 }
 
@@ -66,15 +70,16 @@ mutter_set_theme () {
 
 }
 
-mutter_set_edge_tiling () {
-
-	gsettings set org.gnome.mutter edge-tiling true
-
-}
-
 mutter_set_keybindings_show_desktop () {
 
 	gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Control><Alt>d', '<Super>d']"
+
+}
+
+mutter_set_keybindings_show_fullscreen () {
+
+	## Fullscreen
+	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
 
 }
 
@@ -115,8 +120,11 @@ mutter_set_keybindings_about_workspace () {
 
 }
 
+mutter_set_edge_tiling () {
 
+	gsettings set org.gnome.mutter edge-tiling true
 
+}
 
 
 ##
@@ -416,7 +424,7 @@ main_config_install () {
 	gtk3_config_install
 
 	gtk2_config_install
-	
+
 	mutter_config_install
 
 }

@@ -33,6 +33,14 @@ metacity_config_install () {
 	metacity_put_quit_desktop_entry
 
 	metacity_set_theme
+
+	metacity_set_keybindings_show_desktop
+
+	metacity_set_keybindings_show_fullscreen
+
+	metacity_set_keybindings_about_workspace
+
+	metacity_set_edge_tiling
 }
 
 metacity_put_toggledesktop_desktop_entry () {
@@ -85,6 +93,61 @@ metacity_set_theme () {
 
 }
 
+
+metacity_set_keybindings_show_desktop () {
+
+	gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Control><Alt>d', '<Super>d']"
+
+}
+
+metacity_set_keybindings_show_fullscreen () {
+
+	## Fullscreen
+	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
+
+}
+
+metacity_set_keybindings_about_workspace () {
+
+	## Workspace
+	gsettings set org.gnome.mutter dynamic-workspaces false
+	#gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
+	gsettings set org.gnome.desktop.wm.preferences num-workspaces 10
+
+
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left  "['<Control><Alt>Left', '<Alt>a']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right  "['<Control><Alt>Right', '<Alt>s']"
+
+
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Alt>1']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Alt>2']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Alt>3']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Alt>4']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Alt>5']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Alt>6']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 "['<Alt>7']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 "['<Alt>8']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-9 "['<Alt>9']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-10 "['<Alt>0']"
+
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Shift><Alt>exclam']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Shift><Alt>at']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Shift><Alt>numbersign']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Shift><Alt>dollar']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 "['<Shift><Alt>percent']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 "['<Shift><Alt>asciicircum']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 "['<Shift><Alt>ampersand']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "['<Shift><Alt>asterisk']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Shift><Alt>parenleft']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Shift><Alt>parenright']"
+
+}
+
+metacity_set_edge_tiling () {
+
+	gsettings set org.gnome.metacity edge-tiling true
+
+}
 ##
 ### Tail: metacity
 ################################################################################
@@ -353,8 +416,6 @@ main_config_install () {
 
 	xsession_config_install
 
-	metacity_config_install
-
 	wmctrl_config_install
 
 	tint2_config_install
@@ -376,6 +437,8 @@ main_config_install () {
 	gtk3_config_install
 
 	gtk2_config_install
+
+	metacity_config_install
 }
 ## start
 main_config_install

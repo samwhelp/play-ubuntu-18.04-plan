@@ -7,16 +7,46 @@ set -e
 ### Head: gnome
 ##
 gnome_config_install () {
+
+	gnome_set_wallpaper
+
+	gnome_set_theme
+
+	gnome_set_keybindings_show_desktop
+
+	gnome_set_keybindings_show_fullscreen
+
+	gnome_set_keybindings_about_workspace
+
+	gnome_set_keybindings_start_here
+
+	gnome_set_keybindings_custom
+
+
+}
+
+gnome_set_wallpaper () {
+
 	## Wallpaper
 	gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg'
 	gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Raindrops_On_The_Table_by_Alex_Fazit.jpg'
 
+}
+
+gnome_set_theme () {
+
+	## Theme Type
+	## $ gsettings list-recursively | grep 'org.gnome.metacity.theme'
+	# org.gnome.metacity.theme name ''
+	# org.gnome.metacity.theme type 'gtk'
+	##
+	#gsettings set org.gnome.metacity.theme type 'gtk'
 
 	## Theme
 	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
 	gsettings set org.gnome.desktop.wm.preferences theme 'NumixBlue'
 	gsettings set org.gnome.desktop.interface gtk-theme 'NumixBlue'
-	gsettings set org.gnome.desktop.interface icon-theme 'Numix'	
+	gsettings set org.gnome.desktop.interface icon-theme 'Numix'
 	gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'
 
 
@@ -30,14 +60,32 @@ gnome_config_install () {
 	# org.gnome.desktop.sound theme-name 'ubuntu'
 	##
 
+}
+
+gnome_set_keybindings_show_desktop () {
+
+	gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Control><Alt>d', '<Super>d']"
+
+}
+
+gnome_set_keybindings_show_fullscreen () {
 
 	## Fullscreen
 	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
 
+}
+
+gnome_set_keybindings_about_workspace () {
 
 	## Workspace
 	gsettings set org.gnome.mutter dynamic-workspaces false
+	#gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
 	gsettings set org.gnome.desktop.wm.preferences num-workspaces 10
+
+
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left  "['<Control><Alt>Left', '<Alt>a']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right  "['<Control><Alt>Right', '<Alt>s']"
+
 
 	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Alt>1']"
 	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Alt>2']"
@@ -61,8 +109,9 @@ gnome_config_install () {
 	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Shift><Alt>parenleft']"
 	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Shift><Alt>parenright']"
 
+}
 
-
+gnome_set_keybindings_start_here () {
 
 	## Toggle the activities overview
 	#gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['<Alt>F1', '<Shift><Alt>d']"
@@ -74,7 +123,9 @@ gnome_config_install () {
 	## gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>s', '<Shift><Alt>r']"
 
 
+}
 
+gnome_set_keybindings_custom () {
 
 	## Custom Keybindings
 	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/tilix/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/gnome-terminal/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-run/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-window/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-drun/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/editor/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/browser/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files-1/']"
@@ -123,6 +174,7 @@ gnome_config_install () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files-1/name "'Files-1'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files-1/command "'nautilus'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files-1/binding "'<Shift><Alt>g'"
+
 
 }
 ##
