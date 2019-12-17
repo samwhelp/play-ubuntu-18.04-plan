@@ -41,6 +41,8 @@ metacity_config_install () {
 	metacity_set_keybindings_about_workspace
 
 	metacity_set_edge_tiling
+
+	metacity_set_keybindings_win_close
 }
 
 metacity_put_toggledesktop_desktop_entry () {
@@ -146,6 +148,12 @@ metacity_set_keybindings_about_workspace () {
 metacity_set_edge_tiling () {
 
 	gsettings set org.gnome.metacity edge-tiling true
+
+}
+
+metacity_set_keybindings_win_close () {
+
+	gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>F4', '<Super>q', '<Shift><Alt>q']"
 
 }
 ##

@@ -22,6 +22,7 @@ gnome_config_install () {
 
 	gnome_set_keybindings_custom
 
+	gnome_set_keybindings_win_close
 
 }
 
@@ -117,11 +118,12 @@ gnome_set_keybindings_start_here () {
 	#gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['<Alt>F1', '<Shift><Alt>d']"
 
 	## Show all applications
-	gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a', '<Shift><Alt>a']"
+	#gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a', '<Shift><Alt>a']"
+	gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a']"
 
 	## Show the activities overview
 	## gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>s', '<Shift><Alt>r']"
-
+	gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>s']"
 
 }
 
@@ -183,6 +185,13 @@ gnome_set_keybindings_custom () {
 
 
 }
+
+gnome_set_keybindings_win_close () {
+
+	gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>F4', '<Super>q', '<Shift><Alt>q']"
+
+}
+
 ##
 ### Tail: gnome
 ################################################################################

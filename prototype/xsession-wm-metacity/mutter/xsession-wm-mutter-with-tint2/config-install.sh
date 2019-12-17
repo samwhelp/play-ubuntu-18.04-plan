@@ -42,6 +42,8 @@ mutter_config_install () {
 
 	mutter_set_edge_tiling
 
+	mutter_set_keybindings_win_close
+
 }
 
 mutter_put_toggledesktop_desktop_entry () {
@@ -126,6 +128,11 @@ mutter_set_edge_tiling () {
 
 }
 
+mutter_set_keybindings_win_close () {
+
+	gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>F4', '<Super>q', '<Shift><Alt>q']"
+
+}
 
 ##
 ### Tail: mutter
