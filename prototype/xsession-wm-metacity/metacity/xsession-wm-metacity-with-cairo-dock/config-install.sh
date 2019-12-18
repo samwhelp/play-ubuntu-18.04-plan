@@ -36,13 +36,31 @@ metacity_config_install () {
 
 	metacity_set_keybindings_show_desktop
 
+	metacity_set_keybindings_switch_windows
+
+	metacity_set_keybindings_win_close
+
 	metacity_set_keybindings_toggle_fullscreen
 
-	metacity_set_keybindings_about_workspace
+	metacity_set_keybindings_toggle_maximized
+
+	metacity_set_keybindings_minimize
+
+	metacity_set_keybindings_begin_move
+
+	metacity_set_keybindings_begin_resize
+
+	metacity_set_keybindings_toggle_above
+
+	metacity_set_keybindings_toggle_shaded
+
+	metacity_set_keybindings_raise_or_lower
+
+	metacity_set_keybindings_toggle_tiled
 
 	metacity_set_edge_tiling
 
-	metacity_set_keybindings_win_close
+	metacity_set_keybindings_about_workspace
 
 }
 
@@ -65,6 +83,7 @@ metacity_put_quit_desktop_entry () {
 	echo "cp ./config/metacity/util/metacity-quit.desktop $HOME/.local/share/applications/metacity-quit.desktop"
 
 }
+
 
 metacity_set_theme () {
 
@@ -95,23 +114,87 @@ metacity_set_theme () {
 
 }
 
+
 metacity_set_keybindings_show_desktop () {
 
-	gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Control><Alt>d', '<Super>d']"
+	gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Control><Alt>d', '<Control><Super>d', '<Super>d']"
+
+}
+
+metacity_set_keybindings_switch_windows () {
+
+	gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Super>a']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Super>s']"
+
+}
+
+metacity_set_keybindings_win_close () {
+
+	gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>F4', '<Shift><Alt>q', '<Super>q']"
 
 }
 
 metacity_set_keybindings_toggle_fullscreen () {
 
 	## Fullscreen
-	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11', '<Super>f', '<Super>o']"
+	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11', '<Super>o', '<Super>f']"
+
+}
+
+metacity_set_keybindings_toggle_maximized () {
+
+	gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Alt>F10', '<Super>u', '<Super>w']"
+
+}
+
+metacity_set_keybindings_minimize () {
+
+	#gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>h']"
+	gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>i', '<Super>x']"
+
+}
+
+metacity_set_keybindings_begin_move () {
+	gsettings set org.gnome.desktop.wm.keybindings begin-move "['<Alt>F7', '<Super>e']"
+}
+
+metacity_set_keybindings_begin_resize () {
+	gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Alt>F8', '<Super>r']"
+}
+
+metacity_set_keybindings_toggle_above () {
+	#gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Super>t']"
+	gsettings set org.gnome.desktop.wm.keybindings toggle-above "['<Super>t']"
+}
+
+metacity_set_keybindings_toggle_shaded () {
+	gsettings set org.gnome.desktop.wm.keybindings toggle-shaded "['<Super>c']"
+}
+
+metacity_set_keybindings_raise_or_lower () {
+	gsettings set org.gnome.desktop.wm.keybindings raise-or-lower "['<Super>z']"
+}
+
+metacity_set_keybindings_toggle_tiled () {
+
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "'<Super>l'"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "'<Super>m'"
+
+	gsettings set org.gnome.metacity.keybindings toggle-tiled-left "['<Super>Left', '<Super>h']"
+	gsettings set org.gnome.metacity.keybindings toggle-tiled-right "['<Super>Right', '<Super>l']"
+
+}
+
+metacity_set_edge_tiling () {
+
+	gsettings set org.gnome.metacity edge-tiling true
 
 }
 
 metacity_set_keybindings_about_workspace () {
 
 	## Workspace
-	gsettings set org.gnome.mutter dynamic-workspaces false
+	#gsettings set org.gnome.mutter dynamic-workspaces false
 	#gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
 	gsettings set org.gnome.desktop.wm.preferences num-workspaces 10
 
@@ -144,17 +227,7 @@ metacity_set_keybindings_about_workspace () {
 
 }
 
-metacity_set_edge_tiling () {
 
-	gsettings set org.gnome.metacity edge-tiling true
-
-}
-
-metacity_set_keybindings_win_close () {
-
-	gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>F4', '<Super>q', '<Shift><Alt>q']"
-
-}
 
 ##
 ### Tail: metacity
