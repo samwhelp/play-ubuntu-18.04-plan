@@ -176,9 +176,10 @@ gnome_set_keybindings_toggle_tiled () {
 gnome_set_keybindings_about_workspace () {
 
 	## Workspace
-	gsettings set org.gnome.mutter dynamic-workspaces false
-	#gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
-	gsettings set org.gnome.desktop.wm.preferences num-workspaces 10
+	gsettings set org.gnome.mutter dynamic-workspaces true
+	#gsettings set org.gnome.mutter dynamic-workspaces false
+	gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
+	#gsettings set org.gnome.desktop.wm.preferences num-workspaces 10
 
 
 	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left  "['<Control><Alt>Left', '<Alt>a']"
