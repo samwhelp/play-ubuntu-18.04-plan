@@ -12,17 +12,21 @@ gnome_config_install () {
 
 	gnome_set_theme
 
+	gnome_set_keybindings_start_here
+
 	gnome_set_keybindings_show_desktop
+
+	gnome_set_keybindings_switch_windows
+
+	gnome_set_keybindings_win_close
 
 	gnome_set_keybindings_toggle_fullscreen
 
 	gnome_set_keybindings_about_workspace
 
-	gnome_set_keybindings_start_here
-
 	gnome_set_keybindings_custom
 
-	gnome_set_keybindings_win_close
+
 
 }
 
@@ -63,9 +67,43 @@ gnome_set_theme () {
 
 }
 
+gnome_set_keybindings_start_here () {
+
+	## gsettings list-recursively | grep 'org.gnome.desktop' | sort -u
+
+
+	## Toggle the activities overview
+	#gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['<Alt>F1', '<Control><Alt>a', '<Control><Super>a']"
+
+	## Show all applications
+	#gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a', '<Shift><Alt>a']"
+	#gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a']"
+	gsettings set org.gnome.shell.keybindings toggle-application-view "['<Control><Alt>a', '<Control><Super>a']"
+
+	## Show the activities overview
+	#gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>s', '<Shift><Alt>r']"
+	#gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>s']"
+	gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt>s', '<Control><Super>s']"
+
+}
+
+
 gnome_set_keybindings_show_desktop () {
 
-	gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Control><Alt>d', '<Super>d']"
+	gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Control><Alt>d', '<Control><Super>d', '<Super>d']"
+
+}
+
+gnome_set_keybindings_switch_windows () {
+
+	gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Super>a']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Super>s']"
+
+}
+
+gnome_set_keybindings_win_close () {
+
+	gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>F4', '<Super>q', '<Shift><Alt>q']"
 
 }
 
@@ -75,6 +113,7 @@ gnome_set_keybindings_toggle_fullscreen () {
 	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11', '<Super>f', '<Super>o']"
 
 }
+
 
 gnome_set_keybindings_about_workspace () {
 
@@ -112,20 +151,6 @@ gnome_set_keybindings_about_workspace () {
 
 }
 
-gnome_set_keybindings_start_here () {
-
-	## Toggle the activities overview
-	#gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['<Alt>F1', '<Shift><Alt>d']"
-
-	## Show all applications
-	#gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a', '<Shift><Alt>a']"
-	gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a']"
-
-	## Show the activities overview
-	## gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>s', '<Shift><Alt>r']"
-	gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>s']"
-
-}
 
 gnome_set_keybindings_custom () {
 
@@ -183,12 +208,6 @@ gnome_set_keybindings_custom () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files-1/command "'nautilus'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files-1/binding "'<Shift><Alt>g'"
 
-
-}
-
-gnome_set_keybindings_win_close () {
-
-	gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>F4', '<Super>q', '<Shift><Alt>q']"
 
 }
 
