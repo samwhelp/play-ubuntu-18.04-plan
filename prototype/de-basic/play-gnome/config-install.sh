@@ -119,27 +119,27 @@ gnome_set_keybindings_switch_windows () {
 
 gnome_set_keybindings_win_close () {
 
-	gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>F4', '<Super>q', '<Shift><Alt>q']"
+	gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>F4', '<Shift><Alt>q', '<Super>q']"
 
 }
 
 gnome_set_keybindings_toggle_fullscreen () {
 
 	## Fullscreen
-	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11', '<Super>f', '<Super>o']"
+	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11', '<Super>o', '<Super>f']"
 
 }
 
 gnome_set_keybindings_toggle_maximized () {
 
-	gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Alt>F10', '<Super>w', '<Super>u']"
+	gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Alt>F10', '<Super>u', '<Super>w']"
 
 }
 
 gnome_set_keybindings_minimize () {
 
 	#gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>h']"
-	gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>x', '<Super>i']"
+	gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>i', '<Super>x']"
 
 }
 
