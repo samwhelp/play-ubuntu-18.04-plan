@@ -31,6 +31,37 @@ marco_config_install () {
 
 	marco_put_toggledesktop_desktop_entry
 	marco_put_quit_desktop_entry
+
+	## gsettings list-recursively | grep 'Marco' | sort -u
+
+	marco_set_theme
+
+	marco_set_keybindings_show_desktop
+
+	marco_set_keybindings_switch_windows
+
+	marco_set_keybindings_win_close
+
+	marco_set_keybindings_toggle_fullscreen
+
+	marco_set_keybindings_toggle_maximized
+
+	marco_set_keybindings_minimize
+
+	marco_set_keybindings_begin_move
+
+	marco_set_keybindings_begin_resize
+
+	marco_set_keybindings_toggle_above
+
+	marco_set_keybindings_toggle_shaded
+
+	marco_set_keybindings_raise_or_lower
+
+	marco_set_keybindings_toggle_tiled
+
+	marco_set_keybindings_about_workspace
+
 }
 
 marco_put_toggledesktop_desktop_entry () {
@@ -50,6 +81,215 @@ marco_put_quit_desktop_entry () {
 
 	cp "./config/marco/util/marco-quit.desktop" "$HOME/.local/share/applications/marco-quit.desktop"
 	echo "cp ./config/marco/util/marco-quit.desktop $HOME/.local/share/applications/marco-quit.desktop"
+
+}
+
+marco_set_theme () {
+
+
+	## Theme
+	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
+	## $ gsettings list-recursively | grep 'theme' | grep 'org.mate.Marco'
+
+	#gsettings set org.mate.Marco.general theme 'Arc-Dark'
+	#gsettings set org.mate.Marco.general theme 'Ambiance'
+	gsettings set org.mate.Marco.general theme 'NumixBlue'
+	gsettings set org.gnome.desktop.interface gtk-theme 'NumixBlue'
+	gsettings set org.gnome.desktop.interface icon-theme 'Numix'
+	gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'
+
+
+	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
+	## $ gsettings list-recursively | grep 'org.gnome.desktop' | grep 'theme'
+	# org.gnome.desktop.wm.preferences theme 'NumixBlue'
+	# org.gnome.desktop.interface cursor-theme 'breeze_cursors'
+	# org.gnome.desktop.interface icon-theme 'Numix'
+	# org.gnome.desktop.interface gtk-theme 'NumixBlue'
+	# org.gnome.desktop.interface gtk-key-theme 'Default'
+	# org.gnome.desktop.sound theme-name 'ubuntu'
+	##
+
+}
+
+
+marco_set_keybindings_show_desktop () {
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'show-desktop'
+	#gsettings set org.mate.Marco.global-keybindings show-desktop '<Control><Alt>d'
+	gsettings set org.mate.Marco.global-keybindings show-desktop '<Super>d'
+
+}
+
+marco_set_keybindings_switch_windows () {
+
+	## gsettings list-recursively | grep 'org.mate.Marco' | grep 'windows' | sort -u
+
+
+	#gsettings set org.mate.Marco.global-keybindings switch-windows-backward 'disabled'
+	#gsettings set org.mate.Marco.global-keybindings switch-windows '<Alt>Tab'
+
+
+	gsettings set org.mate.Marco.global-keybindings switch-windows-backward '<Super>a'
+	gsettings set org.mate.Marco.global-keybindings switch-windows '<Super>s'
+
+}
+
+marco_set_keybindings_win_close () {
+
+	## gsettings list-recursively | grep 'org.mate.Marco' | grep 'close' | sort -u
+
+
+	#gsettings set org.mate.Marco.window-keybindings close '<Alt>F4'
+	#gsettings set org.mate.Marco.window-keybindings close '<Shift><Alt>q'
+
+	gsettings set org.mate.Marco.window-keybindings close '<Super>q'
+
+
+}
+
+marco_set_keybindings_toggle_fullscreen () {
+
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'toggle-fullscreen' | sort -u
+
+
+	#gsettings set org.mate.Marco.window-keybindings toggle-fullscreen 'disabled'
+	#gsettings set org.mate.Marco.window-keybindings toggle-fullscreen 'F11'
+	#gsettings set org.mate.Marco.window-keybindings toggle-fullscreen '<Super>o'
+	gsettings set org.mate.Marco.window-keybindings toggle-fullscreen '<Super>f'
+
+}
+
+marco_set_keybindings_toggle_maximized () {
+
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'toggle-maximized' | sort -u
+
+
+	#gsettings set org.mate.Marco.window-keybindings toggle-maximized '<Alt>F10'
+	#gsettings set org.mate.Marco.window-keybindings toggle-maximized '<Super>u'
+	gsettings set org.mate.Marco.window-keybindings toggle-maximized '<Super>w'
+
+}
+
+marco_set_keybindings_minimize () {
+
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'minimize' | sort -u
+
+
+	#gsettings set org.mate.Marco.window-keybindings minimize '<Alt>F9'
+	#gsettings set org.mate.Marco.window-keybindings minimize '<Super>i'
+	gsettings set org.mate.Marco.window-keybindings minimize '<Super>x'
+
+}
+
+marco_set_keybindings_begin_move () {
+
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'begin-move' | sort -u
+
+
+	#gsettings set org.mate.Marco.window-keybindings begin-move '<Alt>F7'
+	gsettings set org.mate.Marco.window-keybindings begin-move '<Super>e'
+
+}
+
+marco_set_keybindings_begin_resize () {
+
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'begin-resize' | sort -u
+
+
+	#gsettings set org.mate.Marco.window-keybindings begin-resize '<Alt>F8'
+	gsettings set org.mate.Marco.window-keybindings begin-resize '<Super>r'
+
+
+}
+
+marco_set_keybindings_toggle_above () {
+
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'toggle-above' | sort -u
+
+	gsettings set org.mate.Marco.window-keybindings toggle-above '<Super>t'
+
+}
+
+marco_set_keybindings_toggle_shaded () {
+
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'toggle-shaded' | sort -u
+
+	gsettings set org.mate.Marco.window-keybindings toggle-shaded '<Super>c'
+
+}
+
+marco_set_keybindings_raise_or_lower () {
+
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'raise-or-lower' | sort -u
+
+	gsettings set org.mate.Marco.window-keybindings raise-or-lower '<Super>z'
+
+}
+
+marco_set_keybindings_toggle_tiled () {
+
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'tile' | sort -u
+
+
+	gsettings set org.mate.Marco.window-keybindings tile-to-corner-nw '<Control><Super>k'
+	gsettings set org.mate.Marco.window-keybindings tile-to-corner-ne '<Control><Super>j'
+	gsettings set org.mate.Marco.window-keybindings tile-to-corner-sw '<Control><Super>h'
+	gsettings set org.mate.Marco.window-keybindings tile-to-corner-se '<Control><Super>l'
+
+	#gsettings set org.mate.Marco.window-keybindings tile-to-side-w '<Super>h'
+	#gsettings set org.mate.Marco.window-keybindings tile-to-side-e '<Super>l'
+	gsettings set org.mate.Marco.window-keybindings tile-to-side-w '<Super>k'
+	gsettings set org.mate.Marco.window-keybindings tile-to-side-e '<Super>j'
+
+
+
+
+}
+
+marco_set_keybindings_about_workspace () {
+
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'workspace' | sort -u
+
+	## Workspace
+	#gsettings set org.gnome.mutter dynamic-workspaces false
+	gsettings set org.mate.Marco.general num-workspaces 4
+
+
+	#gsettings set org.mate.Marco.global-keybindings switch-to-workspace-down '<Control><Alt>Down'
+	#gsettings set org.mate.Marco.global-keybindings switch-to-workspace-left '<Control><Alt>Left'
+	#gsettings set org.mate.Marco.global-keybindings switch-to-workspace-prev 'disabled'
+	#gsettings set org.mate.Marco.global-keybindings switch-to-workspace-right '<Control><Alt>Right'
+	#gsettings set org.mate.Marco.global-keybindings switch-to-workspace-up '<Control><Alt>Up'
+
+
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-left '<Alt>a'
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-right '<Alt>s'
+	#gsettings set org.mate.Marco.global-keybindings switch-to-workspace-prev '<Alt>q'
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-prev '<Alt>z'
+
+
+
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-1 "'<Alt>1'"
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-2 "'<Alt>2'"
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-3 "'<Alt>3'"
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-4 "'<Alt>4'"
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-5 "'<Alt>5'"
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-6 "'<Alt>6'"
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-7 "'<Alt>7'"
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-8 "'<Alt>8'"
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-9 "'<Alt>9'"
+	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-10 "'<Alt>0'"
+
+
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-1 "'<Shift><Alt>exclam'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-2 "'<Shift><Alt>at'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-3 "'<Shift><Alt>numbersign'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-4 "'<Shift><Alt>dollar'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-5 "'<Shift><Alt>percent'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-6 "'<Shift><Alt>asciicircum'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-7 "'<Shift><Alt>ampersand'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-8 "'<Shift><Alt>asterisk'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-9 "'<Shift><Alt>parenleft'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-10 "'<Shift><Alt>parenright'"
 
 }
 ##
@@ -277,8 +517,6 @@ main_config_install () {
 
 	xsession_config_install
 
-	marco_config_install
-
 	cairo_dock_config_install
 
 	compton_config_install
@@ -298,6 +536,9 @@ main_config_install () {
 	gtk3_config_install
 
 	gtk2_config_install
+
+	marco_config_install
+
 }
 ## start
 main_config_install
