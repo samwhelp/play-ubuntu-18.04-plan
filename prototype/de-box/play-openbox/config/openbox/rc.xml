@@ -581,11 +581,18 @@
       </action>
     </keybind>
 
+    <keybind key="A-z">
+      <action name="GoToDesktop">
+        <to>last</to>
+      </action>
+    </keybind>
+<!--
     <keybind key="A-d">
       <action name="GoToDesktop">
         <to>last</to>
       </action>
     </keybind>
+//-->
 
     <keybind key="A-1">
       <action name="GoToDesktop">
