@@ -22,6 +22,22 @@ gnome_config_install () {
 
 	gnome_set_keybindings_toggle_fullscreen
 
+	gnome_set_keybindings_toggle_maximized
+
+	gnome_set_keybindings_minimize
+
+	gnome_set_keybindings_begin_move
+
+	gnome_set_keybindings_begin_resize
+
+	gnome_set_keybindings_toggle_above
+
+	gnome_set_keybindings_toggle_shaded
+
+	gnome_set_keybindings_raise_or_lower
+
+	gnome_set_keybindings_toggle_tiled
+
 	gnome_set_keybindings_about_workspace
 
 	gnome_set_keybindings_custom
@@ -113,6 +129,48 @@ gnome_set_keybindings_toggle_fullscreen () {
 	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11', '<Super>f', '<Super>o']"
 
 }
+
+gnome_set_keybindings_toggle_maximized () {
+
+	gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Alt>F10', '<Super>w', '<Super>u']"
+
+}
+
+gnome_set_keybindings_minimize () {
+
+	#gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>h']"
+	gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>x', '<Super>i']"
+
+}
+
+gnome_set_keybindings_begin_move () {
+	gsettings set org.gnome.desktop.wm.keybindings begin-move "['<Alt>F7', '<Super>e']"
+}
+
+gnome_set_keybindings_begin_resize () {
+	gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Alt>F8', '<Super>r']"
+}
+
+gnome_set_keybindings_toggle_above () {
+	#gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Super>t']"
+	gsettings set org.gnome.desktop.wm.keybindings toggle-above "['<Super>t']"
+}
+
+gnome_set_keybindings_toggle_shaded () {
+	gsettings set org.gnome.desktop.wm.keybindings toggle-shaded "['<Super>c']"
+}
+
+gnome_set_keybindings_raise_or_lower () {
+	gsettings set org.gnome.desktop.wm.keybindings raise-or-lower "['<Super>z']"
+}
+
+gnome_set_keybindings_toggle_tiled () {
+	gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Super>Left', '<Super>h']"
+	gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Super>Right', '<Super>l']"
+}
+
+
+
 
 
 gnome_set_keybindings_about_workspace () {
