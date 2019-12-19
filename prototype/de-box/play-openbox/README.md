@@ -1,6 +1,12 @@
 
 # Prototype play-openbox
 
+
+## Spec
+
+* [keybind](spec-keybind.md)
+
+
 ## Usage
 
 
