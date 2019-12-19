@@ -742,8 +742,9 @@
 
 
 <!-- ####################################################################### -->
-<!-- ### Head: Window Switching -->
-    <!-- Keybindings for window switching -->
+<!-- ### Head: Window Switch -->
+<!-- Keybindings for window switching -->
+
     <keybind key="W-s">
       <action name="NextWindow">
         <finalactions>
@@ -762,35 +763,9 @@
         </finalactions>
       </action>
     </keybind>
-<!-- ### Tail: Window Switching //-->
+
+<!-- ### Tail: Window Switch //-->
 <!-- ##################################################################### //-->
-
-
-<!-- ####################################################################### -->
-<!-- ### Head: Window Decorate Toggle -->
-<!-- http://openbox.org/wiki/Help:Actions#ToggleDecorations //-->
-<!--
-    <keybind key="W-A-z">
-      <action name="Decorate"/>
-    </keybind>
-    <keybind key="W-A-x">
-      <action name="Undecorate"/>
-    </keybind>
-//-->
-    <keybind key="W-v">
-      <action name="ToggleDecorations"/>
-    </keybind>
-
-    <keybind key="W-p">
-      <action name="ToggleDecorations"/>
-    </keybind>
-<!--
-<keybind key="W-C-d">
-  <action name="ToggleDecorations"/>
-</keybind>
-//-->
-<!-- ### Tail: Window Decorate Toggle -->
-<!-- ####################################################################### -->
 
 
 <!-- ##################################################################### //-->
@@ -828,16 +803,7 @@
 
 
 <!-- ##################################################################### //-->
-<!-- ### Head: Window Action -->
-
-
-    <keybind key="W-f">
-      <action name="ToggleFullscreen"/>
-    </keybind>
-
-    <keybind key="W-o">
-      <action name="ToggleFullscreen"/>
-    </keybind>
+<!-- ### Head: Window ToggleMaximize //-->
 
     <keybind key="W-w">
       <action name="ToggleMaximize">
@@ -865,18 +831,70 @@
     </keybind>
 //-->
 
+<!-- ### Tail: Window ToggleMaximize //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ##################################################################### //-->
+<!-- ### Head: Window ToggleFullscreen //-->
+
+    <keybind key="W-f">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+
+    <keybind key="W-o">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+
+<!-- ### Tail: Window ToggleMaximize //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ##################################################################### //-->
+<!-- ### Head: Window ToggleDecorations //-->
+<!-- ### http://openbox.org/wiki/Help:Actions#ToggleDecorations //-->
+<!--
+    <keybind key="W-A-z">
+      <action name="Decorate"/>
+    </keybind>
+    <keybind key="W-A-x">
+      <action name="Undecorate"/>
+    </keybind>
+//-->
+
+    <keybind key="W-v">
+      <action name="ToggleDecorations"/>
+    </keybind>
+
+    <keybind key="W-p">
+      <action name="ToggleDecorations"/>
+    </keybind>
+
+<!-- ### Tail: Window ToggleDecorations //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ##################################################################### //-->
+<!-- ### Head: Window BeginMove //-->
 
     <keybind key="W-e">
       <action name="UnmaximizeFull"/>
       <action name="Move"/>
     </keybind>
 
+<!-- ### Tail: Window BeginMove //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ##################################################################### //-->
+<!-- ### Head: Window BeginResize -->
+
     <keybind key="W-r">
       <action name="UnmaximizeFull"/>
       <action name="Resize"/>
     </keybind>
 
-<!-- ### Tail: Window Action -->
+<!-- ### Tail: Window BeginResize -->
 <!-- ####################################################################### -->
 
 
