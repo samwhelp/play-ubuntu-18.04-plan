@@ -1,5 +1,5 @@
 
-# Key Bind
+# Openbox / Keybind
 
 
 ## Window Switch
