@@ -22,7 +22,7 @@
 
 ### de-box
 
-* [play-openbox](prototype/de-box/play-openbox)
+* [play-openbox](prototype/de-box/play-openbox) ([keybind](prototype/de-box/play-openbox/spec-keybind.md))
 * [play-icewm](prototype/de-box/play-icewm)
 * [play-fluxbox](prototype/de-box/play-fluxbox)
 * [play-pekwm](prototype/de-box/play-pekwm)
