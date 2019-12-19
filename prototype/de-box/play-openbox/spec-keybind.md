@@ -4,7 +4,7 @@
 
 ## Window Switch
 
-| Key | How to set | description |
+| Key | How to set | Description |
 | --- | --- | --- |
 | `Win + a` | [~/openbox/rc.xml](config/openbox/rc.xml#L799) | Previous Window|
 | `Win + s` | [~/openbox/rc.xml](config/openbox/rc.xml#L799) | Next Window |
@@ -67,7 +67,7 @@
 
 ## Window Tiling
 
-| Key | How to set | description |
+| Key | How to set | Description |
 | --- | --- | --- |
 | `Win + Shift + h` | [~/openbox/rc.xml](config/openbox/rc.xml#L799) | Tiling Window Horizontal (North-South) (Top-Bottom) |
 | `Win + Shift + v` | [~/openbox/rc.xml](config/openbox/rc.xml#L799) | Tiling Window Vertical (West-East) (Left-Right) |
@@ -76,7 +76,7 @@
 
 ## Window Tiling Move / 1
 
-| Key | How to set | description |
+| Key | How to set | Description |
 | --- | --- | --- |
 | `Win + k` | [~/openbox/rc.xml](config/openbox/rc.xml#L799) | Tiling Window Move To North (Top) |
 | `Win + j` | [~/openbox/rc.xml](config/openbox/rc.xml#L799) | Tiling Window Move To South (Bottom) |
@@ -86,7 +86,7 @@
 
 ## Window Tiling Move / 2
 
-| Key | How to set | description |
+| Key | How to set | Description |
 | --- | --- | --- |
 | `Win + Ctrl + k` | [~/openbox/rc.xml](config/openbox/rc.xml#L799) | Tiling Window Move To West-North (Left-Top) |
 | `Win + Ctrl + j` | [~/openbox/rc.xml](config/openbox/rc.xml#L799) | Tiling Window Move To East-North (Right-Top) |
