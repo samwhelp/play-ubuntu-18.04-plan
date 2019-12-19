@@ -55,8 +55,6 @@
 ### xsession-wm-mutter
 
 * [xsession-wm-mutter-with-tint2](prototype/xsession-wm-metacity/mutter/xsession-wm-mutter-with-tint2)
-* [xsession-wm-mutter-with-cairo-dock](prototype/xsession-wm-metacity/mutter/xsession-wm-mutter-with-cairo-dock)
-
 
 
 ## Plan
