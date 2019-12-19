@@ -248,9 +248,11 @@
       </action>
     </keybind>
     <!-- Keybindings for windows -->
+<!--
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
+//-->
     <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
@@ -794,7 +796,11 @@
 <!-- ####################################################################### -->
 <!-- ### Head: Window Close //-->
 
-    <keybind key="S-A-q">
+    <keybind key="A-F4">
+      <action name="Close"/>
+    </keybind>
+
+    <keybind key="A-S-q">
       <action name="Close"/>
     </keybind>
 
