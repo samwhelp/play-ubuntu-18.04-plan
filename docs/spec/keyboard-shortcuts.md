@@ -28,4 +28,4 @@
 
 ## Wm
 
-* [openbox](../prototype/de-box/play-openbox/spec-keybind.md)
+* [openbox](../../prototype/de-box/play-openbox/spec-keybind.md)
