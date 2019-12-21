@@ -7,6 +7,14 @@
 * [keybind](spec-keybind.md)
 * [mousebind](spec-mousebind.md)
 
+
+## Manual
+
+* [http://openbox.org/wiki/Help:Actions](http://openbox.org/wiki/Help:Actions)
+* [http://openbox.org/wiki/Help:Menus](http://openbox.org/wiki/Help:Menus)
+* [http://openbox.org/wiki/Help:Themes](http://openbox.org/wiki/Help:Themes)
+
+
 ## Usage
 
 

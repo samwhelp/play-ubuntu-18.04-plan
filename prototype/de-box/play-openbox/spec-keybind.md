@@ -92,3 +92,8 @@
 | `Win + Ctrl + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L799) | Tiling Window Move To East-North (Right-Top) |
 | `Win + Ctrl + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L799) | Tiling Window Move To West-South (Left-Bottom) |
 | `Win + Ctrl + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L799) | Tiling Window Move To East-South (Right-Bottom) |
+
+
+## Manual
+
+* [http://openbox.org/wiki/Help:Actions](http://openbox.org/wiki/Help:Actions)
