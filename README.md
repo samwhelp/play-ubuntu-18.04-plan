@@ -28,6 +28,11 @@
 * [play-pekwm](prototype/de-box/play-pekwm)
 
 
+### de-tiling
+
+* [play-bspwm](prototype/de-tiling/play-bspwm)
+
+
 ### de-lxqt-with-wm
 
 * [lxqt-with-openbox](prototype/de-lxqt-with-wm/lxqt-with-openbox)
