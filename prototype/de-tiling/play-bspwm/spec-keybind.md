@@ -6,7 +6,7 @@
 
 | Key | How to set | Description |
 | --- | --- | --- |
-| `Alt + Shift + c` | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#L37) | Reload Config |
+| `Alt + Shift + c` | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#L37) | Reload sxhkd Config |
 
 
 ## Launch Terminal

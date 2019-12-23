@@ -12,6 +12,12 @@
 * [note-ubuntu-18.04/bspwm](https://samwhelp.github.io/note-ubuntu-18.04/read/subject/bspwm/)
 
 
+## Config File
+
+* [~/.config/bspwm/bspwmrc](config/bspwm/bspwmrc)
+* [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc)
+
+
 ## Usage
 
 ### install
