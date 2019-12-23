@@ -30,7 +30,7 @@
 
 ### de-tiling
 
-* [play-bspwm](prototype/de-tiling/play-bspwm)
+* [play-bspwm](prototype/de-tiling/play-bspwm) ([keybind](prototype/de-tiling/play-bspwm/spec-keybind.md))
 
 
 ### de-lxqt-with-wm

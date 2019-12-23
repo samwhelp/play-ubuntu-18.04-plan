@@ -2,8 +2,17 @@
 # Prototype play-bspwm
 
 
-## Usage
+## Spec
 
+* [keybind](spec-keybind.md)
+
+
+## Link
+
+* [note-ubuntu-18.04/bspwm](https://samwhelp.github.io/note-ubuntu-18.04/read/subject/bspwm/)
+
+
+## Usage
 
 ### install
 

@@ -26,6 +26,7 @@
 * [i3 User’s Guide](https://i3wm.org/docs/userguide.html)
 
 
-## Wm
+## WM
 
 * [openbox](../../prototype/de-box/play-openbox/spec-keybind.md)
+* [bspwm](../../prototype/de-tiling/play-bspwm/spec-keybind.md)
