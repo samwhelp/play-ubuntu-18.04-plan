@@ -160,10 +160,10 @@
       <property name="&lt;Super&gt;Down" type="string" value="tile_down_key"/>
       <property name="&lt;Super&gt;Left" type="string" value="tile_left_key"/>
       <property name="&lt;Super&gt;Right" type="string" value="tile_right_key"/>
-      <property name="&lt;Alt&gt;Left" type="string" value="tile_up_left_key"/>
-      <property name="&lt;Alt&gt;Right" type="string" value="tile_up_right_key"/>
-      <property name="&lt;Alt&gt;Down" type="string" value="tile_down_left_key"/>
-      <property name="&lt;Alt&gt;Up" type="string" value="tile_down_right_key"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Up" type="string" value="tile_up_left_key"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Down" type="string" value="tile_up_right_key"/>      
+      <property name="&lt;Primary&gt;&lt;Super&gt;Left" type="string" value="tile_down_left_key"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="tile_down_right_key"/>
       <property name="&lt;Alt&gt;a" type="string" value="prev_workspace_key"/>
       <property name="&lt;Alt&gt;s" type="string" value="next_workspace_key"/>
     </property>
