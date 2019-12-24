@@ -33,7 +33,8 @@
       <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
-      <property name="&lt;Super&gt;s" type="string" value="xfdesktop --windowlist"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;s" type="string" value="xfdesktop --windowlist"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;s" type="string" value="xfdesktop --windowlist"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;r" type="string" value="rofi -show run"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;w" type="string" value="rofi -show window -show-icons"/>
