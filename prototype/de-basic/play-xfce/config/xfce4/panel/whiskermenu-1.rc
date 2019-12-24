@@ -1,7 +1,7 @@
-favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop,qterminal.desktop,com.gexperts.Tilix.desktop,pcmanfm-qt.desktop,gedit.desktop
-recent=exo-terminal-emulator.desktop,firefox.desktop,exo-file-manager.desktop
+favorites=sakura.desktop,pcmanfm-qt.desktop,firefox.desktop,gedit.desktop,nautilus.desktop,filezilla.desktop,thunderbird.desktop,mousepad.desktop,qterminal.desktop,com.gexperts.Tilix.desktop,gnome-terminal.desktop
+recent=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop,exo-mail-reader.desktop
 button-title=Applications
-button-icon=xfce4-whiskermenu
+button-icon=application-community
 button-single-row=false
 show-button-title=false
 show-button-icon=true
@@ -65,4 +65,3 @@ name=Open URI
 pattern=^(file|http|https):\\/\\/(.*)$
 command=exo-open \\0
 regex=true
-

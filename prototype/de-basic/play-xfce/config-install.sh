@@ -34,6 +34,12 @@ xfce4_config_install () {
 	cp ./config/xfce4/panel/whiskermenu-1.rc $HOME/.config/xfce4/panel/whiskermenu-1.rc
 	echo "cp ./config/xfce4/panel/whiskermenu-1.rc $HOME/.config/xfce4/panel/whiskermenu-1.rc"
 
+
+	cp ./config/xfce4/helpers.rc $HOME/.config/xfce4/helpers.rc
+	echo "cp ./config/xfce4/helpers.rc $HOME/.config/xfce4/helpers.rc"
+
+
+
 }
 ##
 ### Tail: xfce4
