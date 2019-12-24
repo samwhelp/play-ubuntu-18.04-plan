@@ -465,9 +465,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Editor</name>
+          <name>TextEditor</name>
         </startupnotify>
-        <command>mousepad</command>
+        <command>gedit</command>
       </action>
     </keybind>
 
