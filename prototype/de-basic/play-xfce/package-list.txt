@@ -2,6 +2,7 @@
 xfce4
 xfpanel-switch
 xfce4-whiskermenu-plugin
+#xfce4-goodies
 
 rofi
 
