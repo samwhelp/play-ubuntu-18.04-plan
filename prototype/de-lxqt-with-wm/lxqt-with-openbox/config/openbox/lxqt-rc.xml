@@ -562,6 +562,10 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
 
+    <keybind key="A-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+
 <!-- ### Tail: Key ToggleShowDesktop-->
 <!-- ####################################################################### -->
 
