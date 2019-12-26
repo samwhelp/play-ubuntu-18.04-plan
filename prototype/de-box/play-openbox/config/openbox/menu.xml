@@ -97,6 +97,9 @@
     <item label="Restart" icon="/usr/share/icons/Numix/24/actions/system-restart.svg">
       <action name="Restart" />
     </item>
+    <item label="PowerOff" icon="/usr/share/icons/Numix/24/actions/system-shutdown.svg">
+      <action name="Execute"><execute>pkexec poweroff</execute></action>
+    </item>
     <!-- $ find /usr/share/icons/Numix/ | grep logout //-->
     <item label="Exit" icon="/usr/share/icons/Numix/24/actions/system-logout.svg">
       <action name="Exit"/>
