@@ -189,9 +189,11 @@ tint2 -c "$HOME/.config/bspwm/tint2/tint2rc" &
 
 
 ## How to test:
+## Way 1:
 ## Use [galternatives](https://manpages.ubuntu.com/manpages/bionic/en/man1/galternatives.1.html).
 ## Package: [galternatives](https://packages.ubuntu.com/bionic/galternatives)
-
+## Way 2:
+## $ pkexec ls
 
 ##
 ### Tail: Policykit Agent
