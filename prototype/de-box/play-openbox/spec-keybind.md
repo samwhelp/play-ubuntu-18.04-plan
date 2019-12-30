@@ -121,6 +121,51 @@
 | `Win + Ctrl + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1242) | Tiling Window Move To East-South (Right-Bottom) |
 
 
+## Go To Workspace
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Alt + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L578) | Go To Previous Workspace |
+| `Alt + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L584) | Go To Next Workspace |
+| `Alt + z` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L590) | Go To Next Workspace |
+
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Alt + 1` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L603) | Go To Workspace 1 |
+| `Alt + 2` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L609) | Go To Workspace 2 |
+| `Alt + 3` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L615) | Go To Workspace 3 |
+| `Alt + 4` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L621) | Go To Workspace 4 |
+| `Alt + 5` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L627) | Go To Workspace 5 |
+| `Alt + 6` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L633) | Go To Workspace 6 |
+| `Alt + 7` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L639) | Go To Workspace 7 |
+| `Alt + 8` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L645) | Go To Workspace 8 |
+| `Alt + 9` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L651) | Go To Workspace 9 |
+| `Alt + 0` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L657) | Go To Workspace 10 |
+
+
+## Send To Workspace
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Alt + Win + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L672) | Send To Previous Workspace |
+| `Alt + Win + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L678) | Send To Next Workspace |
+
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Shift + Alt + 1` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L684) | Send To Workspace 1 |
+| `Shift + Alt + 2` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L690) | Send To Workspace 2 |
+| `Shift + Alt + 3` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L696) | Send To Workspace 3 |
+| `Shift + Alt + 4` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L702) | Send To Workspace 4 |
+| `Shift + Alt + 5` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L708) | Send To Workspace 5 |
+| `Shift + Alt + 6` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L714) | Send To Workspace 6 |
+| `Shift + Alt + 7` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L720) | Send To Workspace 7 |
+| `Shift + Alt + 8` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L726) | Send To Workspace 8 |
+| `Shift + Alt + 9` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L732) | Send To Workspace 9 |
+| `Shift + Alt + 0` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L738) | Send To Workspace 10 |
+
+
 ## Manual
 
 * [http://openbox.org/wiki/Help:Actions](http://openbox.org/wiki/Help:Actions)
