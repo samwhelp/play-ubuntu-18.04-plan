@@ -2,6 +2,8 @@
 xfce4
 xfpanel-switch
 xfce4-whiskermenu-plugin
+xfce4-pulseaudio-plugin
+xfce4-power-manager-plugin
 #xfce4-goodies
 
 rofi
