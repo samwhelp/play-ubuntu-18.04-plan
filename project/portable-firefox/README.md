@@ -47,3 +47,9 @@ run
 ``` sh
 $ ./pf-ctrl install 'WorkWeb' '71.0' 'en-US'
 ```
+
+
+## Link
+
+* https://github.com/samwhelp/skel-project-plan/blob/gh-pages/demo/sh/standalone/bin/demo-ctrl
+* https://github.com/samwhelp/play-ubuntu-18.04-plan/blob/master/project/portable-firefox/pf-ctrl
