@@ -1,0 +1,510 @@
+#!/usr/bin/env bash
+
+
+################################################################################
+### Head: Url
+##
+
+# * https://github.com/samwhelp/skel-project-plan/blob/gh-pages/demo/sh/standalone/bin/demo-ctrl
+# * https://github.com/samwhelp/play-ubuntu-18.04-plan/tree/master/project/portable-firefox/demo-ctrl
+
+##
+### Tail: Url
+################################################################################
+
+
+################################################################################
+### Head: Init
+##
+set -e ## for Exit immediately if a command exits with a non-zero status.
+THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+##
+### Tail: Init
+################################################################################
+
+
+################################################################################
+### Head: Base
+##
+find_dir_path () {
+	if [ ! -d $(dirname -- "$1") ]; then
+		dirname -- "$1"
+		return 1
+	fi
+	echo $(cd -P -- "$(dirname -- "$1")" && pwd -P)
+}
+
+##THIS_BASE_DIR_PATH=$(find_dir_path $0)
+
+## $ export DEBUG_PF_CTRL=true
+is_debug () {
+	if [ "$DEBUG_PF_CTRL" = "true" ]; then
+		return 0
+	fi
+
+	return 1
+}
+
+is_not_debug () {
+	! is_debug
+}
+
+base_var_init () {
+
+	#THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/../.")
+	THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/.")
+
+
+	THE_ASSET_DIR_NAME="asset"
+	THE_ASSET_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_ASSET_DIR_NAME"
+
+	THE_VAR_DIR_NAME="var"
+	THE_VAR_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_VAR_DIR_NAME"
+
+	THE_TARGET_ROOT_DIR_NAME="portable-firefox"
+	THE_TARGET_ROOT_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_TARGET_ROOT_DIR_NAME"
+
+	THE_TARGET_BIN_DIR_NAME="bin"
+	THE_TARGET_BIN_DIR_PATH="$THE_TARGET_ROOT_DIR_PATH/$THE_TARGET_BIN_DIR_NAME"
+
+	THE_TARGET_VERSION_DIR_NAME="version"
+	THE_TARGET_VERSION_DIR_PATH="$THE_TARGET_ROOT_DIR_PATH/$THE_TARGET_VERSION_DIR_NAME"
+
+	THE_TARGET_PROFILE_DIR_NAME="profile"
+	THE_TARGET_PROFILE_DIR_PATH="$THE_TARGET_ROOT_DIR_PATH/$THE_TARGET_PROFILE_DIR_NAME"
+
+	THE_TARGET_APP_DIR_NAME="app"
+	THE_TARGET_APP_DIR_PATH="$THE_TARGET_ROOT_DIR_PATH/$THE_TARGET_APP_DIR_NAME"
+
+
+
+	THE_ASSET_FIREFOX_DIR_PATH="$THE_ASSET_DIR_PATH/firefox"
+	THE_ASSET_FIREFOX_BIN_FILE_PATH="$THE_ASSET_FIREFOX_DIR_PATH/WorkWeb.sh"
+	THE_ASSET_FIREFOX_APP_FILE_PATH="$THE_ASSET_FIREFOX_DIR_PATH/WorkWeb.desktop"
+
+
+
+	THE_PROFILE_DIR_NAME=".pf-ctrl-profile"
+	THE_PROFILE_DIR_PATH="$HOME/$THE_PROFILE_DIR_NAME"
+
+	THE_PROJECT_DIR_NAME="pf-ctrl"
+	THE_PROJECT_DIR_PATH="$HOME/.local/share/$THE_PROJECT_DIR_NAME"
+
+	THE_CONFIG_DIR_NAME="pf-ctrl"
+	THE_CONFIG_DIR_PATH="$HOME/.config/$THE_CONFIG_DIR_NAME"
+
+	THE_CACHE_DIR_NAME="pf-ctrl"
+	THE_CACHE_DIR_PATH="$HOME/.cache/$THE_CACHE_DIR_NAME"
+
+
+	THE_SOURCE_FIREFOX_VERSION="71.0"
+	#THE_SOURCE_FIREFOX_LANGUAGE="zh-TW"
+	THE_SOURCE_FIREFOX_LANGUAGE="en-US"
+	THE_TARGET_FIREFOX_NAME="WorkWeb"
+
+}
+
+base_var_dump () {
+
+	is_not_debug && return 0
+
+	echo
+	echo "################################################################################"
+	echo "### Head: var_dump"
+	echo "##"
+	echo "#"
+
+
+	echo "THE_PLAN_DIR_PATH=$THE_PLAN_DIR_PATH"
+
+
+	echo "THE_ASSET_DIR_NAME=$THE_ASSET_DIR_NAME"
+	echo "THE_ASSET_DIR_PATH=$THE_ASSET_DIR_PATH"
+
+	echo "THE_VAR_DIR_NAME=$THE_VAR_DIR_NAME"
+	echo "THE_VAR_DIR_PATH=$THE_VAR_DIR_PATH"
+
+
+
+
+	echo "THE_TARGET_ROOT_DIR_NAME=$THE_TARGET_ROOT_DIR_NAME"
+	echo "THE_TARGET_ROOT_DIR_PATH=$THE_TARGET_ROOT_DIR_PATH"
+
+	echo "THE_TARGET_BIN_DIR_NAME=$THE_TARGET_BIN_DIR_NAME"
+	echo "THE_TARGET_BIN_DIR_PATH=$THE_TARGET_BIN_DIR_PATH"
+
+	echo "THE_TARGET_VERSION_DIR_NAME=$THE_TARGET_VERSION_DIR_NAME"
+	echo "THE_TARGET_VERSION_DIR_PATH=$THE_TARGET_VERSION_DIR_PATH"
+
+	echo "THE_TARGET_PROFILE_DIR_NAME=$THE_TARGET_PROFILE_DIR_NAME"
+	echo "THE_TARGET_PROFILE_DIR_PATH=$THE_TARGET_PROFILE_DIR_PATH"
+
+	echo "THE_TARGET_APP_DIR_NAME=$THE_TARGET_APP_DIR_NAME"
+	echo "THE_TARGET_APP_DIR_PATH=$THE_TARGET_APP_DIR_PATH"
+
+
+
+
+	echo "THE_ASSET_FIREFOX_DIR_PATH=$THE_ASSET_FIREFOX_DIR_PATH"
+	echo "THE_ASSET_FIREFOX_BIN_FILE_PATH=$THE_ASSET_FIREFOX_BIN_FILE_PATH"
+	echo "THE_ASSET_FIREFOX_APP_FILE_PATH=$THE_ASSET_FIREFOX_APP_FILE_PATH"
+
+
+
+
+	echo "THE_PROFILE_DIR_NAME=$THE_PROFILE_DIR_NAME"
+	echo "THE_PROFILE_DIR_PATH=$THE_PROFILE_DIR_PATH"
+
+	echo "THE_PROJECT_DIR_NAME=$THE_PROJECT_DIR_NAME"
+	echo "THE_PROJECT_DIR_PATH=$THE_PROJECT_DIR_PATH"
+
+	echo "THE_CONFIG_DIR_NAME=$THE_CONFIG_DIR_NAME"
+	echo "THE_CONFIG_DIR_PATH=$THE_CONFIG_DIR_PATH"
+
+	echo "THE_CACHE_DIR_NAME=$THE_CACHE_DIR_NAME"
+	echo "THE_CACHE_DIR_PATH=$THE_CACHE_DIR_PATH"
+
+
+
+	echo "THE_SOURCE_FIREFOX_VERSION=$THE_SOURCE_FIREFOX_VERSION"
+	echo "THE_SOURCE_FIREFOX_LANGUAGE=$THE_SOURCE_FIREFOX_LANGUAGE"
+	echo "THE_TARGET_FIREFOX_NAME=$THE_TARGET_FIREFOX_NAME"
+
+
+	echo "#"
+	echo "##"
+	echo "### Tail: var_dump"
+	echo "################################################################################"
+	echo
+}
+
+
+base_var_init
+
+base_var_dump
+
+##
+### Tail: Base
+################################################################################
+
+
+################################################################################
+### Head: Util_Debug
+##
+
+util_debug_echo () {
+	if is_debug; then
+		echo "$@" 1>&2;
+	fi
+}
+
+##
+### Head: Util_Debug
+################################################################################
+
+
+################################################################################
+### Head: Util_SubCmd
+##
+
+sub_cmd_find_function_name () {
+	echo "sub_run_$1"
+}
+
+##
+### Tail: Util_SubCmd
+################################################################################
+
+
+################################################################################
+### Head: Model
+##
+
+demo_list () {
+	echo "demo_list"
+	echo "$@"
+}
+
+##
+### Tail: Model
+################################################################################
+
+
+################################################################################
+### Head: Model Install
+##
+
+pf_install_var_init () {
+	local target="$1"
+	local version="$2"
+	local language="$3"
+
+	if [ "$target" != "" ]; then
+		THE_TARGET_FIREFOX_NAME="$target"
+	fi
+
+	if [ "$version" != "" ]; then
+		THE_SOURCE_FIREFOX_VERSION="$version"
+	fi
+
+	if [ "$language" != "" ]; then
+		THE_SOURCE_FIREFOX_LANGUAGE="$language"
+	fi
+
+
+	# https://ftp.mozilla.org/pub/firefox/releases/71.0/linux-x86_64/en-US/firefox-71.0.tar.bz2
+	# https://ftp.mozilla.org/pub/firefox/releases/71.0/linux-x86_64/en-US/firefox-71.0.tar.bz2.asc
+	# https://ftp.mozilla.org/pub/firefox/releases/71.0/linux-x86_64/zh-TW/firefox-71.0.tar.bz2
+	# https://ftp.mozilla.org/pub/firefox/releases/71.0/linux-x86_64/zh-TW/firefox-71.0.tar.bz2.asc
+
+	THE_SOURCE_FIREFOX_FILE_NAME="firefox-${THE_SOURCE_FIREFOX_VERSION}.tar.bz2"
+	THE_SOURCE_FIREFOX_URL="https://ftp.mozilla.org/pub/firefox/releases/${THE_SOURCE_FIREFOX_VERSION}/linux-x86_64/${THE_SOURCE_FIREFOX_LANGUAGE}/${THE_SOURCE_FIREFOX_FILE_NAME}"
+
+
+	THE_TARGET_FIREFOX_FILE_NAME="$THE_SOURCE_FIREFOX_FILE_NAME"
+
+
+	THE_SAVE_FIREFOX_FILE_PATH="${THE_VAR_DIR_PATH}/${THE_TARGET_FIREFOX_FILE_NAME}"
+	THE_EXTRACT_FIREFOX_DIR_PATH="${THE_VAR_DIR_PATH}/firefox"
+
+
+
+	THE_TARGET_VERSION_FIREFOX_DIR_PATH="${THE_TARGET_VERSION_DIR_PATH}/${THE_TARGET_FIREFOX_NAME}"
+	THE_TARGET_PROFILE_FIREFOX_DIR_PATH="${THE_TARGET_PROFILE_DIR_PATH}/${THE_TARGET_FIREFOX_NAME}"
+	THE_TARGET_BIN_FIREFOX_FILE_PATH="${THE_TARGET_BIN_DIR_PATH}/${THE_TARGET_FIREFOX_NAME}.sh"
+	THE_TARGET_APP_FIREFOX_FILE_PATH="${THE_TARGET_APP_DIR_PATH}/${THE_TARGET_FIREFOX_NAME}.desktop"
+	THE_TARGET_APPLICATION_FIREFOX_FILE_PATH="$HOME/.local/share/applications/${THE_TARGET_FIREFOX_NAME}.desktop"
+
+}
+
+pf_install_var_dump () {
+
+	is_not_debug && return 0
+
+	echo
+	echo "################################################################################"
+	echo "### Head: pf_install_var_dump"
+	echo "##"
+	echo "#"
+
+
+
+	echo "THE_SOURCE_FIREFOX_VERSION=$THE_SOURCE_FIREFOX_VERSION"
+	echo "THE_SOURCE_FIREFOX_LANGUAGE=$THE_SOURCE_FIREFOX_LANGUAGE"
+	echo "THE_TARGET_FIREFOX_NAME=$THE_TARGET_FIREFOX_NAME"
+
+	echo "THE_SOURCE_FIREFOX_FILE_NAME=$THE_SOURCE_FIREFOX_FILE_NAME"
+	echo "THE_SOURCE_FIREFOX_URL=$THE_SOURCE_FIREFOX_URL"
+
+
+	echo "THE_TARGET_FIREFOX_FILE_NAME=$THE_TARGET_FIREFOX_FILE_NAME"
+
+
+	echo "THE_SAVE_FIREFOX_FILE_PATH=$THE_SAVE_FIREFOX_FILE_PATH"
+	echo "THE_EXTRACT_FIREFOX_DIR_PATH=$THE_EXTRACT_FIREFOX_DIR_PATH"
+
+
+
+	echo "THE_TARGET_VERSION_FIREFOX_DIR_PATH=$THE_TARGET_VERSION_FIREFOX_DIR_PATH"
+	echo "THE_TARGET_PROFILE_FIREFOX_DIR_PATH=$THE_TARGET_PROFILE_FIREFOX_DIR_PATH"
+	echo "THE_TARGET_BIN_FIREFOX_FILE_PATH=$THE_TARGET_BIN_FIREFOX_FILE_PATH"
+	echo "THE_TARGET_APP_FIREFOX_FILE_PATH=$THE_TARGET_APP_FIREFOX_FILE_PATH"
+	echo "THE_TARGET_APPLICATION_FIREFOX_FILE_PATH=$THE_TARGET_APPLICATION_FIREFOX_FILE_PATH"
+
+
+
+
+	echo "#"
+	echo "##"
+	echo "### Tail: pf_install_var_dump"
+	echo "################################################################################"
+	echo
+}
+
+
+pf_install_prepare_dir () {
+
+	mkdir -p "$THE_VAR_DIR_PATH"
+
+
+	mkdir -p "$THE_TARGET_ROOT_DIR_PATH"
+	mkdir -p "$THE_TARGET_BIN_DIR_PATH"
+	mkdir -p "$THE_TARGET_VERSION_DIR_PATH"
+	mkdir -p "$THE_TARGET_PROFILE_DIR_PATH"
+	mkdir -p "$THE_TARGET_APP_DIR_PATH"
+
+
+	mkdir -p "$THE_TARGET_PROFILE_FIREFOX_DIR_PATH"
+
+}
+
+pf_install_download_firefox () {
+	wget -c "$THE_SOURCE_FIREFOX_URL" -O "$THE_SAVE_FIREFOX_FILE_PATH"
+}
+
+pf_install_extract_firefox () {
+
+	cd "$THE_VAR_DIR_PATH"
+	tar xf "$THE_SAVE_FIREFOX_FILE_PATH"
+	mv "$THE_EXTRACT_FIREFOX_DIR_PATH" "$THE_TARGET_VERSION_FIREFOX_DIR_PATH"
+	cd "$THE_PLAN_DIR_PATH"
+
+}
+
+pf_install_prepare_firefox_start_script () {
+
+	install -m 764 "$THE_ASSET_FIREFOX_BIN_FILE_PATH" "$THE_TARGET_BIN_FIREFOX_FILE_PATH"
+
+	sed -i "s|^THE_TARGET=\"WorkWeb\"|THE_TARGET=\"${THE_TARGET_FIREFOX_NAME}\"|g" "$THE_TARGET_BIN_FIREFOX_FILE_PATH"
+
+}
+
+pf_install_prepare_firefox_desktop_entry () {
+
+	install -m 664 "$THE_ASSET_FIREFOX_APP_FILE_PATH" "$THE_TARGET_APP_FIREFOX_FILE_PATH"
+
+	sed -i "s|^Exec=WorkWeb.sh|Exec=${THE_TARGET_BIN_FIREFOX_FILE_PATH}|g" "$THE_TARGET_APP_FIREFOX_FILE_PATH"
+
+	sed -i "s|^Name=WorkWeb|Name=${THE_TARGET_FIREFOX_NAME}|g" "$THE_TARGET_APP_FIREFOX_FILE_PATH"
+
+	sed -i "s|^GenericName=WorkWeb|GenericName=${THE_TARGET_FIREFOX_NAME}|g" "$THE_TARGET_APP_FIREFOX_FILE_PATH"
+
+	sed -i "s|^GenericName\[zh_TW\]=WorkWeb|GenericName[zh_TW]=${THE_TARGET_FIREFOX_NAME}|g" "$THE_TARGET_APP_FIREFOX_FILE_PATH"
+
+
+	install -m 664 "$THE_TARGET_APP_FIREFOX_FILE_PATH" "$THE_TARGET_APPLICATION_FIREFOX_FILE_PATH"
+
+}
+
+pf_install () {
+	#echo "pf_install"
+	#echo "$@"
+
+	pf_install_var_init $@
+	pf_install_var_dump
+
+
+	pf_install_prepare_dir
+
+
+	pf_install_download_firefox
+	pf_install_extract_firefox
+
+
+	pf_install_prepare_firefox_start_script
+	pf_install_prepare_firefox_desktop_entry
+
+}
+
+
+
+
+
+##
+### Tail: Model Install
+################################################################################
+
+
+################################################################################
+### Head: SubCmd
+##
+
+sub_run_help () {
+	main_usage "$@"
+}
+
+sub_run_list () {
+	echo "sub_run_list"
+	demo_list "$@"
+}
+
+sub_run_install () {
+	echo "sub_run_install"
+	pf_install "$@"
+}
+
+sub_run_remove () {
+	echo "sub_run_remove"
+	echo "$@"
+}
+
+
+##
+### Tail: SubCmd
+################################################################################
+
+
+################################################################################
+### Head: Main
+##
+
+main_usage () {
+	##local cmd_name="$0"
+	local cmd_name="pf-ctrl"
+
+cat << EOF
+Usage:
+	$ $cmd_name [action]
+	$ $cmd_name install {target} {version} {language}
+
+Example:
+
+	$ $cmd_name
+	$ $cmd_name help
+
+	$ $cmd_name list
+	$ $cmd_name install 'WorkWeb' '71.0' 'en-US'
+	$ $cmd_name install 'WorkWeb' '71.0' 'zh-TW'
+	$ $cmd_name remove
+
+Debug:
+	$ export DEBUG_PF_CTRL=true
+
+EOF
+
+}
+
+main_check_args_size () {
+	if [ $1 -le 0 ]; then
+		shift
+		main_run_default_sub_cmd "$@"
+		exit 1
+	fi
+}
+
+main_run_default_sub_cmd () {
+	main_usage "$@"
+}
+
+main_run_sub_cmd () {
+
+	local sub_cmd="$1"
+
+	shift
+
+	local args="$@"
+
+	local function_name=$(sub_cmd_find_function_name "$sub_cmd")
+
+	## if ! command -v $function_name > /dev/null; then
+	if ! type -p $function_name; then
+		util_debug_echo "[Debug] sub_cmd_function_not_exist: sub_cmd=$sub_cmd; function_name=$function_name"
+
+		echo
+		main_run_default_sub_cmd "$args"
+		return 1
+	fi
+
+	"$function_name" "$args" ## run sub cmd function
+
+
+}
+
+## Start
+main_check_args_size $# "$@"
+
+main_run_sub_cmd "$@"
+
+##
+### Tail: Main
+################################################################################
