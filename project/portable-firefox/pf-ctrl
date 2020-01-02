@@ -350,6 +350,9 @@ pf_last () {
 ##
 
 pf_languages_var_init () {
+
+	# https://ftp.mozilla.org/pub/firefox/releases/71.0/linux-x86_64/
+
 	THE_SOURCE_FIREFOX_VERSION_LAST="$(pf_last $@)"
 	THE_SOURCE_FIREFOX_LANGUAGES_URL="https://ftp.mozilla.org/pub/firefox/releases/${THE_SOURCE_FIREFOX_VERSION_LAST}/linux-x86_64/"
 	THE_SAVE_FIREFOX_LANGUAGES_FILE_PATH="${THE_VAR_DIR_PATH}/languages.html"
