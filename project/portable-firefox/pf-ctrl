@@ -291,6 +291,8 @@ pf_last_var_init () {
 
 pf_last_var_dump () {
 
+	return 0
+
 	is_not_debug && return 0
 
 	echo
@@ -335,6 +337,71 @@ pf_last () {
 
 	pf_last_download
 	pf_last_parse
+
+}
+
+##
+### Tail: Model Find Last Version
+################################################################################
+
+
+################################################################################
+### Head: Model Find Last Version Languages
+##
+
+pf_languages_var_init () {
+	THE_SOURCE_FIREFOX_VERSION_LAST="$(pf_last $@)"
+	THE_SOURCE_FIREFOX_LANGUAGES_URL="https://ftp.mozilla.org/pub/firefox/releases/${THE_SOURCE_FIREFOX_VERSION_LAST}/linux-x86_64/"
+	THE_SAVE_FIREFOX_LANGUAGES_FILE_PATH="${THE_VAR_DIR_PATH}/languages.html"
+}
+
+pf_languages_var_dump () {
+
+	is_not_debug && return 0
+
+	echo
+	echo "################################################################################"
+	echo "### Head: pf_languages_var_dump"
+	echo "##"
+	echo "#"
+
+
+	echo "THE_SOURCE_FIREFOX_VERSION_LAST=$THE_SOURCE_FIREFOX_VERSION_LAST"
+	echo "THE_SOURCE_FIREFOX_LANGUAGES_URL=$THE_SOURCE_FIREFOX_LANGUAGES_URL"
+	echo "THE_SAVE_FIREFOX_LANGUAGES_FILE_PATH=$THE_SAVE_FIREFOX_LANGUAGES_FILE_PATH"
+
+
+
+	echo "#"
+	echo "##"
+	echo "### Tail: pf_languages_var_dump"
+	echo "################################################################################"
+	echo
+}
+
+
+pf_languages_download () {
+	wget -q -c "$THE_SOURCE_FIREFOX_LANGUAGES_URL" -O "$THE_SAVE_FIREFOX_LANGUAGES_FILE_PATH"
+}
+
+
+pf_languages_parse () {
+	cat "$THE_SAVE_FIREFOX_LANGUAGES_FILE_PATH" | grep -Po 'href=\".*?\"' | grep -Po '="\K[^"]+' | cut -d '/' -f 7 | sort -u
+}
+
+
+pf_languages () {
+	#echo "pf_languages"
+	#echo "$@"
+
+
+
+	pf_languages_var_init $@
+	pf_languages_var_dump
+
+
+	pf_languages_download
+	pf_languages_parse
 
 }
 
@@ -510,9 +577,6 @@ pf_install () {
 }
 
 
-
-
-
 ##
 ### Tail: Model Install
 ################################################################################
@@ -536,6 +600,11 @@ sub_run_last () {
 	pf_last "$@"
 }
 
+sub_run_languages () {
+	#echo "sub_run_languages"
+	pf_languages "$@"
+}
+
 sub_run_install () {
 	#echo "sub_run_install"
 	pf_install "$@"
@@ -544,6 +613,7 @@ sub_run_install () {
 sub_run_remove () {
 	echo "sub_run_remove"
 	echo "$@"
+	echo "Todo"
 }
 
 
@@ -572,6 +642,7 @@ Example:
 
 	$ $cmd_name list
 	$ $cmd_name last
+	$ $cmd_name languages
 	$ $cmd_name install 'WorkWeb' '71.0' 'en-US'
 	$ $cmd_name install 'WorkWeb' '71.0' 'zh-TW'
 	$ $cmd_name remove

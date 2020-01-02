@@ -32,6 +32,7 @@ Example:
 
 	$ pf-ctrl list
 	$ pf-ctrl last
+	$ pf-ctrl languages
 	$ pf-ctrl install 'WorkWeb' '71.0' 'en-US'
 	$ pf-ctrl install 'WorkWeb' '71.0' 'zh-TW'
 	$ pf-ctrl remove
@@ -62,6 +63,118 @@ show
 
 ```
 71.0
+```
+
+
+### Find Firefox Release Last Version Languages
+
+run
+
+``` sh
+$ ./pf-ctrl languages
+```
+
+show
+
+```
+ach
+af
+an
+ar
+ast
+az
+be
+bg
+bn
+br
+bs
+ca
+cak
+ca-valencia
+cs
+cy
+da
+de
+dsb
+el
+en-CA
+en-GB
+en-US
+eo
+es-AR
+es-CL
+es-ES
+es-MX
+et
+eu
+fa
+ff
+fi
+fr
+fy-NL
+ga-IE
+gd
+gl
+gn
+gu-IN
+he
+hi-IN
+hr
+hsb
+hu
+hy-AM
+ia
+id
+is
+it
+ja
+ka
+kab
+kk
+km
+kn
+ko
+lij
+lt
+lv
+mk
+mr
+ms
+my
+nb-NO
+ne-NP
+nl
+nn-NO
+oc
+pa-IN
+pl
+pt-BR
+pt-PT
+rm
+ro
+ru
+si
+sk
+sl
+son
+sq
+sr
+sv-SE
+ta
+te
+th
+tl
+tr
+trs
+uk
+ur
+uz
+vi
+xh
+xpi
+zh-CN
+zh-TW
+
 ```
 
 
