@@ -40,12 +40,27 @@ Debug:
 ```
 
 
-### List
+### Find Firefox Release Version List
 
 run
 
 ``` sh
 $ ./pf-ctrl list | less
+```
+
+
+### Find Firefox Release Last Version
+
+run
+
+``` sh
+$ ./pf-ctrl last
+```
+
+show
+
+```
+71.0
 ```
 
 
