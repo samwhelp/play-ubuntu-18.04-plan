@@ -218,16 +218,65 @@ sub_cmd_find_function_name () {
 
 
 ################################################################################
-### Head: Model
+### Head: Model List
 ##
 
-demo_list () {
-	echo "demo_list"
-	echo "$@"
+pf_list_var_init () {
+	THE_SOURCE_FIREFOX_VERSION_LIST_URL="https://ftp.mozilla.org/pub/firefox/releases/"
+	THE_SAVE_FIREFOX_VERSION_LIST_FILE_PATH="${THE_VAR_DIR_PATH}/raw.html"
+}
+
+pf_list_var_dump () {
+
+	is_not_debug && return 0
+
+	echo
+	echo "################################################################################"
+	echo "### Head: pf_list_var_dump"
+	echo "##"
+	echo "#"
+
+
+
+	echo "THE_SOURCE_FIREFOX_VERSION_LIST_URL=$THE_SOURCE_FIREFOX_VERSION_LIST_URL"
+	echo "THE_SAVE_FIREFOX_VERSION_LIST_FILE_PATH=$THE_SAVE_FIREFOX_VERSION_LIST_FILE_PATH"
+
+
+
+	echo "#"
+	echo "##"
+	echo "### Tail: pf_list_var_dump"
+	echo "################################################################################"
+	echo
+}
+
+
+pf_list_download () {
+	wget -q -c "$THE_SOURCE_FIREFOX_VERSION_LIST_URL" -O "$THE_SAVE_FIREFOX_VERSION_LIST_FILE_PATH"
+}
+
+
+pf_list_parse () {
+	cat "$THE_SAVE_FIREFOX_VERSION_LIST_FILE_PATH" | grep -Po 'href=\".*?\"' | grep -Po '="\K[^"]+' | cut -d '/' -f 5 | sort -u
+}
+
+
+pf_list () {
+	#echo "pf_list"
+	#echo "$@"
+
+
+	pf_list_var_init $@
+	pf_list_var_dump
+
+
+	pf_list_download
+	pf_list_parse
+
 }
 
 ##
-### Tail: Model
+### Tail: Model List
 ################################################################################
 
 
@@ -415,12 +464,12 @@ sub_run_help () {
 }
 
 sub_run_list () {
-	echo "sub_run_list"
-	demo_list "$@"
+	#echo "sub_run_list"
+	pf_list "$@"
 }
 
 sub_run_install () {
-	echo "sub_run_install"
+	#echo "sub_run_install"
 	pf_install "$@"
 }
 
