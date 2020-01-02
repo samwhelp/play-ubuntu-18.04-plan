@@ -15,7 +15,7 @@ $ ./pf-ctrl
 or run
 
 ``` sh
-$ ./pf-ctrl hel
+$ ./pf-ctrl help
 ```
 
 show
