@@ -31,6 +31,7 @@ Example:
 	$ pf-ctrl help
 
 	$ pf-ctrl list
+	$ pf-ctrl last
 	$ pf-ctrl install 'WorkWeb' '71.0' 'en-US'
 	$ pf-ctrl install 'WorkWeb' '71.0' 'zh-TW'
 	$ pf-ctrl remove
