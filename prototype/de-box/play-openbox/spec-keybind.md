@@ -9,6 +9,7 @@
 | `Ctrl + Alt + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L509) |
 | `Ctrl + Win + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L515) |
 | `Alt + F1` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L521) |
+| `Win + Space` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L549) |
 
 
 ## ShowWorkspaceMenu
@@ -17,6 +18,7 @@
 | --- | --- |
 | `Ctrl + Alt + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L534) |
 | `Ctrl + Win + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L540) |
+| `Win + c` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L521) |
 
 
 ## ToggleShowDesktop
@@ -29,12 +31,26 @@
 | `Win + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L565) |
 
 
+
+
 ## Window Switch
 
 | Key | How to set | Description |
 | --- | --- | --- |
 | `Win + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L752) | Previous Window|
 | `Win + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L761) | Next Window |
+
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Win + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L752) | Previous Window|
+| `Win + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L761) | Next Window |
+
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Win + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L752) | Previous Window|
+| `Win + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L761) | Next Window |
 
 
 ## Window Close
@@ -96,38 +112,81 @@
 
 | Key | How to set | Description |
 | --- | --- | --- |
-| `Win + Shift + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L990) | Tiling Window Horizontal (North-South) (Top-Bottom) |
-| `Win + Shift + v` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1020) | Tiling Window Vertical (West-East) (Left-Right) |
-| `Win + Shift + r` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1050) | Restore Window |
+| `Win + Ctrl + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L990) | Tiling Window Horizontal (North-South) (Top-Bottom) |
+| `Win + Ctrl + i` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1020) | Tiling Window Vertical (West-East) (Left-Right) |
+| `Win + Ctrl + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1050) | Restore Window |
 
 
-## Window Tiling Move / 1
-
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1166) | Tiling Window Move To North (Top) |
-| `Win + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1176) | Tiling Window Move To South (Bottom) |
-| `Win + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1186) | Tiling Window Move To West (Left) |
-| `Win + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1196) | Tiling Window Move To East (Right) |
-
-
-## Window Tiling Move / 2
+## Window Tiling Move / Side
 
 | Key | How to set | Description |
 | --- | --- | --- |
-| `Win + Ctrl + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1212) | Tiling Window Move To West-North (Left-Top) |
-| `Win + Ctrl + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1222) | Tiling Window Move To East-North (Right-Top) |
-| `Win + Ctrl + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1232) | Tiling Window Move To West-South (Left-Bottom) |
-| `Win + Ctrl + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1242) | Tiling Window Move To East-South (Right-Bottom) |
+| `Win + Ctrl + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1166) | Tiling Window Move To North (Top) |
+| `Win + Ctrl + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1176) | Tiling Window Move To South (Bottom) |
+| `Win + Ctrl + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1186) | Tiling Window Move To West (Left) |
+| `Win + Ctrl + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1196) | Tiling Window Move To East (Right) |
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Win + Ctrl + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1166) | Tiling Window Move To North (Top) |
+| `Win + Ctrl + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1176) | Tiling Window Move To South (Bottom) |
+| `Win + Ctrl + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1186) | Tiling Window Move To West (Left) |
+| `Win + Ctrl + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1196) | Tiling Window Move To East (Right) |
+
+## Window Tiling Move / Corner
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Win + Shift + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1212) | Tiling Window Move To West-North (Left-Top) |
+| `Win + Shift + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1222) | Tiling Window Move To East-North (Right-Top) |
+| `Win + Shift + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1232) | Tiling Window Move To West-South (Left-Bottom) |
+| `Win + Shift + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1242) | Tiling Window Move To East-South (Right-Bottom) |
+
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Win + Shift + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1212) | Tiling Window Move To West-North (Left-Top) |
+| `Win + Shift + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1222) | Tiling Window Move To East-North (Right-Top) |
+| `Win + Shift + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1232) | Tiling Window Move To West-South (Left-Bottom) |
+| `Win + Shift + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1242) | Tiling Window Move To East-South (Right-Bottom) |
 
 
 ## Go To Workspace
 
 | Key | How to set | Description |
 | --- | --- | --- |
-| `Alt + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L578) | Go To Previous Workspace |
-| `Alt + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L584) | Go To Next Workspace |
-| `Alt + z` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L590) | Go To Next Workspace |
+| `Alt + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L578) | Go To Left (Previous) Workspace |
+| `Alt + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L584) | Go To Right (Previous) Workspace |
+| `Alt + z` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L590) | Go To Last Workspace |
+
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Alt + Ctrl + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L590) | Go To Last Workspace |
+
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Alt + Ctrl + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L578) | Go To Up Workspace |
+| `Alt + Ctrl + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L584) | Go To Down Workspace |
+
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Alt + Ctrl + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L578) | Go To Left Workspace |
+| `Alt + Ctrl + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L584) | Go To Right Workspace |
+
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Alt + Ctrl + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L578) | Go To Up Workspace |
+| `Alt + Ctrl + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L584) | Go To Down Workspace |
+
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Alt + Ctrl + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L578) | Go To Left Workspace |
+| `Alt + Ctrl + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L584) | Go To Right Workspace |
 
 
 | Key | How to set | Description |

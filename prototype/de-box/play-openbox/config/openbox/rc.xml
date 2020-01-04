@@ -182,25 +182,25 @@
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>
-        <wrap>no</wrap>
+        <!--<wrap>no</wrap>//-->
       </action>
     </keybind>
     <keybind key="C-A-Right">
       <action name="GoToDesktop">
         <to>right</to>
-        <wrap>no</wrap>
+        <!--<wrap>no</wrap>//-->
       </action>
     </keybind>
     <keybind key="C-A-Up">
       <action name="GoToDesktop">
         <to>up</to>
-        <wrap>no</wrap>
+        <!--<wrap>no</wrap>//-->
       </action>
     </keybind>
     <keybind key="C-A-Down">
       <action name="GoToDesktop">
         <to>down</to>
-        <wrap>no</wrap>
+        <!--<wrap>no</wrap>//-->
       </action>
     </keybind>
     <keybind key="S-A-Left">
@@ -627,13 +627,34 @@
         <to>last</to>
       </action>
     </keybind>
-<!--
-    <keybind key="A-d">
+
+	<keybind key="C-A-o">
       <action name="GoToDesktop">
         <to>last</to>
       </action>
     </keybind>
-//-->
+
+    <keybind key="C-A-k">
+      <action name="GoToDesktop">
+        <to>up</to>
+      </action>
+    </keybind>
+    <keybind key="C-A-j">
+      <action name="GoToDesktop">
+        <to>down</to>
+      </action>
+    </keybind>
+    <keybind key="C-A-h">
+      <action name="GoToDesktop">
+        <to>left</to>
+      </action>
+    </keybind>
+    <keybind key="C-A-l">
+      <action name="GoToDesktop">
+        <to>right</to>
+      </action>
+    </keybind>
+
 
     <keybind key="A-1">
       <action name="GoToDesktop">
