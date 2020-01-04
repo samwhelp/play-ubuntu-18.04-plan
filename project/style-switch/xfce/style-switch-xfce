@@ -164,6 +164,57 @@ sub_cmd_find_function_name () {
 
 
 ################################################################################
+### Head: Model ss_numix
+##
+
+ss_numix_config_wm_theme () {
+
+	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+	## <property name="theme" type="string" value="Numix"/>
+
+	xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Numix'
+	echo "xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Numix'"
+
+}
+
+ss_numix_config_ui_theme () {
+
+	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+	## <property name="ThemeName" type="string" value="Numix"/>
+
+	xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s 'Numix'
+	echo "xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s 'Numix'"
+
+}
+
+ss_numix_config_icon_theme () {
+
+	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+	## <property name="IconThemeName" type="string" value="Numix"/>
+
+	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Numix'
+	echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Numix'"
+
+}
+
+
+ss_numix () {
+	#echo "ss_numix"
+	#echo "$@"
+
+
+	ss_numix_config_wm_theme
+	ss_numix_config_ui_theme
+	ss_numix_config_icon_theme
+
+}
+
+##
+### Tail: Model ss_numix
+################################################################################
+
+
+################################################################################
 ### Head: Model ss_numix_blue
 ##
 
@@ -377,6 +428,11 @@ sub_run_help () {
 	main_usage "$@"
 }
 
+sub_run_numix () {
+	#echo "sub_run_numix"
+	ss_numix "$@"
+}
+
 sub_run_numix_blue () {
 	#echo "sub_run_numix_blue"
 	ss_numix_blue "$@"
@@ -420,6 +476,7 @@ Example:
 	$ $cmd_name help
 
 
+	$ $cmd_name numix
 	$ $cmd_name numix_blue
 	$ $cmd_name numix_blue_wm_breeze
 	$ $cmd_name obsidian_2_gray
