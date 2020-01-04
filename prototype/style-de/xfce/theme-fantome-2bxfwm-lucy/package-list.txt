@@ -1,0 +1,4 @@
+
+git
+
+xfce4-settings
