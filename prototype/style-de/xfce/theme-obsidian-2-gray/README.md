@@ -2,6 +2,12 @@
 # Prototype howto install theme-obsidian-2-gray
 
 
+## Prepare
+
+* [prototype/de-basic/play-xfce](../../de-basic/play-xfce)
+* [prototype/style-platformtheme/qt5-style-plugins](../../style-platformtheme/qt5-style-plugins)
+
+
 ## Usage
 
 ### install
