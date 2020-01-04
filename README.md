@@ -126,6 +126,10 @@
 * [plan/tool-full/play-tool](plan/tool-full/play-tool)
 * [plan/tool-full/play-software](plan/tool-full/play-software)
 
+## Search Provides
+
+* [prototype/provides/x-terminal-emulator](prototype/provides/x-terminal-emulator) / [x-terminal-emulator.md](prototype/provides/x-terminal-emulator/x-terminal-emulator.md)
+* [prototype/provides/x-window-manager](prototype/provides/x-window-manager) / [x-window-manager.md](prototype/provides/x-window-manager/x-window-manager.md)
 
 ## Style / platformtheme
 
