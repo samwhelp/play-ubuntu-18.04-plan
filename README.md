@@ -141,6 +141,19 @@
 ### xfce
 
 * [prototype/style-de/xfce/theme-obsidian-2-gray](prototype/style-de/xfce/theme-obsidian-2-gray)
+* [prototype/style-de/xfce/theme-fantome-2bxfwm-lucy](prototype/style-de/xfce/theme-fantome-2bxfwm-lucy)
+
+
+## Style / Tool
+
+### xfce
+
+* [project/style-switch/xfce](project/style-switch/xfce)
+
+
+## Firefox
+
+* [project/portable-firefox](project/portable-firefox)
 
 
 ## Note
