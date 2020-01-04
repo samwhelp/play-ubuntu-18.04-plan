@@ -127,6 +127,15 @@
 * [plan/tool-full/play-software](plan/tool-full/play-software)
 
 
+## Style / platformtheme
+
+* [prototype/style-platformtheme/qt5-style-plugins](prototype/style-platformtheme/qt5-style-plugins)
+
+
+## Style
+
+* [prototype/style-de/xfce/theme-obsidian-2-gray](prototype/style-de/xfce/theme-obsidian-2-gray)
+
 ## Note
 
 * https://samwhelp.github.io/note-ubuntu-18.04/read/project/play-ubuntu-18.04-plan/
