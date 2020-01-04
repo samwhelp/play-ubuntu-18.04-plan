@@ -138,7 +138,10 @@
 
 ## Style
 
+### xfce
+
 * [prototype/style-de/xfce/theme-obsidian-2-gray](prototype/style-de/xfce/theme-obsidian-2-gray)
+
 
 ## Note
 
