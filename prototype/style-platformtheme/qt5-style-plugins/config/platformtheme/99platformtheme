@@ -1,0 +1,35 @@
+
+## /etc/X11/Xsession.d/99platformtheme
+
+################################################################################
+### Head: platformtheme
+##
+
+
+# Set environment vars
+#if [ "$DESKTOP_SESSION" = xubuntu ]; then
+	# Disable GTK 3.16 overlay scrollbars
+	export GTK_OVERLAY_SCROLLING=0
+	# QT5 apps to use GTK style (for Package: [qt5-style-plugins](https://packages.ubuntu.com/bionic/qt5-style-plugins))
+	export QT_QPA_PLATFORMTHEME=gtk2
+	# Workaround clutter issue (LP: #1462445)
+	export CLUTTER_BACKEND=x11
+#fi
+
+
+##
+### Tail: platformtheme
+################################################################################
+
+
+################################################################################
+### Head: reference
+##
+
+
+# * [xubuntu-default-settings](https://packages.ubuntu.com/bionic/xubuntu-default-settings) / [/etc/X11/Xsession.d/56xubuntu-session](https://packages.ubuntu.com/bionic/all/xubuntu-default-settings/filelist)
+
+
+##
+### Tail: reference
+################################################################################
