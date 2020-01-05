@@ -418,6 +418,57 @@ ss_fantome_2bxfwm_lucy () {
 ################################################################################
 
 
+################################################################################
+### Head: Model ss_honda_super_cub_chandelier
+##
+
+ss_honda_super_cub_chandelier_config_wm_theme () {
+
+	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+	## <property name="theme" type="string" value="Chandelier"/>
+
+	xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Chandelier'
+	echo "xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Chandelier'"
+
+}
+
+ss_honda_super_cub_chandelier_config_ui_theme () {
+
+	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+	## <property name="ThemeName" type="string" value="Honda-Super-Cub"/>
+
+	xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s 'Honda-Super-Cub'
+	echo "xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s 'Honda-Super-Cub'"
+
+}
+
+ss_honda_super_cub_chandelier_config_icon_theme () {
+
+	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+	## <property name="IconThemeName" type="string" value="Numix"/>
+
+	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Numix'
+	echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Numix'"
+
+}
+
+
+ss_honda_super_cub_chandelier () {
+	#echo "ss_honda_super_cub_chandelier"
+	#echo "$@"
+
+
+	ss_honda_super_cub_chandelier_config_wm_theme
+	ss_honda_super_cub_chandelier_config_ui_theme
+	ss_honda_super_cub_chandelier_config_icon_theme
+
+}
+
+##
+### Tail: Model ss_honda_super_cub_chandelier
+################################################################################
+
+
 
 
 ################################################################################
@@ -453,6 +504,13 @@ sub_run_fantome_2bxfwm_lucy () {
 	ss_fantome_2bxfwm_lucy "$@"
 }
 
+sub_run_honda_super_cub_chandelier () {
+	#echo "sub_run_honda_super_cub_chandelier"
+	ss_honda_super_cub_chandelier "$@"
+}
+
+
+
 ##
 ### Tail: SubCmd
 ################################################################################
@@ -479,8 +537,12 @@ Example:
 	$ $cmd_name numix
 	$ $cmd_name numix_blue
 	$ $cmd_name numix_blue_wm_breeze
+
 	$ $cmd_name obsidian_2_gray
 	$ $cmd_name fantome_2bxfwm_lucy
+
+	$ $cmd_name honda_super_cub_chandelier
+
 
 Debug:
 	$ export DEBUG_SS_CTRL=true
