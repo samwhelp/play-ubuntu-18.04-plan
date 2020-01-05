@@ -1,0 +1,432 @@
+#!/usr/bin/env bash
+
+
+################################################################################
+### Head: Url
+##
+
+# * https://github.com/samwhelp/skel-project-plan/blob/gh-pages/demo/sh/standalone/bin/demo-ctrl
+
+##
+### Tail: Url
+################################################################################
+
+
+################################################################################
+### Head: Init
+##
+set -e ## for Exit immediately if a command exits with a non-zero status.
+THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+##
+### Tail: Init
+################################################################################
+
+
+################################################################################
+### Head: Util_Debug
+##
+
+util_debug_echo () {
+	if is_debug; then
+		echo "$@" 1>&2;
+	fi
+}
+
+##
+### Head: Util_Debug
+################################################################################
+
+
+################################################################################
+### Head: Base
+##
+find_dir_path () {
+	if [ ! -d $(dirname -- "$1") ]; then
+		dirname -- "$1"
+		return 1
+	fi
+	echo $(cd -P -- "$(dirname -- "$1")" && pwd -P)
+}
+
+##THIS_BASE_DIR_PATH=$(find_dir_path $0)
+
+## $ export DEBUG_SC_CTRL=true
+is_debug () {
+	if [ "$DEBUG_SC_CTRL" = "true" ]; then
+		return 0
+	fi
+
+	return 1
+}
+
+is_not_debug () {
+	! is_debug
+}
+
+base_var_init () {
+
+	#THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/../.")
+	THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/.")
+
+
+	THE_ASSET_DIR_NAME="asset"
+	THE_ASSET_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_ASSET_DIR_NAME"
+
+	THE_VAR_DIR_NAME="var"
+	THE_VAR_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_VAR_DIR_NAME"
+
+
+	THE_PROFILE_DIR_NAME=".style-ctrl-xfce-profile"
+	THE_PROFILE_DIR_PATH="$HOME/$THE_PROFILE_DIR_NAME"
+
+	THE_PROJECT_DIR_NAME="style-ctrl-xfce"
+	THE_PROJECT_DIR_PATH="$HOME/.local/share/$THE_PROJECT_DIR_NAME"
+
+	THE_CONFIG_DIR_NAME="style-ctrl-xfce"
+	THE_CONFIG_DIR_PATH="$HOME/.config/$THE_CONFIG_DIR_NAME"
+
+	THE_CACHE_DIR_NAME="style-ctrl-xfce"
+	THE_CACHE_DIR_PATH="$HOME/.cache/$THE_CACHE_DIR_NAME"
+
+
+}
+
+base_var_dump () {
+
+	is_not_debug && return 0
+
+	util_debug_echo
+	util_debug_echo "################################################################################"
+	util_debug_echo "### Head: var_dump"
+	util_debug_echo "##"
+	util_debug_echo "#"
+
+
+	util_debug_echo "THE_PLAN_DIR_PATH=$THE_PLAN_DIR_PATH"
+
+
+	util_debug_echo "THE_ASSET_DIR_NAME=$THE_ASSET_DIR_NAME"
+	util_debug_echo "THE_ASSET_DIR_PATH=$THE_ASSET_DIR_PATH"
+
+	util_debug_echo "THE_VAR_DIR_NAME=$THE_VAR_DIR_NAME"
+	util_debug_echo "THE_VAR_DIR_PATH=$THE_VAR_DIR_PATH"
+
+
+
+
+	util_debug_echo "THE_PROFILE_DIR_NAME=$THE_PROFILE_DIR_NAME"
+	util_debug_echo "THE_PROFILE_DIR_PATH=$THE_PROFILE_DIR_PATH"
+
+	util_debug_echo "THE_PROJECT_DIR_NAME=$THE_PROJECT_DIR_NAME"
+	util_debug_echo "THE_PROJECT_DIR_PATH=$THE_PROJECT_DIR_PATH"
+
+	util_debug_echo "THE_CONFIG_DIR_NAME=$THE_CONFIG_DIR_NAME"
+	util_debug_echo "THE_CONFIG_DIR_PATH=$THE_CONFIG_DIR_PATH"
+
+	util_debug_echo "THE_CACHE_DIR_NAME=$THE_CACHE_DIR_NAME"
+	util_debug_echo "THE_CACHE_DIR_PATH=$THE_CACHE_DIR_PATH"
+
+
+
+	util_debug_echo "#"
+	util_debug_echo "##"
+	util_debug_echo "### Tail: var_dump"
+	util_debug_echo "################################################################################"
+	util_debug_echo
+}
+
+
+base_var_init
+
+base_var_dump
+
+##
+### Tail: Base
+################################################################################
+
+
+
+
+
+################################################################################
+### Head: Util_SubCmd
+##
+
+sub_cmd_find_function_name () {
+	echo "sub_run_$1"
+}
+
+##
+### Tail: Util_SubCmd
+################################################################################
+
+
+
+
+################################################################################
+### Head: Sys
+##
+
+sys_xfce_set_wm_theme () {
+
+	local wm_theme="$1"
+
+	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+	## <property name="theme" type="string" value="Numix"/>
+
+	xfconf-query -c 'xfwm4' -p '/general/theme' -s "$wm_theme"
+	echo "xfconf-query -c 'xfwm4' -p '/general/theme' -s '$wm_theme'"
+
+}
+
+sys_xfce_set_ui_theme () {
+
+	local ui_theme="$1"
+
+	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+	## <property name="ThemeName" type="string" value="Numix"/>
+
+	xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s "$ui_theme"
+	echo "xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s '$ui_theme'"
+
+}
+
+sys_xfce_set_icon_theme () {
+
+	local icon_theme="$1"
+
+	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+	## <property name="IconThemeName" type="string" value="Numix"/>
+
+	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s "$icon_theme"
+	echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s '$icon_theme'"
+
+}
+
+
+##
+### Tail: Sys
+################################################################################
+
+
+
+################################################################################
+### Head: Model
+##
+
+sc_wm_theme_usage () {
+
+	local cmd_name="style-ctrl-xfce"
+
+cat << EOF
+
+Usage:
+	$ $cmd_name wm_theme {name}
+
+
+Example:
+	$ $cmd_name wm_theme 'Breeze'
+	$ $cmd_name wm_theme 'Numix'
+	$ $cmd_name wm_theme 'NumixBlue'
+
+EOF
+
+}
+
+sc_wm_theme () {
+
+	local wm_theme="$1"
+
+	if [ "none${wm_theme}" == "none" ]; then
+		echo
+		echo "## Need {name}"
+		sc_wm_theme_usage
+		return
+	fi
+
+	sys_xfce_set_wm_theme "$wm_theme"
+
+}
+
+sc_ui_theme_usage () {
+
+	local cmd_name="style-ctrl-xfce"
+
+cat << EOF
+
+Usage:
+	$ $cmd_name ui_theme {name}
+
+
+Example:
+	$ $cmd_name ui_theme 'NumixBlue'
+	$ $cmd_name ui_theme 'Numix'
+	$ $cmd_name ui_theme 'Obsidian-2-Gray'
+
+
+EOF
+
+}
+
+sc_ui_theme () {
+
+	local ui_theme="$1"
+
+	if [ "none${ui_theme}" == "none" ]; then
+		echo
+		echo "## Need {name}"
+		sc_ui_theme_usage
+		return
+	fi
+
+	sys_xfce_set_ui_theme "$ui_theme"
+
+}
+
+
+sc_icon_theme_usage () {
+
+	local cmd_name="style-ctrl-xfce"
+
+cat << EOF
+
+Usage:
+	$ $cmd_name icon_theme {name}
+
+
+Example:
+	$ $cmd_name icon_theme 'Numix'
+	$ $cmd_name icon_theme 'Nord-Black-Frost-Suru'
+
+
+EOF
+
+}
+
+
+sc_icon_theme () {
+
+	local icon_theme="$1"
+
+	if [ "none${icon_theme}" == "none" ]; then
+		echo
+		echo "## Need {name}"
+		sc_icon_theme_usage
+		return
+	fi
+
+	sys_xfce_set_icon_theme "$icon_theme"
+
+}
+
+
+##
+### Tail: Model
+################################################################################
+
+
+################################################################################
+### Head: SubCmd
+##
+
+sub_run_help () {
+	main_usage "$@"
+}
+
+sub_run_wm_theme () {
+	#echo "sub_run_wm_theme"
+	sc_wm_theme "$@"
+}
+
+sub_run_ui_theme () {
+	#echo "sub_run_ui_theme"
+	sc_ui_theme "$@"
+}
+
+sub_run_icon_theme () {
+	#echo "sub_run_icon_theme"
+	sc_icon_theme "$@"
+}
+
+##
+### Tail: SubCmd
+################################################################################
+
+
+################################################################################
+### Head: Main
+##
+
+main_usage () {
+	##local cmd_name="$0"
+	local cmd_name="style-ctrl-xfce"
+
+cat << EOF
+Usage:
+	$ $cmd_name [action]
+
+	$ $cmd_name wm_theme {name}
+	$ $cmd_name ui_theme {name}
+	$ $cmd_name icon_theme {name}
+
+Example:
+
+	$ $cmd_name
+	$ $cmd_name help
+
+	$ $cmd_name wm_theme 'Breeze'
+	$ $cmd_name ui_theme 'NumixBlue'
+	$ $cmd_name icon_theme 'Numix'
+
+
+Debug:
+	$ export DEBUG_SC_CTRL=true
+
+EOF
+
+}
+
+main_check_args_size () {
+	if [ $1 -le 0 ]; then
+		shift
+		main_run_default_sub_cmd "$@"
+		exit 1
+	fi
+}
+
+main_run_default_sub_cmd () {
+	main_usage "$@"
+}
+
+main_run_sub_cmd () {
+
+	local sub_cmd="$1"
+
+	shift
+
+	local args="$@"
+
+	local function_name=$(sub_cmd_find_function_name "$sub_cmd")
+
+	## if ! command -v $function_name > /dev/null; then
+	if ! type -p $function_name; then
+		util_debug_echo "[Debug] sub_cmd_function_not_exist: sub_cmd=$sub_cmd; function_name=$function_name"
+
+		echo
+		main_run_default_sub_cmd "$args"
+		return 1
+	fi
+
+	"$function_name" "$args" ## run sub cmd function
+
+
+}
+
+## Start
+main_check_args_size $# "$@"
+
+main_run_sub_cmd "$@"
+
+##
+### Tail: Main
+################################################################################
