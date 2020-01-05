@@ -148,7 +148,7 @@
 
 ### xfce
 
-* [project/style-switch/xfce](project/style-switch/xfce)
+* [project/style-tool/xfce/style-switch](project/style-tool/xfce/style-switch)
 
 
 ## Firefox
