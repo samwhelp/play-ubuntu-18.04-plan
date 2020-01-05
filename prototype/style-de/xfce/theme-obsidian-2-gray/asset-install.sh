@@ -52,6 +52,10 @@ theme_asset_install_icon_nord_black_frost_suru () {
 	echo "$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/Nord-Black-Frost/Nord-Black-Frost-Suru'"
 
 	echo
+	echo "gtk-update-icon-cache $HOME/.icons/Nord-Black-Frost-Suru"
+	gtk-update-icon-cache "$HOME/.icons/Nord-Black-Frost-Suru"
+
+	echo
 
 	file "$HOME/.icons/Nord-Black-Frost-Suru"
 	ls -l "$HOME/.icons/Nord-Black-Frost-Suru"
