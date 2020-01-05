@@ -47,3 +47,13 @@ or
 ``` sh
 $ make config-install
 ```
+
+
+## Notice
+
+Fix File: ~/.config/gtk-3.0/settings.ini
+
+```
+[Settings]
+gtk-application-prefer-dark-theme=0
+```
