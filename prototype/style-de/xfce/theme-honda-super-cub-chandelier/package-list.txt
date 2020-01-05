@@ -1,0 +1,6 @@
+
+git
+
+xfce4-settings
+
+numix-icon-theme
