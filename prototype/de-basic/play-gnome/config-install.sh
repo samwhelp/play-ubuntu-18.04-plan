@@ -98,7 +98,7 @@ gnome_set_keybindings_start_here () {
 	## Show all applications
 	#gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a', '<Shift><Alt>a']"
 	#gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a']"
-	gsettings set org.gnome.shell.keybindings toggle-application-view "['<Control><Alt>a', '<Control><Super>a', '<Super_L>space']"
+	gsettings set org.gnome.shell.keybindings toggle-application-view "['<Control><Alt>a', '<Control><Super>a']"
 
 	## Show the activities overview
 	#gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>s', '<Shift><Alt>r']"
@@ -169,6 +169,10 @@ gnome_set_keybindings_raise_or_lower () {
 }
 
 gnome_set_keybindings_toggle_tiled () {
+
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "'<Super>l'"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "'<Super>]'"
+
 	gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Super>Left', '<Super>h']"
 	gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Super>Right', '<Super>l']"
 }

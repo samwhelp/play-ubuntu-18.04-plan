@@ -168,17 +168,17 @@ metacity_set_keybindings_toggle_above () {
 }
 
 metacity_set_keybindings_toggle_shaded () {
-	gsettings set org.gnome.desktop.wm.keybindings toggle-shaded "['<Super>c']"
+	gsettings set org.gnome.desktop.wm.keybindings toggle-shaded "['<Super>y']"
 }
 
 metacity_set_keybindings_raise_or_lower () {
-	gsettings set org.gnome.desktop.wm.keybindings raise-or-lower "['<Super>z']"
+	gsettings set org.gnome.desktop.wm.keybindings raise-or-lower "['<Super>m']"
 }
 
 metacity_set_keybindings_toggle_tiled () {
 
 	#gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "'<Super>l'"
-	gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "'<Super>m'"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "'<Super>]'"
 
 	gsettings set org.gnome.metacity.keybindings toggle-tiled-left "['<Super>Left', '<Super>h']"
 	gsettings set org.gnome.metacity.keybindings toggle-tiled-right "['<Super>Right', '<Super>l']"
