@@ -176,31 +176,39 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
+
+
+
+
+<!-- Keybind Start //-->
+
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+
     <!-- Keybindings for desktop switching -->
+<!--
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>
-        <!--<wrap>no</wrap>//-->
+        <wrap>no</wrap>
       </action>
     </keybind>
     <keybind key="C-A-Right">
       <action name="GoToDesktop">
         <to>right</to>
-        <!--<wrap>no</wrap>//-->
+        <wrap>no</wrap>
       </action>
     </keybind>
     <keybind key="C-A-Up">
       <action name="GoToDesktop">
         <to>up</to>
-        <!--<wrap>no</wrap>//-->
+        <wrap>no</wrap>
       </action>
     </keybind>
     <keybind key="C-A-Down">
       <action name="GoToDesktop">
         <to>down</to>
-        <!--<wrap>no</wrap>//-->
+        <wrap>no</wrap>
       </action>
     </keybind>
     <keybind key="S-A-Left">
@@ -247,12 +255,13 @@
         <to>4</to>
       </action>
     </keybind>
+//-->
+
     <!-- Keybindings for windows -->
 <!--
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
-//-->
     <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
@@ -263,12 +272,22 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
+//-->
+
     <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
     <keybind key="A-Print">
       <action name="Execute">
         <command>scrot -s</command>
       </action>
     </keybind>
+
+    <!-- Launch scrot when Print is pressed -->
+    <keybind key="Print">
+      <action name="Execute">
+        <command>scrot</command>
+      </action>
+    </keybind>
+
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -299,6 +318,7 @@
         </finalactions>
       </action>
     </keybind>
+
     <!-- Keybindings for window switching with the arrow keys -->
 <!--
     <keybind key="W-S-Right">
@@ -342,8 +362,8 @@
         <direction>down</direction>
       </action>
     </keybind>
-    <!-- Keybindings for running applications -->
 
+    <!-- Keybindings for running applications -->
 <!--
     <keybind key="W-e">
       <action name="Execute">
@@ -356,12 +376,10 @@
     </keybind>
 //-->
 
-    <!-- Launch scrot when Print is pressed -->
-    <keybind key="Print">
-      <action name="Execute">
-        <command>scrot</command>
-      </action>
-    </keybind>
+
+
+
+
 
 <!-- ####################################################################### -->
 <!-- ### Head: Manual -->
@@ -525,6 +543,19 @@
 <!-- ####################################################################### -->
 
 
+<!-- ##################################################################### //-->
+<!-- ### Head: Window Operations Menu //-->
+
+    <keybind key="A-space">
+      <action name="ShowMenu">
+        <menu>client-menu</menu>
+      </action>
+    </keybind>
+
+<!-- ### Tail: Window Operations Menu //-->
+<!-- ##################################################################### //-->
+
+
 <!-- ####################################################################### -->
 <!-- ### Head: Key ShowRootMenu -->
 
@@ -552,7 +583,6 @@
       </action>
     </keybind>
 
-
 <!-- ### Tail: Key ShowRootMenu -->
 <!-- ####################################################################### -->
 
@@ -572,7 +602,7 @@
       </action>
     </keybind>
 
-	<keybind key="W-c">
+    <keybind key="W-c">
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
       </action>
@@ -628,28 +658,28 @@
       </action>
     </keybind>
 
-	<keybind key="C-A-o">
+    <keybind key="A-o">
       <action name="GoToDesktop">
         <to>last</to>
       </action>
     </keybind>
 
-    <keybind key="C-A-k">
+    <keybind key="A-k">
       <action name="GoToDesktop">
         <to>up</to>
       </action>
     </keybind>
-    <keybind key="C-A-j">
+    <keybind key="A-j">
       <action name="GoToDesktop">
         <to>down</to>
       </action>
     </keybind>
-    <keybind key="C-A-h">
+    <keybind key="A-h">
       <action name="GoToDesktop">
         <to>left</to>
       </action>
     </keybind>
-    <keybind key="C-A-l">
+    <keybind key="A-l">
       <action name="GoToDesktop">
         <to>right</to>
       </action>
@@ -721,7 +751,7 @@
 
 
 <!-- ####################################################################### -->
-<!-- ### Head: Go To Workspace (SendToDesktop) -->
+<!-- ### Head: Send To Workspace (SendToDesktop) -->
 <!--
 * http://openbox.org/wiki/Help:Actions#SendToDesktop
 //-->
@@ -737,67 +767,103 @@
       </action>
     </keybind>
 
-    <keybind key="A-S-1">
+    <keybind key="A-W-z">
+      <action name="SendToDesktop">
+        <to>last</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-W-o">
+      <action name="SendToDesktop">
+        <to>last</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-W-k">
+      <action name="SendToDesktop">
+        <to>up</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-W-j">
+      <action name="SendToDesktop">
+        <to>down</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-W-h">
+      <action name="SendToDesktop">
+        <to>left</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-W-l">
+      <action name="SendToDesktop">
+        <to>right</to>
+      </action>
+    </keybind>
+
+    <keybind key="A-W-1">
       <action name="SendToDesktop">
         <to>1</to>
       </action>
     </keybind>
 
-    <keybind key="A-S-2">
+    <keybind key="A-W-2">
       <action name="SendToDesktop">
         <to>2</to>
       </action>
     </keybind>
 
-    <keybind key="A-S-3">
+    <keybind key="A-W-3">
       <action name="SendToDesktop">
         <to>3</to>
       </action>
     </keybind>
 
-    <keybind key="A-S-4">
+    <keybind key="A-W-4">
       <action name="SendToDesktop">
         <to>4</to>
       </action>
     </keybind>
 
-    <keybind key="A-S-5">
+    <keybind key="A-W-5">
       <action name="SendToDesktop">
         <to>5</to>
       </action>
     </keybind>
 
-    <keybind key="A-S-6">
+    <keybind key="A-W-6">
       <action name="SendToDesktop">
         <to>6</to>
       </action>
     </keybind>
 
-    <keybind key="A-S-7">
+    <keybind key="A-W-7">
       <action name="SendToDesktop">
         <to>7</to>
       </action>
     </keybind>
 
-    <keybind key="A-S-8">
+    <keybind key="A-W-8">
       <action name="SendToDesktop">
         <to>8</to>
       </action>
     </keybind>
 
-    <keybind key="A-S-9">
+    <keybind key="A-W-9">
       <action name="SendToDesktop">
         <to>9</to>
       </action>
     </keybind>
 
-    <keybind key="A-S-0">
+    <keybind key="A-W-0">
       <action name="SendToDesktop">
         <to>10</to>
       </action>
     </keybind>
 
-<!-- ### Tail: Go To Workspace (SendToDesktop)-->
+<!-- ### Tail: Send To Workspace (SendToDesktop)-->
 <!-- ####################################################################### -->
 
 
@@ -867,6 +933,56 @@
 
 
 <!-- ##################################################################### //-->
+<!-- ### Head: Window Focus Switch //-->
+<!-- ##  http://openbox.org/wiki/Help:Actions#RaiseLower //-->
+
+<!--
+    <keybind key="A-Escape">
+      <action name="Lower"/>
+      <action name="FocusToBottom"/>
+      <action name="Unfocus"/>
+    </keybind>
+//-->
+
+    <keybind key="W-Escape">
+      <action name="Lower"/>
+      <action name="FocusToBottom"/>
+      <action name="Unfocus"/>
+    </keybind>
+
+    <keybind key="W-n">
+      <action name="Lower"/>
+      <action name="FocusToBottom"/>
+      <action name="Unfocus"/>
+    </keybind>
+
+<!-- ### Tail: Window Focus Switch //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ##################################################################### //-->
+<!-- ### Head: Window RaiseLower //-->
+<!-- ##  http://openbox.org/wiki/Help:Actions#RaiseLower //-->
+
+    <keybind key="W-m">
+      <action name="RaiseLower"/>
+    </keybind>
+
+    <!-- Prior for PageUp //-->
+    <keybind key="W-S-Prior">
+      <action name="Raise"/>
+    </keybind>
+
+    <!-- Next for PageDown //-->
+    <keybind key="W-S-Next">
+      <action name="Lower"/>
+    </keybind>
+
+<!-- ### Tail: Window RaiseLower //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ##################################################################### //-->
 <!-- ### Head: Window Close //-->
 
     <keybind key="W-q">
@@ -915,26 +1031,13 @@
       </action>
     </keybind>
 
-<!--
-    <keybind key="W-j">
-      <action name="ToggleMaximize">
-        <direction>horizontal</direction>
-      </action>
-    </keybind>
-
-    <keybind key="W-l">
-      <action name="ToggleMaximize">
-        <direction>vertical</direction>
-      </action>
-    </keybind>
-//-->
-
 <!-- ### Tail: Window ToggleMaximize //-->
 <!-- ##################################################################### //-->
 
 
 <!-- ##################################################################### //-->
 <!-- ### Head: Window ToggleFullscreen //-->
+<!-- ##  http://openbox.org/wiki/Help:Actions#ToggleFullscreen //-->
 
     <keybind key="W-f">
       <action name="ToggleFullscreen"/>
@@ -944,21 +1047,13 @@
       <action name="ToggleFullscreen"/>
     </keybind>
 
-<!-- ### Tail: Window ToggleMaximize //-->
+<!-- ### Tail: Window ToggleFullscreen //-->
 <!-- ##################################################################### //-->
 
 
 <!-- ##################################################################### //-->
 <!-- ### Head: Window ToggleDecorations //-->
-<!-- ### http://openbox.org/wiki/Help:Actions#ToggleDecorations //-->
-<!--
-    <keybind key="W-A-z">
-      <action name="Decorate"/>
-    </keybind>
-    <keybind key="W-A-x">
-      <action name="Undecorate"/>
-    </keybind>
-//-->
+<!-- ##  http://openbox.org/wiki/Help:Actions#ToggleDecorations //-->
 
     <keybind key="W-v">
       <action name="ToggleDecorations"/>
@@ -969,6 +1064,42 @@
     </keybind>
 
 <!-- ### Tail: Window ToggleDecorations //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ##################################################################### //-->
+<!-- ### Head: Window ToggleShade //-->
+<!-- ##  http://openbox.org/wiki/Help:Actions#ToggleShade //-->
+
+    <keybind key="W-y">
+      <action name="ToggleShade"/>
+    </keybind>
+
+<!-- ### Tail: Window ToggleShade //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ##################################################################### //-->
+<!-- ### Head: Window ToggleAlwaysOnTop //-->
+<!-- ##  http://openbox.org/wiki/Help:Actions#ToggleAlwaysOnTop //-->
+
+    <keybind key="W-t">
+      <action name="ToggleAlwaysOnTop"/>
+    </keybind>
+
+<!-- ### Tail: Window ToggleAlwaysOnTop //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ##################################################################### //-->
+<!-- ### Head: Window ToggleAlwaysOnBottom //-->
+<!-- ##  http://openbox.org/wiki/Help:Actions#ToggleAlwaysOnBottom //-->
+
+    <keybind key="W-b">
+      <action name="ToggleAlwaysOnBottom"/>
+    </keybind>
+
+<!-- ### Tail: Window ToggleAlwaysOnBottom //-->
 <!-- ##################################################################### //-->
 
 
