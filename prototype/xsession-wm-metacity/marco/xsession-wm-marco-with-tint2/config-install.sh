@@ -213,7 +213,7 @@ marco_set_keybindings_toggle_shaded () {
 
 	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'toggle-shaded' | sort -u
 
-	gsettings set org.mate.Marco.window-keybindings toggle-shaded '<Super>c'
+	gsettings set org.mate.Marco.window-keybindings toggle-shaded '<Super>y'
 
 }
 
@@ -221,7 +221,7 @@ marco_set_keybindings_raise_or_lower () {
 
 	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'raise-or-lower' | sort -u
 
-	gsettings set org.mate.Marco.window-keybindings raise-or-lower '<Super>z'
+	gsettings set org.mate.Marco.window-keybindings raise-or-lower '<Super>m'
 
 }
 
