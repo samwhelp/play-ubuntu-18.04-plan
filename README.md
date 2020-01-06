@@ -16,7 +16,7 @@
 
 * [play-i3](prototype/de-basic/play-i3)
 * [play-lxqt](prototype/de-basic/play-lxqt)
-* [play-xfce](prototype/de-basic/play-xfce)
+* [play-xfce](prototype/de-basic/play-xfce) ([keybind](prototype/de-basic/play-xfce/spec-keybind.md))
 * [play-gnome](prototype/de-basic/play-gnome)
 
 

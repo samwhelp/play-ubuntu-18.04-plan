@@ -72,9 +72,9 @@
 
 | Key | How to set | Description |
 | --- | --- | --- |
-| `Win + m` | [~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) | Raise or Lower Window |
-| `Win + Shift + PageUp` | [~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) | Raise Window |
-| `Win + Shift PageDown` | [~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) | Lower Window |
+| `Win + m` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise or Lower Window |
+| `Win + Shift + PageUp` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise Window |
+| `Win + Shift PageDown` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Lower Window |
 
 
 ## Window Close

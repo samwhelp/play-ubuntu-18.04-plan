@@ -28,5 +28,7 @@
 
 ## WM
 
+
 * [openbox](../../prototype/de-box/play-openbox/spec-keybind.md)
+* [xfce](../../prototype/de-basic/play-xfce/spec-keybind.md)
 * [bspwm](../../prototype/de-tiling/play-bspwm/spec-keybind.md)
