@@ -225,7 +225,7 @@ marco_set_keybindings_raise_or_lower () {
 
 }
 
-marco_set_keybindings_toggle_tiled () {
+marco_set_keybindings_toggle_tiled_old () {
 
 	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'tile' | sort -u
 
@@ -239,6 +239,26 @@ marco_set_keybindings_toggle_tiled () {
 	#gsettings set org.mate.Marco.window-keybindings tile-to-side-e '<Super>l'
 	gsettings set org.mate.Marco.window-keybindings tile-to-side-w '<Super>k'
 	gsettings set org.mate.Marco.window-keybindings tile-to-side-e '<Super>j'
+
+
+
+
+}
+
+marco_set_keybindings_toggle_tiled () {
+
+	##gsettings list-recursively | grep 'org.mate.Marco' | grep 'tile' | sort -u
+
+
+	gsettings set org.mate.Marco.window-keybindings tile-to-corner-nw '<Super><Shift>k'
+	gsettings set org.mate.Marco.window-keybindings tile-to-corner-ne '<Super><Shift>j'
+	gsettings set org.mate.Marco.window-keybindings tile-to-corner-sw '<Super><Shift>h'
+	gsettings set org.mate.Marco.window-keybindings tile-to-corner-se '<Super><Shift>l'
+
+	gsettings set org.mate.Marco.window-keybindings tile-to-side-w '<Super><Control>h'
+	gsettings set org.mate.Marco.window-keybindings tile-to-side-e '<Super><Control>l'
+	#gsettings set org.mate.Marco.window-keybindings tile-to-side-w '<Super><Control>k'
+	#gsettings set org.mate.Marco.window-keybindings tile-to-side-e '<Super><Control>j'
 
 
 
@@ -280,16 +300,29 @@ marco_set_keybindings_about_workspace () {
 	gsettings set org.mate.Marco.global-keybindings switch-to-workspace-10 "'<Alt>0'"
 
 
-	gsettings set org.mate.Marco.window-keybindings move-to-workspace-1 "'<Shift><Alt>exclam'"
-	gsettings set org.mate.Marco.window-keybindings move-to-workspace-2 "'<Shift><Alt>at'"
-	gsettings set org.mate.Marco.window-keybindings move-to-workspace-3 "'<Shift><Alt>numbersign'"
-	gsettings set org.mate.Marco.window-keybindings move-to-workspace-4 "'<Shift><Alt>dollar'"
-	gsettings set org.mate.Marco.window-keybindings move-to-workspace-5 "'<Shift><Alt>percent'"
-	gsettings set org.mate.Marco.window-keybindings move-to-workspace-6 "'<Shift><Alt>asciicircum'"
-	gsettings set org.mate.Marco.window-keybindings move-to-workspace-7 "'<Shift><Alt>ampersand'"
-	gsettings set org.mate.Marco.window-keybindings move-to-workspace-8 "'<Shift><Alt>asterisk'"
-	gsettings set org.mate.Marco.window-keybindings move-to-workspace-9 "'<Shift><Alt>parenleft'"
-	gsettings set org.mate.Marco.window-keybindings move-to-workspace-10 "'<Shift><Alt>parenright'"
+	#gsettings set org.mate.Marco.window-keybindings move-to-workspace-1 "'<Shift><Alt>exclam'"
+	#gsettings set org.mate.Marco.window-keybindings move-to-workspace-2 "'<Shift><Alt>at'"
+	#gsettings set org.mate.Marco.window-keybindings move-to-workspace-3 "'<Shift><Alt>numbersign'"
+	#gsettings set org.mate.Marco.window-keybindings move-to-workspace-4 "'<Shift><Alt>dollar'"
+	#gsettings set org.mate.Marco.window-keybindings move-to-workspace-5 "'<Shift><Alt>percent'"
+	#gsettings set org.mate.Marco.window-keybindings move-to-workspace-6 "'<Shift><Alt>asciicircum'"
+	#gsettings set org.mate.Marco.window-keybindings move-to-workspace-7 "'<Shift><Alt>ampersand'"
+	#gsettings set org.mate.Marco.window-keybindings move-to-workspace-8 "'<Shift><Alt>asterisk'"
+	#gsettings set org.mate.Marco.window-keybindings move-to-workspace-9 "'<Shift><Alt>parenleft'"
+	#gsettings set org.mate.Marco.window-keybindings move-to-workspace-10 "'<Shift><Alt>parenright'"
+
+
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-1 "'<Alt><Super>1'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-2 "'<Alt><Super>2'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-3 "'<Alt><Super>3'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-4 "'<Alt><Super>4'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-5 "'<Alt><Super>5'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-6 "'<Alt><Super>6'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-7 "'<Alt><Super>7'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-8 "'<Alt><Super>8'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-9 "'<Alt><Super>9'"
+	gsettings set org.mate.Marco.window-keybindings move-to-workspace-10 "'<Alt><Super>10'"
+
 
 }
 ##
