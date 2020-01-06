@@ -87,6 +87,10 @@ gnome_set_keybindings_start_here () {
 
 	## gsettings list-recursively | grep 'org.gnome.desktop' | sort -u
 
+	## Disable Only Win Key Binding
+	#gsettings set org.gnome.mutter overlay-key 'Super_L'
+	gsettings set org.gnome.mutter overlay-key ''
+
 
 	## Toggle the activities overview
 	#gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['<Alt>F1', '<Control><Alt>a', '<Control><Super>a']"
@@ -94,12 +98,12 @@ gnome_set_keybindings_start_here () {
 	## Show all applications
 	#gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a', '<Shift><Alt>a']"
 	#gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a']"
-	gsettings set org.gnome.shell.keybindings toggle-application-view "['<Control><Alt>a', '<Control><Super>a']"
+	gsettings set org.gnome.shell.keybindings toggle-application-view "['<Control><Alt>a', '<Control><Super>a', '<Super_L>space']"
 
 	## Show the activities overview
 	#gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>s', '<Shift><Alt>r']"
 	#gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>s']"
-	gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt>s', '<Control><Super>s']"
+	gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt>s', '<Control><Super>s', '<Super>c']"
 
 }
 
@@ -157,11 +161,11 @@ gnome_set_keybindings_toggle_above () {
 }
 
 gnome_set_keybindings_toggle_shaded () {
-	gsettings set org.gnome.desktop.wm.keybindings toggle-shaded "['<Super>c']"
+	gsettings set org.gnome.desktop.wm.keybindings toggle-shaded "['<Super>y']"
 }
 
 gnome_set_keybindings_raise_or_lower () {
-	gsettings set org.gnome.desktop.wm.keybindings raise-or-lower "['<Super>z']"
+	gsettings set org.gnome.desktop.wm.keybindings raise-or-lower "['<Super>m']"
 }
 
 gnome_set_keybindings_toggle_tiled () {
