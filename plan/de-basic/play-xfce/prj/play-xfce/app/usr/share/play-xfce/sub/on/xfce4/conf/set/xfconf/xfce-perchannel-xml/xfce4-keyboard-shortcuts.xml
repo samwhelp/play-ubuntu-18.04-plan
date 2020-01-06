@@ -208,8 +208,8 @@
       <property name="&lt;Alt&gt;h" type="string" value="left_workspace_key"/>
       <property name="&lt;Alt&gt;l" type="string" value="right_workspace_key"/>
       <property name="&lt;Super&gt;f" type="string" value="fullscreen_key"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;Up" type="string" value="raise_window_key"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;Down" type="string" value="lower_window_key"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;Page_Up" type="string" value="raise_window_key"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;Page_Down" type="string" value="lower_window_key"/>
     </property>
   </property>
   <property name="providers" type="array">
