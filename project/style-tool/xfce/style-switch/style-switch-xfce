@@ -6,6 +6,7 @@
 ##
 
 # * https://github.com/samwhelp/skel-project-plan/blob/gh-pages/demo/sh/standalone/bin/demo-ctrl
+# * https://www.freedesktop.org/wiki/Specifications/XSettingsRegistry/
 
 ##
 ### Tail: Url
@@ -272,6 +273,18 @@ sys_xfce_set_cursor_theme_default () {
 
 }
 
+sys_xfce_set_cursor_theme_default_for_dark () {
+
+	sys_xfce_set_cursor_theme 'Breeze_Snow' 24
+
+}
+
+sys_xfce_set_cursor_theme_default_for_light () {
+
+	sys_xfce_set_cursor_theme 'breeze_cursors' 24
+
+}
+
 ##
 ### Tail: Sys
 ################################################################################
@@ -299,6 +312,12 @@ ss_numix_config_icon_theme () {
 
 }
 
+ss_numix_config_cursor_theme () {
+
+	sys_xfce_set_cursor_theme_default
+
+}
+
 
 ss_numix () {
 	#echo "ss_numix"
@@ -308,6 +327,7 @@ ss_numix () {
 	ss_numix_config_wm_theme
 	ss_numix_config_ui_theme
 	ss_numix_config_icon_theme
+	ss_numix_config_cursor_theme
 
 }
 
@@ -338,6 +358,11 @@ ss_numix_blue_config_icon_theme () {
 
 }
 
+ss_numix_blue__config_cursor_theme () {
+
+	sys_xfce_set_cursor_theme_default
+
+}
 
 ss_numix_blue () {
 	#echo "ss_numix_blue"
@@ -347,6 +372,7 @@ ss_numix_blue () {
 	ss_numix_blue_config_wm_theme
 	ss_numix_blue_config_ui_theme
 	ss_numix_blue_config_icon_theme
+	ss_numix_blue__config_cursor_theme
 
 }
 
@@ -377,6 +403,11 @@ ss_numix_blue_wm_breeze_config_icon_theme () {
 
 }
 
+ss_numix_blue_wm_breeze_config_cursor_theme () {
+
+	sys_xfce_set_cursor_theme_default
+
+}
 
 ss_numix_blue_wm_breeze () {
 	#echo "ss_numix_blue_wm_breeze"
@@ -386,6 +417,7 @@ ss_numix_blue_wm_breeze () {
 	ss_numix_blue_wm_breeze_config_wm_theme
 	ss_numix_blue_wm_breeze_config_ui_theme
 	ss_numix_blue_wm_breeze_config_icon_theme
+	ss_numix_blue_wm_breeze_config_cursor_theme
 
 }
 
@@ -417,6 +449,11 @@ ss_obsidian_2_gray_config_icon_theme () {
 
 }
 
+ss_obsidian_2_gray_config_cursor_theme () {
+
+	sys_xfce_set_cursor_theme_default
+
+}
 
 ss_obsidian_2_gray () {
 	#echo "ss_obsidian_2_gray"
@@ -426,6 +463,7 @@ ss_obsidian_2_gray () {
 	ss_obsidian_2_gray_config_wm_theme
 	ss_obsidian_2_gray_config_ui_theme
 	ss_obsidian_2_gray_config_icon_theme
+	ss_obsidian_2_gray_config_cursor_theme
 
 }
 
@@ -456,6 +494,11 @@ ss_fantome_2bxfwm_lucy_config_icon_theme () {
 
 }
 
+ss_fantome_2bxfwm_lucy_config_cursor_theme () {
+
+	sys_xfce_set_cursor_theme_default
+
+}
 
 ss_fantome_2bxfwm_lucy () {
 	#echo "ss_fantome_2bxfwm_lucy"
@@ -465,6 +508,7 @@ ss_fantome_2bxfwm_lucy () {
 	ss_fantome_2bxfwm_lucy_config_wm_theme
 	ss_fantome_2bxfwm_lucy_config_ui_theme
 	ss_fantome_2bxfwm_lucy_config_icon_theme
+	ss_fantome_2bxfwm_lucy_config_cursor_theme
 
 }
 
@@ -495,6 +539,11 @@ ss_honda_super_cub_chandelier_config_icon_theme () {
 
 }
 
+ss_honda_super_cub_chandelier_config_cursor_theme () {
+
+	sys_xfce_set_cursor_theme_default_for_dark
+
+}
 
 ss_honda_super_cub_chandelier () {
 	#echo "ss_honda_super_cub_chandelier"
@@ -504,6 +553,7 @@ ss_honda_super_cub_chandelier () {
 	ss_honda_super_cub_chandelier_config_wm_theme
 	ss_honda_super_cub_chandelier_config_ui_theme
 	ss_honda_super_cub_chandelier_config_icon_theme
+	ss_honda_super_cub_chandelier_config_cursor_theme
 
 }
 
@@ -534,6 +584,11 @@ ss_sephia_honda_super_cub_config_icon_theme () {
 
 }
 
+ss_sephia_honda_super_cub_config_cursor_theme () {
+
+	sys_xfce_set_cursor_theme_default_for_light
+
+}
 
 ss_sephia_honda_super_cub () {
 	#echo "ss_sephia_honda_super_cub"
@@ -543,6 +598,7 @@ ss_sephia_honda_super_cub () {
 	ss_sephia_honda_super_cub_config_wm_theme
 	ss_sephia_honda_super_cub_config_ui_theme
 	ss_sephia_honda_super_cub_config_icon_theme
+	ss_sephia_honda_super_cub_config_cursor_theme
 
 }
 

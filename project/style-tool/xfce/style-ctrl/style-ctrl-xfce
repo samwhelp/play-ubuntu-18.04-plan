@@ -296,6 +296,18 @@ sys_xfce_set_cursor_theme_default () {
 
 }
 
+sys_xfce_set_cursor_theme_default_for_dark () {
+
+	sys_xfce_set_cursor_theme 'Breeze_Snow' 24
+
+}
+
+sys_xfce_set_cursor_theme_default_for_light () {
+
+	sys_xfce_set_cursor_theme 'breeze_cursors' 24
+
+}
+
 ##
 ### Tail: Sys
 ################################################################################
