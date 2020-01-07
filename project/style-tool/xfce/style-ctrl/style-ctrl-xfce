@@ -14,6 +14,26 @@
 
 
 ################################################################################
+### Head: Url
+##
+
+# $ xfconf-query -c 'xsettings' -l | grep Theme
+#
+# /Gtk/CursorThemeName
+# /Gtk/CursorThemeSize
+# /Gtk/KeyThemeName
+# /Net/FallbackIconTheme
+# /Net/IconThemeName
+# /Net/SoundThemeName
+# /Net/ThemeName
+
+
+##
+### Tail: Url
+################################################################################
+
+
+################################################################################
 ### Head: Init
 ##
 set -e ## for Exit immediately if a command exits with a non-zero status.
@@ -204,6 +224,45 @@ sys_xfce_set_icon_theme () {
 
 }
 
+sys_xfce_set_cursor_theme () {
+
+	local cursor_theme_name="$1"
+	local cursor_theme_size="$2"
+
+	if [ "none${cursor_theme_name}" = "none" ]; then
+		cursor_theme_name="default"
+	fi
+
+	if [ "none${cursor_theme_size}" = "none" ]; then
+		cursor_theme_size="24"
+	fi
+
+	#echo $cursor_theme_name
+	#echo $cursor_theme_size
+	#return
+
+
+	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+
+	## <property name="CursorThemeName" type="string" value="default"/>
+	## <property name="CursorThemeSize" type="int" value="24"/>
+
+	## <property name="CursorThemeName" type="string" value="breeze_cursors"/>
+	## <property name="CursorThemeSize" type="int" value="24"/>
+
+	## <property name="CursorThemeName" type="string" value="Breeze_Snow"/>
+	## <property name="CursorThemeSize" type="int" value="24"/>
+
+
+	echo "xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s '$cursor_theme_name'"
+	xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s "$cursor_theme_name"
+
+	echo "xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize' -s '$cursor_theme_size'"
+	xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize' -s "$cursor_theme_size"
+
+
+}
+
 
 ##
 ### Tail: Sys
@@ -238,7 +297,7 @@ sc_wm_theme () {
 
 	local wm_theme="$1"
 
-	if [ "none${wm_theme}" == "none" ]; then
+	if [ "none${wm_theme}" = "none" ]; then
 		echo
 		echo "## Need {name}"
 		sc_wm_theme_usage
@@ -273,7 +332,7 @@ sc_ui_theme () {
 
 	local ui_theme="$1"
 
-	if [ "none${ui_theme}" == "none" ]; then
+	if [ "none${ui_theme}" = "none" ]; then
 		echo
 		echo "## Need {name}"
 		sc_ui_theme_usage
@@ -309,7 +368,7 @@ sc_icon_theme () {
 
 	local icon_theme="$1"
 
-	if [ "none${icon_theme}" == "none" ]; then
+	if [ "none${icon_theme}" = "none" ]; then
 		echo
 		echo "## Need {name}"
 		sc_icon_theme_usage
@@ -321,6 +380,48 @@ sc_icon_theme () {
 }
 
 
+sc_cursor_theme_usage () {
+
+	local cmd_name="style-ctrl-xfce"
+
+cat << EOF
+
+Usage:
+	$ $cmd_name cursor_theme {name} [size]
+
+
+Example:
+	$ $cmd_name cursor_theme 'default'
+
+	$ $cmd_name cursor_theme 'breeze_cursors'
+	$ $cmd_name cursor_theme 'breeze_cursors' 24
+
+	$ $cmd_name cursor_theme 'Breeze_Snow'
+
+	$ $cmd_name cursor_theme 'DMZ-Black'
+	$ $cmd_name cursor_theme 'DMZ-White'
+
+EOF
+
+}
+
+
+sc_cursor_theme () {
+
+	local cursor_theme_name="$1"
+	local cursor_theme_size="$2"
+
+	if [ "none${cursor_theme_name}" = "none" ]; then
+		echo
+		echo "## Need {name}"
+		sc_cursor_theme_usage
+		return
+	fi
+
+	sys_xfce_set_cursor_theme "$cursor_theme_name" "$cursor_theme_size"
+
+}
+
 ##
 ### Tail: Model
 ################################################################################
@@ -331,23 +432,29 @@ sc_icon_theme () {
 ##
 
 sub_run_help () {
-	main_usage "$@"
+	main_usage $@
 }
 
 sub_run_wm_theme () {
 	#echo "sub_run_wm_theme"
-	sc_wm_theme "$@"
+	sc_wm_theme $@
 }
 
 sub_run_ui_theme () {
 	#echo "sub_run_ui_theme"
-	sc_ui_theme "$@"
+	sc_ui_theme $@
 }
 
 sub_run_icon_theme () {
 	#echo "sub_run_icon_theme"
-	sc_icon_theme "$@"
+	sc_icon_theme $@
 }
+
+sub_run_cursor_theme () {
+	#echo "sub_run_cursor_theme"
+	sc_cursor_theme $@
+}
+
 
 ##
 ### Tail: SubCmd
@@ -369,6 +476,7 @@ Usage:
 	$ $cmd_name wm_theme {name}
 	$ $cmd_name ui_theme {name}
 	$ $cmd_name icon_theme {name}
+	$ $cmd_name cursor_theme {name} [size]
 
 Example:
 
@@ -378,6 +486,9 @@ Example:
 	$ $cmd_name wm_theme 'Breeze'
 	$ $cmd_name ui_theme 'NumixBlue'
 	$ $cmd_name icon_theme 'Numix'
+
+	$ $cmd_name cursor_theme 'breeze_cursors'
+	$ $cmd_name cursor_theme 'breeze_cursors' 24
 
 
 Debug:
