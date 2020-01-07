@@ -14,7 +14,7 @@
 
 
 ################################################################################
-### Head: Url
+### Head: Note
 ##
 
 # $ xfconf-query -c 'xsettings' -l | grep Theme
@@ -29,7 +29,7 @@
 
 
 ##
-### Tail: Url
+### Tail: Note
 ################################################################################
 
 
@@ -263,6 +263,39 @@ sys_xfce_set_cursor_theme () {
 
 }
 
+sys_xfce_set_all_default () {
+
+	sys_xfce_set_wm_theme_default
+	sys_xfce_set_ui_theme_default
+	sys_xfce_set_icon_theme_default
+	sys_xfce_set_cursor_theme_default
+
+}
+
+sys_xfce_set_wm_theme_default () {
+
+	sys_xfce_set_wm_theme 'Breeze'
+
+}
+
+sys_xfce_set_ui_theme_default () {
+
+	sys_xfce_set_ui_theme 'NumixBlue'
+
+}
+
+sys_xfce_set_icon_theme_default () {
+
+	sys_xfce_set_icon_theme 'Numix'
+
+}
+
+sys_xfce_set_cursor_theme_default () {
+
+	sys_xfce_set_cursor_theme 'breeze_cursors' 24
+
+
+}
 
 ##
 ### Tail: Sys
@@ -422,6 +455,7 @@ sc_cursor_theme () {
 
 }
 
+
 ##
 ### Tail: Model
 ################################################################################
@@ -452,7 +486,37 @@ sub_run_icon_theme () {
 
 sub_run_cursor_theme () {
 	#echo "sub_run_cursor_theme"
-	sc_cursor_theme $@
+	sc_cursor_theme_default $@
+}
+
+sub_run_all_default () {
+	#echo "sub_run_all_default"
+	#sc_all_default $@
+	sys_xfce_set_all_default
+}
+
+sub_run_wm_theme_default () {
+	#echo "sub_run_wm_theme_default"
+	#sc_wm_theme_default $@
+	sys_xfce_set_wm_theme_default
+}
+
+sub_run_ui_theme_default () {
+	#echo "sub_run_ui_theme_default"
+	#sc_ui_theme_default $@
+	sys_xfce_set_ui_theme_default
+}
+
+sub_run_icon_theme_default () {
+	#echo "sub_run_icon_theme"
+	#sc_icon_theme_default $@
+	sys_xfce_set_icon_theme_default
+}
+
+sub_run_cursor_theme_default () {
+	#echo "sub_run_cursor_theme_default"
+	#sc_cursor_theme_default $@
+	sys_xfce_set_cursor_theme_default
 }
 
 
@@ -477,6 +541,13 @@ Usage:
 	$ $cmd_name ui_theme {name}
 	$ $cmd_name icon_theme {name}
 	$ $cmd_name cursor_theme {name} [size]
+
+	$ $cmd_name all_default
+
+	$ $cmd_name wm_theme_default
+	$ $cmd_name ui_theme_default
+	$ $cmd_name icon_theme_default
+	$ $cmd_name cursor_theme_default
 
 Example:
 
