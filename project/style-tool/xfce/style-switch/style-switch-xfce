@@ -200,6 +200,77 @@ sys_xfce_set_icon_theme () {
 
 }
 
+sys_xfce_set_cursor_theme () {
+
+	local cursor_theme_name="$1"
+	local cursor_theme_size="$2"
+
+	if [ "none${cursor_theme_name}" = "none" ]; then
+		cursor_theme_name="default"
+	fi
+
+	if [ "none${cursor_theme_size}" = "none" ]; then
+		cursor_theme_size="24"
+	fi
+
+	#echo $cursor_theme_name
+	#echo $cursor_theme_size
+	#return
+
+
+	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+
+	## <property name="CursorThemeName" type="string" value="default"/>
+	## <property name="CursorThemeSize" type="int" value="24"/>
+
+	## <property name="CursorThemeName" type="string" value="breeze_cursors"/>
+	## <property name="CursorThemeSize" type="int" value="24"/>
+
+	## <property name="CursorThemeName" type="string" value="Breeze_Snow"/>
+	## <property name="CursorThemeSize" type="int" value="24"/>
+
+
+	echo "xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s '$cursor_theme_name'"
+	xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s "$cursor_theme_name"
+
+	echo "xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize' -s '$cursor_theme_size'"
+	xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize' -s "$cursor_theme_size"
+
+
+}
+
+sys_xfce_set_all_default () {
+
+	sys_xfce_set_wm_theme_default
+	sys_xfce_set_ui_theme_default
+	sys_xfce_set_icon_theme_default
+	sys_xfce_set_cursor_theme_default
+
+}
+
+sys_xfce_set_wm_theme_default () {
+
+	sys_xfce_set_wm_theme 'Breeze'
+
+}
+
+sys_xfce_set_ui_theme_default () {
+
+	sys_xfce_set_ui_theme 'NumixBlue'
+
+}
+
+sys_xfce_set_icon_theme_default () {
+
+	sys_xfce_set_icon_theme 'Numix'
+
+}
+
+sys_xfce_set_cursor_theme_default () {
+
+	sys_xfce_set_cursor_theme 'breeze_cursors' 24
+
+}
 
 ##
 ### Tail: Sys
@@ -485,42 +556,48 @@ ss_sephia_honda_super_cub () {
 ##
 
 sub_run_help () {
-	main_usage "$@"
+	main_usage $@
+}
+
+sub_run_default () {
+	#echo "sub_run_numix"
+	#ss_default $@
+	sys_xfce_set_all_default
 }
 
 sub_run_numix () {
 	#echo "sub_run_numix"
-	ss_numix "$@"
+	ss_numix $@
 }
 
 sub_run_numix_blue () {
 	#echo "sub_run_numix_blue"
-	ss_numix_blue "$@"
+	ss_numix_blue $@
 }
 
 sub_run_numix_blue_wm_breeze () {
 	#echo "sub_run_numix_blue_wm_breeze"
-	ss_numix_blue_wm_breeze "$@"
+	ss_numix_blue_wm_breeze $@
 }
 
 sub_run_obsidian_2_gray () {
 	#echo "sub_run_obsidian_2_gray"
-	ss_obsidian_2_gray "$@"
+	ss_obsidian_2_gray $@
 }
 
 sub_run_fantome_2bxfwm_lucy () {
 	#echo "sub_run_fantome_2bxfwm_lucy"
-	ss_fantome_2bxfwm_lucy "$@"
+	ss_fantome_2bxfwm_lucy $@
 }
 
 sub_run_honda_super_cub_chandelier () {
 	#echo "sub_run_honda_super_cub_chandelier"
-	ss_honda_super_cub_chandelier "$@"
+	ss_honda_super_cub_chandelier $@
 }
 
 sub_run_sephia_honda_super_cub () {
 	#echo "sub_run_sephia_honda_super_cub"
-	ss_sephia_honda_super_cub "$@"
+	ss_sephia_honda_super_cub $@
 }
 
 ##
@@ -545,6 +622,7 @@ Example:
 	$ $cmd_name
 	$ $cmd_name help
 
+	$ $cmd_name default
 
 	$ $cmd_name numix
 	$ $cmd_name numix_blue

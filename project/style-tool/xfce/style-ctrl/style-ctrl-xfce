@@ -294,7 +294,6 @@ sys_xfce_set_cursor_theme_default () {
 
 	sys_xfce_set_cursor_theme 'breeze_cursors' 24
 
-
 }
 
 ##
