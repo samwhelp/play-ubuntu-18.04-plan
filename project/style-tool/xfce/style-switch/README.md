@@ -33,3 +33,8 @@ $ style-switch-xfce help
 ``` sh
 $ export DEBUG_SS_CTRL=true
 ```
+
+
+## Install Theme
+
+* [prototype/style-de/xfce](../../../../prototype/style-de/xfce)
