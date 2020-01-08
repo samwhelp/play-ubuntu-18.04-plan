@@ -141,7 +141,7 @@
 ### xfce
 
 * [prototype/style-de/xfce/theme-obsidian-2-gray](prototype/style-de/xfce/theme-obsidian-2-gray)
-* [prototype/style-de/xfce/theme-fantome-2bxfwm-lucy](prototype/style-de/xfce/theme-fantome-2bxfwm-lucy)
+* [prototype/style-de/xfce/theme-fantome-wm-2bxfwm-lucy](prototype/style-de/xfce/theme-fantome-wm-2bxfwm-lucy)
 
 
 ## Style / Tool
