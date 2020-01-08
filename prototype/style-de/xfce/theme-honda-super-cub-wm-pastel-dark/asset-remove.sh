@@ -28,13 +28,13 @@ theme_asset_remove_theme_honda_super_cub () {
 
 theme_asset_remove_theme_pastel_dark () {
 
-	echo "rm -rf $HOME/.themes/Pastel-Dark"
-	rm -rf "$HOME/.themes/Pastel-Dark"
+	echo "rm -rf $HOME/.themes/Pastel_Dark"
+	rm -rf "$HOME/.themes/Pastel_Dark"
 
 	echo
 
-	# file "$HOME/.themes/Pastel-Dark"
-	# ls -l "$HOME/.themes/Pastel-Dark"
+	# file "$HOME/.themes/Pastel_Dark"
+	# ls -l "$HOME/.themes/Pastel_Dark"
 
 }
 

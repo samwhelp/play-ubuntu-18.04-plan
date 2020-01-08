@@ -613,7 +613,7 @@ ss_honda_super_cub_wm_rgapsline () {
 
 ss_honda_super_cub_wm_pastel_dark_config_wm_theme () {
 
-	sys_xfce_set_wm_theme 'Pastel-Dark'
+	sys_xfce_set_wm_theme 'Pastel_Dark'
 
 }
 

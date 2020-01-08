@@ -18,10 +18,10 @@ theme_config_install () {
 theme_config_install_wm_theme () {
 
 	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
-	## <property name="theme" type="string" value="Pastel-Dark"/>
+	## <property name="theme" type="string" value="Pastel_Dark"/>
 
-	xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Pastel-Dark'
-	echo "xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Pastel-Dark'"
+	xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Pastel_Dark'
+	echo "xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Pastel_Dark'"
 
 }
 

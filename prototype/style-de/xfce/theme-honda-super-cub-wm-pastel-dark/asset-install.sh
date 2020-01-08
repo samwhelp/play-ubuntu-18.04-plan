@@ -38,21 +38,21 @@ theme_asset_install_theme_honda_super_cub () {
 
 theme_asset_install_theme_pastel_dark () {
 
-	# https://github.com/samwhelp/theme-xfwm4-collections/tree/master/themes/Pastel-Dark
+	# https://github.com/samwhelp/theme-xfwm4-collections/tree/master/themes/Pastel_Dark
 
 	echo "git clone 'https://github.com/samwhelp/theme-xfwm4-collections.git' 'asset/samwhelp_theme-xfwm4-collections'"
 	git clone 'https://github.com/samwhelp/theme-xfwm4-collections.git' 'asset/samwhelp_theme-xfwm4-collections'
 
 
-	echo "$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/samwhelp_theme-xfwm4-collections/themes/Pastel-Dark'"
-	#/usr/lib/x86_64-linux-gnu/xfce4/settings/appearance-install-theme 'asset/samwhelp_theme-xfwm4-collections/themes/Pastel-Dark'
-	$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/samwhelp_theme-xfwm4-collections/themes/Pastel-Dark'
+	echo "$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/samwhelp_theme-xfwm4-collections/themes/Pastel_Dark'"
+	#/usr/lib/x86_64-linux-gnu/xfce4/settings/appearance-install-theme 'asset/samwhelp_theme-xfwm4-collections/themes/Pastel_Dark'
+	$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/samwhelp_theme-xfwm4-collections/themes/Pastel_Dark'
 
 
 	echo
 
-	file "$HOME/.themes/Pastel-Dark"
-	ls -l "$HOME/.themes/Pastel-Dark"
+	file "$HOME/.themes/Pastel_Dark"
+	ls -l "$HOME/.themes/Pastel_Dark"
 
 	echo
 
