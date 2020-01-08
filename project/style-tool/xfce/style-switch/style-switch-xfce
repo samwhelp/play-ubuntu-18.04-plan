@@ -473,92 +473,92 @@ ss_obsidian_2_gray () {
 
 
 ################################################################################
-### Head: Model ss_fantome_2bxfwm_lucy
+### Head: Model ss_fantome_wm_2bxfwm_lucy
 ##
 
-ss_fantome_2bxfwm_lucy_config_wm_theme () {
+ss_fantome_wm_2bxfwm_lucy_config_wm_theme () {
 
 	sys_xfce_set_wm_theme '2bxfwm-Lucy'
 
 }
 
-ss_fantome_2bxfwm_lucy_config_ui_theme () {
+ss_fantome_wm_2bxfwm_lucy_config_ui_theme () {
 
 	sys_xfce_set_ui_theme 'Fantome'
 
 }
 
-ss_fantome_2bxfwm_lucy_config_icon_theme () {
+ss_fantome_wm_2bxfwm_lucy_config_icon_theme () {
 
 	sys_xfce_set_icon_theme 'Nord-Black-Frost-Suru'
 
 }
 
-ss_fantome_2bxfwm_lucy_config_cursor_theme () {
+ss_fantome_wm_2bxfwm_lucy_config_cursor_theme () {
 
 	sys_xfce_set_cursor_theme_default
 
 }
 
-ss_fantome_2bxfwm_lucy () {
-	#echo "ss_fantome_2bxfwm_lucy"
+ss_fantome_wm_2bxfwm_lucy () {
+	#echo "ss_fantome_wm_2bxfwm_lucy"
 	#echo "$@"
 
 
-	ss_fantome_2bxfwm_lucy_config_wm_theme
-	ss_fantome_2bxfwm_lucy_config_ui_theme
-	ss_fantome_2bxfwm_lucy_config_icon_theme
-	ss_fantome_2bxfwm_lucy_config_cursor_theme
+	ss_fantome_wm_2bxfwm_lucy_config_wm_theme
+	ss_fantome_wm_2bxfwm_lucy_config_ui_theme
+	ss_fantome_wm_2bxfwm_lucy_config_icon_theme
+	ss_fantome_wm_2bxfwm_lucy_config_cursor_theme
 
 }
 
 ##
-### Tail: Model ss_fantome_2bxfwm_lucy
+### Tail: Model ss_fantome_wm_2bxfwm_lucy
 ################################################################################
 
 
 ################################################################################
-### Head: Model ss_honda_super_cub_chandelier
+### Head: Model ss_honda_super_cub_wm_chandelier
 ##
 
-ss_honda_super_cub_chandelier_config_wm_theme () {
+ss_honda_super_cub_wm_chandelier_config_wm_theme () {
 
 	sys_xfce_set_wm_theme 'Chandelier'
 
 }
 
-ss_honda_super_cub_chandelier_config_ui_theme () {
+ss_honda_super_cub_wm_chandelier_config_ui_theme () {
 
 	sys_xfce_set_ui_theme 'Honda-Super-Cub'
 
 }
 
-ss_honda_super_cub_chandelier_config_icon_theme () {
+ss_honda_super_cub_wm_chandelier_config_icon_theme () {
 
 	sys_xfce_set_icon_theme 'Numix'
 
 }
 
-ss_honda_super_cub_chandelier_config_cursor_theme () {
+ss_honda_super_cub_wm_chandelier_config_cursor_theme () {
 
 	sys_xfce_set_cursor_theme_default_for_dark
 
 }
 
-ss_honda_super_cub_chandelier () {
-	#echo "ss_honda_super_cub_chandelier"
+ss_honda_super_cub_wm_chandelier () {
+	#echo "ss_honda_super_cub_wm_chandelier"
 	#echo "$@"
 
 
-	ss_honda_super_cub_chandelier_config_wm_theme
-	ss_honda_super_cub_chandelier_config_ui_theme
-	ss_honda_super_cub_chandelier_config_icon_theme
-	ss_honda_super_cub_chandelier_config_cursor_theme
+	ss_honda_super_cub_wm_chandelier_config_wm_theme
+	ss_honda_super_cub_wm_chandelier_config_ui_theme
+	ss_honda_super_cub_wm_chandelier_config_icon_theme
+	ss_honda_super_cub_wm_chandelier_config_cursor_theme
 
 }
 
 ##
-### Tail: Model ss_honda_super_cub_chandelier
+### Tail: Model ss_honda_super_cub_wm_chandelier
 ################################################################################
 
 
@@ -653,47 +653,47 @@ ss_honda_super_cub_wm_pastel_dark () {
 
 
 ################################################################################
-### Head: Model ss_sephia_honda_super_cub
+### Head: Model ss_sephia_wm_honda_super_cub
 ##
 
-ss_sephia_honda_super_cub_config_wm_theme () {
+ss_sephia_wm_honda_super_cub_config_wm_theme () {
 
 	sys_xfce_set_wm_theme 'Honda-Super-Cub'
 
 }
 
-ss_sephia_honda_super_cub_config_ui_theme () {
+ss_sephia_wm_honda_super_cub_config_ui_theme () {
 
 	sys_xfce_set_ui_theme 'Sephia'
 
 }
 
-ss_sephia_honda_super_cub_config_icon_theme () {
+ss_sephia_wm_honda_super_cub_config_icon_theme () {
 
 	sys_xfce_set_icon_theme 'Nord-Black-Frost-Numix'
 
 }
 
-ss_sephia_honda_super_cub_config_cursor_theme () {
+ss_sephia_wm_honda_super_cub_config_cursor_theme () {
 
 	sys_xfce_set_cursor_theme_default_for_light
 
 }
 
-ss_sephia_honda_super_cub () {
-	#echo "ss_sephia_honda_super_cub"
+ss_sephia_wm_honda_super_cub () {
+	#echo "ss_sephia_wm_honda_super_cub"
 	#echo "$@"
 
 
-	ss_sephia_honda_super_cub_config_wm_theme
-	ss_sephia_honda_super_cub_config_ui_theme
-	ss_sephia_honda_super_cub_config_icon_theme
-	ss_sephia_honda_super_cub_config_cursor_theme
+	ss_sephia_wm_honda_super_cub_config_wm_theme
+	ss_sephia_wm_honda_super_cub_config_ui_theme
+	ss_sephia_wm_honda_super_cub_config_icon_theme
+	ss_sephia_wm_honda_super_cub_config_cursor_theme
 
 }
 
 ##
-### Tail: Model ss_sephia_honda_super_cub
+### Tail: Model ss_sephia_wm_honda_super_cub
 ################################################################################
 
 
@@ -731,14 +731,14 @@ sub_run_obsidian_2_gray () {
 	ss_obsidian_2_gray $@
 }
 
-sub_run_fantome_2bxfwm_lucy () {
-	#echo "sub_run_fantome_2bxfwm_lucy"
-	ss_fantome_2bxfwm_lucy $@
+sub_run_fantome_wm_2bxfwm_lucy () {
+	#echo "sub_run_fantome_wm_2bxfwm_lucy"
+	ss_fantome_wm_2bxfwm_lucy $@
 }
 
-sub_run_honda_super_cub_chandelier () {
-	#echo "sub_run_honda_super_cub_chandelier"
-	ss_honda_super_cub_chandelier $@
+sub_run_honda_super_cub_wm_chandelier () {
+	#echo "sub_run_honda_super_cub_wm_chandelier"
+	ss_honda_super_cub_wm_chandelier $@
 }
 
 sub_run_honda_super_cub_wm_rgapsline () {
@@ -751,9 +751,9 @@ sub_run_honda_super_cub_wm_pastel_dark () {
 	ss_honda_super_cub_wm_pastel_dark $@
 }
 
-sub_run_sephia_honda_super_cub () {
-	#echo "sub_run_sephia_honda_super_cub"
-	ss_sephia_honda_super_cub $@
+sub_run_sephia_wm_honda_super_cub () {
+	#echo "sub_run_sephia_wm_honda_super_cub"
+	ss_sephia_wm_honda_super_cub $@
 }
 
 ##
@@ -785,12 +785,14 @@ Example:
 	$ $cmd_name numix_blue_wm_breeze
 
 	$ $cmd_name obsidian_2_gray
-	$ $cmd_name fantome_2bxfwm_lucy
 
-	$ $cmd_name honda_super_cub_chandelier
+	$ $cmd_name fantome_wm_2bxfwm_lucy
+
+	$ $cmd_name honda_super_cub_wm_chandelier
 	$ $cmd_name honda_super_cub_wm_rgapsline
 	$ $cmd_name honda_super_cub_wm_pastel_dark
-	$ $cmd_name sephia_honda_super_cub
+
+	$ $cmd_name sephia_wm_honda_super_cub
 
 
 
