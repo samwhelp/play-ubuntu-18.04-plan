@@ -563,7 +563,7 @@ ss_honda_super_cub_chandelier () {
 
 
 ################################################################################
-### Head: Model ss_honda_super_cub_chandelier
+### Head: Model ss_honda_super_cub_wm_rgapsline
 ##
 
 ss_honda_super_cub_wm_rgapsline_config_wm_theme () {
@@ -603,7 +603,52 @@ ss_honda_super_cub_wm_rgapsline () {
 }
 
 ##
-### Tail: Model ss_honda_super_cub_chandelier
+### Tail: Model ss_honda_super_cub_wm_rgapsline
+################################################################################
+
+
+################################################################################
+### Head: Model ss_honda_super_cub_wm_pastel_dark
+##
+
+ss_honda_super_cub_wm_pastel_dark_config_wm_theme () {
+
+	sys_xfce_set_wm_theme 'Pastel-Dark'
+
+}
+
+ss_honda_super_cub_wm_pastel_dark_config_ui_theme () {
+
+	sys_xfce_set_ui_theme 'Honda-Super-Cub'
+
+}
+
+ss_honda_super_cub_wm_pastel_dark_config_icon_theme () {
+
+	sys_xfce_set_icon_theme 'Papirus-Dark'
+
+}
+
+ss_honda_super_cub_wm_pastel_dark_config_cursor_theme () {
+
+	sys_xfce_set_cursor_theme_default
+
+}
+
+ss_honda_super_cub_wm_pastel_dark () {
+	#echo "ss_honda_super_cub_wm_pastel_dark"
+	#echo "$@"
+
+
+	ss_honda_super_cub_wm_pastel_dark_config_wm_theme
+	ss_honda_super_cub_wm_pastel_dark_config_ui_theme
+	ss_honda_super_cub_wm_pastel_dark_config_icon_theme
+	ss_honda_super_cub_wm_pastel_dark_config_cursor_theme
+
+}
+
+##
+### Tail: Model ss_honda_super_cub_wm_pastel_dark
 ################################################################################
 
 
@@ -701,6 +746,11 @@ sub_run_honda_super_cub_wm_rgapsline () {
 	ss_honda_super_cub_wm_rgapsline $@
 }
 
+sub_run_honda_super_cub_wm_pastel_dark () {
+	#echo "sub_run_honda_super_cub_wm_pastel_dark"
+	ss_honda_super_cub_wm_pastel_dark $@
+}
+
 sub_run_sephia_honda_super_cub () {
 	#echo "sub_run_sephia_honda_super_cub"
 	ss_sephia_honda_super_cub $@
@@ -739,6 +789,7 @@ Example:
 
 	$ $cmd_name honda_super_cub_chandelier
 	$ $cmd_name honda_super_cub_wm_rgapsline
+	$ $cmd_name honda_super_cub_wm_pastel_dark
 	$ $cmd_name sephia_honda_super_cub
 
 
