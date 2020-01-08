@@ -1,0 +1,7 @@
+
+git
+
+xfce4-settings
+
+papirus-icon-theme
+breeze-cursor-theme
