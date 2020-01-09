@@ -38,6 +38,7 @@
 ##
 set -e ## for Exit immediately if a command exits with a non-zero status.
 THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+THE_CMD_FILE_NAME=$(basename $0)
 ##
 ### Tail: Init
 ################################################################################
@@ -90,6 +91,20 @@ base_var_init () {
 	THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/.")
 
 
+	THE_CMD_VERSION='0.1'
+
+	THE_CMD_DIR_PATH="${THE_BASE_DIR_PATH}"
+
+	if [ "none${THE_CMD_FILE_NAME}" = 'none' ]; then
+		THE_CMD_FILE_NAME="style-ctrl-xfce"
+	fi
+
+	THE_CMD_FILE_PATH="${THE_CMD_DIR_PATH}/$THE_CMD_FILE_NAME"
+
+	THE_SELF_UPDATE_URL='https://raw.githubusercontent.com/samwhelp/play-ubuntu-18.04-plan/master/project/style-tool/xfce/style-ctrl/style-ctrl-xfce'
+
+
+
 	THE_ASSET_DIR_NAME="asset"
 	THE_ASSET_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_ASSET_DIR_NAME"
 
@@ -97,16 +112,16 @@ base_var_init () {
 	THE_VAR_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_VAR_DIR_NAME"
 
 
-	THE_PROFILE_DIR_NAME=".style-ctrl-xfce-profile"
+	THE_PROFILE_DIR_NAME=".${THE_CMD_FILE_NAME}-profile"
 	THE_PROFILE_DIR_PATH="$HOME/$THE_PROFILE_DIR_NAME"
 
-	THE_PROJECT_DIR_NAME="style-ctrl-xfce"
+	THE_PROJECT_DIR_NAME="$THE_CMD_FILE_NAME"
 	THE_PROJECT_DIR_PATH="$HOME/.local/share/$THE_PROJECT_DIR_NAME"
 
-	THE_CONFIG_DIR_NAME="style-ctrl-xfce"
+	THE_CONFIG_DIR_NAME="$THE_CMD_FILE_NAME"
 	THE_CONFIG_DIR_PATH="$HOME/.config/$THE_CONFIG_DIR_NAME"
 
-	THE_CACHE_DIR_NAME="style-ctrl-xfce"
+	THE_CACHE_DIR_NAME="$THE_CMD_FILE_NAME"
 	THE_CACHE_DIR_PATH="$HOME/.cache/$THE_CACHE_DIR_NAME"
 
 
@@ -124,6 +139,13 @@ base_var_dump () {
 
 
 	util_debug_echo "THE_PLAN_DIR_PATH=$THE_PLAN_DIR_PATH"
+
+	util_debug_echo "THE_CMD_FILE_NAME=$THE_CMD_FILE_NAME"
+	util_debug_echo "THE_CMD_FILE_PATH=$THE_CMD_FILE_PATH"
+	util_debug_echo "THE_CMD_DIR_PATH=$THE_CMD_DIR_PATH"
+
+	util_debug_echo "THE_SELF_UPDATE_URL=$THE_SELF_UPDATE_URL"
+
 
 
 	util_debug_echo "THE_ASSET_DIR_NAME=$THE_ASSET_DIR_NAME"
@@ -182,6 +204,39 @@ sub_cmd_find_function_name () {
 ################################################################################
 
 
+################################################################################
+### Head: Util_Self_Update
+##
+
+util_make_tmp_dir () {
+	THE_TMP_DIR_PATH="/tmp/tmp.$$.$RANDOM"
+	mkdir "$THE_TMP_DIR_PATH"
+}
+
+
+util_self_update () {
+
+	util_make_tmp_dir
+	local tmp_file_path="${THE_TMP_DIR_PATH}/${THE_CMD_FILE_NAME}"
+	wget -c "$THE_SELF_UPDATE_URL" -O "$tmp_file_path"
+
+	echo "install -m 764 $tmp_file_path $THE_CMD_FILE_PATH"
+	install -m 764 "$tmp_file_path" "$THE_CMD_FILE_PATH"
+
+	echo "Current Version:"
+
+	"$THE_CMD_FILE_PATH" version
+
+}
+
+
+main_version () {
+	echo $THE_CMD_VERSION
+}
+
+##
+### Tail: Util_Self_Update
+################################################################################
 
 
 ################################################################################
@@ -414,7 +469,7 @@ sys_xfce_set_cursor_theme_default_for_light () {
 
 sc_wm_theme_usage () {
 
-	local cmd_name="style-ctrl-xfce"
+	local cmd_name="$THE_CMD_FILE_NAME"
 
 cat << EOF
 
@@ -462,7 +517,7 @@ sc_wm_theme () {
 
 sc_ui_theme_usage () {
 
-	local cmd_name="style-ctrl-xfce"
+	local cmd_name="$THE_CMD_FILE_NAME"
 
 cat << EOF
 
@@ -511,7 +566,7 @@ sc_ui_theme () {
 
 sc_icon_theme_usage () {
 
-	local cmd_name="style-ctrl-xfce"
+	local cmd_name="$THE_CMD_FILE_NAME"
 
 cat << EOF
 
@@ -559,7 +614,7 @@ sc_icon_theme () {
 
 sc_cursor_theme_usage () {
 
-	local cmd_name="style-ctrl-xfce"
+	local cmd_name="$THE_CMD_FILE_NAME"
 
 cat << EOF
 
@@ -621,9 +676,22 @@ sc_cursor_theme () {
 ### Head: SubCmd
 ##
 
+
+
 sub_run_help () {
 	main_usage $@
 }
+
+sub_run_version () {
+	main_version $@
+}
+
+sub_run_self_update () {
+	util_self_update $@
+}
+
+
+
 
 sub_run_wm_theme () {
 	#echo "sub_run_wm_theme"
@@ -721,11 +789,19 @@ sub_run_cursor_theme_default () {
 
 main_usage () {
 	##local cmd_name="$0"
-	local cmd_name="style-ctrl-xfce"
+	local cmd_name="$THE_CMD_FILE_NAME"
 
 cat << EOF
 Usage:
 	$ $cmd_name [action]
+
+	## version
+
+	$ $cmd_name version
+
+	## self_update
+
+	$ $cmd_name self_update
 
 	## help
 
@@ -784,6 +860,7 @@ Example:
 
 	$ $cmd_name cursor_theme 'breeze_cursors'
 	$ $cmd_name cursor_theme 'breeze_cursors' 24
+
 
 
 Debug:
