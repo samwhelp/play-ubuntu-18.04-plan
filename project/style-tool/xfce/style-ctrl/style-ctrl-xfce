@@ -200,6 +200,12 @@ sys_xfce_set_wm_theme () {
 
 }
 
+sys_xfce_get_wm_theme () {
+
+	xfconf-query -c 'xfwm4' -p '/general/theme'
+
+}
+
 sys_xfce_set_ui_theme () {
 
 	local ui_theme="$1"
@@ -212,6 +218,12 @@ sys_xfce_set_ui_theme () {
 
 }
 
+sys_xfce_get_ui_theme () {
+
+	xfconf-query -c 'xsettings' -p '/Net/ThemeName'
+
+}
+
 sys_xfce_set_icon_theme () {
 
 	local icon_theme="$1"
@@ -221,6 +233,12 @@ sys_xfce_set_icon_theme () {
 
 	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s "$icon_theme"
 	echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s '$icon_theme'"
+
+}
+
+sys_xfce_get_icon_theme () {
+
+	xfconf-query -c 'xsettings' -p '/Net/IconThemeName'
 
 }
 
@@ -263,6 +281,47 @@ sys_xfce_set_cursor_theme () {
 
 }
 
+sys_xfce_get_cursor_theme () {
+	local name=$(xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName')
+
+	local size=$(xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize')
+
+	echo "${name} ${size}"
+}
+
+sys_xfce_get_all () {
+
+	local wm_theme=$(sys_xfce_get_wm_theme)
+	local ui_theme=$(sys_xfce_get_ui_theme)
+	local icon_theme=$(sys_xfce_get_icon_theme)
+	local cursor_theme=$(sys_xfce_get_cursor_theme)
+
+	echo "wm_theme: ${wm_theme}"
+	echo "ui_theme: ${ui_theme}"
+	echo "icon_theme: ${icon_theme}"
+	echo "cursor_theme: ${cursor_theme}"
+
+}
+
+
+sys_xfce_get_all_default () {
+
+	local wm_theme=$(sys_xfce_get_wm_theme_default)
+	local ui_theme=$(sys_xfce_get_ui_theme_default)
+	local icon_theme=$(sys_xfce_get_icon_theme_default)
+	local cursor_theme=$(sys_xfce_get_cursor_theme_default)
+	local cursor_theme_for_dark=$(sys_xfce_get_cursor_theme_default_for_dark)
+	local cursor_theme_for_light=$(sys_xfce_get_cursor_theme_default_for_light)
+
+	echo "wm_theme: ${wm_theme}"
+	echo "ui_theme: ${ui_theme}"
+	echo "icon_theme: ${icon_theme}"
+	echo "cursor_theme: ${cursor_theme}"
+	echo "cursor_theme_for_dark: ${cursor_theme_for_dark}"
+	echo "cursor_theme_for_light: ${cursor_theme_for_light}"
+
+}
+
 sys_xfce_set_all_default () {
 
 	sys_xfce_set_wm_theme_default
@@ -272,39 +331,74 @@ sys_xfce_set_all_default () {
 
 }
 
+sys_xfce_get_wm_theme_default () {
+
+	echo 'Breeze'
+
+}
+
 sys_xfce_set_wm_theme_default () {
 
-	sys_xfce_set_wm_theme 'Breeze'
+	sys_xfce_set_wm_theme $(sys_xfce_get_wm_theme_default)
+
+}
+
+sys_xfce_get_ui_theme_default () {
+
+	echo 'NumixBlue'
 
 }
 
 sys_xfce_set_ui_theme_default () {
 
-	sys_xfce_set_ui_theme 'NumixBlue'
+	sys_xfce_set_ui_theme $(sys_xfce_get_ui_theme_default)
+
+}
+
+sys_xfce_get_icon_theme_default () {
+
+	echo 'Numix'
 
 }
 
 sys_xfce_set_icon_theme_default () {
 
-	sys_xfce_set_icon_theme 'Numix'
+	sys_xfce_set_icon_theme $(sys_xfce_get_icon_theme_default)
+
+}
+
+sys_xfce_get_cursor_theme_default () {
+
+	echo 'breeze_cursors' 24
 
 }
 
 sys_xfce_set_cursor_theme_default () {
 
-	sys_xfce_set_cursor_theme 'breeze_cursors' 24
+	sys_xfce_set_cursor_theme $(sys_xfce_get_cursor_theme_default)
+
+}
+
+sys_xfce_get_cursor_theme_default_for_dark () {
+
+	echo 'Breeze_Snow' 24
 
 }
 
 sys_xfce_set_cursor_theme_default_for_dark () {
 
-	sys_xfce_set_cursor_theme 'Breeze_Snow' 24
+	sys_xfce_set_cursor_theme $(sys_xfce_get_cursor_theme_default_for_dark)
+}
+
+sys_xfce_get_cursor_theme_default_for_light () {
+
+	echo 'breeze_cursors' 24
 
 }
 
 sys_xfce_set_cursor_theme_default_for_light () {
 
-	sys_xfce_set_cursor_theme 'breeze_cursors' 24
+	sys_xfce_set_cursor_theme $(sys_xfce_get_cursor_theme_default_for_light)
 
 }
 
@@ -337,20 +431,34 @@ EOF
 
 }
 
+# sc_wm_theme () {
+#
+# 	local wm_theme="$1"
+#
+# 	if [ "none${wm_theme}" = "none" ]; then
+# 		echo
+# 		echo "## Need {name}"
+# 		sc_wm_theme_usage
+# 		return
+# 	fi
+#
+# 	sys_xfce_set_wm_theme "$wm_theme"
+#
+# }
+
 sc_wm_theme () {
 
 	local wm_theme="$1"
 
 	if [ "none${wm_theme}" = "none" ]; then
-		echo
-		echo "## Need {name}"
-		sc_wm_theme_usage
+		sys_xfce_get_wm_theme
 		return
 	fi
 
 	sys_xfce_set_wm_theme "$wm_theme"
 
 }
+
 
 sc_ui_theme_usage () {
 
@@ -372,14 +480,27 @@ EOF
 
 }
 
+# sc_ui_theme () {
+#
+# 	local ui_theme="$1"
+#
+# 	if [ "none${ui_theme}" = "none" ]; then
+# 		echo
+# 		echo "## Need {name}"
+# 		sc_ui_theme_usage
+# 		return
+# 	fi
+#
+# 	sys_xfce_set_ui_theme "$ui_theme"
+#
+# }
+
 sc_ui_theme () {
 
 	local ui_theme="$1"
 
 	if [ "none${ui_theme}" = "none" ]; then
-		echo
-		echo "## Need {name}"
-		sc_ui_theme_usage
+		sys_xfce_get_ui_theme
 		return
 	fi
 
@@ -407,15 +528,27 @@ EOF
 
 }
 
+# sc_icon_theme () {
+#
+# 	local icon_theme="$1"
+#
+# 	if [ "none${icon_theme}" = "none" ]; then
+# 		echo
+# 		echo "## Need {name}"
+# 		sc_icon_theme_usage
+# 		return
+# 	fi
+#
+# 	sys_xfce_set_icon_theme "$icon_theme"
+#
+# }
 
 sc_icon_theme () {
 
 	local icon_theme="$1"
 
 	if [ "none${icon_theme}" = "none" ]; then
-		echo
-		echo "## Need {name}"
-		sc_icon_theme_usage
+		sys_xfce_get_icon_theme
 		return
 	fi
 
@@ -449,6 +582,21 @@ EOF
 
 }
 
+# sc_cursor_theme () {
+#
+# 	local cursor_theme_name="$1"
+# 	local cursor_theme_size="$2"
+#
+# 	if [ "none${cursor_theme_name}" = "none" ]; then
+# 		echo
+# 		echo "## Need {name}"
+# 		sc_cursor_theme_usage
+# 		return
+# 	fi
+#
+# 	sys_xfce_set_cursor_theme "$cursor_theme_name" "$cursor_theme_size"
+#
+# }
 
 sc_cursor_theme () {
 
@@ -456,16 +604,13 @@ sc_cursor_theme () {
 	local cursor_theme_size="$2"
 
 	if [ "none${cursor_theme_name}" = "none" ]; then
-		echo
-		echo "## Need {name}"
-		sc_cursor_theme_usage
+		sys_xfce_get_cursor_theme
 		return
 	fi
 
 	sys_xfce_set_cursor_theme "$cursor_theme_name" "$cursor_theme_size"
 
 }
-
 
 ##
 ### Tail: Model
@@ -485,9 +630,19 @@ sub_run_wm_theme () {
 	sc_wm_theme $@
 }
 
+sub_run_wm_theme_help () {
+	#echo "sub_run_wm_theme_help"
+	sc_wm_theme_usage $@
+}
+
 sub_run_ui_theme () {
 	#echo "sub_run_ui_theme"
 	sc_ui_theme $@
+}
+
+sub_run_ui_theme_help () {
+	#echo "sub_run_ui_theme_help"
+	sc_ui_theme_usage $@
 }
 
 sub_run_icon_theme () {
@@ -495,14 +650,38 @@ sub_run_icon_theme () {
 	sc_icon_theme $@
 }
 
-sub_run_cursor_theme () {
-	#echo "sub_run_cursor_theme"
-	sc_cursor_theme_default $@
+sub_run_icon_theme_help () {
+	#echo "sub_run_icon_theme_help"
+	sc_icon_theme_usage $@
 }
 
-sub_run_all_default () {
-	#echo "sub_run_all_default"
-	#sc_all_default $@
+sub_run_cursor_theme () {
+	#echo "sub_run_cursor_theme"
+	sc_cursor_theme $@
+}
+
+sub_run_cursor_theme_help () {
+	#echo "sub_run_cursor_theme_help"
+	sc_cursor_theme_usage $@
+}
+
+
+
+sub_run_all () {
+	#echo "sub_run_all"
+	#sc_all $@
+	sys_xfce_get_all
+}
+
+sub_run_all_get_default () {
+	#echo "sub_run_all_get_default"
+	#sc_get_all_default $@
+	sys_xfce_get_all_default
+}
+
+sub_run_all_set_default () {
+	#echo "sub_run_all_set_default"
+	#sc_all_set_default $@
 	sys_xfce_set_all_default
 }
 
@@ -548,12 +727,30 @@ cat << EOF
 Usage:
 	$ $cmd_name [action]
 
-	$ $cmd_name wm_theme {name}
-	$ $cmd_name ui_theme {name}
-	$ $cmd_name icon_theme {name}
-	$ $cmd_name cursor_theme {name} [size]
+	## help
 
-	$ $cmd_name all_default
+	$ $cmd_name wm_theme_help
+	$ $cmd_name ui_theme_help
+	$ $cmd_name icon_theme_help
+	$ $cmd_name cursor_theme_help
+
+	## get or set
+
+	$ $cmd_name wm_theme [name]
+	$ $cmd_name ui_theme [name]
+	$ $cmd_name icon_theme [name]
+	$ $cmd_name cursor_theme [name] [size]
+
+	## get current
+
+	$ $cmd_name all
+
+	## get all default or set all default
+
+	$ $cmd_name all_get_default
+	$ $cmd_name all_set_default
+
+	## set default
 
 	$ $cmd_name wm_theme_default
 	$ $cmd_name ui_theme_default
@@ -562,8 +759,24 @@ Usage:
 
 Example:
 
+	## help
+
 	$ $cmd_name
 	$ $cmd_name help
+
+	$ $cmd_name wm_theme_help
+	$ $cmd_name ui_theme_help
+	$ $cmd_name icon_theme_help
+	$ $cmd_name cursor_theme_help
+
+	## get
+
+	$ $cmd_name wm_theme
+	$ $cmd_name ui_theme
+	$ $cmd_name icon_theme
+	$ $cmd_name cursor_theme
+
+	## set
 
 	$ $cmd_name wm_theme 'Breeze'
 	$ $cmd_name ui_theme 'NumixBlue'
