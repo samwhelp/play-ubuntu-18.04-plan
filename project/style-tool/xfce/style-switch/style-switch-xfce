@@ -196,8 +196,8 @@ util_self_update () {
 	local tmp_file_path="${THE_TMP_DIR_PATH}/${THE_CMD_FILE_NAME}"
 	wget -c "$THE_SELF_UPDATE_URL" -O "$tmp_file_path"
 
-	echo "install -m 764 $tmp_file_path $THE_CMD_FILE_PATH"
-	install -m 764 "$tmp_file_path" "$THE_CMD_FILE_PATH"
+	echo "install -m 755 $tmp_file_path $THE_CMD_FILE_PATH"
+	install -m 755 "$tmp_file_path" "$THE_CMD_FILE_PATH"
 
 	echo
 	echo "Current Version:"
