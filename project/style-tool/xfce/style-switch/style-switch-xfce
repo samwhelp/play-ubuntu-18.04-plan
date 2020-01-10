@@ -18,6 +18,7 @@
 ##
 set -e ## for Exit immediately if a command exits with a non-zero status.
 THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+THE_CMD_FILE_NAME=$(basename $0)
 ##
 ### Tail: Init
 ################################################################################
@@ -69,6 +70,20 @@ base_var_init () {
 	#THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/../.")
 	THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/.")
 
+	THE_CMD_VERSION='0.1'
+
+	THE_CMD_DIR_PATH="${THE_BASE_DIR_PATH}"
+
+	if [ "none${THE_CMD_FILE_NAME}" = 'none' ]; then
+		THE_CMD_FILE_NAME="style-switch-xfce"
+	fi
+
+	THE_CMD_FILE_PATH="${THE_CMD_DIR_PATH}/$THE_CMD_FILE_NAME"
+
+	## https://github.com/samwhelp/play-ubuntu-18.04-plan/blob/master/project/style-tool/xfce/style-switch/style-switch-xfce
+	THE_SELF_UPDATE_URL='https://raw.githubusercontent.com/samwhelp/play-ubuntu-18.04-plan/master/project/style-tool/xfce/style-switch/style-switch-xfce'
+
+
 
 	THE_ASSET_DIR_NAME="asset"
 	THE_ASSET_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_ASSET_DIR_NAME"
@@ -77,16 +92,16 @@ base_var_init () {
 	THE_VAR_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_VAR_DIR_NAME"
 
 
-	THE_PROFILE_DIR_NAME=".style-switch-xfce-profile"
+	THE_PROFILE_DIR_NAME=".${THE_CMD_FILE_NAME}-profile"
 	THE_PROFILE_DIR_PATH="$HOME/$THE_PROFILE_DIR_NAME"
 
-	THE_PROJECT_DIR_NAME="style-switch-xfce"
+	THE_PROJECT_DIR_NAME="${THE_CMD_FILE_NAME}"
 	THE_PROJECT_DIR_PATH="$HOME/.local/share/$THE_PROJECT_DIR_NAME"
 
-	THE_CONFIG_DIR_NAME="style-switch-xfce"
+	THE_CONFIG_DIR_NAME="${THE_CMD_FILE_NAME}"
 	THE_CONFIG_DIR_PATH="$HOME/.config/$THE_CONFIG_DIR_NAME"
 
-	THE_CACHE_DIR_NAME="style-switch-xfce"
+	THE_CACHE_DIR_NAME="${THE_CMD_FILE_NAME}"
 	THE_CACHE_DIR_PATH="$HOME/.cache/$THE_CACHE_DIR_NAME"
 
 
@@ -104,6 +119,12 @@ base_var_dump () {
 
 
 	util_debug_echo "THE_PLAN_DIR_PATH=$THE_PLAN_DIR_PATH"
+
+	util_debug_echo "THE_CMD_FILE_NAME=$THE_CMD_FILE_NAME"
+	util_debug_echo "THE_CMD_FILE_PATH=$THE_CMD_FILE_PATH"
+	util_debug_echo "THE_CMD_DIR_PATH=$THE_CMD_DIR_PATH"
+
+	util_debug_echo "THE_SELF_UPDATE_URL=$THE_SELF_UPDATE_URL"
 
 
 	util_debug_echo "THE_ASSET_DIR_NAME=$THE_ASSET_DIR_NAME"
@@ -159,6 +180,40 @@ sub_cmd_find_function_name () {
 ################################################################################
 
 
+################################################################################
+### Head: Util_Self_Update
+##
+
+util_make_tmp_dir () {
+	THE_TMP_DIR_PATH="/tmp/tmp.$$.$RANDOM"
+	mkdir "$THE_TMP_DIR_PATH"
+}
+
+
+util_self_update () {
+
+	util_make_tmp_dir
+	local tmp_file_path="${THE_TMP_DIR_PATH}/${THE_CMD_FILE_NAME}"
+	wget -c "$THE_SELF_UPDATE_URL" -O "$tmp_file_path"
+
+	echo "install -m 764 $tmp_file_path $THE_CMD_FILE_PATH"
+	install -m 764 "$tmp_file_path" "$THE_CMD_FILE_PATH"
+
+	echo
+	echo "Current Version:"
+
+	"$THE_CMD_FILE_PATH" version
+
+}
+
+
+main_version () {
+	echo $THE_CMD_VERSION
+}
+
+##
+### Tail: Util_Self_Update
+################################################################################
 
 
 ################################################################################
@@ -177,6 +232,12 @@ sys_xfce_set_wm_theme () {
 
 }
 
+sys_xfce_get_wm_theme () {
+
+	xfconf-query -c 'xfwm4' -p '/general/theme'
+
+}
+
 sys_xfce_set_ui_theme () {
 
 	local ui_theme="$1"
@@ -189,6 +250,12 @@ sys_xfce_set_ui_theme () {
 
 }
 
+sys_xfce_get_ui_theme () {
+
+	xfconf-query -c 'xsettings' -p '/Net/ThemeName'
+
+}
+
 sys_xfce_set_icon_theme () {
 
 	local icon_theme="$1"
@@ -198,6 +265,12 @@ sys_xfce_set_icon_theme () {
 
 	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s "$icon_theme"
 	echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s '$icon_theme'"
+
+}
+
+sys_xfce_get_icon_theme () {
+
+	xfconf-query -c 'xsettings' -p '/Net/IconThemeName'
 
 }
 
@@ -240,6 +313,47 @@ sys_xfce_set_cursor_theme () {
 
 }
 
+sys_xfce_get_cursor_theme () {
+	local name=$(xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName')
+
+	local size=$(xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize')
+
+	echo "${name} ${size}"
+}
+
+sys_xfce_get_all () {
+
+	local wm_theme=$(sys_xfce_get_wm_theme)
+	local ui_theme=$(sys_xfce_get_ui_theme)
+	local icon_theme=$(sys_xfce_get_icon_theme)
+	local cursor_theme=$(sys_xfce_get_cursor_theme)
+
+	echo "wm_theme: ${wm_theme}"
+	echo "ui_theme: ${ui_theme}"
+	echo "icon_theme: ${icon_theme}"
+	echo "cursor_theme: ${cursor_theme}"
+
+}
+
+
+sys_xfce_get_all_default () {
+
+	local wm_theme=$(sys_xfce_get_wm_theme_default)
+	local ui_theme=$(sys_xfce_get_ui_theme_default)
+	local icon_theme=$(sys_xfce_get_icon_theme_default)
+	local cursor_theme=$(sys_xfce_get_cursor_theme_default)
+	local cursor_theme_for_dark=$(sys_xfce_get_cursor_theme_default_for_dark)
+	local cursor_theme_for_light=$(sys_xfce_get_cursor_theme_default_for_light)
+
+	echo "wm_theme: ${wm_theme}"
+	echo "ui_theme: ${ui_theme}"
+	echo "icon_theme: ${icon_theme}"
+	echo "cursor_theme: ${cursor_theme}"
+	echo "cursor_theme_for_dark: ${cursor_theme_for_dark}"
+	echo "cursor_theme_for_light: ${cursor_theme_for_light}"
+
+}
+
 sys_xfce_set_all_default () {
 
 	sys_xfce_set_wm_theme_default
@@ -249,39 +363,74 @@ sys_xfce_set_all_default () {
 
 }
 
+sys_xfce_get_wm_theme_default () {
+
+	echo 'Breeze'
+
+}
+
 sys_xfce_set_wm_theme_default () {
 
-	sys_xfce_set_wm_theme 'Breeze'
+	sys_xfce_set_wm_theme $(sys_xfce_get_wm_theme_default)
+
+}
+
+sys_xfce_get_ui_theme_default () {
+
+	echo 'NumixBlue'
 
 }
 
 sys_xfce_set_ui_theme_default () {
 
-	sys_xfce_set_ui_theme 'NumixBlue'
+	sys_xfce_set_ui_theme $(sys_xfce_get_ui_theme_default)
+
+}
+
+sys_xfce_get_icon_theme_default () {
+
+	echo 'Numix'
 
 }
 
 sys_xfce_set_icon_theme_default () {
 
-	sys_xfce_set_icon_theme 'Numix'
+	sys_xfce_set_icon_theme $(sys_xfce_get_icon_theme_default)
+
+}
+
+sys_xfce_get_cursor_theme_default () {
+
+	echo 'breeze_cursors' 24
 
 }
 
 sys_xfce_set_cursor_theme_default () {
 
-	sys_xfce_set_cursor_theme 'breeze_cursors' 24
+	sys_xfce_set_cursor_theme $(sys_xfce_get_cursor_theme_default)
+
+}
+
+sys_xfce_get_cursor_theme_default_for_dark () {
+
+	echo 'Breeze_Snow' 24
 
 }
 
 sys_xfce_set_cursor_theme_default_for_dark () {
 
-	sys_xfce_set_cursor_theme 'Breeze_Snow' 24
+	sys_xfce_set_cursor_theme $(sys_xfce_get_cursor_theme_default_for_dark)
+}
+
+sys_xfce_get_cursor_theme_default_for_light () {
+
+	echo 'breeze_cursors' 24
 
 }
 
 sys_xfce_set_cursor_theme_default_for_light () {
 
-	sys_xfce_set_cursor_theme 'breeze_cursors' 24
+	sys_xfce_set_cursor_theme $(sys_xfce_get_cursor_theme_default_for_light)
 
 }
 
@@ -705,6 +854,14 @@ sub_run_help () {
 	main_usage $@
 }
 
+sub_run_version () {
+	main_version $@
+}
+
+sub_run_self_update () {
+	util_self_update $@
+}
+
 sub_run_default () {
 	#echo "sub_run_numix"
 	#ss_default $@
@@ -767,7 +924,7 @@ sub_run_sephia_wm_honda_super_cub () {
 
 main_usage () {
 	##local cmd_name="$0"
-	local cmd_name="style-switch-xfce"
+	local cmd_name="$THE_CMD_FILE_NAME"
 
 cat << EOF
 Usage:
@@ -775,8 +932,20 @@ Usage:
 
 Example:
 
+	## help
+
 	$ $cmd_name
 	$ $cmd_name help
+
+	## version
+
+	$ $cmd_name version
+
+	## self_update
+
+	$ $cmd_name self_update
+
+	## all
 
 	$ $cmd_name default
 

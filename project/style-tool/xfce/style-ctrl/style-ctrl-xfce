@@ -101,6 +101,7 @@ base_var_init () {
 
 	THE_CMD_FILE_PATH="${THE_CMD_DIR_PATH}/$THE_CMD_FILE_NAME"
 
+	## https://github.com/samwhelp/play-ubuntu-18.04-plan/blob/master/project/style-tool/xfce/style-ctrl/style-ctrl-xfce
 	THE_SELF_UPDATE_URL='https://raw.githubusercontent.com/samwhelp/play-ubuntu-18.04-plan/master/project/style-tool/xfce/style-ctrl/style-ctrl-xfce'
 
 
@@ -188,9 +189,6 @@ base_var_dump
 ################################################################################
 
 
-
-
-
 ################################################################################
 ### Head: Util_SubCmd
 ##
@@ -223,6 +221,7 @@ util_self_update () {
 	echo "install -m 764 $tmp_file_path $THE_CMD_FILE_PATH"
 	install -m 764 "$tmp_file_path" "$THE_CMD_FILE_PATH"
 
+	echo
 	echo "Current Version:"
 
 	"$THE_CMD_FILE_PATH" version
