@@ -8,7 +8,7 @@ _style_ctrl_xfce () {
 	_init_completion || return
 
 	if [ "$cword" = "1" ]; then
-		local action_list=$(style-ctrl-xfce self_actions)
+		local action_list=$(DEBUG_SC_CTRL=false style-ctrl-xfce self_actions)
 		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
 	fi
 
