@@ -91,6 +91,9 @@ base_var_init () {
 	THE_TARGET_FILE_PATH="${HOME}/bin/${THE_TARGET_FILE_NAME}"
 
 
+	THE_TMP_DIR_PATH="/tmp"
+
+
 }
 
 base_var_dump () {
@@ -114,6 +117,7 @@ base_var_dump () {
 	util_debug_echo "THE_TARGET_FILE_NAME=$THE_TARGET_FILE_NAME"
 	util_debug_echo "THE_TARGET_FILE_PATH=$THE_TARGET_FILE_PATH"
 
+	util_debug_echo "THE_TMP_DIR_PATH=$THE_TMP_DIR_PATH"
 
 
 	util_debug_echo "#"
