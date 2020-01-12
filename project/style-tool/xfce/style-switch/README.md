@@ -8,7 +8,7 @@ Run
 ``` sh
 mkdir -p "$HOME/bin"
 
-wget -c 'https://raw.githubusercontent.com/samwhelp/play-ubuntu-18.04-plan/master/project/style-tool/xfce/style-switch/style-switch-xfce' -O "$HOME/bin/style-switch-xfce"
+wget 'https://raw.githubusercontent.com/samwhelp/play-ubuntu-18.04-plan/master/project/style-tool/xfce/style-switch/style-switch-xfce' -O "$HOME/bin/style-switch-xfce"
 
 chmod u+x "$HOME/bin/style-switch-xfce"
 ```
