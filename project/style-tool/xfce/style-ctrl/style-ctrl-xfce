@@ -233,6 +233,10 @@ main_version () {
 	echo $THE_CMD_VERSION
 }
 
+util_self_actions () {
+	grep '^sub_run' "${THE_CMD_FILE_PATH}" | cut -d ' ' -f 1 | awk -F 'sub_run_' '{print $2}' | sort -u
+}
+
 ##
 ### Tail: Util_Self_Update
 ################################################################################
@@ -690,6 +694,9 @@ sub_run_self_update () {
 }
 
 
+sub_run_self_actions () {
+	util_self_actions $@
+}
 
 
 sub_run_wm_theme () {
