@@ -8,7 +8,7 @@ mkdir -p "$HOME/bin"
 
 wget 'https://raw.githubusercontent.com/samwhelp/play-ubuntu-18.04-plan/master/project/style-tool/xfce/style-ctrl/style-ctrl-xfce' -O "$HOME/bin/style-ctrl-xfce"
 
-chmod u+x "$HOME/bin/style-ctrl-xfce"
+chmod 755 "$HOME/bin/style-ctrl-xfce"
 ```
 
 Or Run
