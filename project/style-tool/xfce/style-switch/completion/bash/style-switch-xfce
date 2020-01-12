@@ -1,0 +1,18 @@
+
+## /etc/bash_completion.d/style-switch-xfce
+## $ sudo install -m 644 ./style-switch-xfce /etc/bash_completion.d/style-switch-xfce
+
+_style_switch_xfce () {
+
+	local cur prev words cword
+	_init_completion || return
+
+	if [ "$cword" = "1" ]; then
+		local action_list=$(style-switch-xfce self_actions)
+		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
+	fi
+
+	return 0
+}
+
+complete -F _style_switch_xfce style-switch-xfce
