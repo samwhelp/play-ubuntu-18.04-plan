@@ -1,0 +1,19 @@
+
+## /etc/bash_completion.d/demo-completion
+
+_demo () {
+
+	echo
+	echo '{'
+
+	echo '$@:' $@
+	echo '$1:' $1
+	echo '$2:' $2
+	echo '$3:' $3
+
+	echo '}'
+	echo
+
+}
+
+complete -F _demo demo
