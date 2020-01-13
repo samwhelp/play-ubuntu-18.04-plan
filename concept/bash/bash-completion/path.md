@@ -68,3 +68,23 @@ show
 * /etc/profile.d/bash_completion.sh
 * /etc/bash_completion
 * /usr/share/bash-completion/bash_completion
+
+
+or
+
+* ~/.bashrc
+* /usr/share/bash-completion/bash_completion
+
+howto test
+
+``` sh
+source ~/.bashrc
+```
+
+``` sh
+bash
+```
+
+``` sh
+bash -l
+```
