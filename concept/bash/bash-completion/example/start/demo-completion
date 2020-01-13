@@ -1,0 +1,10 @@
+
+## /etc/bash_completion.d/demo-completion
+
+_demo () {
+
+	echo -n 'yes '
+
+}
+
+complete -F _demo demo

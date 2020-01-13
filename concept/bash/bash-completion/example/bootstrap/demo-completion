@@ -1,0 +1,4 @@
+
+## /etc/bash_completion.d/demo-completion
+
+echo 'Boot'
