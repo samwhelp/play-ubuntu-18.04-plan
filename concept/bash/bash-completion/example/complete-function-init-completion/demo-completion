@@ -1,0 +1,22 @@
+
+## /etc/bash_completion.d/demo-completion
+
+_demo () {
+
+	local cur prev words cword
+	_init_completion || return
+
+	echo
+	echo '{'
+
+	echo '$cur:' $cur
+	echo '$prev:' $prev
+	echo '$words:' $words
+	echo '$cword:' $cword
+
+	echo '}'
+	echo
+
+}
+
+complete -F _demo demo

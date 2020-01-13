@@ -1,0 +1,10 @@
+
+## /etc/bash_completion.d/demo-completion
+
+_demo () {
+
+	COMPREPLY=(111 222)
+
+}
+
+complete -F _demo demo

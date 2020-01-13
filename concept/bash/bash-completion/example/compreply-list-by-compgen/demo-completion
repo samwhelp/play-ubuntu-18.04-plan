@@ -1,0 +1,15 @@
+
+## /etc/bash_completion.d/demo-completion
+
+_demo () {
+
+	local cur prev words cword
+	_init_completion || return
+
+	if [ "$cword" = "1" ]; then
+		COMPREPLY=( $( compgen -W 'all all_get_default all_set_default' -- "$cur" ) )
+	fi
+
+}
+
+complete -F _demo demo
