@@ -64,7 +64,7 @@ show
 /usr/share/doc/bash/README.md.bash_completion.gz
 ```
 
-
+* /etc/profile
 * /etc/profile.d/bash_completion.sh
 * /etc/bash_completion
 * /usr/share/bash-completion/bash_completion
