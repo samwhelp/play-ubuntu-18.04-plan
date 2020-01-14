@@ -142,6 +142,10 @@
 
 * [prototype/style-de/xfce/theme-obsidian-2-gray](prototype/style-de/xfce/theme-obsidian-2-gray)
 * [prototype/style-de/xfce/theme-fantome-wm-2bxfwm-lucy](prototype/style-de/xfce/theme-fantome-wm-2bxfwm-lucy)
+* [prototype/style-de/xfce/theme-honda-super-cub-wm-chandelier](prototype/style-de/xfce/theme-honda-super-cub-wm-chandelier)
+* [prototype/style-de/xfce/theme-honda-super-cub-wm-rgapsline](prototype/style-de/xfce/theme-honda-super-cub-wm-rgapsline)
+* [prototype/style-de/xfce/theme-honda-super-cub-wm-pastel-dark](prototype/style-de/xfce/theme-honda-super-cub-wm-pastel-dark)
+* [prototype/style-de/xfce/theme-sephia-wm-honda-super-cub](prototype/style-de/xfce/theme-sephia-wm-honda-super-cub)
 
 
 ## Style / Tool
