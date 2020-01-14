@@ -153,6 +153,7 @@
 ### xfce
 
 * [project/style-tool/xfce/style-switch](project/style-tool/xfce/style-switch)
+* [project/style-tool/xfce/style-ctrl](project/style-tool/xfce/style-ctrl)
 
 
 ## Firefox
