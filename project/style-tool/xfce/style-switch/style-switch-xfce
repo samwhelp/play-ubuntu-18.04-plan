@@ -689,6 +689,52 @@ ss_obsidian_2_gray () {
 
 
 ################################################################################
+### Head: Model ss_shades_of_gray
+##
+
+ss_shades_of_gray_config_wm_theme () {
+
+	sys_xfce_set_wm_theme 'Shades-of-gray'
+
+}
+
+ss_shades_of_gray_config_ui_theme () {
+
+	sys_xfce_set_ui_theme 'Shades-of-gray'
+
+
+}
+
+ss_shades_of_gray_config_icon_theme () {
+
+	sys_xfce_set_icon_theme 'Black-Frost-Suru'
+
+}
+
+ss_shades_of_gray_config_cursor_theme () {
+
+	sys_xfce_set_cursor_theme_default
+
+}
+
+ss_shades_of_gray () {
+	#echo "ss_shades_of_gray"
+	#echo "$@"
+
+
+	ss_shades_of_gray_config_wm_theme
+	ss_shades_of_gray_config_ui_theme
+	ss_shades_of_gray_config_icon_theme
+	ss_shades_of_gray_config_cursor_theme
+
+}
+
+##
+### Tail: Model ss_shades_of_gray
+################################################################################
+
+
+################################################################################
 ### Head: Model ss_fantome_wm_2bxfwm_lucy
 ##
 
@@ -959,6 +1005,11 @@ sub_run_obsidian_2_gray () {
 	ss_obsidian_2_gray $@
 }
 
+sub_run_shades_of_gray () {
+	#echo "sub_run_shades_of_gray"
+	ss_shades_of_gray $@
+}
+
 sub_run_fantome_wm_2bxfwm_lucy () {
 	#echo "sub_run_fantome_wm_2bxfwm_lucy"
 	ss_fantome_wm_2bxfwm_lucy $@
@@ -1029,6 +1080,8 @@ Example:
 	$ $cmd_name numix_blue_wm_breeze
 
 	$ $cmd_name obsidian_2_gray
+
+	$ $cmd_name shades_of_gray
 
 	$ $cmd_name fantome_wm_2bxfwm_lucy
 
