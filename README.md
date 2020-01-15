@@ -141,6 +141,7 @@
 ### xfce
 
 * [prototype/style-de/xfce/theme-obsidian-2-gray](prototype/style-de/xfce/theme-obsidian-2-gray)
+* [prototype/style-de/xfce/theme-shades-of-gray](prototype/style-de/xfce/theme-shades-of-gray)
 * [prototype/style-de/xfce/theme-fantome-wm-2bxfwm-lucy](prototype/style-de/xfce/theme-fantome-wm-2bxfwm-lucy)
 * [prototype/style-de/xfce/theme-honda-super-cub-wm-chandelier](prototype/style-de/xfce/theme-honda-super-cub-wm-chandelier)
 * [prototype/style-de/xfce/theme-honda-super-cub-wm-rgapsline](prototype/style-de/xfce/theme-honda-super-cub-wm-rgapsline)
