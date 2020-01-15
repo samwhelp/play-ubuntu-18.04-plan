@@ -16,8 +16,8 @@ theme_asset_remove () {
 
 theme_asset_remove_theme_sephia () {
 
-	rm -rf "$HOME/.themes/Sephia"
 	echo "rm -rf $HOME/.themes/Sephia"
+	rm -rf "$HOME/.themes/Sephia"
 
 	echo
 
@@ -28,8 +28,8 @@ theme_asset_remove_theme_sephia () {
 
 theme_asset_remove_theme_honda_super_cub () {
 
-	rm -rf "$HOME/.themes/Honda-Super-Cub"
 	echo "rm -rf $HOME/.themes/Honda-Super-Cub"
+	rm -rf "$HOME/.themes/Honda-Super-Cub"
 
 	echo
 
@@ -40,13 +40,13 @@ theme_asset_remove_theme_honda_super_cub () {
 
 theme_asset_remove_icon_nord_black_frost_numix () {
 
-	rm -rf "$HOME/.icons/Nord-Black-Frost-Numix"
-	echo "rm -rf $HOME/.icons/Nord-Black-Frost-Numix"
+	echo "rm -rf $HOME/.icons/Black-Frost-Numix"
+	rm -rf "$HOME/.icons/Black-Frost-Numix"
 
 	echo
 
-	#file "$HOME/.icons/Nord-Black-Frost-Numix"
-	#ls -l "$HOME/.icons/Nord-Black-Frost-Numix"
+	#file "$HOME/.icons/Black-Frost-Numix"
+	#ls -l "$HOME/.icons/Black-Frost-Numix"
 
 }
 

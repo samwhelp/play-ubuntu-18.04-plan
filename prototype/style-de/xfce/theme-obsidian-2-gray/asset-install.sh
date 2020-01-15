@@ -44,21 +44,22 @@ theme_asset_install_icon_nord_black_frost_suru () {
 	## https://www.gnome-look.org/p/1333828/
 	## https://github.com/rtlewis88/rtl88-Themes/tree/Nord-Black-Frost/Nord-Black-Frost-Suru
 
-	git clone -b 'Nord-Black-Frost' 'https://github.com/rtlewis88/rtl88-Themes.git' 'asset/Nord-Black-Frost'
-	echo "git clone -b 'Nord-Black-Frost' 'https://github.com/rtlewis88/rtl88-Themes.git' 'asset/Nord-Black-Frost'"
+	echo "git clone -b 'Nord-Black-Frost' 'https://github.com/rtlewis88/rtl88-Themes.git' 'asset/rtl88-Themes_Nord-Black-Frost'"
+	git clone -b 'Nord-Black-Frost' 'https://github.com/rtlewis88/rtl88-Themes.git' 'asset/rtl88-Themes_Nord-Black-Frost'
 
-	#/usr/lib/x86_64-linux-gnu/xfce4/settings/appearance-install-theme 'asset/Nord-Black-Frost/Nord-Black-Frost-Suru'
-	$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/Nord-Black-Frost/Nord-Black-Frost-Suru'
-	echo "$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/Nord-Black-Frost/Nord-Black-Frost-Suru'"
+	#/usr/lib/x86_64-linux-gnu/xfce4/settings/appearance-install-theme 'asset/rtl88-Themes_Nord-Black-Frost/Black-Frost-Suru'
+	echo "$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/rtl88-Themes_Nord-Black-Frost/Black-Frost-Suru'"
+	$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/rtl88-Themes_Nord-Black-Frost/Black-Frost-Suru'
 
-	echo
-	echo "gtk-update-icon-cache $HOME/.icons/Nord-Black-Frost-Suru"
-	gtk-update-icon-cache "$HOME/.icons/Nord-Black-Frost-Suru"
 
 	echo
+	echo "gtk-update-icon-cache $HOME/.icons/Black-Frost-Suru"
+	gtk-update-icon-cache "$HOME/.icons/Black-Frost-Suru"
 
-	file "$HOME/.icons/Nord-Black-Frost-Suru"
-	ls -l "$HOME/.icons/Nord-Black-Frost-Suru"
+	echo
+
+	file "$HOME/.icons/Black-Frost-Suru"
+	ls -l "$HOME/.icons/Black-Frost-Suru"
 
 	echo
 

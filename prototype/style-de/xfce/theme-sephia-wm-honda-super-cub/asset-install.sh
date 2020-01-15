@@ -66,23 +66,23 @@ theme_asset_install_icon_nord_black_frost_numix () {
 
 	## https://www.gnome-look.org/search/projectSearchText/Nord-Black-Frost-Numix
 	## https://www.gnome-look.org/p/1333828/
-	## https://github.com/rtlewis88/rtl88-Themes/tree/Nord-Black-Frost/Nord-Black-Frost-Numix
+	## https://github.com/rtlewis88/rtl88-Themes/tree/Nord-Black-Frost/Black-Frost-Numix
 
-	git clone -b 'Nord-Black-Frost' 'https://github.com/rtlewis88/rtl88-Themes.git' 'asset/Nord-Black-Frost'
-	echo "git clone -b 'Nord-Black-Frost' 'https://github.com/rtlewis88/rtl88-Themes.git' 'asset/Nord-Black-Frost'"
+	echo "git clone -b 'Nord-Black-Frost' 'https://github.com/rtlewis88/rtl88-Themes.git' 'asset/rtl88-Themes_Nord-Black-Frost'"
+	git clone -b 'Nord-Black-Frost' 'https://github.com/rtlewis88/rtl88-Themes.git' 'asset/rtl88-Themes_Nord-Black-Frost'
 
-	#/usr/lib/x86_64-linux-gnu/xfce4/settings/appearance-install-theme 'asset/Nord-Black-Frost/Nord-Black-Frost-Numix'
-	$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/Nord-Black-Frost/Nord-Black-Frost-Numix'
-	echo "$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/Nord-Black-Frost/Nord-Black-Frost-Numix'"
-
-	echo
-	echo "gtk-update-icon-cache $HOME/.icons/Nord-Black-Frost-Numix"
-	gtk-update-icon-cache "$HOME/.icons/Nord-Black-Frost-Numix"
+	#/usr/lib/x86_64-linux-gnu/xfce4/settings/appearance-install-theme 'asset/rtl88-Themes_Nord-Black-Frost/Black-Frost-Numix'
+	echo "$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/rtl88-Themes_Nord-Black-Frost/Black-Frost-Numix'"
+	$(dpkg -L xfce4-settings | grep appearance-install-theme) 'asset/rtl88-Themes_Nord-Black-Frost/Black-Frost-Numix'
 
 	echo
+	echo "gtk-update-icon-cache $HOME/.icons/Black-Frost-Numix"
+	gtk-update-icon-cache "$HOME/.icons/Black-Frost-Numix"
 
-	file "$HOME/.icons/Nord-Black-Frost-Numix"
-	ls -l "$HOME/.icons/Nord-Black-Frost-Numix"
+	echo
+
+	file "$HOME/.icons/Black-Frost-Numix"
+	ls -l "$HOME/.icons/Black-Frost-Numix"
 
 	echo
 

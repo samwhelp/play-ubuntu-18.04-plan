@@ -15,8 +15,8 @@ theme_asset_remove () {
 
 theme_asset_remove_theme_obsidian_2 () {
 
-	rm -rf "$HOME/.themes/Obsidian-2-Gray"
 	echo "rm -rf $HOME/.themes/Obsidian-2-Gray"
+	rm -rf "$HOME/.themes/Obsidian-2-Gray"
 
 	echo
 
@@ -27,13 +27,13 @@ theme_asset_remove_theme_obsidian_2 () {
 
 theme_asset_remove_icon_nord_black_frost_suru () {
 
-	rm -rf "$HOME/.icons/Nord-Black-Frost-Suru"
-	echo "rm -rf $HOME/.icons/Nord-Black-Frost-Suru"
+	echo "rm -rf $HOME/.icons/Black-Frost-Suru"
+	rm -rf "$HOME/.icons/Black-Frost-Suru"
 
 	echo
 
-	#file "$HOME/.icons/Nord-Black-Frost-Suru"
-	#ls -l "$HOME/.icons/Nord-Black-Frost-Suru"
+	#file "$HOME/.icons/Black-Frost-Suru"
+	#ls -l "$HOME/.icons/Black-Frost-Suru"
 
 }
 
