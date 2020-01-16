@@ -1,0 +1,5 @@
+project('toggle-show-desktop', 'c')
+add_global_arguments('-D WNCK_I_KNOW_THIS_IS_UNSTABLE', language : 'c')
+libgtk_dep = dependency('gtk+-3.0', version: '>=3.22')
+libwnck_dep = dependency('libwnck-3.0', version: '>=3.24')
+executable('toggle-show-desktop', 'main.c', dependencies : [libgtk_dep, libwnck_dep])
