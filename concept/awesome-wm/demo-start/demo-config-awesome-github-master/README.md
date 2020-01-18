@@ -63,3 +63,41 @@ run
 * [/usr/local/etc/xdg/awesome/rc.lua](https://github.com/awesomeWM/awesome/blob/master/awesomerc.lua)
 * [https://github.com/awesomeWM/awesome#building-and-installation](https://github.com/awesomeWM/awesome#building-and-installation)
 * [https://github.com/awesomeWM/awesome#debian-based](https://github.com/awesomeWM/awesome#debian-based)
+
+## Find themes
+
+run
+
+``` sh
+ls /usr/local/share/awesome/themes/ -1
+```
+
+show
+
+```
+default
+gtk
+sky
+xresources
+zenburn
+```
+
+## Version
+
+run
+
+``` sh
+awesome -v
+```
+
+show
+
+```
+awesome v4.3-655-g67672bf5-dirty (Too long)
+ • Compiled against Lua 5.3.3 (running with Lua 5.3)
+ • D-Bus support: yes
+ • xcb-errors support: no
+ • execinfo support: yes
+ • xcb-randr version: 1.6
+ • LGI version: 0.9.2
+```
