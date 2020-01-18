@@ -3,11 +3,15 @@
 
 ### Install awesome
 
+to install [Package: [awesome](https://packages.ubuntu.com/bionic/awesome)].
+
 ``` sh
 sudo apt-get install awesome
 ```
 
 ### Install xserver-xephyr
+
+to install [Package: [xserver-xephyr](https://packages.ubuntu.com/bionic/xserver-xephyr)].
 
 ``` sh
 sudo apt-get install xserver-xephyr
@@ -23,11 +27,11 @@ run
 
 show
 
-``` 
+```
 hi
 ```
 
-## Refercnce
+## Reference
 
 * [https://github.com/worron/awesome-config/blob/master/scripts/run-with-xephyr.sh](https://github.com/worron/awesome-config/blob/master/scripts/run-with-xephyr.sh)
 * YouTube / [Awesome WM advanced config updated](https://www.youtube.com/watch?v=_1M1Wv64JGA)
