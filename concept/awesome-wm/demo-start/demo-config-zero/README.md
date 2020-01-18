@@ -15,8 +15,16 @@ sudo apt-get install xserver-xephyr
 
 ## Start Test
 
+run
+
 ``` sh
 ./bin/dev.sh
+```
+
+show
+
+``` 
+hi
 ```
 
 ## Refercnce
