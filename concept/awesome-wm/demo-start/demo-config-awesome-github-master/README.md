@@ -40,6 +40,12 @@ to install deb (Ubuntu 18.04)
 sudo dpkg -i build/*.deb
 ```
 
+to install xsession desktop entry
+
+```sh
+sudo install -m 644 /usr/local/share/xsessions/awesome.desktop /usr/share/xsessions/awesome.desktop
+```
+
 ### Install xserver-xephyr
 
 to install [Package: [xserver-xephyr](https://packages.ubuntu.com/bionic/xserver-xephyr)].
