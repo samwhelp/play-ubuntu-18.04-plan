@@ -59,7 +59,7 @@ sudo apt-get install xserver-xephyr
 run
 
 ``` sh
-./bin/dev.sh
+bin/dev.sh
 ```
 
 
