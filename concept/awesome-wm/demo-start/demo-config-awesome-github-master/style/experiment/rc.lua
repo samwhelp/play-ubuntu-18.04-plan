@@ -239,7 +239,8 @@ awful.mouse.append_global_mousebindings({
 -- {{{ Key bindings
 
 --------------------------------------------------------------------------------
--- Head: Applications
+--- Head: Applications
+--
 
 awful.keyboard.append_global_keybindings({
 	awful.key(
@@ -298,19 +299,180 @@ awful.keyboard.append_global_keybindings({
 	),
 })
 
--- Tail: Applications
+--
+--- Tail: Applications
 --------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Head: Misc
+--
+
+awful.keyboard.append_global_keybindings({
+
+	awful.key(
+		{ key_mod }, "F1", hotkeys_popup.show_help,
+		{ description = "Hotkeys", group = "Awesome"}
+	),
+
+	awful.key(
+		{ key_mod }, "space", function () menu_main:show() end,
+		{ description = "Show Main Menu", group = "Awesome"}
+	),
+
+})
+
+--
+--- Tail: Misc
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Head: Layout
+--
+
+awful.keyboard.append_global_keybindings({
+
+	awful.key(
+		{ key_mod }, "z", function () awful.layout.inc(1) end,
+		{ description = "Next Layout", group = "Layout"}
+	),
+
+	awful.key(
+		{ key_mod, key_shift }, "z", function () awful.layout.inc(-1) end,
+		{ description = "Previous Layout", group = "Layout"}
+	),
+
+	awful.key(
+		{ key_alt }, "k", function () awful.layout.inc(-1) end,
+		{ description = "Previous Layout", group = "Layout"}
+	),
+
+	awful.key(
+		{ key_alt }, "j", function () awful.layout.inc(1) end,
+		{ description = "Next Layout", group = "Layout"}
+	),
+
+
+
+})
+
+--
+--- Tail: Layout
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Head: Tag
+--
+
+awful.keyboard.append_global_keybindings({
+
+	awful.key(
+		{ key_alt }, "h", awful.tag.viewprev,
+		{ description = "Previous Layout", group = "Tag"}
+	),
+
+	awful.key(
+		{ key_alt }, "l", awful.tag.viewnext,
+		{ description = "Next Tag", group = "Tag"}
+	),
+
+	awful.key(
+		{ key_alt }, "p", awful.tag.history.restore,
+		{ description = "Last Tag", group = "Tag"}
+	),
+
+
+	awful.key(
+		{ key_alt }, "a", awful.tag.viewprev,
+		{ description = "Previous Layout", group = "Tag"}
+	),
+
+	awful.key(
+		{ key_alt }, "s", awful.tag.viewnext,
+		{ description = "Next Tag", group = "Tag"}
+	),
+
+	awful.key(
+		{ key_alt }, "z", awful.tag.history.restore,
+		{ description = "Last Tag", group = "Tag"}
+	),
+
+})
+
+--
+--- Tail: Tag
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Head: Client
+--
+
+awful.keyboard.append_global_keybindings({
+
+	awful.key(
+		{ key_mod }, "k", function () awful.client.focus.byidx(-1) end,
+		{ description = "Previous Client", group = "Client"}
+	),
+
+	awful.key(
+		{ key_mod }, "j", function () awful.client.focus.byidx(1) end,
+		{ description = "Next Client", group = "Client"}
+	),
+
+	awful.key(
+		{ key_mod }, "o",
+		function ()
+			awful.client.focus.history.previous()
+			if client.focus then
+				client.focus:raise()
+			end
+		end,
+		{ description = "Back Last Client", group = "Client"}
+	),
+
+
+	awful.key(
+		{ key_mod }, "a", function () awful.client.focus.byidx(-1) end,
+		{ description = "Previous Client", group = "Client"}
+	),
+
+	awful.key(
+		{ key_mod }, "s", function () awful.client.focus.byidx(1) end,
+		{ description = "Next Client", group = "Client"}
+	),
+
+
+	awful.key(
+		{ key_mod }, "Tab",
+		function ()
+			awful.client.focus.history.previous()
+			if client.focus then
+				client.focus:raise()
+			end
+		end,
+		{ description = "Back Last Client", group = "Client"}
+	),
+
+})
+
+--
+--- Tail: Client
+--------------------------------------------------------------------------------
+
 
 -- General Awesome keys
 awful.keyboard.append_global_keybindings({
-    awful.key({ key_mod,           }, "s",      hotkeys_popup.show_help,
-              {description="show help", group="awesome"}),
-    awful.key({ key_mod,           }, "w", function () menu_main:show() end,
-              {description = "show main menu", group = "awesome"}),
-    awful.key({ key_mod, "Control" }, "r", awesome.restart,
-              {description = "reload awesome", group = "awesome"}),
-    awful.key({ key_mod, "Shift"   }, "q", awesome.quit,
-              {description = "quit awesome", group = "awesome"}),
+    -- awful.key({ key_mod,           }, "s",      hotkeys_popup.show_help,
+    --           {description="show help", group="awesome"}),
+    -- awful.key({ key_mod,           }, "w", function () menu_main:show() end,
+    --           {description = "show main menu", group = "awesome"}),
+    -- awful.key({ key_mod, "Control" }, "r", awesome.restart,
+    --           {description = "reload awesome", group = "awesome"}),
+    -- awful.key({ key_mod, "Shift"   }, "q", awesome.quit,
+    --           {description = "quit awesome", group = "awesome"}),
     awful.key({ key_mod }, "x",
               function ()
                   awful.prompt.run {
@@ -330,37 +492,37 @@ awful.keyboard.append_global_keybindings({
 })
 
 -- Tags related keybindings
-awful.keyboard.append_global_keybindings({
-    awful.key({ key_mod,           }, "Left",   awful.tag.viewprev,
-              {description = "view previous", group = "tag"}),
-    awful.key({ key_mod,           }, "Right",  awful.tag.viewnext,
-              {description = "view next", group = "tag"}),
-    awful.key({ key_mod,           }, "Escape", awful.tag.history.restore,
-              {description = "go back", group = "tag"}),
-})
+-- awful.keyboard.append_global_keybindings({
+--     awful.key({ key_mod,           }, "Left",   awful.tag.viewprev,
+--               {description = "view previous", group = "tag"}),
+--     awful.key({ key_mod,           }, "Right",  awful.tag.viewnext,
+--               {description = "view next", group = "tag"}),
+--     awful.key({ key_mod,           }, "Escape", awful.tag.history.restore,
+--               {description = "go back", group = "tag"}),
+-- })
 
 -- Focus related keybindings
 awful.keyboard.append_global_keybindings({
-    awful.key({ key_mod,           }, "j",
-        function ()
-            awful.client.focus.byidx( 1)
-        end,
-        {description = "focus next by index", group = "client"}
-    ),
-    awful.key({ key_mod,           }, "k",
-        function ()
-            awful.client.focus.byidx(-1)
-        end,
-        {description = "focus previous by index", group = "client"}
-    ),
-    awful.key({ key_mod,           }, "Tab",
-        function ()
-            awful.client.focus.history.previous()
-            if client.focus then
-                client.focus:raise()
-            end
-        end,
-        {description = "go back", group = "client"}),
+    -- awful.key({ key_mod,           }, "j",
+    --     function ()
+    --         awful.client.focus.byidx( 1)
+    --     end,
+    --     {description = "focus next by index", group = "client"}
+    -- ),
+    -- awful.key({ key_mod,           }, "k",
+    --     function ()
+    --         awful.client.focus.byidx(-1)
+    --     end,
+    --     {description = "focus previous by index", group = "client"}
+    -- ),
+    -- awful.key({ key_mod,           }, "Tab",
+    --     function ()
+    --         awful.client.focus.history.previous()
+    --         if client.focus then
+    --             client.focus:raise()
+    --         end
+    --     end,
+    --     {description = "go back", group = "client"}),
     awful.key({ key_mod, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
               {description = "focus the next screen", group = "screen"}),
     awful.key({ key_mod, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
@@ -396,10 +558,10 @@ awful.keyboard.append_global_keybindings({
               {description = "increase the number of columns", group = "layout"}),
     awful.key({ key_mod, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
               {description = "decrease the number of columns", group = "layout"}),
-    awful.key({ key_mod,           }, "space", function () awful.layout.inc( 1)                end,
-              {description = "select next", group = "layout"}),
-    awful.key({ key_mod, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
-              {description = "select previous", group = "layout"}),
+    -- awful.key({ key_mod,           }, "space", function () awful.layout.inc( 1)                end,
+    --           {description = "select next", group = "layout"}),
+    -- awful.key({ key_mod, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
+    --           {description = "select previous", group = "layout"}),
 })
 
 
