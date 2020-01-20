@@ -53,22 +53,36 @@ modkey = "Mod4"
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
-myawesomemenu = {
-   { "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
-   { "manual", terminal .. " -e man awesome" },
-   { "edit config", editor_cmd .. " " .. awesome.conffile },
-   { "restart", awesome.restart },
-   { "quit", function() awesome.quit() end },
+menu_awesome = {
+	{ "Hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
+	{ "Manual", terminal .. " -e man awesome" },
+	{ "Edit config", editor_cmd .. " " .. awesome.conffile },
+	{ "Restart", awesome.restart },
+	{ "Quit", function() awesome.quit() end },
 }
 
-mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "open terminal", terminal },
-                                    { "rofi drun", "rofi -show drun -show-icons" },
-                                  }
-                        })
+menu_exit = {
+	{ "Reboot", "reboot" },
+	{ "Shutdown", "shutdown now" },
+	{ "Switch user", "dm-tool switch-to-greeter" },
+	{ "Suspend", "systemctl suspend" },
+	{ "Log out", function() awesome.quit() end },
+}
 
-mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
-                                     menu = mymainmenu })
+menu_main = awful.menu({ items = {
+	{ "Awesome", menu_awesome, beautiful.awesome_icon },
+	{ "Terminal", terminal },
+	{ "File", "pcmanfm-qt" },
+	{ "Web", "firefox" },
+	{ "Editor", "mousepad" },
+	{ "Rofi Drun", "rofi -show drun -show-icons" },
+	{ "Exit", menu_exit },
+}})
+
+launcher_main = awful.widget.launcher({
+	image = beautiful.awesome_icon,
+	menu = menu_main,
+})
 
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
@@ -178,7 +192,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            mylauncher,
+            launcher_main,
             s.mytaglist,
             s.mypromptbox,
         },
@@ -196,7 +210,7 @@ end)
 
 -- {{{ Mouse bindings
 awful.mouse.append_global_mousebindings({
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
+    awful.button({ }, 3, function () menu_main:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev),
 })
@@ -208,7 +222,7 @@ awful.mouse.append_global_mousebindings({
 awful.keyboard.append_global_keybindings({
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
-    awful.key({ modkey,           }, "w", function () mymainmenu:show() end,
+    awful.key({ modkey,           }, "w", function () menu_main:show() end,
               {description = "show main menu", group = "awesome"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
