@@ -7,4 +7,4 @@
 
 ## Tool
 
-* [develop-tool](develop-tool)
+* [develop-tool](../xephyr/develop-tool/run-awesome-on-xephyr)
