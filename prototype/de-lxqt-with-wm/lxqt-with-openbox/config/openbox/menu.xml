@@ -97,8 +97,24 @@
     <item label="Restart" icon="/usr/share/icons/Numix/24/actions/system-restart.svg">
       <action name="Restart" />
     </item>
+    <!--
+    <item label="Switch user" icon="/usr/share/icons/Numix/22/actions/system-users.svg">
+      <action name="Execute"><execute>dm-tool switch-to-greeter</execute></action>
+    </item>
+    //-->
+    <item label="Suspend" icon="/usr/share/icons/Numix/24/actions/system-suspend.svg">
+      <action name="Execute"><execute>systemctl suspend</execute></action>
+    </item>
+    <item label="Shutdown" icon="/usr/share/icons/Numix/24/actions/system-shutdown.svg">
+      <action name="Execute"><execute>shutdown now</execute></action>
+    </item>
+    <!--
+    <item label="PowerOff" icon="/usr/share/icons/Numix/24/actions/system-shutdown.svg">
+      <action name="Execute"><execute>pkexec poweroff</execute></action>
+    </item>
+    //-->
     <!-- $ find /usr/share/icons/Numix/ | grep logout //-->
-    <item label="Exit" icon="/usr/share/icons/Numix/24/actions/system-logout.svg">
+    <item label="Logout" icon="/usr/share/icons/Numix/24/actions/system-logout.svg">
       <action name="Exit"/>
     </item>
   </menu>
