@@ -4,6 +4,7 @@
 * [screen](screen)
 * [wallpaper](wallpaper)
 * [wibox](wibox)
+* [theme](theme)
 
 
 ## Demo
@@ -14,3 +15,5 @@
 * [wallpaper/demo-set_image_maximized](wallpaper/demo-set_image_maximized)
 * [wibox/demo-wibox-start](wibox/demo-wibox-start)
 * [wibox/demo-set_image_maximized](wibox/demo-wibox-bg-transparent)
+* [theme/demo-theme-start](theme/demo-theme-start)
+* [theme/demo-theme-wibox](theme/demo-theme-wibox)
