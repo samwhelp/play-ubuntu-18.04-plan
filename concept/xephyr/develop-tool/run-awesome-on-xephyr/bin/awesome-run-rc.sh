@@ -31,20 +31,20 @@ __main__ () {
 	## screen_size
 	local screen_size="1280x960"
 
-	if [ "none$1" != "none" ]; then
+	if [ "none$2" != "none" ]; then
 		screen_size="$2"
 	fi
 
 	## run Xephyr
-	#Xephyr :3 -ac -screen 1920x1080 &
-	#Xephyr :3 -ac -screen 1280x960 &
+	#Xephyr :100 -ac -screen 1920x1080 &
+	#Xephyr :100 -ac -screen 1280x960 &
 	#Xephyr :100 -ac -screen 1024x576 &
-	Xephyr :3 -ac -screen "$screen_size" &
+	Xephyr :100 -ac -screen "$screen_size" &
 	XEPHYR_PID=$!
 	sleep 0.5
 
 	## run awesome
-	DISPLAY=:3 awesome -c "$awesome_rc"
+	DISPLAY=:100 awesome -c "$awesome_rc"
 
 	## make sure kill Xephyr
 	kill ${XEPHYR_PID}

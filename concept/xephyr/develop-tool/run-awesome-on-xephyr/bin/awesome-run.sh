@@ -29,15 +29,15 @@ __main__ () {
 	fi
 
 	## run Xephyr
-	#Xephyr :3 -ac -screen 1920x1080 &
-	#Xephyr :3 -ac -screen 1280x960 &
+	#Xephyr :100 -ac -screen 1920x1080 &
+	#Xephyr :100 -ac -screen 1280x960 &
 	#Xephyr :100 -ac -screen 1024x576 &
-	Xephyr :3 -ac -screen "$screen_size" &
+	Xephyr :100 -ac -screen "$screen_size" &
 	XEPHYR_PID=$!
 	sleep 0.5
 
 	## run awesome
-	DISPLAY=:3 awesome
+	DISPLAY=:100 awesome
 
 	## make sure kill Xephyr
 	kill ${XEPHYR_PID}

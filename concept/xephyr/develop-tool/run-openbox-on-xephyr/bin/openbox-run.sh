@@ -29,10 +29,10 @@ __main__ () {
 	fi
 
 	## run Xephyr
-	#Xephyr :3 -ac -screen 1920x1080 &
-	#Xephyr :3 -ac -screen 1280x960 &
+	#Xephyr :100 -ac -screen 1920x1080 &
+	#Xephyr :100 -ac -screen 1280x960 &
 	#Xephyr :100 -ac -screen 1024x576 &
-	Xephyr :3 -ac -screen "$screen_size" &
+	Xephyr :100 -ac -screen "$screen_size" &
 	XEPHYR_PID=$!
 	sleep 0.5
 
@@ -43,8 +43,8 @@ __main__ () {
 	## Exec=/usr/bin/openbox-session
 
 	## run openbox
-	#DISPLAY=:3 /usr/bin/openbox-session
-	DISPLAY=:3 openbox-session
+	#DISPLAY=:100 /usr/bin/openbox-session
+	DISPLAY=:100 openbox-session
 
 	## make sure kill Xephyr
 	kill ${XEPHYR_PID}
