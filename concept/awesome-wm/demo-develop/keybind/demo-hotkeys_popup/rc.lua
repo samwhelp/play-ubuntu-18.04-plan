@@ -75,6 +75,7 @@ end)
 --- Head: Keybind
 --
 
+-- https://awesomewm.org/doc/api/libraries/awful.spawn.html
 -- https://github.com/awesomeWM/awesome/blob/master/awesomerc.lua#L218
 
 key_super = "Mod4"

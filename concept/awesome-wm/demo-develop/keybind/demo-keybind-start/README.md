@@ -71,3 +71,4 @@ request::desktop_decoration
 ## Reference
 
 * [https://github.com/awesomeWM/awesome/blob/master/awesomerc.lua#L218](https://github.com/awesomeWM/awesome/blob/master/awesomerc.lua#L218)
+* [https://awesomewm.org/doc/api/libraries/awful.spawn.html](https://awesomewm.org/doc/api/libraries/awful.spawn.html)

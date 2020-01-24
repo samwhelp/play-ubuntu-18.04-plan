@@ -71,5 +71,6 @@ request::desktop_decoration
 ## Reference
 
 * [https://awesomewm.org/doc/api/libraries/awful.hotkeys_popup.html](https://awesomewm.org/doc/api/libraries/awful.hotkeys_popup.html)
+* [https://awesomewm.org/doc/api/libraries/awful.spawn.html](https://awesomewm.org/doc/api/libraries/awful.spawn.html)
 * [https://github.com/awesomeWM/awesome/blob/master/awesomerc.lua#L19](https://github.com/awesomeWM/awesome/blob/master/awesomerc.lua#L19)
 * [https://github.com/awesomeWM/awesome/blob/master/awesomerc.lua#L218](https://github.com/awesomeWM/awesome/blob/master/awesomerc.lua#L218)
