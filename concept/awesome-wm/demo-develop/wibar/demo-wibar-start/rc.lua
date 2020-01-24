@@ -33,12 +33,16 @@ screen.connect_signal("request::desktop_decoration", function(s)
 	gears.wallpaper.maximized("/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg", s)
 
 
-	s.xbox = wibox ({
+	--https://awesomewm.org/doc/api/classes/awful.wibar.html
+	s.top_panel = awful.wibar({
 		screen = s,
 		visible = true,
 		width = 400,
 		height = 36,
-		bg = "#16161675",
+		stretch = true,
+		position = "bottom",
+		bg = "#161616",
+
 	})
 
 end)

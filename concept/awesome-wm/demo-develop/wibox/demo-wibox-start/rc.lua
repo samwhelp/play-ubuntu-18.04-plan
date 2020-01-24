@@ -19,6 +19,7 @@ local wibox = require("wibox")
 
 --------------------------------------------------------------------------------
 --- Head: Main
+--
 
 -- https://awesomewm.org/doc/api/classes/wibox.html
 
@@ -36,11 +37,12 @@ screen.connect_signal("request::desktop_decoration", function(s)
 		screen = s,
 		visible = true,
 		width = 400,
-		height = 32,
+		height = 36,
 		bg = "#161616",
 	})
 
 end)
 
+--
 --- Tail: Main
 --------------------------------------------------------------------------------

@@ -5,6 +5,7 @@
 * [wallpaper](wallpaper)
 * [wibox](wibox)
 * [theme](theme)
+* [wibar](wibar)
 
 
 ## Demo
