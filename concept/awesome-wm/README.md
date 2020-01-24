@@ -4,6 +4,7 @@
 
 * [demo-start](demo-start)
 * [demo-develop](demo-develop)
+* [demo-lua](demo-lua)
 
 ## Tool
 
