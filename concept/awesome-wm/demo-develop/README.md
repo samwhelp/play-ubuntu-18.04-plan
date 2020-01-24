@@ -6,6 +6,7 @@
 * [wibox](wibox)
 * [theme](theme)
 * [wibar](wibar)
+* [wibox-layout](wibox-layout)
 
 
 ## Demo
@@ -15,6 +16,9 @@
 * [wallpaper/demo-set_color](wallpaper/demo-set_color)
 * [wallpaper/demo-set_image_maximized](wallpaper/demo-set_image_maximized)
 * [wibox/demo-wibox-start](wibox/demo-wibox-start)
-* [wibox/demo-set_image_maximized](wibox/demo-wibox-bg-transparent)
+* [wibox/demo-wibox-bg-transparent](wibox/demo-wibox-bg-transparent)
 * [theme/demo-theme-start](theme/demo-theme-start)
 * [theme/demo-theme-wibox](theme/demo-theme-wibox)
+* [wibar/demo-wibar-start](wibar/demo-wibar-start)
+* [wibar/demo-wibar-bg-transparent](wibar/demo-wibar-bg-transparent)
+* [wibox-layout/demo-wibox-layout-start](wibox-layout/demo-wibox-layout-start)
