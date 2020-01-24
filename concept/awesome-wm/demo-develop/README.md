@@ -7,6 +7,7 @@
 * [theme](theme)
 * [wibar](wibar)
 * [wibox-layout](wibox-layout)
+* [keybind](keybind)
 
 
 ## Demo
@@ -22,3 +23,4 @@
 * [wibar/demo-wibar-start](wibar/demo-wibar-start)
 * [wibar/demo-wibar-bg-transparent](wibar/demo-wibar-bg-transparent)
 * [wibox-layout/demo-wibox-layout-start](wibox-layout/demo-wibox-layout-start)
+* [keybind/demo-keybind-start](keybind/demo-keybind-start)
