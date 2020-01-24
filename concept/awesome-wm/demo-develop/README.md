@@ -24,3 +24,4 @@
 * [wibar/demo-wibar-bg-transparent](wibar/demo-wibar-bg-transparent)
 * [wibox-layout/demo-wibox-layout-start](wibox-layout/demo-wibox-layout-start)
 * [keybind/demo-keybind-start](keybind/demo-keybind-start)
+* [keybind/demo-hotkeys_popup](keybind/demo-hotkeys_popup)
