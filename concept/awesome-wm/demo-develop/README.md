@@ -16,6 +16,7 @@
 * [screen/demo-connect_signal-request_desktop_decoration](screen/demo-connect_signal-request_desktop_decoration)
 * [wallpaper/demo-set_color](wallpaper/demo-set_color)
 * [wallpaper/demo-set_image_maximized](wallpaper/demo-set_image_maximized)
+* [wallpaper/demo-screen-request-wallpaper](wallpaper/demo-screen-request-wallpaper)
 * [wibox/demo-wibox-start](wibox/demo-wibox-start)
 * [wibox/demo-wibox-bg-transparent](wibox/demo-wibox-bg-transparent)
 * [theme/demo-theme-start](theme/demo-theme-start)
