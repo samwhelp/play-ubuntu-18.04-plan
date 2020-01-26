@@ -71,6 +71,17 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
 	print('request::desktop_decoration')
 
+	-- https://awesomewm.org/apidoc/core_components/tag.html
+	-- https://awesomewm.org/apidoc/core_components/tag.html#awful.tag.new
+	-- https://github.com/awesomeWM/awesome/blob/master/lib/awful/layout/init.lua#L413
+
+	-- awful.tag({ '1', '2', '3', '4', '5', '6', '7', '8', '9' }, s, awful.layout.layouts[1])
+	-- awful.tag({ '1' }, s, awful.layout.layouts[1])
+	awful.tag({ 'Primary' }, s, awful.layout.layouts[1])
+	--awful.tag({ 'Primary' }, s, awful.layout.layouts[2])
+
+
+
 	-- https://awesomewm.org/apidoc/widgets/awful.widget.layoutbox.html
 	-- https://awesomewm.org/apidoc/input_handling/mouse.html
 	-- https://awesomewm.org/apidoc/input_handling/awful.button.html#button

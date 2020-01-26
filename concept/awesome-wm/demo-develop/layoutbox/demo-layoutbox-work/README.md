@@ -74,6 +74,7 @@ request::desktop_decoration
 table: 0x556f70b76c20
 awful.layout.get().name : floating
 awful.layout.getname() : floating
+
 ```
 
 ## Reference
@@ -83,3 +84,4 @@ awful.layout.getname() : floating
 * [ https://github.com/awesomeWM/awesome/blob/master/themes/default/layouts/floatingw.png](https://github.com/awesomeWM/awesome/blob/master/themes/default/layouts/floatingw.png)
 * [ https://github.com/awesomeWM/awesome/blob/master/lib/awful/layout/suit/floating.lua#L109](https://github.com/awesomeWM/awesome/blob/master/lib/awful/layout/suit/floating.lua#L109)
 * [ https://github.com/awesomeWM/awesome/blob/master/lib/awful/widget/layoutbox.lua#L34](https://github.com/awesomeWM/awesome/blob/master/lib/awful/widget/layoutbox.lua#L34)
+* [https://github.com/awesomeWM/awesome/blob/master/lib/awful/layout/init.lua#L413](https://github.com/awesomeWM/awesome/blob/master/lib/awful/layout/init.lua#L413)
