@@ -4,13 +4,13 @@
 --
 
 -- Standard awesome library
-local gears = require("gears")
-local awful = require("awful")
+local gears = require('gears')
+local awful = require('awful')
 require("awful.autofocus")
 
 
 -- Widget and layout library
-local wibox = require("wibox")
+local wibox = require('wibox')
 
 --
 -- Tail: Require
@@ -21,13 +21,13 @@ local wibox = require("wibox")
 --- Head: Wallpaper
 --
 
-screen.connect_signal("request::wallpaper", function(s)
+screen.connect_signal('request::wallpaper', function(s)
 
 	print('request::wallpaper')
 
 	-- https://awesomewm.org/apidoc/utility_libraries/gears.wallpaper.html
-	
-	gears.wallpaper.maximized("/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg", s)
+
+	gears.wallpaper.maximized('/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg', s)
 
 end)
 
@@ -40,20 +40,20 @@ end)
 --- Head: Main
 --
 
-screen.connect_signal("request::desktop_decoration", function(s)
+screen.connect_signal('request::desktop_decoration', function(s)
 
 	print('request::desktop_decoration')
 
 	-- https://awesomewm.org/apidoc/popups_and_bars/awful.wibar.html
 
-	s.top_panel = awful.wibar({
+	s.panel_main = awful.wibar({
 		screen = s,
 		visible = true,
 		width = 400,
 		height = 36,
 		stretch = true,
-		position = "bottom",
-		bg = "#161616",
+		position = 'bottom',
+		bg = '#161616',
 
 	})
 

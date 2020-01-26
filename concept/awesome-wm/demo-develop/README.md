@@ -15,6 +15,7 @@
 * [wibar](wibar)
 * [wibox-layout](wibox-layout)
 * [keybind](keybind)
+* [layoutbox](layoutbox)
 
 
 ## Demo
@@ -33,3 +34,4 @@
 * [wibox-layout/demo-wibox-layout-start](wibox-layout/demo-wibox-layout-start)
 * [keybind/demo-keybind-start](keybind/demo-keybind-start)
 * [keybind/demo-hotkeys_popup](keybind/demo-hotkeys_popup)
+* [layoutbox/demo-layoutbox-start](layoutbox/demo-layoutbox-start)

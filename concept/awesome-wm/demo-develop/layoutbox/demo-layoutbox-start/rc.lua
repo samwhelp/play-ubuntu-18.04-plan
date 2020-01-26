@@ -13,8 +13,33 @@ require('awful.autofocus')
 -- Widget and layout library
 local wibox = require('wibox')
 
+
+-- Theme handling library
+local beautiful = require('beautiful')
+
 --
 -- Tail: Require
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-- Head: beautiful
+--
+
+-- https://awesomewm.org/apidoc/sample%20files/theme.lua.html
+-- https://awesomewm.org/apidoc/theme_related_libraries/beautiful.html#init
+-- https://awesomewm.org/apidoc/documentation/05-awesomerc.md.html#Variable_definitions
+-- https://awesomewm.org/apidoc/documentation/06-appearance.md.html
+
+
+print('gears.filesystem.get_themes_dir() = ' .. gears.filesystem.get_themes_dir())
+
+print('gears.filesystem.get_configuration_dir() = ' .. gears.filesystem.get_configuration_dir())
+
+beautiful.init(gears.filesystem.get_configuration_dir() .. 'theme/demo/theme.lua')
+
+--
+-- Tail: beautiful
 --------------------------------------------------------------------------------
 
 
@@ -46,6 +71,18 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
 	print('request::desktop_decoration')
 
+	-- https://awesomewm.org/apidoc/widgets/awful.widget.layoutbox.html
+
+	s.layoutbox = awful.widget.layoutbox {
+		screen  = s,
+		buttons = {
+			awful.button({ }, 1, function () awful.layout.inc( 1) end),
+			awful.button({ }, 3, function () awful.layout.inc(-1) end),
+			awful.button({ }, 4, function () awful.layout.inc( 1) end),
+			awful.button({ }, 5, function () awful.layout.inc(-1) end),
+		}
+	}
+
 
 	-- https://awesomewm.org/apidoc/popups_and_bars/awful.wibar.html
 
@@ -55,9 +92,14 @@ screen.connect_signal('request::desktop_decoration', function(s)
 		width = 400,
 		height = 36,
 		stretch = true,
-		position = 'right',
+		position = 'top',
 		bg = '#16161675',
 	})
+
+	s.panel_main.widget = {
+		layout = wibox.layout.align.horizontal,
+		s.layoutbox
+	}
 
 end)
 
