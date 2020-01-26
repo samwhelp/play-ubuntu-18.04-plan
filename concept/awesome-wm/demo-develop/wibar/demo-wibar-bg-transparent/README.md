@@ -65,9 +65,10 @@ bin/dev.sh
 show
 
 ```
+request::wallpaper
 request::desktop_decoration
 ```
 
 ## Reference
 
-* [https://awesomewm.org/doc/api/classes/awful.wibar.html](https://awesomewm.org/doc/api/classes/awful.wibar.html)
+* [https://awesomewm.org/apidoc/popups_and_bars/awful.wibar.html](https://awesomewm.org/apidoc/popups_and_bars/awful.wibar.html)

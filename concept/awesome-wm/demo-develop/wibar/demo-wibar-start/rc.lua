@@ -18,22 +18,34 @@ local wibox = require("wibox")
 
 
 --------------------------------------------------------------------------------
+--- Head: Wallpaper
+--
+
+screen.connect_signal("request::wallpaper", function(s)
+
+	print('request::wallpaper')
+
+	-- https://awesomewm.org/apidoc/utility_libraries/gears.wallpaper.html
+	
+	gears.wallpaper.maximized("/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg", s)
+
+end)
+
+--
+--- Tail: Wallpaper
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
 --- Head: Main
 --
 
--- https://awesomewm.org/doc/api/classes/wibox.html
-
-
 screen.connect_signal("request::desktop_decoration", function(s)
-	-- do something
 
 	print('request::desktop_decoration')
 
-	-- set wallpaper
-	gears.wallpaper.maximized("/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg", s)
+	-- https://awesomewm.org/apidoc/popups_and_bars/awful.wibar.html
 
-
-	--https://awesomewm.org/doc/api/classes/awful.wibar.html
 	s.top_panel = awful.wibar({
 		screen = s,
 		visible = true,
