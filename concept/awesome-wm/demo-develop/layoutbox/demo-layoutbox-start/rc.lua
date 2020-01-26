@@ -73,7 +73,7 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
 	-- https://awesomewm.org/apidoc/widgets/awful.widget.layoutbox.html
 
-	s.layoutbox = awful.widget.layoutbox {
+	s.layoutbox_main = awful.widget.layoutbox {
 		screen  = s,
 		buttons = {
 			awful.button({ }, 1, function () awful.layout.inc( 1) end),
@@ -83,6 +83,14 @@ screen.connect_signal('request::desktop_decoration', function(s)
 		}
 	}
 
+
+	print(awful.layout.get())
+	print('awful.layout.get().name : ' .. awful.layout.get().name)
+	print('awful.layout.getname() : ' .. awful.layout.getname())
+	-- https://github.com/awesomeWM/awesome/blob/master/lib/awful/layout/init.lua#L406
+	-- https://github.com/awesomeWM/awesome/blob/master/lib/awful/layout/init.lua#L444
+	-- print(awful.layout.layouts[1])
+	-- print(awful.layout.layouts[1].name)
 
 	-- https://awesomewm.org/apidoc/popups_and_bars/awful.wibar.html
 
@@ -98,8 +106,11 @@ screen.connect_signal('request::desktop_decoration', function(s)
 
 	s.panel_main.widget = {
 		layout = wibox.layout.align.horizontal,
-		s.layoutbox
+		s.layoutbox_main
 	}
+
+
+
 
 end)
 
