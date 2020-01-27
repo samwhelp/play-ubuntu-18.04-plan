@@ -35,3 +35,5 @@
 * [keybind/demo-keybind-start](keybind/demo-keybind-start)
 * [keybind/demo-hotkeys_popup](keybind/demo-hotkeys_popup)
 * [layoutbox/demo-layoutbox-start](layoutbox/demo-layoutbox-start)
+* [layoutbox/demo-layoutbox-work](layoutbox/demo-layoutbox-work)
+* [layoutbox/demo-layoutbox-request-default_layouts](layoutbox/demo-layoutbox-request-default_layouts)
