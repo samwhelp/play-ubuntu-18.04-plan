@@ -38,3 +38,4 @@
 * [layoutbox/demo-layoutbox-work](layoutbox/demo-layoutbox-work)
 * [layoutbox/demo-layoutbox-request-default_layouts](layoutbox/demo-layoutbox-request-default_layouts)
 * [layoutbox/demo-layoutbox-work-client](layoutbox/demo-layoutbox-work-client)
+* [layoutbox/demo-layoutbox-work-client-titlebar](layoutbox/demo-layoutbox-work-client-titlebar)
