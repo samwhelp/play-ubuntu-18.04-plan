@@ -6,6 +6,8 @@
 
 * [ImageMagick](http://www.imagemagick.org)
 * [ImageMagick version 6](https://legacy.imagemagick.org/)
+* https://github.com/ImageMagick/ImageMagick6
+* https://gitlab.com/ImageMagick/ImageMagick6
 
 
 ## Install
