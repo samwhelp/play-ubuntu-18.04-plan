@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> demo html canvas </title>
+
+<style>
+
+body {
+	margin: 0;
+}
+
+#canvas_main {
+	position: absolute;
+	display: block;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<button id="btn_play">播放</button>
+<canvas id="canvas_main" width="800" height="600" style="border:1px solid #000000;"></canvas>
+
+<script>
+
+/*
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations
+https://ithelp.ithome.com.tw/users/20107496/ironman/2019
+https://www.runoob.com/html/html5-canvas.html
+*/
+
+	var btn = document.getElementById('btn_play');
+
+	var cvs = document.getElementById('canvas_main');
+
+	var ctx = cvs.getContext('2d');
+
+	var imgs = [];
+
+	function img_load_src(path)
+	{
+		var img = new Image();
+		img.src = path;
+
+		return img;
+	}
+
+	function img_load_all()
+	{
+		var path = '';
+		var x = 0;
+		for (var i = 0; i < 80; i++) {
+			//console.log(i);
+			x = i+1;
+
+			//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
+			path = 'asset/' + x.toString().padStart(3, '0') + '.png';
+			//console.log(path);
+
+			imgs[i] = img_load_src(path);
+		}
+
+		//console.log(imgs)
+	}
+
+	img_load_all();
+
+
+	var frame = -1;
+
+	function play_engine() {
+
+		frame++;
+		if (frame > 79) {
+			frame = 1;
+		}
+		//console.log(frame)
+
+		ctx.clearRect(0, 0, 800, 600);
+		ctx.drawImage(imgs[frame], 0, 0);
+
+		window.requestAnimationFrame(play_engine);
+	}
+
+	function play_start() {
+		play_engine();
+	}
+
+	btn.addEventListener('click', function(e) {
+		play_start()
+	})
+
+</script>
+
+</body>
+</html>
