@@ -22,6 +22,7 @@
 
 * [demo-timeline-start](example/python/timeline/demo-timeline-start)
 * [demo-clip-start](example/python/clip/demo-clip-start)
+* [demo-timeline-add-clip](example/python/timeline/demo-timeline-add-clip)
 
 ## Wikipedia
 
