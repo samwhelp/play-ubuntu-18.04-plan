@@ -26,6 +26,8 @@ $ sudo apt-get install imagemagick
 
 ### im6
 
+* https://legacy.imagemagick.org/script/formats.php#pseudo
+* https://legacy.imagemagick.org/script/color.php#color_names
 * https://legacy.imagemagick.org/script/command-line-processing.php
 * https://legacy.imagemagick.org/script/command-line-tools.php
 
@@ -86,3 +88,28 @@ $ display bg.png
 * $ man [convert](https://legacy.imagemagick.org/script/convert.php)
 * $ man [display](https://legacy.imagemagick.org/script/display.php)
 * $ man [composite](https://legacy.imagemagick.org/script/composite.php)
+* $ man [identify](https://legacy.imagemagick.org/script/identify.php)
+
+
+## list format
+
+run
+
+``` sh
+$ identify -list format | grep xc -i
+```
+
+show
+
+```
+   CANVAS* XC        r--   Constant image uniform color
+           Digital Moving Picture Exchange Bitmap, Version 2.0.
+       XC* XC        r--   Constant image uniform color
+      XCF* XCF       r--   GIMP image
+```
+
+## list module
+
+``` sh
+$ identify -list module
+```
