@@ -95,3 +95,11 @@ or
 ```
 firefox $(dpkg -L libopenshot-doc | grep index.html)
 ```
+
+## View Help
+
+run
+
+``` sh
+$ python3 -c 'import openshot; print(help(openshot.Timeline));'
+```
