@@ -1,4 +1,10 @@
 
+## Link
+
+* [OpenShot](https://www.openshot.org)
+* GitHub / [OpenShot](https://github.com/OpenShot)
+* GitHub / openshot-qt / [releases](https://github.com/OpenShot/openshot-qt/releases)
+
 ## Package
 
 * [package](package.md)
@@ -15,7 +21,7 @@
 ### python
 
 * [demo-timeline-start](example/python/timeline/demo-timeline-start)
-
+* [demo-clip-start](example/python/clip/demo-clip-start)
 
 ## Wikipedia
 
