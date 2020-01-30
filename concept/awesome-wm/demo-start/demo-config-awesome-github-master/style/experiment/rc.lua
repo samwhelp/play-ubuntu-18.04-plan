@@ -777,3 +777,45 @@ client.connect_signal("request::titlebars", function(c)
     }
 end)
 -- }}}
+
+
+
+--------------------------------------------------------------------------------
+--- Head: Autorun
+--
+
+-- https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=361106#forumpost361106
+-- /etc/xdg/autostart/
+-- ~/.config/autostart
+
+-- Autorun programs
+autorun = true
+apps_autorun = {
+
+
+	-- ## input methond
+	'fcitx',
+
+	-- ## policykit
+	-- $ apt-cache serch policykit
+	'/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1',
+	-- 'mate-polkit',
+
+	-- ## volume-control
+	--'volumeicon',
+	'mate-volume-control-applet',
+
+	-- ## network
+	--'nm-applet',
+	'nm-tray',
+
+	--'blueman-applet',
+}
+if autorun then
+	for app = 1, #apps_autorun do
+		awful.util.spawn(apps_autorun[app])
+	end
+end
+--
+--- Tail: Autorun
+--------------------------------------------------------------------------------
