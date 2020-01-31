@@ -609,6 +609,26 @@ awful.keyboard.append_global_keybindings({
 
 })
 
+awful.keyboard.append_global_keybindings({
+
+	awful.key(
+		{ key_super, 'Control' }, 'n', function ()
+			local c = awful.client.restore()
+			-- Focus restored client
+			if c then
+				c:activate { raise = true, context = 'key.unminimize' }
+			end
+		end,
+		{ description = 'restore minimized', group = 'Client' }
+	),
+
+	awful.key(
+		{ key_super }, 'u', awful.client.urgent.jumpto,
+		{ description = 'jump to urgent client', group = 'Client' }
+	),
+
+})
+
 --
 --- Tail: Keybind / Client
 --------------------------------------------------------------------------------
@@ -651,15 +671,7 @@ awful.keyboard.append_global_keybindings({
               {description = 'focus the next screen', group = 'screen'}),
     awful.key({ key_super, 'Control' }, 'k', function () awful.screen.focus_relative(-1) end,
               {description = 'focus the previous screen', group = 'screen'}),
-    awful.key({ key_super, 'Control' }, 'n',
-              function ()
-                  local c = awful.client.restore()
-                  -- Focus restored client
-                  if c then
-                    c:activate { raise = true, context = 'key.unminimize' }
-                  end
-              end,
-              {description = 'restore minimized', group = 'client'}),
+
 })
 
 -- Layout related keybindings
@@ -668,8 +680,7 @@ awful.keyboard.append_global_keybindings({
               {description = 'swap with next client by index', group = 'client'}),
     awful.key({ key_super, 'Shift'   }, 'k', function () awful.client.swap.byidx( -1)    end,
               {description = 'swap with previous client by index', group = 'client'}),
-    awful.key({ key_super,           }, 'u', awful.client.urgent.jumpto,
-              {description = 'jump to urgent client', group = 'client'}),
+
     awful.key({ key_super,           }, 'l',     function () awful.tag.incmwfact( 0.05)          end,
               {description = 'increase master width factor', group = 'layout'}),
     awful.key({ key_super,           }, 'h',     function () awful.tag.incmwfact(-0.05)          end,
@@ -689,67 +700,128 @@ awful.keyboard.append_global_keybindings({
 })
 
 
+--------------------------------------------------------------------------------
+--- Head: request::default_mousebindings
+--
+
 client.connect_signal('request::default_mousebindings', function()
-    awful.mouse.append_client_mousebindings({
-        awful.button({ }, 1, function (c)
-            c:activate { context = 'mouse_click' }
-        end),
-        awful.button({ key_super }, 1, function (c)
-            c:activate { context = 'mouse_click', action = 'mouse_move'  }
-        end),
-        awful.button({ key_super }, 3, function (c)
-            c:activate { context = 'mouse_click', action = 'mouse_resize'}
-        end),
-    })
+
+	awful.mouse.append_client_mousebindings({
+		awful.button({ }, 1, function (c)
+			c:activate { context = 'mouse_click' }
+		end),
+		awful.button({ key_super }, 1, function (c)
+			c:activate { context = 'mouse_click', action = 'mouse_move'  }
+		end),
+		awful.button({ key_super }, 3, function (c)
+			c:activate { context = 'mouse_click', action = 'mouse_resize'}
+		end),
+	})
+
 end)
+
+--
+--- Tail: Client Rules
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Head: request::default_keybindings
+--
 
 client.connect_signal('request::default_keybindings', function()
-    awful.keyboard.append_client_keybindings({
-        awful.key({ key_super,           }, 'f',
-            function (c)
-                c.fullscreen = not c.fullscreen
-                c:raise()
-            end,
-            {description = 'toggle fullscreen', group = 'client'}),
-        awful.key({ key_super, 'Shift'   }, 'c',      function (c) c:kill()                         end,
-                {description = 'close', group = 'client'}),
-        awful.key({ key_super, 'Control' }, 'space',  awful.client.floating.toggle                     ,
-                {description = 'toggle floating', group = 'client'}),
-        awful.key({ key_super, 'Control' }, 'Return', function (c) c:swap(awful.client.getmaster()) end,
-                {description = 'move to master', group = 'client'}),
-        awful.key({ key_super,           }, 'o',      function (c) c:move_to_screen()               end,
-                {description = 'move to screen', group = 'client'}),
-        awful.key({ key_super,           }, 't',      function (c) c.ontop = not c.ontop            end,
-                {description = 'toggle keep on top', group = 'client'}),
-        awful.key({ key_super,           }, 'n',
-            function (c)
-                -- The client currently has the input focus, so it cannot be
-                -- minimized, since minimized clients can't have the focus.
-                c.minimized = true
-            end ,
-            {description = 'minimize', group = 'client'}),
-        awful.key({ key_super,           }, 'm',
-            function (c)
-                c.maximized = not c.maximized
-                c:raise()
-            end ,
-            {description = '(un)maximize', group = 'client'}),
-        awful.key({ key_super, 'Control' }, 'm',
-            function (c)
-                c.maximized_vertical = not c.maximized_vertical
-                c:raise()
-            end ,
-            {description = '(un)maximize vertically', group = 'client'}),
-        awful.key({ key_super, 'Shift'   }, 'm',
-            function (c)
-                c.maximized_horizontal = not c.maximized_horizontal
-                c:raise()
-            end ,
-            {description = '(un)maximize horizontally', group = 'client'}),
-    })
+
+	awful.keyboard.append_client_keybindings({
+		awful.key(
+			{ key_super }, 'f', function (c)
+				c.fullscreen = not c.fullscreen
+				c:raise()
+			end,
+			{ description = 'toggle fullscreen', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_super }, 'q', function (c) c:kill() end,
+			{ description = 'close', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_super }, 'c', awful.client.floating.toggle ,
+			{ description = 'toggle floating', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_super, 'Control' }, 'Return', function (c) c:swap(awful.client.getmaster()) end,
+			{ description = 'move to master', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_super }, 'o', function (c) c:move_to_screen() end,
+			{ description = 'move to screen', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_super }, 't', function (c) c.ontop = not c.ontop end,
+			{ description = 'toggle keep on top', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_super }, 'x', function (c)
+				-- The client currently has the input focus, so it cannot be
+				-- minimized, since minimized clients can't have the focus.
+				c.minimized = true
+			end ,
+			{ description = 'minimize', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_super }, 'w', function (c)
+				c.maximized = not c.maximized
+				c:raise()
+			end ,
+			{ description = '(un)maximize', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_super }, 'n', function (c)
+				-- The client currently has the input focus, so it cannot be
+				-- minimized, since minimized clients can't have the focus.
+				c.minimized = true
+			end ,
+			{ description = 'minimize', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_super }, 'm', function (c)
+				c.maximized = not c.maximized
+				c:raise()
+			end ,
+			{ description = '(un)maximize', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_super, 'Control' }, 'm', function (c)
+				c.maximized_vertical = not c.maximized_vertical
+				c:raise()
+			end ,
+			{ description = '(un)maximize vertically', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_super, 'Shift' }, 'm', function (c)
+				c.maximized_horizontal = not c.maximized_horizontal
+				c:raise()
+			end ,
+			{ description = '(un)maximize horizontally', group = 'Client' }
+		),
+	})
+
 end)
 
--- }}}
+--
+--- Tail: request::default_keybindings
+--------------------------------------------------------------------------------
+
 
 
 --------------------------------------------------------------------------------
