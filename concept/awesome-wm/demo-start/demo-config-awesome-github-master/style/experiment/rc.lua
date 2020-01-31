@@ -386,6 +386,35 @@ awful.keyboard.append_global_keybindings({
 
 })
 
+awful.keyboard.append_global_keybindings({
+
+	awful.key(
+		{ key_alt }, 'F3', function ()
+			awful.prompt.run {
+				prompt       = 'Run Lua code: ',
+				textbox      = awful.screen.focused().mypromptbox.widget,
+				exe_callback = awful.util.eval,
+				history_path = awful.util.get_cache_dir() .. '/history_eval'
+			}
+		end,
+		{description = 'lua execute prompt', group = 'Awesome'}
+	),
+
+	awful.key(
+		{ key_alt }, 'F2', function () awful.screen.focused().mypromptbox:run() end,
+		{description = 'run prompt', group = 'Awesome'}
+	),
+
+	awful.key(
+		{ key_alt }, 'F1', function() menubar.show() end,
+		{description = 'show the menubar', group = 'Awesome'}
+	),
+
+})
+
+
+
+
 --
 --- Tail: Keybind / Awesome
 --------------------------------------------------------------------------------
@@ -585,33 +614,6 @@ awful.keyboard.append_global_keybindings({
 --------------------------------------------------------------------------------
 
 
--- General Awesome keys
-awful.keyboard.append_global_keybindings({
-    -- awful.key({ key_super,           }, 's',      hotkeys_popup.show_help,
-    --           {description='show help', group='awesome'}),
-    -- awful.key({ key_super,           }, 'w', function () menu_main:show() end,
-    --           {description = 'show main menu', group = 'awesome'}),
-    -- awful.key({ key_super, 'Control' }, 'r', awesome.restart,
-    --           {description = 'reload awesome', group = 'awesome'}),
-    -- awful.key({ key_super, 'Shift'   }, 'q', awesome.quit,
-    --           {description = 'quit awesome', group = 'awesome'}),
-    awful.key({ key_super }, 'x',
-              function ()
-                  awful.prompt.run {
-                    prompt       = 'Run Lua code: ',
-                    textbox      = awful.screen.focused().mypromptbox.widget,
-                    exe_callback = awful.util.eval,
-                    history_path = awful.util.get_cache_dir() .. '/history_eval'
-                  }
-              end,
-              {description = 'lua execute prompt', group = 'awesome'}),
-    --awful.key({ key_super,           }, 'Return', function () awful.spawn(terminal) end,
-    --          {description = 'open a terminal', group = 'launcher'}),
-    awful.key({ key_super },            'r',     function () awful.screen.focused().mypromptbox:run() end,
-              {description = 'run prompt', group = 'launcher'}),
-    awful.key({ key_super }, 'p', function() menubar.show() end,
-              {description = 'show the menubar', group = 'launcher'}),
-})
 
 -- Tags related keybindings
 -- awful.keyboard.append_global_keybindings({
