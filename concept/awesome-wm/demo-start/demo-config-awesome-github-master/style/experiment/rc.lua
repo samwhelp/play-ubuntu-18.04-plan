@@ -384,6 +384,12 @@ awful.keyboard.append_global_keybindings({
 		{ description = 'Show Main Menu', group = 'Awesome'}
 	),
 
+	awful.key(
+		{ key_super }, 'c', function() awful.menu.client_list { theme = { width = 250 } } end,
+		{ description = 'Show Client List', group = 'Awesome'}
+	),
+
+
 })
 
 awful.keyboard.append_global_keybindings({
@@ -427,12 +433,12 @@ awful.keyboard.append_global_keybindings({
 awful.keyboard.append_global_keybindings({
 
 	awful.key(
-		{ key_super }, 'Tab', function () awful.layout.inc(1) end,
+		{ key_alt }, 'Tab', function () awful.layout.inc(1) end,
 		{ description = 'Next Layout', group = 'Layout'}
 	),
 
 	awful.key(
-		{ key_super, key_shift }, 'Tab', function () awful.layout.inc(-1) end,
+		{ key_alt, key_shift }, 'Tab', function () awful.layout.inc(-1) end,
 		{ description = 'Previous Layout', group = 'Layout'}
 	),
 
@@ -564,12 +570,12 @@ awful.keyboard.append_global_keybindings({
 awful.keyboard.append_global_keybindings({
 
 	awful.key(
-		{ key_super }, 'k', function () awful.client.focus.byidx(-1) end,
+		{ key_super }, 'h', function () awful.client.focus.byidx(-1) end,
 		{ description = 'Previous Client', group = 'Client'}
 	),
 
 	awful.key(
-		{ key_super }, 'j', function () awful.client.focus.byidx(1) end,
+		{ key_super }, 'l', function () awful.client.focus.byidx(1) end,
 		{ description = 'Next Client', group = 'Client'}
 	),
 
@@ -681,9 +687,9 @@ awful.keyboard.append_global_keybindings({
     awful.key({ key_super, 'Shift'   }, 'k', function () awful.client.swap.byidx( -1)    end,
               {description = 'swap with previous client by index', group = 'client'}),
 
-    awful.key({ key_super,           }, 'l',     function () awful.tag.incmwfact( 0.05)          end,
+    awful.key({ key_super,           }, 'o',     function () awful.tag.incmwfact( 0.05)          end,
               {description = 'increase master width factor', group = 'layout'}),
-    awful.key({ key_super,           }, 'h',     function () awful.tag.incmwfact(-0.05)          end,
+    awful.key({ key_super,           }, 'y',     function () awful.tag.incmwfact(-0.05)          end,
               {description = 'decrease master width factor', group = 'layout'}),
     awful.key({ key_super, 'Shift'   }, 'h',     function () awful.tag.incnmaster( 1, nil, true) end,
               {description = 'increase the number of master clients', group = 'layout'}),
@@ -746,7 +752,7 @@ client.connect_signal('request::default_keybindings', function()
 		),
 
 		awful.key(
-			{ key_super }, 'c', awful.client.floating.toggle ,
+			{ key_super }, 'v', awful.client.floating.toggle ,
 			{ description = 'toggle floating', group = 'Client' }
 		),
 
