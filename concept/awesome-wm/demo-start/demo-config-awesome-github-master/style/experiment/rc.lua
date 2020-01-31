@@ -946,6 +946,9 @@ apps_autorun = {
 
 	-- ## compton
 	'compton',
+
+	-- ## screensaver
+	'xscreensaver',
 }
 
 if autorun then
