@@ -385,7 +385,7 @@ awful.keyboard.append_global_keybindings({
 
 	awful.key(
 		{ key_alt }, 'h', awful.tag.viewprev,
-		{ description = 'Previous Layout', group = 'Tag'}
+		{ description = 'Previous Tag', group = 'Tag'}
 	),
 
 	awful.key(
@@ -401,7 +401,7 @@ awful.keyboard.append_global_keybindings({
 
 	awful.key(
 		{ key_alt }, 'a', awful.tag.viewprev,
-		{ description = 'Previous Layout', group = 'Tag'}
+		{ description = 'Previous Tag', group = 'Tag'}
 	),
 
 	awful.key(
@@ -414,6 +414,64 @@ awful.keyboard.append_global_keybindings({
 		{ description = 'Last Tag', group = 'Tag'}
 	),
 
+})
+
+
+awful.keyboard.append_global_keybindings({
+	awful.key {
+		modifiers = { key_alt },
+		keygroup = 'numrow',
+		description = 'only view tag',
+		group = 'Tag',
+		on_press = function (index)
+			local screen = awful.screen.focused()
+			local tag = screen.tags[index]
+			if tag then
+				tag:view_only()
+			end
+		end,
+	},
+	awful.key {
+		modifiers   = { key_super, 'Control' },
+		keygroup	= 'numrow',
+		description = 'toggle tag',
+		group	   = 'tag',
+		on_press	= function (index)
+			local screen = awful.screen.focused()
+			local tag = screen.tags[index]
+			if tag then
+				awful.tag.viewtoggle(tag)
+			end
+		end,
+	},
+	awful.key {
+		modifiers = { key_super, 'Shift' },
+		keygroup	= 'numrow',
+		description = 'move focused client to tag',
+		group	   = 'tag',
+		on_press	= function (index)
+			if client.focus then
+				local tag = client.focus.screen.tags[index]
+				if tag then
+					client.focus:move_to_tag(tag)
+				end
+			end
+		end,
+	},
+	awful.key {
+		modifiers   = { key_super, 'Control', 'Shift' },
+		keygroup	= 'numrow',
+		description = 'toggle focused client on tag',
+		group	   = 'tag',
+		on_press	= function (index)
+			if client.focus then
+				local tag = client.focus.screen.tags[index]
+				if tag then
+					client.focus:toggle_tag(tag)
+				end
+			end
+		end,
+	}
 })
 
 --
@@ -579,63 +637,6 @@ awful.keyboard.append_global_keybindings({
     --           {description = 'select previous', group = 'layout'}),
 })
 
-
-awful.keyboard.append_global_keybindings({
-    awful.key {
-        modifiers   = { key_super },
-        keygroup    = 'numrow',
-        description = 'only view tag',
-        group       = 'tag',
-        on_press    = function (index)
-            local screen = awful.screen.focused()
-            local tag = screen.tags[index]
-            if tag then
-                tag:view_only()
-            end
-        end,
-    },
-    awful.key {
-        modifiers   = { key_super, 'Control' },
-        keygroup    = 'numrow',
-        description = 'toggle tag',
-        group       = 'tag',
-        on_press    = function (index)
-            local screen = awful.screen.focused()
-            local tag = screen.tags[index]
-            if tag then
-                awful.tag.viewtoggle(tag)
-            end
-        end,
-    },
-    awful.key {
-        modifiers = { key_super, 'Shift' },
-        keygroup    = 'numrow',
-        description = 'move focused client to tag',
-        group       = 'tag',
-        on_press    = function (index)
-            if client.focus then
-                local tag = client.focus.screen.tags[index]
-                if tag then
-                    client.focus:move_to_tag(tag)
-                end
-            end
-        end,
-    },
-    awful.key {
-        modifiers   = { key_super, 'Control', 'Shift' },
-        keygroup    = 'numrow',
-        description = 'toggle focused client on tag',
-        group       = 'tag',
-        on_press    = function (index)
-            if client.focus then
-                local tag = client.focus.screen.tags[index]
-                if tag then
-                    client.focus:toggle_tag(tag)
-                end
-            end
-        end,
-    }
-})
 
 client.connect_signal('request::default_mousebindings', function()
     awful.mouse.append_client_mousebindings({
@@ -829,11 +830,13 @@ apps_autorun = {
 	-- ## compton
 	'compton',
 }
+
 if autorun then
 	for app = 1, #apps_autorun do
 		awful.util.spawn(apps_autorun[app])
 	end
 end
+
 --
 --- Tail: Autorun
 --------------------------------------------------------------------------------
