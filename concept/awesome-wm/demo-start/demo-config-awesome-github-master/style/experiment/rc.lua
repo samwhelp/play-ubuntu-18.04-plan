@@ -810,6 +810,9 @@ apps_autorun = {
 	'nm-tray',
 
 	--'blueman-applet',
+
+	-- ## compton
+	'compton',
 }
 if autorun then
 	for app = 1, #apps_autorun do
