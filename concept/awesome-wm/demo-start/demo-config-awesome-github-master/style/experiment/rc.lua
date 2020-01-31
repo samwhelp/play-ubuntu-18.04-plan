@@ -427,12 +427,12 @@ awful.keyboard.append_global_keybindings({
 awful.keyboard.append_global_keybindings({
 
 	awful.key(
-		{ key_super }, 'z', function () awful.layout.inc(1) end,
+		{ key_super }, 'Tab', function () awful.layout.inc(1) end,
 		{ description = 'Next Layout', group = 'Layout'}
 	),
 
 	awful.key(
-		{ key_super, key_shift }, 'z', function () awful.layout.inc(-1) end,
+		{ key_super, key_shift }, 'Tab', function () awful.layout.inc(-1) end,
 		{ description = 'Previous Layout', group = 'Layout'}
 	),
 
@@ -574,7 +574,7 @@ awful.keyboard.append_global_keybindings({
 	),
 
 	awful.key(
-		{ key_super }, 'o',
+		{ key_super }, 'p',
 		function ()
 			awful.client.focus.history.previous()
 			if client.focus then
@@ -597,7 +597,7 @@ awful.keyboard.append_global_keybindings({
 
 
 	awful.key(
-		{ key_super }, 'Tab',
+		{ key_super }, 'z',
 		function ()
 			awful.client.focus.history.previous()
 			if client.focus then
