@@ -1,6 +1,21 @@
+
+
+--------------------------------------------------------------------------------
+--- Head: luarocks
+--
+
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, 'luarocks.loader')
+
+--
+-- Tail: luarocks
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Head: Require
+--
 
 -- Standard awesome library
 local gears = require('gears')
@@ -18,25 +33,59 @@ local hotkeys_popup = require('awful.hotkeys_popup')
 -- when client with a matching name is opened:
 --require('awful.hotkeys_popup.keys')
 
--- {{{ Error handling
+--
+-- Tail: Require
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Head: Error handling
+--
+
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
 naughty.connect_signal('request::display_error', function(message, startup)
-    naughty.notification {
-        urgency = 'critical',
-        title   = 'Oops, an error happened'..(startup and ' during startup!' or '!'),
-        message = message
-    }
+	naughty.notification {
+		urgency = 'critical',
+		title   = 'Oops, an error happened'..(startup and ' during startup!' or '!'),
+		message = message
+	}
 end)
--- }}}
 
--- {{{ Variable definitions
+--
+-- Tail: Error handling
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-- Head: beautiful
+--
+
+-- https://awesomewm.org/apidoc/sample%20files/theme.lua.html
+-- https://awesomewm.org/apidoc/theme_related_libraries/beautiful.html#init
+-- https://awesomewm.org/apidoc/documentation/05-awesomerc.md.html#Variable_definitions
+-- https://awesomewm.org/apidoc/documentation/06-appearance.md.html
+
+print('gears.filesystem.get_themes_dir() = ' .. gears.filesystem.get_themes_dir())
+print('gears.filesystem.get_configuration_dir() = ' .. gears.filesystem.get_configuration_dir())
+
+beautiful.init(gears.filesystem.get_configuration_dir() .. 'theme/experiment/theme.lua')
+
 -- Themes define colours, icons, font and wallpapers.
 --beautiful.init(gears.filesystem.get_themes_dir() .. 'default/theme.lua')
-beautiful.init(gears.filesystem.get_themes_dir() .. 'gtk/theme.lua')
+--beautiful.init(gears.filesystem.get_themes_dir() .. 'gtk/theme.lua')
 
 -- Wallpaper
+--beautiful.wallpaper = '/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg'
 beautiful.wallpaper = '/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg'
+
+
+--
+-- Tail: beautiful
+--------------------------------------------------------------------------------
+
+
+-- {{{ Variable definitions
 
 -- This is used later as the default terminal and editor to run.
 terminal = 'sakura'
@@ -77,7 +126,7 @@ menu_main = awful.menu({ items = {
 	{ 'File', 'pcmanfm-qt' },
 	{ 'Web', 'firefox' },
 	{ 'Editor', 'mousepad' },
-	{ 'Rofi Drun', 'rofi -show drun -show-icons' },
+	{ 'Rofi Drun', function() awful.spawn.with_shell('rofi -show drun -show-icons') end },
 	{ 'Exit', menu_exit },
 }})
 
@@ -754,45 +803,61 @@ awful.rules.rules = {
 }
 -- }}}
 
--- {{{ Titlebars
+
+--------------------------------------------------------------------------------
+--- Head: Client Titlebar
+--
+
 -- Add a titlebar if titlebars_enabled is set to true in the rules.
 client.connect_signal('request::titlebars', function(c)
-    -- buttons for the titlebar
-    local buttons = {
-        awful.button({ }, 1, function()
-            c:activate { context = 'titlebar', action = 'mouse_move'  }
-        end),
-        awful.button({ }, 3, function()
-            c:activate { context = 'titlebar', action = 'mouse_resize'}
-        end),
-    }
+	-- buttons for the titlebar
+	local buttons = {
+		awful.button({ }, 1, function()
+			c:activate { context = 'titlebar', action = 'mouse_move' }
+		end),
+		awful.button({ }, 3, function()
+			c:activate { context = 'titlebar', action = 'mouse_resize' }
+		end),
+	}
 
-    awful.titlebar(c).widget = {
-        { -- Left
-            awful.titlebar.widget.iconwidget(c),
-            buttons = buttons,
-            layout  = wibox.layout.fixed.horizontal
-        },
-        { -- Middle
-            { -- Title
-                align  = 'center',
-                widget = awful.titlebar.widget.titlewidget(c)
-            },
-            buttons = buttons,
-            layout  = wibox.layout.flex.horizontal
-        },
-        { -- Right
-            awful.titlebar.widget.floatingbutton (c),
-            awful.titlebar.widget.maximizedbutton(c),
-            awful.titlebar.widget.stickybutton   (c),
-            awful.titlebar.widget.ontopbutton    (c),
-            awful.titlebar.widget.closebutton    (c),
-            layout = wibox.layout.fixed.horizontal()
-        },
-        layout = wibox.layout.align.horizontal
-    }
+	awful.titlebar(c).widget = {
+		layout = wibox.layout.align.horizontal,
+
+		-- Left
+		{
+			layout  = wibox.layout.fixed.horizontal,
+			awful.titlebar.widget.iconwidget(c),
+			buttons = buttons,
+		},
+
+		-- Middle
+		{
+			layout  = wibox.layout.flex.horizontal,
+			{ -- Title
+				align  = 'center',
+				widget = awful.titlebar.widget.titlewidget(c)
+			},
+			buttons = buttons,
+
+		},
+
+		-- Right
+		{
+			layout = wibox.layout.fixed.horizontal(),
+			awful.titlebar.widget.floatingbutton (c),
+			awful.titlebar.widget.maximizedbutton(c),
+			awful.titlebar.widget.stickybutton   (c),
+			awful.titlebar.widget.ontopbutton	(c),
+			awful.titlebar.widget.closebutton	(c),
+		},
+
+	}
+
 end)
--- }}}
+
+--
+--- Tail: Client Titlebar
+--------------------------------------------------------------------------------
 
 
 
@@ -804,8 +869,10 @@ end)
 -- /etc/xdg/autostart/
 -- ~/.config/autostart
 
--- Autorun programs
 autorun = true
+--autorun = false
+
+-- Autorun programs
 apps_autorun = {
 
 
@@ -833,7 +900,7 @@ apps_autorun = {
 
 if autorun then
 	for app = 1, #apps_autorun do
-		awful.util.spawn(apps_autorun[app])
+		awful.spawn.with_shell(apps_autorun[app])
 	end
 end
 
