@@ -948,7 +948,9 @@ apps_autorun = {
 	'compton',
 
 	-- ## screensaver
-	'xscreensaver',
+	--'xscreensaver',
+	--/etc/xdg/autostart/xscreensaver.desktop
+	'/usr/share/xscreensaver/xscreensaver-wrapper.sh -no-splash'
 }
 
 if autorun then
