@@ -238,14 +238,16 @@ awful.mouse.append_global_mousebindings({
 
 -- {{{ Key bindings
 
+
 --------------------------------------------------------------------------------
---- Head: Applications
+--- Head: Keybind / Rofi
 --
 
 awful.keyboard.append_global_keybindings({
+
 	awful.key(
-		{ key_alt }, 'Return', function () awful.spawn(terminal) end,
-		{ description = 'Terminal', group = 'App'}
+		{ key_alt, key_shift }, 'r', function () awful.spawn('rofi -show run') end,
+		{ description = 'Rofi Show Run', group = 'Rofi'}
 	),
 
 	awful.key(
@@ -254,13 +256,25 @@ awful.keyboard.append_global_keybindings({
 	),
 
 	awful.key(
-		{ key_alt, key_shift }, 'r', function () awful.spawn('rofi -show run') end,
-		{ description = 'Rofi Show Run', group = 'Rofi'}
-	),
-
-	awful.key(
 		{ key_alt, key_shift }, 'w', function () awful.spawn('rofi -show window -show-icons') end,
 		{ description = 'Rofi Show Window', group = 'Rofi'}
+	),
+
+})
+
+--
+--- Tail: Keybind / Rofi
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Head: Keybind / Application
+--
+
+awful.keyboard.append_global_keybindings({
+	awful.key(
+		{ key_alt }, 'Return', function () awful.spawn(terminal) end,
+		{ description = 'Terminal', group = 'App'}
 	),
 
 	awful.key(
@@ -288,16 +302,15 @@ awful.keyboard.append_global_keybindings({
 		{ description = 'Firefox', group = 'App'}
 	),
 
-
 })
 
 --
---- Tail: Applications
+--- Tail: Keybind / Application
 --------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------------------------
---- Head: Awesome
+--- Head: Keybind / Awesome
 --
 
 awful.keyboard.append_global_keybindings({
@@ -325,12 +338,12 @@ awful.keyboard.append_global_keybindings({
 })
 
 --
---- Tail: Awesome
+--- Tail: Keybind / Awesome
 --------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------------------------
---- Head: Layout
+--- Head: Keybind / Layout
 --
 
 awful.keyboard.append_global_keybindings({
@@ -360,12 +373,12 @@ awful.keyboard.append_global_keybindings({
 })
 
 --
---- Tail: Layout
+--- Tail: Keybind / Layout
 --------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------------------------
---- Head: Tag
+--- Head: Keybind / Tag
 --
 
 awful.keyboard.append_global_keybindings({
@@ -404,12 +417,12 @@ awful.keyboard.append_global_keybindings({
 })
 
 --
---- Tail: Tag
+--- Tail: Keybind / Tag
 --------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------------------------
---- Head: Client
+--- Head: Keybind / Client
 --
 
 awful.keyboard.append_global_keybindings({
@@ -461,7 +474,7 @@ awful.keyboard.append_global_keybindings({
 })
 
 --
---- Tail: Client
+--- Tail: Keybind / Client
 --------------------------------------------------------------------------------
 
 
