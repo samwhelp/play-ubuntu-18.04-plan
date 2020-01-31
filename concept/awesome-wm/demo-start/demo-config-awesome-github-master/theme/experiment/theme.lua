@@ -41,7 +41,7 @@ theme.wallpaper = theme_default_dir_path .. '/background.png'
 theme.hotkeys_border_width = 1
 
 
-theme.font = 'sans 16'
+theme.font = 'sans 12'
 
 theme.bg_normal     = "#222222"
 theme.bg_focus      = "#606060"

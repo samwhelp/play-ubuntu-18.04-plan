@@ -889,8 +889,8 @@ apps_autorun = {
 	'mate-volume-control-applet',
 
 	-- ## network
-	--'nm-applet',
-	'nm-tray',
+	'nm-applet',
+	--'nm-tray',
 
 	--'blueman-applet',
 
