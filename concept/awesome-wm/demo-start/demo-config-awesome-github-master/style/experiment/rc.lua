@@ -126,7 +126,7 @@ menu_main = awful.menu({ items = {
 	{ 'File', 'pcmanfm-qt' },
 	{ 'Web', 'firefox' },
 	{ 'Editor', 'mousepad' },
-	{ 'Rofi Drun', function() awful.spawn.with_shell('rofi -show drun -show-icons') end },
+	-- { 'Rofi Drun', function() awful.spawn.with_shell('rofi -show drun -show-icons') end},
 	{ 'Exit', menu_exit },
 }})
 
