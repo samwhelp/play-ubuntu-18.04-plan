@@ -278,15 +278,27 @@ screen.connect_signal('request::desktop_decoration', function(s)
 end)
 -- }}}
 
--- {{{ Mouse bindings
-awful.mouse.append_global_mousebindings({
-    awful.button({ }, 3, function () menu_main:toggle() end),
-    awful.button({ }, 4, awful.tag.viewnext),
-    awful.button({ }, 5, awful.tag.viewprev),
-})
--- }}}
 
--- {{{ Key bindings
+--------------------------------------------------------------------------------
+--- Head: Mousebind
+--
+
+awful.mouse.append_global_mousebindings({
+	-- Mouse Right Button
+	awful.button({ }, 3, function () menu_main:toggle() end),
+
+	-- Mouse Middle Button Scroll Up
+	awful.button({ }, 4, awful.tag.viewnext),
+
+	-- Mouse Middle Button Scroll Down
+	awful.button({ }, 5, awful.tag.viewprev),
+})
+
+--
+--- Tail: Mousebind
+--------------------------------------------------------------------------------
+
+
 
 
 --------------------------------------------------------------------------------
