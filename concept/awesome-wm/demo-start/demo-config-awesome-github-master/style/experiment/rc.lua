@@ -268,8 +268,8 @@ screen.connect_signal('request::desktop_decoration', function(s)
 					client.focus:toggle_tag(t)
 				end
 			end),
-			awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
-			awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end),
+			awful.button({ }, 4, function(t) awful.tag.viewprev(t.screen) end),
+			awful.button({ }, 5, function(t) awful.tag.viewnext(t.screen) end),
 		}
 	}
 
@@ -282,8 +282,8 @@ screen.connect_signal('request::desktop_decoration', function(s)
 				c:activate { context = 'tasklist', action = 'toggle_minimization' }
 			end),
 			awful.button({ }, 3, function() awful.menu.client_list { theme = { width = 250 } } end),
-			awful.button({ }, 4, function() awful.client.focus.byidx( 1) end),
-			awful.button({ }, 5, function() awful.client.focus.byidx(-1) end),
+			awful.button({ }, 4, function() awful.client.focus.byidx(-1) end),
+			awful.button({ }, 5, function() awful.client.focus.byidx( 1) end),
 		},
 
 		-- https://awesomewm.org/apidoc/widgets/awful.widget.tasklist.html
@@ -370,15 +370,18 @@ end)
 --- Head: Mousebind
 --
 
+-- https://awesomewm.org/apidoc/input_handling/mouse.html
+-- https://awesomewm.org/apidoc/input_handling/awful.button.html
+
 awful.mouse.append_global_mousebindings({
 	-- Mouse Right Button
 	awful.button({ }, 3, function () menu_main:toggle() end),
 
 	-- Mouse Middle Button Scroll Up
-	awful.button({ }, 4, awful.tag.viewnext),
+	awful.button({ }, 4, awful.tag.viewprev),
 
 	-- Mouse Middle Button Scroll Down
-	awful.button({ }, 5, awful.tag.viewprev),
+	awful.button({ }, 5, awful.tag.viewnext),
 })
 
 --
