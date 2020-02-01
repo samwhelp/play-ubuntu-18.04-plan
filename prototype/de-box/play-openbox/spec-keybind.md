@@ -274,3 +274,17 @@
 | `Alt + Win + 8` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L726) | Send To Workspace 8 |
 | `Alt + Win + 9` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L732) | Send To Workspace 9 |
 | `Alt + Win + 0` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L738) | Send To Workspace 10 |
+
+
+| Key | How to set | Description |
+| --- | --- | --- |
+| `Win + 1` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L684) | Send To Workspace 1 |
+| `Win + 2` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L690) | Send To Workspace 2 |
+| `Win + 3` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L696) | Send To Workspace 3 |
+| `Win + 4` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L702) | Send To Workspace 4 |
+| `Win + 5` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L708) | Send To Workspace 5 |
+| `Win + 6` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L714) | Send To Workspace 6 |
+| `Win + 7` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L720) | Send To Workspace 7 |
+| `Win + 8` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L726) | Send To Workspace 8 |
+| `Win + 9` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L732) | Send To Workspace 9 |
+| `Win + 0` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L738) | Send To Workspace 10 |
