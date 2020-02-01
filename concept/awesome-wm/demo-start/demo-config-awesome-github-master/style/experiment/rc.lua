@@ -1065,6 +1065,8 @@ client.connect_signal('request::titlebars', function(c)
 		end),
 	}
 
+
+	-- https://awesomewm.org/apidoc/popups_and_bars/awful.titlebar.html
 	awful.titlebar(c).widget = {
 		layout = wibox.layout.align.horizontal,
 
