@@ -33,6 +33,10 @@
 * [play-bspwm](prototype/de-tiling/play-bspwm) ([keybind](prototype/de-tiling/play-bspwm/spec-keybind.md))
 
 
+### awesome-wm
+
+* [demo-config-awesome-github-master](concept/awesome-wm/demo-start/demo-config-awesome-github-master)
+
 ### de-lxqt-with-wm
 
 * [lxqt-with-openbox](prototype/de-lxqt-with-wm/lxqt-with-openbox)
