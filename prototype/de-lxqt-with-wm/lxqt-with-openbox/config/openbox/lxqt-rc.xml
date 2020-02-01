@@ -863,6 +863,69 @@
       </action>
     </keybind>
 
+
+
+    <!-- Simple //-->
+    <keybind key="W-1">
+      <action name="SendToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+
+    <keybind key="W-2">
+      <action name="SendToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+
+    <keybind key="W-3">
+      <action name="SendToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+
+    <keybind key="W-4">
+      <action name="SendToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+
+    <keybind key="W-5">
+      <action name="SendToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
+
+    <keybind key="W-6">
+      <action name="SendToDesktop">
+        <to>6</to>
+      </action>
+    </keybind>
+
+    <keybind key="W-7">
+      <action name="SendToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
+
+    <keybind key="W-8">
+      <action name="SendToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+
+    <keybind key="W-9">
+      <action name="SendToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+
+    <keybind key="W-0">
+      <action name="SendToDesktop">
+        <to>10</to>
+      </action>
+    </keybind>
+
 <!-- ### Tail: Send To Workspace (SendToDesktop)-->
 <!-- ####################################################################### -->
 
@@ -964,7 +1027,7 @@
 <!-- ### Head: Window RaiseLower //-->
 <!-- ##  http://openbox.org/wiki/Help:Actions#RaiseLower //-->
 
-    <keybind key="W-m">
+    <keybind key="W-u">
       <action name="RaiseLower"/>
     </keybind>
 
@@ -1008,9 +1071,15 @@
       <action name="Iconify"/>
     </keybind>
 
+    <keybind key="W-n">
+      <action name="Iconify"/>
+    </keybind>
+
+<!--
     <keybind key="W-i">
       <action name="Iconify"/>
     </keybind>
+//-->
 
 <!-- ### Tail: Window Iconify //-->
 <!-- ##################################################################### //-->
@@ -1025,11 +1094,19 @@
       </action>
     </keybind>
 
+    <keybind key="W-m">
+      <action name="ToggleMaximize">
+        <direction>both</direction>
+      </action>
+    </keybind>
+
+<!--
     <keybind key="W-u">
       <action name="ToggleMaximize">
         <direction>both</direction>
       </action>
     </keybind>
+//-->
 
 <!-- ### Tail: Window ToggleMaximize //-->
 <!-- ##################################################################### //-->
@@ -1088,6 +1165,18 @@
     </keybind>
 
 <!-- ### Tail: Window ToggleAlwaysOnTop //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ##################################################################### //-->
+<!-- ### Head: Window SendToLayer Normal //-->
+<!-- ##  http://openbox.org/wiki/Help:Actions#SendToLayer //-->
+
+    <keybind key="W-g">
+      <action name="SendToLayer"><layer>normal</layer></action>
+    </keybind>
+
+<!-- ### Tail: Window SendToLayer Normal //-->
 <!-- ##################################################################### //-->
 
 
