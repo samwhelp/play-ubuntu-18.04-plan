@@ -15,6 +15,7 @@
 * [http://openbox.org/wiki/Help:Bindings](http://openbox.org/wiki/Help:Bindings)
 * [http://openbox.org/wiki/Help:Themes](http://openbox.org/wiki/Help:Themes)
 * [http://openbox.org/wiki/Help:Contents](http://openbox.org/wiki/Help:Contents)
+* [http://openbox.org/wiki/Help:DefaultConfiguration](http://openbox.org/wiki/Help:DefaultConfiguration)
 
 ## Usage
 
