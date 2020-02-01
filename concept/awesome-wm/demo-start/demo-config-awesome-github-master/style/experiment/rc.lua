@@ -435,27 +435,65 @@ awful.keyboard.append_global_keybindings({
 
 	awful.key(
 		{ key_alt }, 'Tab', function () awful.layout.inc(1) end,
-		{ description = 'Next Layout', group = 'Layout'}
+		{ description = 'Next Layout', group = 'Layout' }
 	),
 
 	awful.key(
-		{ key_alt, key_shift }, 'Tab', function () awful.layout.inc(-1) end,
-		{ description = 'Previous Layout', group = 'Layout'}
+		{ key_alt }, '`', function () awful.layout.inc(-1) end,
+		{ description = 'Previous Layout', group = 'Layout' }
 	),
+
+	-- awful.key(
+	-- 	{ key_alt, key_shift }, 'Tab', function () awful.layout.inc(-1) end,
+	-- 	{ description = 'Previous Layout', group = 'Layout' }
+	-- ),
 
 	awful.key(
 		{ key_alt }, 'k', function () awful.layout.inc(-1) end,
-		{ description = 'Previous Layout', group = 'Layout'}
+		{ description = 'Previous Layout', group = 'Layout' }
 	),
 
 	awful.key(
 		{ key_alt }, 'j', function () awful.layout.inc(1) end,
-		{ description = 'Next Layout', group = 'Layout'}
+		{ description = 'Next Layout', group = 'Layout' }
 	),
 
+})
 
+
+awful.keyboard.append_global_keybindings({
+
+	awful.key(
+		{ key_super }, 'o', function () awful.tag.incmwfact( 0.05) end,
+		{ description = 'increase master width factor', group = 'Layout' }
+	),
+
+	awful.key({ key_super }, 'y', function () awful.tag.incmwfact(-0.05) end,
+		{ description = 'decrease master width factor', group = 'Layout' }
+	),
+
+	awful.key(
+		{ key_super, 'Shift'   }, 'h', function () awful.tag.incnmaster( 1, nil, true) end,
+		{ description = 'increase the number of master clients', group = 'Layout' }
+	),
+
+	awful.key(
+		{ key_super, 'Shift'   }, 'l', function () awful.tag.incnmaster(-1, nil, true) end,
+		{ description = 'decrease the number of master clients', group = 'Layout' }
+	),
+
+	awful.key(
+		{ key_super, 'Control' }, 'h', function () awful.tag.incncol( 1, nil, true) end,
+		{ description = 'increase the number of columns', group = 'Layout'}
+	),
+
+	awful.key(
+		{ key_super, 'Control' }, 'l', function () awful.tag.incncol(-1, nil, true) end,
+		{ description = 'decrease the number of columns', group = 'Layout'}
+	),
 
 })
+
 
 --
 --- Tail: Keybind / Layout
@@ -657,70 +695,30 @@ awful.keyboard.append_global_keybindings({
 --------------------------------------------------------------------------------
 
 
+--------------------------------------------------------------------------------
+--- Head: Keybind / Screen
+--
 
--- Tags related keybindings
--- awful.keyboard.append_global_keybindings({
---     awful.key({ key_super,           }, 'Left',   awful.tag.viewprev,
---               {description = 'view previous', group = 'tag'}),
---     awful.key({ key_super,           }, 'Right',  awful.tag.viewnext,
---               {description = 'view next', group = 'tag'}),
---     awful.key({ key_super,           }, 'Escape', awful.tag.history.restore,
---               {description = 'go back', group = 'tag'}),
--- })
-
--- Focus related keybindings
 awful.keyboard.append_global_keybindings({
-    -- awful.key({ key_super,           }, 'j',
-    --     function ()
-    --         awful.client.focus.byidx( 1)
-    --     end,
-    --     {description = 'focus next by index', group = 'client'}
-    -- ),
-    -- awful.key({ key_super,           }, 'k',
-    --     function ()
-    --         awful.client.focus.byidx(-1)
-    --     end,
-    --     {description = 'focus previous by index', group = 'client'}
-    -- ),
-    -- awful.key({ key_super,           }, 'Tab',
-    --     function ()
-    --         awful.client.focus.history.previous()
-    --         if client.focus then
-    --             client.focus:raise()
-    --         end
-    --     end,
-    --     {description = 'go back', group = 'client'}),
-    awful.key({ key_super, 'Control' }, 'j', function () awful.screen.focus_relative( 1) end,
-              {description = 'focus the next screen', group = 'screen'}),
-    awful.key({ key_super, 'Control' }, 'k', function () awful.screen.focus_relative(-1) end,
-              {description = 'focus the previous screen', group = 'screen'}),
+
+	awful.key(
+		{ key_alt, key_ctrl }, 'j', function () awful.screen.focus_relative( 1) end,
+		{ description = 'Focus the next screen', group = 'Screen'}
+	),
+
+	awful.key(
+		{ key_alt, key_ctrl }, 'k', function () awful.screen.focus_relative(-1) end,
+		{ description = 'Focus the previous screen', group = 'Screen'}
+	),
 
 })
 
--- Layout related keybindings
-awful.keyboard.append_global_keybindings({
-    -- awful.key({ key_super, 'Shift'   }, 'j', function () awful.client.swap.byidx(  1)    end,
-    --           {description = 'swap with next client by index', group = 'client'}),
-    -- awful.key({ key_super, 'Shift'   }, 'k', function () awful.client.swap.byidx( -1)    end,
-    --           {description = 'swap with previous client by index', group = 'client'}),
+--
+--- Tail: Keybind / Screen
+--------------------------------------------------------------------------------
 
-    awful.key({ key_super,           }, 'o',     function () awful.tag.incmwfact( 0.05)          end,
-              {description = 'increase master width factor', group = 'layout'}),
-    awful.key({ key_super,           }, 'y',     function () awful.tag.incmwfact(-0.05)          end,
-              {description = 'decrease master width factor', group = 'layout'}),
-    awful.key({ key_super, 'Shift'   }, 'h',     function () awful.tag.incnmaster( 1, nil, true) end,
-              {description = 'increase the number of master clients', group = 'layout'}),
-    awful.key({ key_super, 'Shift'   }, 'l',     function () awful.tag.incnmaster(-1, nil, true) end,
-              {description = 'decrease the number of master clients', group = 'layout'}),
-    awful.key({ key_super, 'Control' }, 'h',     function () awful.tag.incncol( 1, nil, true)    end,
-              {description = 'increase the number of columns', group = 'layout'}),
-    awful.key({ key_super, 'Control' }, 'l',     function () awful.tag.incncol(-1, nil, true)    end,
-              {description = 'decrease the number of columns', group = 'layout'}),
-    -- awful.key({ key_super,           }, 'space', function () awful.layout.inc( 1)                end,
-    --           {description = 'select next', group = 'layout'}),
-    -- awful.key({ key_super, 'Shift'   }, 'space', function () awful.layout.inc(-1)                end,
-    --           {description = 'select previous', group = 'layout'}),
-})
+
+
 
 
 --------------------------------------------------------------------------------
