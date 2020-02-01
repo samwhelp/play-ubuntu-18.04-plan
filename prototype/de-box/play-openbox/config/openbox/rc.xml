@@ -1169,6 +1169,18 @@
 
 
 <!-- ##################################################################### //-->
+<!-- ### Head: Window SendToLayer Normal //-->
+<!-- ##  http://openbox.org/wiki/Help:Actions#SendToLayer //-->
+
+    <keybind key="W-g">
+      <action name="SendToLayer"><layer>normal</layer></action>
+    </keybind>
+
+<!-- ### Tail: Window SendToLayer Normal //-->
+<!-- ##################################################################### //-->
+
+
+<!-- ##################################################################### //-->
 <!-- ### Head: Window ToggleAlwaysOnBottom //-->
 <!-- ##  http://openbox.org/wiki/Help:Actions#ToggleAlwaysOnBottom //-->
 

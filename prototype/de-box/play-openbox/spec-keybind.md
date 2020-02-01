@@ -139,6 +139,13 @@
 | `Win + b` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) |
 
 
+## Window SendToLayer Normal
+
+| Key | How to set |
+| --- | --- |
+| `Win + g` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) |
+
+
 ## Window BeginMove
 
 | Key | How to set |
