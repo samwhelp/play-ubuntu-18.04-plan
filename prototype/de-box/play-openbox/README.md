@@ -10,12 +10,13 @@
 
 ## Manual
 
-* [http://openbox.org/wiki/Help:Actions](http://openbox.org/wiki/Help:Actions)
-* [http://openbox.org/wiki/Help:Menus](http://openbox.org/wiki/Help:Menus)
-* [http://openbox.org/wiki/Help:Bindings](http://openbox.org/wiki/Help:Bindings)
-* [http://openbox.org/wiki/Help:Themes](http://openbox.org/wiki/Help:Themes)
-* [http://openbox.org/wiki/Help:Contents](http://openbox.org/wiki/Help:Contents)
-* [http://openbox.org/wiki/Help:DefaultConfiguration](http://openbox.org/wiki/Help:DefaultConfiguration)
+* [Help:Contents](http://openbox.org/wiki/Help:Contents)
+* [Help:Configuration](http://openbox.org/wiki/Help:Configuration)
+* [Help:Bindings](http://openbox.org/wiki/Help:Bindings)
+* [Help:Actions](http://openbox.org/wiki/Help:Actions)
+* [Help:Menus](http://openbox.org/wiki/Help:Menus)
+* [Help:Themes](http://openbox.org/wiki/Help:Themes)
+* [Help:DefaultConfiguration](http://openbox.org/wiki/Help:DefaultConfiguration)
 
 ## Usage
 
