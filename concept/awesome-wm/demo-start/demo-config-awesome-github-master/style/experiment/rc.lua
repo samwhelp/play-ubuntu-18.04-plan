@@ -100,6 +100,7 @@ editor_cmd = terminal .. ' -e ' .. editor
 key_super = 'Mod4'
 key_alt = 'Mod1'
 key_shift = 'Shift'
+key_ctrl = 'Control'
 -- }}}
 
 -- {{{ Menu
@@ -505,7 +506,7 @@ awful.keyboard.append_global_keybindings({
 	awful.key {
 		modifiers = { key_alt },
 		keygroup = 'numrow',
-		description = 'only view tag',
+		description = 'Only view tag',
 		group = 'Tag',
 		on_press = function (index)
 			local screen = awful.screen.focused()
@@ -515,25 +516,13 @@ awful.keyboard.append_global_keybindings({
 			end
 		end,
 	},
+
 	awful.key {
-		modifiers   = { key_super, 'Control' },
-		keygroup	= 'numrow',
-		description = 'toggle tag',
-		group	   = 'tag',
-		on_press	= function (index)
-			local screen = awful.screen.focused()
-			local tag = screen.tags[index]
-			if tag then
-				awful.tag.viewtoggle(tag)
-			end
-		end,
-	},
-	awful.key {
-		modifiers = { key_super, 'Shift' },
-		keygroup	= 'numrow',
-		description = 'move focused client to tag',
-		group	   = 'tag',
-		on_press	= function (index)
+		modifiers = { key_super },
+		keygroup = 'numrow',
+		description = 'Move focused client to tag',
+		group = 'Tag',
+		on_press = function (index)
 			if client.focus then
 				local tag = client.focus.screen.tags[index]
 				if tag then
@@ -542,11 +531,26 @@ awful.keyboard.append_global_keybindings({
 			end
 		end,
 	},
+
 	awful.key {
-		modifiers   = { key_super, 'Control', 'Shift' },
+		modifiers   = { key_alt, key_ctrl },
 		keygroup	= 'numrow',
-		description = 'toggle focused client on tag',
-		group	   = 'tag',
+		description = 'Toggle tag',
+		group	   = 'Tag',
+		on_press	= function (index)
+			local screen = awful.screen.focused()
+			local tag = screen.tags[index]
+			if tag then
+				awful.tag.viewtoggle(tag)
+			end
+		end,
+	},
+
+	awful.key {
+		modifiers   = { key_super, key_alt, key_ctrl },
+		keygroup	= 'numrow',
+		description = 'Toggle focused client on tag',
+		group	   = 'Tag',
 		on_press	= function (index)
 			if client.focus then
 				local tag = client.focus.screen.tags[index]
