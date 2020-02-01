@@ -142,6 +142,7 @@ launcher_main = awful.widget.launcher({
 	menu = menu_main,
 })
 
+
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
 
@@ -281,7 +282,8 @@ screen.connect_signal('request::desktop_decoration', function(s)
 			awful.button({ }, 1, function (c)
 				c:activate { context = 'tasklist', action = 'toggle_minimization' }
 			end),
-			awful.button({ }, 3, function() awful.menu.client_list { theme = { width = 250 } } end),
+			awful.button({ }, 2, function() awful.menu.client_list { theme = { width = 250 } } end),
+			--awful.button({ }, 3, function() awful.menu.client_list { theme = { width = 250 } } end),
 			awful.button({ }, 4, function() awful.client.focus.byidx(-1) end),
 			awful.button({ }, 5, function() awful.client.focus.byidx( 1) end),
 		},
@@ -374,8 +376,16 @@ end)
 -- https://awesomewm.org/apidoc/input_handling/awful.button.html
 
 awful.mouse.append_global_mousebindings({
+
+
+	-- Mouse Middle Button Click
+	awful.button({ }, 2, function () awful.menu.client_list { theme = { width = 250 } } end),
+
 	-- Mouse Right Button
-	awful.button({ }, 3, function () menu_main:toggle() end),
+	--awful.button({ }, 3, function () menu_main:toggle() end),
+
+	-- Mouse Right Button
+	awful.button({ }, 3, function () awful.spawn('rofi -show drun -show-icons') end),
 
 	-- Mouse Middle Button Scroll Up
 	awful.button({ }, 4, awful.tag.viewprev),
