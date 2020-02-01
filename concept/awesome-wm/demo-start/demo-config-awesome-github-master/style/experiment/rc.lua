@@ -629,14 +629,27 @@ awful.keyboard.append_global_keybindings({
 				c:activate { raise = true, context = 'key.unminimize' }
 			end
 		end,
-		{ description = 'restore minimized', group = 'Client' }
+		{ description = 'Restore minimized', group = 'Client' }
 	),
 
 	awful.key(
 		{ key_super }, 'u', awful.client.urgent.jumpto,
-		{ description = 'jump to urgent client', group = 'Client' }
+		{ description = 'Jump to urgent client', group = 'Client' }
 	),
 
+})
+
+
+awful.keyboard.append_global_keybindings({
+	awful.key(
+		{ key_super, key_shift }, 'j', function () awful.client.swap.byidx(1) end,
+		{ description = 'Swap with next client by index', group = 'Client'}
+	),
+
+	awful.key(
+		{ key_super, key_shift }, 'k', function () awful.client.swap.byidx(-1) end,
+		{ description = 'Swap with previous client by index', group = 'Client'}
+	),
 })
 
 --
@@ -686,10 +699,10 @@ awful.keyboard.append_global_keybindings({
 
 -- Layout related keybindings
 awful.keyboard.append_global_keybindings({
-    awful.key({ key_super, 'Shift'   }, 'j', function () awful.client.swap.byidx(  1)    end,
-              {description = 'swap with next client by index', group = 'client'}),
-    awful.key({ key_super, 'Shift'   }, 'k', function () awful.client.swap.byidx( -1)    end,
-              {description = 'swap with previous client by index', group = 'client'}),
+    -- awful.key({ key_super, 'Shift'   }, 'j', function () awful.client.swap.byidx(  1)    end,
+    --           {description = 'swap with next client by index', group = 'client'}),
+    -- awful.key({ key_super, 'Shift'   }, 'k', function () awful.client.swap.byidx( -1)    end,
+    --           {description = 'swap with previous client by index', group = 'client'}),
 
     awful.key({ key_super,           }, 'o',     function () awful.tag.incmwfact( 0.05)          end,
               {description = 'increase master width factor', group = 'layout'}),
