@@ -79,31 +79,38 @@ beautiful.init(gears.filesystem.get_configuration_dir() .. 'theme/experiment/the
 --beautiful.wallpaper = '/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg'
 beautiful.wallpaper = '/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg'
 
-
 --
 -- Tail: beautiful
 --------------------------------------------------------------------------------
 
 
--- {{{ Variable definitions
+--------------------------------------------------------------------------------
+-- Head: Variable Definitions
+--
+
 
 -- This is used later as the default terminal and editor to run.
 terminal = 'sakura'
 editor = os.getenv('EDITOR') or 'vi'
 editor_cmd = terminal .. ' -e ' .. editor
 
--- Default key_super.
--- Usually, Mod4 is the key with a logo between Control and Alt.
--- If you do not like this or do not have such a key,
--- I suggest you to remap Mod4 to another key using xmodmap or other tools.
--- However, you can use another modifier like Mod1, but it may interact with others.
+
+-- ## key
 key_super = 'Mod4'
 key_alt = 'Mod1'
 key_shift = 'Shift'
 key_ctrl = 'Control'
--- }}}
 
--- {{{ Menu
+
+--
+-- Tail: beautiful
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-- Head: Menu
+--
+
 -- Create a launcher widget and a main menu
 menu_awesome = {
 	{ 'Hotkeys', function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
@@ -138,9 +145,17 @@ launcher_main = awful.widget.launcher({
 
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
--- }}}
 
--- {{{ Tag
+--
+-- Tail: Menu
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-- Head: Request Default Layouts
+--
+
+
 -- Table of layouts to cover with awful.layout.inc, order matters.
 tag.connect_signal('request::default_layouts', function()
 	awful.layout.append_default_layouts({
@@ -160,25 +175,55 @@ tag.connect_signal('request::default_layouts', function()
 	})
 
 	-- awful.layout.append_default_layouts({
-	-- 	awful.layout.suit.floating,
-	-- 	awful.layout.suit.spiral.dwindle,
-	-- 	awful.layout.suit.max,
-	-- 	awful.layout.suit.tile,
-	-- 	awful.layout.suit.tile.left,
-	-- 	awful.layout.suit.tile.bottom,
-	-- 	awful.layout.suit.tile.top,
-	-- 	awful.layout.suit.fair,
-	-- 	awful.layout.suit.fair.horizontal,
-	-- 	awful.layout.suit.spiral,
-	-- 	-- awful.layout.suit.max.fullscreen,
-	-- 	awful.layout.suit.magnifier,
-	-- 	awful.layout.suit.corner.nw,
+		-- awful.layout.suit.floating,
+		-- awful.layout.suit.tile,
+		-- awful.layout.suit.tile.left,
+		-- awful.layout.suit.tile.bottom,
+		-- awful.layout.suit.tile.top,
+		-- awful.layout.suit.fair,
+		-- awful.layout.suit.fair.horizontal,
+		-- awful.layout.suit.spiral,
+		-- awful.layout.suit.spiral.dwindle,
+		-- awful.layout.suit.max,
+		-- --awful.layout.suit.max.fullscreen,
+		-- awful.layout.suit.magnifier,
+		-- awful.layout.suit.corner.nw,
 	-- })
 
 end)
--- }}}
 
--- {{{ Wibar
+--
+-- Tail: Request Default Layouts
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Head: Request Wallpaper
+--
+
+screen.connect_signal('request::wallpaper', function(s)
+
+	-- Wallpaper
+	if beautiful.wallpaper then
+		local wallpaper = beautiful.wallpaper
+		-- If wallpaper is a function, call it with the screen
+		if type(wallpaper) == 'function' then
+			wallpaper = wallpaper(s)
+		end
+		gears.wallpaper.maximized(wallpaper, s, true)
+	end
+
+end)
+
+--
+--- Tail: Request Wallpaper
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Head: Request Desktop Decoration
+--
+
 
 -- Keyboard map indicator and switcher
 mykeyboardlayout = awful.widget.keyboardlayout()
@@ -186,97 +231,91 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
 
-screen.connect_signal('request::wallpaper', function(s)
-    -- Wallpaper
-    if beautiful.wallpaper then
-        local wallpaper = beautiful.wallpaper
-        -- If wallpaper is a function, call it with the screen
-        if type(wallpaper) == 'function' then
-            wallpaper = wallpaper(s)
-        end
-        gears.wallpaper.maximized(wallpaper, s, true)
-    end
-end)
 
 screen.connect_signal('request::desktop_decoration', function(s)
 	-- Each screen has its own tag table.
 	-- awful.tag({ '1', '2', '3', '4', '5', '6', '7', '8', '9' }, s, awful.layout.layouts[1])
 	awful.tag({ 'Term', 'Edit', 'File', 'Web', 'Misc', 'Free'}, s, awful.layout.layouts[1])
 
-    -- Create a promptbox for each screen
-    s.mypromptbox = awful.widget.prompt()
+	-- Create a promptbox for each screen
+	s.mypromptbox = awful.widget.prompt()
 
-    -- Create an imagebox widget which will contain an icon indicating which layout we're using.
-    -- We need one layoutbox per screen.
-    s.mylayoutbox = awful.widget.layoutbox {
-        screen  = s,
-        buttons = {
-            awful.button({ }, 1, function () awful.layout.inc( 1) end),
-            awful.button({ }, 3, function () awful.layout.inc(-1) end),
-            awful.button({ }, 4, function () awful.layout.inc( 1) end),
-            awful.button({ }, 5, function () awful.layout.inc(-1) end),
-        }
-    }
+	-- Create an imagebox widget which will contain an icon indicating which layout we're using.
+	-- We need one layoutbox per screen.
+	s.mylayoutbox = awful.widget.layoutbox {
+		screen  = s,
+		buttons = {
+			awful.button({ }, 1, function () awful.layout.inc( 1) end),
+			awful.button({ }, 3, function () awful.layout.inc(-1) end),
+			awful.button({ }, 4, function () awful.layout.inc( 1) end),
+			awful.button({ }, 5, function () awful.layout.inc(-1) end),
+		}
+	}
 
-    -- Create a taglist widget
-    s.mytaglist = awful.widget.taglist {
-        screen  = s,
-        filter  = awful.widget.taglist.filter.all,
-        buttons = {
-            awful.button({ }, 1, function(t) t:view_only() end),
-            awful.button({ key_super }, 1, function(t)
-                                            if client.focus then
-                                                client.focus:move_to_tag(t)
-                                            end
-                                        end),
-            awful.button({ }, 3, awful.tag.viewtoggle),
-            awful.button({ key_super }, 3, function(t)
-                                            if client.focus then
-                                                client.focus:toggle_tag(t)
-                                            end
-                                        end),
-            awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
-            awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end),
-        }
-    }
+	-- Create a taglist widget
+	s.mytaglist = awful.widget.taglist {
+		screen  = s,
+		filter  = awful.widget.taglist.filter.all,
+		buttons = {
+			awful.button({ }, 1, function(t) t:view_only() end),
+			awful.button({ key_super }, 1, function(t)
+											if client.focus then
+												client.focus:move_to_tag(t)
+											end
+										end),
+			awful.button({ }, 3, awful.tag.viewtoggle),
+			awful.button({ key_super }, 3, function(t)
+											if client.focus then
+												client.focus:toggle_tag(t)
+											end
+										end),
+			awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
+			awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end),
+		}
+	}
 
-    -- Create a tasklist widget
-    s.mytasklist = awful.widget.tasklist {
-        screen  = s,
-        filter  = awful.widget.tasklist.filter.currenttags,
-        buttons = {
-            awful.button({ }, 1, function (c)
-                c:activate { context = 'tasklist', action = 'toggle_minimization' }
-            end),
-            awful.button({ }, 3, function() awful.menu.client_list { theme = { width = 250 } } end),
-            awful.button({ }, 4, function() awful.client.focus.byidx( 1) end),
-            awful.button({ }, 5, function() awful.client.focus.byidx(-1) end),
-        }
-    }
+	-- Create a tasklist widget
+	s.mytasklist = awful.widget.tasklist {
+		screen  = s,
+		filter  = awful.widget.tasklist.filter.currenttags,
+		buttons = {
+			awful.button({ }, 1, function (c)
+				c:activate { context = 'tasklist', action = 'toggle_minimization' }
+			end),
+			awful.button({ }, 3, function() awful.menu.client_list { theme = { width = 250 } } end),
+			awful.button({ }, 4, function() awful.client.focus.byidx( 1) end),
+			awful.button({ }, 5, function() awful.client.focus.byidx(-1) end),
+		}
+	}
 
-    -- Create the wibox
-    s.mywibox = awful.wibar({ position = 'top', screen = s })
+	-- Create the wibox
+	s.mywibox = awful.wibar({ position = 'top', screen = s })
 
-    -- Add widgets to the wibox
-    s.mywibox.widget = {
-        layout = wibox.layout.align.horizontal,
-        { -- Left widgets
-            layout = wibox.layout.fixed.horizontal,
-            launcher_main,
-            s.mytaglist,
-            s.mypromptbox,
-        },
-        s.mytasklist, -- Middle widget
-        { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
-            wibox.widget.systray(),
-            mytextclock,
-            s.mylayoutbox,
-        },
-    }
+	-- Add widgets to the wibox
+	s.mywibox.widget = {
+		layout = wibox.layout.align.horizontal,
+		{ -- Left widgets
+			layout = wibox.layout.fixed.horizontal,
+			launcher_main,
+			s.mytaglist,
+			s.mypromptbox,
+		},
+		s.mytasklist, -- Middle widget
+		{ -- Right widgets
+			layout = wibox.layout.fixed.horizontal,
+			mykeyboardlayout,
+			wibox.widget.systray(),
+			mytextclock,
+			s.mylayoutbox,
+		},
+	}
 end)
--- }}}
+
+--
+--- Tail: Request Desktop Decoration
+--------------------------------------------------------------------------------
+
+
 
 
 --------------------------------------------------------------------------------
@@ -410,8 +449,8 @@ awful.keyboard.append_global_keybindings({
 	awful.key(
 		{ key_alt }, 'F3', function ()
 			awful.prompt.run {
-				prompt       = 'Run Lua code: ',
-				textbox      = awful.screen.focused().mypromptbox.widget,
+				prompt	   = 'Run Lua code: ',
+				textbox	  = awful.screen.focused().mypromptbox.widget,
 				exe_callback = awful.util.eval,
 				history_path = awful.util.get_cache_dir() .. '/history_eval'
 			}
