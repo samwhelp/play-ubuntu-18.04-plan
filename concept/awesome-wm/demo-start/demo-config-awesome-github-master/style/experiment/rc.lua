@@ -225,10 +225,10 @@ end)
 
 
 -- Keyboard map indicator and switcher
-mykeyboardlayout = awful.widget.keyboardlayout()
+keyboardlayout_main = awful.widget.keyboardlayout()
 
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock()
+textclock_main = wibox.widget.textclock()
 
 
 screen.connect_signal('request::desktop_decoration', function(s)
@@ -237,11 +237,11 @@ screen.connect_signal('request::desktop_decoration', function(s)
 	awful.tag({ 'Term', 'Edit', 'File', 'Web', 'Misc', 'Free'}, s, awful.layout.layouts[1])
 
 	-- Create a promptbox for each screen
-	s.mypromptbox = awful.widget.prompt()
+	s.promptbox_main = awful.widget.prompt()
 
 	-- Create an imagebox widget which will contain an icon indicating which layout we're using.
 	-- We need one layoutbox per screen.
-	s.mylayoutbox = awful.widget.layoutbox {
+	s.layoutbox_main = awful.widget.layoutbox {
 		screen  = s,
 		buttons = {
 			awful.button({ }, 1, function () awful.layout.inc( 1) end),
@@ -252,22 +252,22 @@ screen.connect_signal('request::desktop_decoration', function(s)
 	}
 
 	-- Create a taglist widget
-	s.mytaglist = awful.widget.taglist {
+	s.taglist_main = awful.widget.taglist {
 		screen  = s,
 		filter  = awful.widget.taglist.filter.all,
 		buttons = {
 			awful.button({ }, 1, function(t) t:view_only() end),
 			awful.button({ key_super }, 1, function(t)
-											if client.focus then
-												client.focus:move_to_tag(t)
-											end
-										end),
+				if client.focus then
+					client.focus:move_to_tag(t)
+				end
+			end),
 			awful.button({ }, 3, awful.tag.viewtoggle),
 			awful.button({ key_super }, 3, function(t)
-											if client.focus then
-												client.focus:toggle_tag(t)
-											end
-										end),
+				if client.focus then
+					client.focus:toggle_tag(t)
+				end
+			end),
 			awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
 			awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end),
 		}
@@ -345,16 +345,16 @@ screen.connect_signal('request::desktop_decoration', function(s)
 		{ -- Left widgets
 			layout = wibox.layout.fixed.horizontal,
 			launcher_main,
-			s.mytaglist,
-			s.mypromptbox,
+			s.taglist_main,
+			s.promptbox_main,
 		},
 		s.tasklist_main, -- Middle widget
 		{ -- Right widgets
 			layout = wibox.layout.fixed.horizontal,
-			mykeyboardlayout,
+			keyboardlayout_main,
 			wibox.widget.systray(),
-			mytextclock,
-			s.mylayoutbox,
+			textclock_main,
+			s.layoutbox_main,
 		},
 	}
 end)
@@ -498,7 +498,7 @@ awful.keyboard.append_global_keybindings({
 		{ key_alt }, 'F3', function ()
 			awful.prompt.run {
 				prompt	   = 'Run Lua code: ',
-				textbox	  = awful.screen.focused().mypromptbox.widget,
+				textbox	  = awful.screen.focused().promptbox_main.widget,
 				exe_callback = awful.util.eval,
 				history_path = awful.util.get_cache_dir() .. '/history_eval'
 			}
@@ -507,7 +507,7 @@ awful.keyboard.append_global_keybindings({
 	),
 
 	awful.key(
-		{ key_alt }, 'F2', function () awful.screen.focused().mypromptbox:run() end,
+		{ key_alt }, 'F2', function () awful.screen.focused().promptbox_main:run() end,
 		{description = 'run prompt', group = 'Awesome'}
 	),
 
