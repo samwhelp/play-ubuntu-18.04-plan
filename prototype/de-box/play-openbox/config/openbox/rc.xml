@@ -1027,7 +1027,7 @@
 <!-- ### Head: Window RaiseLower //-->
 <!-- ##  http://openbox.org/wiki/Help:Actions#RaiseLower //-->
 
-    <keybind key="W-m">
+    <keybind key="W-u">
       <action name="RaiseLower"/>
     </keybind>
 

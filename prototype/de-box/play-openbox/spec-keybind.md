@@ -72,7 +72,7 @@
 
 | Key | How to set | Description |
 | --- | --- | --- |
-| `Win + m` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise or Lower Window |
+| `Win + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise or Lower Window |
 | `Win + Shift + PageUp` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise Window |
 | `Win + Shift PageDown` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Lower Window |
 
