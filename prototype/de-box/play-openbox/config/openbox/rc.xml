@@ -1071,9 +1071,15 @@
       <action name="Iconify"/>
     </keybind>
 
+    <keybind key="W-n">
+      <action name="Iconify"/>
+    </keybind>
+
+<!--
     <keybind key="W-i">
       <action name="Iconify"/>
     </keybind>
+//-->
 
 <!-- ### Tail: Window Iconify //-->
 <!-- ##################################################################### //-->
@@ -1088,11 +1094,19 @@
       </action>
     </keybind>
 
+    <keybind key="W-m">
+      <action name="ToggleMaximize">
+        <direction>both</direction>
+      </action>
+    </keybind>
+
+<!--
     <keybind key="W-u">
       <action name="ToggleMaximize">
         <direction>both</direction>
       </action>
     </keybind>
+//-->
 
 <!-- ### Tail: Window ToggleMaximize //-->
 <!-- ##################################################################### //-->

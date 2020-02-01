@@ -91,7 +91,7 @@
 | Key | How to set |
 | --- | --- |
 | `Win + x` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L797) |
-| `Win + i` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L801) |
+| `Win + n` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L801) |
 
 
 ## Window ToggleMaximize
@@ -99,7 +99,7 @@
 | Key | How to set |
 | --- | --- |
 | `Win + w` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L812) |
-| `Win + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L818) |
+| `Win + m` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L818) |
 
 
 ## Window ToggleFullscreen
