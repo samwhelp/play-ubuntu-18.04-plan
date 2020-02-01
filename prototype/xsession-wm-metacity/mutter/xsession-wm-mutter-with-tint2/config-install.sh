@@ -127,16 +127,28 @@ mutter_set_keybindings_about_workspace () {
 	#gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Shift><Alt>parenleft']"
 	#gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Shift><Alt>parenright']"
 
-	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Alt><Super>1']"
-	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Alt><Super>2']"
-	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Alt><Super>3']"
-	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Alt><Super>4']"
-	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 "['<Alt><Super>5']"
-	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 "['<Alt><Super>6']"
-	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 "['<Alt><Super>7']"
-	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "['<Alt><Super>8']"
-	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Alt><Super>9']"
-	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Alt><Super>10']"
+	# gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Alt><Super>1']"
+	# gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Alt><Super>2']"
+	# gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Alt><Super>3']"
+	# gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Alt><Super>4']"
+	# gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 "['<Alt><Super>5']"
+	# gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 "['<Alt><Super>6']"
+	# gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 "['<Alt><Super>7']"
+	# gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "['<Alt><Super>8']"
+	# gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Alt><Super>9']"
+	# gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Alt><Super>10']"
+
+
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Super>1']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Super>2']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Super>3']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Super>4']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 "['<Super>5']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 "['<Super>6']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 "['<Super>7']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "['<Super>8']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Super>9']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Super>10']"
 
 
 }
