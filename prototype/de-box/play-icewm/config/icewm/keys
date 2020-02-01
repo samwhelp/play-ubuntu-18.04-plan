@@ -61,14 +61,20 @@ key "XF86Eject" eject
 ##
 
 key "Alt+Return" sakura -m
-key "Alt+Shift+f" pcmanfm-qt
+key "Alt+Shift+a" sakura -m
+key "Alt+Shift+t" tilix --quake
+
 key "Alt+Shift+r" rofi -show run
 key "Alt+Shift+w" rofi -show window -show-icons
 key "Alt+Shift+d" rofi -show drun -show-icons
-key "Alt+Shift+t" tilix --quake
+
+key "Alt+Shift+f" pcmanfm-qt
 key "Alt+Shift+b" firefox
 key "Alt+Shift+g" nautilus
 key "Alt+Shift+e" gedit
+
+key "Alt+Shift+m" pavucontrol
+#key "Alt+Shift+m" mate-volume-control
 
 ##
 ### Tail: App
