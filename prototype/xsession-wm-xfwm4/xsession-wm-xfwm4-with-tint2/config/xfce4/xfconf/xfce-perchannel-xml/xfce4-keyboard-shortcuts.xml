@@ -181,9 +181,9 @@
       <property name="&lt;Super&gt;z" type="string" value="fill_window_key"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;z" type="string" value="fill_horiz_key"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;z" type="string" value="fill_vert_key"/>
-      <property name="&lt;Super&gt;n" type="string" value="switch_application_key"/>
+      <property name="&lt;Super&gt;i" type="string" value="switch_application_key"/>
       <property name="&lt;Super&gt;y" type="string" value="shade_window_key"/>
-      <property name="&lt;Super&gt;m" type="string" value="raiselower_window_key"/>
+      <property name="&lt;Super&gt;u" type="string" value="raiselower_window_key"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;w" type="string" value="maximize_horiz_key"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;w" type="string" value="maximize_vert_key"/>
       <property name="&lt;Super&gt;t" type="string" value="above_key"/>
@@ -193,16 +193,16 @@
       <property name="&lt;Alt&gt;&lt;Super&gt;j" type="string" value="move_window_down_workspace_key"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;h" type="string" value="move_window_left_workspace_key"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;l" type="string" value="move_window_right_workspace_key"/>
-      <property name="&lt;Alt&gt;&lt;Super&gt;1" type="string" value="move_window_workspace_1_key"/>
-      <property name="&lt;Alt&gt;&lt;Super&gt;2" type="string" value="move_window_workspace_2_key"/>
-      <property name="&lt;Alt&gt;&lt;Super&gt;3" type="string" value="move_window_workspace_3_key"/>
-      <property name="&lt;Alt&gt;&lt;Super&gt;4" type="string" value="move_window_workspace_4_key"/>
-      <property name="&lt;Alt&gt;&lt;Super&gt;5" type="string" value="move_window_workspace_5_key"/>
-      <property name="&lt;Alt&gt;&lt;Super&gt;6" type="string" value="move_window_workspace_6_key"/>
-      <property name="&lt;Alt&gt;&lt;Super&gt;7" type="string" value="move_window_workspace_7_key"/>
-      <property name="&lt;Alt&gt;&lt;Super&gt;8" type="string" value="move_window_workspace_8_key"/>
-      <property name="&lt;Alt&gt;&lt;Super&gt;9" type="string" value="move_window_workspace_9_key"/>
-      <property name="&lt;Alt&gt;&lt;Super&gt;0" type="string" value="move_window_workspace_10_key"/>
+      <property name="&lt;Super&gt;1" type="string" value="move_window_workspace_1_key"/>
+      <property name="&lt;Super&gt;2" type="string" value="move_window_workspace_2_key"/>
+      <property name="&lt;Super&gt;3" type="string" value="move_window_workspace_3_key"/>
+      <property name="&lt;Super&gt;4" type="string" value="move_window_workspace_4_key"/>
+      <property name="&lt;Super&gt;5" type="string" value="move_window_workspace_5_key"/>
+      <property name="&lt;Super&gt;6" type="string" value="move_window_workspace_6_key"/>
+      <property name="&lt;Super&gt;7" type="string" value="move_window_workspace_7_key"/>
+      <property name="&lt;Super&gt;8" type="string" value="move_window_workspace_8_key"/>
+      <property name="&lt;Super&gt;9" type="string" value="move_window_workspace_9_key"/>
+      <property name="&lt;Super&gt;0" type="string" value="move_window_workspace_10_key"/>
       <property name="&lt;Alt&gt;k" type="string" value="up_workspace_key"/>
       <property name="&lt;Alt&gt;j" type="string" value="down_workspace_key"/>
       <property name="&lt;Alt&gt;h" type="string" value="left_workspace_key"/>
