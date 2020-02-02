@@ -9,7 +9,11 @@ feh
 compton
 
 tint2
-volumeicon-alsa
+#volumeicon-alsa
+mate-media
+
+
+#blueman
 
 
 policykit-1-gnome

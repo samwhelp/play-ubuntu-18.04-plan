@@ -23,6 +23,14 @@
 #sleep 1 &&
 #nm-applet &
 
+## Note: use /etc/xdg/autostart/nm-applet.desktop
+
+
+## blueman-applet (Package: blueman)
+#blueman-applet
+## Note: use /etc/xdg/autostart/blueman.desktop
+
+
 ##
 ### Tail: Network
 ################################################################################
@@ -32,8 +40,14 @@
 ### Head: Mixer
 ##
 
-## sound mixer
-volumeicon &
+## mixer applet
+
+## volumeicon (Package: volumeicon-alsa)
+#volumeicon &
+
+
+## mate-volume-control-applet (Package: mate-media)
+mate-volume-control-applet &
 
 ##
 ### Tail: Mixer
