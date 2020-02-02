@@ -61,16 +61,20 @@ $ make config-install
 ```
 
 
-## Keyboard shortcuts
+## Keybind and Mousebind
 
 Please refer to
 
-* $ less ~/.config/openbox/rc.xml
+* $ less [~/.config/openbox/rc.xml](config/openbox/rc.xml)
+
+search `<keyboard>` or `<mouse>`
 
 
 ## Link
 
 * http://openbox.org/
+* https://wiki.debian.org/Openbox
+* https://wiki.archlinux.org/index.php/Openbox
 
 
 ## Theme
