@@ -40,7 +40,7 @@ view:
 .PHONY: view
 
 
-install:
+install: rc
 	install -m 664 rc.xml ~/.config/openbox/rc.xml
 .PHONY: install
 
@@ -50,7 +50,7 @@ test:
 .PHONY: test
 
 
-sync:
+sync: rc
 	install -m 664 rc.xml ../rc.xml
 .PHONY: sync
 
