@@ -15,6 +15,7 @@
 * [Help:Bindings](http://openbox.org/wiki/Help:Bindings)
 * [Help:Actions](http://openbox.org/wiki/Help:Actions)
 * [Help:Menus](http://openbox.org/wiki/Help:Menus)
+* [Help:Applications](http://openbox.org/wiki/Help:Applications)
 * [Help:Themes](http://openbox.org/wiki/Help:Themes)
 * [Help:DefaultConfiguration](http://openbox.org/wiki/Help:DefaultConfiguration)
 
