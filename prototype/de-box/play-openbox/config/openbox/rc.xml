@@ -1946,17 +1946,14 @@ h l
 
 
 	<application class="Firefox">
-		<maximized>true</maximized>
 		<desktop>4</desktop>
 	</application>
 
 	<application class="Atom">
-		<maximized>true</maximized>
 		<desktop>2</desktop>
 	</application>
 
 	<application class="pcmanfm-qt">
-		<maximized>true</maximized>
 		<desktop>3</desktop>
 	</application>
 
