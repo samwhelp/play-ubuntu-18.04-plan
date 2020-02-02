@@ -18,4 +18,4 @@
 
 * [Help:Configuration](http://openbox.org/wiki/Help:Configuration#Mouse)
 * [Help:Bindings](http://openbox.org/wiki/Help:Bindings#Mouse_bindings)
-* [http://openbox.org/wiki/Help:Actions](http://openbox.org/wiki/Help:Actions)
+* [http://openbox.org/wiki/Help:Actions](http://openbox.org/wiki/Help:Actions#ShowMenu)
