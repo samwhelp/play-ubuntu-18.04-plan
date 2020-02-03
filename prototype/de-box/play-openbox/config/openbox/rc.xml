@@ -155,16 +155,16 @@
 
 		<name>Term</name>
 		<name>Edit</name>
-		<name>File</name>
 		<name>Web</name>
+		<name>File</name>
 		<name>Misc</name>
 		<name>Free</name>
 
 		<!--
 		<name>Term (1)</name>
 		<name>Edit (2)</name>
-		<name>File (3)</name>
-		<name>Web (4)</name>
+		<name>Web (3)</name>
+		<name>File (4)</name>
 		<name>Misc (5)</name>
 		<name>Free (6)</name>
 		//-->
