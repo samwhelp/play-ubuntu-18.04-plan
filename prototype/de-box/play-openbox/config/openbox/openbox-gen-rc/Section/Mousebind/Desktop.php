@@ -14,29 +14,32 @@
 			</action>
 		</mousebind>
 
-		<mousebind button="A-Up" action="Click">
+
+		<mousebind button="W-Up" action="Click">
 			<action name="GoToDesktop">
 				<to>previous</to>
 			</action>
 		</mousebind>
 
-		<mousebind button="A-Down" action="Click">
+		<mousebind button="W-Down" action="Click">
 			<action name="GoToDesktop">
 				<to>next</to>
 			</action>
 		</mousebind>
 
-		<mousebind button="C-A-Up" action="Click">
+		<!--
+		<mousebind button="W-C-Up" action="Click">
 			<action name="GoToDesktop">
 				<to>previous</to>
 			</action>
 		</mousebind>
 
-		<mousebind button="C-A-Down" action="Click">
+		<mousebind button="W-C-Down" action="Click">
 			<action name="GoToDesktop">
 				<to>next</to>
 			</action>
 		</mousebind>
+		//-->
 
 		<mousebind button="Left" action="Press">
 			<action name="Focus"/>

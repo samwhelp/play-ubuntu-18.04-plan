@@ -45,6 +45,20 @@
 			</action>
 		</mousebind>
 
+		<!--
+		<mousebind button="W-C-Up" action="Click">
+			<action name="GoToDesktop">
+				<to>previous</to>
+			</action>
+		</mousebind>
+
+		<mousebind button="W-C-Down" action="Click">
+			<action name="GoToDesktop">
+				<to>next</to>
+			</action>
+		</mousebind>
+		//-->		
+
 		<mousebind button="W-A-Up" action="Click">
 			<action name="SendToDesktop">
 				<to>previous</to>
