@@ -13,6 +13,7 @@
 * [Window Toggle Maximize](#window-toggle-maximize)
 * [Window Toggle Decorations](#window-toggle-decorations)
 * [Window Toggle Fullscreen](#window-toggle-fullscreen)
+* [Window Toggle Shade](#window-toggle-shade)
 
 
 ## Config Sample
@@ -143,6 +144,19 @@
 | `Win + [Mouse Right DoubleClick]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Toggle Fullscreen | [ToggleFullscreen](http://openbox.org/wiki/Help:Actions#ToggleFullscreen) |
 
 * Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
+
+
+## Window Toggle Shade
+
+### On Titlebar
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `[Mouse Middle Up]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Shade | [Shade](http://openbox.org/wiki/Help:Actions#Shade) |
+| `[Mouse Middle Down]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Unshade | [Unshade](http://openbox.org/wiki/Help:Actions#Unshade) |
+
+
+* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
 
 
 
