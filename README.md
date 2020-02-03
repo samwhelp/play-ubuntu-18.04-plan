@@ -6,7 +6,8 @@
 ## Docs
 
 * [Quick Start](docs/howto/start.md)
-* [Keyboard Shortcuts](docs/spec/keyboard-shortcuts.md)
+* [Keybind](docs/spec/keybind.md)
+* [Mousebind](docs/spec/mousebind.md)
 
 
 ## Prototype

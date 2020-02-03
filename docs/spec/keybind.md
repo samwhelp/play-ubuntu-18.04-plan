@@ -1,4 +1,7 @@
-# Keyboard Shortcuts
+
+# Keybind
+
+(Keyboard Shortcuts)
 
 ## Keys
 
@@ -7,9 +10,9 @@
 * `Super` : 'Mod4' (Win)
 * `Alt` : 'Mod1'
 
-> `Super` for window (client)
+> `Super` for Window (Client)
 
-> `Alt` for Workspace (tag)
+> `Alt` for Workspace (Tag) (Desktop)
 
 
 ## Menu
