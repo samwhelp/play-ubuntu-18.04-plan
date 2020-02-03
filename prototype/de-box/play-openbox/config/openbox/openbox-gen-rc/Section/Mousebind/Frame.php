@@ -12,6 +12,7 @@
 		</mousebind>
 
 		<mousebind button="A-Left" action="Drag">
+			<action name="UnmaximizeFull"/>
 			<action name="Move"/>
 		</mousebind>
 
@@ -22,6 +23,7 @@
 		</mousebind>
 
 		<mousebind button="A-Right" action="Drag">
+			<action name="UnmaximizeFull"/>
 			<action name="Resize"/>
 		</mousebind>
 

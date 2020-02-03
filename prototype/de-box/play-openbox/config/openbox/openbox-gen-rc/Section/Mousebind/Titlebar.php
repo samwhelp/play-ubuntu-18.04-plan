@@ -3,6 +3,7 @@
 	<context name="Titlebar">
 
 		<mousebind button="Left" action="Drag">
+			<action name="UnmaximizeFull"/>
 			<action name="Move"/>
 		</mousebind>
 
