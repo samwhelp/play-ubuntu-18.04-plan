@@ -15,6 +15,8 @@
 * [Toggle Show Desktop](#toggle-show-desktop)
 * [Go To Workspace](#go-to-workspace)
 * [Send To Workspace](#send-to-workspace)
+* [Window Switch](#window-switch)
+
 
 
 ## Manual
@@ -223,22 +225,24 @@
 
 ## Window Switch
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L752) | Previous Window|
-| `Win + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L761) | Next Window |
+* Config Sample / [WindowSwitch](config/openbox/openbox-gen-rc/Section/Keybind/WindowSwitch.php)
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Win + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Previous Window | [PreviousWindow](http://openbox.org/wiki/Help:Actions#PreviousWindow) |
+| `Win + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Next Window | [NextWindow](http://openbox.org/wiki/Help:Actions#NextWindow) |
 
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L752) | Previous Window|
-| `Win + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L761) | Next Window |
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Win + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Previous Window | [PreviousWindow](http://openbox.org/wiki/Help:Actions#PreviousWindow) |
+| `Win + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Next Window | [NextWindow](http://openbox.org/wiki/Help:Actions#NextWindow) |
 
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L752) | Previous Window|
-| `Win + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L761) | Next Window |
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Win + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Previous Window | [PreviousWindow](http://openbox.org/wiki/Help:Actions#PreviousWindow) |
+| `Win + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Next Window | [NextWindow](http://openbox.org/wiki/Help:Actions#NextWindow) |
 
 
 ## Window Raise or Lower
