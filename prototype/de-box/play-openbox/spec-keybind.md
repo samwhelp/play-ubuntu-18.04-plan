@@ -254,8 +254,8 @@
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `Win + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise or Lower Window | [RaiseLower](http://openbox.org/wiki/Help:Actions#RaiseLower) |
-| `Win + Shift + PageUp` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise Window | [RaiseLower](http://openbox.org/wiki/Help:Actions#Raise) |
-| `Win + Shift + PageDown` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Lower Window | [RaiseLower](http://openbox.org/wiki/Help:Actions#Lower) |
+| `Win + Shift + PageUp` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise Window | [Raise](http://openbox.org/wiki/Help:Actions#Raise) |
+| `Win + Shift + PageDown` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Lower Window | [Lower](http://openbox.org/wiki/Help:Actions#Lower) |
 
 
 ## Window Close
