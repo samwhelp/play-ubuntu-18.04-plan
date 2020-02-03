@@ -12,7 +12,7 @@
 * [Show Client Menu](#show-client-menu)
 * [Show Root Menu](#show-root-menu)
 * [Show Workspace Menu](#show-workspace-menu)
-
+* [Toggle Show Desktop](#toggle-show-desktop)
 
 ## Manual
 
@@ -107,14 +107,16 @@
 
 * Config Sample / [MenuClientList](config/openbox/openbox-gen-rc/Section/Keybind/MenuClientList.php)
 
-## ToggleShowDesktop
+## Toggle Show Desktop
 
-| Key | How to set |
-| --- | --- |
-| `Win + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L565) |
-| `Alt + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L561) |
-| `Ctrl + Win + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L540) |
-| `Ctrl + Alt + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L534) |
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L565) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
+| `Alt + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L561) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
+| `Ctrl + Win + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L540) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
+| `Ctrl + Alt + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L534) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
+
+* Config Sample / [ToggleShowDesktop](config/openbox/openbox-gen-rc/Section/Keybind/ToggleShowDesktop.php)
 
 
 ## Window Switch
