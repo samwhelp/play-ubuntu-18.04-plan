@@ -6,8 +6,8 @@
 
 * [Config Sample](#config-sample)
 * [On Desktop](#on-desktop)
-* [Go To Desktop](#go-to-desktop)
-* [Send To Desktop](#send-to-desktop)
+* [Go To Workspace](#go-to-workspace)
+* [Send To Workspace](#send-to-workspace)
 * [Window Move](#window-move)
 * [Window Resize](#window-resize)
 * [Window Toggle Maximize](#window-toggle-maximize)
@@ -40,7 +40,7 @@
 * Config Sample / [Context Root](config/openbox/openbox-gen-rc/Section/Mousebind/Root.php)
 
 
-## Go To Desktop
+## Go To Workspace
 
 ### On Desktop
 
@@ -63,7 +63,7 @@
 * Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
 
 
-## Send To Desktop
+## Send To Workspace
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
