@@ -26,6 +26,8 @@
 * [Window Toggle AlwaysOnTop](#window-toggle-alwaysontop)
 * [Window Toggle AlwaysOnBottom](#window-toggle-alwaysonbottom)
 * [Window SendToLayer Normal](#window-sendtolayer-normal)
+* [Window Begin Move](#window-begin-move)
+* [Window Begin Resize](#window-begin-resize)
 
 
 
@@ -353,18 +355,22 @@
 | `Win + g` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [SendToLayer](http://openbox.org/wiki/Help:Actions#SendToLayer) |
 
 
-## Window BeginMove
+## Window Begin Move
 
-| Key | How to set |
-| --- | --- |
-| `Win + e` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L884) |
+* Config Sample / [WindowBeginMove](config/openbox/openbox-gen-rc/Section/Keybind/WindowBeginMove.php)
+
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + e` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Move](http://openbox.org/wiki/Help:Actions#Move) |
 
 
-## Window BeginResize
+## Window Begin Resize
 
-| Key | How to set |
-| --- | --- |
-| `Win + r` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L896) |
+* Config Sample / [WindowBeginResize](config/openbox/openbox-gen-rc/Section/Keybind/WindowBeginResize.php)
+
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + r` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | [Resize](http://openbox.org/wiki/Help:Actions#Resize) |
 
 
 ## Window Tiling
