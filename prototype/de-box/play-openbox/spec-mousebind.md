@@ -14,6 +14,8 @@
 * [Window Toggle Decorations](#window-toggle-decorations)
 * [Window Toggle Fullscreen](#window-toggle-fullscreen)
 * [Window Toggle Shade](#window-toggle-shade)
+* [Window Show Client Menu](#window-show-client-menu)
+* [Manual](#manual)
 
 
 ## Config Sample
@@ -159,6 +161,16 @@
 * Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
 
 
+## Window Show Client Menu
+
+### On Titlebar
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `[Mouse Right Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Show Client Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) |
+
+
+* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
 
 
 ## Manual
