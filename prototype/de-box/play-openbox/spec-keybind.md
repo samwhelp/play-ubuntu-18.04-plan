@@ -31,7 +31,9 @@
 * [Window Tiling](#window-tiling)
 * [Window Tiling Move / Side](#window-tiling-move-side)
 * [Window Tiling Move / Corner](#window-tiling-move-corner)
-
+* [Rofi](#rofi)
+* [Launch App](#launch-app)
+* [Print](#print)
 
 
 
@@ -383,9 +385,9 @@
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
-| `Win + Ctrl + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L990) | Tiling Window Horizontal (North-South) (Top-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + i` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1020) | Tiling Window Vertical (West-East) (Left-Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1050) | Restore Window | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Horizontal (North-South) (Top-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + i` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Vertical (West-East) (Left-Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Restore Window | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
 
 
 ## Window Tiling Move / Side
@@ -394,17 +396,17 @@
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
-| `Win + Ctrl + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1166) | Tiling Window Move To North (Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1176) | Tiling Window Move To South (Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1186) | Tiling Window Move To West (Left) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1196) | Tiling Window Move To East (Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To North (Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To South (Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West (Left) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East (Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
-| `Win + Ctrl + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1166) | Tiling Window Move To North (Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1176) | Tiling Window Move To South (Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1186) | Tiling Window Move To West (Left) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1196) | Tiling Window Move To East (Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To North (Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To South (Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West (Left) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East (Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
 
 ## Window Tiling Move / Corner
 
@@ -412,15 +414,51 @@
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
-| `Win + Shift + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1212) | Tiling Window Move To West-North (Left-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1222) | Tiling Window Move To East-North (Right-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1232) | Tiling Window Move To West-South (Left-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1242) | Tiling Window Move To East-South (Right-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West-North (Left-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East-North (Right-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West-South (Left-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East-South (Right-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
 
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
-| `Win + Shift + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1212) | Tiling Window Move To West-North (Left-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1222) | Tiling Window Move To East-North (Right-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1232) | Tiling Window Move To West-South (Left-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1242) | Tiling Window Move To East-South (Right-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West-North (Left-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East-North (Right-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West-South (Left-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East-South (Right-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+
+
+## Rofi
+
+* Config Sample / [Rofi](config/openbox/openbox-gen-rc/Section/Keybind/Rofi.php)
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Alt + Shift + r` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Rofi Show Run | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Rofi Show Drun | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + w` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Rofi Show Window | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+
+## Launch App
+
+* Config Sample / [LaunchApp](config/openbox/openbox-gen-rc/Section/Keybind/LaunchApp.php)
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Alt + Enter` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Terminal (sakura) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Terminal (sakura) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + t` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Quake Terminal (tilix --quake) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + f` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch File Manager (pcmanfm-qt) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + g` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch File Manager (nautilus) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + b` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Web Browser (firefox) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + e` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch TextEditor (gedit) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+
+## Print
+
+* Config Sample / [Print](config/openbox/openbox-gen-rc/Section/Keybind/Print.php)
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Print` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Rofi Show Run | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Print` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Rofi Show Drun | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
