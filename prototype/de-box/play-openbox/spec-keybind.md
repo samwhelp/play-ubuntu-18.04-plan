@@ -16,6 +16,8 @@
 * [Go To Workspace](#go-to-workspace)
 * [Send To Workspace](#send-to-workspace)
 * [Window Switch](#window-switch)
+* [Window Raise or Lower](#window-raise-or-lower)
+
 
 
 
@@ -247,11 +249,13 @@
 
 ## Window Raise or Lower
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise or Lower Window |
-| `Win + Shift + PageUp` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise Window |
-| `Win + Shift PageDown` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Lower Window |
+* Config Sample / [WindowRaiseLower](config/openbox/openbox-gen-rc/Section/Keybind/WindowRaiseLower.php)
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Win + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise or Lower Window | [RaiseLower](http://openbox.org/wiki/Help:Actions#RaiseLower) |
+| `Win + Shift + PageUp` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise Window | [RaiseLower](http://openbox.org/wiki/Help:Actions#Raise) |
+| `Win + Shift + PageDown` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Lower Window | [RaiseLower](http://openbox.org/wiki/Help:Actions#Lower) |
 
 
 ## Window Close
