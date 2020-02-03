@@ -1,4 +1,4 @@
 
 	<application class="pcmanfm-qt">
-		<desktop>3</desktop>
+		<desktop>4</desktop>
 	</application>

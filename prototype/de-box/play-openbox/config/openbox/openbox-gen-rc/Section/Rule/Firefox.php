@@ -1,4 +1,4 @@
 
 	<application class="Firefox">
-		<desktop>4</desktop>
+		<desktop>3</desktop>
 	</application>
