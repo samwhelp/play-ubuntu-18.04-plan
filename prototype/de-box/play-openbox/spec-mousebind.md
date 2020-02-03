@@ -10,6 +10,9 @@
 * [Send To Desktop](#send-to-desktop)
 * [Window Move](#window-move)
 * [Window Resize](#window-resize)
+* [Window Toggle Maximize](#window-toggle-maximize)
+* [Window Toggle Decorations](#window-toggle-decorations)
+* [Window Toggle Fullscreen](#window-toggle-fullscreen)
 
 
 ## Config Sample
@@ -98,6 +101,50 @@
 
 * Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
 * Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
+
+
+## Window Toggle Maximize
+
+### On Frame
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Win + [Mouse Left DoubleClick]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Toggle Maximize | [ToggleMaximize](http://openbox.org/wiki/Help:Actions#ToggleMaximize) |
+
+* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
+
+### On Titlebar
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `[Mouse Left Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Toggle Maximize | [ToggleMaximize](http://openbox.org/wiki/Help:Actions#ToggleMaximize) |
+
+* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
+
+
+## Window Toggle Decorations
+
+### On Frame
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Win + [Mouse Middle DoubleClick]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Toggle Decorations | [ToggleDecorations](http://openbox.org/wiki/Help:Actions#ToggleDecorations) |
+
+* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
+
+
+
+## Window Toggle Fullscreen
+
+### On Frame
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Win + [Mouse Right DoubleClick]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Toggle Fullscreen | [ToggleFullscreen](http://openbox.org/wiki/Help:Actions#ToggleFullscreen) |
+
+* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
+
+
 
 
 ## Manual
