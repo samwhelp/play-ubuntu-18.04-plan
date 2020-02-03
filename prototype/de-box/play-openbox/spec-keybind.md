@@ -67,7 +67,7 @@
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
-| `Alt + Shift + z` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | | [Restart](http://openbox.org/wiki/Help:Actions#Restart) |
+| `Alt + Shift + z` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Restart | [Restart](http://openbox.org/wiki/Help:Actions#Restart) |
 | `Alt + Shift + x` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Logout | [Exit](http://openbox.org/wiki/Help:Actions#Exit) |
 | `Ctrl + Alt + Delete` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Logout | [Exit](http://openbox.org/wiki/Help:Actions#Exit) |
 | `Alt + Shift + c` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Reconfigure | [Reconfigure](http://openbox.org/wiki/Help:Actions#Reconfigure) |
