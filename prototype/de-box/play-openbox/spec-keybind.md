@@ -28,6 +28,10 @@
 * [Window SendToLayer Normal](#window-sendtolayer-normal)
 * [Window Begin Move](#window-begin-move)
 * [Window Begin Resize](#window-begin-resize)
+* [Window Tiling](#window-tiling)
+* [Window Tiling Move / Side](#window-tiling-move-side)
+* [Window Tiling Move / Corner](#window-tiling-move-corner)
+
 
 
 
@@ -375,42 +379,48 @@
 
 ## Window Tiling
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + Ctrl + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L990) | Tiling Window Horizontal (North-South) (Top-Bottom) |
-| `Win + Ctrl + i` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1020) | Tiling Window Vertical (West-East) (Left-Right) |
-| `Win + Ctrl + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1050) | Restore Window |
+* Config Sample / [WindowTiling](config/openbox/openbox-gen-rc/Section/Keybind/WindowTiling.php)
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Win + Ctrl + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L990) | Tiling Window Horizontal (North-South) (Top-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + i` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1020) | Tiling Window Vertical (West-East) (Left-Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1050) | Restore Window | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
 
 
 ## Window Tiling Move / Side
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + Ctrl + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1166) | Tiling Window Move To North (Top) |
-| `Win + Ctrl + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1176) | Tiling Window Move To South (Bottom) |
-| `Win + Ctrl + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1186) | Tiling Window Move To West (Left) |
-| `Win + Ctrl + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1196) | Tiling Window Move To East (Right) |
+* Config Sample / [WindowTilingMoveSide](config/openbox/openbox-gen-rc/Section/Keybind/WindowTilingMoveSide.php)
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Win + Ctrl + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1166) | Tiling Window Move To North (Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1176) | Tiling Window Move To South (Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1186) | Tiling Window Move To West (Left) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1196) | Tiling Window Move To East (Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
 
 | Key | How to set | Description |
 | --- | --- | --- |
-| `Win + Ctrl + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1166) | Tiling Window Move To North (Top) |
-| `Win + Ctrl + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1176) | Tiling Window Move To South (Bottom) |
-| `Win + Ctrl + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1186) | Tiling Window Move To West (Left) |
-| `Win + Ctrl + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1196) | Tiling Window Move To East (Right) |
+| `Win + Ctrl + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1166) | Tiling Window Move To North (Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1176) | Tiling Window Move To South (Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1186) | Tiling Window Move To West (Left) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1196) | Tiling Window Move To East (Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
 
 ## Window Tiling Move / Corner
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + Shift + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1212) | Tiling Window Move To West-North (Left-Top) |
-| `Win + Shift + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1222) | Tiling Window Move To East-North (Right-Top) |
-| `Win + Shift + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1232) | Tiling Window Move To West-South (Left-Bottom) |
-| `Win + Shift + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1242) | Tiling Window Move To East-South (Right-Bottom) |
+* Config Sample / [WindowTilingMoveCorner](config/openbox/openbox-gen-rc/Section/Keybind/WindowTilingMoveCorner.php)
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Win + Shift + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1212) | Tiling Window Move To West-North (Left-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1222) | Tiling Window Move To East-North (Right-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1232) | Tiling Window Move To West-South (Left-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1242) | Tiling Window Move To East-South (Right-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
 
 
 | Key | How to set | Description |
 | --- | --- | --- |
-| `Win + Shift + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1212) | Tiling Window Move To West-North (Left-Top) |
-| `Win + Shift + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1222) | Tiling Window Move To East-North (Right-Top) |
-| `Win + Shift + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1232) | Tiling Window Move To West-South (Left-Bottom) |
-| `Win + Shift + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1242) | Tiling Window Move To East-South (Right-Bottom) |
+| `Win + Shift + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1212) | Tiling Window Move To West-North (Left-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1222) | Tiling Window Move To East-North (Right-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1232) | Tiling Window Move To West-South (Left-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L1242) | Tiling Window Move To East-South (Right-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
