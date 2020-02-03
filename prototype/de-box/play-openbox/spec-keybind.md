@@ -11,6 +11,7 @@
 * [Openbox](#openbox)
 * [Show Client Menu](#show-client-menu)
 * [Show Root Menu](#show-root-menu)
+* [Show Workspace Menu](#show-workspace-menu)
 
 
 ## Manual
@@ -95,14 +96,16 @@
 * Config Sample / [MenuRoot](config/openbox/openbox-gen-rc/Section/Keybind/MenuRoot.php)
 
 
-## ShowWorkspaceMenu
+## Show Workspace Menu
 
-| Key | How to set |
-| --- | --- |
-| `Win + c` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L521) |
-| `Ctrl + Win + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L540) |
-| `Ctrl + Alt + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L534) |
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + c` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L521) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
+| `Ctrl + Win + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L540) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
+| `Ctrl + Alt + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L534) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
 
+
+* Config Sample / [MenuClientList](config/openbox/openbox-gen-rc/Section/Keybind/MenuClientList.php)
 
 ## ToggleShowDesktop
 
