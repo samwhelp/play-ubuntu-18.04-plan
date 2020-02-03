@@ -34,7 +34,7 @@
 | --- | --- | --- | --- |
 | `[Mouse Left Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
 | `[Mouse Middle Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Toggle Show Workspace Menu (Window List) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) |
-| `[Mouse Right Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Toggle Show Root Menu  | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) |
+| `[Mouse Right Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Toggle Show Root Menu (client-list-combined-menu) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
 
 
 * Config Sample / [Context Root](config/openbox/openbox-gen-rc/Section/Mousebind/Root.php)
@@ -167,7 +167,7 @@
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
-| `[Mouse Right Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Show Client Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) |
+| `[Mouse Right Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Show Client Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-menu) |
 
 
 * Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
