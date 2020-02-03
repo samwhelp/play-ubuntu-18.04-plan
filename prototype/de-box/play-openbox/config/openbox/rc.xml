@@ -488,19 +488,19 @@ h l
 
 
 	<!-- For Left Hand //-->
-	<keybind key="A-W-a">
+	<keybind key="W-A-a">
 		<action name="SendToDesktop">
 			<to>previous</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-s">
+	<keybind key="W-A-s">
 		<action name="SendToDesktop">
 			<to>next</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-z">
+	<keybind key="W-A-z">
 		<action name="SendToDesktop">
 			<to>last</to>
 		</action>
@@ -508,7 +508,7 @@ h l
 
 
 	<!-- For Right Hand //-->
-	<keybind key="A-W-o">
+	<keybind key="W-A-o">
 		<action name="SendToDesktop">
 			<to>last</to>
 		</action>
@@ -520,25 +520,25 @@ h l
 h l
  j
 	//-->
-	<keybind key="A-W-k">
+	<keybind key="W-A-k">
 		<action name="SendToDesktop">
 			<to>up</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-j">
+	<keybind key="W-A-j">
 		<action name="SendToDesktop">
 			<to>down</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-h">
+	<keybind key="W-A-h">
 		<action name="SendToDesktop">
 			<to>left</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-l">
+	<keybind key="W-A-l">
 		<action name="SendToDesktop">
 			<to>right</to>
 		</action>
@@ -546,61 +546,61 @@ h l
 
 
 	<!-- For [1-10] //-->
-	<keybind key="A-W-1">
+	<keybind key="W-A-1">
 		<action name="SendToDesktop">
 			<to>1</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-2">
+	<keybind key="W-A-2">
 		<action name="SendToDesktop">
 			<to>2</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-3">
+	<keybind key="W-A-3">
 		<action name="SendToDesktop">
 			<to>3</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-4">
+	<keybind key="W-A-4">
 		<action name="SendToDesktop">
 			<to>4</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-5">
+	<keybind key="W-A-5">
 		<action name="SendToDesktop">
 			<to>5</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-6">
+	<keybind key="W-A-6">
 		<action name="SendToDesktop">
 			<to>6</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-7">
+	<keybind key="W-A-7">
 		<action name="SendToDesktop">
 			<to>7</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-8">
+	<keybind key="W-A-8">
 		<action name="SendToDesktop">
 			<to>8</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-9">
+	<keybind key="W-A-9">
 		<action name="SendToDesktop">
 			<to>9</to>
 		</action>
 	</keybind>
 
-	<keybind key="A-W-0">
+	<keybind key="W-A-0">
 		<action name="SendToDesktop">
 			<to>10</to>
 		</action>
