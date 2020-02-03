@@ -69,7 +69,7 @@
 | `Ctrl + Win + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
 | `Ctrl + Alt + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
 
-* Config Sample / [Context MenuRoot](config/openbox/openbox-gen-rc/Section/Keybind/MenuRoot.php)
+* Config Sample / [MenuRoot](config/openbox/openbox-gen-rc/Section/Keybind/MenuRoot.php)
 
 
 ## ShowWorkspaceMenu
