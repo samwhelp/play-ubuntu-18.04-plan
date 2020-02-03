@@ -8,6 +8,7 @@
 * [Tips](#tips)
 * [Config File](#config-file)
 * [Config Sample](#config-sample)
+* [Show Client Menu](#show-client-menu)
 * [Show Root Menu](#show-root-menu)
 
 
@@ -58,6 +59,15 @@
 * [Rofi](config/openbox/openbox-gen-rc/Section/Keybind/Rofi.php)
 * [LaunchApp](config/openbox/openbox-gen-rc/Section/Keybind/LaunchApp.php)
 * [Print](config/openbox/openbox-gen-rc/Section/Keybind/Print.php)
+
+
+## Show Client Menu
+
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Alt + Space` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-menu) |
+
+* Config Sample / [MenuClient](config/openbox/openbox-gen-rc/Section/Keybind/MenuClient.php)
 
 
 ## Show Root Menu
