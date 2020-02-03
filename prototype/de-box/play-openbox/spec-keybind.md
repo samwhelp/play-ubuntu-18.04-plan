@@ -18,6 +18,14 @@
 * [Window Switch](#window-switch)
 * [Window Raise or Lower](#window-raise-or-lower)
 * [Window Close](#window-close)
+* [Window Iconify](#window-iconify)
+* [Window Toggle Maximize](#window-toggle-maximize)
+* [Window Toggle Fullscreen](#window-toggle-fullscreen)
+* [Window Toggle Decorations](#window-toggle-decorations)
+* [Window Toggle Shade](#window-toggle-shade)
+* [Window Toggle AlwaysOnTop](#window-toggle-alwaysontop)
+* [Window Toggle AlwaysOnBottom](#window-toggle-alwaysonbottom)
+* [Window SendToLayer Normal](#window-sendtolayer-normal)
 
 
 
@@ -271,62 +279,78 @@
 
 ## Window Iconify
 
-| Key | How to set |
-| --- | --- |
-| `Win + x` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L797) |
-| `Win + n` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L801) |
+* Config Sample / [WindowIconify](config/openbox/openbox-gen-rc/Section/Keybind/WindowIconify.php)
+
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + x` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Iconify](http://openbox.org/wiki/Help:Actions#Iconify) |
+| `Win + n` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Iconify](http://openbox.org/wiki/Help:Actions#Iconify) |
 
 
-## Window ToggleMaximize
+## Window Toggle Maximize
 
-| Key | How to set |
-| --- | --- |
-| `Win + w` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L812) |
-| `Win + m` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L818) |
+* Config Sample / [WindowToggleMaximize](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleMaximize.php)
 
-
-## Window ToggleFullscreen
-
-| Key | How to set |
-| --- | --- |
-| `Win + f` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L845) |
-| `Win + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L849) |
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + w` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleMaximize](http://openbox.org/wiki/Help:Actions#ToggleMaximize) |
+| `Win + m` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleMaximize](http://openbox.org/wiki/Help:Actions#ToggleMaximize) |
 
 
-## Window ToggleDecorations
+## Window Toggle Fullscreen
 
-| Key | How to set |
-| --- | --- |
-| `Win + v` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L869) |
-| `Win + p` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L873) |
+* Config Sample / [WindowToggleFullscreen](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleFullscreen.php)
 
-
-## Window ToggleShade
-
-| Key | How to set |
-| --- | --- |
-| `Win + y` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) |
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + f` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleFullscreen](http://openbox.org/wiki/Help:Actions#ToggleFullscreen) |
+| `Win + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleFullscreen](http://openbox.org/wiki/Help:Actions#ToggleFullscreen) |
 
 
-## Window ToggleAlwaysOnTop
+## Window Toggle Decorations
 
-| Key | How to set |
-| --- | --- |
-| `Win + t` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) |
+* Config Sample / [WindowToggleDecorations](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleDecorations.php)
+
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + v` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleDecorations](http://openbox.org/wiki/Help:Actions#ToggleDecorations) |
+| `Win + p` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleDecorations](http://openbox.org/wiki/Help:Actions#ToggleDecorations) |
 
 
-## Window ToggleAlwaysOnBottom
+## Window Toggle Shade
 
-| Key | How to set |
-| --- | --- |
-| `Win + b` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) |
+* Config Sample / [WindowToggleShade](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleShade.php)
+
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + y` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleShade](http://openbox.org/wiki/Help:Actions#ToggleShade) |
+
+
+## Window Toggle AlwaysOnTop
+
+* Config Sample / [WindowToggleAlwaysOnTop](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleAlwaysOnTop.php)
+
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + t` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleAlwaysOnTop](http://openbox.org/wiki/Help:Actions#ToggleAlwaysOnTop) |
+
+
+## Window Toggle AlwaysOnBottom
+
+* Config Sample / [WindowToggleAlwaysOnBottom](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleAlwaysOnBottom.php)
+
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + b` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleAlwaysOnBottom](http://openbox.org/wiki/Help:Actions#ToggleAlwaysOnBottom) |
 
 
 ## Window SendToLayer Normal
 
-| Key | How to set |
-| --- | --- |
-| `Win + g` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) |
+* Config Sample / [WindowSendToLayer](config/openbox/openbox-gen-rc/Section/Keybind/WindowSendToLayer.php)
+
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + g` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [SendToLayer](http://openbox.org/wiki/Help:Actions#SendToLayer) |
 
 
 ## Window BeginMove
