@@ -17,7 +17,7 @@
 * [Send To Workspace](#send-to-workspace)
 * [Window Switch](#window-switch)
 * [Window Raise or Lower](#window-raise-or-lower)
-
+* [Window Close](#window-close)
 
 
 
@@ -260,11 +260,13 @@
 
 ## Window Close
 
-| Key | How to set |
-| --- | --- |
-| `Win + q` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L778) |
-| `Alt + Shift + q` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L782) |
-| `Alt + F4` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L786) |
+* Config Sample / [WindowClose](config/openbox/openbox-gen-rc/Section/Keybind/WindowClose.php)
+
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + q` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Close](http://openbox.org/wiki/Help:Actions#Close) |
+| `Alt + Shift + q` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Close](http://openbox.org/wiki/Help:Actions#Close) |
+| `Alt + F4` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Close](http://openbox.org/wiki/Help:Actions#Close) |
 
 
 ## Window Iconify
