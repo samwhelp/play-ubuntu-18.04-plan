@@ -2,6 +2,6 @@
 # Mousebind
 
 
-## WM
+## Implement
 
 * [openbox](../../prototype/de-box/play-openbox/spec-mousebind.md)
