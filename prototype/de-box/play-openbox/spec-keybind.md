@@ -2,9 +2,25 @@
 # Openbox / Keybind
 
 
+## Subject
+
+* [Manual](#manual)
+* [Tips](#tips)
+* [Config File](#config-file)
+* [Config Sample](#config-sample)
+
+
 ## Manual
 
-* [http://openbox.org/wiki/Help:Actions](http://openbox.org/wiki/Help:Actions)
+* [Help:Configuration](http://openbox.org/wiki/Help:Configuration#Keyboard)
+* [Help:Bindings](http://openbox.org/wiki/Help:Bindings#Key_bindings)
+* [Help:Actions](http://openbox.org/wiki/Help:Actions)
+
+
+## Tips
+
+* `Alt` for Workspace (Desktop)
+* `Win` for Window (Client)
 
 
 ## Config File
@@ -12,10 +28,35 @@
 * [~/.config/openbox/rc.xml](config/openbox/rc.xml)
 
 
-## Tips
+## Config Sample
 
-* Alt for Workspace
-* Win for Window
+* [Openbox](config/openbox/openbox-gen-rc/Section/Keybind/Openbox.php)
+* [MenuClient](config/openbox/openbox-gen-rc/Section/Keybind/MenuClient.php)
+* [MenuRoot](config/openbox/openbox-gen-rc/Section/Keybind/MenuRoot.php)
+* [MenuClientList](config/openbox/openbox-gen-rc/Section/Keybind/MenuClientList.php)
+* [ToggleShowDesktop](config/openbox/openbox-gen-rc/Section/Keybind/ToggleShowDesktop.php)
+* [GoToDesktop](config/openbox/openbox-gen-rc/Section/Keybind/GoToDesktop.php)
+* [SendToDesktop](config/openbox/openbox-gen-rc/Section/Keybind/SendToDesktop.php)
+* [WindowSwitch](config/openbox/openbox-gen-rc/Section/Keybind/WindowSwitch.php)
+* [WindowFocusSwitch](config/openbox/openbox-gen-rc/Section/Keybind/WindowFocusSwitch.php)
+* [WindowRaiseLower](config/openbox/openbox-gen-rc/Section/Keybind/WindowRaiseLower.php)
+* [WindowClose](config/openbox/openbox-gen-rc/Section/Keybind/WindowClose.php)
+* [WindowIconify](config/openbox/openbox-gen-rc/Section/Keybind/WindowIconify.php)
+* [WindowToggleMaximize](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleMaximize.php)
+* [WindowToggleFullscreen](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleFullscreen.php)
+* [WindowToggleDecorations](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleDecorations.php)
+* [WindowToggleShade](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleShade.php)
+* [WindowToggleAlwaysOnTop](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleAlwaysOnTop.php)
+* [WindowSendToLayer](config/openbox/openbox-gen-rc/Section/Keybind/WindowSendToLayer.php)
+* [WindowToggleAlwaysOnBottom](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleAlwaysOnBottom.php)
+* [WindowBeginMove](config/openbox/openbox-gen-rc/Section/Keybind/WindowBeginMove.php)
+* [WindowBeginResize](config/openbox/openbox-gen-rc/Section/Keybind/WindowBeginResize.php)
+* [WindowTiling](config/openbox/openbox-gen-rc/Section/Keybind/WindowTiling.php)
+* [WindowTilingMoveSide](config/openbox/openbox-gen-rc/Section/Keybind/WindowTilingMoveSide.php)
+* [WindowTilingMoveCorner](config/openbox/openbox-gen-rc/Section/Keybind/WindowTilingMoveCorner.php)
+* [Rofi](config/openbox/openbox-gen-rc/Section/Keybind/Rofi.php)
+* [LaunchApp](config/openbox/openbox-gen-rc/Section/Keybind/LaunchApp.php)
+* [Print](config/openbox/openbox-gen-rc/Section/Keybind/Print.php)
 
 
 ## ShowRootMenu
