@@ -8,6 +8,7 @@
 * [Tips](#tips)
 * [Config File](#config-file)
 * [Config Sample](#config-sample)
+* [Openbox](#openbox)
 * [Show Client Menu](#show-client-menu)
 * [Show Root Menu](#show-root-menu)
 
@@ -60,6 +61,18 @@
 * [LaunchApp](config/openbox/openbox-gen-rc/Section/Keybind/LaunchApp.php)
 * [Print](config/openbox/openbox-gen-rc/Section/Keybind/Print.php)
 
+
+## Openbox
+
+| Button | How to set | Description | Doc |
+| --- | --- | --- | --- |
+| `Alt + Shift + z` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | | [Restart](http://openbox.org/wiki/Help:Actions#Restart) |
+| `Alt + Shift + x` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Logout | [Exit](http://openbox.org/wiki/Help:Actions#Exit) |
+| `Ctrl + Alt + Delete` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Logout | [Exit](http://openbox.org/wiki/Help:Actions#Exit) |
+| `Alt + Shift + c` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Reconfigure | [Reconfigure](http://openbox.org/wiki/Help:Actions#Reconfigure) |
+| `Alt + Shift + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Launch obconf | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+* Config Sample / [Openbox](config/openbox/openbox-gen-rc/Section/Keybind/Openbox.php)
 
 ## Show Client Menu
 
