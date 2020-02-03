@@ -285,7 +285,7 @@ textclock_main = wibox.widget.textclock()
 screen.connect_signal('request::desktop_decoration', function(s)
 	-- Each screen has its own tag table.
 	-- awful.tag({ '1', '2', '3', '4', '5', '6', '7', '8', '9' }, s, awful.layout.layouts[1])
-	awful.tag({ 'Term', 'Edit', 'File', 'Web', 'Misc', 'Free'}, s, awful.layout.layouts[1])
+	awful.tag({ 'Term', 'Edit', 'Web', 'File', 'Misc', 'Free'}, s, awful.layout.layouts[1])
 
 	-- Create a promptbox for each screen
 	s.promptbox_main = awful.widget.prompt()
@@ -1090,13 +1090,13 @@ awful.rules.rules = {
 	},
 
 	{
-		rule = { instance = 'pcmanfm-qt' },
-		properties = { tag = 'File' or '3' or 'Free' }
+		rule = { class = 'Firefox' },
+		properties = { tag = 'Web' or '3' or 'Free'}
 	},
 
 	{
-		rule = { class = 'Firefox' },
-		properties = { tag = 'Web' or '4' or 'Free'}
+		rule = { instance = 'pcmanfm-qt' },
+		properties = { tag = 'File' or '4' or 'Free' }
 	},
 
 	{

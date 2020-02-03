@@ -102,7 +102,7 @@
 <?php include_once(__DIR__ . '/Rule/Firefox.php'); ?>
 <?php include_once(__DIR__ . '/Rule/Atom.php'); ?>
 <?php include_once(__DIR__ . '/Rule/Pcmanfm-qt.php'); ?>
-
+<?php include_once(__DIR__ . '/Rule/Xephyr.php'); ?>
 
 </applications>
 

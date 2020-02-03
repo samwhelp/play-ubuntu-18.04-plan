@@ -1952,7 +1952,7 @@ h l
 
 
 	<application class="Firefox">
-		<desktop>4</desktop>
+		<desktop>3</desktop>
 	</application>
 
 	<application class="Atom">
@@ -1960,9 +1960,12 @@ h l
 	</application>
 
 	<application class="pcmanfm-qt">
-		<desktop>3</desktop>
+		<desktop>4</desktop>
 	</application>
 
+	<application class="Xephyr">
+		<desktop>6</desktop>
+	</application>
 
 </applications>
 
