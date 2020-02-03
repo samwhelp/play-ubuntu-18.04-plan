@@ -4,6 +4,8 @@ obconf
 
 xdotool
 
+xscreensaver
+
 rofi
 feh
 compton

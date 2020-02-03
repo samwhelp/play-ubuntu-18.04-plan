@@ -169,3 +169,18 @@ compton --config ~/.config/openbox/compton/compton.conf &
 ##
 ### Tail: Policykit Agent
 ################################################################################
+
+
+################################################################################
+### Head: Screensaver
+##
+
+
+## xscreensaver
+## /etc/xdg/autostart/xscreensaver.desktop
+/usr/share/xscreensaver/xscreensaver-wrapper.sh -no-splash &
+
+
+##
+### Tail: Screensaver
+################################################################################
