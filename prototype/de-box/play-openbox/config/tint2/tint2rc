@@ -11,7 +11,7 @@ end_color = #000000 0
 #-------------------------------------
 # Backgrounds
 # Background 1: Battery, Panel
-rounded = 0
+rounded = 8
 border_width = 0
 border_sides = TBLR
 border_content_tint_weight = 0
@@ -78,8 +78,8 @@ border_color_pressed = #000000 100
 #-------------------------------------
 # Panel
 panel_items = LTSBC
-panel_size = 80% 30
-panel_margin = 0 0
+panel_size = 85% 30
+panel_margin = 5 5
 panel_padding = 2 0 2
 panel_background_id = 1
 wm_menu = 1
