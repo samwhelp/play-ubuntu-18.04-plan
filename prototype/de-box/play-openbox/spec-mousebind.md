@@ -4,6 +4,8 @@
 
 ## Subject
 
+* [Manual](#manual)
+* [Config File](#config-file)
 * [Config Sample](#config-sample)
 * [On Desktop](#on-desktop)
 * [Go To Workspace](#go-to-workspace)
@@ -15,8 +17,20 @@
 * [Window Toggle Fullscreen](#window-toggle-fullscreen)
 * [Window Toggle Shade](#window-toggle-shade)
 * [Window Show Client Menu](#window-show-client-menu)
-* [Manual](#manual)
 
+
+## Manual
+
+* [Help:Configuration](http://openbox.org/wiki/Help:Configuration#Mouse)
+* [Help:Bindings](http://openbox.org/wiki/Help:Bindings#Mouse_bindings)
+* [Help:Actions](http://openbox.org/wiki/Help:Actions#ShowMenu)
+
+
+## Config File
+
+* [~/.config/openbox/rc.xml](config/openbox/rc.xml)
+
+> Search `<mouse>`
 
 ## Config Sample
 
@@ -30,6 +44,8 @@
 
 ## On Desktop
 
+* Config Sample / [Context Root](config/openbox/openbox-gen-rc/Section/Mousebind/Root.php)
+
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `[Mouse Left Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
@@ -37,120 +53,118 @@
 | `[Mouse Right Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Toggle Show Root Menu (client-list-combined-menu) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
 
 
-* Config Sample / [Context Root](config/openbox/openbox-gen-rc/Section/Mousebind/Root.php)
-
-
 ## Go To Workspace
 
 ### On Desktop
+
+* Config Sample / [Context Desktop](config/openbox/openbox-gen-rc/Section/Mousebind/Desktop.php)
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `[Mouse Middle Up]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Previous Desktop | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
 | `[Mouse Middle Down]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Next Desktop | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
 
-* Config Sample / [Context Desktop](config/openbox/openbox-gen-rc/Section/Mousebind/Desktop.php)
-
 
 ### On Desktop or On Frame
+
+* Config Sample / [Context Desktop](config/openbox/openbox-gen-rc/Section/Mousebind/Desktop.php)
+* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `Alt + [Mouse Middle Up]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Previous Desktop | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
 | `Alt + [Mouse Middle Down]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Next Desktop | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
 
-* Config Sample / [Context Desktop](config/openbox/openbox-gen-rc/Section/Mousebind/Desktop.php)
-* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
-
 
 ## Send To Workspace
+
+* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `Win + Alt + [Mouse Middle Up]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Previous Desktop | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
 | `Win + Alt + [Mouse Middle Down]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Next Desktop | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
 
-* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
-
 
 ## Window Move
 
 ### On Frame or On Titlebar
 
+* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
+* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
+
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `Win + [Mouse Left Drag]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Move Window | [Move](http://openbox.org/wiki/Help:Actions#Move) |
 
-* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
-* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
-
 
 ### On Titlebar
+
+* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `[Mouse Left Drag]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Move Window | [Move](http://openbox.org/wiki/Help:Actions#Move) |
-
-* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
 
 
 ## Window Resize
 
 ### On Frame or On Titlebar
 
+* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
+* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
+
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `Win + [Mouse Right Drag]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Resize Window  | [Resize](http://openbox.org/wiki/Help:Actions#Resize) |
-
-* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
-* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
 
 
 ## Window Toggle Maximize
 
 ### On Frame
 
+* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
+
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `Win + [Mouse Left DoubleClick]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Toggle Maximize | [ToggleMaximize](http://openbox.org/wiki/Help:Actions#ToggleMaximize) |
 
-* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
-
 ### On Titlebar
+
+* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `[Mouse Left Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Toggle Maximize | [ToggleMaximize](http://openbox.org/wiki/Help:Actions#ToggleMaximize) |
-
-* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
 
 
 ## Window Toggle Decorations
 
 ### On Frame
 
+* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
+
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `Win + [Mouse Middle DoubleClick]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Toggle Decorations | [ToggleDecorations](http://openbox.org/wiki/Help:Actions#ToggleDecorations) |
-
-* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
-
 
 
 ## Window Toggle Fullscreen
 
 ### On Frame
 
+* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
+
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `Win + [Mouse Right DoubleClick]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Toggle Fullscreen | [ToggleFullscreen](http://openbox.org/wiki/Help:Actions#ToggleFullscreen) |
-
-* Config Sample / [Context Frame](config/openbox/openbox-gen-rc/Section/Mousebind/Frame.php)
 
 
 ## Window Toggle Shade
 
 ### On Titlebar
+
+* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
@@ -158,23 +172,12 @@
 | `[Mouse Middle Down]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Unshade | [Unshade](http://openbox.org/wiki/Help:Actions#Unshade) |
 
 
-* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
-
-
 ## Window Show Client Menu
 
 ### On Titlebar
 
+* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
+
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
 | `[Mouse Right Click]` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Window Show Client Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-menu) |
-
-
-* Config Sample / [Context Titlebar](config/openbox/openbox-gen-rc/Section/Mousebind/Titlebar.php)
-
-
-## Manual
-
-* [Help:Configuration](http://openbox.org/wiki/Help:Configuration#Mouse)
-* [Help:Bindings](http://openbox.org/wiki/Help:Bindings#Mouse_bindings)
-* [Help:Actions](http://openbox.org/wiki/Help:Actions#ShowMenu)

@@ -54,6 +54,8 @@
 
 * [~/.config/openbox/rc.xml](config/openbox/rc.xml)
 
+> Search `<keyboard>`
+
 
 ## Config Sample
 
@@ -445,8 +447,8 @@
 
 | Button | How to set | Description | Doc |
 | --- | --- | --- | --- |
-| `Alt + Enter` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Terminal (sakura) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Terminal (sakura) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Enter` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Terminal (sakura -m) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Terminal (sakura -m) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 | `Alt + Shift + t` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Quake Terminal (tilix --quake) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 | `Alt + Shift + f` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch File Manager (pcmanfm-qt) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 | `Alt + Shift + g` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch File Manager (nautilus) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
