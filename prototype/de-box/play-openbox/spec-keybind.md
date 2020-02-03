@@ -8,6 +8,7 @@
 * [Tips](#tips)
 * [Config File](#config-file)
 * [Config Sample](#config-sample)
+* [Show Root Menu](#show-root-menu)
 
 
 ## Manual
@@ -59,15 +60,16 @@
 * [Print](config/openbox/openbox-gen-rc/Section/Keybind/Print.php)
 
 
-## ShowRootMenu
+## Show Root Menu
 
-| Key | How to set |
-| --- | --- |
-| `Win + Space` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L549) |
-| `Alt + F1` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L521) |
-| `Ctrl + Win + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L515) |
-| `Ctrl + Alt + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L509) |
+| Key | How to set | Doc |
+| --- | --- | --- |
+| `Win + Space` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
+| `Alt + F1` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
+| `Ctrl + Win + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
+| `Ctrl + Alt + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
 
+* Config Sample / [Context MenuRoot](config/openbox/openbox-gen-rc/Section/Keybind/MenuRoot.php)
 
 
 ## ShowWorkspaceMenu
