@@ -25,6 +25,7 @@
 
 * `Super + Space` : Popup Main Menu
 * `Super + c` : Popup Workspace Menu (Window List) (Client List)
+* `Alt + Space` : Popup Client Menu
 
 
 ## Launch Tool
