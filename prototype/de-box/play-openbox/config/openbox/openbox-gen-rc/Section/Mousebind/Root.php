@@ -23,3 +23,14 @@
 		</mousebind>
 
 	</context>
+
+<?php
+/*
+
+## Help
+
+* http://openbox.org/wiki/Help:Actions#ToggleShowDesktop
+* http://openbox.org/wiki/Help:Actions#ShowMenu
+
+*/
+?>
