@@ -33,31 +33,20 @@
 			<action name="Unfocus"/>
 		</mousebind>
 
-		<mousebind button="W-Up" action="Click">
+
+
+		<mousebind button="A-Up" action="Click">
 			<action name="GoToDesktop">
 				<to>previous</to>
 			</action>
 		</mousebind>
 
-		<mousebind button="W-Down" action="Click">
+		<mousebind button="A-Down" action="Click">
 			<action name="GoToDesktop">
 				<to>next</to>
 			</action>
 		</mousebind>
 
-		<!--
-		<mousebind button="W-C-Up" action="Click">
-			<action name="GoToDesktop">
-				<to>previous</to>
-			</action>
-		</mousebind>
-
-		<mousebind button="W-C-Down" action="Click">
-			<action name="GoToDesktop">
-				<to>next</to>
-			</action>
-		</mousebind>
-		//-->		
 
 		<mousebind button="W-A-Up" action="Click">
 			<action name="SendToDesktop">
