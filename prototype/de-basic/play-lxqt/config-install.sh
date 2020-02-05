@@ -22,6 +22,23 @@ lxqt_config_install () {
 	cp ./config/lxqt/session.conf $HOME/.config/lxqt/session.conf
 	echo "cp ./config/lxqt/session.conf $HOME/.config/lxqt/session.conf"
 
+
+	lxqt_config_install_check_desktop_entry
+
+}
+
+lxqt_config_install_check_desktop_entry () {
+
+	rm -f "$HOME/.config/autostart/lxqt-desktop.desktop"
+	echo "rm -f $HOME/.config/autostart/lxqt-desktop.desktop"
+
+	rm -f "$HOME/.config/autostart/lxqt-openbox-feh.desktop"
+	echo "rm -f $HOME/.config/autostart/lxqt-openbox-feh.desktop"
+
+	rm -f "$HOME/.config/autostart/lxqt-openbox-compton.desktop"
+	echo "rm -f $HOME/.config/autostart/lxqt-openbox-compton.desktop"
+
+
 }
 ##
 ### Tail: lxqt
