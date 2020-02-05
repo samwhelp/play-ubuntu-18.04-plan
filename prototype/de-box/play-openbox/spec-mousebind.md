@@ -4,6 +4,7 @@
 
 ## Subject
 
+* [Link](#link)
 * [Manual](#manual)
 * [Config File](#config-file)
 * [Config Sample](#config-sample)
@@ -17,6 +18,12 @@
 * [Window Toggle Fullscreen](#window-toggle-fullscreen)
 * [Window Toggle Shade](#window-toggle-shade)
 * [Window Show Client Menu](#window-show-client-menu)
+
+
+## Link
+
+* [docs-spec-keybind](../../../docs/spec/keybind.md)
+* [spec-keybind](spec-keybind.md)
 
 
 ## Manual

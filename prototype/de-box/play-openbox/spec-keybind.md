@@ -4,6 +4,7 @@
 
 ## Subject
 
+* [Link](#link)
 * [Manual](#manual)
 * [Tips](#tips)
 * [Config File](#config-file)
@@ -35,6 +36,11 @@
 * [Launch App](#launch-app)
 * [Print](#print)
 
+
+## Link
+
+* [docs-spec-keybind](../../../docs/spec/keybind.md)
+* [spec-mousebind](spec-mousebind.md)
 
 
 ## Manual
