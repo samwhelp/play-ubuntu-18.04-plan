@@ -2,7 +2,7 @@
 
 <margins>
 	<top>5</top>
-	<bottom>5</bottom>
+	<bottom>48</bottom>
 	<left>5</left>
 	<right>5</right>
 </margins>

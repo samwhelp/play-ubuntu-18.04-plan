@@ -52,7 +52,7 @@ test:
 
 sync: rc
 	install -m 664 rc.xml ../rc.xml
-	install -m 664 rc.xml ../../../../../de-lxqt-with-wm/lxqt-with-openbox/config/openbox/lxqt-rc.xml
+#	install -m 664 rc.xml ../../../../../de-lxqt-with-wm/lxqt-with-openbox/config/openbox/lxqt-rc.xml
 .PHONY: sync
 
 
