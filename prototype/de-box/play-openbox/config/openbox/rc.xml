@@ -1952,21 +1952,177 @@ h l
 	//-->
 
 
-	<application class="Firefox">
-		<desktop>3</desktop>
+
+	<application class="Gnome-terminal">
+		<desktop>1</desktop>
+		<focus>yes</focus>
 	</application>
+
+	<application class="Xfce4-terminal">
+		<desktop>1</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="Mate-terminal">
+		<desktop>1</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="Terminator">
+		<desktop>1</desktop>
+		<focus>yes</focus>
+	</application>
+
+
 
 	<application class="Atom">
 		<desktop>2</desktop>
+		<focus>yes</focus>
 	</application>
+
+	<application class="Gedit">
+		<desktop>2</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="Leafpad">
+		<desktop>2</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="kate">
+		<desktop>2</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="Gnome-builder">
+		<desktop>2</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="kdevelop">
+		<desktop>2</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="QtCreator">
+		<desktop>2</desktop>
+		<focus>yes</focus>
+	</application>
+
+
+	<application class="Firefox">
+		<desktop>3</desktop>
+		<focus>yes</focus>
+		<maximized>yes</maximized>
+	</application>
+
+	<application class="Chromium-browser">
+		<desktop>3</desktop>
+		<focus>yes</focus>
+		<maximized>yes</maximized>
+	</application>
+
+	<application class="Google-chrome">
+		<desktop>3</desktop>
+		<focus>yes</focus>
+		<maximized>yes</maximized>
+	</application>
+
 
 	<application class="pcmanfm-qt">
 		<desktop>4</desktop>
+		<focus>yes</focus>
+		<maximized>yes</maximized>
 	</application>
 
-	<application class="Xephyr">
-		<desktop>6</desktop>
+	<application class="Pcmanfm">
+		<desktop>4</desktop>
+		<focus>yes</focus>
+		<maximized>yes</maximized>
 	</application>
+
+	<application class="Spacefm">
+		<desktop>4</desktop>
+		<focus>yes</focus>
+		<maximized>yes</maximized>
+	</application>
+
+	<application class="Nautilus">
+		<desktop>4</desktop>
+		<focus>yes</focus>
+		<maximized>yes</maximized>
+	</application>
+
+	<application class="Thunar">
+		<desktop>4</desktop>
+		<focus>yes</focus>
+		<maximized>yes</maximized>
+	</application>
+
+	<application class="dolphin">
+		<desktop>4</desktop>
+		<focus>yes</focus>
+		<maximized>yes</maximized>
+	</application>
+
+	<application class="Filezilla">
+		<desktop>4</desktop>
+		<focus>yes</focus>
+		<maximized>yes</maximized>
+	</application>
+
+
+	<application class="Xephyr">
+		<desktop>5</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="mpv">
+		<desktop>5</desktop>
+		<focus>yes</focus>
+		<fullscreen>yes</fullscreen>
+	</application>
+
+	<application class="vlc">
+		<desktop>5</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="smplayer">
+		<desktop>5</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="Audacious">
+		<desktop>5</desktop>
+		<focus>yes</focus>
+		<size>
+			<width>50%</width>
+			<height>50%</height>
+		</size>
+		<position force="no">
+			<x>center</x>
+			<y>center</y>
+		</position>
+	</application>
+
+	<application class="Soffice">
+		<desktop>5</desktop>
+		<focus>yes</focus>
+		<maximized>yes</maximized>
+	</application>
+
+	<application class="Gimp-2.8">
+		<desktop>5</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="openshot">
+		<desktop>5</desktop>
+		<focus>yes</focus>
+	</application>
+
 
 </applications>
 
