@@ -2024,62 +2024,52 @@ h l
 	<application class="Firefox">
 		<desktop>3</desktop>
 		<focus>yes</focus>
-		<maximized>yes</maximized>
 	</application>
 
 	<application class="Chromium-browser">
 		<desktop>3</desktop>
 		<focus>yes</focus>
-		<maximized>yes</maximized>
 	</application>
 
 	<application class="Google-chrome">
 		<desktop>3</desktop>
 		<focus>yes</focus>
-		<maximized>yes</maximized>
 	</application>
 
 
 	<application class="pcmanfm-qt">
 		<desktop>4</desktop>
 		<focus>yes</focus>
-		<maximized>yes</maximized>
 	</application>
 
 	<application class="Pcmanfm">
 		<desktop>4</desktop>
 		<focus>yes</focus>
-		<maximized>yes</maximized>
 	</application>
 
 	<application class="Spacefm">
 		<desktop>4</desktop>
 		<focus>yes</focus>
-		<maximized>yes</maximized>
 	</application>
 
 	<application class="Nautilus">
 		<desktop>4</desktop>
 		<focus>yes</focus>
-		<maximized>yes</maximized>
 	</application>
 
 	<application class="Thunar">
 		<desktop>4</desktop>
 		<focus>yes</focus>
-		<maximized>yes</maximized>
 	</application>
 
 	<application class="dolphin">
 		<desktop>4</desktop>
 		<focus>yes</focus>
-		<maximized>yes</maximized>
 	</application>
 
 	<application class="Filezilla">
 		<desktop>4</desktop>
 		<focus>yes</focus>
-		<maximized>yes</maximized>
 	</application>
 
 
@@ -2120,7 +2110,6 @@ h l
 	<application class="Soffice">
 		<desktop>5</desktop>
 		<focus>yes</focus>
-		<maximized>yes</maximized>
 	</application>
 
 	<application class="Gimp-2.8">
