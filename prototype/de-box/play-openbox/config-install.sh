@@ -27,8 +27,8 @@ openbox_put_toggledesktop_desktop_entry () {
 	mkdir -p "$HOME/.local/share/applications"
 	echo "mkdir -p $HOME/.local/share/applications"
 
-	cp "./config/openbox/openbox-toggle-show-desktop.desktop" "$HOME/.local/share/applications/openbox-toggle-show-desktop.desktop"
-	echo "cp ./config/openbox/openbox-toggle-show-desktop.desktop $HOME/.local/share/applications/openbox-toggle-show-desktop.desktop"
+	cp "./config/openbox/asset/desktop-entry/openbox-toggle-show-desktop.desktop" "$HOME/.local/share/applications/openbox-toggle-show-desktop.desktop"
+	echo "cp ./config/openbox/asset/desktop-entry/openbox-toggle-show-desktop.desktop $HOME/.local/share/applications/openbox-toggle-show-desktop.desktop"
 
 }
 
@@ -36,8 +36,8 @@ openbox_put_showrootmenu_desktop_entry () {
 	#mkdir -p "$HOME/.local/share/applications"
 	#echo "mkdir -p $HOME/.local/share/applications"
 
-	cp "./config/openbox/openbox-show-root-menu.desktop" "$HOME/.local/share/applications/openbox-show-root-menu.desktop"
-	echo "cp ./config/openbox/openbox-show-root-menu.desktop $HOME/.local/share/applications/openbox-show-root-menu.desktop"
+	cp "./config/openbox/asset/desktop-entry/openbox-show-root-menu.desktop" "$HOME/.local/share/applications/openbox-show-root-menu.desktop"
+	echo "cp ./config/openbox/asset/desktop-entry/openbox-show-root-menu.desktop $HOME/.local/share/applications/openbox-show-root-menu.desktop"
 
 }
 ##
