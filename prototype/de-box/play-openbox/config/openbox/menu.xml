@@ -25,18 +25,18 @@
 	<separator />
 	<item label="Rofi Show Drun" icon="/usr/share/icons/Numix/24/places/start-here.svg">
 		<action name="Execute"><execute>rofi -show drun -show-icons</execute></action>
-	</item>	
+	</item>
 	<item label="Terminal" icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png" >
 		<action name="Execute"><execute>sakura -m</execute></action>
 	</item>
-	<item label="File Manager" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg" >
-		<action name="Execute"><execute>pcmanfm-qt</execute></action>
+	<item label="Text Editor" icon="/usr/share/icons/gnome/24x24/apps/text-editor.png" >
+		<action name="Execute"><execute>mousepad</execute></action>
 	</item>
 	<item label="Web Browser" icon="/usr/share/icons/hicolor/16x16/apps/firefox.png" >
 		<action name="Execute"><execute>firefox</execute></action>
 	</item>
-	<item label="Text Editor" icon="/usr/share/icons/gnome/24x24/apps/text-editor.png" >
-		<action name="Execute"><execute>mousepad</execute></action>
+	<item label="File Manager" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg" >
+		<action name="Execute"><execute>pcmanfm-qt</execute></action>
 	</item>
 	<item label="FileZilla" icon="/usr/share/pixmaps/filezilla.png" >
 		<action name="Execute"><execute>filezilla</execute></action>
@@ -62,6 +62,12 @@
 		</item>
 		<item label="nautilus" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg">
 			<action name="Execute"><execute>nautilus</execute></action>
+		</item>
+		<item label="Spacefm" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg">
+			<action name="Execute"><execute>spacefm</execute></action>
+		</item>
+		<item label="Thunar" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg">
+			<action name="Execute"><execute>Thunar</execute></action>
 		</item>
 		<item label="google-chrome" icon="/usr/share/icons/hicolor/24x24/apps/google-chrome.png">
 			<action name="Execute"><execute>google-chrome</execute></action>
