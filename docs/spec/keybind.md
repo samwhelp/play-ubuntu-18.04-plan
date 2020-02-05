@@ -19,6 +19,8 @@
 
 ## Keys
 
+### Mean
+
 | Key | Description |
 | --- | --- |
 | `Shift` | 'Shift' |
