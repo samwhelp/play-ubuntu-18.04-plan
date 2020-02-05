@@ -1980,6 +1980,16 @@ h l
 		<focus>yes</focus>
 	</application>
 
+	<application class="Code">
+		<desktop>2</desktop>
+		<focus>yes</focus>
+	</application>
+
+	<application class="Geany">
+		<desktop>2</desktop>
+		<focus>yes</focus>
+	</application>
+
 	<application class="Gedit">
 		<desktop>2</desktop>
 		<focus>yes</focus>
