@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Categories=Utility;
+TryExec=compton
+Exec=compton --config ~/.config/openbox/compton/compton.conf
+Icon=compton
+Keywords=x;x11;compositor;
+OnlyShowIn=LXQt;
+X-LXQt-Module=true
+
+
+Name=Compton(For Openbox)
+GenericName=X compositor
+Comment=A X compositor

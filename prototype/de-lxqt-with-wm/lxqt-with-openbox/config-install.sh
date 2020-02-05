@@ -41,7 +41,25 @@ openbox_config_install () {
 	cp "./config/openbox/menu.xml" "$HOME/.config/openbox/menu.xml"
 	echo "cp ./config/openbox/menu.xml $HOME/.config/openbox/menu.xml"
 
+
+	openbox_put_lxqt_module_desktop_entry
+
 }
+
+
+openbox_put_lxqt_module_desktop_entry () {
+
+	mkdir -p "$HOME/.config/autostart"
+	echo "mkdir -p $HOME/.config/autostart"
+
+	cp "./config/openbox/asset/autostart/lxqt-desktop.desktop" "$HOME/.config/autostart/lxqt-desktop.desktop"
+	echo "cp ./config/openbox/asset/autostart/lxqt-desktop.desktop $HOME/.config/autostart/lxqt-desktop.desktop"
+
+	cp "./config/openbox/asset/autostart/lxqt-openbox-feh.desktop" "$HOME/.config/autostart/lxqt-openbox-feh.desktop"
+	echo "cp ./config/openbox/asset/autostart/lxqt-openbox-feh.desktop $HOME/.config/autostart/lxqt-openbox-feh.desktop"
+
+}
+
 ##
 ### Tail: openbox
 ################################################################################
@@ -76,8 +94,8 @@ compton_put_lxqt_module_desktop_entry () {
 	mkdir -p "$HOME/.config/autostart"
 	echo "mkdir -p $HOME/.config/autostart"
 
-	cp "./config/compton/lxqt-openbox-compton.desktop" "$HOME/.config/autostart/lxqt-openbox-compton.desktop"
-	echo "cp ./config/compton/lxqt-openbox-compton.desktop $HOME/.config/autostart/lxqt-openbox-compton.desktop"
+	cp "./config/openbox/asset/autostart/lxqt-openbox-compton.desktop" "$HOME/.config/autostart/lxqt-openbox-compton.desktop"
+	echo "cp ./config/openbox/asset/autostart/lxqt-openbox-compton.desktop $HOME/.config/autostart/lxqt-openbox-compton.desktop"
 
 }
 

@@ -52,7 +52,9 @@ test:
 
 sync: rc
 	install -m 664 rc.xml ../rc.xml
-#	install -m 664 rc.xml ../../../../../de-lxqt-with-wm/lxqt-with-openbox/config/openbox/lxqt-rc.xml
+	install -m 664 rc.xml ../../../../../de-lxqt-with-wm/lxqt-with-openbox/config/openbox/lxqt-rc.xml
+	sed -i 's/<bottom>48<\/bottom>/<bottom>5<\/bottom>/g' ../../../../../de-lxqt-with-wm/lxqt-with-openbox/config/openbox/lxqt-rc.xml
+	sed -i 's/<top>5<\/top>/<top>36<\/top>/g' ../../../../../de-lxqt-with-wm/lxqt-with-openbox/config/openbox/lxqt-rc.xml
 .PHONY: sync
 
 

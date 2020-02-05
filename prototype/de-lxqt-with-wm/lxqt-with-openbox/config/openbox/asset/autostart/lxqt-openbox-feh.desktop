@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Categories=Utility;
+TryExec=feh
+Exec=feh --bg-scale "/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg"
+Icon=feh
+Keywords=x;x11;compositor;
+OnlyShowIn=LXQt;
+X-LXQt-Module=true
+
+Name=Feh(For Openbox)
+GenericName=Wallpaper
+Comment=Wallpaper

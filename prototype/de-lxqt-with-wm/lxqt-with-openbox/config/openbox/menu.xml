@@ -1,123 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<openbox_menu xmlns="http://openbox.org/"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://openbox.org/
-                file:///usr/share/openbox/menu.xsd">
+<openbox_menu
+	xmlns="http://openbox.org/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://openbox.org/
+	file:///usr/share/openbox/menu.xsd"
+>
 
 <!-- http://openbox.org/wiki/Help:Menus //-->
 
 <menu id="root-menu" label="Openbox 3">
-  <!--<item label="Terminal emulator">
-    <action name="Execute"><execute>x-terminal-emulator</execute></action>
-  </item>
-  <item label="Web browser">
-    <action name="Execute"><execute>x-www-browser</execute></action>
-  </item> //-->
-  <!-- This requires the presence of the 'openbox-menu' package to work -->
-  <!-- <menu id="/Debian" /> //-->
-  <!-- <separator /> //-->
-  <menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu" icon="/usr/share/icons/Numix/24/categories/applications-utilities.svg" />
-  <separator />
-  <item label="Terminal" icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png" >
-    <action name="Execute"><execute>sakura -m</execute></action>
-  </item>
-  <item label="File Manager" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg" >
-    <action name="Execute"><execute>pcmanfm-qt</execute></action>
-  </item>
-  <item label="Web Browser" icon="/usr/share/icons/hicolor/16x16/apps/firefox.png" >
-    <action name="Execute"><execute>firefox</execute></action>
-  </item>
-  <item label="Text Editor" icon="/usr/share/icons/gnome/24x24/apps/text-editor.png" >
-    <action name="Execute"><execute>mousepad</execute></action>
-  </item>
-  <item label="FileZilla" icon="/usr/share/pixmaps/filezilla.png" >
-    <action name="Execute"><execute>filezilla</execute></action>
-  </item>
-  <menu id="more-app-menu" label="More" icon="/usr/share/icons/Numix/16/categories/application-community.svg">
-    <item label="tilix-quake" icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png" >
-      <action name="Execute"><execute>tilix --quake</execute></action>
-    </item>
-    <item label="gnome-terminal" icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png">
-      <action name="Execute"><execute>gnome-terminal</execute></action>
-    </item>
-    <item label="qterminal" icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png">
-      <action name="Execute"><execute>qterminal</execute></action>
-    </item>
-    <item label="atom" icon="/usr/share/pixmaps/atom.png">
-      <action name="Execute"><execute>atom</execute></action>
-    </item>
-    <item label="code" icon="/usr/share/pixmaps/code.png">
-      <action name="Execute"><execute>code</execute></action>
-    </item>
-    <item label="gedit" icon="/usr/share/icons/gnome/24x24/apps/text-editor.png">
-      <action name="Execute"><execute>gedit</execute></action>
-    </item>
-    <item label="nautilus" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg">
-      <action name="Execute"><execute>nautilus</execute></action>
-    </item>
-    <item label="google-chrome" icon="/usr/share/icons/hicolor/24x24/apps/google-chrome.png">
-      <action name="Execute"><execute>google-chrome</execute></action>
-    </item>
-    <item label="chromium-browser" icon="/usr/share/icons/hicolor/24x24/apps/chromium-browser.png">
-      <action name="Execute"><execute>chromium-browser</execute></action>
-    </item>
-    <item label="qps" icon="/usr/share/icons/hicolor/48x48/apps/qps.png">
-      <action name="Execute"><execute>qps</execute></action>
-    </item>
-    <item label="synaptic" icon="/usr/share/icons/breeze-dark/apps/48/synaptic.svg">
-      <action name="Execute"><execute>sudo synaptic</execute></action>
-    </item>
-    <item label="k3b" icon="/usr/share/icons/hicolor/48x48/apps/k3b.png">
-      <action name="Execute"><execute>k3b</execute></action>
-    </item>
-    <item label="fcitx" icon="/usr/share/icons/hicolor/scalable/apps/fcitx.svg">
-      <action name="Execute"><execute>fcitx</execute></action>
-    </item>
-  </menu>
-  <separator />
-  <menu id="rofi-menu" label="Rofi" icon="/usr/share/icons/Numix/24/categories/applications-utilities.svg">
-    <item label="Rofi Show Window" icon="/usr/share/icons/Numix/24/actions/view-list.svg">
-      <action name="Execute"><execute>rofi -show window -show-icons</execute></action>
-    </item>
-    <item label="Rofi Show Drun" icon="/usr/share/icons/Numix/24/places/start-here.svg">
-      <action name="Execute"><execute>rofi -show drun -show-icons</execute></action>
-    </item>
-    <item label="Rofi Show run" icon="/usr/share/icons/Numix/24/actions/system-run.svg">
-      <action name="Execute"><execute>rofi -show run</execute></action>
-    </item>
-  </menu>
-  <menu id="openbox-menu" label="Openbox" icon="/usr/share/icons/Numix/24/categories/applications-system.svg">
-    <item label="ObConf" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
-      <action name="Execute"><execute>obconf</execute></action>
-    </item>
-    <item label="Reconfigure" icon="/usr/share/icons/Numix/24/actions/configure.svg">
-      <action name="Reconfigure" />
-    </item>
-    <item label="Restart" icon="/usr/share/icons/Numix/24/actions/system-restart.svg">
-      <action name="Restart" />
-    </item>
-    <!--
-    <item label="Switch user" icon="/usr/share/icons/Numix/22/actions/system-users.svg">
-      <action name="Execute"><execute>dm-tool switch-to-greeter</execute></action>
-    </item>
-    //-->
-    <item label="Suspend" icon="/usr/share/icons/Numix/24/actions/system-suspend.svg">
-      <action name="Execute"><execute>systemctl suspend</execute></action>
-    </item>
-    <item label="Shutdown" icon="/usr/share/icons/Numix/24/actions/system-shutdown.svg">
-      <action name="Execute"><execute>shutdown now</execute></action>
-    </item>
-    <!--
-    <item label="PowerOff" icon="/usr/share/icons/Numix/24/actions/system-shutdown.svg">
-      <action name="Execute"><execute>pkexec poweroff</execute></action>
-    </item>
-    //-->
-    <!-- $ find /usr/share/icons/Numix/ | grep logout //-->
-    <item label="Logout" icon="/usr/share/icons/Numix/24/actions/system-logout.svg">
-      <action name="Exit"/>
-    </item>
-  </menu>
+	<!--
+	<item label="Terminal emulator">
+		<action name="Execute"><execute>x-terminal-emulator</execute></action>
+	</item>
+	<item label="Web browser">
+		<action name="Execute"><execute>x-www-browser</execute></action>
+	</item>
+	//-->
+	<!-- This requires the presence of the 'openbox-menu' package to work -->
+	<!-- <menu id="/Debian" /> //-->
+	<!-- <separator /> //-->
+	<menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu" icon="/usr/share/icons/Numix/24/categories/applications-utilities.svg" />
+	<separator />
+	<item label="Rofi Show Drun" icon="/usr/share/icons/Numix/24/places/start-here.svg">
+		<action name="Execute"><execute>rofi -show drun -show-icons</execute></action>
+	</item>
+	<item label="Terminal" icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png" >
+		<action name="Execute"><execute>sakura -m</execute></action>
+	</item>
+	<item label="Text Editor" icon="/usr/share/icons/gnome/24x24/apps/text-editor.png" >
+		<action name="Execute"><execute>mousepad</execute></action>
+	</item>
+	<item label="Web Browser" icon="/usr/share/icons/hicolor/16x16/apps/firefox.png" >
+		<action name="Execute"><execute>firefox</execute></action>
+	</item>
+	<item label="File Manager" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg" >
+		<action name="Execute"><execute>pcmanfm-qt</execute></action>
+	</item>
+	<item label="FileZilla" icon="/usr/share/pixmaps/filezilla.png" >
+		<action name="Execute"><execute>filezilla</execute></action>
+	</item>
+	<menu id="more-app-menu" label="More" icon="/usr/share/icons/Numix/16/categories/application-community.svg">
+		<item label="tilix-quake" icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png" >
+			<action name="Execute"><execute>tilix --quake</execute></action>
+		</item>
+		<item label="gnome-terminal" icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png">
+			<action name="Execute"><execute>gnome-terminal</execute></action>
+		</item>
+		<item label="qterminal" icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png">
+			<action name="Execute"><execute>qterminal</execute></action>
+		</item>
+		<item label="atom" icon="/usr/share/pixmaps/atom.png">
+			<action name="Execute"><execute>atom</execute></action>
+		</item>
+		<item label="code" icon="/usr/share/pixmaps/code.png">
+			<action name="Execute"><execute>code</execute></action>
+		</item>
+		<item label="gedit" icon="/usr/share/icons/gnome/24x24/apps/text-editor.png">
+			<action name="Execute"><execute>gedit</execute></action>
+		</item>
+		<item label="nautilus" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg">
+			<action name="Execute"><execute>nautilus</execute></action>
+		</item>
+		<item label="Spacefm" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg">
+			<action name="Execute"><execute>spacefm</execute></action>
+		</item>
+		<item label="Thunar" icon="/usr/share/icons/Numix/24/actions/gtk-open.svg">
+			<action name="Execute"><execute>Thunar</execute></action>
+		</item>
+		<item label="google-chrome" icon="/usr/share/icons/hicolor/24x24/apps/google-chrome.png">
+			<action name="Execute"><execute>google-chrome</execute></action>
+		</item>
+		<item label="chromium-browser" icon="/usr/share/icons/hicolor/24x24/apps/chromium-browser.png">
+			<action name="Execute"><execute>chromium-browser</execute></action>
+		</item>
+		<item label="qps" icon="/usr/share/icons/hicolor/48x48/apps/qps.png">
+			<action name="Execute"><execute>qps</execute></action>
+		</item>
+		<item label="synaptic" icon="/usr/share/icons/breeze-dark/apps/48/synaptic.svg">
+			<action name="Execute"><execute>sudo synaptic</execute></action>
+		</item>
+		<item label="k3b" icon="/usr/share/icons/hicolor/48x48/apps/k3b.png">
+			<action name="Execute"><execute>k3b</execute></action>
+		</item>
+		<item label="fcitx" icon="/usr/share/icons/hicolor/scalable/apps/fcitx.svg">
+			<action name="Execute"><execute>fcitx</execute></action>
+		</item>
+	</menu>
+	<separator />
+	<menu id="rofi-menu" label="Rofi" icon="/usr/share/icons/Numix/24/categories/applications-utilities.svg">
+		<item label="Rofi Show Drun" icon="/usr/share/icons/Numix/24/places/start-here.svg">
+			<action name="Execute"><execute>rofi -show drun -show-icons</execute></action>
+		</item>
+		<item label="Rofi Show Window" icon="/usr/share/icons/Numix/24/actions/view-list.svg">
+			<action name="Execute"><execute>rofi -show window -show-icons</execute></action>
+		</item>
+		<item label="Rofi Show run" icon="/usr/share/icons/Numix/24/actions/system-run.svg">
+			<action name="Execute"><execute>rofi -show run</execute></action>
+		</item>
+	</menu>
+	<menu id="openbox-menu" label="Openbox" icon="/usr/share/icons/Numix/24/categories/applications-system.svg">
+		<item label="ObConf" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
+			<action name="Execute"><execute>obconf</execute></action>
+		</item>
+		<item label="Reconfigure" icon="/usr/share/icons/Numix/24/actions/configure.svg">
+			<action name="Reconfigure" />
+		</item>
+		<item label="Restart" icon="/usr/share/icons/Numix/24/actions/system-restart.svg">
+			<action name="Restart" />
+		</item>
+		<!--
+		<item label="Switch user" icon="/usr/share/icons/Numix/22/actions/system-users.svg">
+			<action name="Execute"><execute>dm-tool switch-to-greeter</execute></action>
+		</item>
+		//-->
+		<item label="Suspend" icon="/usr/share/icons/Numix/24/actions/system-suspend.svg">
+			<action name="Execute"><execute>systemctl suspend</execute></action>
+		</item>
+		<item label="Shutdown" icon="/usr/share/icons/Numix/24/actions/system-shutdown.svg">
+			<action name="Execute"><execute>shutdown now</execute></action>
+		</item>
+		<!--
+		<item label="PowerOff" icon="/usr/share/icons/Numix/24/actions/system-shutdown.svg">
+			<action name="Execute"><execute>pkexec poweroff</execute></action>
+		</item>
+		//-->
+		<!-- $ find /usr/share/icons/Numix/ | grep logout //-->
+		<item label="Logout" icon="/usr/share/icons/Numix/24/actions/system-logout.svg">
+			<action name="Exit"/>
+		</item>
+	</menu>
 </menu>
 
 </openbox_menu>
