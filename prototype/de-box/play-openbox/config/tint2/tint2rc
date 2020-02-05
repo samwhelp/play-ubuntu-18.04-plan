@@ -10,7 +10,7 @@ end_color = #000000 0
 
 #-------------------------------------
 # Backgrounds
-# Background 1: Battery, Panel
+# Background 1: Panel
 rounded = 8
 border_width = 0
 border_sides = TBLR
@@ -77,10 +77,10 @@ border_color_pressed = #000000 100
 
 #-------------------------------------
 # Panel
-panel_items = LTSBC
-panel_size = 85% 30
+panel_items = LTSC
+panel_size = 85% 34
 panel_margin = 5 5
-panel_padding = 2 0 2
+panel_padding = 2 2 2
 panel_background_id = 1
 wm_menu = 1
 panel_dock = 0
@@ -165,17 +165,18 @@ launcher_icon_asb = 100 0 0
 launcher_icon_theme_override = 0
 startup_notifications = 1
 launcher_tooltip = 1
-launcher_item_app = openbox-toggle-show-desktop.desktop
+#launcher_item_app = openbox-toggle-show-desktop.desktop
 launcher_item_app = rofi-show-drun.desktop
-launcher_item_app = openbox-show-root-menu.desktop
+#launcher_item_app = openbox-show-root-menu.desktop
 launcher_item_app = tint2conf.desktop
-launcher_item_app = firefox.desktop
-launcher_item_app = iceweasel.desktop
-launcher_item_app = chromium-browser.desktop
-launcher_item_app = google-chrome.desktop
-launcher_item_app = mousepad.desktop
-launcher_item_app = pcmanfm-qt.desktop
 launcher_item_app = sakura.desktop
+launcher_item_app = mousepad.desktop
+launcher_item_app = firefox.desktop
+#launcher_item_app = iceweasel.desktop
+#launcher_item_app = chromium-browser.desktop
+#launcher_item_app = google-chrome.desktop
+launcher_item_app = pcmanfm-qt.desktop
+launcher_icon_theme = Numix
 
 #-------------------------------------
 # Clock
@@ -204,7 +205,7 @@ battery_font_color = #ffffff 100
 bat1_format =
 bat2_format =
 battery_padding = 1 0
-battery_background_id = 1
+battery_background_id = 0
 battery_hide = 101
 battery_lclick_command =
 battery_rclick_command =
