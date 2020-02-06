@@ -13,6 +13,11 @@
 * [openbox-gen-rc](config/openbox/openbox-gen-rc)
 
 
+## Note
+
+* note-ubuntu-18.04/[openbox](https://samwhelp.github.io/note-ubuntu-18.04/read/subject/openbox/)
+
+
 ## Manual
 
 * [Help:Contents](http://openbox.org/wiki/Help:Contents)
