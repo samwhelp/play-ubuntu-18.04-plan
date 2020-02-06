@@ -128,15 +128,24 @@ compton --config ~/.config/openbox/compton/compton.conf &
 
 
 ################################################################################
-### Head: Shortcut
+### Head: Hotkeys
 ##
+
 
 ## global key shortcut
+## Just use ~/.config/openbox/rc.xml
+
+
+#sxhkd &
+#sxhkd -c "$HOME/.config/openbox/sxhkd/sxhkdrc" &
+
+
 #lxqt-globalkeysd &
-#Or just use ~/.icewm/keys
+#lxqt-globalkeysd --config-file="$HOME/.config/openbox/lxqt/globalkeyshortcuts.conf" &
+
 
 ##
-### Tail: Shortcut
+### Tail: Hotkeys
 ################################################################################
 
 
