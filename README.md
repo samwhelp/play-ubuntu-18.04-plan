@@ -36,7 +36,7 @@
 
 ### awesome-wm
 
-* [demo-config-awesome-github-master](concept/awesome-wm/demo-start/demo-config-awesome-github-master)
+* [demo-config-awesome-github-master](concept/awesome-wm/demo-start/demo-config-awesome-github-master) ([keybind](concept/awesome-wm/demo-start/demo-config-awesome-github-master/spec-keybind.md)) ([mousebind](concept/awesome-wm/demo-start/demo-config-awesome-github-master/spec-mousebind.md))
 
 ### de-lxqt-with-wm
 
