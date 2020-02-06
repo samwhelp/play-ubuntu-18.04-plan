@@ -1,4 +1,7 @@
 
+# openbox-gen-rc
+
+
 ## Help
 
 run
@@ -12,3 +15,14 @@ or run
 ``` sh
 $ make help
 ```
+
+
+## rc
+
+run
+
+``` sh
+$ make rc
+```
+
+create `rc.xml`
