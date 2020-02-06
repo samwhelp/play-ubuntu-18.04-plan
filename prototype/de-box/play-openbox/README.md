@@ -8,6 +8,11 @@
 * [mousebind](spec-mousebind.md)
 
 
+## Tool
+
+* [openbox-gen-rc](config/openbox/openbox-gen-rc)
+
+
 ## Manual
 
 * [Help:Contents](http://openbox.org/wiki/Help:Contents)
