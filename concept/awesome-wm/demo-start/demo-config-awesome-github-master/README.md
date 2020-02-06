@@ -1,4 +1,12 @@
 
+# demo-config-awesome-github-master
+
+## Spec
+
+* [keybind](spec-keybind.md)
+* [mousebind](spec-mousebind.md)
+
+
 ## Prepare
 
 ### Install awesome
