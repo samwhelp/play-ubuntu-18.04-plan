@@ -31,6 +31,8 @@
 
 * http://openbox.org/wiki/Help:Actions#ToggleShowDesktop
 * http://openbox.org/wiki/Help:Actions#ShowMenu
+* http://openbox.org/wiki/Help:Configuration#Mouse
+* http://openbox.org/wiki/Help:Bindings#Mouse_bindings
 
 */
 ?>

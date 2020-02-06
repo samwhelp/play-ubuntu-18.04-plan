@@ -145,7 +145,7 @@
 
 | Key | How to set | Doc |
 | --- | --- | --- |
-| `Win + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
+| `Win + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
 | `Alt + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
 | `Ctrl + Win + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
 | `Ctrl + Alt + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |

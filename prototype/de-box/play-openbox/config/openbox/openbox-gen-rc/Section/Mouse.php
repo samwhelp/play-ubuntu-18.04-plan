@@ -32,6 +32,8 @@
 ## Help
 
 * http://openbox.org/wiki/Help:Configuration#Mouse
+* http://openbox.org/wiki/Help:Bindings#Mouse_bindings
+* * http://openbox.org/wiki/Help:Actions
 
 */
 ?>

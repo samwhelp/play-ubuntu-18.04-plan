@@ -22,6 +22,8 @@
 ## Help
 
 * http://openbox.org/wiki/Help:Actions#ToggleShowDesktop
+* http://openbox.org/wiki/Help:Configuration#Keyboard
+* http://openbox.org/wiki/Help:Bindings#Key_bindings
 
 */
 ?>
