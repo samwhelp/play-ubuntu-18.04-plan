@@ -31,8 +31,8 @@
 
 ## Config File
 
-* [~/.config/swesome/rc.lua](rc.lua)
-* [~/.config/swesome/style/experiment/rc.lua](rc.lua)
+* [~/.config/awesome/rc.lua](rc.lua)
+* [~/.config/awesome/style/experiment/rc.lua](style/experiment/rc.lua)
 
 > Search `append_global_keybindings`
 
