@@ -100,17 +100,18 @@
 
 <?php //include_once(__DIR__ . '/Applications/NormalNoDecorations.php'); ?>
 
+<?php //include_once(__DIR__ . '/Rule/Sakura.php'); ?>
 <?php include_once(__DIR__ . '/Rule/GnomeTerminal.php'); ?>
 <?php include_once(__DIR__ . '/Rule/Xfce4Terminal.php'); ?>
 <?php include_once(__DIR__ . '/Rule/MateTerminal.php'); ?>
 <?php include_once(__DIR__ . '/Rule/Terminator.php'); ?>
 
 
+<?php //include_once(__DIR__ . '/Rule/Mousepad.php'); ?>
 <?php include_once(__DIR__ . '/Rule/Atom.php'); ?>
 <?php include_once(__DIR__ . '/Rule/Code.php'); ?>
 <?php include_once(__DIR__ . '/Rule/Geany.php'); ?>
 <?php include_once(__DIR__ . '/Rule/Gedit.php'); ?>
-<?php //include_once(__DIR__ . '/Rule/Mousepad.php'); ?>
 <?php include_once(__DIR__ . '/Rule/Leafpad.php'); ?>
 <?php include_once(__DIR__ . '/Rule/Kate.php'); ?>
 <?php include_once(__DIR__ . '/Rule/GnomeBuilder.php'); ?>

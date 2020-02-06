@@ -1953,148 +1953,148 @@ h l
 
 
 
-	<application class="Gnome-terminal">
+	<application class="Gnome-terminal" type="normal">
 		<desktop>1</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Xfce4-terminal">
+	<application class="Xfce4-terminal" type="normal">
 		<desktop>1</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Mate-terminal">
+	<application class="Mate-terminal" type="normal">
 		<desktop>1</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Terminator">
+	<application class="Terminator" type="normal">
 		<desktop>1</desktop>
 		<focus>yes</focus>
 	</application>
 
 
 
-	<application class="Atom">
+	<application class="Atom" type="normal">
 		<desktop>2</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Code">
+	<application class="Code" type="normal">
 		<desktop>2</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Geany">
+	<application class="Geany" type="normal">
 		<desktop>2</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Gedit">
+	<application class="Gedit" type="normal">
 		<desktop>2</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Leafpad">
+	<application class="Leafpad" type="normal">
 		<desktop>2</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="kate">
+	<application class="kate" type="normal">
 		<desktop>2</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Gnome-builder">
+	<application class="Gnome-builder" type="normal">
 		<desktop>2</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="kdevelop">
+	<application class="kdevelop" type="normal">
 		<desktop>2</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="QtCreator">
+	<application class="QtCreator" type="normal">
 		<desktop>2</desktop>
 		<focus>yes</focus>
 	</application>
 
 
-	<application class="Firefox">
+	<application class="Firefox" type="normal" role="browser">
 		<desktop>3</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Chromium-browser">
+	<application class="Chromium-browser" type="normal">
 		<desktop>3</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Google-chrome">
+	<application class="Google-chrome" type="normal">
 		<desktop>3</desktop>
 		<focus>yes</focus>
 	</application>
 
 
-	<application class="pcmanfm-qt">
+	<application class="pcmanfm-qt" type="normal">
 		<desktop>4</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Pcmanfm">
+	<application class="Pcmanfm" type="normal">
 		<desktop>4</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Spacefm">
+	<application class="Spacefm" type="normal">
 		<desktop>4</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Nautilus">
+	<application class="Nautilus" type="normal">
 		<desktop>4</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Thunar">
+	<application class="Thunar" type="normal">
 		<desktop>4</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="dolphin">
+	<application class="dolphin" type="normal">
 		<desktop>4</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Filezilla">
+	<application class="Filezilla" type="normal">
 		<desktop>4</desktop>
 		<focus>yes</focus>
 	</application>
 
 
-	<application class="Xephyr">
+	<application class="Xephyr" type="normal">
 		<desktop>5</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="mpv">
+	<application class="mpv" type="normal">
 		<desktop>5</desktop>
 		<focus>yes</focus>
 		<fullscreen>yes</fullscreen>
 	</application>
 
-	<application class="vlc">
+	<application class="vlc" type="normal">
 		<desktop>5</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="smplayer">
+	<application class="smplayer" type="normal">
 		<desktop>5</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Audacious">
+	<application class="Audacious" type="normal">
 		<desktop>5</desktop>
 		<focus>yes</focus>
 		<size>
@@ -2107,17 +2107,17 @@ h l
 		</position>
 	</application>
 
-	<application class="Soffice">
+	<application class="Soffice" type="normal">
 		<desktop>5</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="Gimp-2.8">
+	<application class="Gimp-2.8" type="normal">
 		<desktop>5</desktop>
 		<focus>yes</focus>
 	</application>
 
-	<application class="openshot">
+	<application class="openshot" type="normal">
 		<desktop>5</desktop>
 		<focus>yes</focus>
 	</application>
