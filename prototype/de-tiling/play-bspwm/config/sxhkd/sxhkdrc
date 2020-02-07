@@ -139,12 +139,17 @@ alt + {1-9,0}
 	bspc desktop -f '^{1-9,10}'
 
 # send node to desktop
-#alt + shift + {1-9,0}
+super + {1-9,0}
+	bspc node -d '^{1-9,10}'
+
+# send node to desktop
+#alt + super + {1-9,0}
 #	bspc node -d '^{1-9,10}'
 
 # send node to desktop
-super + {1-9,0}
-	bspc node -d '^{1-9,10}'
+#alt + shift + {1-9,0}
+#	bspc node -d '^{1-9,10}'
+
 
 ##
 ## Tail: Workspace
