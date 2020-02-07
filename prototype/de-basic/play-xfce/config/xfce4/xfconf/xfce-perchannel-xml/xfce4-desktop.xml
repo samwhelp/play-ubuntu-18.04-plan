@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-desktop" version="1.0">
-  <property name="backdrop" type="empty">
-    <property name="screen0" type="empty">
-      <property name="monitor0" type="empty">
-        <property name="workspace0" type="empty">
-          <property name="color-style" type="int" value="0"/>
-          <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg"/>
-        </property>
-        <property name="workspace1" type="empty">
-          <property name="color-style" type="int" value="0"/>
-          <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg"/>
-        </property>
-        <property name="workspace2" type="empty">
-          <property name="color-style" type="int" value="0"/>
-          <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/Ross_Jones_Rockpool_(Sydney)_by_Chris_Carignan.jpg"/>
-        </property>
-        <property name="workspace3" type="empty">
-          <property name="color-style" type="int" value="0"/>
-          <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/Raindrops_On_The_Table_by_Alex_Fazit.jpg"/>
-        </property>
-        <property name="workspace4" type="empty">
-          <property name="color-style" type="int" value="0"/>
-          <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/Cathédrale_Marie-Rheine-du-Monde_by_Thierry_Pon.jpg"/>
-        </property>
-      </property>
-    </property>
-    <property name="single-workspace-mode" type="bool" value="false"/>
-    <property name="single-workspace-number" type="int" value="0"/>
-  </property>
-  <property name="last" type="empty">
-    <property name="window-width" type="int" value="658"/>
-    <property name="window-height" type="int" value="531"/>
-  </property>
+	<property name="backdrop" type="empty">
+		<property name="screen0" type="empty">
+			<property name="monitor0" type="empty">
+				<property name="workspace0" type="empty">
+					<property name="color-style" type="int" value="0"/>
+					<property name="image-style" type="int" value="5"/>
+					<property name="last-image" type="string" value="/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg"/>
+				</property>
+				<property name="workspace1" type="empty">
+					<property name="color-style" type="int" value="0"/>
+					<property name="image-style" type="int" value="5"/>
+					<property name="last-image" type="string" value="/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg"/>
+				</property>
+				<property name="workspace2" type="empty">
+					<property name="color-style" type="int" value="0"/>
+					<property name="image-style" type="int" value="5"/>
+					<property name="last-image" type="string" value="/usr/share/backgrounds/Ross_Jones_Rockpool_(Sydney)_by_Chris_Carignan.jpg"/>
+				</property>
+				<property name="workspace3" type="empty">
+					<property name="color-style" type="int" value="0"/>
+					<property name="image-style" type="int" value="5"/>
+					<property name="last-image" type="string" value="/usr/share/backgrounds/Raindrops_On_The_Table_by_Alex_Fazit.jpg"/>
+				</property>
+				<property name="workspace4" type="empty">
+					<property name="color-style" type="int" value="0"/>
+					<property name="image-style" type="int" value="5"/>
+					<property name="last-image" type="string" value="/usr/share/backgrounds/Cathédrale_Marie-Rheine-du-Monde_by_Thierry_Pon.jpg"/>
+				</property>
+			</property>
+		</property>
+		<property name="single-workspace-mode" type="bool" value="false"/>
+		<property name="single-workspace-number" type="int" value="0"/>
+	</property>
+	<property name="last" type="empty">
+		<property name="window-width" type="int" value="658"/>
+		<property name="window-height" type="int" value="531"/>
+	</property>
 </channel>
