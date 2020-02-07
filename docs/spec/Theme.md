@@ -12,3 +12,10 @@
 ## Note
 
 Qt5 use [[qt5-style-plugins](../../prototype/style-platformtheme/qt5-style-plugins)].
+
+
+## Xfce Tool
+
+* [prototype/style-de/xfce/](../../prototype/style-de/xfce)
+* [project/style-tool/xfce/style-switch](../../project/style-tool/xfce/style-switch)
+* [project/style-tool/xfce/style-ctrl](../../project/style-tool/xfce/style-ctrl)
