@@ -7,8 +7,8 @@
 
 * [Keybind](docs/spec/Keybind.md)
 * [Mousebind](docs/spec/Mousebind.md)
-* [Theme](docs/spec/theme.md)
-* [Workspace](docs/spec/workspace.md)
+* [Theme](docs/spec/Theme.md)
+* [Workspace](docs/spec/Workspace.md)
 
 
 ## Prototype
