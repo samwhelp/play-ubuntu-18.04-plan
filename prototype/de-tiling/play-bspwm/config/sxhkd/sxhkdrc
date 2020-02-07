@@ -30,20 +30,30 @@
 
 
 ################################################################################
-## Head: sxhkd
+## Head: System
 ##
 
+## Shutdown
+#alt + shift + z
+#	shutdown now
+
+## Logout
+# quit bspwm normally
+alt + shift + x
+	bspc quit
+
+## Reconfigure
 # make sxhkd reload its configuration files:
 alt + shift + c
 	pkill -USR1 -x sxhkd
 
 ##
-## Tail: sxhkd
+## Tail: System
 ################################################################################
 
 
 ################################################################################
-## Head: Terminal
+## Head: Launch App / Terminal
 ##
 
 alt + Return
@@ -53,12 +63,12 @@ alt + shift + a
 	sakura -m
 
 ##
-## Tail: Terminal
+## Tail: Launch App / Terminal
 ################################################################################
 
 
 ################################################################################
-## Head: Rofi
+## Head: Launch App / Rofi
 ##
 
 alt + shift + d
@@ -71,19 +81,40 @@ alt + shift + r
 	rofi -show run
 
 ##
-## Tail: Rofi
+## Tail: Launch App / Rofi
 ################################################################################
 
 
 ################################################################################
-## Head: demnu
+## Head: Launch App / Misc
+##
+
+alt + shift + f
+	pcmanfm-qt
+
+alt + shift + g
+	nautilus
+
+alt + shift + e
+	gedit
+
+alt + shift + b
+	firefox
+
+##
+## Tail: Launch App / Misc
+################################################################################
+
+
+################################################################################
+## Head: Launch App / demnu
 ##
 
 alt + shift + t
 	dmenu_run
 
 ##
-## Tail: demnu
+## Tail: Launch App / demnu
 ################################################################################
 
 
@@ -103,19 +134,6 @@ alt + F4
 
 ##
 ## Tail: Window Close
-################################################################################
-
-
-################################################################################
-## Head: Quit bspwm
-##
-
-# quit bspwm normally
-alt + shift + x
-	bspc quit
-
-##
-## Tail: Quit bspwm
 ################################################################################
 
 
@@ -284,25 +302,4 @@ super + {Left,Down,Up,Right}
 
 ##
 ## Tail: Window
-################################################################################
-
-
-################################################################################
-## Head: App
-##
-
-alt + shift + f
-	pcmanfm-qt
-
-alt + shift + g
-	nautilus
-
-alt + shift + e
-	gedit
-
-alt + shift + b
-	firefox
-
-##
-## Tail: App
 ################################################################################
