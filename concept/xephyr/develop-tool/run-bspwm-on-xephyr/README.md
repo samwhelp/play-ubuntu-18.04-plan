@@ -1,5 +1,5 @@
 
-# rrun-bspwm-on-xephyr
+# run-bspwm-on-xephyr
 
 
 ## Howto

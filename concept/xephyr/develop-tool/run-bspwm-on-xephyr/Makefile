@@ -15,5 +15,5 @@ help:
 .PHONY: help
 
 install:
-	install -m 755 bin/bspwm-run.sh ~/bin/bspwm-run.sh
+	install -m 755 bin/xephyr-run-bspwm.sh ~/bin/xephyr-run-bspwm.sh
 .PHONY: install

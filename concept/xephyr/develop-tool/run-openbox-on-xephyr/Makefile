@@ -15,5 +15,5 @@ help:
 .PHONY: help
 
 install:
-	install -m 755 bin/openbox-run.sh ~/bin/openbox-run.sh
+	install -m 755 bin/xephyr-run-openbox.sh ~/bin/xephyr-run-openbox.sh
 .PHONY: install

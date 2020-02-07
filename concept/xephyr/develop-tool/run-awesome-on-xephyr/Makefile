@@ -15,6 +15,6 @@ help:
 .PHONY: help
 
 install:
-	install -m 755 bin/awesome-run.sh ~/bin/awesome-run.sh
-	install -m 755 bin/awesome-run-rc.sh ~/bin/awesome-run-rc.sh
+	install -m 755 bin/xephyr-run-awesome.sh ~/bin/xephyr-run-awesome.sh
+	install -m 755 bin/xephyr-run-awesome-rc.sh ~/bin/xephyr-run-awesome-rc.sh
 .PHONY: install
