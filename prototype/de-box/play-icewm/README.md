@@ -1,6 +1,12 @@
 
 # Prototype play-icewm
 
+
+## Note
+
+* note-ubuntu-18.04/[icewm](https://samwhelp.github.io/note-ubuntu-18.04/read/subject/icewm/)
+
+
 ## Usage
 
 

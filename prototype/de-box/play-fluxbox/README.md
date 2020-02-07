@@ -2,6 +2,11 @@
 # Prototype play-fluxbox
 
 
+## Note
+
+* note-ubuntu-18.04/[fluxbox](https://samwhelp.github.io/note-ubuntu-18.04/read/subject/fluxbox/)
+
+
 ## Usage
 
 

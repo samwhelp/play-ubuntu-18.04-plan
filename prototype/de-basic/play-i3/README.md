@@ -2,6 +2,11 @@
 # Prototype play-i3
 
 
+## Note
+
+* note-ubuntu-18.04/[i3](https://samwhelp.github.io/note-ubuntu-18.04/read/subject/i3/)
+
+
 ## Usage
 
 

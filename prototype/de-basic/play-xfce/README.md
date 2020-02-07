@@ -7,6 +7,11 @@
 * [keybind](spec-keybind.md)
 
 
+## Note
+
+* note-ubuntu-18.04/[xfce](https://samwhelp.github.io/note-ubuntu-18.04/read/subject/xfce/)
+
+
 ## Usage
 
 
