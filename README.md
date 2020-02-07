@@ -5,7 +5,7 @@
 
 ## Docs
 
-* [Quick Start](docs/howto/start.md)
+
 * [Keybind](docs/spec/keybind.md)
 * [Mousebind](docs/spec/mousebind.md)
 
@@ -69,6 +69,7 @@
 
 ## Plan
 
+* [Quick Start](docs/howto/start.md)
 
 ### de-basic
 
