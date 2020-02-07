@@ -2,7 +2,22 @@
 # Xfce / Keybind
 
 
-## Tool
+## Subject
+
+* [Menu](#menu)
+* [Application Finder](#application-finder)
+* [Launch App](#launch-app)
+* [Workspace](#workspace)
+* [Show Desktop](#show-desktop)
+* [Window](#window)
+
+
+## Link
+
+* [docs-spec-keybind](../../../docs/spec/keybind.md)
+
+
+## Config Tool
 
 ### GUI
 
@@ -19,212 +34,244 @@
 
 * [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml)
 
-## Tips
+## Keys
 
-* Alt for Workspace
-* Win for Window
+### Mean
 
-
-## Show RootMenu
-
-| Key | How to set |
+| Key | Description |
 | --- | --- |
-| `Win + Space` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) |
+| `Shift` | 'Shift' |
+| `Ctrl` | 'Control' |
+| `Win` | 'Mod4' (Super)|
+| `Alt` | 'Mod1' |
 
+### Tips
 
-## Show WorkspaceMenu
-
-| Key | How to set |
+| Key | Description |
 | --- | --- |
-| `Win + c` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) |
+| `Win` | For Window (Client) |
+| `Alt` | For Workspace (Tag) (Desktop) |
 
 
-## Toggle ShowDesktop
+## Menu
 
-| Key | How to set |
+| Key | Description |
 | --- | --- |
-| `Win + d` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) |
+| `Win + Space` | Popup Root Menu |
+| `Win + c` | Popup Workspace Menu (Window List) (Client List) |
+| `Alt + Space` | Popup Client Menu |
+| `Alt + F1` | Popup WhiskerMenu |
 
 
-## Window Operations Menu
+## Application Finder
 
-| Key | How to set |
+| Key | Description |
 | --- | --- |
-| `Alt + Space` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) |
+| `Alt + F2` | Popup Application Finder (Simple) |
+| `Alt + F3` | Popup Application Finder |
 
 
-## Window Switch
+## Launch App
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + a` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) | Previous Window|
-| `Win + s` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) | Next Window |
-| `Win + Tab` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) | Show Window for Same Application |
+### Terminal
 
-
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + i` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) | Switch Application |
-
-
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + u` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) | Raise or Lower Window |
-| `Win + Shift + PageUp` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) | Raise Window |
-| `Win + Shift + PageDown` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) | Lower Window |
-
-
-## Window Close
-
-| Key | How to set |
+| Key | Description |
 | --- | --- |
-| `Win + q` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) |
+| `Alt + Enter` | Launch Terminal (sakura -m) |
+| `Alt + Shift + a` | Launch Terminal (sakura -m) |
+| `Alt + Shift + t` | Toggle Drop Down Terminal (tilix --quake) |
 
+### Rofi
 
-## Window Iconify(Hide)
-
-| Key | How to set |
+| Key | Description |
 | --- | --- |
-| `Win + x` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) |
+| `Alt + Shift + r` | Launch Rofi (rofi -show run) |
+| `Alt + Shift + w` | Launch Rofi (rofi -show window -show-icons) |
+| `Alt + Shift + d` | Launch Rofi (rofi -show drun -show-icons) |
 
+### Misc
 
-## Window ToggleMaximize
-
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + w` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) | Maximize Window |
-| `Win + Shift + w` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1222) | Maximize Window Horizontally (Left-Right)|
-| `Win + Ctrl + w` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1242) | Maximize Window Vertically (Top-Bottom) |
-
-## Window ToggleFullscreen
-
-| Key | How to set |
+| Key | Description |
 | --- | --- |
-| `Win + f` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) |
-| `F11` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) |
-
-## Window Toggle Above
-
-| Key | How to set |
-| --- | --- |
-| `Win + t` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) |
-
-
-## Window BeginMove
-
-| Key | How to set |
-| --- | --- |
-| `Win + e` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) |
-
-
-## Window BeginResize
-
-| Key | How to set |
-| --- | --- |
-| `Win + r` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L) |
-
-
-## Fill Window
-
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + z` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1212) | Fill Window |
-| `Win + Shift + z` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1222) | Fill Window Horizontally (Left-Right)|
-| `Win + Ctrl + z` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1242) | Fill Window Vertically (Top-Bottom) |
-
-
-## Window Tiling Move / Side
-
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + Ctrl + k` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1166) | Tiling Window Move To North (Top) |
-| `Win + Ctrl + j` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1176) | Tiling Window Move To South (Bottom) |
-| `Win + Ctrl + h` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1186) | Tiling Window Move To West (Left) |
-| `Win + Ctrl + l` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1196) | Tiling Window Move To East (Right) |
-
-
-## Window Tiling Move / Corner
-
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + Shift + k` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1212) | Tiling Window Move To West-North (Left-Top) |
-| `Win + Shift + j` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1222) | Tiling Window Move To East-North (Right-Top) |
-| `Win + Shift + h` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1232) | Tiling Window Move To West-South (Left-Bottom) |
-| `Win + Shift + l` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L1242) | Tiling Window Move To East-South (Right-Bottom) |
-
+| `Alt + Shift + f` | Launch File Manager (pcmanfm-qt) |
+| `Alt + Shift + g` | Launch File Manager (nautilus) |
+| `Alt + Shift + b` | Launch Web Browser (firefox) |
+| `Alt + Shift + e` | Launch Text Editor (gedit) |
 
 
 ## Workspace
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Alt + Insert` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L578) | Add Workspace |
-| `Alt + Delete` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L584) | Delete Workspace |
+
+### Workspace Add Or Del
+
+| Key | Description |
+| --- | --- |
+| `Alt + Insert` | Add Workspace |
+| `Alt + Delete` | Delete Workspace |
 
 
-## Go To Workspace
+### Go To Workspace
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Alt + a` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L578) | Go To Previous Workspace |
-| `Alt + s` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L584) | Go To Next Workspace |
-
-
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Alt + k` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L578) | Go To Up Workspace |
-| `Alt + j` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L584) | Go To Down Workspace |
+| Key | Description |
+| --- | --- |
+| `Alt + a` | Go To Previous Workspace |
+| `Alt + s` | Go To Next Workspace |
 
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Alt + h` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L578) | Go To Left Workspace |
-| `Alt + l` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L584) | Go To Right Workspace |
+| Key | Description |
+| --- | --- |
+| `Alt + k` | Go To Up Workspace |
+| `Alt + j` | Go To Down Workspace |
+| `Alt + h` | Go To Left Workspace |
+| `Alt + l` | Go To Right Workspace |
 
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Alt + 1` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L603) | Go To Workspace 1 |
-| `Alt + 2` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L609) | Go To Workspace 2 |
-| `Alt + 3` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L615) | Go To Workspace 3 |
-| `Alt + 4` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L621) | Go To Workspace 4 |
-| `Alt + 5` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L627) | Go To Workspace 5 |
-| `Alt + 6` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L633) | Go To Workspace 6 |
-| `Alt + 7` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L639) | Go To Workspace 7 |
-| `Alt + 8` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L645) | Go To Workspace 8 |
-| `Alt + 9` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L651) | Go To Workspace 9 |
-| `Alt + 0` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L657) | Go To Workspace 10 |
+| Key | Description |
+| --- | --- |
+| `Alt + 1` | Go To Workspace 1 |
+| `Alt + 2` | Go To Workspace 2 |
+| `Alt + 3` | Go To Workspace 3 |
+| `Alt + 4` | Go To Workspace 4 |
+| `Alt + 5` | Go To Workspace 5 |
+| `Alt + 6` | Go To Workspace 6 |
+| `Alt + 7` | Go To Workspace 7 |
+| `Alt + 8` | Go To Workspace 8 |
+| `Alt + 9` | Go To Workspace 9 |
+| `Alt + 0` | Go To Workspace 10 |
 
 
-## Send To Workspace
+### Send To Workspace
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Alt + Win + a` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L672) | Send To Previous Workspace |
-| `Alt + Win + s` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L678) | Send To Next Workspace |
-
-
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Alt + Win + k` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L578) | Send To Up Workspace |
-| `Alt + Win + j` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L584) | Send To Down Workspace |
+| Key | Description |
+| --- | --- |
+| `Alt + Win + a` | Send To Previous Workspace |
+| `Alt + Win + s` | Send To Next Workspace |
 
 
 | Key | How to set | Description |
 | --- | --- | --- |
-| `Alt + Win + h` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L578) | Send To Left Workspace |
-| `Alt + Win + l` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L584) | Send To Right Workspace |
+| `Alt + Win + k` | Send To Up Workspace |
+| `Alt + Win + j` | Send To Down Workspace |
+| `Alt + Win + h` | Send To Left Workspace |
+| `Alt + Win + l` | Send To Right Workspace |
 
 
-| Key | How to set | Description |
-| --- | --- | --- |
-| `Win + 1` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L684) | Send To Workspace 1 |
-| `Win + 2` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L690) | Send To Workspace 2 |
-| `Win + 3` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L696) | Send To Workspace 3 |
-| `Win + 4` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L702) | Send To Workspace 4 |
-| `Win + 5` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L708) | Send To Workspace 5 |
-| `Win + 6` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L714) | Send To Workspace 6 |
-| `Win + 7` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L720) | Send To Workspace 7 |
-| `Win + 8` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L726) | Send To Workspace 8 |
-| `Win + 9` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L732) | Send To Workspace 9 |
-| `Win + 0` | [xfce4-keyboard-shortcuts.xml](config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml#L738) | Send To Workspace 10 |
+| Key | Description |
+| --- | --- |
+| `Win + 1` | Send To Workspace 1 |
+| `Win + 2` | Send To Workspace 2 |
+| `Win + 3` | Send To Workspace 3 |
+| `Win + 4` | Send To Workspace 4 |
+| `Win + 5` | Send To Workspace 5 |
+| `Win + 6` | Send To Workspace 6 |
+| `Win + 7` | Send To Workspace 7 |
+| `Win + 8` | Send To Workspace 8 |
+| `Win + 9` | Send To Workspace 9 |
+| `Win + 0` | Send To Workspace 10 |
+
+
+## Show Desktop
+
+| Key | Description |
+| --- | --- |
+| `Win + d` | Toggle Show Desktop |
+
+
+## Window
+
+### Window Switch
+
+| Key | Description |
+| --- | --- |
+| `Win + a` | Switch to Previous Window |
+| `Win + s` | Switch to Next Window |
+| `Win + Tab` | Show Window for Same Application |
+| `Win + i` | Switch Application |
+
+
+| Key | Description |
+| --- | --- |
+| `Win + u` | Raise or Lower Window |
+| `Win + Shift + PageUp` | Raise Window |
+| `Win + Shift + PageDown` | Lower Window |
+
+
+### Window Close
+
+| Key | Description |
+| --- | --- |
+| `Win + q` | Window Close |
+
+
+### Window Minimize (Iconify)
+
+| Key | Description |
+| --- | --- |
+| `Win + x` | Window Minimize (Iconify) |
+
+
+### Window Toggle Maximize
+
+| Key | Description |
+| --- | --- |
+| `Win + w` | Maximize Window |
+| `Win + Shift + w` | Maximize Window Horizontally (Left-Right)|
+| `Win + Ctrl + w` | Maximize Window Vertically (Top-Bottom) |
+
+
+### Window Toggle Fullscreen
+
+| Key | Description |
+| --- | --- |
+| `Win + f` | Window Toggle Fullscreen |
+| `F11` | Window Toggle Fullscreen |
+
+
+### Window Toggle Above
+
+| Key | Description |
+| --- | --- |
+| `Win + t` | Window Toggle Above |
+
+
+### Window Begin Move
+
+| Key | Description |
+| --- | --- |
+| `Win + e` | indow Begin Move |
+
+
+### Window Begin Resize
+
+| Key | Description |
+| --- | --- |
+| `Win + r` | Window Begin Resize |
+
+
+### Window Fill
+
+| Key | Description |
+| --- | --- |
+| `Win + z` | Window Fill |
+| `Win + Shift + z` | Window Fill Horizontally (Left-Right)|
+| `Win + Ctrl + z` | Window Fill Vertically (Top-Bottom) |
+
+
+### Window Tiling Move / Side
+
+| Key | Description |
+| --- | --- |
+| `Win + Ctrl + k` | Window Tiling Move To North (Top) |
+| `Win + Ctrl + j` | Window Tiling Move To South (Bottom) |
+| `Win + Ctrl + h` | Window Tiling Move To West (Left) |
+| `Win + Ctrl + l` | Window Tiling Move To East (Right) |
+
+
+## Window Tiling Move / Corner
+
+| Key | Description |
+| --- | --- |
+| `Win + Shift + k` | Window Tiling Move To West-North (Left-Top) |
+| `Win + Shift + j` | Window Tiling Move To East-North (Right-Top) |
+| `Win + Shift + h` | Window Tiling Move To West-South (Left-Bottom) |
+| `Win + Shift + l` | Window Tiling Move To East-South (Right-Bottom) |
