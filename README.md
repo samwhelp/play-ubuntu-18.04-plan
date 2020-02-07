@@ -3,15 +3,15 @@
 * [Ubuntu 18.04 (Bionic Beaver) Install Script](https://github.com/samwhelp/play-ubuntu-18.04-plan)
 
 
-## Docs
+## Spec
 
-
-* [Keybind](docs/spec/keybind.md)
-* [Mousebind](docs/spec/mousebind.md)
+* [Keybind](docs/spec/Keybind.md)
+* [Mousebind](docs/spec/Mousebind.md)
+* [Theme](docs/spec/theme.md)
+* [Workspace](docs/spec/workspace.md)
 
 
 ## Prototype
-
 
 ### de-basic
 

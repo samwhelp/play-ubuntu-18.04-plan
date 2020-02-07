@@ -9,5 +9,5 @@
 
 ## Link
 
-* [docs-spec-keybind](../../../../docs/spec/mousebind.md)
+* [docs-spec-keybind](../../../../docs/spec/Mousebind.md)
 * [spec-keybind](spec-keybind.md)

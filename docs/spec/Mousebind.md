@@ -1,5 +1,5 @@
 
-# Mousebind
+# Spec / Mousebind
 
 
 ## Implement

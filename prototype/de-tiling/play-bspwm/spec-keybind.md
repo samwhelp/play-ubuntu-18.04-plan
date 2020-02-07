@@ -13,7 +13,7 @@
 
 ## Link
 
-* [docs-spec-keybind](../../../docs/spec/keybind.md)
+* [docs-spec-keybind](../../../docs/spec/Keybind.md)
 
 
 ## System
