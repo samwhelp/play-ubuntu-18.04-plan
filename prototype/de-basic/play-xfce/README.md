@@ -13,6 +13,13 @@
 * note-ubuntu-18.04/[xfce](https://samwhelp.github.io/note-ubuntu-18.04/read/subject/xfce/)
 
 
+## Style Tool
+
+* [prototype/style-de/xfce](../../../prototype/style-de/xfce)
+* [project/style-tool/xfce/style-switch](../../../project/style-tool/xfce/style-switch)
+* [project/style-tool/xfce/style-ctrl](../../../project/style-tool/xfce/style-ctrl)
+
+
 ## Usage
 
 
