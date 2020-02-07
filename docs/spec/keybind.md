@@ -42,7 +42,7 @@
 
 | Key | Description |
 | --- | --- |
-| `Win + Space` | Popup Main Menu |
+| `Win + Space` | Popup Root Menu |
 | `Win + c` | Popup Workspace Menu (Window List) (Client List) |
 | `Alt + Space` | Popup Client Menu |
 
