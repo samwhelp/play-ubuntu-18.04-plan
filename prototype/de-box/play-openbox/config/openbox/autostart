@@ -181,7 +181,7 @@ compton --config ~/.config/openbox/compton/compton.conf &
 
 
 ################################################################################
-### Head: Screensaver
+### Head: Screen Saver
 ##
 
 
@@ -191,5 +191,5 @@ compton --config ~/.config/openbox/compton/compton.conf &
 
 
 ##
-### Tail: Screensaver
+### Tail: Screen Saver
 ################################################################################

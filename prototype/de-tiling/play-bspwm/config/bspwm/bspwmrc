@@ -71,7 +71,8 @@ bspc config focus_follows_pointer       true
 #bspc monitor -d I II III IV V VI VII VIII IX X
 #bspc monitor VGA-1 -d 1 2 3 4 5 6 7 8 9 0
 #bspc monitor -d 1 2 3 4 5 6 7 8 9 0
-bspc monitor -d 1 2 3 4
+#bspc monitor -d 1 2 3 4
+bspc monitor -d Term Edit Web File Misc
 
 ##
 ## Tail: Workspace
@@ -110,6 +111,13 @@ compton --config "$HOME/.config/bspwm/compton/compton.conf" &
 ## network manager applet
 #sleep 1 &&
 nm-applet &
+## Note: refer /etc/xdg/autostart/nm-applet.desktop
+
+
+## blueman-applet (Package: blueman)
+#blueman-applet
+## Note: refer /etc/xdg/autostart/blueman.desktop
+
 
 ##
 ### Tail: Network
@@ -120,8 +128,14 @@ nm-applet &
 ### Head: Mixer
 ##
 
-## sound mixer
+## mixer applet
+
+## volumeicon (Package: volumeicon-alsa)
 volumeicon &
+
+
+## mate-volume-control-applet (Package: mate-media)
+#mate-volume-control-applet &
 
 ##
 ### Tail: Mixer
@@ -197,4 +211,19 @@ tint2 -c "$HOME/.config/bspwm/tint2/tint2rc" &
 
 ##
 ### Tail: Policykit Agent
+################################################################################
+
+
+################################################################################
+### Head: Screen Saver
+##
+
+
+## xscreensaver
+## /etc/xdg/autostart/xscreensaver.desktop
+/usr/share/xscreensaver/xscreensaver-wrapper.sh -no-splash &
+
+
+##
+### Tail: Screen Saver
 ################################################################################
