@@ -45,7 +45,7 @@
 | --- | --- | --- |
 | `[Mouse Left Click]` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
 | `[Mouse Middle Click]` | Toggle Show Workspace Menu (Window List) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
-| `[Mouse Right Click]` | Toggle Show Root Menu (client-list-combined-menu) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
+| `[Mouse Right Click]` | Toggle Show Root Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
 
 
 ## Go To Workspace
