@@ -46,10 +46,23 @@
 * [Help:Actions](http://openbox.org/wiki/Help:Actions)
 
 
-## Tips
+## Keys
 
-* `Alt` for Workspace (Desktop)
-* `Win` for Window (Client)
+### Mean
+
+| Key | Description |
+| --- | --- |
+| `Shift` | 'Shift' |
+| `Ctrl` | 'Control' |
+| `Win` | 'Mod4' (Super)|
+| `Alt` | 'Mod1' |
+
+### Tips
+
+| Key | Description |
+| --- | --- |
+| `Win` | For Window (Client) |
+| `Alt` | For Workspace (Tag) (Desktop) |
 
 
 ## Config File
