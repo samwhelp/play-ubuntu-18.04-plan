@@ -18,5 +18,5 @@
 
 | Key | Description |
 | --- | --- |
-| `Alt + [Mouse Middle Up]` | Zoom In |
-| `Alt + [Mouse Middle Down]` | Zoom Out |
+| `Alt + [Mouse Middle Up]` | Desktop Zoom In |
+| `Alt + [Mouse Middle Down]` | Desktop Zoom Out |
