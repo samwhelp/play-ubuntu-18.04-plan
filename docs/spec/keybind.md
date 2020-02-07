@@ -4,6 +4,7 @@
 ## Subject
 
 * [Menu](#menu)
+* [System](#system)
 * [Launch App](#launch-app)
 * [Workspace](#workspace)
 * [Show Desktop](#show-desktop)
@@ -46,6 +47,15 @@
 | `Alt + Space` | Popup Client Menu |
 
 
+## System
+
+| Key | Description |
+| --- | --- |
+| `Alt + Shift + z` | Shutdown |
+| `Alt + Shift + x` | Logout |
+| `Alt + Shift + c` | Reconfigure |
+
+
 ## Launch App
 
 ### Terminal
@@ -53,6 +63,7 @@
 | Key | Description |
 | --- | --- |
 | `Alt + Enter` | Launch Terminal (sakura -m) |
+| `Alt + Shift + a` | Launch Terminal (sakura -m) |
 | `Alt + Shift + t` | Toggle Drop Down Terminal (tilix --quake) |
 
 ### Rofi
