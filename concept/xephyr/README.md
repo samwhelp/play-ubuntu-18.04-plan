@@ -4,6 +4,7 @@
 
 * [run-awesome-on-xephyr](run-awesome-on-xephyr)
 * [run-openbox-on-xephyr](run-openbox-on-xephyr)
+* [run-bspwm-on-xephyr](run-bspwm-on-xephyr)
 
 
 

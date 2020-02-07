@@ -1,5 +1,5 @@
 
-# run-openbox-on-xephyr
+# rrun-bspwm-on-xephyr
 
 
 ## Howto
