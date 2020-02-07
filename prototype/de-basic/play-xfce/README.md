@@ -20,6 +20,11 @@
 * [project/style-tool/xfce/style-ctrl](../../../project/style-tool/xfce/style-ctrl)
 
 
+## Theme Collections
+
+* [theme-xfwm4-collections](https://github.com/samwhelp/theme-xfwm4-collections)
+
+
 ## Usage
 
 
