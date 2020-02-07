@@ -4,12 +4,8 @@
 
 ## Subject
 
-* [Link](#link)
-* [Manual](#manual)
-* [Tips](#tips)
-* [Config File](#config-file)
-* [Config Sample](#config-sample)
-* [Openbox](#openbox)
+
+* [System](#system)
 * [Show Client Menu](#show-client-menu)
 * [Show Root Menu](#show-root-menu)
 * [Show Workspace Menu](#show-workspace-menu)
@@ -63,6 +59,385 @@
 > Search `<keyboard>`
 
 
+## System
+
+* Config Sample / [Openbox](config/openbox/openbox-gen-rc/Section/Keybind/Openbox.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Shift + z` | Restart | [Restart](http://openbox.org/wiki/Help:Actions#Restart) |
+| `Alt + Shift + x` | Logout | [Exit](http://openbox.org/wiki/Help:Actions#Exit) |
+| `Ctrl + Alt + Delete` | Logout | [Exit](http://openbox.org/wiki/Help:Actions#Exit) |
+| `Alt + Shift + c` | Reconfigure | [Reconfigure](http://openbox.org/wiki/Help:Actions#Reconfigure) |
+| `Alt + Shift + s` | Launch obconf | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+
+## Show Client Menu
+
+* Config Sample / [MenuClient](config/openbox/openbox-gen-rc/Section/Keybind/MenuClient.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Space` | Show Client Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-menu) |
+
+
+## Show Root Menu
+
+* Config Sample / [MenuRoot](config/openbox/openbox-gen-rc/Section/Keybind/MenuRoot.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + Space` | Show Root Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
+| `Alt + F1` | Show Root Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
+| `Ctrl + Win + a` | Show Root Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
+| `Ctrl + Alt + a` | Show Root Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
+
+
+## Show Workspace Menu
+
+* Config Sample / [MenuClientList](config/openbox/openbox-gen-rc/Section/Keybind/MenuClientList.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + c` | Show Workspace Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
+| `Ctrl + Win + s` | Show Workspace Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
+| `Ctrl + Alt + s` | Show Workspace Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
+
+
+## Toggle Show Desktop
+
+* Config Sample / [ToggleShowDesktop](config/openbox/openbox-gen-rc/Section/Keybind/ToggleShowDesktop.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + d` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
+| `Alt + d` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
+| `Ctrl + Win + d` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
+| `Ctrl + Alt + d` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
+
+
+## Go To Workspace
+
+* Config Sample / [GoToDesktop](config/openbox/openbox-gen-rc/Section/Keybind/GoToDesktop.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + a` | Go To Left (Previous) Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + s` | Go To Right (Previous) Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + z` | Go To Last Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + o` | Go To Last Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + k` | Go To Up Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + j` | Go To Down Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + h` | Go To Left Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + l` | Go To Right Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + 1` | Go To Workspace 1 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + 2` | Go To Workspace 2 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + 3` | Go To Workspace 3 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + 4` | Go To Workspace 4 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + 5` | Go To Workspace 5 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + 6` | Go To Workspace 6 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + 7` | Go To Workspace 7 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + 8` | Go To Workspace 8 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + 9` | Go To Workspace 9 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + 0` | Go To Workspace 10 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+
+
+## Send To Workspace
+
+* Config Sample / [SendToDesktop](config/openbox/openbox-gen-rc/Section/Keybind/SendToDesktop.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Win + a` | Send To Previous Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + s` | Send To Next Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Win + z` | Send To Last Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + o` | Send To Last Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Win + k` | Send To Up Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + j` | Send To Down Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Win + h` | Send To Left Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + l` | Send To Right Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Win + 1` | Send To Workspace 1 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + 2` | Send To Workspace 2 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + 3` | Send To Workspace 3 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + 4` | Send To Workspace 4 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + 5` | Send To Workspace 5 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + 6` | Send To Workspace 6 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + 7` | Send To Workspace 7 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + 8` | Send To Workspace 8 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + 9` | Send To Workspace 9 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Alt + Win + 0` | Send To Workspace 10 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + 1` | Send To Workspace 1 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Win + 2` | Send To Workspace 2 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Win + 3` | Send To Workspace 3 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Win + 4` | Send To Workspace 4 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Win + 5` | Send To Workspace 5 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Win + 6` | Send To Workspace 6 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Win + 7` | Send To Workspace 7 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Win + 8` | Send To Workspace 8 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Win + 9` | Send To Workspace 9 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+| `Win + 0` | Send To Workspace 10 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
+
+
+## Window Switch
+
+* Config Sample / [WindowSwitch](config/openbox/openbox-gen-rc/Section/Keybind/WindowSwitch.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + a` | Previous Window | [PreviousWindow](http://openbox.org/wiki/Help:Actions#PreviousWindow) |
+| `Win + s` | Next Window | [NextWindow](http://openbox.org/wiki/Help:Actions#NextWindow) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + k` | Previous Window | [PreviousWindow](http://openbox.org/wiki/Help:Actions#PreviousWindow) |
+| `Win + j` | Next Window | [NextWindow](http://openbox.org/wiki/Help:Actions#NextWindow) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + l` | Previous Window | [PreviousWindow](http://openbox.org/wiki/Help:Actions#PreviousWindow) |
+| `Win + h` | Next Window | [NextWindow](http://openbox.org/wiki/Help:Actions#NextWindow) |
+
+
+## Window Raise or Lower
+
+* Config Sample / [WindowRaiseLower](config/openbox/openbox-gen-rc/Section/Keybind/WindowRaiseLower.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + u` | Raise or Lower Window | [RaiseLower](http://openbox.org/wiki/Help:Actions#RaiseLower) |
+| `Win + Shift + PageUp` | Raise Window | [Raise](http://openbox.org/wiki/Help:Actions#Raise) |
+| `Win + Shift + PageDown` | Lower Window | [Lower](http://openbox.org/wiki/Help:Actions#Lower) |
+
+
+## Window Close
+
+* Config Sample / [WindowClose](config/openbox/openbox-gen-rc/Section/Keybind/WindowClose.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + q` | Window Close | [Close](http://openbox.org/wiki/Help:Actions#Close) |
+| `Alt + Shift + q` | Window Close | [Close](http://openbox.org/wiki/Help:Actions#Close) |
+| `Alt + F4` | Window Close | [Close](http://openbox.org/wiki/Help:Actions#Close) |
+
+
+## Window Iconify
+
+* Config Sample / [WindowIconify](config/openbox/openbox-gen-rc/Section/Keybind/WindowIconify.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + x` | Window Iconify | [Iconify](http://openbox.org/wiki/Help:Actions#Iconify) |
+| `Win + n` | Window Iconify | [Iconify](http://openbox.org/wiki/Help:Actions#Iconify) |
+
+
+## Window Toggle Maximize
+
+* Config Sample / [WindowToggleMaximize](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleMaximize.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + w` | Window Toggle Maximize | [ToggleMaximize](http://openbox.org/wiki/Help:Actions#ToggleMaximize) |
+| `Win + m` | Window Toggle Maximize | [ToggleMaximize](http://openbox.org/wiki/Help:Actions#ToggleMaximize) |
+
+
+## Window Toggle Fullscreen
+
+* Config Sample / [WindowToggleFullscreen](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleFullscreen.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + f` | Window Toggle Fullscreen | [ToggleFullscreen](http://openbox.org/wiki/Help:Actions#ToggleFullscreen) |
+| `Win + o` | Window Toggle Fullscreen | [ToggleFullscreen](http://openbox.org/wiki/Help:Actions#ToggleFullscreen) |
+
+
+## Window Toggle Decorations
+
+* Config Sample / [WindowToggleDecorations](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleDecorations.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + v` | Window Toggle Decorations | [ToggleDecorations](http://openbox.org/wiki/Help:Actions#ToggleDecorations) |
+| `Win + p` | Window Toggle Decorations | [ToggleDecorations](http://openbox.org/wiki/Help:Actions#ToggleDecorations) |
+
+
+## Window Toggle Shade
+
+* Config Sample / [WindowToggleShade](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleShade.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + y` | Window Toggle Shade | [ToggleShade](http://openbox.org/wiki/Help:Actions#ToggleShade) |
+
+
+## Window Toggle AlwaysOnTop
+
+* Config Sample / [WindowToggleAlwaysOnTop](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleAlwaysOnTop.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + t` | Window Toggle AlwaysOnTop | [ToggleAlwaysOnTop](http://openbox.org/wiki/Help:Actions#ToggleAlwaysOnTop) |
+
+
+## Window Toggle AlwaysOnBottom
+
+* Config Sample / [WindowToggleAlwaysOnBottom](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleAlwaysOnBottom.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + b` | Window Toggle AlwaysOnBottom | [ToggleAlwaysOnBottom](http://openbox.org/wiki/Help:Actions#ToggleAlwaysOnBottom) |
+
+
+## Window SendToLayer Normal
+
+* Config Sample / [WindowSendToLayer](config/openbox/openbox-gen-rc/Section/Keybind/WindowSendToLayer.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + g` | Window SendToLayer Normal | [SendToLayer](http://openbox.org/wiki/Help:Actions#SendToLayer) |
+
+
+## Window Begin Move
+
+* Config Sample / [WindowBeginMove](config/openbox/openbox-gen-rc/Section/Keybind/WindowBeginMove.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + e` | Window Begin Move | [Move](http://openbox.org/wiki/Help:Actions#Move) |
+
+
+## Window Begin Resize
+
+* Config Sample / [WindowBeginResize](config/openbox/openbox-gen-rc/Section/Keybind/WindowBeginResize.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + r` | Window Begin Resize | [Resize](http://openbox.org/wiki/Help:Actions#Resize) |
+
+
+## Window Tiling
+
+* Config Sample / [WindowTiling](config/openbox/openbox-gen-rc/Section/Keybind/WindowTiling.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + Ctrl + u` | Tiling Window Horizontal (North-South) (Top-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + i` | Tiling Window Vertical (West-East) (Left-Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + o` | Restore Window | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+
+
+## Window Tiling Move / Side
+
+* Config Sample / [WindowTilingMoveSide](config/openbox/openbox-gen-rc/Section/Keybind/WindowTilingMoveSide.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + Ctrl + k` | Tiling Window Move To North (Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + j` | Tiling Window Move To South (Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + h` | Tiling Window Move To West (Left) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + l` | Tiling Window Move To East (Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + Ctrl + Up` | Tiling Window Move To North (Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + Down` | Tiling Window Move To South (Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + Left` | Tiling Window Move To West (Left) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Ctrl + Right` | Tiling Window Move To East (Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+
+## Window Tiling Move / Corner
+
+* Config Sample / [WindowTilingMoveCorner](config/openbox/openbox-gen-rc/Section/Keybind/WindowTilingMoveCorner.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + Shift + k` | Tiling Window Move To West-North (Left-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + j` | Tiling Window Move To East-North (Right-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + h` | Tiling Window Move To West-South (Left-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + l` | Tiling Window Move To East-South (Right-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + Shift + Up` | Tiling Window Move To West-North (Left-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + Down` | Tiling Window Move To East-North (Right-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + Left` | Tiling Window Move To West-South (Left-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+| `Win + Shift + Right` | Tiling Window Move To East-South (Right-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
+
+
+## Rofi
+
+* Config Sample / [Rofi](config/openbox/openbox-gen-rc/Section/Keybind/Rofi.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Shift + r` | Rofi Show Run | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + d` | Rofi Show Drun | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + w` | Rofi Show Window | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+
+## Launch App
+
+* Config Sample / [LaunchApp](config/openbox/openbox-gen-rc/Section/Keybind/LaunchApp.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Enter` | Launch Terminal (sakura -m) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + a` | Launch Terminal (sakura -m) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + t` | Launch Quake Terminal (tilix --quake) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + f` | Launch File Manager (pcmanfm-qt) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + g` | Launch File Manager (nautilus) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + b` | Launch Web Browser (firefox) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + e` | Launch TextEditor (gedit) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+
+## Print
+
+* Config Sample / [Print](config/openbox/openbox-gen-rc/Section/Keybind/Print.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Print` | Rofi Show Run | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Print` | Rofi Show Drun | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+
+
 ## Config Sample
 
 * [Openbox](config/openbox/openbox-gen-rc/Section/Keybind/Openbox.php)
@@ -92,381 +467,3 @@
 * [Rofi](config/openbox/openbox-gen-rc/Section/Keybind/Rofi.php)
 * [LaunchApp](config/openbox/openbox-gen-rc/Section/Keybind/LaunchApp.php)
 * [Print](config/openbox/openbox-gen-rc/Section/Keybind/Print.php)
-
-
-## Openbox
-
-* Config Sample / [Openbox](config/openbox/openbox-gen-rc/Section/Keybind/Openbox.php)
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + Shift + z` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Restart | [Restart](http://openbox.org/wiki/Help:Actions#Restart) |
-| `Alt + Shift + x` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Logout | [Exit](http://openbox.org/wiki/Help:Actions#Exit) |
-| `Ctrl + Alt + Delete` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Logout | [Exit](http://openbox.org/wiki/Help:Actions#Exit) |
-| `Alt + Shift + c` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Reconfigure | [Reconfigure](http://openbox.org/wiki/Help:Actions#Reconfigure) |
-| `Alt + Shift + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Launch obconf | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-
-
-## Show Client Menu
-
-* Config Sample / [MenuClient](config/openbox/openbox-gen-rc/Section/Keybind/MenuClient.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Alt + Space` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-menu) |
-
-
-## Show Root Menu
-
-* Config Sample / [MenuRoot](config/openbox/openbox-gen-rc/Section/Keybind/MenuRoot.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + Space` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
-| `Alt + F1` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
-| `Ctrl + Win + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
-| `Ctrl + Alt + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
-
-
-## Show Workspace Menu
-
-* Config Sample / [MenuClientList](config/openbox/openbox-gen-rc/Section/Keybind/MenuClientList.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + c` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
-| `Ctrl + Win + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
-| `Ctrl + Alt + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
-
-
-## Toggle Show Desktop
-
-* Config Sample / [ToggleShowDesktop](config/openbox/openbox-gen-rc/Section/Keybind/ToggleShowDesktop.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
-| `Alt + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
-| `Ctrl + Win + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
-| `Ctrl + Alt + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
-
-
-## Go To Workspace
-
-* Config Sample / [GoToDesktop](config/openbox/openbox-gen-rc/Section/Keybind/GoToDesktop.php)
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Left (Previous) Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Right (Previous) Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + z` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Last Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Last Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Up Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Down Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Left Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Right Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + 1` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Workspace 1 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + 2` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Workspace 2 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + 3` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Workspace 3 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + 4` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Workspace 4 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + 5` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Workspace 5 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + 6` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Workspace 6 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + 7` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Workspace 7 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + 8` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Workspace 8 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + 9` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Workspace 9 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + 0` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Go To Workspace 10 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-
-
-## Send To Workspace
-
-* Config Sample / [SendToDesktop](config/openbox/openbox-gen-rc/Section/Keybind/SendToDesktop.php)
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + Win + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Previous Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Next Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + Win + z` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Last Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Last Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + Win + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Up Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Down Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + Win + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Left Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Right Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + Win + 1` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 1 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + 2` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 2 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + 3` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 3 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + 4` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 4 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + 5` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 5 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + 6` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 6 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + 7` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 7 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + 8` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 8 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + 9` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 9 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + 0` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 10 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Win + 1` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 1 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Win + 2` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 2 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Win + 3` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 3 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Win + 4` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 4 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Win + 5` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 5 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Win + 6` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 6 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Win + 7` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 7 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Win + 8` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 8 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Win + 9` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 9 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Win + 0` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Send To Workspace 10 | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-
-
-## Window Switch
-
-* Config Sample / [WindowSwitch](config/openbox/openbox-gen-rc/Section/Keybind/WindowSwitch.php)
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Win + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Previous Window | [PreviousWindow](http://openbox.org/wiki/Help:Actions#PreviousWindow) |
-| `Win + s` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Next Window | [NextWindow](http://openbox.org/wiki/Help:Actions#NextWindow) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Win + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Previous Window | [PreviousWindow](http://openbox.org/wiki/Help:Actions#PreviousWindow) |
-| `Win + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Next Window | [NextWindow](http://openbox.org/wiki/Help:Actions#NextWindow) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Win + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Previous Window | [PreviousWindow](http://openbox.org/wiki/Help:Actions#PreviousWindow) |
-| `Win + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Next Window | [NextWindow](http://openbox.org/wiki/Help:Actions#NextWindow) |
-
-
-## Window Raise or Lower
-
-* Config Sample / [WindowRaiseLower](config/openbox/openbox-gen-rc/Section/Keybind/WindowRaiseLower.php)
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Win + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise or Lower Window | [RaiseLower](http://openbox.org/wiki/Help:Actions#RaiseLower) |
-| `Win + Shift + PageUp` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Raise Window | [Raise](http://openbox.org/wiki/Help:Actions#Raise) |
-| `Win + Shift + PageDown` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Lower Window | [Lower](http://openbox.org/wiki/Help:Actions#Lower) |
-
-
-## Window Close
-
-* Config Sample / [WindowClose](config/openbox/openbox-gen-rc/Section/Keybind/WindowClose.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + q` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Close](http://openbox.org/wiki/Help:Actions#Close) |
-| `Alt + Shift + q` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Close](http://openbox.org/wiki/Help:Actions#Close) |
-| `Alt + F4` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Close](http://openbox.org/wiki/Help:Actions#Close) |
-
-
-## Window Iconify
-
-* Config Sample / [WindowIconify](config/openbox/openbox-gen-rc/Section/Keybind/WindowIconify.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + x` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Iconify](http://openbox.org/wiki/Help:Actions#Iconify) |
-| `Win + n` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Iconify](http://openbox.org/wiki/Help:Actions#Iconify) |
-
-
-## Window Toggle Maximize
-
-* Config Sample / [WindowToggleMaximize](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleMaximize.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + w` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleMaximize](http://openbox.org/wiki/Help:Actions#ToggleMaximize) |
-| `Win + m` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleMaximize](http://openbox.org/wiki/Help:Actions#ToggleMaximize) |
-
-
-## Window Toggle Fullscreen
-
-* Config Sample / [WindowToggleFullscreen](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleFullscreen.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + f` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleFullscreen](http://openbox.org/wiki/Help:Actions#ToggleFullscreen) |
-| `Win + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleFullscreen](http://openbox.org/wiki/Help:Actions#ToggleFullscreen) |
-
-
-## Window Toggle Decorations
-
-* Config Sample / [WindowToggleDecorations](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleDecorations.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + v` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleDecorations](http://openbox.org/wiki/Help:Actions#ToggleDecorations) |
-| `Win + p` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleDecorations](http://openbox.org/wiki/Help:Actions#ToggleDecorations) |
-
-
-## Window Toggle Shade
-
-* Config Sample / [WindowToggleShade](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleShade.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + y` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleShade](http://openbox.org/wiki/Help:Actions#ToggleShade) |
-
-
-## Window Toggle AlwaysOnTop
-
-* Config Sample / [WindowToggleAlwaysOnTop](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleAlwaysOnTop.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + t` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleAlwaysOnTop](http://openbox.org/wiki/Help:Actions#ToggleAlwaysOnTop) |
-
-
-## Window Toggle AlwaysOnBottom
-
-* Config Sample / [WindowToggleAlwaysOnBottom](config/openbox/openbox-gen-rc/Section/Keybind/WindowToggleAlwaysOnBottom.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + b` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [ToggleAlwaysOnBottom](http://openbox.org/wiki/Help:Actions#ToggleAlwaysOnBottom) |
-
-
-## Window SendToLayer Normal
-
-* Config Sample / [WindowSendToLayer](config/openbox/openbox-gen-rc/Section/Keybind/WindowSendToLayer.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + g` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [SendToLayer](http://openbox.org/wiki/Help:Actions#SendToLayer) |
-
-
-## Window Begin Move
-
-* Config Sample / [WindowBeginMove](config/openbox/openbox-gen-rc/Section/Keybind/WindowBeginMove.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + e` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | [Move](http://openbox.org/wiki/Help:Actions#Move) |
-
-
-## Window Begin Resize
-
-* Config Sample / [WindowBeginResize](config/openbox/openbox-gen-rc/Section/Keybind/WindowBeginResize.php)
-
-| Key | How to set | Doc |
-| --- | --- | --- |
-| `Win + r` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | [Resize](http://openbox.org/wiki/Help:Actions#Resize) |
-
-
-## Window Tiling
-
-* Config Sample / [WindowTiling](config/openbox/openbox-gen-rc/Section/Keybind/WindowTiling.php)
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Win + Ctrl + u` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Horizontal (North-South) (Top-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + i` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Vertical (West-East) (Left-Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + o` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Restore Window | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-
-
-## Window Tiling Move / Side
-
-* Config Sample / [WindowTilingMoveSide](config/openbox/openbox-gen-rc/Section/Keybind/WindowTilingMoveSide.php)
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Win + Ctrl + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To North (Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To South (Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West (Left) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East (Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Win + Ctrl + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To North (Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To South (Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West (Left) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Ctrl + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East (Right) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-
-## Window Tiling Move / Corner
-
-* Config Sample / [WindowTilingMoveCorner](config/openbox/openbox-gen-rc/Section/Keybind/WindowTilingMoveCorner.php)
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Win + Shift + k` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West-North (Left-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + j` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East-North (Right-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + h` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West-South (Left-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + l` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East-South (Right-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Win + Shift + Up` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West-North (Left-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + Down` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East-North (Right-Top) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + Left` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To West-South (Left-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-| `Win + Shift + Right` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#L) | Tiling Window Move To East-South (Right-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
-
-
-## Rofi
-
-* Config Sample / [Rofi](config/openbox/openbox-gen-rc/Section/Keybind/Rofi.php)
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + Shift + r` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Rofi Show Run | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + d` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Rofi Show Drun | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + w` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Rofi Show Window | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-
-
-## Launch App
-
-* Config Sample / [LaunchApp](config/openbox/openbox-gen-rc/Section/Keybind/LaunchApp.php)
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Alt + Enter` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Terminal (sakura -m) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + a` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Terminal (sakura -m) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + t` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Quake Terminal (tilix --quake) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + f` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch File Manager (pcmanfm-qt) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + g` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch File Manager (nautilus) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + b` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch Web Browser (firefox) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + e` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Launch TextEditor (gedit) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-
-
-## Print
-
-* Config Sample / [Print](config/openbox/openbox-gen-rc/Section/Keybind/Print.php)
-
-| Button | How to set | Description | Doc |
-| --- | --- | --- | --- |
-| `Print` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Rofi Show Run | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Print` | [~/.config/openbox/rc.xml](config/openbox/rc.xml#) | Rofi Show Drun | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
