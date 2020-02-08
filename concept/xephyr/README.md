@@ -14,6 +14,10 @@
 * [run-qtile-on-xephyr](run-qtile-on-xephyr)
 
 
+## x-window-manager
+
+* prototype / provides / [x-window-manager](../../prototype/provides/x-window-manager) / [x-window-manager.md](../../prototype/provides/x-window-manager/x-window-manager)
+
 ## Reference
 
 * [https://github.com/worron/awesome-config/blob/master/scripts/run-with-xephyr.sh](https://github.com/worron/awesome-config/blob/master/scripts/run-with-xephyr.sh)
