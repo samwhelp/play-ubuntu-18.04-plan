@@ -11,6 +11,7 @@
 * [run-i3-on-xephyr](run-i3-on-xephyr)
 * [run-fluxbox-on-xephyr](run-fluxbox-on-xephyr)
 * [run-icewm-on-xephyr](run-icewm-on-xephyr)
+* [run-pekwm-on-xephyr](run-pekwm-on-xephyr)
 * [run-qtile-on-xephyr](run-qtile-on-xephyr)
 
 
