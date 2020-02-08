@@ -123,9 +123,11 @@
 
 | Key | Description |
 | --- | --- |
+| `Win + y` | Window Toggle Shade |
 | `Win + f` | Window Toggle Fullscreen |
 | `Win + v` | Window Toggle Decorations |
-| `Win + y` | Window Toggle Shade |
+| `Alt + v` | Window Toggle Floating or Tiled |
+
 
 
 | Key | Description |
