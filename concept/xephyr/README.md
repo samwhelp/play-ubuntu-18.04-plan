@@ -1,4 +1,5 @@
 
+# Xephyr
 
 ## develop-tool
 
@@ -14,6 +15,7 @@
 * [run-pekwm-on-xephyr](run-pekwm-on-xephyr)
 * [run-qtile-on-xephyr](run-qtile-on-xephyr)
 * [run-dwm-on-xephyr](run-dwm-on-xephyr)
+* [run-spectrwm-on-xephyr](run-spectrwm-on-xephyr)
 
 
 ## x-window-manager
