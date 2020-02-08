@@ -13,7 +13,7 @@
 
 ## Xephyr
 
-* concept/xephyr/[develop-tool](concept/xephyr/develop-tool)
+* concept / [xephyr](concept/xephyr) / [develop-tool](concept/xephyr/develop-tool)
 
 
 ## Prototype
