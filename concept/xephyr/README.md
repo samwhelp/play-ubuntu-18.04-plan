@@ -16,7 +16,7 @@
 
 ## x-window-manager
 
-* prototype / provides / [x-window-manager](../../prototype/provides/x-window-manager) / [x-window-manager.md](../../prototype/provides/x-window-manager/x-window-manager)
+* prototype / provides / [x-window-manager](../../prototype/provides/x-window-manager) / [x-window-manager.md](../../prototype/provides/x-window-manager/x-window-manager.md)
 
 ## Reference
 
