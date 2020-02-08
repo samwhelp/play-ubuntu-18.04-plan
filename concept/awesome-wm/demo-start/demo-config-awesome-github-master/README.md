@@ -6,6 +6,11 @@
 * [keybind](spec-keybind.md)
 * [mousebind](spec-mousebind.md)
 
+## Tool
+
+* [run-awesome-on-xephyr](../../../../concept/xephyr/develop-tool/run-awesome-on-xephyr/)
+
+
 
 ## Prepare
 
