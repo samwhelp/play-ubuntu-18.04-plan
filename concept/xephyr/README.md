@@ -9,6 +9,7 @@
 * [run-lxqt-on-xephyr](run-lxqt-on-xephyr)
 * [run-ubuntu-session-on-xephyr](run-ubuntu-session-on-xephyr)
 * [run-i3-on-xephyr](run-i3-on-xephyr)
+* [run-fluxbox-on-xephyr](run-fluxbox-on-xephyr)
 
 
 
