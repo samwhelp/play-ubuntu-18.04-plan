@@ -932,8 +932,14 @@ client.connect_signal('request::default_keybindings', function()
 			{ description = 'close', group = 'Client' }
 		),
 
+		-- Todo: [Win + v] for toggle show or hide titlebar
 		awful.key(
 			{ key_super }, 'v', awful.client.floating.toggle ,
+			{ description = 'toggle floating', group = 'Client' }
+		),
+
+		awful.key(
+			{ key_alt }, 'v', awful.client.floating.toggle ,
 			{ description = 'toggle floating', group = 'Client' }
 		),
 
