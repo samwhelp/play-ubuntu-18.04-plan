@@ -13,6 +13,7 @@
 * [run-icewm-on-xephyr](run-icewm-on-xephyr)
 * [run-pekwm-on-xephyr](run-pekwm-on-xephyr)
 * [run-qtile-on-xephyr](run-qtile-on-xephyr)
+* [run-dwm-on-xephyr](run-dwm-on-xephyr)
 
 
 ## x-window-manager
