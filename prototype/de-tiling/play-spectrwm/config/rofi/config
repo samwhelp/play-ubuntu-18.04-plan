@@ -1,0 +1,17 @@
+
+rofi.font: Ubuntu Mono 20
+rofi.fullscreen: true
+rofi.fake-background: background
+rofi.theme: /usr/share/rofi/themes/glue_pro_blue.rasi
+rofi.modi: window,run,drun
+rofi.combi-modi: window,drun
+! https://github.com/davatorium/rofi/releases
+! https://github.com/davatorium/rofi/releases/tag/1.5.0
+rofi.me-accept-entry: MousePrimary
+rofi.me-select-entry: MouseSecondary
+rofi.kb-accept-entry: Control+j,Control+m,Return,KP_Enter,Alt+z
+rofi.kb-cancel: Escape,Control+g,Control+bracketleft,Alt+q
+rofi.kb-row-up: Up,Control+p,ISO_Left_Tab,Alt+s
+rofi.kb-row-down: Down,Control+n,Alt+a
+rofi.kb-page-prev: Page_Up,Super_L+s
+rofi.kb-page-next: Page_Down,Super_L+a
