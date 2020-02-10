@@ -20,7 +20,7 @@
 
 ### de-basic
 
-* [play-i3](prototype/de-basic/play-i3)
+
 * [play-lxqt](prototype/de-basic/play-lxqt)
 * [play-xfce](prototype/de-basic/play-xfce) ([keybind](prototype/de-basic/play-xfce/spec-keybind.md)) ([mousebind](prototype/de-basic/play-xfce/spec-mousebind.md))
 * [play-gnome](prototype/de-basic/play-gnome)
@@ -29,15 +29,16 @@
 ### de-box
 
 * [play-openbox](prototype/de-box/play-openbox) ([keybind](prototype/de-box/play-openbox/spec-keybind.md)) ([mousebind](prototype/de-box/play-openbox/spec-mousebind.md)) ([rc-gen](prototype/de-box/play-openbox/config/openbox/openbox-gen-rc))
-* [play-icewm](prototype/de-box/play-icewm)
 * [play-fluxbox](prototype/de-box/play-fluxbox)
+* [play-icewm](prototype/de-box/play-icewm)
 * [play-pekwm](prototype/de-box/play-pekwm)
 
 
 ### de-tiling
 
 * [play-bspwm](prototype/de-tiling/play-bspwm) ([keybind](prototype/de-tiling/play-bspwm/spec-keybind.md))
-
+* [play-spectrwm](prototype/de-tiling/play-spectrwm) ([keybind](prototype/de-tiling/play-spectrwm/spec-keybind.md)) ([mousebind](prototype/de-tiling/play-spectrwm/spec-mousebind.md))
+* [play-i3](prototype/de-basic/play-i3)
 
 ### awesome-wm
 
