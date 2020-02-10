@@ -4,6 +4,27 @@ set -e
 
 
 ################################################################################
+### Head: xsession
+##
+xsession_config_install () {
+
+	echo "Install Xsession:"
+
+	## install
+	sudo install -m 644 "./config/xsession/spectrwm-session.desktop" "/usr/share/xsessions/spectrwm-session.desktop"
+	sudo install -m 755 "./config/xsession/spectrwm-session.sh" "/usr/bin/spectrwm-session.sh"
+
+	## check
+	ls -l "/usr/share/xsessions/spectrwm-session.desktop"
+	ls -l "/usr/bin/spectrwm-session.sh"
+
+}
+##
+### Tail: xsession
+################################################################################
+
+
+################################################################################
 ### Head: spectrwm
 ##
 spectrwm_config_install () {
@@ -59,17 +80,17 @@ compton_config_install () {
 	## cp $(dpkg -L compton | grep conf) ~/.config/compton.conf
 
 
-	#mkdir -p "$HOME/.config/spectrwm/compton"
-	#echo "mkdir -p $HOME/.config/spectrwm/compton"
+	mkdir -p "$HOME/.config/spectrwm/compton"
+	echo "mkdir -p $HOME/.config/spectrwm/compton"
 
 	#cp "/usr/share/doc/compton/examples/compton.sample.conf" "$HOME/.config/spectrwm/compton/compton.conf"
 	#echo "cp /usr/share/doc/compton/examples/compton.sample.conf $HOME/.config/spectrwm/compton/compton.conf"
 
-	#cp "./config/compton/compton.conf" "$HOME/.config/spectrwm/compton/compton.conf"
-	#echo "cp ./config/compton/compton.conf $HOME/.config/spectrwm/compton/compton.conf"
+	cp "./config/compton/compton.conf" "$HOME/.config/spectrwm/compton/compton.conf"
+	echo "cp ./config/compton/compton.conf $HOME/.config/spectrwm/compton/compton.conf"
 
-	cp "./config/compton/compton.conf" "$HOME/.config/compton.conf"
-	echo "cp ./config/compton/compton.conf $HOME/.config/compton.conf"
+	#cp "./config/compton/compton.conf" "$HOME/.config/compton.conf"
+	#echo "cp ./config/compton/compton.conf $HOME/.config/compton.conf"
 
 
 }
@@ -253,6 +274,8 @@ main_config_install () {
 	gtk3_config_install
 
 	gtk2_config_install
+
+	xsession_config_install
 }
 ## start
 main_config_install

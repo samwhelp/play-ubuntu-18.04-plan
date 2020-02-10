@@ -16,4 +16,5 @@ help:
 
 install:
 	install -m 755 bin/xephyr-run-spectrwm.sh ~/bin/xephyr-run-spectrwm.sh
+	install -m 755 bin/xephyr-run-spectrwm-session.sh ~/bin/xephyr-run-spectrwm-session.sh
 .PHONY: install
