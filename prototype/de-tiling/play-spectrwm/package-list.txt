@@ -9,7 +9,8 @@ feh
 
 compton
 
-volumeicon-alsa
+#volumeicon-alsa
+mate-media
 
 network-manager-gnome
 
