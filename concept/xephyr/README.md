@@ -16,6 +16,8 @@
 * [run-qtile-on-xephyr](run-qtile-on-xephyr)
 * [run-dwm-on-xephyr](run-dwm-on-xephyr)
 * [run-spectrwm-on-xephyr](run-spectrwm-on-xephyr)
+* [run-herbstluftwm-on-xephyr](run-herbstluftwm-on-xephyr)
+
 
 
 ## x-window-manager
