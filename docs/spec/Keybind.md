@@ -53,7 +53,7 @@
 | --- | --- |
 | `Alt + Shift + z` | Shutdown |
 | `Alt + Shift + x` | Logout |
-| `Alt + Shift + c` | Reconfigure |
+| `Alt + Shift + c` | Reconfigure or Restart(Not Reboot) |
 
 
 ## Launch App
