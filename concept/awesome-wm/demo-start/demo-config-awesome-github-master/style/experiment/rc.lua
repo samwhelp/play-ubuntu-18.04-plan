@@ -494,9 +494,19 @@ awful.keyboard.append_global_keybindings({
 	),
 
 	awful.key(
+		{ key_alt, key_shift }, 'a', function () awful.spawn(terminal) end,
+		{ description = 'Terminal', group = 'App'}
+	),
+
+	awful.key(
 		{ key_alt, key_shift }, 't', function () awful.spawn('tilix --quake') end,
 		{ description = 'Tilix Quake', group = 'App'}
 	),
+
+})
+
+awful.keyboard.append_global_keybindings({
+
 
 	awful.key(
 		{ key_alt, key_shift }, 'f', function () awful.spawn('pcmanfm-qt') end,
@@ -518,6 +528,11 @@ awful.keyboard.append_global_keybindings({
 		{ description = 'Firefox', group = 'App'}
 	),
 
+	awful.key(
+		{ key_alt, key_shift }, 'v', function () awful.spawn('mate-volume-control') end,
+		{ description = 'Volume Control', group = 'App'}
+	),
+
 })
 
 --
@@ -532,8 +547,8 @@ awful.keyboard.append_global_keybindings({
 awful.keyboard.append_global_keybindings({
 
 	awful.key(
-		{ key_super }, 'F1', hotkeys_popup.show_help,
-		{ description = 'Hotkeys', group = 'Awesome'}
+		{ key_alt, key_shift }, 'z', function () awful.spawn('shutdown now') end,
+		{ description = 'Shutdown', group = 'Awesome'}
 	),
 
 	awful.key(
@@ -543,7 +558,17 @@ awful.keyboard.append_global_keybindings({
 
 	awful.key(
 		{ key_alt, key_shift }, 'c', awesome.restart,
-		{ description = 'Awesome Restart', group = 'Awesome'}
+		{ description = 'Restart', group = 'Awesome'}
+	),
+
+})
+
+
+awful.keyboard.append_global_keybindings({
+
+	awful.key(
+		{ key_super }, 'F1', hotkeys_popup.show_help,
+		{ description = 'Hotkeys', group = 'Awesome'}
 	),
 
 	awful.key(
@@ -556,10 +581,20 @@ awful.keyboard.append_global_keybindings({
 		{ description = 'Show Client List', group = 'Awesome'}
 	),
 
-
 })
 
+
 awful.keyboard.append_global_keybindings({
+
+	awful.key(
+		{ key_alt }, 'F1', function() menubar.show() end,
+		{description = 'Show The MenuBar', group = 'Awesome'}
+	),
+
+	awful.key(
+		{ key_alt }, 'F2', function () awful.screen.focused().promptbox_main:run() end,
+		{description = 'Run Prompt', group = 'Awesome'}
+	),
 
 	awful.key(
 		{ key_alt }, 'F3', function ()
@@ -570,22 +605,10 @@ awful.keyboard.append_global_keybindings({
 				history_path = awful.util.get_cache_dir() .. '/history_eval'
 			}
 		end,
-		{description = 'lua execute prompt', group = 'Awesome'}
-	),
-
-	awful.key(
-		{ key_alt }, 'F2', function () awful.screen.focused().promptbox_main:run() end,
-		{description = 'run prompt', group = 'Awesome'}
-	),
-
-	awful.key(
-		{ key_alt }, 'F1', function() menubar.show() end,
-		{description = 'show the menubar', group = 'Awesome'}
+		{description = 'Lua Execute Prompt', group = 'Awesome'}
 	),
 
 })
-
-
 
 
 --
