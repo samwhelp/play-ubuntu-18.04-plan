@@ -632,13 +632,13 @@ awful.keyboard.append_global_keybindings({
 awful.keyboard.append_global_keybindings({
 
 	awful.key(
-		{ key_alt }, 'Tab', function () awful.layout.inc(1) end,
-		{ description = 'Next Layout', group = 'Layout' }
+		{ key_alt }, '`', function () awful.layout.inc(-1) end,
+		{ description = 'Previous Layout', group = 'Layout' }
 	),
 
 	awful.key(
-		{ key_alt }, '`', function () awful.layout.inc(-1) end,
-		{ description = 'Previous Layout', group = 'Layout' }
+		{ key_alt }, 'Tab', function () awful.layout.inc(1) end,
+		{ description = 'Next Layout', group = 'Layout' }
 	),
 
 	-- awful.key(
@@ -653,6 +653,12 @@ awful.keyboard.append_global_keybindings({
 
 	awful.key(
 		{ key_alt }, 'j', function () awful.layout.inc(1) end,
+		{ description = 'Next Layout', group = 'Layout' }
+	),
+
+
+	awful.key(
+		{ key_alt }, 'c', function () awful.layout.inc(1) end,
 		{ description = 'Next Layout', group = 'Layout' }
 	),
 
@@ -1022,17 +1028,17 @@ client.connect_signal('request::default_keybindings', function()
 		),
 
 
-
 		-- Todo: [Win + v] for toggle show or hide titlebar
-		awful.key(
-			{ key_super }, 'v', awful.client.floating.toggle ,
-			{ description = 'toggle floating', group = 'Client' }
-		),
+		--awful.key(
+		--	{ key_super }, 'v', awful.client.floating.toggle ,
+		--	{ description = 'toggle floating', group = 'Client' }
+		--),
 
 		awful.key(
 			{ key_alt }, 'v', awful.client.floating.toggle ,
-			{ description = 'toggle floating', group = 'Client' }
+			{ description = 'Window Toggle Floating', group = 'Client' }
 		),
+
 
 		awful.key(
 			{ key_super, 'Control' }, 'Return', function (c) c:swap(awful.client.getmaster()) end,

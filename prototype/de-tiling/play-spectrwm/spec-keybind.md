@@ -8,6 +8,7 @@
 * [Launch App](#launch-app)
 * [Workspace](#workspace)
 * [Window](#window)
+* [Layout](#layout)
 
 
 ## Link

@@ -12,6 +12,7 @@
 * [Show Desktop](#show-desktop)
 * [Tag](#Tag)
 * [Window](#window)
+* [Layout](#layout)
 
 
 ## Link
@@ -200,3 +201,29 @@
 | `Win + m` | Window Toggle Maximize |
 | `Win + Shift + m` | Window Toggle Maximize Horizontally |
 | `Win + Ctrl + m` | Window Toggle Maximize Vertically |
+
+
+## Layout
+
+### Layout Toggle
+
+| Key | Description |
+| --- | --- |
+| `Alt + c` | Next Layout |
+
+| Key | Description |
+| --- | --- |
+| `Alt + k` | Previous Layout |
+| `Alt + j` | Next Layout |
+
+| Key | Description |
+| --- | --- |
+| `Alt + grave` | Previous Layout |
+| `Alt + Tab` | Next Layout |
+
+> grave means backquote `
+
+
+| Key | Description |
+| --- | --- |
+| `Alt + v` | Toggle focused window between tiled and floating |
