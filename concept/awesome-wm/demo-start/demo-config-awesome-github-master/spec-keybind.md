@@ -187,8 +187,8 @@
 | `Win + x` | Window Minimize (Iconify) |
 | `Win + n` | Window Minimize (Iconify) |
 
-| Key | Description | Reference |
-| --- | --- | --- |
+| Key | Description |
+| --- | --- |
 | `Win + Shift + x` | Window Unminimize (Uniconify) |
 | `Win + Shift + n` | Window Unminimize (Uniconify) |
 
