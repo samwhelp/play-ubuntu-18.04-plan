@@ -4,10 +4,10 @@
 
 ## Subject
 
-* [Link](#link)
+
 * [Window Move](#window-move)
 * [Window Resize](#window-resize)
-
+* [Master Window Resize](#master-window-resize)
 
 
 ## Link
@@ -15,32 +15,30 @@
 * [docs-spec-mousebind](../../../docs/spec/Mousebind.md)
 
 
+## Manual
+
+* $ man [spectrwm](http://manpages.ubuntu.com/manpages/bionic/en/man1/spectrwm.1.html)
+
+
 ## Window Move
 
-| Key | Description |
-| --- | --- |
-| `Alt + [Mouse Left Drag]` | Window Begin Floating And Move |
+| Key | Description | Action |
+| --- | --- | --- |
+| `Alt + [Mouse Left Drag]` | Window Begin Floating And Move | move |
 
 
 ## Window Resize
 
-| Key | Description |
-| --- | --- |
-| `Alt + [Mouse Right Drag]` | Window Resize |
+| Key | Description | Action |
+| --- | --- | --- |
+| `Alt + [Mouse Right Drag]` | Window Resize | resize |
 
 
-## Window Resize
-
-| Key | Description |
-| --- | --- |
-| `Alt + [Mouse Right Drag]` | Window Resize |
-
-
-## Master Window
+## Master Window Resize
 
 On Tiled
 
 | Key | Description | Action |
-| --- | --- |
+| --- | --- | --- |
 | `Alt + [Mouse Middle Up]` | Master Window Grow | master_grow |
 | `Alt + [Mouse Middle Down]` | Master Window Shrink | master_shrink |
