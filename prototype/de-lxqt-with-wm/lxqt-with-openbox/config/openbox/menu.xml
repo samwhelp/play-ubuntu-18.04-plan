@@ -41,6 +41,9 @@
 	<item label="FileZilla" icon="/usr/share/pixmaps/filezilla.png" >
 		<action name="Execute"><execute>filezilla</execute></action>
 	</item>
+	<item label="Volume Control" icon="/usr/share/icons/Humanity/apps/24/preferences-sound.svg" >
+		<action name="Execute"><execute>mate-volume-control</execute></action>
+	</item>
 	<menu id="more-app-menu" label="More" icon="/usr/share/icons/Numix/16/categories/application-community.svg">
 		<item label="tilix-quake" icon="/usr/share/icons/gnome/24x24/apps/utilities-terminal.png" >
 			<action name="Execute"><execute>tilix --quake</execute></action>

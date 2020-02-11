@@ -25,11 +25,13 @@
 
 
 	<!-- For Right Hand //-->
+	<!--
 	<keybind key="A-o">
 		<action name="GoToDesktop">
 			<to>last</to>
 		</action>
 	</keybind>
+	//-->
 
 	<!--
  k

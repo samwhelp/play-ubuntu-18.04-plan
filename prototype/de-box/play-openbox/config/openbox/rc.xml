@@ -389,11 +389,13 @@
 
 
 	<!-- For Right Hand //-->
+	<!--
 	<keybind key="A-o">
 		<action name="GoToDesktop">
 			<to>last</to>
 		</action>
 	</keybind>
+	//-->
 
 	<!--
  k
@@ -509,12 +511,13 @@ h l
 
 
 	<!-- For Right Hand //-->
+	<!--
 	<keybind key="W-A-o">
 		<action name="SendToDesktop">
 			<to>last</to>
 		</action>
 	</keybind>
-
+	//-->
 
 	<!--
  k
@@ -900,9 +903,11 @@ h l
 		<action name="ToggleFullscreen"/>
 	</keybind>
 
+<!--
 	<keybind key="W-o">
 		<action name="ToggleFullscreen"/>
 	</keybind>
+//-->
 
 
 
@@ -910,9 +915,11 @@ h l
 		<action name="ToggleDecorations"/>
 	</keybind>
 
+<!--
 	<keybind key="W-p">
 		<action name="ToggleDecorations"/>
 	</keybind>
+//-->
 
 
 
@@ -1325,6 +1332,18 @@ h l
 				<name>TextEditor</name>
 			</startupnotify>
 			<command>gedit</command>
+		</action>
+	</keybind>
+
+
+	<!-- ## Volume Control //-->
+	<keybind key="A-S-v">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>VolumeControl</name>
+			</startupnotify>
+			<command>mate-volume-control</command>
 		</action>
 	</keybind>
 

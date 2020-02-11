@@ -21,12 +21,13 @@
 
 
 	<!-- For Right Hand //-->
+	<!--
 	<keybind key="W-A-o">
 		<action name="SendToDesktop">
 			<to>last</to>
 		</action>
 	</keybind>
-
+	//-->
 
 	<!--
  k

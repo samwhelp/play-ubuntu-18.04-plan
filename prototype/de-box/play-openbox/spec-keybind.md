@@ -142,7 +142,7 @@
 | Key | Description | Doc |
 | --- | --- | --- |
 | `Alt + z` | Go To Last Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
-| `Alt + o` | Go To Last Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+
 
 
 | Key | Description | Doc |
@@ -184,7 +184,6 @@
 | Key | Description | Doc |
 | --- | --- | --- |
 | `Alt + Win + z` | Send To Last Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
-| `Alt + Win + o` | Send To Last Workspace | [SendToDesktop](http://openbox.org/wiki/Help:Actions#SendToDesktop) |
 
 
 | Key | Description | Doc |
@@ -298,7 +297,6 @@
 | Key | Description | Doc |
 | --- | --- | --- |
 | `Win + f` | Window Toggle Fullscreen | [ToggleFullscreen](http://openbox.org/wiki/Help:Actions#ToggleFullscreen) |
-| `Win + o` | Window Toggle Fullscreen | [ToggleFullscreen](http://openbox.org/wiki/Help:Actions#ToggleFullscreen) |
 
 
 ## Window Toggle Decorations
@@ -308,7 +306,6 @@
 | Key | Description | Doc |
 | --- | --- | --- |
 | `Win + v` | Window Toggle Decorations | [ToggleDecorations](http://openbox.org/wiki/Help:Actions#ToggleDecorations) |
-| `Win + p` | Window Toggle Decorations | [ToggleDecorations](http://openbox.org/wiki/Help:Actions#ToggleDecorations) |
 
 
 ## Window Toggle Shade
@@ -429,15 +426,23 @@
 
 * Config Sample / [LaunchApp](config/openbox/openbox-gen-rc/Section/Keybind/LaunchApp.php)
 
+### Terminal
+
 | Key | Description | Doc |
 | --- | --- | --- |
 | `Alt + Enter` | Launch Terminal (sakura -m) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 | `Alt + Shift + a` | Launch Terminal (sakura -m) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 | `Alt + Shift + t` | Launch Quake Terminal (tilix --quake) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+### Misc
+
+| Key | Description | Doc |
+| --- | --- | --- |
 | `Alt + Shift + f` | Launch File Manager (pcmanfm-qt) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 | `Alt + Shift + g` | Launch File Manager (nautilus) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 | `Alt + Shift + b` | Launch Web Browser (firefox) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + e` | Launch TextEditor (gedit) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + e` | Launch Text Editor (gedit) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 
 
 ## Print

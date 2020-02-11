@@ -4,9 +4,11 @@
 		<action name="ToggleDecorations"/>
 	</keybind>
 
+<!--
 	<keybind key="W-p">
 		<action name="ToggleDecorations"/>
 	</keybind>
+//-->
 
 <?php
 /*

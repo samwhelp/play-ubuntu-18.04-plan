@@ -4,9 +4,11 @@
 		<action name="ToggleFullscreen"/>
 	</keybind>
 
+<!--
 	<keybind key="W-o">
 		<action name="ToggleFullscreen"/>
 	</keybind>
+//-->
 
 <?php
 /*
