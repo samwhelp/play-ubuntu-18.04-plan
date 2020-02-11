@@ -14,25 +14,30 @@ bspwm_config_install () {
 	echo "cp ./config/bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc"
 
 }
+
+
+
 ##
 ### Tail: bspwm
 ################################################################################
 
 
 ################################################################################
-### Head: bspwm
+### Head: sxhkd
 ##
+
 sxhkd_config_install () {
 
-	mkdir -p "$HOME/.config/bspwm/sxhkd"
-	echo "mkdir -p $HOME/.config/bspwm/sxhkd"
+	mkdir -p "$HOME/.config/bspwm"
+	echo "mkdir -p $HOME/.config/bspwm"
 
-	cp "./config/sxhkd/sxhkdrc" "$HOME/.config/bspwm/sxhkd/sxhkdrc"
-	echo "cp ./config/sxhkd/sxhkdrc $HOME/.config/bspwm/sxhkd/sxhkdrc"
+	cp "./config/bspwm/sxhkdrc" "$HOME/.config/bspwm/sxhkdrc"
+	echo "cp ./config/bspwm/sxhkdrc $HOME/.config/bspwm/sxhkdrc"
 
 }
+
 ##
-### Tail: bspwm
+### Tail: sxhkd
 ################################################################################
 
 

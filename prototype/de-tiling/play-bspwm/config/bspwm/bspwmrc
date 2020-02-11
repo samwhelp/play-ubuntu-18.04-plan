@@ -24,7 +24,7 @@
 ## Head: Keybind
 ##
 
-sxhkd -c "$HOME/.config/bspwm/sxhkd/sxhkdrc" &
+sxhkd -c "$HOME/.config/bspwm/sxhkdrc" &
 
 ##
 ## Tail: Keybind
