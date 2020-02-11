@@ -203,6 +203,13 @@
 | `Win + Ctrl + m` | Window Toggle Maximize Vertically |
 
 
+### Window AlwaysOnTop
+
+| Key | Description |
+| --- | --- |
+| `Win + t` | Window Toggle AlwaysOnTop |
+
+
 ## Layout
 
 ### Layout Toggle
