@@ -611,6 +611,15 @@ awful.keyboard.append_global_keybindings({
 })
 
 
+awful.keyboard.append_global_keybindings({
+
+	awful.key(
+		{ key_super }, 'd', handle_global_mouse_left_button,
+		{ description = 'Show Desktop', group = 'Awesome'}
+	),
+
+})
+
 --
 --- Tail: Keybind / Awesome
 --------------------------------------------------------------------------------
