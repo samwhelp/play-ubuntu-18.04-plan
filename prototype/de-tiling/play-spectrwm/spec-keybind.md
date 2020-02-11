@@ -255,10 +255,10 @@ On Floating
 
 | Key | Description | Reference |
 | --- | --- | --- |
-| `Win + k` | Window Move Up | move_up |
-| `Win + j` | Window Move Down | move_down |
-| `Win + h` | Window Move Left | move_left |
-| `Win + l` | Window Move Right | move_right |
+| `Win + Ctrl + k` | Window Move Up | move_up |
+| `Win + Ctrl + j` | Window Move Down | move_down |
+| `Win + Ctrl + h` | Window Move Left | move_left |
+| `Win + Ctrl + l` | Window Move Right | move_right |
 
 
 ### Window Resize
@@ -267,7 +267,7 @@ On Floating
 
 | Key | Description | Reference |
 | --- | --- | --- |
-| `Win + k` | Window Height Shrink | height_shrink |
-| `Win + j` | Window Height Grow | height_grow |
-| `Win + h` | Window Width Shrink | width_shrink |
-| `Win + l` | Window Width Grow | width_grow |
+| `Win + Shift + k` | Window Height Shrink | height_shrink |
+| `Win + Shift + j` | Window Height Grow | height_grow |
+| `Win + Shift + h` | Window Width Shrink | width_shrink |
+| `Win + Shift + l` | Window Width Grow | width_grow |
