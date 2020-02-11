@@ -96,7 +96,12 @@
 | --- | --- |
 | `Alt + a` | Switch to Previous Workspace |
 | `Alt + s` | Switch to Next Workspace |
-| `Alt + z` | Switch to Last Workspace (Last Previous) |
+| `Alt + z` | Switch to Perior Workspace |
+
+| Key | Description |
+| --- | --- |
+| `Alt + h` | Switch to Previous Workspace |
+| `Alt + l` | Switch to Next Workspace |
 
 
 ## Show Desktop
@@ -112,8 +117,12 @@
 | --- | --- |
 | `Win + a` | Switch to Previous Window |
 | `Win + s` | Switch to Next Window |
-| `Win + z` | Switch to Last Window (Last Previous) |
+| `Win + z` | Switch to Perior Window |
 
+| Key | Description |
+| --- | --- |
+| `Win + h` | Switch to Previous Window |
+| `Win + l` | Switch to Next Window |
 
 | Key | Description |
 | --- | --- |

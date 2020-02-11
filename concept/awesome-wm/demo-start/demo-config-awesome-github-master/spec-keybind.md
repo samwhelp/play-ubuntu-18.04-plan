@@ -10,7 +10,7 @@
 * [System](#system)
 * [Launch App](#launch-app)
 * [Show Desktop](#show-desktop)
-* [Workspace](#workspace)
+* [Tag](#Tag)
 * [Window](#window)
 
 
@@ -127,10 +127,45 @@
 | `Win + d` | Show Desktop |
 
 
-## Workspace
+## Tag
+
+## Tag / Switch
+
+| Key | Description |
+| --- | --- |
+| `Alt + [0-9]` | Switch to Specific Tag |
+| `Win + [0-9]` | Move a Window to Specific Tag |
+
+| Key | Description |
+| --- | --- |
+| `Alt + a` | Switch to Previous Tag |
+| `Alt + s` | Switch to Next Tag |
+| `Alt + z` | Switch to Perior Tag |
+
+| Key | Description |
+| --- | --- |
+| `Alt + h` | Switch to Previous Tag |
+| `Alt + l` | Switch to Next Tag |
 
 
 ## Window
+
+## Window / Switch
+
+| Key | Description |
+| --- | --- |
+| `Win + a` | Switch to Previous Window |
+| `Win + s` | Switch to Next Window |
+| `Win + z` | Switch to Perior Window |
+
+| Key | Description |
+| --- | --- |
+| `Win + h` | Switch to Previous Window |
+| `Win + l` | Switch to Next Window |
+
+| Key | Description |
+| --- | --- |
+| `Win + u` | Switch to Urgent Window |
 
 ### Window Close
 
@@ -151,6 +186,10 @@
 | `Win + x` | Window Minimize (Iconify) |
 | `Win + n` | Window Minimize (Iconify) |
 
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Win + Shift + x` | Window Unminimize (Uniconify) |
+| `Win + Shift + n` | Window Unminimize (Uniconify) |
 
 
 ### Window Maximize

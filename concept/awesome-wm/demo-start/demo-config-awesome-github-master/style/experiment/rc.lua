@@ -705,22 +705,6 @@ awful.keyboard.append_global_keybindings({
 awful.keyboard.append_global_keybindings({
 
 	awful.key(
-		{ key_alt }, 'h', awful.tag.viewprev,
-		{ description = 'Previous Tag', group = 'Tag'}
-	),
-
-	awful.key(
-		{ key_alt }, 'l', awful.tag.viewnext,
-		{ description = 'Next Tag', group = 'Tag'}
-	),
-
-	awful.key(
-		{ key_alt }, 'p', awful.tag.history.restore,
-		{ description = 'Last Tag', group = 'Tag'}
-	),
-
-
-	awful.key(
 		{ key_alt }, 'a', awful.tag.viewprev,
 		{ description = 'Previous Tag', group = 'Tag'}
 	),
@@ -734,6 +718,18 @@ awful.keyboard.append_global_keybindings({
 		{ key_alt }, 'z', awful.tag.history.restore,
 		{ description = 'Last Tag', group = 'Tag'}
 	),
+
+
+	awful.key(
+		{ key_alt }, 'h', awful.tag.viewprev,
+		{ description = 'Previous Tag', group = 'Tag'}
+	),
+
+	awful.key(
+		{ key_alt }, 'l', awful.tag.viewnext,
+		{ description = 'Next Tag', group = 'Tag'}
+	),
+
 
 })
 
@@ -767,6 +763,9 @@ awful.keyboard.append_global_keybindings({
 			end
 		end,
 	},
+
+
+
 
 	awful.key {
 		modifiers   = { key_alt, key_ctrl },
@@ -809,26 +808,7 @@ awful.keyboard.append_global_keybindings({
 
 awful.keyboard.append_global_keybindings({
 
-	awful.key(
-		{ key_super }, 'h', function () awful.client.focus.byidx(-1) end,
-		{ description = 'Previous Client', group = 'Client'}
-	),
 
-	awful.key(
-		{ key_super }, 'l', function () awful.client.focus.byidx(1) end,
-		{ description = 'Next Client', group = 'Client'}
-	),
-
-	awful.key(
-		{ key_super }, 'p',
-		function ()
-			awful.client.focus.history.previous()
-			if client.focus then
-				client.focus:raise()
-			end
-		end,
-		{ description = 'Back Last Client', group = 'Client'}
-	),
 
 
 	awful.key(
@@ -841,7 +821,6 @@ awful.keyboard.append_global_keybindings({
 		{ description = 'Next Client', group = 'Client'}
 	),
 
-
 	awful.key(
 		{ key_super }, 'z',
 		function ()
@@ -853,12 +832,24 @@ awful.keyboard.append_global_keybindings({
 		{ description = 'Back Last Client', group = 'Client'}
 	),
 
+
+	awful.key(
+		{ key_super }, 'h', function () awful.client.focus.byidx(-1) end,
+		{ description = 'Previous Client', group = 'Client'}
+	),
+
+	awful.key(
+		{ key_super }, 'l', function () awful.client.focus.byidx(1) end,
+		{ description = 'Next Client', group = 'Client'}
+	),
+
 })
 
 awful.keyboard.append_global_keybindings({
 
+	-- Window Unminimize (Uniconify)
 	awful.key(
-		{ key_super, 'Control' }, 'n', function ()
+		{ key_super, 'Shift' }, 'x', function ()
 			local c = awful.client.restore()
 			-- Focus restored client
 			if c then
@@ -867,6 +858,18 @@ awful.keyboard.append_global_keybindings({
 		end,
 		{ description = 'Restore minimized', group = 'Client' }
 	),
+
+	awful.key(
+		{ key_super, 'Shift' }, 'n', function ()
+			local c = awful.client.restore()
+			-- Focus restored client
+			if c then
+				c:activate { raise = true, context = 'key.unminimize' }
+			end
+		end,
+		{ description = 'Restore minimized', group = 'Client' }
+	),
+
 
 	awful.key(
 		{ key_super }, 'u', awful.client.urgent.jumpto,
