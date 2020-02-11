@@ -94,6 +94,8 @@
 | Key | Description | Reference |
 | --- | --- | --- |
 | `Alt + /` | Search Workspace | search_workspace |
+| `Alt + Shift + /` | Rename Current Workspace | name_workspace |
+
 
 | Key | Description | Reference |
 | --- | --- | --- |
@@ -159,14 +161,18 @@
 
 | Key | Description | Reference |
 | --- | --- | --- |
-| `Alt + Ctrl + comma` | Add columns/rows to stacking area | stack_dec |
-| `Alt + Ctrl + period` | Remove columns/rows from stacking area | stack_inc |
+| `Alt + Ctrl + ,` | Add columns/rows to stacking area | stack_dec |
+| `Alt + Ctrl + .` | Remove columns/rows from stacking area | stack_inc |
 
 | Key | Description | Reference |
 | --- | --- | --- |
 | `Alt + Ctrl + space` | Reset layout | stack_reset |
-| `Alt + Ctrl + slash` | Balance master/stacking area | stack_balance |
+| `Alt + Ctrl + /` | Balance master/stacking area | stack_balance |
 
+
+> (,) for (<)
+
+> (.) for (>)
 
 ### Layout / Swap
 
@@ -180,6 +186,10 @@
 ## Window
 
 ### Window Focus
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Win + /` | Search the windows in the current workspace | search_win |
 
 | Key | Description | Reference |
 | --- | --- | --- |
