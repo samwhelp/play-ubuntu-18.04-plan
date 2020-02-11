@@ -36,6 +36,8 @@
 | --- | --- |
 | `Win` | For Window (Client) |
 | `Alt` | For Workspace (Tag) (Desktop) |
+| `Shift` | For Window Move or Swap |
+| `Ctrl` | For Window Resize |
 
 
 ## Menu

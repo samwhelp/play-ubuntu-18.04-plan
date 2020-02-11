@@ -44,7 +44,8 @@
 | --- | --- |
 | `Win` | For Window (Client) |
 | `Alt` | For Workspace (Tag) (Desktop) |
-
+| `Shift` | For Window Move or Swap |
+| `Ctrl` | For Window Resize |
 
 ## System
 
@@ -204,10 +205,10 @@ On Floating
 
 | Key | Description | Reference |
 | --- | --- | --- |
-| `Win + Ctrl + k` | Window Move Up | move_up |
-| `Win + Ctrl + j` | Window Move Down | move_down |
-| `Win + Ctrl + h` | Window Move Left | move_left |
-| `Win + Ctrl + l` | Window Move Right | move_right |
+| `Win + Shift + k` | Window Move Up | move_up |
+| `Win + Shift + j` | Window Move Down | move_down |
+| `Win + Shift + h` | Window Move Left | move_left |
+| `Win + Shift + l` | Window Move Right | move_right |
 
 
 ### Window Resize
@@ -216,10 +217,10 @@ On Floating
 
 | Key | Description | Reference |
 | --- | --- | --- |
-| `Win + Shift + k` | Window Height Shrink | height_shrink |
-| `Win + Shift + j` | Window Height Grow | height_grow |
-| `Win + Shift + h` | Window Width Shrink | width_shrink |
-| `Win + Shift + l` | Window Width Grow | width_grow |
+| `Win + Ctrl + k` | Window Height Shrink | height_shrink |
+| `Win + Ctrl + j` | Window Height Grow | height_grow |
+| `Win + Ctrl + h` | Window Width Shrink | width_shrink |
+| `Win + Ctrl + l` | Window Width Grow | width_grow |
 
 
 

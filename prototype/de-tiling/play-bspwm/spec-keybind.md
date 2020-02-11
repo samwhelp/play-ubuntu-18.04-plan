@@ -16,6 +16,27 @@
 * [docs-spec-keybind](../../../docs/spec/Keybind.md)
 
 
+## Keys
+
+### Mean
+
+| Key | Description |
+| --- | --- |
+| `Shift` | 'Shift' |
+| `Ctrl` | 'Control' |
+| `Win` | 'Mod4' (Super) |
+| `Alt` | 'Mod1' |
+
+### Tips
+
+| Key | Description |
+| --- | --- |
+| `Win` | For Window (Client) |
+| `Alt` | For Workspace (Tag) (Desktop) |
+| `Shift` | For Window Move or Swap |
+| `Ctrl` | For Window Resize |
+
+
 ## System
 
 | Key | Description | How to set |
