@@ -227,3 +227,12 @@
 | Key | Description |
 | --- | --- |
 | `Alt + v` | Toggle focused window between tiled and floating |
+
+
+### Layout / Swap
+
+| Key | Description |
+| --- | --- |
+| `Alt + Shift + h` | Swap with previous window in tag |
+| `Alt + Shift + l` | Swap with next window in tag |
+| `Alt + Shift + p` | Move current window to master area |

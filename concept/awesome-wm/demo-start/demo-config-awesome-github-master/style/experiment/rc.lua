@@ -698,6 +698,20 @@ awful.keyboard.append_global_keybindings({
 
 })
 
+-- Swap Client
+awful.keyboard.append_global_keybindings({
+
+	awful.key(
+		{ key_alt, key_shift }, 'h', function () awful.client.swap.byidx(-1) end,
+		{ description = 'Swap with previous client by index', group = 'Client'}
+	),
+
+	awful.key(
+		{ key_alt, key_shift }, 'l', function () awful.client.swap.byidx(1) end,
+		{ description = 'Swap with next client by index', group = 'Client'}
+	),
+
+})
 
 --
 --- Tail: Keybind / Layout
@@ -885,17 +899,7 @@ awful.keyboard.append_global_keybindings({
 })
 
 
-awful.keyboard.append_global_keybindings({
-	awful.key(
-		{ key_super, key_shift }, 'j', function () awful.client.swap.byidx(1) end,
-		{ description = 'Swap with next client by index', group = 'Client'}
-	),
 
-	awful.key(
-		{ key_super, key_shift }, 'k', function () awful.client.swap.byidx(-1) end,
-		{ description = 'Swap with previous client by index', group = 'Client'}
-	),
-})
 
 --
 --- Tail: Keybind / Client
@@ -1053,23 +1057,28 @@ client.connect_signal('request::default_keybindings', function()
 			{ description = 'Window Toggle Floating', group = 'Client' }
 		),
 
-
+		-- Swap Client To Master
 		awful.key(
-			{ key_super, 'Control' }, 'Return', function (c) c:swap(awful.client.getmaster()) end,
-			{ description = 'move to master', group = 'Client' }
+			{ key_alt, 'Shift' }, 'p', function (c) c:swap(awful.client.getmaster()) end,
+			{ description = 'Move to Master', group = 'Client' }
 		),
+
+		-- awful.key(
+		-- 	{ key_super, 'Control' }, 'Return', function (c) c:swap(awful.client.getmaster()) end,
+		-- 	{ description = 'move to master', group = 'Client' }
+		-- ),
+
 
 		awful.key(
 			{ key_super }, 'o', function (c) c:move_to_screen() end,
 			{ description = 'move to screen', group = 'Client' }
 		),
 
+
 		awful.key(
 			{ key_super }, 't', function (c) c.ontop = not c.ontop end,
 			{ description = 'toggle keep on top', group = 'Client' }
 		),
-
-
 
 
 	})
