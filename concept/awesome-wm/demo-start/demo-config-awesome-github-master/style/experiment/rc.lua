@@ -665,35 +665,54 @@ awful.keyboard.append_global_keybindings({
 })
 
 
+-- Master
 awful.keyboard.append_global_keybindings({
 
 	awful.key(
-		{ key_super }, 'o', function () awful.tag.incmwfact( 0.05) end,
-		{ description = 'increase master width factor', group = 'Layout' }
-	),
-
-	awful.key({ key_super }, 'y', function () awful.tag.incmwfact(-0.05) end,
-		{ description = 'decrease master width factor', group = 'Layout' }
+		{ key_alt, key_ctrl }, 'h', function () awful.tag.incmwfact(-0.05) end,
+		{ description = 'Decrease master width factor', group = 'Layout' }
 	),
 
 	awful.key(
-		{ key_super, 'Shift'   }, 'h', function () awful.tag.incnmaster( 1, nil, true) end,
-		{ description = 'increase the number of master clients', group = 'Layout' }
+		{ key_alt, key_ctrl }, 'l', function () awful.tag.incmwfact( 0.05) end,
+		{ description = 'Increase master width factor', group = 'Layout' }
+	),
+
+
+	awful.key(
+		{ key_alt, key_ctrl }, 'k', function () awful.tag.incnmaster( 1, nil, true) end,
+		{ description = 'Increase the number of master clients', group = 'Layout' }
 	),
 
 	awful.key(
-		{ key_super, 'Shift'   }, 'l', function () awful.tag.incnmaster(-1, nil, true) end,
-		{ description = 'decrease the number of master clients', group = 'Layout' }
+		{ key_alt, key_ctrl }, 'j', function () awful.tag.incnmaster(-1, nil, true) end,
+		{ description = 'Decrease the number of master clients', group = 'Layout' }
+	),
+
+
+	awful.key(
+		{ key_alt, key_ctrl }, ',', function () awful.tag.incncol(-1, nil, true) end,
+		{ description = 'Decrease the number of columns', group = 'Layout'}
 	),
 
 	awful.key(
-		{ key_super, 'Control' }, 'h', function () awful.tag.incncol( 1, nil, true) end,
-		{ description = 'increase the number of columns', group = 'Layout'}
+		{ key_alt, key_ctrl }, '.', function () awful.tag.incncol( 1, nil, true) end,
+		{ description = 'Increase the number of columns', group = 'Layout'}
+	),
+
+
+	awful.key(
+		{ key_alt, key_ctrl }, '/', function ()
+			print('Todo')
+		end,
+		{ description = 'Reset columns', group = 'Layout'}
 	),
 
 	awful.key(
-		{ key_super, 'Control' }, 'l', function () awful.tag.incncol(-1, nil, true) end,
-		{ description = 'decrease the number of columns', group = 'Layout'}
+		{ key_alt, key_ctrl }, 'space', function ()
+			print('Todo')
+		end,
+		{ description = 'Reset number of master clients', group = 'Layout'}
 	),
 
 })

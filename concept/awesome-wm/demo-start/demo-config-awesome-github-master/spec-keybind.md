@@ -236,3 +236,30 @@
 | `Alt + Shift + h` | Swap with previous window in tag |
 | `Alt + Shift + l` | Swap with next window in tag |
 | `Alt + Shift + p` | Move current window to master area |
+
+
+### Layout / Master
+
+| Key | Description |
+| --- | --- |
+| `Alt + Ctrl + h` | Decrease master width factor |
+| `Alt + Ctrl + l` | Increase master width factor |
+
+
+| Key | Description |
+| --- | --- |
+| `Alt + Ctrl + k` | Increase the number of master clients |
+| `Alt + Ctrl + j` | Decrease the number of master clients |
+
+
+### Layout / Stack
+
+| Key | Description |
+| --- | --- |
+| `Alt + Ctrl + ,` | Decrease the number of columns |
+| `Alt + Ctrl + .` | Increase the number of columns |
+| `Alt + Ctrl + /` | Balance master/stacking area | stack_balance |
+
+> (,) for (<)
+
+> (.) for (>)

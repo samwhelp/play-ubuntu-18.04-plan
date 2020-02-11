@@ -129,59 +129,7 @@
 > grave means backquote `
 
 
-## Layout
 
-### Layout Toggle
-
-| Key | Description | Reference |
-| --- | --- | --- |
-| `Alt + c` | Cycle Layout | cycle_layout |
-| `Alt + v` | Toggle focused window between tiled and floating | float_toggle |
-| `Alt + b` | Swap the master and stacking areas | flip_layout |
-
-
-| Key | Description | Reference |
-| --- | --- | --- |
-| `Alt + m` | Toggle overall visibility of status bars | bar_toggle |
-| `Alt + n` | Toggle status bar on current workspace | bar_toggle_ws |
-
-### Layout / Master
-
-| Key | Description | Reference |
-| --- | --- | --- |
-| `Alt + Ctrl + l` | Grow master area | master_grow |
-| `Alt + Ctrl + h` | Shrink master area | master_shrink |
-
-| Key | Description | Reference |
-| --- | --- | --- |
-| `Alt + Ctrl + k` | Remove windows from master area | master_del |
-| `Alt + Ctrl + j` | Add windows to master area | master_add |
-
-
-### Layout / Stack
-
-| Key | Description | Reference |
-| --- | --- | --- |
-| `Alt + Ctrl + ,` | Add columns/rows to stacking area | stack_dec |
-| `Alt + Ctrl + .` | Remove columns/rows from stacking area | stack_inc |
-
-| Key | Description | Reference |
-| --- | --- | --- |
-| `Alt + Ctrl + space` | Reset layout | stack_reset |
-| `Alt + Ctrl + /` | Balance master/stacking area | stack_balance |
-
-
-> (,) for (<)
-
-> (.) for (>)
-
-### Layout / Swap
-
-| Key | Description | Reference |
-| --- | --- | --- |
-| `Alt + Shift + h` | Swap with previous window in workspace | swap_prev |
-| `Alt + Shift + l` | Swap with next window in workspace | swap_next |
-| `Alt + Shift + p` | Move current window to master area | swap_main |
 
 
 ## Window
@@ -272,3 +220,63 @@ On Floating
 | `Win + Shift + j` | Window Height Grow | height_grow |
 | `Win + Shift + h` | Window Width Shrink | width_shrink |
 | `Win + Shift + l` | Window Width Grow | width_grow |
+
+
+
+
+## Layout
+
+### Layout Toggle
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Alt + c` | Cycle Layout | cycle_layout |
+| `Alt + v` | Toggle focused window between tiled and floating | float_toggle |
+| `Alt + b` | Swap the master and stacking areas | flip_layout |
+
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Alt + m` | Toggle overall visibility of status bars | bar_toggle |
+| `Alt + n` | Toggle status bar on current workspace | bar_toggle_ws |
+
+
+### Layout / Swap
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Alt + Shift + h` | Swap with previous window in workspace | swap_prev |
+| `Alt + Shift + l` | Swap with next window in workspace | swap_next |
+| `Alt + Shift + p` | Move current window to master area | swap_main |
+
+
+### Layout / Master
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Alt + Ctrl + l` | Grow master area | master_grow |
+| `Alt + Ctrl + h` | Shrink master area | master_shrink |
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Alt + Ctrl + k` | Remove windows from master area | master_del |
+| `Alt + Ctrl + j` | Add windows to master area | master_add |
+
+
+### Layout / Stack
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Alt + Ctrl + ,` | Add columns/rows to stacking area | stack_dec |
+| `Alt + Ctrl + .` | Remove columns/rows from stacking area | stack_inc |
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Alt + Ctrl + space` | Reset layout | stack_reset |
+| `Alt + Ctrl + /` | Balance master/stacking area | stack_balance |
+
+> (,) for (<)
+
+> (.) for (>)
+
+> (/) for (?)
