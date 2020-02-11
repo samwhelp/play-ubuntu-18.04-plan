@@ -13,11 +13,18 @@
 ## Link
 
 * [docs-spec-mousebind](../../../docs/spec/Mousebind.md)
+* [spec-keybind](spec-keybind.md)
 
 
 ## Manual
 
 * $ man [spectrwm](http://manpages.ubuntu.com/manpages/bionic/en/man1/spectrwm.1.html)
+
+
+## Config File
+
+* [~/.spectrwm.conf](config/spectrwm/spectrwm.conf)
+* [~/.config/spectrwm/spectrwm.keybind.conf](config/spectrwm/spectrwm.keybind.conf)
 
 
 ## Window Move

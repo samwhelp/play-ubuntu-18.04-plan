@@ -27,7 +27,7 @@
 | --- | --- |
 | `Shift` | 'Shift' |
 | `Ctrl` | 'Control' |
-| `Win` | 'Mod4' (Super)|
+| `Win` | 'Mod4' (Super) |
 | `Alt` | 'Mod1' |
 
 ### Tips
