@@ -129,4 +129,35 @@
 
 ## Workspace
 
+
 ## Window
+
+### Window Close
+
+| Key | Description |
+| --- | --- |
+| `Win + q` | Window Close |
+
+### Window Fullscreen
+
+| Key | Description |
+| --- | --- |
+| `Win + f` | Window Toggle Fullscreen |
+
+### Window Minimize
+
+| Key | Description |
+| --- | --- |
+| `Win + x` | Window Minimize (Iconify) |
+| `Win + n` | Window Minimize (Iconify) |
+
+
+
+### Window Maximize
+
+| Key | Description |
+| --- | --- |
+| `Win + w` | Window Toggle Maximize |
+| `Win + m` | Window Toggle Maximize |
+| `Win + Shift + m` | Window Toggle Maximize Horizontally |
+| `Win + Ctrl + m` | Window Toggle Maximize Vertically |
