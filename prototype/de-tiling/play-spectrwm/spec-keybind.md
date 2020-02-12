@@ -117,6 +117,11 @@
 
 | Key | Description | Reference |
 | --- | --- | --- |
+| `Alt + [` | Switch to Previous Workspace | ws_prev_all |
+| `Alt + ]` | Switch to Next Workspace | ws_next_all |
+
+| Key | Description | Reference |
+| --- | --- | --- |
 | `Alt + Win + a` | Move Window To Workspace Prev | ws_prev_move |
 | `Alt + Win + s` | Move Window To Workspace Next | ws_next_move |
 | `Alt + Win + h` | Move Window To Workspace Prev | ws_prev_move |
@@ -151,6 +156,11 @@
 | --- | --- | --- |
 | `Win + h` | Focus previous window in workspace | focus_prev |
 | `Win + l` | Focus next window in workspace | focus_next |
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Win + [` | Focus previous window in workspace | focus_prev |
+| `Win + ]` | Focus next window in workspace | focus_next |
 
 | Key | Description | Reference |
 | --- | --- | --- |

@@ -105,6 +105,11 @@
 | `Alt + h` | Switch to Previous Workspace |
 | `Alt + l` | Switch to Next Workspace |
 
+| Key | Description |
+| --- | --- |
+| `Alt + [` | Switch to Previous Workspace |
+| `Alt + ]` | Switch to Next Workspace |
+
 
 ## Show Desktop
 
@@ -125,6 +130,11 @@
 | --- | --- |
 | `Win + h` | Switch to Previous Window |
 | `Win + l` | Switch to Next Window |
+
+| Key | Description |
+| --- | --- |
+| `Win + [` | Switch to Previous Window |
+| `Win + ]` | Switch to Next Window |
 
 | Key | Description |
 | --- | --- |
