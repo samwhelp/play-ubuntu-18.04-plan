@@ -14,10 +14,10 @@
 ## Implement
 
 * [openbox](../../prototype/de-box/play-openbox/spec-keybind.md)
-* [xfce](../../prototype/de-basic/play-xfce/spec-keybind.md)
-* [bspwm](../../prototype/de-tiling/play-bspwm/spec-keybind.md)
-* [awesomewm](../../concept/awesome-wm/demo-start/demo-config-awesome-github-master/spec-keybind.md)
 * [spectrwm](../../prototype/de-tiling/play-spectrwm/spec-keybind.md)
+* [awesomewm](../../concept/awesome-wm/demo-start/demo-config-awesome-github-master/spec-keybind.md)
+* [bspwm](../../prototype/de-tiling/play-bspwm/spec-keybind.md)
+* [xfce](../../prototype/de-basic/play-xfce/spec-keybind.md)
 
 ## Keys
 
