@@ -4,7 +4,6 @@
 
 ## Subject
 
-* [Link](#link)
 * [System](#system)
 * [Launch App](#launch-app)
 * [Workspace](#workspace)
@@ -14,6 +13,7 @@
 ## Link
 
 * [docs-spec-keybind](../../../docs/spec/Keybind.md)
+* [spec-mousebind](spec-mousebind.md)
 
 
 ## Keys
@@ -39,9 +39,9 @@
 
 ## System
 
-| Key | Description | How to set |
-| --- | --- | --- |
-| `Alt + shift + x` | Quit bspwm | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
+| Key | Description |
+| --- | --- |
+| `Alt + shift + x` | Quit bspwm |
 | `Alt + Shift + c` | Reload sxhkd config | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#L37) |
 
 
@@ -49,59 +49,78 @@
 
 ### Terminal
 
-| Key | Description | How to set |
-| --- | --- | --- |
-| `Alt + Enter` | Launch Terminal (sakura -m) | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
-| `Alt + Shift + a` | Launch Terminal (sakura -m) | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
+| Key | Description |
+| --- | --- |
+| `Alt + Enter` | Launch Terminal (sakura -m) |
+| `Alt + Shift + a` | Launch Terminal (sakura -m) |
 
 ### Rofi
 
-| Key | Description | How to set |
-| --- | --- | --- |
-| `Alt + Shift + r` | Launch Rofi (rofi -show run) | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
-| `Alt + Shift + w` | Launch Rofi (rofi -show window -show-icons) | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
-| `Alt + Shift + d` | Launch Rofi (rofi -show drun -show-icons) | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
+| Key | Description |
+| --- | --- |
+| `Alt + Shift + r` | Launch Rofi (rofi -show run) |
+| `Alt + Shift + w` | Launch Rofi (rofi -show window -show-icons) |
+| `Alt + Shift + d` | Launch Rofi (rofi -show drun -show-icons) |
 
 ### Misc
 
-| Key | Description | How to set |
-| --- | --- | --- |
-| `Alt + Shift + f` | Launch File Manager (pcmanfm-qt) | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
-| `Alt + Shift + g` | Launch File Manager (nautilus) | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
+| Key | Description |
+| --- | --- |
+| `Alt + Shift + f` | Launch File Manager (pcmanfm-qt) |
+| `Alt + Shift + g` | Launch File Manager (nautilus) |
 | `Alt + Shift + b` | Launch Web Browser (firefox) |
-| `Alt + Shift + e` | Launch Text Editor (gedit) | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
+| `Alt + Shift + e` | Launch Text Editor (gedit) |
 
 
 ### demnu
 
-| Key | Description | How to set |
-| --- | --- | --- |
-| `Alt + Shift + t` | Launch dmenu (dmenu_run) | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
+| Key | Description |
+| --- | --- |
+| `Alt + Shift + t` | Launch dmenu (dmenu_run) |
 
 
 ## Workspace
 
-| Key | Description | How to set |
-| --- | --- | --- |
-| `Alt + [0-9]` | Switch to Specific Workspace | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
-| `Win + [0-9]` | Move a Window to Specific Workspace | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
+| Key | Description |
+| --- | --- |
+| `Alt + [0-9]` | Switch to Specific Workspace |
+| `Win + [0-9]` | Move a Window to Specific Workspace |
 
-| Key | Description | How to set |
-| --- | --- | --- |
-| `Alt + a` | Switch to Previous Workspace | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
-| `Alt + s` | Switch to Next Workspace | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
-| `Alt + z` | Switch to Last Workspace (Last Previous) | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
+| Key | Description |
+| --- | --- |
+| `Alt + a` | Switch to Previous Workspace |
+| `Alt + s` | Switch to Next Workspace |
+| `Alt + z` | Switch to Perior Workspace |
 
+| Key | Description |
+| --- | --- |
+| `Alt + h` | Switch to Previous Workspace |
+| `Alt + l` | Switch to Next Workspace |
+
+| Key | Description |
+| --- | --- |
+| `Alt + [` | Switch to Previous Workspace |
+| `Alt + ]` | Switch to Next Workspace |
 
 ## Window
 
-| Key | Description | How to set |
-| --- | --- | --- |
-| `Win + a` | Switch to Previous Window | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
-| `Win + s` | Switch to Next Window | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
-| `Win + z` | Switch to Last Window (Last Previous) | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
+| Key | Description |
+| --- | --- |
+| `Win + a` | Switch to Previous Window |
+| `Win + s` | Switch to Next Window |
+| `Win + z` | Switch to Perior Window |
+
+| Key | Description |
+| --- | --- |
+| `Win + h` | Switch to Previous Window |
+| `Win + l` | Switch to Next Window |
+
+| Key | Description |
+| --- | --- |
+| `Win + [` | Switch to Previous Window |
+| `Win + ]` | Switch to Next Window |
 
 
-| Key | Description | How to set |
-| --- | --- | --- |
-| `Win + q` | Window Close | [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc#) |
+| Key | Description |
+| --- | --- |
+| `Win + q` | Window Close |

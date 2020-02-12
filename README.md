@@ -36,7 +36,7 @@
 
 ### de-tiling
 
-* [play-bspwm](prototype/de-tiling/play-bspwm) ([keybind](prototype/de-tiling/play-bspwm/spec-keybind.md))
+* [play-bspwm](prototype/de-tiling/play-bspwm) ([keybind](prototype/de-tiling/play-bspwm/spec-keybind.md)) ([mousebind](prototype/de-tiling/play-bspwm/spec-mousebind.md))
 * [play-spectrwm](prototype/de-tiling/play-spectrwm) ([keybind](prototype/de-tiling/play-spectrwm/spec-keybind.md)) ([mousebind](prototype/de-tiling/play-spectrwm/spec-mousebind.md))
 * [play-i3](prototype/de-basic/play-i3)
 

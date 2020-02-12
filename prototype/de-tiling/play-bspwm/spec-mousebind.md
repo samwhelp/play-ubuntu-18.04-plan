@@ -1,5 +1,5 @@
 
-# Awesome / Mousebind
+# Bspwm / Mousebind
 
 
 ## Subject
@@ -10,7 +10,7 @@
 
 ## Link
 
-* [docs-spec-keybind](../../../../docs/spec/Mousebind.md)
+* [docs-spec-keybind](../../../docs/spec/Keybind.md)
 * [spec-keybind](spec-keybind.md)
 
 
@@ -18,7 +18,6 @@
 
 | Key | Description |
 | --- | --- |
-| `Alt + [Mouse Left Drag]` | Window Move On Floating |
 | `Win + [Mouse Left Drag]` | Window Move On Floating |
 
 
@@ -26,5 +25,5 @@
 
 | Key | Description | Action |
 | --- | --- | --- |
-| `Alt + [Mouse Right Drag]` | Window Resize |
 | `Win + [Mouse Right Drag]` | Window Resize |
+| `Win + [Mouse Middle Drag]` | Window Resize |
