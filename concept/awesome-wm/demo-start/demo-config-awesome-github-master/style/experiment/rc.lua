@@ -658,6 +658,17 @@ awful.keyboard.append_global_keybindings({
 
 
 	awful.key(
+		{ key_alt }, 'comma', function () awful.layout.inc(-1) end,
+		{ description = 'Previous Layout', group = 'Layout' }
+	),
+
+	awful.key(
+		{ key_alt }, 'period', function () awful.layout.inc(1) end,
+		{ description = 'Next Layout', group = 'Layout' }
+	),
+
+
+	awful.key(
 		{ key_alt }, 'c', function () awful.layout.inc(1) end,
 		{ description = 'Next Layout', group = 'Layout' }
 	),
@@ -766,6 +777,17 @@ awful.keyboard.append_global_keybindings({
 
 	awful.key(
 		{ key_alt }, 'l', awful.tag.viewnext,
+		{ description = 'Next Tag', group = 'Tag'}
+	),
+
+
+	awful.key(
+		{ key_alt }, 'bracketleft', awful.tag.viewprev,
+		{ description = 'Previous Tag', group = 'Tag'}
+	),
+
+	awful.key(
+		{ key_alt }, 'bracketright', awful.tag.viewnext,
 		{ description = 'Next Tag', group = 'Tag'}
 	),
 
@@ -881,6 +903,19 @@ awful.keyboard.append_global_keybindings({
 		{ key_super }, 'l', function () awful.client.focus.byidx(1) end,
 		{ description = 'Next Client', group = 'Client'}
 	),
+
+
+	awful.key(
+		{ key_super }, 'bracketleft', function () awful.client.focus.byidx(-1) end,
+		{ description = 'Previous Client', group = 'Client'}
+	),
+
+	awful.key(
+		{ key_super }, 'bracketright', function () awful.client.focus.byidx(1) end,
+		{ description = 'Next Client', group = 'Client'}
+	),
+
+
 
 })
 

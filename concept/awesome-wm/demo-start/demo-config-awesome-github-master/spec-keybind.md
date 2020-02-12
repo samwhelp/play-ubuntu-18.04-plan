@@ -148,6 +148,11 @@
 | `Alt + h` | Switch to Previous Tag |
 | `Alt + l` | Switch to Next Tag |
 
+| Key | Description |
+| --- | --- |
+| `Alt + [` | Switch to Previous Tag |
+| `Alt + ]` | Switch to Next Tag |
+
 
 ## Window
 
@@ -163,6 +168,11 @@
 | --- | --- |
 | `Win + h` | Switch to Previous Window |
 | `Win + l` | Switch to Next Window |
+
+| Key | Description |
+| --- | --- |
+| `Win + [` | Switch to Previous Window |
+| `Win + ]` | Switch to Next Window |
 
 | Key | Description |
 | --- | --- |
@@ -222,6 +232,11 @@
 | --- | --- |
 | `Alt + k` | Previous Layout |
 | `Alt + j` | Next Layout |
+
+| Key | Description |
+| --- | --- |
+| `Alt + <` | Previous Layout |
+| `Alt + >` | Next Layout |
 
 | Key | Description |
 | --- | --- |
