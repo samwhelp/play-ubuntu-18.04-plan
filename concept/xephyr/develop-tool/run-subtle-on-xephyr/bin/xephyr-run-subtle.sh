@@ -36,17 +36,17 @@ __main__ () {
 	XEPHYR_PID=$!
 	sleep 0.5
 
-	## $ dpkg -L bspwm | grep xsession | grep desktop
-	## /usr/share/xsessions/bspwm.desktop
-	## $ grep '^Exec=' /usr/share/xsessions/bspwm.desktop
-	## $ grep '^Exec=' $(dpkg -L bspwm | grep xsession | grep desktop)
-	## Exec=bspwm
-	## $ which bspwm
-	## /usr/bin/bspwm
+	## $ dpkg -L subtle | grep xsession | grep desktop
+	## /usr/share/xsessions/subtle.desktop
+	## $ grep '^Exec=' /usr/share/xsessions/subtle.desktop
+	## $ grep '^Exec=' $(dpkg -L subtle | grep xsession | grep desktop)
+	## Exec=subtle
+	## $ which subtle
+	## /usr/bin/subtle
 
-	## run bspwm
-	#DISPLAY=:100 /usr/bin/bspwm
-	DISPLAY=:100 bspwm
+	## run subtle
+	#DISPLAY=:100 /usr/bin/subtle
+	DISPLAY=:100 subtle
 
 	## make sure kill Xephyr
 	kill ${XEPHYR_PID}
