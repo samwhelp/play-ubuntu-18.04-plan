@@ -1,0 +1,49 @@
+
+
+################################################################################
+### Head: Setting / Window Decoration
+##
+
+#rgb:85/00/85
+#rgb:00/85/85
+#rgb:cc/85/00
+#rgb:FF/63/63
+
+
+# border_width = 1
+color_focus = rgb:00/85/85
+color_focus_maximized = rgb:FF/63/63
+# color_unfocus = rgb:88/88/88
+# color_unfocus_maximized = rgb:88/88/00
+region_padding = 5
+tile_gap = 5
+
+
+##
+### Tail: Setting / Window Decoration
+################################################################################
+
+
+################################################################################
+### Head: Setting / Bar
+##
+
+clock_format = %A %Y-%m-%d %H:%M:%S
+
+bar_border[1] = rgb:60/60/60
+bar_border_unfocus[1] = rgb:40/40/40
+bar_color[1] = rgb:30/30/30
+#bar_font = Terminus:style=Regular:pixelsize=14:antialias=true
+#bar_font = Terminus:style=Regular:pixelsize=16:antialias=true
+bar_font = Terminus:style=Bold:pixelsize=18:antialias=true
+
+
+window_class_enabled = 1
+# window_instance_enabled = 0
+# window_name_enabled = 0
+
+iconic_enabled = 1
+
+##
+### Tail: Setting / Bar
+################################################################################

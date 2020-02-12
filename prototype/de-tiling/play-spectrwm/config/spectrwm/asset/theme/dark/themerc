@@ -1,0 +1,26 @@
+
+
+################################################################################
+### Head: Setting / Bar
+##
+
+clock_format = %A %Y-%m-%d %H:%M:%S
+
+bar_border[1] = rgb:34/34/34
+bar_border_unfocus[1] = rgb:32/32/32
+bar_color[1] = rgb:30/30/30
+#bar_font = Terminus:style=Regular:pixelsize=14:antialias=true
+#bar_font = Terminus:style=Regular:pixelsize=16:antialias=true
+bar_font = Terminus:style=Bold:pixelsize=18:antialias=true
+
+
+window_class_enabled = 1
+# window_instance_enabled = 0
+# window_name_enabled = 0
+
+iconic_enabled = 1
+# maximize_hide_bar = 0
+
+##
+### Tail: Setting / Bar
+################################################################################
