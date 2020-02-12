@@ -69,6 +69,30 @@ h l
 	</keybind>
 
 
+	<!-- win+[, win+] //-->
+	<keybind key="W-bracketleft">
+		<action name="PreviousWindow">
+			<finalactions>
+				<action name="Focus"/>
+				<action name="Raise"/>
+				<action name="Unshade"/>
+			</finalactions>
+		</action>
+	</keybind>
+
+	<keybind key="W-bracketright">
+		<action name="NextWindow">
+			<finalactions>
+				<action name="Focus"/>
+				<action name="Raise"/>
+				<action name="Unshade"/>
+			</finalactions>
+		</action>
+	</keybind>
+
+
+
+
 
 	<!-- Default keybindings for window switching -->
 	<keybind key="A-Tab">

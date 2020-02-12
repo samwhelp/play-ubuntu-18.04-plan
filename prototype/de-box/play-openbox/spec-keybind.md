@@ -159,6 +159,12 @@
 
 | Key | Description | Doc |
 | --- | --- | --- |
+| `Alt + [` | Go To Left Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+| `Alt + ]` | Go To Right Workspace | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
 | `Alt + 1` | Go To Workspace 1 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
 | `Alt + 2` | Go To Workspace 2 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
 | `Alt + 3` | Go To Workspace 3 | [GoToDesktop](http://openbox.org/wiki/Help:Actions#GoToDesktop) |
@@ -246,6 +252,12 @@
 | --- | --- | --- |
 | `Win + l` | Previous Window | [PreviousWindow](http://openbox.org/wiki/Help:Actions#PreviousWindow) |
 | `Win + h` | Next Window | [NextWindow](http://openbox.org/wiki/Help:Actions#NextWindow) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Win + [` | Previous Window | [PreviousWindow](http://openbox.org/wiki/Help:Actions#PreviousWindow) |
+| `Win + ]` | Next Window | [NextWindow](http://openbox.org/wiki/Help:Actions#NextWindow) |
 
 
 ## Window Raise or Lower
