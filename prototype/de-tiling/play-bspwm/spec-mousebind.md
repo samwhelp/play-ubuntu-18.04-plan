@@ -24,6 +24,6 @@
 ## Window Resize
 
 | Key | Description |
-| --- | --- | --- |
+| --- | --- |
 | `Win + [Mouse Right Drag]` | Window Resize |
 | `Win + [Mouse Middle Drag]` | Window Resize |
