@@ -1,0 +1,48 @@
+
+
+################################################################################
+## Head: Window / Resize
+##
+
+## [k,j,h,l]
+# control bottom(k,j) and right(h,l)
+super + ctrl + {k,j,h,l}
+	bspc node -z {bottom 0 -20,bottom 0 20,right -20 0,right 20 0}
+
+# control top(k,j) and left(h,l)
+super + ctrl + {i,u,y,o}
+	bspc node -z {top 0 -20,top 0 20,left -20 0,left 20 0}
+
+
+## [Up,Down,Left,Right]
+# control bottom(Up,Down) and right(Left,Right)
+super + ctrl + {Up,Down,Left,Right}
+	bspc node -z {bottom 0 -20,bottom 0 20,right -20 0,right 20 0}
+
+# control top(Up,Down) and left(Left,Right)
+super + shift + {Up,Down,Left,Right}
+	bspc node -z {top 0 -20,top 0 20,left -20 0,left 20 0}
+
+
+##
+## Tail: Window / Resize
+################################################################################
+
+
+################################################################################
+## Head: Window / Move
+##
+
+## [k,j,h,l]
+# move a floating window
+super + shift + {h,j,k,l}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+## [Up,Down,Left,Right]
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+##
+## Tail: Window / Move
+################################################################################

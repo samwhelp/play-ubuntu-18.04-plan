@@ -6,7 +6,7 @@
 
 # $ man bspc
 # $ man bspwm
-
+# http://manpages.ubuntu.com/manpages/bionic/en/man1/bspwm.1.html
 
 ##
 ## Tail: Manual
@@ -128,13 +128,13 @@ alt + d
 ##
 
 # focus the next/previous desktop in the current monitor
-alt + bracket{left,right}
-	bspc desktop -f {prev,next}.local
-
 alt + {a,s}
 	bspc desktop -f {prev,next}.local
 
 alt + {h,l}
+	bspc desktop -f {prev,next}.local
+
+alt + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last desktop
@@ -174,17 +174,20 @@ super + {a, s}
 super + {h, l}
 	bspc node -f {prev,next}.local
 
+super + bracket{left,right}
+	bspc node -f {prev,next}.local
+
 # focus the last node
 super + z
 	bspc node -f last
 
 
-
 # focus the older or newer node in the focus history
-super + bracket{left,right}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+#super + bracket{left,right}
+#	bspc wm -h off; \
+#	bspc node {older,newer} -f; \
+#	bspc wm -h on
+
 
 ##
 ## Tail: Window / Focus
@@ -210,9 +213,6 @@ super + g
 ##
 ## Tail: Window / Swap
 ################################################################################
-
-
-
 
 
 ################################################################################
@@ -260,13 +260,24 @@ alt + F4
 ## Head: Window / Resize
 ##
 
-# expand a window by moving one of its side outward
-super + ctrl + {h,j,k,l}
-	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+## [k,j,h,l]
+# control bottom(k,j) and right(h,l)
+super + ctrl + {k,j,h,l}
+	bspc node -z {bottom 0 -20,bottom 0 20,right -20 0,right 20 0}
 
-# contract a window by moving one of its side inward
-super + ctrl + {y,u,i,o}
-	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+# control top(k,j) and left(h,l)
+super + ctrl + {i,u,y,o}
+	bspc node -z {top 0 -20,top 0 20,left -20 0,left 20 0}
+
+
+## [Up,Down,Left,Right]
+# control bottom(Up,Down) and right(Left,Right)
+super + ctrl + {Up,Down,Left,Right}
+	bspc node -z {bottom 0 -20,bottom 0 20,right -20 0,right 20 0}
+
+# control top(Up,Down) and left(Left,Right)
+super + shift + {Up,Down,Left,Right}
+	bspc node -z {top 0 -20,top 0 20,left -20 0,left 20 0}
 
 
 ##
@@ -278,10 +289,12 @@ super + ctrl + {y,u,i,o}
 ## Head: Window / Move
 ##
 
+## [k,j,h,l]
 # move a floating window
 super + shift + {h,j,k,l}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+## [Up,Down,Left,Right]
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
@@ -289,6 +302,7 @@ super + {Left,Down,Up,Right}
 ##
 ## Tail: Window / Move
 ################################################################################
+
 
 
 
@@ -303,60 +317,4 @@ alt + m
 
 ##
 ## Tail: Layout
-################################################################################
-
-
-
-################################################################################
-## Head: Window / PreSelect
-##
-
-#
-# preselect
-#
-
-# preselect the direction
-#super + ctrl + {h,j,k,l}
-#	bspc node -p {west,south,north,east}
-
-# preselect the ratio
-#super + ctrl + {1-9}
-#	bspc node -o 0.{1-9}
-
-# cancel the preselection for the focused node
-#super + ctrl + space
-#	bspc node -p cancel
-
-# cancel the preselection for the focused desktop
-#super + ctrl + shift + space
-#	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
-
-
-
-##
-## Tail: Window / PreSelect
-################################################################################
-
-
-################################################################################
-## Head: Window Switch
-##
-
-
-#
-# focus/swap
-#
-
-# focus the node in the given direction
-#super + {_,shift + }{h,j,k,l}
-#	bspc node -{f,s} {west,south,north,east}
-
-# focus the node for the given path jump
-#super + {p,b,comma,period}
-#	bspc node -f @{parent,brother,first,second}
-
-
-
-##
-## Tail: Window Switch
 ################################################################################
