@@ -1,7 +1,9 @@
 
 spectrwm
 
-tint2
+#xfonts-terminus
+
+#tint2
 
 rofi
 
