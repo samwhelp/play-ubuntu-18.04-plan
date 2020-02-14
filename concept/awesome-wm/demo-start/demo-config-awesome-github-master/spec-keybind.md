@@ -13,6 +13,7 @@
 * [Tag](#Tag)
 * [Window](#window)
 * [Layout](#layout)
+* [Volume](#volume)
 
 
 ## Link
@@ -235,8 +236,8 @@
 
 | Key | Description |
 | --- | --- |
-| `Alt + <` | Previous Layout |
-| `Alt + >` | Next Layout |
+| `Alt + :` | Previous Layout |
+| `Alt + ;` | Next Layout |
 
 | Key | Description |
 | --- | --- |
@@ -285,3 +286,24 @@
 > (,) for (<)
 
 > (.) for (>)
+
+
+## Volume
+
+| Key | Description |
+| --- | --- |
+| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) |
+| `Alt + m` | Volume Toggle Mute |
+| `Alt + ,` | Volume Decrease |
+| `Alt + .` | Volume Increase |
+
+| Key | Description |
+| --- | --- |
+| `Alt + Shitf + ,` | Volume Decrease Slowly |
+| `Alt + Shitf + .` | Volume Increase Slowly |
+
+| Key | Description |
+| --- | --- |
+| `XF86AudioMute` | Volume Toggle Mute |
+| `XF86AudioLowerVolume` | Volume Decrease |
+| `XF86AudioRaiseVolume` | Volume Increase |
