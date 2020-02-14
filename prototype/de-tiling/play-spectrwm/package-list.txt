@@ -11,6 +11,7 @@ feh
 
 compton
 
+alsa-utils
 #volumeicon-alsa
 mate-media
 
