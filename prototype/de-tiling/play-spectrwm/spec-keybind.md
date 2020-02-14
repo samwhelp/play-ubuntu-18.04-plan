@@ -299,7 +299,7 @@ On Floating
 | Key | Description | Reference |
 | --- | --- | --- |
 | `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | program |
-| `Alt + m` | Volume Mute | program |
+| `Alt + m` | Volume Toggle Mute | program |
 | `Alt + ,` | Volume Decrease | program |
 | `Alt + .` | Volume Increase | program |
 
