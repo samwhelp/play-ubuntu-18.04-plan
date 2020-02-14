@@ -9,7 +9,14 @@ feh
 
 compton
 
-volumeicon-alsa
+
+pulseaudio-utils
+pavucontrol
+#pavucontrol-qt
+alsa-utils
+#volumeicon-alsa
+mate-media
+
 
 network-manager-gnome
 

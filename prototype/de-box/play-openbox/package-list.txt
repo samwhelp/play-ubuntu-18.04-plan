@@ -11,6 +11,12 @@ feh
 compton
 
 tint2
+
+
+pulseaudio-utils
+pavucontrol
+#pavucontrol-qt
+alsa-utils
 #volumeicon-alsa
 mate-media
 
