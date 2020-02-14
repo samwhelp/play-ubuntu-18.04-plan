@@ -101,9 +101,6 @@ alt + shift + e
 alt + shift + b
 	firefox
 
-alt + shift + v
-	mate-volume-control
-
 ##
 ## Tail: Launch App / Misc
 ################################################################################
