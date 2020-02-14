@@ -347,42 +347,46 @@ alt + shift + v
 	#pavucontrol-qt
 
 
-## https://wiki.archlinux.org/index.php/Xbindkeys#Volume_control
+# https://askubuntu.com/questions/65764/how-do-i-toggle-sound-with-amixer
+# https://wiki.archlinux.org/index.php/PulseAudio#volume_control
+# amixer set Master toggle
+# amixer -D pulse set Master 1+ toggle
+# https://askubuntu.com/questions/872014/mute-button-doesnt-unmute
 
 ## VolumeToggleMute
 alt + m
-	pactl set-sink-mute @DEFAULT_SINK@ toggle
+	amixer -q -D pulse sset Master toggle
 
 ## VolumeDecrease
 alt + comma
-	pactl set-sink-volume @DEFAULT_SINK@ -5000
+	amixer -q -D pulse sset Master 5%- unmute
 
 ## VolumeIncrease
 alt + period
-	pactl set-sink-volume @DEFAULT_SINK@ +5000
+	amixer -q -D pulse sset Master 5%+ unmute
 
 ## VolumeDecreaseSlowly
 alt + shift + comma
-	pactl set-sink-volume @DEFAULT_SINK@ -1000
+	amixer -q -D pulse sset Master 1%- unmute
 
 ## VolumeIncreaseSlowly
 alt + shift + period
-	pactl set-sink-volume @DEFAULT_SINK@ +1000
+	amixer -q -D pulse sset Master 1%+ unmute
 
 
 ## XF86Audio Key ##
 
 ## VolumeToggleMute
 XF86AudioMute
-	pactl set-sink-mute @DEFAULT_SINK@ toggle
+	amixer -q -D pulse sset Master toggle
 
 ## VolumeDecrease
 XF86AudioLowerVolume
-	pactl set-sink-volume @DEFAULT_SINK@ -5000
+	amixer -q -D pulse sset Master 5%- unmute
 
 ## VolumeIncrease
 XF86AudioRaiseVolume
-	pactl set-sink-volume @DEFAULT_SINK@ +5000
+	amixer -q -D pulse sset Master 5%+ unmute
 
 
 ##

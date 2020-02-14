@@ -1,0 +1,69 @@
+
+
+################################################################################
+### Head: System / Sound
+##
+
+## https://wiki.archlinux.org/index.php/Xbindkeys
+## https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture#Keyboard_volume_control
+## https://wiki.archlinux.org/index.php/PulseAudio#Keyboard_volume_control
+## https://zh.wikipedia.org/zh-tw/ALSA
+## https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture
+## https://zh.wikipedia.org/zh-tw/PulseAudio
+## https://en.wikipedia.org/wiki/PulseAudio
+
+## amixer (Package: alsa-utils)
+## pactl (Package: pulseaudio-utils)
+## pavucontrol (Package: pavucontrol)
+## pavucontrol-qt (Package: pavucontrol-qt)
+## mate-volume-control (Package: mate-media)
+
+
+## VolumeControl
+alt + shift + v
+	mate-volume-control
+	#pavucontrol
+	#pavucontrol-qt
+
+
+## https://wiki.archlinux.org/index.php/Xbindkeys#Volume_control
+
+## VolumeToggleMute
+alt + m
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+## VolumeDecrease
+alt + comma
+	pactl set-sink-volume @DEFAULT_SINK@ -5000
+
+## VolumeIncrease
+alt + period
+	pactl set-sink-volume @DEFAULT_SINK@ +5000
+
+## VolumeDecreaseSlowly
+alt + shift + comma
+	pactl set-sink-volume @DEFAULT_SINK@ -1000
+
+## VolumeIncreaseSlowly
+alt + shift + period
+	pactl set-sink-volume @DEFAULT_SINK@ +1000
+
+
+## XF86Audio Key ##
+
+## VolumeToggleMute
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+## VolumeDecrease
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -5000
+
+## VolumeIncrease
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5000
+
+
+##
+### Tail: System / Sound
+################################################################################

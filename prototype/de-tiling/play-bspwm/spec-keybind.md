@@ -148,3 +148,9 @@
 | --- | --- |
 | `Alt + Shitf + ,` | Volume Decrease Slowly |
 | `Alt + Shitf + .` | Volume Increase Slowly |
+
+| Key | Description |
+| --- | --- |
+| `XF86AudioMute` | Volume Toggle Mute |
+| `XF86AudioLowerVolume` | Volume Decrease |
+| `XF86AudioRaiseVolume` | Volume Increase |
