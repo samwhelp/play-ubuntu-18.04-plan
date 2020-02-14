@@ -8,6 +8,8 @@
 * [Launch App](#launch-app)
 * [Workspace](#workspace)
 * [Window](#window)
+* [Layout](#layout)
+* [Volume](#volume)
 
 
 ## Link
@@ -124,3 +126,25 @@
 | Key | Description |
 | --- | --- |
 | `Win + q` | Window Close |
+
+
+## Layout
+
+| Key | Description |
+| --- | --- |
+| `Alt + c` | Alternate between the tiled and monocle layout |
+
+
+## Volume
+
+| Key | Description |
+| --- | --- |
+| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) |
+| `Alt + m` | Volume Toggle Mute |
+| `Alt + ,` | Volume Decrease |
+| `Alt + .` | Volume Increase |
+
+| Key | Description |
+| --- | --- |
+| `Alt + Shitf + ,` | Volume Decrease Slowly |
+| `Alt + Shitf + .` | Volume Increase Slowly |

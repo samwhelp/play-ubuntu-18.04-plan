@@ -167,17 +167,17 @@
 
 ## Volume
 
-| Key | Description | Reference |
-| --- | --- | --- |
-| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | program |
-| `Alt + m` | Volume Toggle Mute | program |
-| `Alt + ,` | Volume Decrease | program |
-| `Alt + .` | Volume Increase | program |
+| Key | Description |
+| --- | --- |
+| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) |
+| `Alt + m` | Volume Toggle Mute |
+| `Alt + ,` | Volume Decrease |
+| `Alt + .` | Volume Increase |
 
-| Key | Description | Reference |
-| --- | --- | --- |
-| `Alt + Shitf + ,` | Volume Decrease Slowly | program |
-| `Alt + Shitf + .` | Volume Increase Slowly | program |
+| Key | Description |
+| --- | --- |
+| `Alt + Shitf + ,` | Volume Decrease Slowly |
+| `Alt + Shitf + .` | Volume Increase Slowly |
 
 
 
