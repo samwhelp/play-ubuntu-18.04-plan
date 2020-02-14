@@ -21,13 +21,13 @@
 
 	<keybind key="A-S-comma">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master 5%- unmute</command>
+			<command>amixer -q -D pulse sset Master 1%- unmute</command>
 		</action>
 	</keybind>
 
 	<keybind key="A-S-period">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master 5%+ unmute</command>
+			<command>amixer -q -D pulse sset Master 1%+ unmute</command>
 		</action>
 	</keybind>
 
