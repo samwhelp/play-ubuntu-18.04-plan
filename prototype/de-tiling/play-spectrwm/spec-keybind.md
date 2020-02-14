@@ -9,6 +9,7 @@
 * [Workspace](#workspace)
 * [Window](#window)
 * [Layout](#layout)
+* [Volume](#volume)
 
 
 ## Link
@@ -88,7 +89,7 @@
 | `Alt + Shift + g` | Launch File Manager (nautilus) | program |
 | `Alt + Shift + b` | Launch Web Browser (firefox) | program |
 | `Alt + Shift + e` | Launch Text Editor (gedit) | program |
-| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | program |
+
 
 
 ## Workspace
@@ -248,8 +249,8 @@ On Floating
 
 | Key | Description | Reference |
 | --- | --- | --- |
-| `Alt + m` | Toggle overall visibility of status bars | bar_toggle |
-| `Alt + n` | Toggle status bar on current workspace | bar_toggle_ws |
+| `Alt + n` | Toggle overall visibility of status bars | bar_toggle |
+| `Alt + Shift + n` | Toggle status bar on current workspace | bar_toggle_ws |
 
 
 ### Layout / Swap
@@ -291,3 +292,13 @@ On Floating
 > (.) for (>)
 
 > (/) for (?)
+
+
+## Volume
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | program |
+| `Alt + m` | Volume Mute | program |
+| `Alt + ,` | Volume Decrease | program |
+| `Alt + ,` | Volume Increase | program |
