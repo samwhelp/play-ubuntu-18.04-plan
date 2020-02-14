@@ -7,8 +7,8 @@
 * [Menu](#menu)
 * [Application Finder](#application-finder)
 * [Launch App](#launch-app)
-* [Workspace](#workspace)
 * [Show Desktop](#show-desktop)
+* [Workspace](#workspace)
 * [Window](#window)
 
 
@@ -275,3 +275,24 @@
 | `Win + Shift + j` | Window Tiling Move To East-North (Right-Top) |
 | `Win + Shift + h` | Window Tiling Move To West-South (Left-Bottom) |
 | `Win + Shift + l` | Window Tiling Move To East-South (Right-Bottom) |
+
+
+## Volume
+
+| Key | Description |
+| --- | --- |
+| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) |
+| `Alt + m` | Volume Toggle Mute |
+| `Alt + ,` | Volume Decrease |
+| `Alt + .` | Volume Increase |
+
+| Key | Description |
+| --- | --- |
+| `Alt + Shitf + ,` | Volume Decrease Slowly |
+| `Alt + Shitf + .` | Volume Increase Slowly |
+
+| Key | Description |
+| --- | --- |
+| `XF86AudioMute` | Volume Toggle Mute |
+| `XF86AudioLowerVolume` | Volume Decrease |
+| `XF86AudioRaiseVolume` | Volume Increase |
