@@ -85,7 +85,6 @@
 | `Alt + Shift + g` | Launch File Manager (nautilus) |
 | `Alt + Shift + b` | Launch Web Browser (firefox) |
 | `Alt + Shift + e` | Launch Text Editor (gedit) |
-| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) |
 
 
 ## Workspace
