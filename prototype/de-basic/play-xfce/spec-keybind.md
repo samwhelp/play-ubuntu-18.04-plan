@@ -10,6 +10,7 @@
 * [Show Desktop](#show-desktop)
 * [Workspace](#workspace)
 * [Window](#window)
+* [Volume](#volume)
 
 
 ## Link
@@ -281,7 +282,7 @@
 
 | Key | Description |
 | --- | --- |
-| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) |
+| `Alt + Shift + v` | Launch Volume Control (pavucontrol) |
 | `Alt + m` | Volume Toggle Mute |
 | `Alt + ,` | Volume Decrease |
 | `Alt + .` | Volume Increase |
