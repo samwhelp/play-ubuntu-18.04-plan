@@ -11,6 +11,10 @@ feh
 
 compton
 
+
+pulseaudio-utils
+pavucontrol
+#pavucontrol-qt
 alsa-utils
 #volumeicon-alsa
 mate-media

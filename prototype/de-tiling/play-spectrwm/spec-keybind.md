@@ -301,4 +301,9 @@ On Floating
 | `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | program |
 | `Alt + m` | Volume Mute | program |
 | `Alt + ,` | Volume Decrease | program |
-| `Alt + ,` | Volume Increase | program |
+| `Alt + .` | Volume Increase | program |
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Alt + Shitf + ,` | Volume Decrease Slowly | program |
+| `Alt + Shitf + .` | Volume Increase Slowly | program |
