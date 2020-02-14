@@ -9,6 +9,7 @@
 * [Show Desktop](#show-desktop)
 * [Workspace](#workspace)
 * [Window](#window)
+* [Layout](#layout)
 * [Volume](#volume)
 
 
@@ -163,6 +164,20 @@
 | --- | --- |
 | `Win + e` | Window Begin Move |
 | `Win + r` | Window Begin Resize |
+
+
+## Layout
+
+### Layout Toggle
+
+| Key | Description |
+| --- | --- |
+| `Alt + c` | Toggle Layout Next |
+
+| Key | Description |
+| --- | --- |
+| `Alt + ;` | Toggle Layout Prev |
+| `Alt + '` | Toggle Layout Next |
 
 
 ## Volume
