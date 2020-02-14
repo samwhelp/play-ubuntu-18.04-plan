@@ -73,8 +73,8 @@
 			<property name="&lt;Alt&gt;m" type="string" value="pactl set-sink-mute @DEFAULT_SINK@ toggle"/>
 			<property name="&lt;Alt&gt;comma" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ -5000"/>
 			<property name="&lt;Alt&gt;period" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ +5000"/>
-			<property name="&lt;Shift&gt;&lt;Alt&gt;less" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ +1000"/>
-			<property name="&lt;Shift&gt;&lt;Alt&gt;greater" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ -1000"/>
+			<property name="&lt;Shift&gt;&lt;Alt&gt;less" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ -1000"/>
+			<property name="&lt;Shift&gt;&lt;Alt&gt;greater" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ +1000"/>
 		</property>
 	</property>
 	<property name="xfwm4" type="empty">
