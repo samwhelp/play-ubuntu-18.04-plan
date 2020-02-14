@@ -627,8 +627,9 @@ awful.keyboard.append_global_keybindings({
 
 awful.keyboard.append_global_keybindings({
 
+	-- alt + `
 	awful.key(
-		{ key_alt }, '`', function () awful.layout.inc(-1) end,
+		{ key_alt }, 'grave', function () awful.layout.inc(-1) end,
 		{ description = 'Previous Layout', group = 'Layout' }
 	),
 
@@ -652,13 +653,13 @@ awful.keyboard.append_global_keybindings({
 		{ description = 'Next Layout', group = 'Layout' }
 	),
 
-	-- alt + :
+	-- alt + ;
 	awful.key(
 		{ key_alt }, 'semicolon', function () awful.layout.inc(-1) end,
 		{ description = 'Previous Layout', group = 'Layout' }
 	),
 
-	-- alt + ;
+	-- alt + '
 	awful.key(
 		{ key_alt }, 'apostrophe', function () awful.layout.inc(1) end,
 		{ description = 'Next Layout', group = 'Layout' }

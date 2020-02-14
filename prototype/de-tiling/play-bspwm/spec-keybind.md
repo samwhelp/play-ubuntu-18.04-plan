@@ -134,6 +134,23 @@
 | --- | --- |
 | `Alt + c` | Alternate between the tiled and monocle layout |
 
+| Key | Description |
+| --- | --- |
+| `Alt + grave` | Alternate between the tiled and monocle layout |
+| `Alt + Tab` | Alternate between the tiled and monocle layout |
+
+> grave means `
+
+| Key | Description |
+| --- | --- |
+| `Alt + k` | Alternate between the tiled and monocle layout |
+| `Alt + j` | Alternate between the tiled and monocle layout |
+
+| Key | Description |
+| --- | --- |
+| `Alt + ;` | Alternate between the tiled and monocle layout |
+| `Alt + '` | Alternate between the tiled and monocle layout |
+
 
 ## Volume
 

@@ -312,6 +312,29 @@ alt + c
 	bspc desktop -l next
 
 
+## alt + `
+alt + grave
+	bspc desktop -l prev
+
+alt + Tab
+	bspc desktop -l next
+
+
+## alt + ;
+alt + semicolon
+	bspc desktop -l prev
+
+## alt + '
+alt + apostrophe
+	bspc desktop -l next
+
+
+alt + k
+	bspc desktop -l prev
+
+alt + j
+	bspc desktop -l next
+
 ##
 ## Tail: Layout
 ################################################################################
