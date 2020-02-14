@@ -6,9 +6,10 @@
 * [Menu](#menu)
 * [System](#system)
 * [Launch App](#launch-app)
-* [Workspace](#workspace)
 * [Show Desktop](#show-desktop)
+* [Workspace](#workspace)
 * [Window](#window)
+* [Volume](#volume)
 
 
 ## Implement
@@ -163,6 +164,23 @@
 | --- | --- |
 | `Win + e` | Window Begin Move |
 | `Win + r` | Window Begin Resize |
+
+
+## Volume
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | program |
+| `Alt + m` | Volume Toggle Mute | program |
+| `Alt + ,` | Volume Decrease | program |
+| `Alt + .` | Volume Increase | program |
+
+| Key | Description | Reference |
+| --- | --- | --- |
+| `Alt + Shitf + ,` | Volume Decrease Slowly | program |
+| `Alt + Shitf + .` | Volume Increase Slowly | program |
+
+
 
 
 ## Reference
