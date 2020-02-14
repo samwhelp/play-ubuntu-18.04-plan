@@ -1374,6 +1374,8 @@ h l
 	</keybind>
 
 
+
+
 	<!-- ## Volume Control //-->
 	<keybind key="A-S-v">
 		<action name="Execute">
@@ -1384,8 +1386,6 @@ h l
 			<command>mate-volume-control</command>
 		</action>
 	</keybind>
-
-
 
 
 	<keybind key="A-m">
@@ -1409,13 +1409,13 @@ h l
 
 	<keybind key="A-S-comma">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master 5%- unmute</command>
+			<command>amixer -q -D pulse sset Master 1%- unmute</command>
 		</action>
 	</keybind>
 
 	<keybind key="A-S-period">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master 5%+ unmute</command>
+			<command>amixer -q -D pulse sset Master 1%+ unmute</command>
 		</action>
 	</keybind>
 

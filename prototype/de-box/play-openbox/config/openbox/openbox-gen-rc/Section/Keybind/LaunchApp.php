@@ -88,15 +88,3 @@
 			<command>gedit</command>
 		</action>
 	</keybind>
-
-
-	<!-- ## Volume Control //-->
-	<keybind key="A-S-v">
-		<action name="Execute">
-			<startupnotify>
-				<enabled>true</enabled>
-				<name>VolumeControl</name>
-			</startupnotify>
-			<command>mate-volume-control</command>
-		</action>
-	</keybind>
