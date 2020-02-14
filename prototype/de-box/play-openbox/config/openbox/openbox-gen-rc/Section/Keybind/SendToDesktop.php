@@ -187,7 +187,7 @@ h l
 
 ## Help
 
-* * http://openbox.org/wiki/Help:Actions#SendToDesktop
+* http://openbox.org/wiki/Help:Actions#SendToDesktop
 
 */
 ?>

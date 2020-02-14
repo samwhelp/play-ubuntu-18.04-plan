@@ -1387,6 +1387,62 @@ h l
 
 
 
+
+	<keybind key="A-m">
+		<action name="Execute">
+			<command>amixer -q -D pulse sset Master toggle</command>
+		</action>
+	</keybind>
+
+	<keybind key="A-comma">
+		<action name="Execute">
+			<command>amixer -q -D pulse sset Master 5%- unmute</command>
+		</action>
+	</keybind>
+
+	<keybind key="A-period">
+		<action name="Execute">
+			<command>amixer -q -D pulse sset Master 5%+ unmute</command>
+		</action>
+	</keybind>
+
+
+	<keybind key="A-S-comma">
+		<action name="Execute">
+			<command>amixer -q -D pulse sset Master 5%- unmute</command>
+		</action>
+	</keybind>
+
+	<keybind key="A-S-period">
+		<action name="Execute">
+			<command>amixer -q -D pulse sset Master 5%+ unmute</command>
+		</action>
+	</keybind>
+
+
+
+
+	<keybind key="XF86AudioMute">
+		<action name="Execute">
+			<command>amixer -q -D pulse sset Master toggle</command>
+		</action>
+	</keybind>
+
+	<keybind key="XF86AudioLowerVolume">
+		<action name="Execute">
+			<command>amixer -q -D pulse sset Master 5%- unmute</command>
+		</action>
+	</keybind>
+
+	<keybind key="XF86AudioRaiseVolume">
+		<action name="Execute">
+			<command>amixer -q -D pulse sset Master 5%+ unmute</command>
+		</action>
+	</keybind>
+
+
+
+
 	<!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
 	<keybind key="A-Print">
 		<action name="Execute">

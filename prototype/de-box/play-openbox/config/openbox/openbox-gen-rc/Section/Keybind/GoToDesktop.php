@@ -143,7 +143,7 @@ h l
 
 ## Help
 
-* * http://openbox.org/wiki/Help:Actions#GoToDesktop
+* http://openbox.org/wiki/Help:Actions#GoToDesktop
 
 */
 ?>

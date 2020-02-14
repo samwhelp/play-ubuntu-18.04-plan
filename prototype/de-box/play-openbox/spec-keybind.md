@@ -30,6 +30,7 @@
 * [Window Tiling Move / Corner](#window-tiling-move-corner)
 * [Rofi](#rofi)
 * [Launch App](#launch-app)
+* [Volume](#volume)
 * [Print](#print)
 
 
@@ -454,8 +455,28 @@
 | `Alt + Shift + g` | Launch File Manager (nautilus) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 | `Alt + Shift + b` | Launch Web Browser (firefox) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 | `Alt + Shift + e` | Launch Text Editor (gedit) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 
+
+## Volume
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + m` | Volume Toggle Mute | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + ,` | Volume Decrease | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + .` | Volume Increase | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Shitf + ,` | Volume Decrease Slowly | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shitf + .` | Volume Increase Slowly | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `XF86AudioMute` | Volume Toggle Mute | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `XF86AudioLowerVolume` | Volume Decrease | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `XF86AudioRaiseVolume` | Volume Increase | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 
 ## Print
 

@@ -37,6 +37,8 @@
 <?php include_once(__DIR__ . '/Keybind/Rofi.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/LaunchApp.php'); ?>
 
+
+<?php include_once(__DIR__ . '/Keybind/Volume.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/Print.php'); ?>
 
 </keyboard>
