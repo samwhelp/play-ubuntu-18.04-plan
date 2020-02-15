@@ -50,6 +50,25 @@ spectrwm_config_install () {
 
 
 ################################################################################
+### Head: stalonetray
+##
+
+stalonetray_config_install () {
+
+	echo "sudo install -m 755 ./config/stalonetray/spectrwm-stalonetray-restart.sh /usr/local/bin/spectrwm-stalonetray-restart.sh"
+	sudo install -m 755 "./config/stalonetray/spectrwm-stalonetray-restart.sh" "/usr/local/bin/spectrwm-stalonetray-restart.sh"
+
+	echo "sudo install -m 755 ./config/stalonetray/spectrwm-stalonetray-close.sh /usr/local/bin/spectrwm-stalonetray-close.sh"
+	sudo install -m 755 "./config/stalonetray/spectrwm-stalonetray-close.sh" "/usr/local/bin/spectrwm-stalonetray-close.sh"
+
+}
+
+##
+### Tail: stalonetray
+################################################################################
+
+
+################################################################################
 ### Head: tint2
 ##
 tint2_config_install () {
@@ -284,6 +303,8 @@ main_config_install () {
 	xsession_config_install
 
 	xresources_config_install
+
+	stalonetray_config_install
 }
 ## start
 main_config_install
