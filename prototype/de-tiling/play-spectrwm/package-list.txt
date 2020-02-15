@@ -4,6 +4,7 @@ spectrwm
 #xfonts-terminus
 
 #tint2
+stalonetray
 
 rofi
 
