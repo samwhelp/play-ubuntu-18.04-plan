@@ -12,12 +12,18 @@ xsession_config_install () {
 
 	## install
 	sudo install -m 644 "./config/xsession/spectrwm-session.desktop" "/usr/share/xsessions/spectrwm-session.desktop"
-	sudo install -m 755 "./config/xsession/spectrwm-session.sh" "/usr/bin/spectrwm-session.sh"
+	sudo install -m 755 "./config/xsession/spectrwm-session.sh" "/usr/local/bin/spectrwm-session.sh"
 
 	## check
 	ls -l "/usr/share/xsessions/spectrwm-session.desktop"
-	ls -l "/usr/bin/spectrwm-session.sh"
+	ls -l "/usr/local/bin/spectrwm-session.sh"
 
+}
+
+xresources_config_install () {
+	sudo install -m 755 "./config/xresources/xresources-load.sh" "/usr/local/bin/xresources-load.sh"
+
+	ls -l "/usr/local/bin/xresources-load.sh"
 }
 ##
 ### Tail: xsession
@@ -276,6 +282,8 @@ main_config_install () {
 	gtk2_config_install
 
 	xsession_config_install
+
+	xresources_config_install
 }
 ## start
 main_config_install

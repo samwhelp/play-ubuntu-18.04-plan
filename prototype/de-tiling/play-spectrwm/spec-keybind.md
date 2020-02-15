@@ -69,9 +69,9 @@
 
 | Key | Description | Reference |
 | --- | --- | --- |
-| `Alt + Enter` | Launch Terminal (sakura -m) | program |
-| `Alt + Shift + a` | Launch Terminal (sakura -m) | program |
-| `Alt + Shift + t` | Toggle Drop Down Terminal (tilix --quake) | program |
+| `Alt + Enter` | Launch Terminal (sakura) | program |
+| `Alt + Shift + a` | Launch Terminal (xterm) | program |
+| `Alt + Shift + t` | Launch Terminal (urxvt) | program |
 
 ### Rofi
 

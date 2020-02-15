@@ -37,8 +37,11 @@ fcitx-chewing
 pcmanfm-qt
 
 
-tilix
+#tilix
 sakura
+xterm
+rxvt-unicode
+stterm
 
 
 firefox
