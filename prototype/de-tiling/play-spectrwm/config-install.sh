@@ -61,6 +61,10 @@ stalonetray_config_install () {
 	echo "sudo install -m 755 ./config/stalonetray/spectrwm-stalonetray-close.sh /usr/local/bin/spectrwm-stalonetray-close.sh"
 	sudo install -m 755 "./config/stalonetray/spectrwm-stalonetray-close.sh" "/usr/local/bin/spectrwm-stalonetray-close.sh"
 
+	echo "sudo install -m 755 ./config/stalonetray/spectrwm-stalonetray-start.sh /usr/local/bin/spectrwm-stalonetray-start.sh"
+	sudo install -m 755 "./config/stalonetray/spectrwm-stalonetray-start.sh" "/usr/local/bin/spectrwm-stalonetray-start.sh"
+
+
 }
 
 ##
