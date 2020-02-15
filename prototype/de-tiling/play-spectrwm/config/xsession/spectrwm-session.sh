@@ -169,7 +169,7 @@ fcitx &
 ### Head: stalonetray
 ##
 
-spectrwm-stalonetray-start.sh &
+#spectrwm-stalonetray-start.sh &
 
 ##
 ### Tail: stalonetray
