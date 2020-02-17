@@ -70,6 +70,6 @@ edit ~/.config/ranger/rc.conf
 
 let
 
-``` sh
+```
 set vcs_aware true 
 ```
