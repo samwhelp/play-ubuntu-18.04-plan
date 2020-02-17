@@ -76,9 +76,11 @@ xresources-load.sh
 ## Just Wallpaper
 
 #THE_WALLPAPER_FILE_PATH="/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg"
-THE_WALLPAPER_FILE_PATH="/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg"
+#THE_WALLPAPER_FILE_PATH="/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg"
+#feh --bg-scale "$THE_WALLPAPER_FILE_PATH" &
 
-feh --bg-scale "$THE_WALLPAPER_FILE_PATH" &
+## move to ~/bin/wallpaper.sh
+wallpaper.sh
 
 ##
 ### Tail: Desktop
