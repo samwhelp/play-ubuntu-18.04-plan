@@ -20,7 +20,9 @@ run to install
 $ make -C fff install PREFIX=~/.local
 ```
 
-## Unstall
+## Uninstall
+
+run to uninstall
 
 ``` sh
 $ make -C fff uninstall PREFIX=~/.local
