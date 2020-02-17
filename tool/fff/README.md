@@ -41,3 +41,8 @@ Please run fff on
 * [xterm](https://packages.ubuntu.com/bionic/xterm)
 * [urxvt](https://packages.ubuntu.com/bionic/rxvt-unicode)
 * [st](https://st.suckless.org/) ([stterm](https://packages.ubuntu.com/bionic/stterm))
+
+
+## Reference
+
+* [make argument](../../concept/make/example/args)
