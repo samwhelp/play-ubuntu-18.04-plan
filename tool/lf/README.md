@@ -38,3 +38,12 @@ install
 $ install -m 755 lf ~/bin/
 ```
 
+## Option
+
+edit ~/.config/lf/lfrc
+
+
+``` 
+set icons
+set drawbox
+```
