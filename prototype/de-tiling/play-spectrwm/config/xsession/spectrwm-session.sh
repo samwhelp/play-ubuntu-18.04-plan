@@ -80,7 +80,7 @@ xresources-load.sh
 #feh --bg-scale "$THE_WALLPAPER_FILE_PATH" &
 
 ## move to ~/bin/wallpaper.sh
-wallpaper.sh
+wallpaper.sh &
 
 ##
 ### Tail: Desktop
