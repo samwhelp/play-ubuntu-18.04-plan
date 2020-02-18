@@ -4,10 +4,13 @@
 
 ## Subject
 
-* [Switch](#switch)
+* [Method Switch](#method-switch)
+* [Clipboard](#clipboard)
+* [Virtual Keyboard](#virtual-keyboard)
+* [Quick Phrase](#quick-phrase)
 
 
-## Switch
+## Method Switch
 
 | Key | Description |
 | --- | --- |
@@ -20,6 +23,40 @@
 | Key | Description |
 | --- | --- |
 | `Ctrl + ;` | 顯示剪貼簿 |
+
+
+## Virtual Keyboard
+
+| Key | Description |
+| --- | --- |
+| `Ctrl + Alt + b` | 切換顯示虛擬鍵盤 |
+
+
+## Quick Phrase
+
+| Key | Description |
+| --- | --- |
+| `Ctrl + /` | 顯示快速輸入 |
+
+My Setting
+
+* [~/.config/fcitx/conf/fcitx-quickphrase.config](config/fcitx/conf/fcitx-quickphrase.config)
+
+```
+AlternativeTriggerKey=CTRL_/
+```
+
+Default Phrase
+
+| File | Prefix |
+| --- | --- |
+| /usr/share/fcitx/data/quickphrase.d/emoji-eac.mb | : |
+| /usr/share/fcitx/data/quickphrase.d/emoji.mb | \ |
+| /usr/share/fcitx/data/quickphrase.d/latex.mb | (None) |
+
+User Phrase
+
+* ~/.config/fcitx/data/QuickPhrase.mb
 
 
 ## Explore
@@ -82,4 +119,20 @@ show
 Type=Hotkey
 DefaultValue=CTRL_;
 Description=Trigger Key for Clipboard History List
+```
+
+### Explore / Quick Phrase
+
+run
+
+``` sh
+$ dpkg -L fcitx-modules | grep '\.mb$'
+```
+
+show
+
+```
+/usr/share/fcitx/data/quickphrase.d/emoji-eac.mb
+/usr/share/fcitx/data/quickphrase.d/emoji.mb
+/usr/share/fcitx/data/quickphrase.d/latex.mb
 ```
