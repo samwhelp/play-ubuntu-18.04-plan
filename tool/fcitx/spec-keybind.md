@@ -40,7 +40,7 @@
 
 My Setting
 
-* [~/.config/fcitx/conf/fcitx-quickphrase.config](config/fcitx/conf/fcitx-quickphrase.config)
+* [~/.config/fcitx/conf/fcitx-quickphrase.config](config/fcitx/conf/fcitx-quickphrase.config#L9)
 
 ```
 AlternativeTriggerKey=CTRL_/
