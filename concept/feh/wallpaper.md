@@ -2,6 +2,7 @@
 ## Example
 
 * [bg-scale](example/wallpaper/bg-scale.sh)
+* [wallpaper.sh](example/wallpaper/wallpaper.sh)
 
 
 ## Help
