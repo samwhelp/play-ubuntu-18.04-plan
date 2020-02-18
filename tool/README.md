@@ -23,7 +23,7 @@
 
 ## File Finder
 
-* [fzf)(fzf)
+* [fzf](fzf)
 
 
 ## App Launcher
