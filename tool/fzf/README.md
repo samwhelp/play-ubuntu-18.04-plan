@@ -29,6 +29,8 @@ Please read
 * [hvim](https://github.com/samwhelp/tool-hvim)
 * [lvim](https://github.com/samwhelp/tool-lvim)
 
-| key |
-| `Space + ff` | 
+On vim or nvim
+
+| key squence |
+| `<Space>ff` | 
 

@@ -73,3 +73,19 @@ let
 ```
 set vcs_aware true 
 ```
+
+## Integration
+
+### vim
+
+* [ranger.vim](https://github.com/francoiscabrol/ranger.vim)
+
+#### Implementation
+
+* [hvim](https://github.com/samwhelp/tool-hvim)
+* [lvim](https://github.com/samwhelp/tool-lvim)
+* [mvim](https://github.com/samwhelp/tool-mvim)
+
+| key |
+| --- |
+| `Space + er' |

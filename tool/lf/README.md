@@ -60,7 +60,7 @@ set drawbox
 * [lvim](https://github.com/samwhelp/tool-lvim)
 * [mvim](https://github.com/samwhelp/tool-mvim)
 
-| key |
+| key squence |
 | --- |
 | `,f` |
-
+| `<Space>el' |
