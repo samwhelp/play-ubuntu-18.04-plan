@@ -666,10 +666,11 @@ awful.keyboard.append_global_keybindings({
 	),
 
 
-	awful.key(
-		{ key_alt }, 'c', function () awful.layout.inc(1) end,
-		{ description = 'Next Layout', group = 'Layout' }
-	),
+-- not use [alt + c] for fzf
+--	awful.key(
+--		{ key_alt }, 'c', function () awful.layout.inc(1) end,
+--		{ description = 'Next Layout', group = 'Layout' }
+--	),
 
 })
 

@@ -247,7 +247,6 @@ On Floating
 
 | Key | Description | Reference |
 | --- | --- | --- |
-| `Alt + c` | Cycle Layout | cycle_layout |
 | `Alt + v` | Toggle focused window between tiled and floating | float_toggle |
 | `Alt + b` | Swap the master and stacking areas | flip_layout |
 

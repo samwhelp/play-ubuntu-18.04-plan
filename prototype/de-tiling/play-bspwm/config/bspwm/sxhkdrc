@@ -308,8 +308,10 @@ super + {Left,Down,Up,Right}
 ##
 
 # alternate between the tiled and monocle layout
-alt + c
-	bspc desktop -l next
+
+## not use [alt + c] for fzf
+#alt + c
+#	bspc desktop -l next
 
 
 ## alt + `

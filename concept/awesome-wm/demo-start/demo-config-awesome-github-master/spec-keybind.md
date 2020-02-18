@@ -225,9 +225,6 @@
 
 ### Layout Toggle
 
-| Key | Description |
-| --- | --- |
-| `Alt + c` | Next Layout |
 
 | Key | Description |
 | --- | --- |

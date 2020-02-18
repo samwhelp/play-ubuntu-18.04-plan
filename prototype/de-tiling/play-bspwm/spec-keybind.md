@@ -130,9 +130,6 @@
 
 ## Layout
 
-| Key | Description |
-| --- | --- |
-| `Alt + c` | Alternate between the tiled and monocle layout |
 
 | Key | Description |
 | --- | --- |

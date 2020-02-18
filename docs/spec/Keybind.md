@@ -172,10 +172,6 @@
 
 | Key | Description |
 | --- | --- |
-| `Alt + c` | Toggle Layout Next |
-
-| Key | Description |
-| --- | --- |
 | `Alt + ;` | Toggle Layout Prev |
 | `Alt + '` | Toggle Layout Next |
 
