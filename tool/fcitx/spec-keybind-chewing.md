@@ -14,7 +14,9 @@
 | `grave` | 特殊符號選單 |
 
 > grave means backquote `
-> 在 1 左方的那個按鍵，就是 backquote `
+
+
+> 在 1 左方的那個按鍵
 
 
 | Key | Description | Val |
