@@ -36,11 +36,68 @@ fcitx_config_install_im_config () {
 
 
 ################################################################################
+### Head: fcitx / chewing
+##
+
+fcitx_config_install_chewing () {
+
+	echo "mkdir -p $HOME/.config/fcitx/conf"
+	mkdir -p "$HOME/.config/fcitx/conf"
+
+	echo "cp ./config/fcitx/conf/fcitx-chewing.config $HOME/.config/fcitx/conf/fcitx-chewing.config"
+	cp "./config/fcitx/conf/fcitx-chewing.config" "$HOME/.config/fcitx/conf/fcitx-chewing.config"
+
+}
+
+##
+### Tail: fcitx / chewing
+################################################################################
+
+
+################################################################################
+### Head: fcitx / classic-ui
+##
+
+fcitx_config_install_classic_ui () {
+
+	echo "cp ./config/fcitx/conf/fcitx-classic-ui.config $HOME/.config/fcitx/conf/fcitx-classic-ui.config"
+	cp "./config/fcitx/conf/fcitx-classic-ui.config" "$HOME/.config/fcitx/conf/fcitx-classic-ui.config"
+
+}
+
+##
+### Tail: fcitx / classic-ui
+################################################################################
+
+
+################################################################################
+### Head: fcitx / quickphrase
+##
+
+fcitx_config_install_quickphrase () {
+
+	echo "cp ./config/fcitx/conf/fcitx-quickphrase.config $HOME/.config/fcitx/conf/fcitx-quickphrase.config"
+	cp "./config/fcitx/conf/fcitx-quickphrase.config" "$HOME/.config/fcitx/conf/fcitx-quickphrase.config"
+
+}
+
+##
+### Tail: fcitx / quickphrase
+################################################################################
+
+
+################################################################################
 ### Head: main
 ##
 main_config_install () {
 
 	fcitx_config_install
+
+	fcitx_config_install_chewing
+
+	fcitx_config_install_classic_ui
+
+	fcitx_config_install_quickphrase
 
 }
 ## start
