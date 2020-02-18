@@ -7,11 +7,13 @@ set -e
 ### Head: fcitx
 ##
 fcitx_config_install () {
-	mkdir -p "$HOME/.config/fcitx"
-	echo "mkdir -p $HOME/.config/fcitx"
 
-	cp "./config/fcitx/profile" "$HOME/.config/fcitx/profile"
+	echo "mkdir -p $HOME/.config/fcitx"
+	mkdir -p "$HOME/.config/fcitx"
+
 	echo "cp ./config/fcitx/profile $HOME/.config/fcitx/profile"
+	cp "./config/fcitx/profile" "$HOME/.config/fcitx/profile"
+
 
 	fcitx_config_install_im_config
 
@@ -19,10 +21,13 @@ fcitx_config_install () {
 
 fcitx_config_install_im_config () {
 	echo
-	im-config -n fcitx
+
 	echo "im-config -n fcitx"
+	im-config -n fcitx
+
 	echo "cat ~/.xinputrc"
 	cat ~/.xinputrc
+
 	echo
 }
 ##

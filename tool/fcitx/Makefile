@@ -34,3 +34,8 @@ config-install:
 package-install:
 	@./package-install.sh
 .PHONY: package-install
+
+
+sync:
+	@./sync.sh
+.PHONY: sync
