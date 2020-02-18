@@ -1,4 +1,7 @@
 
+## Example
+
+* [example](example/slideshow)
 
 ## Help
 
