@@ -47,3 +47,20 @@ edit ~/.config/lf/lfrc
 set icons
 set drawbox
 ```
+
+## Integration
+
+### vim
+
+* [lf.vim](https://github.com/ptzz/lf.vim)
+
+#### Implementation
+
+* [hvim](https://github.com/samwhelp/tool-hvim)
+* [lvim](https://github.com/samwhelp/tool-lvim)
+* [mvim](https://github.com/samwhelp/tool-mvim)
+
+| key |
+| --- |
+| `,f` |
+
