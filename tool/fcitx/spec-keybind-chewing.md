@@ -13,8 +13,9 @@
 | --- | --- |
 | `grave` | 特殊符號選單 |
 
-> grave means backquote `
+> grave means grave accent or backquote or backtick `
 
+* https://zh.wikipedia.org/zh-tw/%E9%87%8D%E9%9F%B3%E7%AC%A6
 
 > 在 1 左方的那個按鍵
 
