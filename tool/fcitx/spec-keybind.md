@@ -58,6 +58,19 @@ User Phrase
 
 * ~/.config/fcitx/data/QuickPhrase.mb
 
+For Exmaple
+
+```
+.test 測試
+.hello 哈囉
+```
+
+每行視為一筆紀錄，兩個欄位，用空白隔開。
+
+| Key | Value |
+| --- | --- |
+| .test | 測試 |
+| .hello | 哈囉 |
 
 ## Explore
 
