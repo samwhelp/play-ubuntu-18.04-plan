@@ -5,6 +5,7 @@
 ## Spec
 
 * [keybind](spec-keybind.md)
+* [keybind-chewing](spec-keybind-chewing.md)
 
 
 ## Config Dir
