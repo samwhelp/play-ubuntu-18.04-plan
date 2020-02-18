@@ -90,4 +90,4 @@ On vim or nvim
 
 | key squence |
 | --- |
-| `<Space>er' |
+| `Space + e + r' |

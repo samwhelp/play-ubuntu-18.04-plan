@@ -33,5 +33,5 @@ On vim or nvim
 
 | key squence |
 | --- |
-| `<Space>ff` | 
+| `Space + f + f` | 
 
