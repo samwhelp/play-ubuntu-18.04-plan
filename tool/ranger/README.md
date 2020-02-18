@@ -86,6 +86,8 @@ set vcs_aware true
 * [lvim](https://github.com/samwhelp/tool-lvim)
 * [mvim](https://github.com/samwhelp/tool-mvim)
 
-| key |
+On vim or nvim
+
+| key squence |
 | --- |
-| `Space + er' |
+| `<Space>er' |

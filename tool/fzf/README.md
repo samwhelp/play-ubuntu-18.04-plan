@@ -32,5 +32,6 @@ Please read
 On vim or nvim
 
 | key squence |
+| --- |
 | `<Space>ff` | 
 
