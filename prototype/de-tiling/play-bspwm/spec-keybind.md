@@ -27,7 +27,14 @@
 | `Shift` | 'Shift' |
 | `Ctrl` | 'Control' |
 | `Win` | 'Mod4' (Super) |
-| `Alt` | 'Mod1' |
+| `Alt` | 'Mod1' (Meta) |
+
+> Using 'Alt' maybe collision occurs on bash emacs mode.
+>
+> Please read:
+> * $ man [bash](http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline) ## Search [^READLINE]
+> * $ man 3 [readline](http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html) ## Search [Emacs Mode] or [Emacs Meta bindings]
+
 
 ### Tips
 
@@ -53,8 +60,10 @@
 
 | Key | Description |
 | --- | --- |
-| `Alt + Enter` | Launch Terminal (sakura -m) |
-| `Alt + Shift + a` | Launch Terminal (sakura -m) |
+| `Alt + Enter` | Launch Terminal (sakura) |
+| `Alt + Shift + a` | Launch Terminal (xterm) |
+| `Alt + Shift + t` | Launch Terminal (urxvt) |
+
 
 ### Rofi
 
@@ -78,7 +87,7 @@
 
 | Key | Description |
 | --- | --- |
-| `Alt + Shift + t` | Launch dmenu (dmenu_run) |
+| `Alt + Shift + i` | Launch dmenu (dmenu_run) |
 
 
 ## Workspace
@@ -155,13 +164,19 @@
 | --- | --- |
 | `Alt + Shift + v` | Launch Volume Control (mate-volume-control) |
 | `Alt + m` | Volume Toggle Mute |
-| `Alt + ,` | Volume Decrease |
-| `Alt + .` | Volume Increase |
+
 
 | Key | Description |
 | --- | --- |
-| `Alt + Shitf + ,` | Volume Decrease Slowly |
-| `Alt + Shitf + .` | Volume Increase Slowly |
+| `Alt + Shitf + ,` | Volume Decrease |
+| `Alt + Shitf + .` | Volume Increase |
+| `Alt + Ctrl + ,` | Volume Decrease Slowly |
+| `Alt + Ctrl + .` | Volume Increase Slowly |
+
+> collision occurs on bash emacs mode
+> * `Alt + ,`
+> * `Alt + .`
+
 
 | Key | Description |
 | --- | --- |

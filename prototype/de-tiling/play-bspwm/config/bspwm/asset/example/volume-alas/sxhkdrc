@@ -10,6 +10,7 @@
 ## https://zh.wikipedia.org/zh-tw/PulseAudio
 ## https://en.wikipedia.org/wiki/PulseAudio
 
+## alsamixer (Package: alsa-utils)
 ## amixer (Package: alsa-utils)
 ## pactl (Package: pulseaudio-utils)
 ## pavucontrol (Package: pavucontrol)
@@ -35,19 +36,19 @@ alt + m
 	amixer -q -D pulse sset Master toggle
 
 ## VolumeDecrease
-alt + comma
+alt + shift + comma
 	amixer -q -D pulse sset Master 5%- unmute
 
 ## VolumeIncrease
-alt + period
+alt + shift + period
 	amixer -q -D pulse sset Master 5%+ unmute
 
 ## VolumeDecreaseSlowly
-alt + shift + comma
+alt + ctrl + comma
 	amixer -q -D pulse sset Master 1%- unmute
 
 ## VolumeIncreaseSlowly
-alt + shift + period
+alt + ctrl + period
 	amixer -q -D pulse sset Master 1%+ unmute
 
 
@@ -64,6 +65,16 @@ XF86AudioLowerVolume
 ## VolumeIncrease
 XF86AudioRaiseVolume
 	amixer -q -D pulse sset Master 5%+ unmute
+
+
+
+##
+## collision occurs on bash emacs mode
+## * `Alt + ,`
+## * `Alt + .`
+## * http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html#default%20key%20bindings
+## * http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline
+##
 
 
 ##

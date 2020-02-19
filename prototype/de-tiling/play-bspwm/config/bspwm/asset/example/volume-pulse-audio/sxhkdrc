@@ -12,6 +12,7 @@
 ## https://zh.wikipedia.org/zh-tw/PulseAudio
 ## https://en.wikipedia.org/wiki/PulseAudio
 
+## alsamixer (Package: alsa-utils)
 ## amixer (Package: alsa-utils)
 ## pactl (Package: pulseaudio-utils)
 ## pavucontrol (Package: pavucontrol)
@@ -62,6 +63,16 @@ XF86AudioLowerVolume
 ## VolumeIncrease
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +5000
+
+
+
+##
+## collision occurs on bash emacs mode
+## * `Alt + ,`
+## * `Alt + .`
+## * http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html#default%20key%20bindings
+## * http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline
+##
 
 
 ##

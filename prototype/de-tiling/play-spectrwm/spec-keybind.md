@@ -325,3 +325,10 @@ On Floating
 > * `Alt + .`
 > * http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html#default%20key%20bindings
 > * http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readlin
+
+
+| Key | Description |
+| --- | --- |
+| `XF86AudioMute` | Volume Toggle Mute |
+| `XF86AudioLowerVolume` | Volume Decrease |
+| `XF86AudioRaiseVolume` | Volume Increase |
