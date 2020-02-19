@@ -248,7 +248,7 @@ On Floating
 | Key | Description | Reference |
 | --- | --- | --- |
 | `Alt + v` | Toggle focused window between tiled and floating | float_toggle |
-| `Alt + b` | Swap the master and stacking areas | flip_layout |
+| `Alt + ;` | Swap the master and stacking areas | flip_layout |
 
 
 | Key | Description | Reference |
