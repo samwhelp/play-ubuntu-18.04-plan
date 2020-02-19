@@ -39,12 +39,11 @@
 | `Win` | 'Mod4' (Super) |
 | `Alt` | 'Mod1' (Meta) |
 
-> Using 'Alt' maybe collision occurs on bash emacs mode
-
-Please read:
-
-* $ man [bash](http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline) ## Search [^READLINE]
-* $ man 3 [readline](http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html) ## Search [Emacs Mode] or [Emacs Meta bindings]
+> Using 'Alt' maybe collision occurs on bash emacs mode.
+>
+> Please read:
+> * $ man [bash](http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline) ## Search [^READLINE]
+> * $ man 3 [readline](http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html) ## Search [Emacs Mode] or [Emacs Meta bindings]
 
 
 ### Tips
@@ -300,11 +299,9 @@ On Floating
 | `Alt + Ctrl + space` | Reset layout | stack_reset |
 | `Alt + Ctrl + /` | Balance master/stacking area | stack_balance |
 
-> (,) for (<)
-
-> (.) for (>)
-
-> (/) for (?)
+> * (,) for (<)
+> * (.) for (>)
+> * (/) for (?)
 
 
 ## Volume
