@@ -46,6 +46,25 @@ openbox_put_showrootmenu_desktop_entry () {
 
 
 ################################################################################
+### Head: xresources
+##
+
+xresources_config_install () {
+
+	echo "mkdir -p $HOME/bin"
+	mkdir -p "$HOME/bin"
+
+	echo "install -m 755 ./config/xresources/xresources-load.sh $HOME/bin/xresources-load.sh"
+	install -m 755 "./config/xresources/xresources-load.sh" "$HOME/bin/xresources-load.sh"
+
+}
+
+##
+### Tail: xresources
+################################################################################
+
+
+################################################################################
 ### Head: wallpaper
 ##
 wallpaper_config_install () {
@@ -272,6 +291,8 @@ gtk2_config_install () {
 main_config_install () {
 
 	openbox_config_install
+
+	xresources_config_install
 
 	wallpaper_config_install
 
