@@ -42,12 +42,31 @@ sxhkd_config_install () {
 
 
 ################################################################################
+### Head: xresources
+##
+
+xresources_config_install () {
+
+	echo "mkdir -p $HOME/bin"
+	mkdir -p "$HOME/bin"
+
+	echo "install -m 755 ./config/xresources/xresources-load.sh $HOME/bin/xresources-load.sh"
+	install -m 755 "./config/xresources/xresources-load.sh" "$HOME/bin/xresources-load.sh"
+
+}
+
+##
+### Tail: xresources
+################################################################################
+
+
+################################################################################
 ### Head: wallpaper
 ##
 wallpaper_config_install () {
 
-	mkdir -p "$HOME/.bin"
-	echo "mkdir -p $HOME/.bin/"
+	mkdir -p "$HOME/bin"
+	echo "mkdir -p $HOME/bin/"
 
 	cp "./config/wallpaper/wallpaper.sh" "$HOME/bin/wallpaper.sh"
 	echo "cp ./config/wallpaper/wallpaper.sh $HOME/bin/wallpaper.sh"
@@ -271,6 +290,8 @@ main_config_install () {
 	bspwm_config_install
 
 	sxhkd_config_install
+
+	xresources_config_install
 
 	wallpaper_config_install
 

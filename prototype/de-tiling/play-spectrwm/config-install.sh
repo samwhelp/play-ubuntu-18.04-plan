@@ -20,13 +20,33 @@ xsession_config_install () {
 
 }
 
+##
+### Tail: xsession
+################################################################################
+
+
+################################################################################
+### Head: xresources
+##
+
 xresources_config_install () {
+
+	echo "mkdir -p $HOME/bin"
+	mkdir -p "$HOME/bin"
+
+	echo "install -m 755 ./config/xresources/xresources-load.sh $HOME/bin/xresources-load.sh"
+	install -m 755 "./config/xresources/xresources-load.sh" "$HOME/bin/xresources-load.sh"
+
+}
+
+xresources_config_install_global () {
 	sudo install -m 755 "./config/xresources/xresources-load.sh" "/usr/local/bin/xresources-load.sh"
 
 	ls -l "/usr/local/bin/xresources-load.sh"
 }
+
 ##
-### Tail: xsession
+### Tail: xresources
 ################################################################################
 
 
@@ -35,8 +55,8 @@ xresources_config_install () {
 ##
 wallpaper_config_install () {
 
-	mkdir -p "$HOME/.bin"
-	echo "mkdir -p $HOME/.bin/"
+	mkdir -p "$HOME/bin"
+	echo "mkdir -p $HOME/bin/"
 
 	cp "./config/wallpaper/wallpaper.sh" "$HOME/bin/wallpaper.sh"
 	echo "cp ./config/wallpaper/wallpaper.sh $HOME/bin/wallpaper.sh"
