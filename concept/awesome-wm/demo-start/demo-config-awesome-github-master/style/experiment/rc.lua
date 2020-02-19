@@ -285,7 +285,9 @@ textclock_main = wibox.widget.textclock()
 screen.connect_signal('request::desktop_decoration', function(s)
 	-- Each screen has its own tag table.
 	-- awful.tag({ '1', '2', '3', '4', '5', '6', '7', '8', '9' }, s, awful.layout.layouts[1])
-	awful.tag({ 'Term', 'Edit', 'Web', 'File', 'Misc', 'Free'}, s, awful.layout.layouts[1])
+	--awful.tag({ 'Term', 'Edit', 'Web', 'File', 'Misc', 'Free'}, s, awful.layout.layouts[1])
+	awful.tag({ 'Term', 'Edit', 'Web', 'File', 'Misc'}, s, awful.layout.layouts[1])
+
 
 	-- Create a promptbox for each screen
 	s.promptbox_main = awful.widget.prompt()
@@ -490,17 +492,17 @@ awful.keyboard.append_global_keybindings({
 awful.keyboard.append_global_keybindings({
 	awful.key(
 		{ key_alt }, 'Return', function () awful.spawn(terminal) end,
-		{ description = 'Terminal', group = 'App'}
+		{ description = 'Terminal(sakura)', group = 'App'}
 	),
 
 	awful.key(
-		{ key_alt, key_shift }, 'a', function () awful.spawn(terminal) end,
-		{ description = 'Terminal', group = 'App'}
+		{ key_alt, key_shift }, 'a', function () awful.spawn('xterm') end,
+		{ description = 'Terminal(xterm)', group = 'App'}
 	),
 
 	awful.key(
-		{ key_alt, key_shift }, 't', function () awful.spawn('tilix --quake') end,
-		{ description = 'Tilix Quake', group = 'App'}
+		{ key_alt, key_shift }, 't', function () awful.spawn('urxvt') end,
+		{ description = 'Terminal(urxvt)', group = 'App'}
 	),
 
 })
@@ -1002,22 +1004,22 @@ awful.keyboard.append_global_keybindings({
 	),
 
 	awful.key(
-		{ key_alt }, 'comma', function () awful.spawn('amixer -q -D pulse sset Master 5%- unmute') end,
+		{ key_alt, key_shift }, 'comma', function () awful.spawn('amixer -q -D pulse sset Master 5%- unmute') end,
 		{ description = 'Volume Decrease', group = 'Volume'}
 	),
 
 	awful.key(
-		{ key_alt }, 'period', function () awful.spawn('amixer -q -D pulse sset Master 5%+ unmute') end,
+		{ key_alt, key_shift }, 'period', function () awful.spawn('amixer -q -D pulse sset Master 5%+ unmute') end,
 		{ description = 'Volume Increase', group = 'Volume'}
 	),
 
 	awful.key(
-		{ key_alt, key_shift }, 'comma', function () awful.spawn('amixer -q -D pulse sset Master 1%- unmute') end,
+		{ key_alt, key_ctrl }, 'comma', function () awful.spawn('amixer -q -D pulse sset Master 1%- unmute') end,
 		{ description = 'Volume Decrease Slowly', group = 'Volume'}
 	),
 
 	awful.key(
-		{ key_alt, key_shift }, 'period', function () awful.spawn('amixer -q -D pulse sset Master 1%+ unmute') end,
+		{ key_alt, key_ctrl }, 'period', function () awful.spawn('amixer -q -D pulse sset Master 1%+ unmute') end,
 		{ description = 'Volume Increase Slowly', group = 'Volume'}
 	),
 
@@ -1273,32 +1275,32 @@ awful.rules.rules = {
 
 	-- {
 	-- 	rule = { instance = 'sakura' },
-	-- 	properties = { tag = 'Term' or '1' or 'Free' }
+	-- 	properties = { tag = 'Term' or '1' or 'Misc' }
 	-- },
 
 	{
 		rule = { instance = 'atom' },
-		properties = { tag = 'Edit' or '2' or 'Free' }
+		properties = { tag = 'Edit' or '2' or 'Misc' }
 	},
 
 	{
 		rule = { class = 'Firefox' },
-		properties = { tag = 'Web' or '3' or 'Free'}
+		properties = { tag = 'Web' or '3' or 'Misc'}
 	},
 
 	{
 		rule = { instance = 'pcmanfm-qt' },
-		properties = { tag = 'File' or '4' or 'Free' }
+		properties = { tag = 'File' or '4' or 'Misc' }
 	},
 
 	{
 		rule = { instance = 'gimp' },
-		properties = { tag = 'Misc' or '1' or 'Free' }
+		properties = { tag = 'Misc' or '5' or 'Term' }
 	},
 
 	{
 		rule = { instance = 'Xephyr' },
-		properties = { tag = 'Free' or '6' or 'Misc' }
+		properties = { tag = 'Misc' or '5' or 'Term' }
 	},
 
 }
@@ -1352,9 +1354,9 @@ client.connect_signal('request::titlebars', function(c)
 			layout = wibox.layout.fixed.horizontal(),
 			awful.titlebar.widget.floatingbutton (c),
 			awful.titlebar.widget.maximizedbutton(c),
-			awful.titlebar.widget.stickybutton   (c),
-			awful.titlebar.widget.ontopbutton	(c),
-			awful.titlebar.widget.closebutton	(c),
+			awful.titlebar.widget.stickybutton (c),
+			awful.titlebar.widget.ontopbutton (c),
+			awful.titlebar.widget.closebutton (c),
 		},
 
 	}

@@ -100,8 +100,8 @@
 | Key | Description |
 | --- | --- |
 | `Alt + Enter` | Launch Terminal (sakura) |
-| `Alt + Shift + a` | Launch Terminal (sakura) |
-| `Alt + Shift + t` | Toggle Drop Down Terminal (tilix --quake) |
+| `Alt + Shift + a` | Launch Terminal (xterm) |
+| `Alt + Shift + t` | Launch Terminal (urxvt) |
 
 ### Rofi
 
@@ -119,7 +119,7 @@
 | `Alt + Shift + g` | Launch File Manager (nautilus) |
 | `Alt + Shift + b` | Launch Web Browser (firefox) |
 | `Alt + Shift + e` | Launch Text Editor (gedit) |
-| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) |
+
 
 
 ## Show Desktop
@@ -291,13 +291,19 @@
 | --- | --- |
 | `Alt + Shift + v` | Launch Volume Control (mate-volume-control) |
 | `Alt + m` | Volume Toggle Mute |
-| `Alt + ,` | Volume Decrease |
-| `Alt + .` | Volume Increase |
+
 
 | Key | Description |
 | --- | --- |
-| `Alt + Shitf + ,` | Volume Decrease Slowly |
-| `Alt + Shitf + .` | Volume Increase Slowly |
+| `Alt + Shitf + ,` | Volume Decrease |
+| `Alt + Shitf + .` | Volume Increase |
+| `Alt + Ctrl + ,` | Volume Decrease Slowly |
+| `Alt + Ctrl + .` | Volume Increase Slowly |
+
+> collision occurs on bash emacs mode
+> * `Alt + ,`
+> * `Alt + .`
+
 
 | Key | Description |
 | --- | --- |
