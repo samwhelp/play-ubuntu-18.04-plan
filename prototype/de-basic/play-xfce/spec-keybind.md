@@ -43,8 +43,15 @@
 | --- | --- |
 | `Shift` | 'Shift' |
 | `Ctrl` | 'Control' |
-| `Win` | 'Mod4' (Super)|
-| `Alt` | 'Mod1' |
+| `Win` | 'Mod4' (Super) |
+| `Alt` | 'Mod1' (Meta) |
+
+> Using 'Alt' maybe collision occurs on bash emacs mode.
+>
+> Please read:
+> * $ man [bash](http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline) ## Search [^READLINE]
+> * $ man 3 [readline](http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html) ## Search [Emacs Mode] or [Emacs Meta bindings]
+
 
 ### Tips
 
@@ -52,6 +59,8 @@
 | --- | --- |
 | `Win` | For Window (Client) |
 | `Alt` | For Workspace (Tag) (Desktop) |
+| `Shift` | For Window Move or Swap |
+| `Ctrl` | For Window Resize |
 
 
 ## Menu
@@ -282,15 +291,21 @@
 
 | Key | Description |
 | --- | --- |
-| `Alt + Shift + v` | Launch Volume Control (pavucontrol) |
+| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) |
 | `Alt + m` | Volume Toggle Mute |
-| `Alt + ,` | Volume Decrease |
-| `Alt + .` | Volume Increase |
+
 
 | Key | Description |
 | --- | --- |
-| `Alt + Shitf + ,` | Volume Decrease Slowly |
-| `Alt + Shitf + .` | Volume Increase Slowly |
+| `Alt + Shitf + ,` | Volume Decrease |
+| `Alt + Shitf + .` | Volume Increase |
+| `Alt + Ctrl + ,` | Volume Decrease Slowly |
+| `Alt + Ctrl + .` | Volume Increase Slowly |
+
+> collision occurs on bash emacs mode
+> * `Alt + ,`
+> * `Alt + .`
+
 
 | Key | Description |
 | --- | --- |

@@ -71,10 +71,10 @@
 			<property name="&lt;Super&gt;c" type="string" value="xfdesktop --windowlist"/>
 			<property name="&lt;Shift&gt;&lt;Alt&gt;v" type="string" value="pavucontrol"/>
 			<property name="&lt;Alt&gt;m" type="string" value="amixer -q -D pulse sset Master toggle"/>
-			<property name="&lt;Alt&gt;comma" type="string" value="amixer -q -D pulse sset Master 5%- unmute"/>
-			<property name="&lt;Alt&gt;period" type="string" value="amixer -q -D pulse sset Master 5%+ unmute"/>
-			<property name="&lt;Shift&gt;&lt;Alt&gt;less" type="string" value="amixer -q -D pulse sset Master 1%- unmute"/>
-			<property name="&lt;Shift&gt;&lt;Alt&gt;greater" type="string" value="amixer -q -D pulse sset Master 1%+ unmute"/>
+			<property name="&lt;Shift&gt;&lt;Alt&gt;less" type="string" value="amixer -q -D pulse sset Master 5%- unmute"/>
+			<property name="&lt;Shift&gt;&lt;Alt&gt;greater" type="string" value="amixer -q -D pulse sset Master 5%+ unmute"/>
+			<property name="&lt;Primary&gt;&lt;Alt&gt;comma" type="string" value="amixer -q -D pulse sset Master 1%- unmute"/>
+			<property name="&lt;Primary&gt;&lt;Alt&gt;period" type="string" value="amixer -q -D pulse sset Master 1%+ unmute"/>
 			<property name="XF86AudioMute" type="string" value="amixer -q -D pulse sset Master toggle"/>
 			<property name="XF86AudioLowerVolume" type="string" value="amixer -q -D pulse sset Master 5%- unmute"/>
 			<property name="XF86AudioRaiseVolume" type="string" value="amixer -q -D pulse sset Master 5%+ unmute"/>
