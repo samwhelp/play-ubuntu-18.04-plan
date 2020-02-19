@@ -349,9 +349,6 @@
 		<action name="ToggleShowDesktop"/>
 	</keybind>
 
-	<keybind key="A-d">
-		<action name="ToggleShowDesktop"/>
-	</keybind>
 
 	<keybind key="A-C-d">
 		<action name="ToggleShowDesktop"/>
@@ -1394,26 +1391,26 @@ h l
 		</action>
 	</keybind>
 
-	<keybind key="A-comma">
+	<keybind key="A-S-comma">
 		<action name="Execute">
 			<command>amixer -q -D pulse sset Master 5%- unmute</command>
 		</action>
 	</keybind>
 
-	<keybind key="A-period">
+	<keybind key="A-S-period">
 		<action name="Execute">
 			<command>amixer -q -D pulse sset Master 5%+ unmute</command>
 		</action>
 	</keybind>
 
 
-	<keybind key="A-S-comma">
+	<keybind key="A-C-comma">
 		<action name="Execute">
 			<command>amixer -q -D pulse sset Master 1%- unmute</command>
 		</action>
 	</keybind>
 
-	<keybind key="A-S-period">
+	<keybind key="A-C-period">
 		<action name="Execute">
 			<command>amixer -q -D pulse sset Master 1%+ unmute</command>
 		</action>

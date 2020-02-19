@@ -18,26 +18,26 @@
 		</action>
 	</keybind>
 
-	<keybind key="A-comma">
+	<keybind key="A-S-comma">
 		<action name="Execute">
 			<command>amixer -q -D pulse sset Master 5%- unmute</command>
 		</action>
 	</keybind>
 
-	<keybind key="A-period">
+	<keybind key="A-S-period">
 		<action name="Execute">
 			<command>amixer -q -D pulse sset Master 5%+ unmute</command>
 		</action>
 	</keybind>
 
 
-	<keybind key="A-S-comma">
+	<keybind key="A-C-comma">
 		<action name="Execute">
 			<command>amixer -q -D pulse sset Master 1%- unmute</command>
 		</action>
 	</keybind>
 
-	<keybind key="A-S-period">
+	<keybind key="A-C-period">
 		<action name="Execute">
 			<command>amixer -q -D pulse sset Master 1%+ unmute</command>
 		</action>
@@ -82,11 +82,21 @@
 
 
 ## Command And Package
+* alsamixer (Package: alsa-utils)
 * amixer (Package: alsa-utils)
 * pactl (Package: pulseaudio-utils)
 * pavucontrol (Package: pavucontrol)
 * pavucontrol-qt (Package: pavucontrol-qt)
 * mate-volume-control (Package: mate-media)
+
+
+##
+## collision occurs on bash emacs mode
+## * `Alt + ,`
+## * `Alt + .`
+## * http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html#default%20key%20bindings
+## * http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline
+##
 
 */
 ?>

@@ -125,7 +125,6 @@
 | Key | Description | Doc |
 | --- | --- | --- |
 | `Win + d` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
-| `Alt + d` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
 | `Ctrl + Win + d` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
 | `Ctrl + Alt + d` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
 
@@ -463,13 +462,18 @@
 | --- | --- | --- |
 | `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 | `Alt + m` | Volume Toggle Mute | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + ,` | Volume Decrease | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + .` | Volume Increase | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
 
 | Key | Description | Doc |
 | --- | --- | --- |
-| `Alt + Shitf + ,` | Volume Decrease Slowly | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shitf + .` | Volume Increase Slowly | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shitf + ,` | Volume Decrease | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shitf + .` | Volume Increase | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Ctrl + ,` | Volume Decrease Slowly | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Ctrl + .` | Volume Increase Slowly | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+> collision occurs on bash emacs mode
+> * `Alt + ,`
+> * `Alt + .`
 
 
 | Key | Description | Doc |

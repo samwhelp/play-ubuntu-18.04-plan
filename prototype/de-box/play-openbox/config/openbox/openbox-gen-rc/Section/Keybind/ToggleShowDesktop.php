@@ -4,9 +4,14 @@
 		<action name="ToggleShowDesktop"/>
 	</keybind>
 
+<?php
+/*
+	<!-- collision occurs on bash emacs mode //-->
 	<keybind key="A-d">
 		<action name="ToggleShowDesktop"/>
 	</keybind>
+*/
+?>
 
 	<keybind key="A-C-d">
 		<action name="ToggleShowDesktop"/>
