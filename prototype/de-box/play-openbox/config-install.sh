@@ -69,8 +69,8 @@ xresources_config_install () {
 ##
 wallpaper_config_install () {
 
-	mkdir -p "$HOME/.bin"
-	echo "mkdir -p $HOME/.bin/"
+	mkdir -p "$HOME/bin"
+	echo "mkdir -p $HOME/bin/"
 
 	cp "./config/wallpaper/wallpaper.sh" "$HOME/bin/wallpaper.sh"
 	echo "cp ./config/wallpaper/wallpaper.sh $HOME/bin/wallpaper.sh"
