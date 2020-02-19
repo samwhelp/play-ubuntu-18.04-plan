@@ -34,11 +34,9 @@
 * [~/.config/awesome/rc.lua](rc.lua)
 * [~/.config/awesome/style/experiment/rc.lua](style/experiment/rc.lua)
 
-> Search `append_global_keybindings`
-
-> Search `append_client_keybindings`
-
-> Search `request::default_keybindings`
+> * Search `append_global_keybindings`
+> * Search `append_client_keybindings`
+> * Search `request::default_keybindings`
 
 
 ## Keys
@@ -50,7 +48,14 @@
 | `Shift` | 'Shift' |
 | `Ctrl` | 'Control' |
 | `Win` | 'Mod4' (Super) |
-| `Alt` | 'Mod1' |
+| `Alt` | 'Mod1' (Meta) |
+
+> Using 'Alt' maybe collision occurs on bash emacs mode.
+>
+> Please read:
+> * $ man [bash](http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline) ## Search [^READLINE]
+> * $ man 3 [readline](http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html) ## Search [Emacs Mode] or [Emacs Meta bindings]
+
 
 ### Tips
 
@@ -58,6 +63,8 @@
 | --- | --- |
 | `Win` | For Window (Client) |
 | `Alt` | For Workspace (Tag) (Desktop) |
+| `Shift` | For Window Move or Swap |
+| `Ctrl` | For Window Resize |
 
 
 ## Hotkeys Help
@@ -278,11 +285,10 @@
 | --- | --- |
 | `Alt + Ctrl + ,` | Decrease the number of columns |
 | `Alt + Ctrl + .` | Increase the number of columns |
-| `Alt + Ctrl + /` | Balance master/stacking area | stack_balance |
 
-> (,) for (<)
 
-> (.) for (>)
+> * (,) for (<)
+> * (.) for (>)
 
 
 ## Volume
