@@ -30,7 +30,15 @@
 | `Shift` | 'Shift' |
 | `Ctrl` | 'Control' |
 | `Win` | 'Mod4' (Super) |
-| `Alt` | 'Mod1' |
+| `Alt` | 'Mod1' (Meta) |
+
+> Using 'Alt' maybe collision occurs on bash emacs mode
+
+Please read:
+
+* $ man [bash](http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline) ## Search [^READLINE]
+* $ man 3 [readline](http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html) ## Search [Emacs Mode] or [Emacs Meta bindings]
+
 
 ### Tips
 
@@ -40,6 +48,7 @@
 | `Alt` | For Workspace (Tag) (Desktop) |
 | `Shift` | For Window Move or Swap |
 | `Ctrl` | For Window Resize |
+
 
 
 ## Menu
@@ -184,6 +193,10 @@
 | `Alt + m` | Volume Toggle Mute |
 | `Alt + ,` | Volume Decrease |
 | `Alt + .` | Volume Increase |
+
+> collision occurs on bash emacs mode
+> * `Alt + ,`
+> * `Alt + .`
 
 | Key | Description |
 | --- | --- |
