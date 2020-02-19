@@ -46,6 +46,24 @@ openbox_put_showrootmenu_desktop_entry () {
 
 
 ################################################################################
+### Head: wallpaper
+##
+wallpaper_config_install () {
+
+	mkdir -p "$HOME/.bin"
+	echo "mkdir -p $HOME/.bin/"
+
+	cp "./config/wallpaper/wallpaper.sh" "$HOME/bin/wallpaper.sh"
+	echo "cp ./config/wallpaper/wallpaper.sh $HOME/bin/wallpaper.sh"
+
+
+}
+##
+### Tail: wallpaper
+################################################################################
+
+
+################################################################################
 ### Head: tint2
 ##
 tint2_config_install () {
@@ -254,6 +272,8 @@ gtk2_config_install () {
 main_config_install () {
 
 	openbox_config_install
+
+	wallpaper_config_install
 
 	tint2_config_install
 
