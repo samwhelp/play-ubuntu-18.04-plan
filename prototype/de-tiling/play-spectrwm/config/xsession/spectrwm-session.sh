@@ -21,7 +21,7 @@
 #test -f "$HOME/.Xresources" && xrdb -merge "$HOME/.Xresources"
 #/usr/local/bin/xresources-load.sh
 
-xresources-load.sh &
+xresources-load.sh
 
 
 ##
