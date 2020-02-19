@@ -191,17 +191,19 @@ Please read:
 | --- | --- |
 | `Alt + Shift + v` | Launch Volume Control (mate-volume-control) |
 | `Alt + m` | Volume Toggle Mute |
-| `Alt + ,` | Volume Decrease |
-| `Alt + .` | Volume Increase |
+
+
+| Key | Description |
+| --- | --- |
+| `Alt + Shitf + ,` | Volume Decrease |
+| `Alt + Shitf + .` | Volume Increase |
+| `Alt + Ctrl + ,` | Volume Decrease Slowly |
+| `Alt + Ctrl + .` | Volume Increase Slowly |
 
 > collision occurs on bash emacs mode
 > * `Alt + ,`
 > * `Alt + .`
 
-| Key | Description |
-| --- | --- |
-| `Alt + Shitf + ,` | Volume Decrease Slowly |
-| `Alt + Shitf + .` | Volume Increase Slowly |
 
 | Key | Description |
 | --- | --- |
