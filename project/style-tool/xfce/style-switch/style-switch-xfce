@@ -661,7 +661,7 @@ ss_obsidian_2_gray_config_ui_theme () {
 
 ss_obsidian_2_gray_config_icon_theme () {
 
-	sys_xfce_set_icon_theme 'Nord-Black-Frost-Suru'
+	sys_xfce_set_icon_theme 'Black-Frost-Suru'
 
 }
 
@@ -752,7 +752,7 @@ ss_fantome_wm_2bxfwm_lucy_config_ui_theme () {
 
 ss_fantome_wm_2bxfwm_lucy_config_icon_theme () {
 
-	sys_xfce_set_icon_theme 'Nord-Black-Frost-Suru'
+	sys_xfce_set_icon_theme 'Black-Frost-Suru'
 
 }
 
@@ -932,7 +932,7 @@ ss_sephia_wm_honda_super_cub_config_ui_theme () {
 
 ss_sephia_wm_honda_super_cub_config_icon_theme () {
 
-	sys_xfce_set_icon_theme 'Nord-Black-Frost-Numix'
+	sys_xfce_set_icon_theme 'Black-Frost-Numix'
 
 }
 
