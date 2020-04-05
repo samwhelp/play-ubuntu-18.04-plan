@@ -37,10 +37,10 @@ theme_config_install_ui_theme () {
 theme_config_install_icon_theme () {
 
 	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
-	## <property name="IconThemeName" type="string" value="Nord-Black-Frost-Numix"/>
+	## <property name="IconThemeName" type="string" value="Black-Frost-Numix"/>
 
-	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Nord-Black-Frost-Numix'
-	echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Nord-Black-Frost-Numix'"
+	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Black-Frost-Numix'
+	echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Black-Frost-Numix'"
 
 }
 
