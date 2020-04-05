@@ -37,10 +37,10 @@ theme_config_install_ui_theme () {
 theme_config_install_icon_theme () {
 
 	## ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
-	## <property name="IconThemeName" type="string" value="Nord-Black-Frost-Suru"/>
+	## <property name="IconThemeName" type="string" value="Black-Frost-Suru"/>
 
-	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Nord-Black-Frost-Suru'
-	echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Nord-Black-Frost-Suru'"
+	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Black-Frost-Suru'
+	echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Black-Frost-Suru'"
 
 }
 
