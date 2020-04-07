@@ -32,6 +32,16 @@ gnome_terminal_conf_set () {
 	echo '### Head: gnome_terminal_conf_set ##############################################'
 	echo '#'
 
+
+
+	echo
+	echo 'gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false'
+	gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false
+	
+
+	echo
+	echo 
+
 	## https://wiki.gnome.org/Apps/Terminal/FAQ
 	## $ dpkg -L gnome-terminal | grep gschema
 	## /usr/share/glib-2.0/schemas/org.gnome.Terminal.gschema.xml
@@ -40,6 +50,11 @@ gnome_terminal_conf_set () {
 	local profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
 	profile=${profile:1:-1} # remove leading and trailing single quotes
 	echo "profile=${profile}"
+
+	
+	echo
+	echo "gsettings set \"org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${profile}/\" scrollbar-policy 'never'"
+	gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${profile}/" scrollbar-policy 'never'	
 
 	echo
 	echo 'gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${profile}/" use-theme-colors false'
