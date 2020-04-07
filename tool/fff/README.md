@@ -30,10 +30,10 @@ $ make -C fff uninstall PREFIX=~/.local
 
 ## Image Preview
 
-run to install (Package: [w3m-img](https://packages.ubuntu.com/bionic/w3m-img))
+run to install (Package: [w3m-img](https://packages.ubuntu.com/bionic/w3m-img)) (Package: [xdotool](https://packages.ubuntu.com/bionic/xdotool)) (Package: [fbset](https://packages.ubuntu.com/bionic/fbset))
 
 ``` sh
-$ sudo apt-get install w3m-img
+$ sudo apt-get install w3m-img xdotool fbset
 ```
 
 Please run fff on
