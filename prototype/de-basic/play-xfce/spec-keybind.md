@@ -159,7 +159,7 @@
 
 
 | Key | Description |
-| --- | --- | --- |
+| --- | --- |
 | `Alt + Win + k` | Send To Up Workspace |
 | `Alt + Win + j` | Send To Down Workspace |
 | `Alt + Win + h` | Send To Left Workspace |
