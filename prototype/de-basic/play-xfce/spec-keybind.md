@@ -158,7 +158,7 @@
 | `Alt + Win + s` | Send To Next Workspace |
 
 
-| Key | How to set | Description |
+| Key | Description |
 | --- | --- | --- |
 | `Alt + Win + k` | Send To Up Workspace |
 | `Alt + Win + j` | Send To Down Workspace |
