@@ -271,20 +271,20 @@
 
 | Key | Description |
 | --- | --- |
-| `Win + Ctrl + k` | Window Tiling Move To North (Top) |
-| `Win + Ctrl + j` | Window Tiling Move To South (Bottom) |
-| `Win + Ctrl + h` | Window Tiling Move To West (Left) |
-| `Win + Ctrl + l` | Window Tiling Move To East (Right) |
+| `Alt + Ctrl + k` | Window Tiling Move To North (Top) |
+| `Alt + Ctrl + j` | Window Tiling Move To South (Bottom) |
+| `Alt + Ctrl + h` | Window Tiling Move To West (Left) |
+| `Alt + Ctrl + l` | Window Tiling Move To East (Right) |
 
 
-## Window Tiling Move / Corner
+### Window Tiling Move / Corner
 
 | Key | Description |
 | --- | --- |
-| `Win + Shift + k` | Window Tiling Move To West-North (Left-Top) |
-| `Win + Shift + j` | Window Tiling Move To East-North (Right-Top) |
-| `Win + Shift + h` | Window Tiling Move To West-South (Left-Bottom) |
-| `Win + Shift + l` | Window Tiling Move To East-South (Right-Bottom) |
+| `Alt + Shift + k` | Window Tiling Move To West-North (Left-Top) |
+| `Alt + Shift + j` | Window Tiling Move To East-North (Right-Top) |
+| `Alt + Shift + h` | Window Tiling Move To West-South (Left-Bottom) |
+| `Alt + Shift + l` | Window Tiling Move To East-South (Right-Bottom) |
 
 
 ## Volume

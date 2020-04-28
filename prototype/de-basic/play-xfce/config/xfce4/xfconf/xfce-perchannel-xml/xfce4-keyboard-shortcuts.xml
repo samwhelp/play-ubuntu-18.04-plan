@@ -178,14 +178,14 @@
 			<property name="&lt;Super&gt;x" type="string" value="hide_window_key"/>
 			<property name="&lt;Super&gt;e" type="string" value="move_window_key"/>
 			<property name="&lt;Super&gt;r" type="string" value="resize_window_key"/>
-			<property name="&lt;Shift&gt;&lt;Super&gt;k" type="string" value="tile_up_left_key"/>
-			<property name="&lt;Shift&gt;&lt;Super&gt;j" type="string" value="tile_up_right_key"/>
-			<property name="&lt;Shift&gt;&lt;Super&gt;h" type="string" value="tile_down_left_key"/>
-			<property name="&lt;Shift&gt;&lt;Super&gt;l" type="string" value="tile_down_right_key"/>
-			<property name="&lt;Primary&gt;&lt;Super&gt;k" type="string" value="tile_up_key"/>
-			<property name="&lt;Primary&gt;&lt;Super&gt;j" type="string" value="tile_down_key"/>
-			<property name="&lt;Primary&gt;&lt;Super&gt;h" type="string" value="tile_left_key"/>
-			<property name="&lt;Primary&gt;&lt;Super&gt;l" type="string" value="tile_right_key"/>
+			<property name="&lt;Shift&gt;&lt;Alt&gt;k" type="string" value="tile_up_left_key"/>
+			<property name="&lt;Shift&gt;&lt;Alt&gt;j" type="string" value="tile_up_right_key"/>
+			<property name="&lt;Shift&gt;&lt;Alt&gt;h" type="string" value="tile_down_left_key"/>
+			<property name="&lt;Shift&gt;&lt;Alt&gt;l" type="string" value="tile_down_right_key"/>
+			<property name="&lt;Primary&gt;&lt;Alt&gt;k" type="string" value="tile_up_key"/>
+			<property name="&lt;Primary&gt;&lt;Alt&gt;j" type="string" value="tile_down_key"/>
+			<property name="&lt;Primary&gt;&lt;Alt&gt;h" type="string" value="tile_left_key"/>
+			<property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="tile_right_key"/>
 			<property name="&lt;Super&gt;d" type="string" value="show_desktop_key"/>
 			<property name="&lt;Super&gt;z" type="string" value="fill_window_key"/>
 			<property name="&lt;Shift&gt;&lt;Super&gt;z" type="string" value="fill_horiz_key"/>
