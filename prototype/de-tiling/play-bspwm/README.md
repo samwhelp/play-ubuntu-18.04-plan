@@ -20,10 +20,10 @@
 ## Config File
 
 * [~/.config/bspwm/bspwmrc](config/bspwm/bspwmrc)
-* [~/.config/bspwm/sxhkd/sxhkdrc](config/sxhkd/sxhkdrc)
+* [~/.config/bspwm/sxhkd/sxhkdrc](config/bspwm/sxhkd/sxhkdrc)
 
 
-## Usage
+## Howto
 
 ### install
 

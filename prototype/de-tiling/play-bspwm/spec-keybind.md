@@ -137,6 +137,63 @@
 | `Win + q` | Window Close |
 
 
+### Window Move
+
+On Floating
+
+| Key | Description |
+| --- | --- |
+| `Win + Shift + k` | Window Move To North (Up) |
+| `Win + Shift + j` | Window Move To South (Down) |
+| `Win + Shift + h` | Window Move To West (Left) |
+| `Win + Shift + l` | Window Move To East (Right) |
+
+
+| Key | Description |
+| --- | --- |
+| `Win + Up` | Window Move To North (Up) |
+| `Win + Down` | Window Move To South (Down) |
+| `Win + Left` | Window Move To West (Left) |
+| `Win + Right` | Window Move To East (Right) |
+
+
+### Window Resize
+
+On Floating or Tiled
+
+| Key | Description |
+| --- | --- |
+| `Win + Ctrl + k` | Move the bottom edge up, shrinking the window height |
+| `Win + Ctrl + j` | Move the bottom edge down, growing the window height |
+| `Win + Ctrl + h` | Move the right edge left, shrinking the window width |
+| `Win + Ctrl + l` | Move the right edge right, growing the window width |
+
+
+| Key | Description |
+| --- | --- |
+| `Win + Ctrl + i` | Move the top edge up, growing the window height |
+| `Win + Ctrl + u` | Move the top edge down, shrinking the window height |
+| `Win + Ctrl + y` | Move the left edge left, growing the window width |
+| `Win + Ctrl + o` | Move the left edge right, shrinking the window width |
+
+
+
+| Key | Description |
+| --- | --- |
+| `Win + Ctrl + Up` | Move the bottom edge up, shrinking the window height |
+| `Win + Ctrl + Down` | Move the bottom edge down, growing the window height |
+| `Win + Ctrl + Left` | Move the right edge left, shrinking the window width |
+| `Win + Ctrl + Right` | Move the right edge right, growing the window width |
+
+
+| Key | Description |
+| --- | --- |
+| `Win + Shift + Up` | Move the top edge up, growing the window height |
+| `Win + Shift + Down` | Move the top edge down, shrinking the window height |
+| `Win + Shift + Left` | Move the left edge left, growing the window width |
+| `Win + Shift + Right` | Move the left edge right, shrinking the window width |
+
+
 ## Layout
 
 
