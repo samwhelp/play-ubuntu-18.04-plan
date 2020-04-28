@@ -1,7 +1,7 @@
 
 
 	<!-- Version: [k j h l] //-->
-	<keybind key="W-C-k">
+	<keybind key="A-C-k">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>0</x>
@@ -11,7 +11,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-C-j">
+	<keybind key="A-C-j">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>0</x>
@@ -21,7 +21,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-C-h">
+	<keybind key="A-C-h">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>0</x>
@@ -31,7 +31,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-C-l">
+	<keybind key="A-C-l">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>-0</x>
@@ -45,7 +45,7 @@
 
 
 	<!-- Version: [Up Down Left Right] //-->
-	<keybind key="W-C-Up">
+	<keybind key="A-C-Up">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>0</x>
@@ -55,7 +55,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-C-Down">
+	<keybind key="A-C-Down">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>0</x>
@@ -65,7 +65,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-C-Left">
+	<keybind key="A-C-Left">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>0</x>
@@ -75,7 +75,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-C-Right">
+	<keybind key="A-C-Right">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>-0</x>
@@ -91,6 +91,7 @@
 ## Help
 
 * https://thomashunter.name/posts/2019-01-27-treating-openbox-like-a-tiling-windowmanager
+* http://openbox.org/wiki/Help:Actions#MoveResizeTo
 
 */
 ?>

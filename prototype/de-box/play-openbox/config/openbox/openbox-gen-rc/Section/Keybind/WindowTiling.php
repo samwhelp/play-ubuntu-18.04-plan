@@ -1,7 +1,7 @@
 
 
 	<!-- Vertical tiling -->
-	<keybind key="W-C-i">
+	<keybind key="A-C-i">
 		<action name="Undecorate"/>
 		<action name="UnmaximizeFull"/>
 		<action name="MoveResizeTo">
@@ -32,7 +32,7 @@
 
 
 	<!-- Horizontal tiling -->
-	<keybind key="W-C-u">
+	<keybind key="A-C-u">
 		<action name="Undecorate"/>
 		<action name="UnmaximizeFull"/>
 		<action name="MoveResizeTo">
@@ -63,7 +63,7 @@
 
 
 	<!-- Restore window dimensions -->
-	<keybind key="W-C-o">
+	<keybind key="A-C-o">
 		<action name="UnmaximizeFull"/>
 		<action name="Decorate"/>
 		<action name="NextWindow">
@@ -82,6 +82,7 @@
 ## Help
 
 * https://askubuntu.com/questions/516303/tiling-windows-horizontally-and-vertically-under-lubuntu-lxde-openbox
+* http://openbox.org/wiki/Help:Actions#MoveResizeTo
 
 */
 ?>

@@ -154,6 +154,8 @@ h l
 		</action>
 	</keybind>
 	//-->
+
+	<!--
 	<keybind key="W-Right">
 		<action name="DirectionalCycleWindows">
 			<direction>right</direction>
@@ -177,6 +179,8 @@ h l
 			<direction>down</direction>
 		</action>
 	</keybind>
+
+	//-->
 
 <?php
 /*

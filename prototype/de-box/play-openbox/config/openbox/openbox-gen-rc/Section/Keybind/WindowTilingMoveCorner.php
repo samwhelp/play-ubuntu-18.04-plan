@@ -1,6 +1,6 @@
 
 	<!-- Version: [k j h l] //-->
-	<keybind key="W-S-k">
+	<keybind key="A-S-k">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>0</x>
@@ -10,7 +10,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-S-j">
+	<keybind key="A-S-j">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>-0</x>
@@ -20,7 +20,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-S-h">
+	<keybind key="A-S-h">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>0</x>
@@ -30,7 +30,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-S-l">
+	<keybind key="A-S-l">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>-0</x>
@@ -43,7 +43,7 @@
 
 
 	<!-- Version: [Up Down Left Right] //-->
-	<keybind key="W-S-Up">
+	<keybind key="A-S-Up">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>0</x>
@@ -53,7 +53,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-S-Down">
+	<keybind key="A-S-Down">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>-0</x>
@@ -63,7 +63,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-S-Left">
+	<keybind key="A-S-Left">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>0</x>
@@ -73,7 +73,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-S-Right">
+	<keybind key="A-S-Right">
 		<action name="Unmaximize" />
 		<action name="MoveResizeTo">
 			<x>-0</x>
@@ -88,7 +88,7 @@
 
 ## Help
 
-* http://openbox.org/wiki/Help:Actions#ToggleShade
+* http://openbox.org/wiki/Help:Actions#MoveResizeTo
 
 */
 ?>
