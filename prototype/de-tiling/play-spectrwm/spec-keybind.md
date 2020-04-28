@@ -224,10 +224,10 @@ On Floating
 
 | Key | Description | Reference |
 | --- | --- | --- |
-| `Win + Shift + k` | Window Move Up | move_up |
-| `Win + Shift + j` | Window Move Down | move_down |
-| `Win + Shift + h` | Window Move Left | move_left |
-| `Win + Shift + l` | Window Move Right | move_right |
+| `Win + Shift + k` | Window Move To North (Up) | move_up |
+| `Win + Shift + j` | Window Move To South (Down) | move_down |
+| `Win + Shift + h` | Window Move To West (Left) | move_left |
+| `Win + Shift + l` | Window Move To East (Right) | move_right |
 
 
 ### Window Resize
@@ -236,10 +236,10 @@ On Floating
 
 | Key | Description | Reference |
 | --- | --- | --- |
-| `Win + Ctrl + k` | Window Height Shrink | height_shrink |
-| `Win + Ctrl + j` | Window Height Grow | height_grow |
-| `Win + Ctrl + h` | Window Width Shrink | width_shrink |
-| `Win + Ctrl + l` | Window Width Grow | width_grow |
+| `Win + Ctrl + k` | Move the bottom edge up, shrinking the window height | height_shrink |
+| `Win + Ctrl + j` | Move the bottom edge down, growing the window height | height_grow |
+| `Win + Ctrl + h` | Move the right edge left, shrinking the window width | width_shrink |
+| `Win + Ctrl + l` | Move the right edge right, growing the window width | width_grow |
 
 
 
