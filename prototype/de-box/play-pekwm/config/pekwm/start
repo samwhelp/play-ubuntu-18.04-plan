@@ -21,12 +21,51 @@
 
 
 ################################################################################
+### Head: Manual
+##
+
+
+# $ man pekwm
+# $ dpkg -L pekwm | grep etc
+
+
+##
+### Tail: Manual
+################################################################################
+
+
+################################################################################
+### Head: Xresources
+##
+
+
+#test -f "$HOME/.Xresources" && xrdb -load "$HOME/.Xresources"
+#test -f "$HOME/.Xresources" && xrdb -merge "$HOME/.Xresources"
+#/usr/local/bin/xresources-load.sh
+
+xresources-load.sh
+
+
+##
+### Tail: Xresources
+################################################################################
+
+
+################################################################################
 ### Head: Network
 ##
 
 ## network manager applet
-sleep 1 &&
+#sleep 1 &&
 nm-applet &
+
+## Note: use /etc/xdg/autostart/nm-applet.desktop
+
+
+## blueman-applet (Package: blueman)
+#blueman-applet
+## Note: use /etc/xdg/autostart/blueman.desktop
+
 
 ##
 ### Tail: Network
@@ -34,14 +73,19 @@ nm-applet &
 
 
 ################################################################################
-### Head: Mixer
+### Head: Volume
 ##
 
-## sound mixer
+
+## volumeicon (Package: volumeicon-alsa)
 #volumeicon &
 
+
+## mate-volume-control-status-icon (Package: mate-media)
+mate-volume-control-status-icon &
+
 ##
-### Tail: Mixer
+### Tail: Volume
 ################################################################################
 
 
@@ -58,23 +102,48 @@ nm-applet &
 #xfdesktop &
 
 ## Just Wallpaper
-feh --bg-scale "/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg" &
+
+#THE_WALLPAPER_FILE_PATH="/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg"
+#THE_WALLPAPER_FILE_PATH="/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg"
+#THE_WALLPAPER_FILE_PATH="/usr/share/backgrounds/Frozen_sunset_on_the_lake_by_Manuel_Arslanyan.jpg"
+##feh --bg-scale "$THE_WALLPAPER_FILE_PATH" &
+
+## move to ~/bin/wallpaper.sh
+wallpaper.sh &
+
 
 ##
 ### Tail: Desktop
 ################################################################################
 
 
-
 ################################################################################
 ### Head: Panel
 ##
+
+## stalonetray
+#stalonetray &
+
+## Panel
+
+## tint2
+#tint2 &
+tint2 -c "$HOME/.pekwm/tint2/tint2rc" &
+
+## xfce4-panel
+#xfce4-panel &
 
 ## fbpanel
 #fbpanel &
 
 ## lxpanel
 #lxpanel &
+
+## lxqt-panel
+#lxqt-panel &
+
+## cairo-dock
+#cairo-dock &
 
 ##
 ### Tail: Panel
@@ -88,7 +157,8 @@ feh --bg-scale "/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg"
 ## compton
 #compton &
 #compton --config ~/.config/compton/compton.conf &
-#compton --config ~/.pekwm/compton/compton.conf &
+
+compton --config "$HOME/.pekwm/compton/compton.conf" &
 
 
 ##
@@ -97,13 +167,68 @@ feh --bg-scale "/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg"
 
 
 ################################################################################
-### Head: Shortcut
+### Head: Hotkeys
 ##
+
 
 ## global key shortcut
+## Just use ~/.pekwm/keys
+
+
+#sxhkd &
+#sxhkd -c "$HOME/.pekwm/sxhkd/sxhkdrc" &
+
+
 #lxqt-globalkeysd &
-#Or just use ~/.pekwm/keys
+#lxqt-globalkeysd --config-file="$HOME/.pekwm/lxqt/globalkeyshortcuts.conf" &
+
 
 ##
-### Tail: Shortcut
+### Tail: Hotkeys
+################################################################################
+
+
+################################################################################
+### Head: Policykit Agent
+##
+
+## [policykit-1-gnome]
+## $ dpkg -L policykit-1-gnome | grep desktop
+## /etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop
+## $ grep '^Exec=' $(dpkg -L policykit-1-gnome | grep desktop)
+## Exec=/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+## $ grep '^Exec=' $(dpkg -L policykit-1-gnome | grep desktop) | cut -d '=' -f 2
+## /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+
+## [lxqt-policykit]
+## $ dpkg -L lxqt-policykit | grep desktop
+## /etc/xdg/autostart/lxqt-policykit-agent.desktop
+## $ grep '^Exec=' $(dpkg -L lxqt-policykit | grep desktop)
+## Exec=lxqt-policykit-agent
+## $ grep '^Exec=' $(dpkg -L lxqt-policykit | grep desktop) | cut -d '=' -f 2
+## lxqt-policykit-agent
+
+#lxqt-policykit-agent &
+
+
+##
+### Tail: Policykit Agent
+################################################################################
+
+
+################################################################################
+### Head: Screen Saver
+##
+
+
+## xscreensaver
+## /etc/xdg/autostart/xscreensaver.desktop
+/usr/share/xscreensaver/xscreensaver-wrapper.sh -no-splash &
+
+
+##
+### Tail: Screen Saver
 ################################################################################

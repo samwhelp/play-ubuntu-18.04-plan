@@ -2,11 +2,23 @@
 pekwm
 pekwm-themes
 
+xdotool
+
+xscreensaver
+
 rofi
 feh
 compton
 
-volumeicon-alsa
+tint2
+
+
+#volumeicon-alsa
+mate-media
+
+
+policykit-1-gnome
+#lxqt-policykit
 
 
 numix-gtk-theme
@@ -23,7 +35,7 @@ fcitx-chewing
 pcmanfm-qt
 
 
-tilix
+#tilix
 sakura
 
 

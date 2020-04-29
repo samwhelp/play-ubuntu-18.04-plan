@@ -1,15 +1,43 @@
 # Swap comments on the two following lines to switch betwen
 # click does not raise and click to raise.
-$CLIENT_CLICK = "Focus"
-# $CLIENT_CLICK = "Focus; Raise"
+#$CLIENT_CLICK = "Focus"
+$CLIENT_CLICK = "Focus; Raise"
 
 # Base mouse configuration
 INCLUDE = "$_PEKWM_ETC_PATH/mouse_system"
 
 # Swap comments on the two folling lines to switch between
 # sloppy and click to focus
-INCLUDE = "$_PEKWM_ETC_PATH/mouse_sloppy"
-# INCLUDE = "$_PEKWM_ETC_PATH/mouse_click"
+#INCLUDE = "$_PEKWM_ETC_PATH/mouse_sloppy"
+INCLUDE = "$_PEKWM_ETC_PATH/mouse_click"
 
 # Add configuration overrides here, it possible to add sections,
 # sub-section and values overriding/adding specific values.
+
+
+################################################################################
+### Head: Root
+##
+
+##/etc/pekwm/mouse_system
+
+Root {
+	ButtonRelease = "3" { Actions = "ShowMenu Root" }
+	ButtonRelease = "2" { Actions = "ShowMenu Goto" }
+	ButtonRelease = "Mod4 2" { Actions = "ShowMenu GotoClient" }
+	# Horizontal movement
+	ButtonRelease = "4" { Actions = "GoToWorkspace Prev" }
+	ButtonRelease = "5" { Actions = "GoToWorkspace Next" }
+	ButtonRelease = "Mod1 4" { Actions = "GoToWorkspace Left" }
+	ButtonRelease = "Mod1 5" { Actions = "GoToWorkspace Right" }
+	# Vertical movement
+	ButtonRelease = "Shift 4" { Actions = "GoToWorkspace PrevV" }
+	ButtonRelease = "Shift 5" { Actions = "GoToWorkspace NextV" }
+	ButtonRelease = "Mod1 Shift 4" { Actions = "GoToWorkspace Up" }
+	ButtonRelease = "Mod1 Shift 5" { Actions = "GoToWorkspace Down" }
+	ButtonRelease = "1" { Actions = "HideAllMenus" }
+}
+
+##
+### Tail: Root
+################################################################################

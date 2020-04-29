@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Exec=rofi -show window -show-icons
+TryExec=rofi
+Icon=view-list
+Categories=System;Utility;
+Keywords=rofi;window;switch;
+
+Name=Rofi Show Window
+GenericName=Rofi-Show-Window
+Comment=Rofi Show Window
+
+Name[zh_TW]=視窗切換選單
+GenericName[zh_TW]=Rofi-Show-Window
+Comment[zh_TW]=視窗切換選單

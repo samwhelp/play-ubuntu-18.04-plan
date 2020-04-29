@@ -4,7 +4,14 @@
 INCLUDE = "vars"
 
 RootMenu = "Pekwm" {
+
 	Entry = "Terminal" { Actions = "Exec $TERM &" }
+	Entry = "Text Editor" { Actions = "Exec mousepad" }
+	Entry = "Web Browser" { Actions = "Exec firefox" }
+	Entry = "File Manager" { Actions = "Exec pcmanfm-qt" }
+
+	Entry = "Rofi Show Drun" { Actions = "Exec rofi -show drun -show-icons" }
+
 	Entry = "Run.." { Actions = "ShowCmdDialog" }
 
 	Separator {}

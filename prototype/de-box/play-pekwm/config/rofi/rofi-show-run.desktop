@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Exec=rofi -show run
+TryExec=rofi
+Icon=system-run
+Categories=System;Utility;
+Keywords=rofi;launch;launcher;run;runer;
+
+Name=Rofi Show Run
+GenericName=Rofi-Show-Run
+Comment=Rofi Show Run
+
+Name[zh_TW]=程式啟動選單
+GenericName[zh_TW]=Rofi-Show-Run
+Comment[zh_TW]=程式啟動選單

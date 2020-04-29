@@ -1,6 +1,332 @@
 INCLUDE = "vars"
 
 Global {
+
+################################################################################
+## Head: Menu
+##
+
+	KeyPress = "Mod4 space" { Actions = "ShowMenu Root" }
+	KeyPress = "Mod4 c" { Actions = "ShowMenu GotoClient" }
+	KeyPress = "Mod4 Shift c" { Actions = "ShowMenu Goto" }
+	KeyPress = "Mod1 space" { Actions = "ShowMenu Window" }
+
+##
+## Tail: Menu
+################################################################################
+
+
+################################################################################
+## Head: System
+##
+
+## Shutdown
+	KeyPress = "Mod1 Shift z" { Actions = "Exec shutdown now" }
+
+## Logout
+	KeyPress = "Mod1 Shift x" { Actions = "Exit" }
+
+## Reload
+	KeyPress = "Mod1 Shift c" { Actions = "Reload" }
+	#KeyPress = "Mod1 Shift c" { Actions = "Restart" }
+
+##
+## Tail: System
+################################################################################
+
+
+################################################################################
+## Head: Launch App / Terminal
+##
+
+	KeyPress = "Mod1 Return" { Actions = "Exec sakura -m" }
+	KeyPress = "Mod1 Shift a" { Actions = "Exec xterm" }
+	KeyPress = "Mod1 Shift t" { Actions = "Exec urxvt" }
+
+##
+## Tail: Launch App / Terminal
+################################################################################
+
+
+################################################################################
+## Head: Launch App / Rofi
+##
+
+	KeyPress = "Mod1 Shift d" { Actions = "Exec rofi -show drun -show-icons" }
+	KeyPress = "Mod1 Shift w" { Actions = "Exec rofi -show window -show-icons" }
+	KeyPress = "Mod1 Shift r" { Actions = "Exec rofi -show run" }
+
+##
+## Tail: Launch App / Rofi
+################################################################################
+
+
+################################################################################
+## Head: Launch App / Misc
+##
+
+	KeyPress = "Mod1 Shift f" { Actions = "Exec pcmanfm-qt" }
+	KeyPress = "Mod1 Shift g" { Actions = "Exec nautilus" }
+	KeyPress = "Mod1 Shift e" { Actions = "Exec gedit" }
+	KeyPress = "Mod1 Shift b" { Actions = "Exec firefox" }
+
+##
+## Tail: Launch App / Misc
+################################################################################
+
+
+################################################################################
+### Head: System / Sound
+##
+
+## https://wiki.archlinux.org/index.php/Xbindkeys
+## https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture#Keyboard_volume_control
+## https://wiki.archlinux.org/index.php/PulseAudio#Keyboard_volume_control
+## https://zh.wikipedia.org/zh-tw/ALSA
+## https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture
+## https://zh.wikipedia.org/zh-tw/PulseAudio
+## https://en.wikipedia.org/wiki/PulseAudio
+
+## alsamixer (Package: alsa-utils)
+## amixer (Package: alsa-utils)
+## pactl (Package: pulseaudio-utils)
+## pavucontrol (Package: pavucontrol)
+## pavucontrol-qt (Package: pavucontrol-qt)
+## mate-volume-control (Package: mate-media)
+
+
+## VolumeControl
+	KeyPress = "Mod1 Shift v" { Actions = "Exec mate-volume-control" }
+	#KeyPress = "Mod1 Shift v" { Actions = "Exec pavucontrol" }
+	#KeyPress = "Mod1 Shift v" { Actions = "Exec pavucontrol-qt" }
+
+
+# https://askubuntu.com/questions/65764/how-do-i-toggle-sound-with-amixer
+# https://wiki.archlinux.org/index.php/PulseAudio#volume_control
+# amixer set Master toggle
+# amixer -D pulse set Master 1+ toggle
+# https://askubuntu.com/questions/872014/mute-button-doesnt-unmute
+
+## VolumeToggleMute
+	KeyPress = "Mod1 m" { Actions = "Exec amixer -q -D pulse sset Master toggle" }
+
+
+## VolumeDecrease
+	KeyPress = "Mod1 Shift comma" { Actions = "Exec amixer -q -D pulse sset Master 5%- unmute" }
+
+
+## VolumeIncrease
+	KeyPress = "Mod1 Shift period" { Actions = "Exec amixer -q -D pulse sset Master 5%+ unmute" }
+
+
+## VolumeDecreaseSlowly
+	KeyPress = "Mod1 Ctrl comma" { Actions = "Exec amixer -q -D pulse sset Master 1%- unmute" }
+
+
+## VolumeIncreaseSlowly
+	KeyPress = "Mod1 Ctrl period" { Actions = "Exec amixer -q -D pulse sset Master 1%+ unmute" }
+
+
+
+## XF86Audio Key ##
+
+## VolumeToggleMute
+	KeyPress = "XF86AudioMute" { Actions = "Exec amixer -q -D pulse sset Master toggle" }
+
+
+## VolumeDecrease
+	KeyPress = "XF86AudioLowerVolume" { Actions = "Exec amixer -q -D pulse sset Master 5%- unmute" }
+
+
+## VolumeIncrease
+	KeyPress = "XF86AudioRaiseVolume" { Actions = "Exec amixer -q -D pulse sset Master 5%+ unmute" }
+
+
+##
+## collision occurs on bash emacs mode
+## * `Alt + ,`
+## * `Alt + .`
+## * http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html#default%20key%20bindings
+## * http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline
+##
+
+
+##
+### Tail: System / Sound
+################################################################################
+
+
+################################################################################
+## Head: Workspace
+##
+	
+	
+## GotoWorkspace
+
+	KeyPress = "Mod1 a" { Actions = "GotoWorkspace Prev" }
+	KeyPress = "Mod1 s" { Actions = "GotoWorkspace Next" }
+
+	KeyPress = "Mod1 h" { Actions = "GotoWorkspace Prev" }
+	KeyPress = "Mod1 l" { Actions = "GotoWorkspace Next" }
+
+	KeyPress = "Mod1 k" { Actions = "GotoWorkspace PrevV" }
+	KeyPress = "Mod1 j" { Actions = "GotoWorkspace NextV" }
+
+
+	KeyPress = "Mod1 1" { Actions = "GotoWorkspace 1" }
+	KeyPress = "Mod1 2" { Actions = "GotoWorkspace 2" }
+	KeyPress = "Mod1 3" { Actions = "GotoWorkspace 3" }
+	KeyPress = "Mod1 4" { Actions = "GotoWorkspace 4" }
+	KeyPress = "Mod1 5" { Actions = "GotoWorkspace 5" }
+	KeyPress = "Mod1 6" { Actions = "GotoWorkspace 6" }
+	KeyPress = "Mod1 7" { Actions = "GotoWorkspace 7" }
+	KeyPress = "Mod1 8" { Actions = "GotoWorkspace 8" }
+	KeyPress = "Mod1 9" { Actions = "GotoWorkspace 9" }
+	KeyPress = "Mod1 0" { Actions = "GotoWorkspace 10" }
+
+
+
+
+## SendToWorkspace
+
+	KeyPress = "Mod4 Mod1 a" { Actions = "SendToWorkspace Prev; GotoWorkspace Prev" }
+	KeyPress = "Mod4 Mod1 s" { Actions = "SendToWorkspace Next; GotoWorkspace Next" }
+
+	KeyPress = "Mod4 Mod1 h" { Actions = "SendToWorkspace Prev; GotoWorkspace Prev" }
+	KeyPress = "Mod4 Mod1 l" { Actions = "SendToWorkspace Next; GotoWorkspace Next" }
+
+	KeyPress = "Mod4 Mod1 k" { Actions = "SendToWorkspace PrevV; GotoWorkspace PrevV" }
+	KeyPress = "Mod4 Mod1 j" { Actions = "SendToWorkspace NextV; GotoWorkspace NextV" }	
+
+
+	KeyPress = "Mod4 1" { Actions = "SendToWorkspace 1; GoToWorkspace 1" }
+	KeyPress = "Mod4 2" { Actions = "SendToWorkspace 2; GoToWorkspace 2" }
+	KeyPress = "Mod4 3" { Actions = "SendToWorkspace 3; GoToWorkspace 3" }
+	KeyPress = "Mod4 4" { Actions = "SendToWorkspace 4; GoToWorkspace 4" }
+	KeyPress = "Mod4 5" { Actions = "SendToWorkspace 5; GoToWorkspace 5" }
+	KeyPress = "Mod4 6" { Actions = "SendToWorkspace 6; GoToWorkspace 6" }
+	KeyPress = "Mod4 7" { Actions = "SendToWorkspace 7; GoToWorkspace 7" }
+	KeyPress = "Mod4 8" { Actions = "SendToWorkspace 8; GoToWorkspace 8" }
+	KeyPress = "Mod4 9" { Actions = "SendToWorkspace 9; GoToWorkspace 9" }
+	KeyPress = "Mod4 0" { Actions = "SendToWorkspace 0; GoToWorkspace 10" }
+
+
+
+	#KeyPress = "Mod4 1" { Actions = "SendToWorkspace 1" }
+	#KeyPress = "Mod4 2" { Actions = "SendToWorkspace 2" }
+	#KeyPress = "Mod4 3" { Actions = "SendToWorkspace 3" }
+	#KeyPress = "Mod4 4" { Actions = "SendToWorkspace 4" }
+	#KeyPress = "Mod4 5" { Actions = "SendToWorkspace 5" }
+	#KeyPress = "Mod4 6" { Actions = "SendToWorkspace 6" }
+	#KeyPress = "Mod4 7" { Actions = "SendToWorkspace 7" }
+	#KeyPress = "Mod4 8" { Actions = "SendToWorkspace 8" }
+	#KeyPress = "Mod4 9" { Actions = "SendToWorkspace 9" }
+	#KeyPress = "Mod4 0" { Actions = "SendToWorkspace 10" }
+
+
+
+
+##
+## Tail: Workspace
+################################################################################
+
+
+################################################################################
+## Head: Window
+##
+
+	KeyPress = "Mod4 a" { Actions = "PrevFrame EndRaise" }
+	KeyPress = "Mod4 s" { Actions = "NextFrame EndRaise" }
+
+	KeyPress = "Mod4 h" { Actions = "PrevFrame EndRaise" }
+	KeyPress = "Mod4 l" { Actions = "NextFrame EndRaise" }
+	
+	KeyPress = "Mod4 k" { Actions = "PrevFrame EndRaise" }
+	KeyPress = "Mod4 j" { Actions = "NextFrame EndRaise" }
+	
+	## win+[, win+]
+	KeyPress = "Mod4 bracketleft" { Actions = "PrevFrame EndRaise" }
+	KeyPress = "Mod4 bracketright" { Actions = "NextFrame EndRaise" }
+
+##
+## Tail: Window
+################################################################################
+
+
+################################################################################
+## Head: Window / Close
+##
+
+	KeyPress = "Mod4 q" { Actions = "Close" }
+	KeyPress = "Mod1 Shift q" { Actions = "Close" }
+	KeyPress = "Mod4 F4" { Actions = "Close" }
+
+##
+## Tail: Window / Close
+################################################################################
+
+
+################################################################################
+## Head: Window / Maximize
+##
+
+	KeyPress = "Mod4 w" { Actions = "Toggle Maximized True True" }
+	KeyPress = "Mod4 m" { Actions = "Toggle Maximized True True" }
+
+##
+## Tail: Window / Maximize
+################################################################################
+
+
+################################################################################
+## Head: Window / Minimize (Iconify)
+##
+
+	KeyPress = "Mod4 x" { Actions = "Toggle Iconified" }
+	KeyPress = "Mod4 n" { Actions = "Toggle Iconified" }
+
+##
+## Tail: Window / Minimize (Iconify)
+################################################################################
+
+
+################################################################################
+## Head: Window / Toggle Fullscreen
+##
+
+	KeyPress = "Mod4 f" { Actions = "Toggle FullScreen" }
+
+
+##
+## Tail: Window / Toggle Fullscreen
+################################################################################
+
+
+################################################################################
+## Head: Window / Toggle Shade
+##
+
+	KeyPress = "Mod4 y" { Actions = "Toggle Shaded" }
+
+
+##
+## Tail: Window / Toggle Shade
+################################################################################
+
+
+################################################################################
+## Head: Window / Toggle Decorations
+##
+
+	KeyPress = "Mod4 v" { Actions = "Toggle DecorBorder; Toggle DecorTitlebar" }
+
+
+##
+## Tail: Window / Toggle Decorations
+################################################################################
+
+
+
 # - - ----------------------------------------------- - -
 # Simple bindings to most frequently used actions.
 #
@@ -20,79 +346,60 @@ Global {
 	KeyPress = "Mod4 Up" { Actions = "FocusDirectional Up" }
 	KeyPress = "Mod4 Down" { Actions = "FocusDirectional Down" }
 	# Moving in workspaces
-	KeyPress = "Ctrl Mod1 Left" { Actions = "GotoWorkspace Left" }
-	KeyPress = "Ctrl Mod1 Right" { Actions = "GotoWorkspace Right" }
-	KeyPress = "Ctrl Mod1 Up" { Actions = "GotoWorkspace Up" }
-	KeyPress = "Ctrl Mod1 Down" { Actions = "GotoWorkspace Down" }
-	KeyPress = "Mod4 1" { Actions = "GotoWorkspace 1" }
-	KeyPress = "Mod4 2" { Actions = "GotoWorkspace 2" }
-	KeyPress = "Mod4 3" { Actions = "GotoWorkspace 3" }
-	KeyPress = "Mod4 4" { Actions = "GotoWorkspace 4" }
-	KeyPress = "Mod4 5" { Actions = "GotoWorkspace 5" }
-	KeyPress = "Mod4 6" { Actions = "GotoWorkspace 6" }
-	KeyPress = "Mod4 7" { Actions = "GotoWorkspace 7" }
-	KeyPress = "Mod4 8" { Actions = "GotoWorkspace 8" }
-	KeyPress = "Mod4 9" { Actions = "GotoWorkspace 9" }
-	KeyPress = "Ctrl Mod1 Shift Left" { Actions = "SendToWorkspace Next; GoToWorkspace Next" }
-	KeyPress = "Ctrl Mod1 Shift Right" { Actions = "SendToWorkspace Prev; GoToWorkspace Prev" }
-	KeyPress = "Ctrl Mod1 Shift Up" { Actions = "SendToWorkspace NextV; GoToWorkspace NextV" }
-	KeyPress = "Ctrl Mod1 Shift Down" { Actions = "SendToWorkspace PrevV; GoToWorkspace PrevV" }
-	KeyPress = "Mod4 F1" { Actions = "SendToWorkspace 1" }
-	KeyPress = "Mod4 F2" { Actions = "SendToWorkspace 2" }
-	KeyPress = "Mod4 F3" { Actions = "SendToWorkspace 3" }
-	KeyPress = "Mod4 F4" { Actions = "SendToWorkspace 4" }
-	KeyPress = "Mod4 F5" { Actions = "SendToWorkspace 5" }
-	KeyPress = "Mod4 F6" { Actions = "SendToWorkspace 6" }
-	KeyPress = "Mod4 F7" { Actions = "SendToWorkspace 7" }
-	KeyPress = "Mod4 F8" { Actions = "SendToWorkspace 8" }
-	KeyPress = "Mod4 F9" { Actions = "SendToWorkspace 9" }
+	#KeyPress = "Ctrl Mod1 Left" { Actions = "GotoWorkspace Left" }
+	#KeyPress = "Ctrl Mod1 Right" { Actions = "GotoWorkspace Right" }
+	#KeyPress = "Ctrl Mod1 Up" { Actions = "GotoWorkspace Up" }
+	#KeyPress = "Ctrl Mod1 Down" { Actions = "GotoWorkspace Down" }
+	#KeyPress = "Mod4 1" { Actions = "GotoWorkspace 1" }
+	#KeyPress = "Mod4 2" { Actions = "GotoWorkspace 2" }
+	#KeyPress = "Mod4 3" { Actions = "GotoWorkspace 3" }
+	#KeyPress = "Mod4 4" { Actions = "GotoWorkspace 4" }
+	#KeyPress = "Mod4 5" { Actions = "GotoWorkspace 5" }
+	#KeyPress = "Mod4 6" { Actions = "GotoWorkspace 6" }
+	#KeyPress = "Mod4 7" { Actions = "GotoWorkspace 7" }
+	#KeyPress = "Mod4 8" { Actions = "GotoWorkspace 8" }
+	#KeyPress = "Mod4 9" { Actions = "GotoWorkspace 9" }
+	#KeyPress = "Ctrl Mod1 Shift Left" { Actions = "SendToWorkspace Next; GoToWorkspace Next" }
+	#KeyPress = "Ctrl Mod1 Shift Right" { Actions = "SendToWorkspace Prev; GoToWorkspace Prev" }
+	#KeyPress = "Ctrl Mod1 Shift Up" { Actions = "SendToWorkspace NextV; GoToWorkspace NextV" }
+	#KeyPress = "Ctrl Mod1 Shift Down" { Actions = "SendToWorkspace PrevV; GoToWorkspace PrevV" }
+	#KeyPress = "Mod4 F1" { Actions = "SendToWorkspace 1" }
+	#KeyPress = "Mod4 F2" { Actions = "SendToWorkspace 2" }
+	#KeyPress = "Mod4 F3" { Actions = "SendToWorkspace 3" }
+	#KeyPress = "Mod4 F4" { Actions = "SendToWorkspace 4" }
+	#KeyPress = "Mod4 F5" { Actions = "SendToWorkspace 5" }
+	#KeyPress = "Mod4 F6" { Actions = "SendToWorkspace 6" }
+	#KeyPress = "Mod4 F7" { Actions = "SendToWorkspace 7" }
+	#KeyPress = "Mod4 F8" { Actions = "SendToWorkspace 8" }
+	#KeyPress = "Mod4 F9" { Actions = "SendToWorkspace 9" }
 	# Simple window management
-	KeyPress = "Mod4 M" { Actions = "Toggle Maximized True True" }
-	KeyPress = "Mod4 G" { Actions = "Maxfill True True" }
-	KeyPress = "Mod4 F" { Actions = "Toggle FullScreen" }
-	KeyPress = "Mod4 Return" { Actions = "MoveResize" }
-	KeyPress = "Mod4 Q" { Actions = "Close" }
-	KeyPress = "Mod4 S" { Actions = "Toggle Shaded" }
-	KeyPress = "Mod4 I" { Actions = "Toggle Iconified" }
+	#KeyPress = "Mod4 M" { Actions = "Toggle Maximized True True" }
+	#KeyPress = "Mod4 G" { Actions = "Maxfill True True" }
+	#KeyPress = "Mod4 F" { Actions = "Toggle FullScreen" }
+	#KeyPress = "Mod4 Return" { Actions = "MoveResize" }
+	#KeyPress = "Mod4 Q" { Actions = "Close" }
+	#KeyPress = "Mod4 S" { Actions = "Toggle Shaded" }
+	#KeyPress = "Mod4 I" { Actions = "Toggle Iconified" }
 	# Marking
-	KeyPress = "Mod4 Z" { Actions = "Toggle Marked" }
-	KeyPress = "Mod4 A" { Actions = "AttachMarked" }
+	#KeyPress = "Mod4 Z" { Actions = "Toggle Marked" }
+	#KeyPress = "Mod4 A" { Actions = "AttachMarked" }
 	# Tagging
-	KeyPress = "Mod4 T" { Actions = "Toggle Tagged False" }
+	#KeyPress = "Mod4 T" { Actions = "Toggle Tagged False" }
 	# Menus
-	KeyPress = "Mod4 R" { Actions = "ShowMenu Root" }
-	KeyPress = "Mod4 W" { Actions = "ShowMenu Window" }
-	KeyPress = "Mod4 L" { Actions = "ShowMenu Goto" }
-	KeyPress = "Mod4 C" { Actions = "ShowMenu GotoClient" }
-	KeyPress = "Mod4 Shift I" { Actions = "ShowMenu Icon" }
-	KeyPress = "Mod4 X" { Actions = "HideAllMenus" }
+	#KeyPress = "Mod4 R" { Actions = "ShowMenu Root" }
+	#KeyPress = "Mod4 W" { Actions = "ShowMenu Window" }
+	#KeyPress = "Mod4 L" { Actions = "ShowMenu Goto" }
+	#KeyPress = "Mod4 C" { Actions = "ShowMenu GotoClient" }
+	#KeyPress = "Mod4 Shift I" { Actions = "ShowMenu Icon" }
+	#KeyPress = "Mod4 X" { Actions = "HideAllMenus" }
 	# External Commands
-	KeyPress = "Mod1 Print" { Actions = "Exec $_PEKWM_SCRIPT_PATH/pekwm_screenshot.sh" }
-	KeyPress = "Mod4 E" { Actions = "Exec $TERM" }
+	#KeyPress = "Mod1 Print" { Actions = "Exec $_PEKWM_SCRIPT_PATH/pekwm_screenshot.sh" }
+	#KeyPress = "Mod4 E" { Actions = "Exec $TERM" }
 	# Pekwm control
-	KeyPress = "Ctrl Mod1 Delete" { Actions = "Reload" }
-	KeyPress = "Mod4 D" { Actions = "ShowCmdDialog" }
-	KeyPress = "Mod4 V" { Actions = "ShowSearchDialog" }
-	KeyPress = "Mod4 H" { Actions = "Toggle HarbourHidden" }
-
-
-################################################################################
-### Head: App
-##
-	KeyPress = "Mod1 Return" { Actions = "Exec sakura -m" }
-	KeyPress = "Mod1 Shift f" { Actions = "Exec pcmanfm-qt" }
-	KeyPress = "Mod1 Shift r" { Actions = "Exec rofi -show run" }
-	KeyPress = "Mod1 Shift w" { Actions = "Exec rofi -show window -show-icons" }
-	KeyPress = "Mod1 Shift d" { Actions = "Exec rofi -show drun -show-icons" }
-	KeyPress = "Mod1 Shift t" { Actions = "Exec tilix --quake" }
-	KeyPress = "Mod1 Shift b" { Actions = "Exec firefox" }
-	KeyPress = "Mod1 Shift g" { Actions = "Exec nautilus" }
-	KeyPress = "Mod1 Shift e" { Actions = "Exec gedit" }
-	KeyPress = "Mod1 Shift m" { Actions = "Exec pavucontrol" }
-##
-### Tail: App
-################################################################################
-
+	#KeyPress = "Ctrl Mod1 Delete" { Actions = "Reload" }
+	#KeyPress = "Mod4 D" { Actions = "ShowCmdDialog" }
+	#KeyPress = "Mod4 V" { Actions = "ShowSearchDialog" }
+	#KeyPress = "Mod4 H" { Actions = "Toggle HarbourHidden" }
 
 # - - ----------------------------------------------- - -
 # CHAINS. These give you access to just about everything.
@@ -313,9 +620,9 @@ InputDialog {
 	KeyPress = "Down" { Actions = "HistNext" }
 	KeyPress = "Ctrl P" { Actions = "HistPrev" }
 	KeyPress = "Ctrl N" { Actions = "HistNext" }
-	KeyPress = "Ctrl B" { Actions = "CursPrev" }
-	KeyPress = "Ctrl F" { Actions = "CursNext" }
-	KeyPress = "Tab" { Actions = "Complete" }
+        KeyPress = "Ctrl B" { Actions = "CursPrev" }
+        KeyPress = "Ctrl F" { Actions = "CursNext" }
+        KeyPress = "Tab" { Actions = "Complete" }
 	KeyPress = "Any Any" { Actions = "Insert" }
 }
 
