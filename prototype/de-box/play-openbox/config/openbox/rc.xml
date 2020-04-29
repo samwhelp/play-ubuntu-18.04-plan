@@ -261,8 +261,15 @@
 
 	<!-- ## Restart //-->
 	<keybind key="A-S-z">
-		<action name="Restart" />
-	</keybind>
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Exit</name>
+			</startupnotify>
+			<command>obsession-logout</command>
+		</action>
+	</keybind>	
+
 
 
 	<!-- ## Logout //-->
@@ -313,17 +320,6 @@
 		</action>
 	</keybind>
 
-	<keybind key="A-C-a">
-		<action name="ShowMenu">
-			<menu>root-menu</menu>
-		</action>
-	</keybind>
-
-	<keybind key="W-C-a">
-		<action name="ShowMenu">
-			<menu>root-menu</menu>
-		</action>
-	</keybind>
 
 
 	<keybind key="W-c">
@@ -331,32 +327,19 @@
 			<menu>client-list-combined-menu</menu>
 		</action>
 	</keybind>
-
-	<keybind key="A-C-s">
+	
+	<keybind key="Alt-F3">
 		<action name="ShowMenu">
 			<menu>client-list-combined-menu</menu>
 		</action>
-	</keybind>
+	</keybind>	
 
-	<keybind key="W-C-s">
-		<action name="ShowMenu">
-			<menu>client-list-combined-menu</menu>
-		</action>
-	</keybind>
 
 
 	<keybind key="W-d">
 		<action name="ToggleShowDesktop"/>
 	</keybind>
 
-
-	<keybind key="A-C-d">
-		<action name="ToggleShowDesktop"/>
-	</keybind>
-
-	<keybind key="W-C-d">
-		<action name="ToggleShowDesktop"/>
-	</keybind>
 
 
 
@@ -904,11 +887,11 @@ h l
 		<action name="Close"/>
 	</keybind>
 
-	<keybind key="A-S-q">
+	<keybind key="A-F4">
 		<action name="Close"/>
 	</keybind>
 
-	<keybind key="A-F4">
+	<keybind key="A-S-q">
 		<action name="Close"/>
 	</keybind>
 
@@ -1477,6 +1460,17 @@ h l
 
 
 
+	<keybind key="Alt-F2">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>RofiShowDrun</name>
+			</startupnotify>
+			<command>rofi -show drun -show-icons</command>
+		</action>
+	</keybind>
+
+
 	<keybind key="A-S-d">
 		<action name="Execute">
 			<startupnotify>
@@ -1519,37 +1513,39 @@ h l
 		</action>
 	</keybind>
 
+
+	<!-- ## Terminal-Quake //-->
 	<keybind key="A-S-a">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>Terminal</name>
+				<name>Terminal-Quake</name>
 			</startupnotify>
-			<command>sakura -m</command>
-		</action>
-	</keybind>
-
-	<keybind key="A-C-t">
-		<action name="Execute">
-			<startupnotify>
-				<enabled>true</enabled>
-				<name>Terminal</name>
-			</startupnotify>
-			<command>x-terminal-emulator</command>
+			<command>xfce4-terminal --drop-down</command>
 		</action>
 	</keybind>
 
 
-	<!-- ## Terminal - quake //-->
+	<!-- ## Terminal //-->
 	<keybind key="A-S-t">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
 				<name>Terminal</name>
 			</startupnotify>
-			<command>tilix --quake</command>
+			<command>xterm</command>
 		</action>
 	</keybind>
+	
+	<keybind key="A-C-t">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Terminal</name>
+			</startupnotify>
+			<command>urxvt</command>
+		</action>
+	</keybind>	
 
 
 	<!-- ## File Manager //-->
@@ -2291,11 +2287,6 @@ h l
 
 
 	<application class="Gnome-terminal" type="normal">
-		<desktop>1</desktop>
-		<focus>yes</focus>
-	</application>
-
-	<application class="Xfce4-terminal" type="normal">
 		<desktop>1</desktop>
 		<focus>yes</focus>
 	</application>

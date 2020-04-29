@@ -10,8 +10,6 @@
 	<keybind key="A-d">
 		<action name="ToggleShowDesktop"/>
 	</keybind>
-*/
-?>
 
 	<keybind key="A-C-d">
 		<action name="ToggleShowDesktop"/>
@@ -20,6 +18,9 @@
 	<keybind key="W-C-d">
 		<action name="ToggleShowDesktop"/>
 	</keybind>
+
+*/
+?>
 
 <?php
 /*

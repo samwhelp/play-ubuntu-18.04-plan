@@ -169,6 +169,7 @@ launcher_tooltip = 1
 launcher_item_app = rofi-show-drun.desktop
 #launcher_item_app = openbox-show-root-menu.desktop
 launcher_item_app = tint2conf.desktop
+launcher_item_app = openbox-exit.desktop
 launcher_item_app = sakura.desktop
 launcher_item_app = mousepad.desktop
 launcher_item_app = firefox.desktop

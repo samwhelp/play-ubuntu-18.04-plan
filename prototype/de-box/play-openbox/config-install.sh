@@ -21,6 +21,7 @@ openbox_config_install () {
 
 	openbox_put_toggledesktop_desktop_entry
 	openbox_put_showrootmenu_desktop_entry
+	openbox_put_exit_desktop_entry
 }
 
 openbox_put_toggledesktop_desktop_entry () {
@@ -38,6 +39,15 @@ openbox_put_showrootmenu_desktop_entry () {
 
 	cp "./config/openbox/asset/desktop-entry/openbox-show-root-menu.desktop" "$HOME/.local/share/applications/openbox-show-root-menu.desktop"
 	echo "cp ./config/openbox/asset/desktop-entry/openbox-show-root-menu.desktop $HOME/.local/share/applications/openbox-show-root-menu.desktop"
+
+}
+
+openbox_put_exit_desktop_entry () {
+	#mkdir -p "$HOME/.local/share/applications"
+	#echo "mkdir -p $HOME/.local/share/applications"
+
+	cp "./config/openbox/asset/desktop-entry/openbox-exit.desktop" "$HOME/.local/share/applications/openbox-exit.desktop"
+	echo "cp ./config/openbox/asset/desktop-entry/openbox-exit.desktop $HOME/.local/share/applications/openbox-exit.desktop"
 
 }
 ##

@@ -1,5 +1,16 @@
 
 
+	<keybind key="Alt-F2">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>RofiShowDrun</name>
+			</startupnotify>
+			<command>rofi -show drun -show-icons</command>
+		</action>
+	</keybind>
+
+
 	<keybind key="A-S-d">
 		<action name="Execute">
 			<startupnotify>

@@ -4,11 +4,11 @@
 		<action name="Close"/>
 	</keybind>
 
-	<keybind key="A-S-q">
+	<keybind key="A-F4">
 		<action name="Close"/>
 	</keybind>
 
-	<keybind key="A-F4">
+	<keybind key="A-S-q">
 		<action name="Close"/>
 	</keybind>
 

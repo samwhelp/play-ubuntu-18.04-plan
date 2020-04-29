@@ -12,6 +12,8 @@
 		</action>
 	</keybind>
 
+<?php
+/*
 	<keybind key="A-C-a">
 		<action name="ShowMenu">
 			<menu>root-menu</menu>
@@ -23,3 +25,5 @@
 			<menu>root-menu</menu>
 		</action>
 	</keybind>
+*/
+?>

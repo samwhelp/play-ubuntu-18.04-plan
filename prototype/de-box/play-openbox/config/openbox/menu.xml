@@ -134,6 +134,10 @@
 			<action name="Exit"/>
 		</item>
 	</menu>
+
+	<item label="Exit" icon="/usr/share/icons/Numix/24/actions/system-shutdown.svg" >
+		<action name="Execute"><execute>obsession-logout</execute></action>
+	</item>	
 </menu>
 
 </openbox_menu>

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Exec=obsession-logout
+TryExec=obsession-logout
+Icon=gtk-quit
+Categories=System;Utility;
+Keywords=logout;exit;
+
+Name=Openbox Exit
+GenericName=Openbox-Exit
+Comment=Openbox Exit
+
+Name[zh_TW]=離開 Openbox
+GenericName[zh_TW]=Openbox-Exit
+Comment[zh_TW]=離開 Openbox

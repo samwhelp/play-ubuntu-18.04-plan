@@ -2,8 +2,22 @@
 
 	<!-- ## Restart //-->
 	<keybind key="A-S-z">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Exit</name>
+			</startupnotify>
+			<command>obsession-logout</command>
+		</action>
+	</keybind>	
+
+<?php
+/*
+	<keybind key="A-S-z">
 		<action name="Restart" />
 	</keybind>
+*/	
+?>
 
 
 	<!-- ## Logout //-->

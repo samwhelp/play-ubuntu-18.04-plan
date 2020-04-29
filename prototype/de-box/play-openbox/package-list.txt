@@ -1,6 +1,10 @@
 
 openbox
 obconf
+obsession
+
+
+scrot
 
 xdotool
 
@@ -34,6 +38,7 @@ numix-icon-theme
 gnome-icon-theme
 breeze-cursor-theme
 ubuntu-wallpapers
+ubuntu-wallpapers-bionic
 
 
 fcitx-chewing
@@ -42,8 +47,13 @@ fcitx-chewing
 pcmanfm-qt
 
 
-tilix
 sakura
+xfce4-terminal
+#tilix
+xterm
+rxvt-unicode
+
+
 
 
 firefox
