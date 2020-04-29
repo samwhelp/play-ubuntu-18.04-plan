@@ -4,7 +4,10 @@
 
 ## Subject
 
-
+* [Rofi](#rofi)
+* [Launch App](#launch-app)
+* [Volume](#volume)
+* [Print](#print)
 * [System](#system)
 * [Show Client Menu](#show-client-menu)
 * [Show Root Menu](#show-root-menu)
@@ -28,10 +31,6 @@
 * [Window Tiling](#window-tiling)
 * [Window Tiling Move / Side](#window-tiling-move-side)
 * [Window Tiling Move / Corner](#window-tiling-move-corner)
-* [Rofi](#rofi)
-* [Launch App](#launch-app)
-* [Volume](#volume)
-* [Print](#print)
 
 
 ## Link
@@ -82,13 +81,84 @@
 > Search `<keyboard>`
 
 
+## Rofi
+
+* Config Sample / [Rofi](config/openbox/openbox-gen-rc/Section/Keybind/Rofi.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + F2` | Rofi Show Drun | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + d` | Rofi Show Drun | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + w` | Rofi Show Window | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + r` | Rofi Show Run | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+
+## Launch App
+
+* Config Sample / [LaunchApp](config/openbox/openbox-gen-rc/Section/Keybind/LaunchApp.php)
+
+### Terminal
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Enter` | Launch Terminal (sakura -m) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + a` | Launch Quake Terminal (xfce4-terminal --drop-down) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + t` | Launch Terminal (xterm) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Ctrl + t` | Launch Terminal (urxvt) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+### Misc
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Shift + f` | Launch File Manager (pcmanfm-qt) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + g` | Launch File Manager (nautilus) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + b` | Launch Web Browser (firefox) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shift + e` | Launch Text Editor (gedit) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+
+## Volume
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + m` | Volume Toggle Mute | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Alt + Shitf + ,` | Volume Decrease | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Shitf + .` | Volume Increase | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Ctrl + ,` | Volume Decrease Slowly | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Ctrl + .` | Volume Increase Slowly | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+> collision occurs on bash emacs mode
+> * `Alt + ,`
+> * `Alt + .`
+
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `XF86AudioMute` | Volume Toggle Mute | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `XF86AudioLowerVolume` | Volume Decrease | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `XF86AudioRaiseVolume` | Volume Increase | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+## Print
+
+* Config Sample / [Print](config/openbox/openbox-gen-rc/Section/Keybind/Print.php)
+
+| Key | Description | Doc |
+| --- | --- | --- |
+| `Print` | scrot | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+| `Alt + Print` | scrot -s | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
+
+
 ## System
 
 * Config Sample / [Openbox](config/openbox/openbox-gen-rc/Section/Keybind/Openbox.php)
 
 | Key | Description | Doc |
 | --- | --- | --- |
-| `Alt + Shift + z` | Restart | [Restart](http://openbox.org/wiki/Help:Actions#Restart) |
+| `Alt + Shift + z` | obsession-logout | $ man [obsession-logout](http://manpages.ubuntu.com/manpages/focal/en/man1/obsession-logout.1.html) |
 | `Alt + Shift + x` | Logout | [Exit](http://openbox.org/wiki/Help:Actions#Exit) |
 | `Ctrl + Alt + Delete` | Logout | [Exit](http://openbox.org/wiki/Help:Actions#Exit) |
 | `Alt + Shift + c` | Reconfigure | [Reconfigure](http://openbox.org/wiki/Help:Actions#Reconfigure) |
@@ -112,8 +182,7 @@
 | --- | --- | --- |
 | `Win + Space` | Show Root Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
 | `Alt + F1` | Show Root Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
-| `Ctrl + Win + a` | Show Root Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
-| `Ctrl + Alt + a` | Show Root Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (root-menu) |
+
 
 
 ## Show Workspace Menu
@@ -123,8 +192,7 @@
 | Key | Description | Doc |
 | --- | --- | --- |
 | `Win + c` | Show Workspace Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
-| `Ctrl + Win + s` | Show Workspace Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
-| `Ctrl + Alt + s` | Show Workspace Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
+| `Alt + F3` | Show Workspace Menu | [ShowMenu](http://openbox.org/wiki/Help:Actions#ShowMenu) (client-list-combined-menu) |
 
 
 ## Toggle Show Desktop
@@ -134,8 +202,6 @@
 | Key | Description | Doc |
 | --- | --- | --- |
 | `Win + d` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
-| `Ctrl + Win + d` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
-| `Ctrl + Alt + d` | Toggle Show Desktop | [ToggleShowDesktop](http://openbox.org/wiki/Help:Actions#ToggleShowDesktop) |
 
 
 ## Go To Workspace
@@ -480,74 +546,6 @@
 | `Alt + Shift + Left` | Tiling Window Move To West-South (Left-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
 | `Alt + Shift + Right` | Tiling Window Move To East-South (Right-Bottom) | [MoveResizeTo](http://openbox.org/wiki/Help:Actions#MoveResizeTo) |
 
-
-## Rofi
-
-* Config Sample / [Rofi](config/openbox/openbox-gen-rc/Section/Keybind/Rofi.php)
-
-| Key | Description | Doc |
-| --- | --- | --- |
-| `Alt + Shift + r` | Rofi Show Run | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + d` | Rofi Show Drun | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + w` | Rofi Show Window | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-
-
-## Launch App
-
-* Config Sample / [LaunchApp](config/openbox/openbox-gen-rc/Section/Keybind/LaunchApp.php)
-
-### Terminal
-
-| Key | Description | Doc |
-| --- | --- | --- |
-| `Alt + Enter` | Launch Terminal (sakura -m) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + a` | Launch Terminal (sakura -m) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + t` | Launch Quake Terminal (tilix --quake) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-
-### Misc
-
-| Key | Description | Doc |
-| --- | --- | --- |
-| `Alt + Shift + f` | Launch File Manager (pcmanfm-qt) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + g` | Launch File Manager (nautilus) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + b` | Launch Web Browser (firefox) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shift + e` | Launch Text Editor (gedit) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-
-
-## Volume
-
-| Key | Description | Doc |
-| --- | --- | --- |
-| `Alt + Shift + v` | Launch Volume Control (mate-volume-control) | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + m` | Volume Toggle Mute | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-
-
-| Key | Description | Doc |
-| --- | --- | --- |
-| `Alt + Shitf + ,` | Volume Decrease | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Shitf + .` | Volume Increase | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Ctrl + ,` | Volume Decrease Slowly | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Ctrl + .` | Volume Increase Slowly | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-
-> collision occurs on bash emacs mode
-> * `Alt + ,`
-> * `Alt + .`
-
-
-| Key | Description | Doc |
-| --- | --- | --- |
-| `XF86AudioMute` | Volume Toggle Mute | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `XF86AudioLowerVolume` | Volume Decrease | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `XF86AudioRaiseVolume` | Volume Increase | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-
-## Print
-
-* Config Sample / [Print](config/openbox/openbox-gen-rc/Section/Keybind/Print.php)
-
-| Key | Description | Doc |
-| --- | --- | --- |
-| `Print` | Rofi Show Run | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
-| `Alt + Print` | Rofi Show Drun | [Execute](http://openbox.org/wiki/Help:Actions#Execute) |
 
 
 
