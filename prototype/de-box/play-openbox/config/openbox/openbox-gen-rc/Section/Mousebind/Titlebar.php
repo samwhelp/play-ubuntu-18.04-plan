@@ -38,6 +38,11 @@
 
 	<context name="Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner">
 
+		<mousebind button="Left" action="Press">
+			<action name="Focus"/>
+			<action name="Raise"/>
+		</mousebind>
+
 		<!--
 		<mousebind button="Left" action="Press">
 			<action name="Focus"/>
@@ -45,6 +50,8 @@
 			<action name="Unshade"/>
 		</mousebind>
 		//-->
+		
+		
 
 		<mousebind button="Middle" action="Press">
 			<action name="Lower"/>
