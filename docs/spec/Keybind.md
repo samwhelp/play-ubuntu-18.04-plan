@@ -75,8 +75,9 @@
 | Key | Description |
 | --- | --- |
 | `Alt + Enter` | Launch Terminal (sakura -m) |
-| `Alt + Shift + a` | Launch Terminal (sakura -m) |
-| `Alt + Shift + t` | Toggle Drop Down Terminal (tilix --quake) |
+| `Alt + Shift + a` | Toggle Drop Down Terminal (xfce4-terminal --drop-down) or (tilix --quake) |
+| `Alt + Shift + t` | Launch Terminal (xterm) |
+| `Alt + Ctrl + t` | Launch Terminal (urxvt) |
 
 ### Rofi
 
@@ -91,9 +92,9 @@
 | Key | Description |
 | --- | --- |
 | `Alt + Shift + f` | Launch File Manager (pcmanfm-qt) |
-| `Alt + Shift + g` | Launch File Manager (nautilus) |
+| `Alt + Shift + g` | Launch File Manager (nautilus) or (thunar) |
 | `Alt + Shift + b` | Launch Web Browser (firefox) |
-| `Alt + Shift + e` | Launch Text Editor (gedit) |
+| `Alt + Shift + e` | Launch Text Editor (gedit) or (mousepad) |
 
 
 ## Workspace
