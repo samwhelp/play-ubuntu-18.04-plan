@@ -31,6 +31,20 @@ luaenv_build_clone_repo () {
 
 }
 
+luaenv_luarocks_clone_repo () {
+	if [ -d "$HOME/.luaenv/plugins/luaenv-luarocks" ]; then
+		return
+	fi
+
+	## https://github.com/xpol/luaenv-luarocks
+
+	## clone
+	echo
+	echo "git clone https://github.com/xpol/luaenv-luarocks.git $HOME/.luaenv/plugins/luaenv-luarocks"
+	git clone "https://github.com/xpol/luaenv-luarocks.git" "$HOME/.luaenv/plugins/luaenv-luarocks"
+
+}
+
 luaenv_init_source_install () {
 	mkdir -p "$HOME/app/luaenv"
 
@@ -41,6 +55,7 @@ luaenv_install_main () {
 	#luaenv_apt_install
 	luaenv_clone_repo
 	luaenv_build_clone_repo
+	luaenv_luarocks_clone_repo
 	luaenv_init_source_install
 }
 
